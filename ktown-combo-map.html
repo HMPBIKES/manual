@@ -13,7 +13,7 @@
     --deemph: #A39B8C;
     --lane: #C9C2B2;
     --wash: rgba(138, 133, 122, 0.09);
-    --c1: #2a78d6; --c2: #eb6834; --c3: #1baf7a; --c4: #eda100; --c5: #e87ba4;
+    --c1: #2a78d6; --c2: #eb6834; --c3: #1baf7a; --c4: #eda100; --c5: #e87ba4; --c6: #008300;
     --pin-dark-text: #17181C;
   }
   @media (prefers-color-scheme: dark) {
@@ -22,7 +22,7 @@
       --muted: #837F74; --line: #32353B; --line-soft: #282B31;
       --accent: #F08A2B; --accent-wash: rgba(217, 111, 20, 0.12);
       --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
-      --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181;
+      --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181; --c6: #008300;
     }
   }
   :root[data-theme="dark"] {
@@ -30,7 +30,7 @@
     --muted: #837F74; --line: #32353B; --line-soft: #282B31;
     --accent: #F08A2B; --accent-wash: rgba(217, 111, 20, 0.12);
     --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
-    --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181;
+    --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181; --c6: #008300;
   }
   * { box-sizing: border-box; }
   body {
@@ -58,7 +58,7 @@
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px 12px; border-top: 4px solid var(--line); }
   .card.c1 { border-top-color: var(--c1); } .card.c2 { border-top-color: var(--c2); }
   .card.c3 { border-top-color: var(--c3); } .card.c4 { border-top-color: var(--c4); }
-  .card.c5 { border-top-color: var(--c5); }
+  .card.c5 { border-top-color: var(--c5); } .card.c6 { border-top-color: var(--c6); }
   .card h3 { margin: 0 0 4px; font-size: 15.5px; font-weight: 800; }
   .card p { margin: 3px 0; font-size: 13px; color: var(--ink-2); }
   .card .total { font-size: 20px; font-weight: 800; color: var(--ink); margin-top: 7px; }
@@ -69,6 +69,7 @@
   .st { font-size: 11px; fill: var(--muted); letter-spacing: 0.04em; }
   .area-label { font-size: 12px; font-weight: 800; fill: var(--muted); letter-spacing: 0.12em; }
   .pin-label { font-size: 11.5px; font-weight: 700; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .np-label { font-size: 10.5px; font-weight: 700; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
   .alt-label { font-size: 10.5px; font-weight: 600; fill: var(--muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
   .pin-num { font-size: 12.5px; font-weight: 800; fill: #FFFFFF; text-anchor: middle; }
   .pin-num.dk { fill: var(--pin-dark-text); }
@@ -97,7 +98,7 @@
   <header>
     <p class="eyebrow">HMP Bikes · Site Combos · 2026-08-14</p>
     <h1>K-town 换电点 + 存车仓:五套组合地图</h1>
-    <p class="dek">圆点 = K-town 充电换电前台,方块 = 低价存车仓,菱形 = 单址二合一;虚线为组合连线(标注直线距离)。灰色小点为备选点位。</p>
+    <p class="dek">圆点 = K-town 充电换电前台,方块 = 低价存车仓,菱形 = 单址二合一;虚线为组合连线(标注直线距离)。灰色小点为备选点位;<strong>绿色小圆点为确认有喷淋的小门面(新增)</strong>,3221 S Hill 方块加绿框表示尽调通过(有喷淋施工许可)。</p>
     <p class="meta">按真实经纬度投影的示意图,非精确比例;所有房源以 2026-08-14 挂盘信息为准,签约前需核实。</p>
   </header>
 
@@ -145,13 +146,13 @@
       <circle cx="186" cy="207" r="3.5" fill="var(--muted)"></circle>
       <circle cx="249" cy="207" r="3.5" fill="var(--muted)"></circle>
       <circle cx="312" cy="207" r="3.5" fill="var(--muted)"></circle>
-      <text class="st" x="222" y="221">Metro D 线</text>
+      <text class="st" x="250" y="224">Metro D 线</text>
 
       <!-- street labels -->
       <text class="st" x="44" y="74">Beverly Bl</text>
       <text class="st" x="44" y="134">3rd St</text>
       <text class="st" x="44" y="180">6th St</text>
-      <text class="st" x="44" y="203">Wilshire Bl</text>
+      <text class="st" x="44" y="216">Wilshire Bl</text>
       <text class="st" x="44" y="233">8th St</text>
       <text class="st" x="44" y="280">Olympic Bl</text>
       <text class="st" x="44" y="324">Pico Bl</text>
@@ -184,12 +185,11 @@
       <path class="combo-line" style="stroke: var(--c2)" d="M 312 302 Q 450 310 588 428"></path>
       <line class="combo-line" style="stroke: var(--c3)" x1="186" y1="231" x2="444" y2="540"></line>
       <line class="combo-line" style="stroke: var(--c5)" x1="186" y1="302" x2="427" y2="363"></line>
+      <line class="combo-line" style="stroke: var(--c6)" x1="204" y1="247" x2="444" y2="540"></line>
 
       <!-- alternate dots -->
-      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/not-verified-solair-retail/" target="_blank" rel="noopener"><circle cx="186" cy="202" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="178" y="191" text-anchor="end">Solair $2,295+</text></a>
-      <a href="https://www.loopnet.com/Listing/3500-W-6th-St-Los-Angeles-CA/22276306/" target="_blank" rel="noopener"><circle cx="197" cy="184" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="207" y="196">City Center 18 铺</text></a>
+      
+      
       <a href="https://www.loopnet.com/Listing/3176-3188-W-8th-St-Los-Angeles-CA/29981151/" target="_blank" rel="noopener"><circle cx="291" cy="237" r="4" fill="var(--deemph)"></circle>
       <text class="alt-label" x="299" y="232">Haddon Hall</text></a>
       <a href="https://www.loopnet.com/Listing/3006-Wilshire-Blvd-Los-Angeles-CA/35459630/" target="_blank" rel="noopener"><circle cx="333" cy="207" r="4" fill="var(--deemph)"></circle>
@@ -201,6 +201,40 @@
       <a href="https://www.craigslist.org/view/d/los-angeles-creative-office-studio/cYKTniAKiZwoLtafu5srX6" target="_blank" rel="noopener"><circle cx="767" cy="371" r="4" fill="var(--deemph)"></circle>
       <text class="alt-label" x="759" y="364" text-anchor="end">1499 E 4th $4,000</text></a>
 
+      <!-- sprinklered small storefronts (new, green) -->
+      <a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683723" target="_blank" rel="noopener"><g><title>The Rise Koreatown,3525 W 8th St(2023 新楼,Zion Market 锚定):inline 500–800 SF + booth 150–200 SF,首月 $1;JW Lee 213-999-3225</title>
+        <circle cx="204" cy="247" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="214" y="243">The Rise 首月$1</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/928-S-Western-Ave-Los-Angeles-CA/26831265/" target="_blank" rel="noopener"><g><title>Koreatown Plaza,928 S Western(1988 封闭商场):12 个铺位,最小 300 SF;Geo Kim 213-382-1234</title>
+        <circle cx="186" cy="264" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="172" y="261" text-anchor="end">K Plaza 300SF起</text>
+      </g></a>
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/sage-la/" target="_blank" rel="noopener"><g><title>Sage LA,200 N Vermont(2024 Class A+ 新楼,Vermont/Beverly B 线站):Space B 894 SF</title>
+        <circle cx="312" cy="76" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="322" y="73">Sage LA 894SF</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/3500-W-6th-St-Los-Angeles-CA/22276306/" target="_blank" rel="noopener"><g><title>City Center on 6th,3500 W 6th(2006–08 商场,H Mart 锚定):最小 788 SF,$3.00–5.00/SF/月;Jamison 213-201-1085</title>
+        <circle cx="269" cy="184" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="279" y="178">City Center 788SF起</text>
+      </g></a>
+      <a href="http://www.koreatowngalleria.com/contactus.html" target="_blank" rel="noopener"><g><title>Koreatown Galleria,3250 W Olympic(2001 三层商场):招商 323-733-6000</title>
+        <circle cx="180" cy="281" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="168" y="272" text-anchor="end">K Galleria</text>
+      </g></a>
+      <a href="https://www.cbre.com/properties/properties-for-lease/retail/details/US-SMPL-129598/nova-on-wilshire-3980-wilshire-blvd-los-angeles-ca-90020" target="_blank" rel="noopener"><g><title>Nova on Wilshire,3980 Wilshire(新建 7 层底商):14,310 SF 可分割,可谈 600–900 SF;CBRE Johnny Choi</title>
+        <circle cx="160" cy="207" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="148" y="203" text-anchor="end">Nova 可分割</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/621-S-Western-Ave-Los-Angeles-CA/37148964/" target="_blank" rel="noopener"><g><title>Madang Courtyard,621 S Western(~2003–10 现代商场):常有 1,000 SF 以下 inline;213-387-8811</title>
+        <circle cx="188" cy="193" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="198" y="190">Madang</text>
+      </g></a>
+      <a href="https://www.commercialsearch.com/commercial-property/us/ca/los-angeles/not-verified-solair-retail/" target="_blank" rel="noopener"><g><title>Solair #106,3785 Wilshire(2009 高层,地铁口):765 SF,$2,295 + NNN;Mark Hong 213-251-9000</title>
+        <circle cx="188" cy="205" r="8" fill="var(--c6)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="176" y="192" text-anchor="end">Solair $2,295</text>
+      </g></a>
+      <!-- combo pins -->
       <!-- combo 1: blue -->
       <a href="https://www.craigslist.org/view/d/los-angeles-perfect-retail-space/pSBGQk1jkQJK9k3o3MmSYe" target="_blank" rel="noopener"><g><title>:1723 James M Wood Blvd,750 SF,$712/月,月付</title>
         <circle cx="437" cy="300" r="13" fill="var(--c1)" stroke="var(--card)" stroke-width="2.5"></circle>
@@ -230,9 +264,10 @@
         <text class="pin-label" x="168" y="227" text-anchor="end">730 S Western · $1.3–1.5k</text>
       </g></a>
       <a href="https://www.craigslist.org/view/d/los-angeles-industrial-leasing/mHyoY5neNTwjyvJo7km8zN" target="_blank" rel="noopener"><g><title>:3221 S Hill St,850 SF,M1 分区、卷帘门、门禁 24/7,$1,600/月</title>
+        <rect x="429" y="525" width="30" height="30" rx="7" fill="none" stroke="var(--c6)" stroke-width="2"></rect>
         <rect x="433" y="529" width="22" height="22" rx="4" fill="var(--c3)" stroke="var(--card)" stroke-width="2.5"></rect>
         <text class="pin-num" x="444" y="544.5">3</text>
-        <text class="pin-label" x="428" y="545" text-anchor="end">3221 S Hill · $1,600</text>
+        <text class="pin-label" x="426" y="545" text-anchor="end">3221 S Hill · $1,600 ✓喷淋</text>
       </g></a>
       <!-- combo 4: yellow diamond -->
       <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2958-w-pico-blvd/" target="_blank" rel="noopener"><g><title>:2958 W Pico Blvd(Pico & Hobart 转角),1,700 SF,自带 200A/240V,$2,006/月,首月免</title>
@@ -257,6 +292,7 @@
       <span class="k"><span class="sq" style="background: var(--deemph)"></span>方块 = 存车仓</span>
       <span class="k"><span class="di" style="background: var(--deemph)"></span>菱形 = 单址二合一</span>
       <span class="k"><span class="dot"></span>小灰点 = 备选点位</span>
+      <span class="k"><span class="sw" style="background: var(--c6)"></span>绿点 = 确认有喷淋的小门面(新)</span>
     </div>
   </figure>
 
@@ -287,6 +323,13 @@
       <p>◆ 2958 W Pico 转角 1,700 SF,自带 200A/240V 电力,首月免租,前店后仓</p>
       <p><a class="lk" href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2958-w-pico-blvd/" target="_blank" rel="noopener">房源页面 ↗</a></p>
       <p class="total">≈$2,006<small>/月 · 单址无穿梭</small></p>
+    </div>
+    <div class="card c6">
+      <h3>组合 6 · 喷淋安全版(新)</h3>
+      <p>● The Rise K-town 500–800 SF(2023 新楼,首月 $1)或 Koreatown Plaza 300 SF 起</p>
+      <p>■ 3221 S Hill 850 SF — $1,600 · <b>已查到 2015 年喷淋施工许可</b> · M1-2-O · 39 位门禁停车可装户外充电桩</p>
+      <p><a class="lk" href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683723" target="_blank" rel="noopener">The Rise 房源 ↗</a><a class="lk" href="https://www.loopnet.com/Listing/928-S-Western-Ave-Los-Angeles-CA/26831265/" target="_blank" rel="noopener">K Plaza 房源 ↗</a><a class="lk" href="https://www.loopnet.com/Listing/3221-S-Hill-St-Los-Angeles-CA/27810766/" target="_blank" rel="noopener">Hill 楼盘页 ↗</a></p>
+      <p class="total">≈$2,850–4,400<small>/月 · 两端有喷淋 · ≈3.4 mi</small></p>
     </div>
     <div class="card c5">
       <h3>组合 5 · 11th &amp; Western 大店</h3>
@@ -344,6 +387,37 @@
       <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2649376" target="_blank" rel="noopener">Robert Kim(정수킴)在租铺位合集(Radio Korea)</a> — 213-272-4810,7+ 个无权利金铺位</li>
       <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realty_rent&amp;wr_id=4528&amp;sca=hongsbroker" target="_blank" rel="noopener">Peter Hong(홍반장)/ Red Point Realty(Radio Korea)</a> — 213-255-8539</li>
     </ul></div>
+  </details>
+  <details class="links">
+    <summary>带喷淋小门面与后场备选(新增)</summary>
+    <div class="body">
+    <p><b>确认有喷淋(现代建筑按法规必装):</b></p>
+    <ul>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683723" target="_blank" rel="noopener">The Rise Koreatown,3525 W 8th(2023)— inline 500–800 SF、booth 150–200 SF,首月 $1;JW Lee 213-999-3225</a></li>
+      <li><a href="https://www.loopnet.com/Listing/928-S-Western-Ave-Los-Angeles-CA/26831265/" target="_blank" rel="noopener">Koreatown Plaza,928 S Western(1988 封闭商场)— 12 铺位,最小 300 SF;Geo Kim 213-382-1234</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/sage-la/" target="_blank" rel="noopener">Sage LA,200 N Vermont(2024 Class A+)— Space B 894 SF,地铁站上盖</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3500-W-6th-St-Los-Angeles-CA/22276306/" target="_blank" rel="noopener">City Center on 6th(2006–08)— 788 SF 起,$3–5/SF/月;Jamison 213-201-1085</a></li>
+      <li><a href="http://www.koreatowngalleria.com/contactus.html" target="_blank" rel="noopener">Koreatown Galleria,3250 W Olympic(2001)— 招商 323-733-6000</a></li>
+      <li><a href="https://www.loopnet.com/Listing/621-S-Western-Ave-Los-Angeles-CA/37148964/" target="_blank" rel="noopener">Madang Courtyard,621 S Western(~2003–10)</a></li>
+      <li><a href="https://www.cbre.com/properties/properties-for-lease/retail/details/US-SMPL-129598/nova-on-wilshire-3980-wilshire-blvd-los-angeles-ca-90020" target="_blank" rel="noopener">Nova on Wilshire,3980 Wilshire(新建)— 可分割谈 600–900 SF;CBRE</a></li>
+      <li><a href="https://www.commercialsearch.com/commercial-property/us/ca/los-angeles/not-verified-solair-retail/" target="_blank" rel="noopener">Solair #106,3785 Wilshire(2009 高层)— 765 SF,$2,295+NNN</a></li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683725" target="_blank" rel="noopener">JCWL Plaza,2707 W Olympic(新式广场)— Suite 101/201,1,263–1,800 SF,首月 $1(超 1,000 SF 备选)</a></li>
+    </ul>
+    <p><b>大概率有喷淋(1980 后建,签约前索证):</b></p>
+    <ul>
+      <li><a href="https://www.loopnet.com/Listing/355-365-S-Western-Ave-Los-Angeles-CA/29979490/" target="_blank" rel="noopener">355-365 S Western(1984)— 834 SF ≈ $3,128+</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3500-3548-W-8th-St-Los-Angeles-CA/27187727/" target="_blank" rel="noopener">Oxford Center,3500-3548 W 8th(1985)— 最小可分 771 SF(历史有 137 SF 微铺)</a></li>
+      <li><a href="https://www.loopnet.com/Listing/1101-S-Vermont-Ave-Los-Angeles-CA/38573576/" target="_blank" rel="noopener">1101 S Vermont(1987)</a> · <a href="https://www.loopnet.com/Listing/955-S-Vermont-Ave-Los-Angeles-CA/25282041/" target="_blank" rel="noopener">Seoul Plaza(1981)</a> · <a href="https://www.loopnet.com/Listing/3550-Wilshire-Blvd-Los-Angeles-CA/37687456/" target="_blank" rel="noopener">The Walker 3550 Wilshire(高层改造中,608 SF 起)</a></li>
+    </ul>
+    <p><b>⚠️ 避雷(老建筑,大概率无喷淋):</b>Heyman Center 730-740 S Western(1956)· Wilshire Galleria 3240 Wilshire(1939 + 再开发风险)· 866 S Western(1929)</p>
+    <p><b>3221 S Hill 尽调与后场备选:</b></p>
+    <ul>
+      <li><a href="https://www.loopnet.com/Listing/3221-S-Hill-St-Los-Angeles-CA/27810766/" target="_blank" rel="noopener">3221 S Hill 楼盘页(The Hill Studios,~24 单元)</a> — 2015 年 LADBS 喷淋许可 14043-10000-02808;Andrew 323-487-0624</li>
+      <li><a href="https://readyspaces.com/location/los-angeles/downtown-los-angeles/" target="_blank" rel="noopener">ReadySpaces,1919 Vineburn — 确认有喷淋,300–5,000 SF 月付含电,对充电最友好</a></li>
+      <li><a href="https://www.loopnet.com/Listing/2222-S-Figueroa-St-Los-Angeles-CA/30757594/" target="_blank" rel="noopener">2222 S Figueroa "Texere Plaza" — 确认有喷淋系统(2018 加喷头许可)</a></li>
+      <li><a href="https://www.largewarehousespace.com/listings/view/ojx2l/3751-s-hill-st" target="_blank" rel="noopener">3751 S Hill — 最便宜($1.10–1.44/SF)但喷淋未知,看房验立管</a></li>
+    </ul>
+    </div>
   </details>
   <p class="fn">⚠️ Craigslist 与 Radio Korea 链接时效性强,失效时请按地址搜索或直接打表内电话。</p>
   <p class="fn">备选点位(灰点):Solair @ Wilshire/Western 地铁口($2,295 起)、City Center on 6th(18 个铺位在租)、Haddon Hall 8th St(500 SF 起)、3006 Wilshire(~$2,800–3,000)、1729 S Santee 仓($2,400 全包)、Big Art Labs($2,425 全包、24/7 门禁)、1499 E 4th Boyle Heights(2,600 SF $4,000 全包)。完整清单与联系方式见仓库 <code>la-ktown-combo-site-options.md</code>。地图为经纬度投影示意图,街道经简化,距离为直线距离。</p>
