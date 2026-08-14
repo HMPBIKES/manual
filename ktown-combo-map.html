@@ -1,0 +1,282 @@
+<title>K-town 组合选址地图</title>
+<style>
+  :root {
+    --paper: #FAF8F4;
+    --card: #FFFFFF;
+    --ink: #23262B;
+    --ink-2: #5C594F;
+    --muted: #8A857A;
+    --line: #E5E0D4;
+    --line-soft: #EFEAE0;
+    --accent: #C85F06;
+    --accent-wash: rgba(210, 101, 10, 0.07);
+    --deemph: #A39B8C;
+    --lane: #C9C2B2;
+    --wash: rgba(138, 133, 122, 0.09);
+    --c1: #2a78d6; --c2: #eb6834; --c3: #1baf7a; --c4: #eda100; --c5: #e87ba4;
+    --pin-dark-text: #17181C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+      --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+      --accent: #F08A2B; --accent-wash: rgba(217, 111, 20, 0.12);
+      --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
+      --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+    --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+    --accent: #F08A2B; --accent-wash: rgba(217, 111, 20, 0.12);
+    --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
+    --c1: #3987e5; --c2: #d95926; --c3: #199e70; --c4: #c98500; --c5: #d55181;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.7;
+  }
+  main { max-width: 60em; margin: 0 auto; padding: 0 20px 80px; }
+  header { padding: 44px 0 6px; }
+  .eyebrow { font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+  h1 { font-size: clamp(26px, 4.6vw, 36px); font-weight: 900; margin: 0 0 8px; line-height: 1.3; text-wrap: balance; }
+  .dek { color: var(--ink-2); margin: 0 0 4px; max-width: 44em; }
+  .meta { font-size: 12.5px; color: var(--muted); margin: 0; }
+
+  figure.map { margin: 24px 0 8px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 10px 4px; }
+  figure.map svg { width: 100%; height: auto; display: block; }
+  .maplegend { display: flex; flex-wrap: wrap; gap: 14px 22px; padding: 8px 10px 10px; font-size: 12.5px; color: var(--ink-2); border-top: 1px solid var(--line-soft); }
+  .maplegend .k { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+  .sq { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  .di { width: 11px; height: 11px; transform: rotate(45deg); border-radius: 2px; display: inline-block; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--deemph); display: inline-block; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 22px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px 12px; border-top: 4px solid var(--line); }
+  .card.c1 { border-top-color: var(--c1); } .card.c2 { border-top-color: var(--c2); }
+  .card.c3 { border-top-color: var(--c3); } .card.c4 { border-top-color: var(--c4); }
+  .card.c5 { border-top-color: var(--c5); }
+  .card h3 { margin: 0 0 4px; font-size: 15.5px; font-weight: 800; }
+  .card p { margin: 3px 0; font-size: 13px; color: var(--ink-2); }
+  .card .total { font-size: 20px; font-weight: 800; color: var(--ink); margin-top: 7px; }
+  .card .total small { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .fn { font-size: 12.5px; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+
+  /* SVG text styles */
+  .st { font-size: 11px; fill: var(--muted); letter-spacing: 0.04em; }
+  .area-label { font-size: 12px; font-weight: 800; fill: var(--muted); letter-spacing: 0.12em; }
+  .pin-label { font-size: 11.5px; font-weight: 700; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .alt-label { font-size: 10.5px; font-weight: 600; fill: var(--muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .pin-num { font-size: 12.5px; font-weight: 800; fill: #FFFFFF; text-anchor: middle; }
+  .pin-num.dk { fill: var(--pin-dark-text); }
+  .dist { font-size: 10.5px; font-weight: 700; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .fwy { stroke: var(--lane); stroke-width: 5; fill: none; stroke-linecap: round; }
+  .fwy-label { font-size: 10px; font-weight: 800; fill: var(--muted); }
+  .street { stroke: var(--line); stroke-width: 2; }
+  .combo-line { fill: none; stroke-width: 2.5; stroke-dasharray: 6 5; }
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">HMP Bikes · Site Combos · 2026-08-14</p>
+    <h1>K-town 换电点 + 存车仓:五套组合地图</h1>
+    <p class="dek">圆点 = K-town 充电换电前台,方块 = 低价存车仓,菱形 = 单址二合一;虚线为组合连线(标注直线距离)。灰色小点为备选点位。</p>
+    <p class="meta">按真实经纬度投影的示意图,非精确比例;所有房源以 2026-08-14 挂盘信息为准,签约前需核实。</p>
+  </header>
+
+  <figure class="map">
+    <svg viewBox="0 0 860 900" role="img" aria-label="洛杉矶中部地图,显示五套 K-town 换电点与存车仓组合的位置连线">
+      <!-- area washes -->
+      <rect x="168" y="150" width="180" height="190" rx="10" fill="var(--accent-wash)"></rect>
+      <rect x="352" y="238" width="108" height="100" rx="10" fill="var(--wash)"></rect>
+      <rect x="352" y="342" width="108" height="88" rx="10" fill="var(--wash)"></rect>
+      <rect x="480" y="190" width="160" height="266" rx="10" fill="var(--wash)"></rect>
+      <rect x="290" y="512" width="120" height="72" rx="10" fill="var(--wash)"></rect>
+      <rect x="700" y="290" width="150" height="150" rx="10" fill="var(--wash)"></rect>
+
+      <!-- streets: E-W (K-town side, x 40-470) -->
+      <line class="street" x1="40" y1="78"  x2="470" y2="78"></line>
+      <line class="street" x1="40" y1="138" x2="470" y2="138"></line>
+      <line class="street" x1="40" y1="184" x2="470" y2="184"></line>
+      <line class="street" x1="40" y1="207" x2="470" y2="207"></line>
+      <line class="street" x1="40" y1="237" x2="470" y2="237"></line>
+      <line class="street" x1="40" y1="284" x2="470" y2="284"></line>
+      <line class="street" x1="40" y1="328" x2="470" y2="328"></line>
+      <line class="street" x1="40" y1="384" x2="470" y2="384"></line>
+      <!-- streets: south/east grid -->
+      <line class="street" x1="340" y1="441" x2="640" y2="441"></line>
+      <line class="street" x1="340" y1="511" x2="620" y2="511"></line>
+      <line class="street" x1="340" y1="577" x2="620" y2="577"></line>
+      <line class="street" x1="380" y1="704" x2="700" y2="704"></line>
+      <line class="street" x1="380" y1="829" x2="700" y2="829"></line>
+      <!-- streets: N-S -->
+      <line class="street" x1="186" y1="60"  x2="186" y2="420"></line>
+      <line class="street" x1="249" y1="60"  x2="249" y2="420"></line>
+      <line class="street" x1="312" y1="60"  x2="312" y2="420"></line>
+      <line class="street" x1="367" y1="60"  x2="367" y2="420"></line>
+      <line class="street" x1="407" y1="460" x2="407" y2="880"></line>
+      <line class="street" x1="444" y1="460" x2="444" y2="880"></line>
+
+      <!-- freeways -->
+      <path class="fwy" d="M 0 427 L 470 427 Q 540 432 580 448 L 860 462"></path>
+      <path class="fwy" d="M 505 120 L 500 207 L 470 328 L 412 441 L 398 577 L 395 880"></path>
+      <text class="fwy-label" x="614" y="446">I-10</text>
+      <text class="fwy-label" x="378" y="640">110</text>
+
+      <!-- metro D line -->
+      <line x1="150" y1="207" x2="335" y2="207" stroke="var(--muted)" stroke-width="3" stroke-dasharray="2 4"></line>
+      <circle cx="186" cy="207" r="3.5" fill="var(--muted)"></circle>
+      <circle cx="249" cy="207" r="3.5" fill="var(--muted)"></circle>
+      <circle cx="312" cy="207" r="3.5" fill="var(--muted)"></circle>
+      <text class="st" x="222" y="221">Metro D 线</text>
+
+      <!-- street labels -->
+      <text class="st" x="44" y="74">Beverly Bl</text>
+      <text class="st" x="44" y="134">3rd St</text>
+      <text class="st" x="44" y="180">6th St</text>
+      <text class="st" x="44" y="203">Wilshire Bl</text>
+      <text class="st" x="44" y="233">8th St</text>
+      <text class="st" x="44" y="280">Olympic Bl</text>
+      <text class="st" x="44" y="324">Pico Bl</text>
+      <text class="st" x="44" y="380">Venice Bl</text>
+      <text class="st" x="344" y="437">Washington Bl</text>
+      <text class="st" x="344" y="507">Adams Bl</text>
+      <text class="st" x="344" y="573">Exposition Bl</text>
+      <text class="st" x="604" y="700">Vernon Av</text>
+      <text class="st" x="390" y="845">Slauson Av</text>
+      <text class="st" transform="rotate(-90 181 120)" x="181" y="120">Western Av</text>
+      <text class="st" transform="rotate(-90 244 156)" x="244" y="156">Normandie Av</text>
+      <text class="st" transform="rotate(-90 307 120)" x="307" y="120">Vermont Av</text>
+      <text class="st" transform="rotate(-90 362 150)" x="362" y="150">Hoover St</text>
+      <text class="st" transform="rotate(-90 402 700)" x="402" y="700">Broadway</text>
+      <text class="st" transform="rotate(-90 439 660)" x="439" y="660">Hill St</text>
+
+      <!-- area labels -->
+      <text class="area-label" x="180" y="168" style="fill: var(--accent)">KOREATOWN 韩国城</text>
+      <text class="area-label" x="360" y="256">WESTLAKE</text>
+      <text class="area-label" x="356" y="424">PICO-UNION</text>
+      <text class="area-label" x="540" y="212">DTLA</text>
+      <text class="area-label" x="560" y="500" style="font-size:10.5px">FASHION DIST.</text>
+      <text class="area-label" x="298" y="530">USC · EXPO PARK</text>
+      <text class="area-label" x="712" y="312">BOYLE HTS</text>
+      <text class="area-label" x="700" y="740">VERNON</text>
+      <text class="area-label" x="502" y="762">SOUTH LA</text>
+
+      <!-- combo lines (under pins) -->
+      <path class="combo-line" style="stroke: var(--c1)" d="M 437 300 Q 560 540 466 808"></path>
+      <path class="combo-line" style="stroke: var(--c2)" d="M 312 302 Q 450 310 588 428"></path>
+      <line class="combo-line" style="stroke: var(--c3)" x1="186" y1="231" x2="444" y2="540"></line>
+      <line class="combo-line" style="stroke: var(--c5)" x1="186" y1="302" x2="427" y2="363"></line>
+
+      <!-- alternate dots -->
+      <circle cx="186" cy="202" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="178" y="191" text-anchor="end">Solair $2,295+</text>
+      <circle cx="197" cy="184" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="207" y="196">City Center 18 铺</text>
+      <circle cx="291" cy="237" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="299" y="232">Haddon Hall</text>
+      <circle cx="333" cy="207" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="341" y="200">3006 Wilshire</text>
+      <circle cx="538" cy="484" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="546" y="478">1729 Santee $2,400</text>
+      <circle cx="806" cy="212" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="798" y="205" text-anchor="end">Big Art Labs $2,425</text>
+      <circle cx="767" cy="371" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="759" y="364" text-anchor="end">1499 E 4th $4,000</text>
+
+      <!-- combo 1: blue -->
+      <g><title>组合1 换电点:1723 James M Wood Blvd,750 SF,$712/月,月付</title>
+        <circle cx="437" cy="300" r="13" fill="var(--c1)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="437" y="304.5">1</text>
+        <text class="pin-label" x="454" y="297">James M Wood · $712</text>
+      </g>
+      <g><title>组合1 存车:Truck Parking Club,201 E 58th St,围栏场地按位月租</title>
+        <rect x="455" y="797" width="22" height="22" rx="4" fill="var(--c1)" stroke="var(--card)" stroke-width="2.5"></rect>
+        <text class="pin-num" x="466" y="812.5">1</text>
+        <text class="pin-label" x="484" y="812">TPC 58th St 场地 · 按位</text>
+      </g>
+      <!-- combo 2: orange -->
+      <g><title>组合2 换电点:1101 S Vermont Ave #108,550 SF,$1,650/月 NNN</title>
+        <circle cx="312" cy="302" r="13" fill="var(--c2)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="312" y="306.5">2</text>
+        <text class="pin-label" x="326" y="283">1101 S Vermont · $1,650</text>
+      </g>
+      <g><title>组合2 存车:210 E Olympic Blvd #133,900 SF 卷帘门,$1,300/月</title>
+        <rect x="577" y="417" width="22" height="22" rx="4" fill="var(--c2)" stroke="var(--card)" stroke-width="2.5"></rect>
+        <text class="pin-num" x="588" y="432.5">2</text>
+        <text class="pin-label" x="604" y="432">210 E Olympic · $1,300</text>
+      </g>
+      <!-- combo 3: aqua -->
+      <g><title>组合3 换电点:730-740 S Western Ave,428-510 SF,约 $1,275-1,530/月</title>
+        <circle cx="186" cy="231" r="13" fill="var(--c3)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="186" y="235.5">3</text>
+        <text class="pin-label" x="168" y="227" text-anchor="end">730 S Western · $1.3–1.5k</text>
+      </g>
+      <g><title>组合3 存车:3221 S Hill St,850 SF,M1 分区、卷帘门、门禁 24/7,$1,600/月</title>
+        <rect x="433" y="529" width="22" height="22" rx="4" fill="var(--c3)" stroke="var(--card)" stroke-width="2.5"></rect>
+        <text class="pin-num" x="444" y="544.5">3</text>
+        <text class="pin-label" x="428" y="545" text-anchor="end">3221 S Hill · $1,600</text>
+      </g>
+      <!-- combo 4: yellow diamond -->
+      <g><title>组合4 单址二合一:2958 W Pico Blvd(Pico & Hobart 转角),1,700 SF,自带 200A/240V,$2,006/月,首月免</title>
+        <rect x="211" y="328" width="20" height="20" rx="4" fill="var(--c4)" stroke="var(--card)" stroke-width="2.5" transform="rotate(45 211 328) translate(-10 -10)"></rect>
+        <text class="pin-num dk" x="211" y="332.5">4</text>
+        <text class="pin-label" x="206" y="356" text-anchor="end">2958 W Pico 单址 · $2,006</text>
+      </g>
+      <!-- combo 5: magenta -->
+      <g><title>组合5 换电点:11th & Western #103,1,297 SF,$2,893 + NNN,首月免租</title>
+        <circle cx="186" cy="302" r="13" fill="var(--c5)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num dk" x="186" y="306.5">5</text>
+        <text class="pin-label" x="168" y="307" text-anchor="end">11th &amp; Western · $2,893</text>
+      </g>
+      <g><title>组合5 存车:K-Town Storage,Burlington Ave 90015,1,100 SF,$740/月</title>
+        <rect x="416" y="352" width="22" height="22" rx="4" fill="var(--c5)" stroke="var(--card)" stroke-width="2.5"></rect>
+        <text class="pin-num dk" x="427" y="367.5">5</text>
+        <text class="pin-label" x="400" y="394" text-anchor="middle">Burlington 仓 · $740</text>
+      </g>
+    </svg>
+    <div class="maplegend">
+      <span class="k"><span class="sw" style="background: var(--deemph)"></span>圆点 = 换电前台</span>
+      <span class="k"><span class="sq" style="background: var(--deemph)"></span>方块 = 存车仓</span>
+      <span class="k"><span class="di" style="background: var(--deemph)"></span>菱形 = 单址二合一</span>
+      <span class="k"><span class="dot"></span>小灰点 = 备选点位</span>
+    </div>
+  </figure>
+
+  <div class="cards">
+    <div class="card c1">
+      <h3>组合 1 · 月租试水 MVP</h3>
+      <p>● James M Wood Blvd 750 SF — $712(月付无长约)</p>
+      <p>■ TPC 58th St 围栏场地 — 按位 ~$500–1,000</p>
+      <p class="total">≈$1,200–1,700<small>/月 · 两点直线 ≈4.0 mi</small></p>
+    </div>
+    <div class="card c2">
+      <h3>组合 2 · Vermont 双点</h3>
+      <p>● 1101 S Vermont #108 550 SF(已装修)— $1,650</p>
+      <p>■ 210 E Olympic 900 SF 卷帘门 — $1,300</p>
+      <p class="total">≈$2,950<small>/月 + NNN · ≈2.4 mi</small></p>
+    </div>
+    <div class="card c3">
+      <h3>组合 3 · 西大街旗舰</h3>
+      <p>● 730-740 S Western ~510 SF — $1,275–1,530</p>
+      <p>■ 3221 S Hill 850 SF · M1 · 门禁 24/7 — $1,600</p>
+      <p class="total">≈$2,900–3,200<small>/月 + NNN · ≈3.3 mi</small></p>
+    </div>
+    <div class="card c4">
+      <h3>组合 4 · 单址二合一</h3>
+      <p>◆ 2958 W Pico 转角 1,700 SF,自带 200A/240V 电力,首月免租,前店后仓</p>
+      <p class="total">≈$2,006<small>/月 · 单址无穿梭</small></p>
+    </div>
+    <div class="card c5">
+      <h3>组合 5 · 11th &amp; Western 大店</h3>
+      <p>● 11th &amp; Western 1,297 SF(首月免)— $2,893 + ~$650 NNN</p>
+      <p>■ Burlington Ave 仓 1,100 SF — $740</p>
+      <p class="total">≈$4,283<small>/月 · ≈2.0 mi</small></p>
+    </div>
+  </div>
+
+  <p class="fn">备选点位(灰点):Solair @ Wilshire/Western 地铁口($2,295 起)、City Center on 6th(18 个铺位在租)、Haddon Hall 8th St(500 SF 起)、3006 Wilshire(~$2,800–3,000)、1729 S Santee 仓($2,400 全包)、Big Art Labs($2,425 全包、24/7 门禁)、1499 E 4th Boyle Heights(2,600 SF $4,000 全包)。完整清单与联系方式见仓库 <code>la-ktown-combo-site-options.md</code>。地图为经纬度投影示意图,街道经简化,距离为直线距离。</p>
+</main>
