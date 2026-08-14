@@ -120,3 +120,48 @@
 ---
 
 *来源:Radio Korea 分类广告(radiokorea.com/bulletin,상가 板块)、Craigslist LA、CommercialCafe、LoopNet/CityFeet/CBRE 页面与摘要、Truck Parking Club、Neighbor.com、LADBS/LADWP/LAFD 官方文件、PopWheels/Swobbee 技术规格。所有房源信息以 2026-08-14 抓取为准,签约前必须核实。*
+
+---
+
+## 六、专项调研:≤1,000 SF 带喷淋的 K-town 小门面 + 3221 S Hill 尽调(2026-08-14 补充)
+
+**策略确认**:换电前台放 K-town 小铺(只做电池交接 + 少量现场充电),批量充电放 3221 S Hill 工业单元——把消防成本最高的环节挪进 M1 仓库,前台合规压力大幅下降(室内充电保持 <20 kWh、<6 台设备即可避开重审查)。
+
+### 3221 S Hill St 尽调结论:✅ 通过,适合仓储 + 充电
+
+| 项目 | 结论 |
+|---|---|
+| 建筑 | 20,545 SF 单层砖混仓库,**1956 年建**,0.82 英亩转角地块(Hill & 32nd),约 24 个独立单元(2013–2015 年改造,业主 The Hill Studios LLC,2010 年 $2.16M 购入) |
+| **喷淋** | **有直接许可证据**:LADBS 消防喷淋许可 14043-10000-02808(2015-04-10,Mega Fire Protection)"T.I. within existing warehouse. Added sprinklers due to new full height walls"。看房时需确认所租单元覆盖 + NFPA 25 五年检测证书(2023 年 5 月后的许可数据未能核查) |
+| 分区 | ZIMAS 核实 **M1-2-O**(轻工业),Southeast LA 规划区,无 CPIO 限制——租赁/电池服务/充电均友好 |
+| 电力 | 无 EV/服务升级许可记录,单元级电力可能有限;同类改造楼(3000 S Hill)以 **600A/240V 三相 house power** 为基准——看房必问;2019 年有屋顶太阳能电工许可 |
+| 充电改造路径 | 20–40 kW 需房东书面同意 + LADBS 电工许可(≤400A 免 plan check)+ 可能 LADWP 升级(留数月余量);**39 个门禁车位可装户外充电桩**(转角地块走线方便);90007 属弱势社区,LADWP 返利每桩最高 $5,000 |
+| 租金 | 750/800/850/1,100 SF 从 $1,300/月起(≈$1.63–1.73/SF,同街 3751 S Hill 只要 $1.10–1.44/SF 但 1942 年建、喷淋未知);联系 Andrew 323-487-0624 |
+
+**Hill 备选(若谈不成)**:2222 S Figueroa "Texere Plaza"(1924 年但**确认有喷淋系统**,2018 年加喷头许可,flex 672–2,818 SF);**ReadySpaces**(1919 Vineburn Ave,确认有喷淋,300–5,000 SF 月付、含电力、运营商模式对充电最友好);3751 S Hill(最便宜但喷淋未知,看房验喷淋立管)。
+
+### K-town ≤1,000 SF 门面:按喷淋确定性排序
+
+**A. 确认有喷淋(现代建筑,按代码强制安装):**
+
+| 物业 | 单元 | 价格 | 备注 |
+|---|---|---|---|
+| **The Rise Koreatown**,3525 W 8th St(2023 年新楼,Zion Market 锚定) | inline 500–800 SF + booth 150–200 SF | 询价,**首月 $1 促销** | 8th & Oxford,365 户公寓底商;JW Lee 213-999-3225 |
+| **Koreatown Plaza**,928 S Western(1988 封闭商场) | 12 个铺位,**最小 300 SF** | 询价 | 全场最小面积选项;Blue Crane LA / Geo Kim 213-382-1234 |
+| **Sage LA**,200 N Vermont(2024 Class A+) | Space B 894 SF | 询价 | Vermont/Beverly B 线地铁站;最适合现场充电柜的新楼 |
+| **City Center on 6th**,3500 W 6th(2006–08) | 最小 788 SF | $3.00–5.00/SF/月 | H Mart 锚定;Jamison 213-201-1085 |
+| **Koreatown Galleria**,3250 W Olympic(2001 三层商场) | 询价 | 询价 | 招商 323-733-6000 |
+| **Madang Courtyard**,621 S Western(~2003–10) | 常有 <1,000 SF inline | 询价 | 213-387-8811 |
+| **Nova on Wilshire**,3980 Wilshire(新建 7 层) | 14,310 SF 可分割,可谈 600–900 SF | 询价 | CBRE Johnny Choi |
+| Solair #106,3785 Wilshire(2009 高层) | 765 SF | $2,295 + NNN | 地铁口;高层住宅底商,按代码全喷淋 |
+
+**B. 大概率有喷淋(1980 后建,签约前索要证明):** 355-365 S Western 834 SF(1984,≈$3,128+)· Oxford Center 3500-3548 W 8th(1985,最小可分 771 SF,历史上有 137 SF 微型单元)· 1101 S Vermont(1987)· Seoul Plaza 955 S Vermont(1981)· The Walker 3550 Wilshire(1968 高层,受 LA 高层喷淋改造条例约束且 2025 年整楼改造中,608 SF 起 $2.75–3.50/SF)· 90020 区 900 SF/1994 年建盘(≈$2,547/月,LoopNet 90020 搜索卡片,需定位具体地址)
+
+**C. 避雷(大概率无喷淋的老建筑):** Heyman Center 730-740 S Western 428 SF(**1956 年建**——原组合 3 前台,若仅做无充电取还点可用,现场充电则不选)· Wilshire Galleria 650 SF(1939 年壳体 + 再开发风险)· 866 S Western(1929)· 11th & Western #103(年代不明,需向房东确认——原组合 5 前台)
+
+### 推荐新组合(组合 6:喷淋安全版)
+
+- **前台**:The Rise Koreatown 500 SF 级(首月 $1,新楼喷淋齐全)或 Koreatown Plaza 300 SF(最省)
+- **后场**:3221 S Hill 850 SF($1,600,有喷淋证据 + M1 + 门禁 24/7)
+- 预算:前台按 $2.5–3.5/SF 估 $1,250–2,800 + 后场 $1,600 = **约 $2,850–4,400/月**,均在 $5,000 内,且两端都有喷淋
+- 行动:① Andrew(323-487-0624)看 Hill 单元,现场核实喷淋覆盖与 house power;② JW Lee(213-999-3225)问 The Rise 小铺报价;③ Geo Kim(213-382-1234)问 Koreatown Plaza 300 SF 报价
