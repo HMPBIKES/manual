@@ -77,6 +77,20 @@
   .fwy-label { font-size: 10px; font-weight: 800; fill: var(--muted); }
   .street { stroke: var(--line); stroke-width: 2; }
   .combo-line { fill: none; stroke-width: 2.5; stroke-dasharray: 6 5; }
+  svg a { cursor: pointer; }
+  svg a:hover circle, svg a:hover rect { filter: brightness(0.88); }
+  svg a:hover .pin-label, svg a:hover .alt-label { fill: var(--accent); }
+  svg a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .card a.lk { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; margin: 7px 6px 0 0; text-decoration: none; }
+  .card a.lk:hover, .card a.lk:focus-visible { border-color: var(--accent); }
+  .card a.lk:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  details.links { margin: 10px 0; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+  details.links summary { cursor: pointer; padding: 11px 16px; font-weight: 700; font-size: 14px; }
+  details.links summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 10px; }
+  details.links .body { padding: 0 18px 12px; font-size: 13px; }
+  details.links li { margin: 4px 0; }
+  details.links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  details.links a:hover { border-bottom-color: var(--accent); }
 </style>
 
 <main>
@@ -172,71 +186,71 @@
       <line class="combo-line" style="stroke: var(--c5)" x1="186" y1="302" x2="427" y2="363"></line>
 
       <!-- alternate dots -->
-      <circle cx="186" cy="202" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="178" y="191" text-anchor="end">Solair $2,295+</text>
-      <circle cx="197" cy="184" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="207" y="196">City Center 18 铺</text>
-      <circle cx="291" cy="237" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="299" y="232">Haddon Hall</text>
-      <circle cx="333" cy="207" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="341" y="200">3006 Wilshire</text>
-      <circle cx="538" cy="484" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="546" y="478">1729 Santee $2,400</text>
-      <circle cx="806" cy="212" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="798" y="205" text-anchor="end">Big Art Labs $2,425</text>
-      <circle cx="767" cy="371" r="4" fill="var(--deemph)"></circle>
-      <text class="alt-label" x="759" y="364" text-anchor="end">1499 E 4th $4,000</text>
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/not-verified-solair-retail/" target="_blank" rel="noopener"><circle cx="186" cy="202" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="178" y="191" text-anchor="end">Solair $2,295+</text></a>
+      <a href="https://www.loopnet.com/Listing/3500-W-6th-St-Los-Angeles-CA/22276306/" target="_blank" rel="noopener"><circle cx="197" cy="184" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="207" y="196">City Center 18 铺</text></a>
+      <a href="https://www.loopnet.com/Listing/3176-3188-W-8th-St-Los-Angeles-CA/29981151/" target="_blank" rel="noopener"><circle cx="291" cy="237" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="299" y="232">Haddon Hall</text></a>
+      <a href="https://www.loopnet.com/Listing/3006-Wilshire-Blvd-Los-Angeles-CA/35459630/" target="_blank" rel="noopener"><circle cx="333" cy="207" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="341" y="200">3006 Wilshire</text></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-1000sf-warehouse-in/wYPSqxbJxkxunPMdehLwQm" target="_blank" rel="noopener"><circle cx="538" cy="484" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="546" y="478">1729 Santee $2,400</text></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-large-art-fabrication/xrpXgdqeb46ipfe3txGPKW" target="_blank" rel="noopener"><circle cx="806" cy="212" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="798" y="205" text-anchor="end">Big Art Labs $2,425</text></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-creative-office-studio/cYKTniAKiZwoLtafu5srX6" target="_blank" rel="noopener"><circle cx="767" cy="371" r="4" fill="var(--deemph)"></circle>
+      <text class="alt-label" x="759" y="364" text-anchor="end">1499 E 4th $4,000</text></a>
 
       <!-- combo 1: blue -->
-      <g><title>组合1 换电点:1723 James M Wood Blvd,750 SF,$712/月,月付</title>
+      <a href="https://www.craigslist.org/view/d/los-angeles-perfect-retail-space/pSBGQk1jkQJK9k3o3MmSYe" target="_blank" rel="noopener"><g><title>:1723 James M Wood Blvd,750 SF,$712/月,月付</title>
         <circle cx="437" cy="300" r="13" fill="var(--c1)" stroke="var(--card)" stroke-width="2.5"></circle>
         <text class="pin-num" x="437" y="304.5">1</text>
         <text class="pin-label" x="454" y="297">James M Wood · $712</text>
-      </g>
-      <g><title>组合1 存车:Truck Parking Club,201 E 58th St,围栏场地按位月租</title>
+      </g></a>
+      <a href="https://truckparkingclub.com/truck-parking/california/los-angeles/201-e-58th-st-90011" target="_blank" rel="noopener"><g><title>:Truck Parking Club,201 E 58th St,围栏场地按位月租</title>
         <rect x="455" y="797" width="22" height="22" rx="4" fill="var(--c1)" stroke="var(--card)" stroke-width="2.5"></rect>
         <text class="pin-num" x="466" y="812.5">1</text>
         <text class="pin-label" x="484" y="812">TPC 58th St 场地 · 按位</text>
-      </g>
+      </g></a>
       <!-- combo 2: orange -->
-      <g><title>组合2 换电点:1101 S Vermont Ave #108,550 SF,$1,650/月 NNN</title>
+      <a href="https://www.loopnet.com/Listing/1101-S-Vermont-Ave-Los-Angeles-CA/38573576/" target="_blank" rel="noopener"><g><title>:1101 S Vermont Ave #108,550 SF,$1,650/月 NNN</title>
         <circle cx="312" cy="302" r="13" fill="var(--c2)" stroke="var(--card)" stroke-width="2.5"></circle>
         <text class="pin-num" x="312" y="306.5">2</text>
         <text class="pin-label" x="326" y="283">1101 S Vermont · $1,650</text>
-      </g>
-      <g><title>组合2 存车:210 E Olympic Blvd #133,900 SF 卷帘门,$1,300/月</title>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-210-olympic-blvd-retail/3JXyvSbqXpDgPdw3NFiucm" target="_blank" rel="noopener"><g><title>:210 E Olympic Blvd #133,900 SF 卷帘门,$1,300/月</title>
         <rect x="577" y="417" width="22" height="22" rx="4" fill="var(--c2)" stroke="var(--card)" stroke-width="2.5"></rect>
         <text class="pin-num" x="588" y="432.5">2</text>
         <text class="pin-label" x="604" y="432">210 E Olympic · $1,300</text>
-      </g>
+      </g></a>
       <!-- combo 3: aqua -->
-      <g><title>组合3 换电点:730-740 S Western Ave,428-510 SF,约 $1,275-1,530/月</title>
+      <a href="https://www.loopnet.com/Listing/730-740-S-Western-Ave-Los-Angeles-CA/31084795/" target="_blank" rel="noopener"><g><title>:730-740 S Western Ave,428-510 SF,约 $1,275-1,530/月</title>
         <circle cx="186" cy="231" r="13" fill="var(--c3)" stroke="var(--card)" stroke-width="2.5"></circle>
         <text class="pin-num" x="186" y="235.5">3</text>
         <text class="pin-label" x="168" y="227" text-anchor="end">730 S Western · $1.3–1.5k</text>
-      </g>
-      <g><title>组合3 存车:3221 S Hill St,850 SF,M1 分区、卷帘门、门禁 24/7,$1,600/月</title>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-industrial-leasing/mHyoY5neNTwjyvJo7km8zN" target="_blank" rel="noopener"><g><title>:3221 S Hill St,850 SF,M1 分区、卷帘门、门禁 24/7,$1,600/月</title>
         <rect x="433" y="529" width="22" height="22" rx="4" fill="var(--c3)" stroke="var(--card)" stroke-width="2.5"></rect>
         <text class="pin-num" x="444" y="544.5">3</text>
         <text class="pin-label" x="428" y="545" text-anchor="end">3221 S Hill · $1,600</text>
-      </g>
+      </g></a>
       <!-- combo 4: yellow diamond -->
-      <g><title>组合4 单址二合一:2958 W Pico Blvd(Pico & Hobart 转角),1,700 SF,自带 200A/240V,$2,006/月,首月免</title>
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2958-w-pico-blvd/" target="_blank" rel="noopener"><g><title>:2958 W Pico Blvd(Pico & Hobart 转角),1,700 SF,自带 200A/240V,$2,006/月,首月免</title>
         <rect x="211" y="328" width="20" height="20" rx="4" fill="var(--c4)" stroke="var(--card)" stroke-width="2.5" transform="rotate(45 211 328) translate(-10 -10)"></rect>
         <text class="pin-num dk" x="211" y="332.5">4</text>
         <text class="pin-label" x="206" y="356" text-anchor="end">2958 W Pico 单址 · $2,006</text>
-      </g>
+      </g></a>
       <!-- combo 5: magenta -->
-      <g><title>组合5 换电点:11th & Western #103,1,297 SF,$2,893 + NNN,首月免租</title>
+      <a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683585" target="_blank" rel="noopener"><g><title>:11th & Western #103,1,297 SF,$2,893 + NNN,首月免租</title>
         <circle cx="186" cy="302" r="13" fill="var(--c5)" stroke="var(--card)" stroke-width="2.5"></circle>
         <text class="pin-num dk" x="186" y="306.5">5</text>
         <text class="pin-label" x="168" y="307" text-anchor="end">11th &amp; Western · $2,893</text>
-      </g>
-      <g><title>组合5 存车:K-Town Storage,Burlington Ave 90015,1,100 SF,$740/月</title>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-town-storage-with-free-rent/e8aHxKPN8VEe8k2GDTaNHx" target="_blank" rel="noopener"><g><title>:K-Town Storage,Burlington Ave 90015,1,100 SF,$740/月</title>
         <rect x="416" y="352" width="22" height="22" rx="4" fill="var(--c5)" stroke="var(--card)" stroke-width="2.5"></rect>
         <text class="pin-num dk" x="427" y="367.5">5</text>
         <text class="pin-label" x="400" y="394" text-anchor="middle">Burlington 仓 · $740</text>
-      </g>
+      </g></a>
     </svg>
     <div class="maplegend">
       <span class="k"><span class="sw" style="background: var(--deemph)"></span>圆点 = 换电前台</span>
@@ -251,32 +265,86 @@
       <h3>组合 1 · 月租试水 MVP</h3>
       <p>● James M Wood Blvd 750 SF — $712(月付无长约)</p>
       <p>■ TPC 58th St 围栏场地 — 按位 ~$500–1,000</p>
+      <p><a class="lk" href="https://www.craigslist.org/view/d/los-angeles-perfect-retail-space/pSBGQk1jkQJK9k3o3MmSYe" target="_blank" rel="noopener">换电点房源 ↗</a><a class="lk" href="https://truckparkingclub.com/truck-parking/california/los-angeles/201-e-58th-st-90011" target="_blank" rel="noopener">存车场地 ↗</a></p>
       <p class="total">≈$1,200–1,700<small>/月 · 两点直线 ≈4.0 mi</small></p>
     </div>
     <div class="card c2">
       <h3>组合 2 · Vermont 双点</h3>
       <p>● 1101 S Vermont #108 550 SF(已装修)— $1,650</p>
       <p>■ 210 E Olympic 900 SF 卷帘门 — $1,300</p>
+      <p><a class="lk" href="https://www.loopnet.com/Listing/1101-S-Vermont-Ave-Los-Angeles-CA/38573576/" target="_blank" rel="noopener">换电点房源 ↗</a><a class="lk" href="https://www.craigslist.org/view/d/los-angeles-210-olympic-blvd-retail/3JXyvSbqXpDgPdw3NFiucm" target="_blank" rel="noopener">存车仓房源 ↗</a></p>
       <p class="total">≈$2,950<small>/月 + NNN · ≈2.4 mi</small></p>
     </div>
     <div class="card c3">
       <h3>组合 3 · 西大街旗舰</h3>
       <p>● 730-740 S Western ~510 SF — $1,275–1,530</p>
       <p>■ 3221 S Hill 850 SF · M1 · 门禁 24/7 — $1,600</p>
+      <p><a class="lk" href="https://www.loopnet.com/Listing/730-740-S-Western-Ave-Los-Angeles-CA/31084795/" target="_blank" rel="noopener">换电点房源 ↗</a><a class="lk" href="https://www.craigslist.org/view/d/los-angeles-industrial-leasing/mHyoY5neNTwjyvJo7km8zN" target="_blank" rel="noopener">存车仓房源 ↗</a></p>
       <p class="total">≈$2,900–3,200<small>/月 + NNN · ≈3.3 mi</small></p>
     </div>
     <div class="card c4">
       <h3>组合 4 · 单址二合一</h3>
       <p>◆ 2958 W Pico 转角 1,700 SF,自带 200A/240V 电力,首月免租,前店后仓</p>
+      <p><a class="lk" href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2958-w-pico-blvd/" target="_blank" rel="noopener">房源页面 ↗</a></p>
       <p class="total">≈$2,006<small>/月 · 单址无穿梭</small></p>
     </div>
     <div class="card c5">
       <h3>组合 5 · 11th &amp; Western 大店</h3>
       <p>● 11th &amp; Western 1,297 SF(首月免)— $2,893 + ~$650 NNN</p>
       <p>■ Burlington Ave 仓 1,100 SF — $740</p>
+      <p><a class="lk" href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683585" target="_blank" rel="noopener">换电点房源(Radio Korea)↗</a><a class="lk" href="https://www.craigslist.org/view/d/los-angeles-town-storage-with-free-rent/e8aHxKPN8VEe8k2GDTaNHx" target="_blank" rel="noopener">存车仓房源 ↗</a></p>
       <p class="total">≈$4,283<small>/月 · ≈2.0 mi</small></p>
     </div>
   </div>
 
+  <details class="links">
+    <summary>全部房源链接 · K-town 门面(12+)</summary>
+    <div class="body"><ul>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-perfect-retail-space/pSBGQk1jkQJK9k3o3MmSYe" target="_blank" rel="noopener">1723 James M Wood Blvd — 750–1,150 SF,$712 起,月付</a></li>
+      <li><a href="https://www.loopnet.com/Listing/730-740-S-Western-Ave-Los-Angeles-CA/31084795/" target="_blank" rel="noopener">730-740 S Western(Heyman Center)— 428–2,363 SF,$30–60/SF/年</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3176-3188-W-8th-St-Los-Angeles-CA/29981151/" target="_blank" rel="noopener">Haddon Hall,3176-3188 W 8th St — 500–2,000 SF,~$3/SF/月</a></li>
+      <li><a href="https://www.loopnet.com/Listing/1101-S-Vermont-Ave-Los-Angeles-CA/38573576/" target="_blank" rel="noopener">1101 S Vermont #108 — 550 SF,$1,650 NNN</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3500-3548-W-8th-St-Los-Angeles-CA/32407233/" target="_blank" rel="noopener">Oxford Center,3500-3548 W 8th St — 137–3,444 SF,$33–45/SF/年</a></li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2677394" target="_blank" rel="noopener">1045 S Western — $2,000 含水电(Radio Korea,联系 Phillip 213-321-4645)</a></li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2683585" target="_blank" rel="noopener">11th &amp; Western #103 — 1,297 SF,$2,893+NNN,首月免(Radio Korea,BNF 760-870-8711)</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3006-Wilshire-Blvd-Los-Angeles-CA/35459630/" target="_blank" rel="noopener">3006 Wilshire — ~1,000 SF,~$2,800–3,000</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-prime-beverly-blvd/tRx3jdScxn2K3q4aegzpiN" target="_blank" rel="noopener">3122 Beverly Blvd — 800 SF,$2,950</a></li>
+      <li><a href="https://www.loopnet.com/Listing/355-365-S-Western-Ave-Los-Angeles-CA/29979490/" target="_blank" rel="noopener">355-365 S Western(Western &amp; 4th)— 834–1,560 SF,$45–54/SF/年</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/3619-w-3rd-st/" target="_blank" rel="noopener">3619 W 3rd St — 1,500 SF,$3,750 full service</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/not-verified-solair-retail/" target="_blank" rel="noopener">Solair,3785 Wilshire(地铁口)— 765–1,604 SF,$3/SF NNN</a></li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2673892" target="_blank" rel="noopener">4050 W 3rd St — 800 SF,$3,500,无权利金(Robert Kim 213-272-4810)</a></li>
+    </ul></div>
+  </details>
+  <details class="links">
+    <summary>全部房源链接 · 存车仓与场地(12+)</summary>
+    <div class="body"><ul>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-town-storage-with-free-rent/e8aHxKPN8VEe8k2GDTaNHx" target="_blank" rel="noopener">K-Town Storage,Burlington Ave 90015 — 1,100 SF,$740</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-210-olympic-blvd-retail/3JXyvSbqXpDgPdw3NFiucm" target="_blank" rel="noopener">210 E Olympic #133 — 900 SF 卷帘门,$1,300</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-industrial-leasing/mHyoY5neNTwjyvJo7km8zN" target="_blank" rel="noopener">3221 S Hill St — 750–1,100 SF,$1,300 起,M1、门禁、24/7</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/1325-venice-blvd/" target="_blank" rel="noopener">1325 Venice Blvd — 600 SF,$1,200</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2101-2117-w-pico-blvd/" target="_blank" rel="noopener">2101-2117 W Pico — 714–1,224 SF,$1,255 起 NNN</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-great-small-warehouse/6619Sxfuy2AajApJRt7r4p" target="_blank" rel="noopener">2701 S Hill St — 1,150 SF,$1,955(首月免)</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-1142-main-st-grnd-flr-flex/1o2EMXhRvKEjXm9zZ7mxU2" target="_blank" rel="noopener">1142.5 S Main St — ~1,700 SF,$2,100,卷帘门</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-1000sf-warehouse-in/wYPSqxbJxkxunPMdehLwQm" target="_blank" rel="noopener">1729 S Santee St — 1,000 SF,$2,400 全包</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-large-art-fabrication/xrpXgdqeb46ipfe3txGPKW" target="_blank" rel="noopener">Big Art Labs — 1,010 SF,$2,425 全包,24/7 门禁</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-dream-artist-studio-private/1tf5VfJofD31VnEkgxM4dx" target="_blank" rel="noopener">502 S Avenue 17,Lincoln Heights — 700 SF + 600 SF 围栏院,$2,550</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-creative-office-studio/cYKTniAKiZwoLtafu5srX6" target="_blank" rel="noopener">1499 E 4th St,Boyle Heights — 2,600 SF,$4,000 全包</a></li>
+      <li><a href="https://truckparkingclub.com/truck-parking/california/los-angeles/201-e-58th-st-90011" target="_blank" rel="noopener">Truck Parking Club,201 E 58th St — 围栏场地,按位月租,24/7</a></li>
+      <li><a href="https://www.neighbor.com/truck-parking-near-me/california/vernon" target="_blank" rel="noopener">Neighbor.com Vernon 场地 — ~$100–200/位/月</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-gated-parking-lot-many-uses/7rFPDWuY5ua5qxjiYpz9bw" target="_blank" rel="noopener">Exposition Blvd 围栏场 ~6,000 SF(带小办公室,询价)</a></li>
+    </ul></div>
+  </details>
+  <details class="links">
+    <summary>商场招商与经纪人</summary>
+    <div class="body"><ul>
+      <li><a href="https://www.loopnet.ca/Listing/928-S-Western-Ave-Los-Angeles-CA/26831265/" target="_blank" rel="noopener">Koreatown Plaza(928 S Western)</a> — Mark Hong / KORUS RE,213-251-9000 / 213-700-6780</li>
+      <li><a href="https://www.loopnet.com/Listing/621-S-Western-Ave-Los-Angeles-CA/37148964/" target="_blank" rel="noopener">Madang Courtyard(621 S Western)</a> — 招商 213-387-8811</li>
+      <li><a href="https://www.loopnet.com/Listing/3500-W-6th-St-Los-Angeles-CA/22276306/" target="_blank" rel="noopener">City Center on 6th(3500 W 6th)</a> — Jamison 213-201-1085,18 个铺位在租</li>
+      <li><a href="https://www.cbre.com/properties/properties-for-lease/retail/details/US-SMPL-76703/chapman-market-3465-w-6th-st-los-angeles-ca-90020" target="_blank" rel="noopener">Chapman Market(3465 W 6th)</a> — CBRE,可拆至 1,380 SF</li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realestate&amp;wr_id=2649376" target="_blank" rel="noopener">Robert Kim(정수킴)在租铺位合集(Radio Korea)</a> — 213-272-4810,7+ 个无权利金铺位</li>
+      <li><a href="https://www.radiokorea.com/bulletin/bbs/board.php?bo_table=c_realty_rent&amp;wr_id=4528&amp;sca=hongsbroker" target="_blank" rel="noopener">Peter Hong(홍반장)/ Red Point Realty(Radio Korea)</a> — 213-255-8539</li>
+    </ul></div>
+  </details>
+  <p class="fn">⚠️ Craigslist 与 Radio Korea 链接时效性强,失效时请按地址搜索或直接打表内电话。</p>
   <p class="fn">备选点位(灰点):Solair @ Wilshire/Western 地铁口($2,295 起)、City Center on 6th(18 个铺位在租)、Haddon Hall 8th St(500 SF 起)、3006 Wilshire(~$2,800–3,000)、1729 S Santee 仓($2,400 全包)、Big Art Labs($2,425 全包、24/7 门禁)、1499 E 4th Boyle Heights(2,600 SF $4,000 全包)。完整清单与联系方式见仓库 <code>la-ktown-combo-site-options.md</code>。地图为经纬度投影示意图,街道经简化,距离为直线距离。</p>
 </main>
