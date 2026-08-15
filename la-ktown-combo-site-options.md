@@ -398,3 +398,49 @@ $1,500–2,500 的 Grom 仿款/踏板(Boom Vader、Tao Tao 类):一箱油 100+ �
 ### 不要打的仗(诚实边界)
 
 - 55+ mph 上高速的场景、单程 100 mi 的跨城骑手、已经买了油车且有驾照的沉没成本人群——不追。目标客群是:无证骑手、零首付需求者、被偷过车/被停机伤过的人、以及 3–5 英里圈高频短单骑手。这四类加起来就是市场的大半。
+
+---
+
+## 十三、摩托租赁保险解决方案(2026-08-15 补充)
+
+### 行业标准结构:三层栈(所有美国两轮租赁都这么做)
+
+1. **运营方车队保单**(按台/月付费,走专业 MGA/E&S 市场,不是普通保险公司):给租客提供州法定最低责任险 + 给公司的 $1M CGL/超额责任
+2. **骑手付费层**:盗损免责协议 Damage Waiver(合同条款,不是保险——加州 Civil Code §1936 的价格管制只管四轮乘用车,摩托类可自由定价)+ 可选补充责任险 SLI + 押金
+3. **Graves Amendment(49 U.S.C. §30106,2005)**:联邦法律,租赁公司不为租客的过失承担连带责任(适用摩托和已注册 moped)——条件是自身无过失:查驾照(CVC 14608/14609 留档)+ 维保记录完整
+
+### "汽车能租摩托也能租"——对一半
+
+- **对的部分**:Graves 挡箭牌同样保护摩托租赁;EagleRider(全美最大摩托租赁,总部就在 LA Hawthorne)已跑通几十年:每单含州法定责任险 + $21–39/天盗损 waiver + $24.95/天 $1M SLI + $1,000–3,000 押金
+- **不同的部分(关键)**:租汽车时租客自己的车险和信用卡 CDW 自动延伸;**摩托被个人车险("少于四轮"排除条款)和信用卡(Visa 条款明文排除 motorcycles/mopeds)双双排除** → 租赁方必须自己供给租客的责任险层。EagleRider 条款原话:"most credit cards and insurance do not transfer the same way as they do with normal car rentals."
+- **最大的坑**:所有休闲租赁项目(MBA)和 P2P 平台(Riders Share 白纸黑字)**明文排除商业/外卖用途** → 外卖场景只能走 E&S/定制市场,租约里必须"明确允许外卖用途"(别让骑手一接单就自动脱保)
+
+### 车型分级 = 保险成本的总开关(加州)
+
+| 类别 | 法规 | 强制保险 | 骑手驾照 | HMP 对应 |
+|---|---|---|---|---|
+| Class 1–3 e-bike(≤750W,≤28mph)/ CVC 406(b) | CVC 312.5 | **无** | **无需** | INNO e-bike 版 → 走 Whizz/Zoomo 模式 |
+| Moped CVC 406(a)(≤30mph) | $23 一次性注册 | **无**(民事责任仍在) | M1/M2(必须查验) | Lightning 若注册为此类 |
+| 摩托/motor-driven cycle(>30mph) | 全注册 | **30/60/15**(SB 1107,2025 起;2035 升至 50/100/25) | M1 | FLASH |
+
+### 市面解决方案(按拨打顺序)
+
+1. **XINSURANCE / Evolution Insurance Brokers → Prime Insurance Company**(E&S,AM Best A-,50 州,专写 scooter/motorcycle rental,承保被拒风险是其主业)——(877) 585-2853,info@xinsurance.com。**最可能写"外卖用途"的市场**;菜单含 CGL、租客责任、garagekeepers、车队车损、umbrella
+2. **Mobilitas Insurance**(CSAA/AAA 子公司,"共享出行 + last-mile 配送"专业承保方,Lyft 的承保商)——经纪人递交,带车队+telematics 数据
+3. **Founder Shield / Fleet Shield**(micromobility 专门经纪,与 Segway 合作的风险聚合结构,称 GL 可到市价 40–50%)——info@foundershield.com,646-854-1058
+4. **MBA Insurance**(Brown & Brown 旗下,1978 年起,moped 租赁项目按台/月计费、3 台起租、含租客法定限额)——(800) 622-2201;但休闲导向,外卖用途须申报、可能拒
+5. 骑手伤害层:**Occupational Accident 团险**(One80 / Crum & Forster / Zurich gig,比工伤险便宜 ~30%,可按周嵌入租金)——注意 DoorDash 已免费给所有骑手 $1M 医疗事故险,Uber Eats/Grubhub 没有 → 这正是 HMP 可嵌入的差异化
+
+### 同行实际怎么做(抄作业清单)
+
+- **Whizz/Zoomo/JOCO(e-bike 类)**:全部靠免保险车类,卖盗损保护费(Zoomo $5–10/周、Whizz $19/月 + 盗窃自付 $500 上限 + GPS 94% 找回率),第三方责任留给骑手/平台
+- **Revel(真 moped,前车之鉴)**:只买了法定最低限额、骑手承担每案前 $500、个人车险优先;2020 年 3 起死亡后被迫上"21 题安全考试 + 每次骑行头盔自拍(不拍不通电)+ 夜间宵禁 + 驾照核验"才获准复活——这套风控就是承保人对"moped 车队 + 洛杉矶 + 外卖"定价时的期待清单
+- **EagleRider**:法定责任险打底 + waiver 阶梯($2,000/$1,000/$0 自付档)+ $1M SLI $24.95/天 + 大额押金
+
+### HMP 落地清单
+
+1. **按车型分级投保**:INNO e-bike 版零强制保险(GL+waiver 即可);FLASH 摩托类走 E&S 车队保单(30/60/15 给租客 + $1M CGL + umbrella)
+2. **自建骑手付费层**:盗损 waiver $10–20/天或 $19–39/月订阅、盗窃自付上限 $500(配 GPS+远程断电)、押金/信用卡预授权
+3. **合规护城河**:租约明确允许外卖用途;CVC 14608 驾照查验流程(Persona/Onfido 类 KYC + 照片比对留档);维保日志——这两样同时保住 Graves 挡箭牌和 negligent entrustment 抗辩
+4. **风控换保费**:GPS+远程断电(盗窃期望损失从车队价值 5–8%/年往下压)、地理围栏限速、app 内培训、头盔自拍、UL 2849/2271 认证电池(2026 加州已强制,也是财产险承保前提)
+5. **预算**:休闲基准 $85–250/台/月是地板,外卖用途 E&S 定价更高 + 加州 surplus lines 税 ~3%;e-bike 类车队只需 GL(小运营商 $500–3,000/年)——**再次印证车型分级的价值**
