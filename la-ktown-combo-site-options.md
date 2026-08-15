@@ -444,3 +444,60 @@ $1,500–2,500 的 Grom 仿款/踏板(Boom Vader、Tao Tao 类):一箱油 100+ �
 3. **合规护城河**:租约明确允许外卖用途;CVC 14608 驾照查验流程(Persona/Onfido 类 KYC + 照片比对留档);维保日志——这两样同时保住 Graves 挡箭牌和 negligent entrustment 抗辩
 4. **风控换保费**:GPS+远程断电(盗窃期望损失从车队价值 5–8%/年往下压)、地理围栏限速、app 内培训、头盔自拍、UL 2849/2271 认证电池(2026 加州已强制,也是财产险承保前提)
 5. **预算**:休闲基准 $85–250/台/月是地板,外卖用途 E&S 定价更高 + 加州 surplus lines 税 ~3%;e-bike 类车队只需 GL(小运营商 $500–3,000/年)——**再次印证车型分级的价值**
+
+---
+
+## 十四、"只卖不租"模式验证:牌照、分期、买家保险(2026-08-15 补充)
+
+**决策**:Lightning/FLASH 只卖(可分期),买家自行投保;仅 INNO(e-bike 类)保留租赁。以下为逐项验证结果。
+
+### 1. 卖车牌照(按车型分级,又是分级立功)
+
+| 车型 | 类别 | 卖车是否要牌照 |
+|---|---|---|
+| FLASH(~40 mph) | 摩托类(超出 406(a) 的 30mph/4bhp 上限) | **要 DMV 经销商牌照**:OL 12 + OL 248N(新车经销商)、经审验的营业场所、live-scan 背调、$175 申请费 + $425/点 New Motor Vehicle Board 费;**纯摩托经销商保证金只要 $10,000**(混卖其他车型要 $50,000);每个销售人员需 OL 16S 牌照($51);HMP 作为制造商另需 Manufacturer 牌照(CVC 11701);**厂家直营合法**(Tesla 模式——因为无特许经销商冲突) |
+| Lightning(若做 ≤30mph moped 版) | CVC 406(a) | **DMV 明文不给 moped 经销商发牌**(Vehicle Industry Registration Procedures Manual 原文"DMV does not license moped dealers")——**卖 moped 不需要任何职业牌照**,可领 moped 演示牌;买家一次性 $23 注册 |
+| INNO(e-bike) | CVC 312.5 | **完全豁免**(CVC 24016(b):电动自行车"不是机动车")——卖和租都无需任何牌照 |
+
+**→ 强烈建议 Lightning 出一个 30 mph moped 规格版**:卖车免牌照、买家免强制保险、注册只要 $23——整条合规链条几乎归零。
+
+### 2. 分期(自营或外包都通)
+
+- **自营分期无需放贷牌照**:Financial Code 22054 豁免真实的附条件销售合同(现金价与分期价一致即可,别做成变相放贷)
+- **无利率上限**(time-price doctrine,高利贷法不适用);Rees-Levering 只管"个人/家庭用途"购车——**外卖骑手购车属商业用途,可主张不适用 R-L 和 TILA**,但建议仍按 R-L 标准做文件(单一文件、APR 披露);**Civ. Code 1632:合同以西语/韩语/中文等谈判时必须提供译本**——LA 骑手客群必备
+- **BHPH + GPS + 断电器合法**:断电前 5/10 天预警 + 48 小时最终警告 + 24 小时紧急重启(违规每次 $2,000);收车须用 BSIS 持牌收车公司,15 天 Notice of Intent 且瑕疵通知丧失差额追偿权;制造商注意 SB 1394 远程控制合规(2026-07 起在售车、2028-01 起新车)
+- **第三方金融伙伴**(把合规整个外包):
+
+| 伙伴 | 适配 | 要点 |
+|---|---|---|
+| **Octane / Roadrunner** | FLASH/Lightning 首选 | 已服务 LAND Moto、RadMoto 等电摩品牌;首购/次级/优质三档,软查询预批;octane.co/o/dealer-signup |
+| Synchrony | 主流分期 | 最长 84 期,4,500+ 经销商 |
+| Sheffield | OEM 项目制 | HMP 以厂家身份谈项目(dealersetup@sheffieldfinancial.com) |
+| MotoLease | 次级两轮专门 | 无最低分、~10% 首付;⚠️ 仅限个人用途 + 公民/绿卡——外卖场景不适配 |
+| **Acima / Snap / Katapult / Progressive Leasing** | **仅 INNO**(全部排除需注册车辆) | **Acima 接受 ITIN(无 SSN 骑手可批)**;Snap $300–5k;Affirm/Klarna 做线上 e-bike 分期 |
+
+- **抵押控制实践**:传统 lender 要求全险+lender 为 loss payee;BHPH/LTO 结构(所有权留在卖方)用 **GPS+断电器替代全险要求**——这正是 HMP 自营分期的杀手锏:骑手不必买贵的全险,HMP 用 telematics 保住资产
+
+### 3. 买家保险(卖断后的真实图景)
+
+- **责任险很便宜**:加州摩托 liability-only 平均 **$169/年**(Geico/Dairyland ~$11/月起,小排量踏板可低至 ~$75/年)——30/60/15 门槛对骑手不是负担
+- **⚠️ 唯一的坑**:个人摩托保单**排除外卖/商业用途**(Progressive 明示);外卖用途两轮保险是小众经纪市场(Dairyland 有 commercial-purpose rider 产品;LA Insurance、IIS 等经纪可放置)——**HMP 应预先谈好一家经纪驻店/引荐,POS 现场出单**,把"保险怎么买"从障碍变成服务
+- 注册核验:初次注册需保险信息,私用保单电子申报(CVC 16058),脱保 45 天注册冻结(4000.38);商业保单免电子申报(交 REG 5085)
+- Moped 版 Lightning 与 INNO:**买家零强制保险**——销售话术直接说"这台车不用买保险"
+
+### 4. 修订后的商业模型(四层收入,保险负担≈0)
+
+1. **整车销售毛利**(FLASH 经销牌照直营 + Lightning moped 版免牌照)
+2. **金融收入**(自营 BHPH 分期无上限利率/无 CFL 牌照,或 Octane 返点)
+3. **换电订阅**(卖出去的车照样订阅——零保险负担的经常性收入)
+4. **INNO 租赁 + LTO**(e-bike 类,GL 即可;Acima ITIN 通道吃无 SSN 客群)
+
+**对标验证**:Fly-E Group(NASDAQ: FLYE)就是这个模型——72% 客户是外卖骑手,FY2025 零售收入 $21.7M。模式成立且已被上市公司验证。
+
+### 5. 行动清单
+
+1. Lightning 定 30 mph moped 规格版(合规链归零的关键决策)
+2. FLASH:提交 DMV OL 12/OL 248N 经销商申请(场所审验在选址签约后启动)+ Manufacturer 牌照
+3. 注册 Octane 经销商账户;INNO 接 Acima(ITIN)+ Affirm
+4. 谈一家外卖用途两轮保险经纪驻店合作
+5. 分期合同按 Rees-Levering 标准 + 1632 多语言版本;断电器披露条款入合同
