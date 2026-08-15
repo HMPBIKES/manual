@@ -1,0 +1,151 @@
+<title>HMP Dealer Terms</title>
+<style>
+  /* Single-look light document (print-first), colors painted explicitly per HMP spec-sheet system */
+  * { box-sizing: border-box; }
+  body {
+    background: #EEF1EE; color: #111512;
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    margin: 0; padding: 32px 16px 56px; line-height: 1.5;
+  }
+  .sheet {
+    max-width: 860px; margin: 0 auto; background: #FFFFFF;
+    border: 1px solid #DDE3DE; padding: 40px 44px 28px;
+  }
+  .doc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+    border-bottom: 2px solid #111512; padding-bottom: 14px; }
+  .wordmark { font-size: 21px; font-weight: 800; letter-spacing: .02em; }
+  .wordmark .dot { color: #1FA34A; }
+  .tagline { font-size: 9.5px; letter-spacing: .28em; color: #5B655E; margin-top: 2px; }
+  .doc-meta { text-align: right; font-size: 10px; letter-spacing: .16em; color: #5B655E; line-height: 1.7; }
+  .doc-meta b { color: #111512; }
+
+  h1 { font-size: 30px; letter-spacing: -.01em; margin: 26px 0 4px; text-wrap: balance; }
+  .lede { font-size: 13.5px; color: #384038; max-width: 62ch; margin: 0 0 22px; }
+  .lede b { color: #111512; }
+
+  .keyrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 26px; }
+  .key { border: 1px solid #DDE3DE; padding: 14px 16px 12px; }
+  .key .lab { font-size: 9.5px; letter-spacing: .2em; color: #5B655E; text-transform: uppercase; }
+  .key .val { font-size: 24px; font-weight: 800; margin-top: 4px; letter-spacing: -.01em; }
+  .key .sub { font-size: 11px; color: #5B655E; margin-top: 2px; }
+  .key.green { background: #E8F6EC; border-color: #BFE4CB; }
+  .key.green .val { color: #157A39; }
+  .key.dark { background: #101314; border-color: #101314; color: #FFFFFF; }
+  .key.dark .lab { color: #9DA8A0; }
+  .key.dark .sub { color: #9DA8A0; }
+
+  .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; margin-bottom: 24px; }
+  h2 { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; margin: 0 0 10px;
+    padding-bottom: 6px; border-bottom: 2px solid #1FA34A; }
+  ul.terms { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; font-size: 13px; }
+  ul.terms li { padding-left: 16px; position: relative; }
+  ul.terms li::before { content: ""; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; background: #1FA34A; }
+  ul.terms li.tbd::before { background: #FFFFFF; border: 1.6px solid #8A958C; width: 5px; height: 5px; top: 6.5px; }
+  ul.terms b { font-weight: 700; }
+  .tbd-note { color: #5B655E; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  th { text-align: left; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #5B655E;
+    border-bottom: 1.5px solid #111512; padding: 0 8px 6px 0; }
+  th:last-child, td:last-child { text-align: right; padding-right: 0; }
+  td { padding: 7px 8px 7px 0; border-bottom: 1px solid #E2E6E2; }
+  td.commission { font-weight: 800; color: #157A39; }
+  .tablenote { font-size: 10.5px; color: #5B655E; margin-top: 8px; }
+
+  .convert { background: #E8F6EC; border: 1px solid #BFE4CB; padding: 12px 16px; font-size: 12.5px; margin-bottom: 26px; }
+  .convert b { color: #157A39; }
+
+  .foot { border-top: 1px solid #111512; margin-top: 6px; padding-top: 12px;
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    font-size: 10.5px; color: #5B655E; }
+  .foot b { color: #111512; }
+  .foot a { color: inherit; }
+
+  @media (max-width: 640px) {
+    .sheet { padding: 26px 20px; }
+    .keyrow { grid-template-columns: 1fr; }
+    .cols { grid-template-columns: 1fr; }
+  }
+  @media print {
+    body { background: #FFFFFF; padding: 0; }
+    .sheet { border: none; max-width: none; padding: 24px 28px; }
+  }
+</style>
+
+<div class="sheet">
+  <div class="doc-head">
+    <div>
+      <div class="wordmark">HMP<span class="dot">·</span>BIKES</div>
+      <div class="tagline">DRIVE THE CHANGE</div>
+    </div>
+    <div class="doc-meta">
+      <b>DEALER TERMS · CONSIGNMENT PROGRAM</b><br>
+      UPDATED AUG 2026 · SUPERSEDES PRIOR VERSIONS
+    </div>
+  </div>
+
+  <h1>Consignment Program</h1>
+  <p class="lede">Put FLASH and Lightning MK.II on your floor with <b>zero capital outlay and zero inventory risk</b>.
+  Units remain the property of HMP Bikes until they retail; you earn a fixed commission on every sale.
+  Built as the low-commitment first step — convert to stocking-dealer terms whenever the volume tells you to.</p>
+
+  <div class="keyrow">
+    <div class="key green">
+      <div class="lab">Dealer commission</div>
+      <div class="val">10% of MSRP</div>
+      <div class="sub">Fixed, on every consigned unit retailed</div>
+    </div>
+    <div class="key dark">
+      <div class="lab">Dealer capital at risk</div>
+      <div class="val">$0</div>
+      <div class="sub">Units remain HMP property until sold</div>
+    </div>
+    <div class="key">
+      <div class="lab">Restock</div>
+      <div class="val">2 business days</div>
+      <div class="sub">Ships from California stock</div>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>How consignment works</h2>
+      <ul class="terms">
+        <li><b>Ownership</b> — consigned units remain the property of HMP Bikes until retail sale; no floorplan, no invoice on delivery.</li>
+        <li><b>Commission</b> — dealer retains <b>10% of MSRP</b> on each retail sale and remits the balance to HMP Bikes.</li>
+        <li><b>Pricing</b> — units retail at HMP-set MSRP (table below); promotions only with prior written approval.</li>
+        <li><b>Paperwork</b> — MCO and full registration pack ship with every unit, same as stocked units.</li>
+        <li><b>Warranty</b> — 1 year / 10,000 mi core warranty backed by HMP Bikes, identical to stocked units.</li>
+        <li><b>Prep</b> — Lightning MK.II arrives 100% assembled; FLASH needs handlebar + front panel only (minutes, not hours).</li>
+        <li><b>Display &amp; demo care</b> — dealer provides indoor floor space and keeps units in showroom condition; removable batteries charge on a standard 110V outlet.</li>
+        <li class="tbd"><span class="tbd-note"><b>Settlement window, freight-in, insurance while on floor, and recall/return notice</b> — defined in the signed consignment agreement; discussed in person.</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Commission per sale</h2>
+      <table>
+        <thead><tr><th>Model</th><th>MSRP</th><th>Your 10%</th></tr></thead>
+        <tbody>
+          <tr><td>Lightning MK.II</td><td>$3,999</td><td class="commission">$399.90</td></tr>
+          <tr><td>FLASH · single battery</td><td>$4,799</td><td class="commission">$479.90</td></tr>
+          <tr><td>FLASH · dual battery</td><td>$5,999</td><td class="commission">$599.90</td></tr>
+        </tbody>
+      </table>
+      <p class="tablenote">MSRP before freight, tax and incentives. Commission calculated on MSRP at time of retail sale.</p>
+      <h2 style="margin-top:22px">Stocking dealer</h2>
+      <ul class="terms">
+        <li><b>Higher margin</b> than consignment — dealer cost, margin, opening order and territory are discussed in person.</li>
+        <li class="tbd"><span class="tbd-note">Ask Peter for stocking terms during your visit — consignment history counts toward territory priority.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="convert"><b>Why 10%?</b> Consignment trades margin for risk: HMP carries the inventory cost, you carry none.
+  The moment your consigned units prove the demand, convert to stocking terms and keep the difference.</div>
+
+  <div class="foot">
+    <div><b>Peter Chu</b> · peterchu@hmpbikes.com · (415) 312-4674 — call or text and we will come to you.<br>
+    <b>hmpbikes.com</b> · business@hmpbikes.com · 916-926-3649 · Davis &amp; San Francisco, CA</div>
+    <div>Dealer document — not for consumer distribution.<br>All consignment placements subject to a signed consignment agreement.</div>
+  </div>
+</div>

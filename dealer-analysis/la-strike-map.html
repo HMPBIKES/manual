@@ -1,0 +1,437 @@
+<title>LA 拜访作战图</title>
+<style>
+  :root {
+    --bg: #F2F4F1;
+    --card: #FCFDFC;
+    --land: #F8FAF7;
+    --water: #D9E7EA;
+    --ink: #18211B;
+    --muted: #5C6A61;
+    --line: #D8DED9;
+    --line-soft: #E5EAE5;
+    --fw: #C9D2CB;
+    --c-base: #149A4C;
+    --c-fri: #2A6FC2;
+    --c-sat: #D07A18;
+    --c-sun: #8A57B0;
+    --c-tue: #178F72;
+    --marker-num: #FFFFFF;
+    --halo: #FCFDFC;
+    --chip-ink: #FFFFFF;
+    --warn-bg: #F6EFDF;
+    --warn-ink: #7A5A17;
+    --scrim: rgba(24,33,27,.25);
+    --shadow: 0 12px 32px rgba(24,33,27,.18);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101613; --card: #171E1A; --land: #1B2320; --water: #142430;
+      --ink: #E6ECE7; --muted: #92A097; --line: #2A342D; --line-soft: #222B25; --fw: #33403A;
+      --c-base: #3ECF77; --c-fri: #6FA8EC; --c-sat: #EFA24F; --c-sun: #B78BDE; --c-tue: #43C29E;
+      --marker-num: #0F1512; --halo: #171E1A; --chip-ink: #0F1512;
+      --warn-bg: #2A2517; --warn-ink: #E4C36A;
+      --scrim: rgba(0,0,0,.45); --shadow: 0 12px 32px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101613; --card: #171E1A; --land: #1B2320; --water: #142430;
+    --ink: #E6ECE7; --muted: #92A097; --line: #2A342D; --line-soft: #222B25; --fw: #33403A;
+    --c-base: #3ECF77; --c-fri: #6FA8EC; --c-sat: #EFA24F; --c-sun: #B78BDE; --c-tue: #43C29E;
+    --marker-num: #0F1512; --halo: #171E1A; --chip-ink: #0F1512;
+    --warn-bg: #2A2517; --warn-ink: #E4C36A;
+    --scrim: rgba(0,0,0,.45); --shadow: 0 12px 32px rgba(0,0,0,.5);
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.55; margin: 0; padding: 28px 20px 60px;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--c-sat); outline-offset: 2px; border-radius: 2px; }
+
+  header { margin-bottom: 20px; }
+  .eyebrow {
+    font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600; margin-bottom: 6px;
+  }
+  h1 { font-size: clamp(26px, 4vw, 34px); margin: 0 0 10px; letter-spacing: -.01em; text-wrap: balance; }
+  .basebar {
+    display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline;
+    font-size: 13.5px; color: var(--muted);
+  }
+  .basebar .b { color: var(--ink); font-weight: 600; }
+  .basebar .dot { color: var(--c-base); }
+  .note {
+    margin-top: 10px; font-size: 12.5px; padding: 8px 12px; border-radius: 6px;
+    background: var(--warn-bg); color: var(--warn-ink); display: inline-block;
+  }
+
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 10px; font-size: 12.5px;
+  }
+  .lg {
+    display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px;
+    border: 1px solid var(--line); border-radius: 999px; background: var(--card);
+    cursor: default; font-weight: 600;
+  }
+  .lg .sw { width: 10px; height: 10px; border-radius: 50%; }
+  .lg small { font-weight: 400; color: var(--muted); }
+  .sw-sat { background: var(--c-sat); } .sw-sun { background: var(--c-sun); }
+  .sw-base { background: var(--c-base); border-radius: 2px; transform: rotate(45deg); }
+  .sw-opt { background: transparent; border: 2px dashed var(--muted); }
+
+  .map-panel {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px; overflow-x: auto;
+  }
+  .map-inner { min-width: 620px; }
+  figure { margin: 0; }
+  figcaption { font-size: 12px; color: var(--muted); padding: 8px 6px 2px; }
+  svg .land { fill: var(--land); }
+  svg .water { fill: var(--water); }
+  svg .fw { stroke: var(--fw); stroke-width: 1.6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  svg .fwlab { font-size: 8.5px; fill: var(--muted); font-family: ui-monospace, Menlo, monospace; }
+  svg .region {
+    font-size: 9.5px; fill: var(--muted); letter-spacing: .14em; font-weight: 600; opacity: .8;
+  }
+  svg .rt { fill: none; stroke-width: 2; stroke-dasharray: 6 5; opacity: .8; stroke-linejoin: round; }
+  .rt-sat .rt { stroke: var(--c-sat); } .rt-sun .rt { stroke: var(--c-sun); }
+  svg .rt.faint { stroke-width: 1.4; opacity: .45; stroke-dasharray: 2 6; }
+  svg .stop { cursor: pointer; }
+  svg .stop circle.pin { stroke: var(--halo); stroke-width: 2; }
+  .rt-sat .pin { fill: var(--c-sat); } .rt-sun .pin { fill: var(--c-sun); }
+  svg .stop.opt circle.pin { fill: var(--card); stroke-width: 1.6; stroke-dasharray: 3 2.4; }
+  .rt-sat .opt circle.pin { stroke: var(--c-sat); } .rt-sun .opt circle.pin { stroke: var(--c-sun); }
+  svg .stop text.n { font-size: 11.5px; font-weight: 700; fill: var(--marker-num); text-anchor: middle; pointer-events: none; }
+  .rt-sat .opt text.n { fill: var(--c-sat); } .rt-sun .opt text.n { fill: var(--c-sun); }
+  svg .stop:hover circle.pin, svg .stop:focus-visible circle.pin { stroke: var(--ink); stroke-width: 2.6; }
+  svg .stop:focus-visible { outline: none; }
+  svg .lab {
+    font-size: 10.5px; fill: var(--ink); font-weight: 600;
+    paint-order: stroke fill; stroke: var(--halo); stroke-width: 3px; stroke-linejoin: round;
+    pointer-events: none;
+  }
+  svg .lab.amber { fill: var(--c-sat); }
+  svg .base-star { fill: var(--c-base); stroke: var(--halo); stroke-width: 2; }
+  svg .base-g { cursor: pointer; }
+  svg .base-lab { font-size: 11.5px; font-weight: 800; fill: var(--ink);
+    paint-order: stroke fill; stroke: var(--halo); stroke-width: 3.5px; text-anchor: middle; }
+  svg .cart { stroke: var(--muted); stroke-width: 1.2; fill: none; }
+  svg .cartlab { font-size: 9px; fill: var(--muted); font-family: ui-monospace, Menlo, monospace; }
+  body:has(#lg-sat:hover) .rt-g:not(.rt-sat),
+  body:has(#lg-sun:hover) .rt-g:not(.rt-sun) { opacity: .16; transition: opacity .15s; }
+  .rt-g { transition: opacity .15s; }
+
+  .scrim { position: fixed; inset: 0; background: var(--scrim); display: none; z-index: 40; }
+  .pop {
+    position: fixed; left: 50%; transform: translateX(-50%); bottom: 18px;
+    width: min(430px, calc(100vw - 24px)); background: var(--card); color: var(--ink);
+    border: 1px solid var(--line); border-top: 4px solid var(--line);
+    border-radius: 12px; box-shadow: var(--shadow); padding: 16px 16px 14px;
+    display: none; z-index: 50;
+  }
+  .scrim.on, .pop.on { display: block; }
+  .pop.p-sat { border-top-color: var(--c-sat); }
+  .pop.p-sun { border-top-color: var(--c-sun); }
+  .pop.p-base { border-top-color: var(--c-base); }
+  .pop h4 { margin: 0 0 2px; font-size: 15.5px; padding-right: 30px; }
+  .pop .p-sub { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+  .pop .p-close {
+    position: absolute; top: 8px; right: 8px; width: 30px; height: 30px;
+    border: none; background: transparent; color: var(--muted); font-size: 18px;
+    cursor: pointer; border-radius: 6px; line-height: 1;
+  }
+  .pop .p-close:hover { background: var(--line-soft); color: var(--ink); }
+  .pop .p-close:focus-visible { outline: 2px solid var(--c-sat); }
+  .pop .p-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pop .p-actions a {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 700; text-decoration: none;
+    padding: 8px 13px; border-radius: 8px; border: 1.5px solid var(--line);
+  }
+  .pop .p-actions a.prime { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .pop .p-actions a:hover { border-color: var(--ink); }
+  .pop .p-actions a.prime:hover { opacity: .88; }
+  .pop .p-addr { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11.5px; color: var(--muted); margin-top: 10px; }
+
+  .days {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 14px; margin-top: 22px;
+  }
+  .day {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 16px 14px; border-top: 3px solid var(--line);
+  }
+  .day.d-sat { border-top-color: var(--c-sat); }
+  .day.d-sun { border-top-color: var(--c-sun); }
+  .day h2 { font-size: 16px; margin: 0 0 2px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .day h2 .chip {
+    font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; color: var(--chip-ink);
+    letter-spacing: .04em;
+  }
+  .d-sat .chip { background: var(--c-sat); } .d-sun .chip { background: var(--c-sun); }
+  .day .sub { font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+  .stops { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .stops li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; font-size: 13.5px; }
+  .stops .num {
+    width: 22px; height: 22px; border-radius: 50%; color: var(--chip-ink);
+    font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+  }
+  .d-sat .num { background: var(--c-sat); } .d-sun .num { background: var(--c-sun); }
+  .stops li.opt .num { background: transparent; border: 2px dashed var(--muted); color: var(--muted); }
+  .stops li.seg { grid-template-columns: 1fr; font-size: 11px; letter-spacing: .12em; color: var(--muted); font-weight: 700; margin: 4px 0 -2px; }
+  .stops .nm { font-weight: 700; }
+  .stops .why { color: var(--muted); font-size: 12.5px; }
+  .stops .meta {
+    font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 11.5px; color: var(--muted);
+    font-variant-numeric: tabular-nums; margin-top: 2px;
+  }
+  .stops .meta a { color: var(--muted); text-decoration-color: var(--line); }
+  .dayfoot { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); font-size: 12.5px; }
+  .dayfoot a { font-weight: 700; text-decoration-color: currentColor; }
+  .d-sat .dayfoot a { color: var(--c-sat); } .d-sun .dayfoot a { color: var(--c-sun); }
+
+  .rules { margin-top: 26px; font-size: 13px; color: var(--muted); }
+  .rules h3 { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink); margin: 0 0 8px; }
+  .rules ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+  @media (prefers-reduced-motion: reduce) { .rt-g, body:has(#lg-sat:hover) .rt-g { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">HMP Bikes · Dealer Ops · 周六 08-15 起 · 纯电优先</div>
+    <h1>LA 拜访作战图</h1>
+    <div class="basebar">
+      <span><span class="dot">◆</span> 当前位置 <span class="b">Irvine</span>（周五晚）</span>
+      <span>周六正餐：你点名的三家 City Grounds · Massimo · Moto Bello</span>
+    </div>
+    <div class="note">⚠ 明早两通确认电话：Massimo's 只开 9:00–13:00 且有一个目录称周六不开——9 点前打 949-631-2072；City Grounds 老板（Paul / Jack Ku）周六未必在展厅——打 949-468-3510 约人。Moto Bello 周六 9–5 稳。三家周日都关门。</div>
+  </header>
+
+  <div class="legend">
+    <span class="lg" id="lg-sat"><span class="sw sw-sat"></span>周六 8/15 你点名的三家 <small>Massimo 只开到 13:00</small></span>
+    <span class="lg" id="lg-sun"><span class="sw sw-sun"></span>周日 8/16 补漏日 <small>周日开门的只有少数几家</small></span>
+    <span class="lg"><span class="sw sw-base"></span>Irvine 出发点</span>
+    <span class="lg"><span class="sw sw-opt"></span>虚线空心 = 可选 / 需电话确认</span>
+  </div>
+
+  <div class="map-panel">
+    <div class="map-inner">
+      <figure>
+        <svg viewBox="0 0 760 950" role="img" aria-label="从 Irvine 出发的周六三站路线示意图：City Grounds（Irvine）、Massimo's Vespa Shop 与 Moto Bello（Costa Mesa），下午可选 Fulgora；周日为补漏日；点击站点图标弹出该店网站与联系方式" style="max-width:100%;height:auto;display:block">
+          <rect class="land" x="0" y="0" width="760" height="950"/>
+          <path class="water" d="M 0,470 L 85,492 106,515 120,540 137,580 157,615 174,655 174,700 166,745 200,758 265,762 331,745 369,735 414,762 448,790 493,840 528,866 555,890 610,928 640,950 L 0,950 Z"/>
+
+          <!-- freeways (示意) -->
+          <path class="fw" d="M 60,18 82,55 96,120 108,190 148,250 240,320 265,360 315,440 373,510 439,590 506,640 605,700 625,742 648,780 672,845 700,880 735,920"/>
+          <path class="fw" d="M 108,190 96,140 85,90 78,40"/>
+          <path class="fw" d="M 108,300 108,420 133,470 166,550 216,630 265,670 340,690 481,730 540,772 600,800 641,818 672,845"/>
+          <path class="fw" d="M 33,330 133,345 199,365 240,410 298,440"/>
+          <path class="fw" d="M 85,490 166,470 315,470 423,430 572,430 750,430"/>
+          <path class="fw" d="M 140,240 300,300 423,346 580,370 750,375"/>
+          <path class="fw" d="M 450,385 447,500 440,600 428,700"/>
+          <path class="fw" d="M 150,572 431,585"/>
+          <path class="fw" d="M 265,627 447,632 547,630 750,638"/>
+          <path class="fw" d="M 274,455 268,740"/>
+          <path class="fw" d="M 356,440 352,560 348,660 344,720"/>
+          <path class="fw" d="M 578,830 590,750 585,700"/>
+          <text class="fwlab" x="116" y="416">405</text>
+          <text class="fwlab" x="560" y="788">405</text>
+          <text class="fwlab" x="322" y="452">5</text>
+          <text class="fwlab" x="702" y="892">5</text>
+          <text class="fwlab" x="90" y="132">5</text>
+          <text class="fwlab" x="70" y="60">14</text>
+          <text class="fwlab" x="184" y="356">101</text>
+          <text class="fwlab" x="497" y="424">10</text>
+          <text class="fwlab" x="497" y="360">210</text>
+          <text class="fwlab" x="455" y="505">605</text>
+          <text class="fwlab" x="296" y="580">105</text>
+          <text class="fwlab" x="497" y="626">91</text>
+          <text class="fwlab" x="258" y="606">110</text>
+          <text class="fwlab" x="358" y="588">710</text>
+          <text class="fwlab" x="594" y="742">55</text>
+
+          <!-- regions -->
+          <text class="region" x="120" y="52">SANTA CLARITA</text>
+          <text class="region" x="95" y="298">SAN FERNANDO VALLEY</text>
+          <text class="region" x="510" y="310">SAN GABRIEL VALLEY</text>
+          <text class="region" x="278" y="428">DTLA</text>
+          <text class="region" x="236" y="646">SOUTH BAY</text>
+          <text class="region" x="322" y="714">LONG BEACH</text>
+          <text class="region" x="548" y="770">ORANGE COUNTY</text>
+          <text class="region" transform="rotate(-52 95 640)" x="95" y="640">PACIFIC OCEAN</text>
+
+          <!-- Saturday route: the three shops the owner picked + afternoon options -->
+          <g class="rt-g rt-sat">
+            <polyline class="rt" points="668,850 635,808 554,868 572,850"/>
+            <g class="stop" tabindex="0" role="button" data-day="sat" data-name="City Grounds（老板 Paul &amp; Jack Ku）" data-sub="周六第 1 站 · 展厅 9:00–17:00 · 电动态度 4/5：主页六七成电动、自有电摩品牌 CG1 Ion，但全店无一台街道合法车——正是 HMP 的空位。老板未必在场，先打电话约" data-url="citygrounds.com" data-tel="9494683510" data-addr="2072 Alton Parkway, Irvine, CA 92606" data-anchor="d-sat" aria-label="City Grounds，点击查看网站与联系方式">
+              <title>1 · City Grounds — 点击看网站</title>
+              <circle class="pin" cx="635" cy="808" r="12"/><text class="n" x="635" y="812">1</text>
+              <text class="lab" x="635" y="791" text-anchor="middle">City Grounds</text></g>
+            <g class="stop" tabindex="0" role="button" data-day="sat" data-name="Massimo's Vespa Shop（老板 Massimo Di Marco）" data-sub="周六第 2 站 · 只开 9:00–13:00（一个目录称周六不开——先电话）· 电动态度 2/5：意大利踏板专修 20 年，零电动痕迹但无反感——谈授权维修/零售增量，别谈转型" data-url="maxscootershop.com" data-tel="9496312072" data-addr="629 Terminal Way Ste 13, Costa Mesa, CA 92627" data-anchor="d-sat" aria-label="Massimo's Vespa Shop，点击查看网站与联系方式">
+              <title>2 · Massimo's Vespa Shop — 点击看网站</title>
+              <circle class="pin" cx="554" cy="868" r="11"/><text class="n" x="554" y="872">2</text>
+              <text class="lab" x="540" y="884" text-anchor="end">Massimo's Vespa Shop</text></g>
+            <g class="stop" tabindex="0" role="button" data-day="sat" data-name="Moto Bello OC（老板 Kenny Faliero）" data-sub="周六第 3 站 · 9:00–17:00 · 电动态度 2/5：Piaggio Motoplex 旗舰，官网挂 Elettrica 但零电动现车——用『Elettrica 卖得怎么样』开场，把 HMP 摆成补位不革命" data-url="motobello-oc.com" data-tel="9493733041" data-addr="1805 Placentia Ave, Costa Mesa, CA 92627" data-anchor="d-sat" aria-label="Moto Bello OC，点击查看网站与联系方式">
+              <title>3 · Moto Bello OC — 点击看网站</title>
+              <circle class="pin" cx="572" cy="850" r="11"/><text class="n" x="572" y="854">3</text>
+              <text class="lab" x="586" y="848">Moto Bello OC</text></g>
+            <g class="stop opt" tabindex="0" role="button" data-day="sat" data-name="Fulgora（下午 · 老板 Jay Dicostanzo，意向 4/5）" data-sub="下午强推 · 老板意向 4/5：改名去 Zero 化转多品牌、签了 Beachman 但平价货架现在是空的、$4–6k 新车街道合法段 100% 空白 · 有来源称预约制——先打 714-978-4487 约 Jay 下午时段" data-url="fulgorausa.com" data-tel="7149784487" data-addr="704 W Katella Ave, Orange, CA 92867" data-anchor="d-sat" aria-label="Fulgora，点击查看网站与联系方式">
+              <title>+ · Fulgora（下午强推，先预约）— 点击看网站</title>
+              <circle class="pin" cx="609" cy="696" r="10"/><text class="n" x="609" y="700">+</text>
+              <text class="lab" x="609" y="678" text-anchor="middle">Fulgora（约 Jay）</text></g>
+          </g>
+
+          <!-- Sunday: catch-up -->
+          <g class="rt-g rt-sun">
+            <g class="stop opt" tabindex="0" role="button" data-day="sun" data-name="e-RYDE LA（若周五没去成）" data-sub="周日候选 · 纯电店：Sur-Ron/Talaria + 全品牌电动维修 · 周日是否营业先电话确认" data-url="electricbikesla.com" data-tel="3106402453" data-addr="209 E El Segundo Blvd, El Segundo, CA" data-anchor="d-sun" aria-label="e-RYDE LA，点击查看网站与联系方式">
+              <title>周日候选 · e-RYDE LA — 点击看网站</title>
+              <circle class="pin" cx="156" cy="584" r="11"/><text class="n" x="156" y="588">1</text>
+              <text class="lab" x="146" y="570" text-anchor="end">e-RYDE LA（周日待确认）</text></g>
+          </g>
+
+          <!-- Irvine start -->
+          <g class="base-g stop" tabindex="0" role="button" data-day="base" data-name="Irvine（周六出发点）" data-sub="你周五晚的位置 · 发我具体住址可精调路线顺序" data-url="" data-tel="" data-addr="Irvine, CA" data-anchor="" aria-label="Irvine 出发点">
+            <title>Irvine · 周六出发点</title>
+            <path class="base-star" d="M 673,838 677.2,846.8 686.9,847.9 679.8,854.5 681.8,864 673,859.2 664.2,864 666.2,854.5 659.1,847.9 668.8,846.8 Z"/>
+            <text class="base-lab" x="673" y="881">Irvine 出发</text>
+          </g>
+
+          <!-- compass & scale -->
+          <g class="cart">
+            <line x1="720" y1="52" x2="720" y2="26"/>
+            <path d="M 715,34 720,24 725,34" fill="none"/>
+          </g>
+          <text class="cartlab" x="714" y="66">N</text>
+          <line class="cart" x1="66" y1="928" x2="156" y2="928"/>
+          <line class="cart" x1="66" y1="924" x2="66" y2="932"/>
+          <line class="cart" x1="156" y1="924" x2="156" y2="932"/>
+          <text class="cartlab" x="86" y="920">≈ 10 km</text>
+        </svg>
+        <figcaption>示意地图（按经纬度投影，非导航精度）。<strong>点击任意站点图标 → 弹出该店网站、电话和导航。</strong>实心圆点 = 确认拜访；虚线空心 = 可选或需电话确认。</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="days">
+    <section class="day d-sat" id="d-sat">
+      <h2><span class="chip">周六 8/15</span>你点名的三家 · 老板画像已备好</h2>
+      <div class="sub">顺序由营业时间决定：Massimo 只开到 13:00，City Grounds 就在 Irvine 家门口 9 点开。三家相距都在 20 分钟内，≈12:30 收工，下午自由加场。</div>
+      <ol class="stops">
+        <li><span class="num">1</span><div><span class="nm">City Grounds</span> <span class="why">— 老板 Paul Ku（创始人）&amp; Jack Ku（COO），家族企业。<b>电动态度 4/5</b>：主页六七成是电动、29 款 e-moto（Surron/Talaria）、今年 4 月推了自有电摩品牌 CG1 Ion——但全店没有一台能上牌的街道合法车。开场就打这个空位：「你们客户买完 Surron 问'有没有能上牌的'，FLASH/Lightning 就是那台车」（09:00 到，展厅 9–5；老板未必在，先电话约）</span>
+          <div class="meta">2072 Alton Pkwy, Irvine · <a href="tel:9494683510">949-468-3510</a> · <a href="https://www.citygrounds.com" target="_blank" rel="noopener">citygrounds.com</a></div></div></li>
+        <li><span class="num">2</span><div><span class="nm">Massimo's Vespa Shop</span> <span class="why">— 老板 Massimo Di Marco：1972 年巴勒莫出生、Vespa 技师世家、前 Vespa of California 首席技师，2006 年开店。<b>电动态度 2/5</b>：全店零电动痕迹、"只修意大利踏板"——但也没有任何反电言论，是没兴趣不是反对。别谈转型，谈两件事：① 授权维修点（Lightning 免拆传动侧换胎、电池手提出仓，他的手艺直接用得上）② 不抢他修复生意的零售增量（≈10:15 到，13:00 关门，赶早）</span>
+          <div class="meta">629 Terminal Way Ste 13, Costa Mesa · <a href="tel:9496312072">949-631-2072</a> · <a href="https://www.maxscootershop.com" target="_blank" rel="noopener">maxscootershop.com</a></div></div></li>
+        <li><span class="num">3</span><div><span class="nm">Moto Bello OC</span> <span class="why">— 老板 Kenny Faliero：Piaggio 集团美洲区前全国销售总监，全美唯一 Piaggio Motoplex 旗舰（Vespa/Aprilia/Moto Guzzi），Piaggio 认证维修部很强。<b>电动态度 2/5</b>：官网挂着 $8,299/40mph 的 Elettrica 但店里零台电动现车。开场问「Elettrica 实际卖得怎么样？」——他大概率吐槽定价，顺势把 Lightning（一半价钱、56mph）摆成"被 Elettrica 挡在门外的电动买家"的补位线。注意他的 Piaggio 忠诚度是最大障碍，认识人比签约重要（≈11:15 到，留 1 小时；周六 9–5）</span>
+          <div class="meta">1805 Placentia Ave, Costa Mesa · <a href="tel:9493733041">949-373-3041</a> · <a href="https://www.motobello-oc.com" target="_blank" rel="noopener">motobello-oc.com</a></div></div></li>
+        <li class="seg">12:30 收工后 · 下午强烈推荐（先电话预约）</li>
+        <li class="opt"><span class="num">+</span><div><span class="nm">Fulgora — 老板 Jay Dicostanzo（CEO，周六基本亲自看店），意向 4/5</span> <span class="why">— 他为了多品牌把店名从"Zero of OC"改成 Fulgora、签了 Beachman 填平价位，但那个货架现在是空的；新车街道合法最低 $11,745，$4–6k 段 100% 空白——Lightning/FLASH 就是他战略里缺的那台车。开场彩蛋：Fulgora 是罗马闪电女神，你们的车叫 Lightning。⚠ Energica 倒闭烧过他，备好配件/保修答案；有来源称预约制——打 714-978-4487 约 Jay 下午时段（周六 10–17，Moto Bello 出发 20 分钟）</span>
+          <div class="meta">704 W Katella Ave, Orange · <a href="tel:7149784487">714-978-4487</a> · info@fulgorausa.com · <a href="https://fulgorausa.com" target="_blank" rel="noopener">fulgorausa.com</a></div></div></li>
+      </ol>
+      <div class="sub" style="margin:10px 0 0">VoroMotors 已从周末计划移除：实际周六最多开上午 9–13、周日关门（有来源称整个周末不开），官网"每天营业"口径过时。它周一至五 8–17 开——周一全城都关门时它反而是唯一开的，留给下周。</div>
+      <div class="dayfoot"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Irvine+CA&amp;destination=1805+Placentia+Ave+Costa+Mesa+CA&amp;waypoints=2072+Alton+Parkway+Irvine+CA%7C629+Terminal+Way+Costa+Mesa+CA&amp;travelmode=driving" target="_blank" rel="noopener">▸ 在 Google Maps 打开周六三站路线</a></div>
+    </section>
+
+    <section class="day d-sun" id="d-sun">
+      <h2><span class="chip">周日 8/16</span>补漏日</h2>
+      <div class="sub">你点名的三家周日全关门（City Grounds / Massimo / Moto Bello），VoroMotors 周末也关。周日基本只有 Fulgora（10–17）开门——周六下午没去成就周日补。</div>
+      <ol class="stops">
+        <li class="opt"><span class="num">1</span><div><span class="nm">e-RYDE LA（若周五没去成）</span> <span class="why">— 纯电店：Sur-Ron/Talaria 销售 + "不论哪买的都修"全品牌电动维修，PCH 上还有独立服务门店。周日是否营业先打电话（El Segundo，Irvine 出发 ≈45 分钟）</span>
+          <div class="meta">209 E El Segundo Blvd, El Segundo · <a href="tel:3106402453">310-640-2453</a> · <a href="https://www.electricbikesla.com" target="_blank" rel="noopener">electricbikesla.com</a></div></div></li>
+        <li class="opt"><span class="num">2</span><div><span class="nm">周六漏掉的站</span> <span class="why">— Fulgora 周日开门（10–17）可补；VoroMotors 周末关门，排到下周工作日（周一 8–17 全城独一份开门）</span></div></li>
+      </ol>
+      <div class="sub" style="margin:10px 0 0">Venom Motorsports：纯线上直销、无 LA 实体店，不排拜访；要谈分销打 <a href="tel:8559841612">855-984-1612</a>。跑完把每家结果发我（谁接待、反应、下一步），我写回工作簿并出跟进邮件草稿。</div>
+      <div class="dayfoot"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Irvine+CA&amp;destination=209+E+El+Segundo+Blvd+El+Segundo+CA&amp;travelmode=driving" target="_blank" rel="noopener">▸ 在 Google Maps 打开周日路线（e-RYDE）</a></div>
+    </section>
+  </div>
+
+  <div class="rules">
+    <h3>行动守则 · 纯电优先版</h3>
+    <ul>
+      <li>周六正餐就三家（你点名）：City Grounds → Massimo → Moto Bello，12:30 前后收工；下午 Fulgora 可选加场（周六 10–17）。VoroMotors 周末关门，不去。</li>
+      <li>City Grounds 唯一硬伤是没有对外维修部——被问"卖了谁修"就答：正在建 LA/OC 授权维修网（已在接触多家全品牌电动维修店），给方案、不给空头承诺。</li>
+      <li>对纯电店的开场白换掉：不讲"电动趋势"（他们已信），直接讲位置——"你们在售阵容里 $4,000–6,000 的街道合法电摩是空的，我们补这一段，还有全美 35 款里第一的性价比数据"。</li>
+      <li>随车带 spec sheet 打印版；cost / margin / 开单量当面谈。</li>
+      <li>周五各店（Del Amo、Sikk 等）的拜访结果发我：接待人、反应、要不要跟进——我记录进工作簿，油车店转入邮件跟进池。</li>
+    </ul>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="pop-title">
+  <button class="p-close" id="pop-close" aria-label="关闭">✕</button>
+  <h4 id="pop-title"></h4>
+  <div class="p-sub" id="pop-sub"></div>
+  <div class="p-actions" id="pop-actions"></div>
+  <div class="p-addr" id="pop-addr"></div>
+</div>
+
+<script>
+(function () {
+  var pop = document.getElementById('pop');
+  var scrim = document.getElementById('scrim');
+  var title = document.getElementById('pop-title');
+  var sub = document.getElementById('pop-sub');
+  var actions = document.getElementById('pop-actions');
+  var addr = document.getElementById('pop-addr');
+  var closeBtn = document.getElementById('pop-close');
+  var lastFocus = null;
+
+  function mkLink(text, href, prime, newTab) {
+    var a = document.createElement('a');
+    a.textContent = text;
+    a.href = href;
+    if (prime) a.className = 'prime';
+    if (newTab) { a.target = '_blank'; a.rel = 'noopener'; }
+    return a;
+  }
+
+  function close() {
+    pop.classList.remove('on');
+    scrim.classList.remove('on');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  function open(g) {
+    lastFocus = g;
+    title.textContent = g.dataset.name || '';
+    sub.textContent = g.dataset.sub || '';
+    addr.textContent = g.dataset.addr || '';
+    actions.textContent = '';
+    if (g.dataset.url) {
+      actions.appendChild(mkLink('打开网站 ↗', 'https://' + g.dataset.url, true, true));
+    }
+    if (g.dataset.tel) {
+      var t = g.dataset.tel;
+      var pretty = t.length === 10 ? (t.slice(0,3) + '-' + t.slice(3,6) + '-' + t.slice(6)) : t;
+      actions.appendChild(mkLink('☎ ' + pretty, 'tel:' + t, false, false));
+    }
+    if (g.dataset.addr) {
+      actions.appendChild(mkLink('导航', 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(g.dataset.addr), false, true));
+    }
+    if (g.dataset.anchor) {
+      var j = mkLink('当天安排 ↓', '#' + g.dataset.anchor, false, false);
+      j.addEventListener('click', function () { close(); });
+      actions.appendChild(j);
+    }
+    pop.classList.remove('p-sat', 'p-sun', 'p-base');
+    pop.classList.add('p-' + (g.dataset.day || 'base'));
+    pop.classList.add('on');
+    scrim.classList.add('on');
+    closeBtn.focus();
+  }
+
+  document.querySelectorAll('svg .stop').forEach(function (g) {
+    g.addEventListener('click', function (e) { e.preventDefault(); open(g); });
+    g.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(g); }
+    });
+  });
+  scrim.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
