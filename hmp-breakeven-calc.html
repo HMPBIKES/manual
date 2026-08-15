@@ -1,0 +1,234 @@
+<title>HMP 单店盈亏计算器</title>
+<style>
+  :root {
+    --paper: #FAF8F4; --card: #FFFFFF; --ink: #23262B; --ink-2: #5C594F;
+    --muted: #8A857A; --line: #E5E0D4; --line-soft: #EFEAE0;
+    --accent: #C85F06; --accent-mark: #D2650A; --accent-wash: rgba(210,101,10,0.07);
+    --good: #006300; --bad: #d03b3b; --field: #FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+      --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+      --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217,111,20,0.12);
+      --good: #0ca30c; --bad: #e66767; --field: #16181C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+    --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+    --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217,111,20,0.12);
+    --good: #0ca30c; --bad: #e66767; --field: #16181C;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.7; }
+  main { max-width: 58em; margin: 0 auto; padding: 0 20px 80px; }
+  header { padding: 40px 0 6px; }
+  .eyebrow { font-size: 11.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+  h1 { font-size: clamp(25px,4.4vw,34px); font-weight: 900; margin: 0 0 8px; line-height: 1.3; }
+  .dek { color: var(--ink-2); margin: 0 0 4px; max-width: 46em; }
+  h2 { font-size: 16.5px; font-weight: 800; margin: 0 0 10px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .panel.wide { grid-column: 1 / -1; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { text-align: left; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 700; padding: 4px 6px; }
+  td { padding: 5px 6px; border-top: 1px solid var(--line-soft); vertical-align: middle; }
+  td.calc { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
+  input[type=number], input[type=text] {
+    width: 100%; max-width: 110px; padding: 6px 8px; font: inherit; font-size: 13.5px;
+    color: var(--ink); background: var(--field); border: 1px solid var(--line); border-radius: 7px;
+    font-variant-numeric: tabular-nums;
+  }
+  input[type=text] { max-width: 90px; }
+  input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+  .row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 5px 0; border-bottom: 1px solid var(--line-soft); font-size: 13.5px; }
+  .row:last-child { border-bottom: 0; }
+  .row .lb { color: var(--ink-2); }
+  .row input { max-width: 110px; text-align: right; }
+  .big { font-size: 42px; font-weight: 800; line-height: 1.1; letter-spacing: -0.01em; }
+  .big.pos { color: var(--good); } .big.neg { color: var(--bad); }
+  .kv { display: flex; justify-content: space-between; font-size: 13.5px; padding: 5px 0; border-bottom: 1px solid var(--line-soft); }
+  .kv:last-child { border-bottom: 0; }
+  .kv b { font-variant-numeric: tabular-nums; }
+  .headline { background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--accent-mark); border-radius: 12px; padding: 16px 20px; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px 40px; align-items: baseline; justify-content: space-between; }
+  .headline .lbl { font-size: 12.5px; color: var(--ink-2); margin-bottom: 2px; }
+  .headline .sub { font-size: 12.5px; color: var(--muted); flex-basis: 100%; }
+  .mini { font-size: 12px; color: var(--muted); }
+  button.reset { border: 1px solid var(--line); background: transparent; color: var(--ink-2); font: inherit; font-size: 12.5px; font-weight: 700; padding: 4px 14px; border-radius: 999px; cursor: pointer; }
+  button.reset:hover, button.reset:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+  .fn { font-size: 12.5px; color: var(--muted); margin-top: 16px; line-height: 1.7; }
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">HMP Bikes · Unit Economics · 2026-08</p>
+    <h1>单店收入计算器(自填成本版)</h1>
+    <p class="dek">所有白色输入框都可以直接改:三款车的成本/售价/销量、人员岗位与工资、固定开销。结果实时更新,输入自动保存在你的浏览器(仅本机,不上传)。</p>
+  </header>
+
+  <div class="headline">
+    <div>
+      <div class="lbl">每月净利</div>
+      <div class="big" id="net">$0</div>
+    </div>
+    <div>
+      <div class="lbl">每月毛利 / 固定成本</div>
+      <div style="font-size:20px;font-weight:800" id="gpfx"></div>
+    </div>
+    <div>
+      <div class="lbl">启动资金回本</div>
+      <div style="font-size:20px;font-weight:800" id="payback"></div>
+    </div>
+    <div class="sub" id="beline"></div>
+  </div>
+
+  <div class="grid">
+    <div class="panel wide">
+      <h2>① 车辆销售(每行自填成本 · 售价 · 月销量)</h2>
+      <div style="overflow-x:auto"><table id="vt">
+        <thead><tr><th>车型</th><th>到岸成本/台 $</th><th>零售价/台 $</th><th>月销量 台</th><th>单台毛利</th><th>月毛利</th></tr></thead>
+        <tbody>
+          <tr><td>FLASH</td><td><input type="number" id="c0" value="2100" min="0" step="50"></td><td><input type="number" id="p0" value="3499" min="0" step="50"></td><td><input type="number" id="q0" value="4" min="0" step="1"></td><td class="calc" id="u0"></td><td class="calc" id="m0"></td></tr>
+          <tr><td>Lightning MK.II</td><td><input type="number" id="c1" value="1400" min="0" step="50"></td><td><input type="number" id="p1" value="2299" min="0" step="50"></td><td><input type="number" id="q1" value="5" min="0" step="1"></td><td class="calc" id="u1"></td><td class="calc" id="m1"></td></tr>
+          <tr><td>INNO-A Pro</td><td><input type="number" id="c2" value="950" min="0" step="50"></td><td><input type="number" id="p2" value="1599" min="0" step="50"></td><td><input type="number" id="q2" value="5" min="0" step="1"></td><td class="calc" id="u2"></td><td class="calc" id="m2"></td></tr>
+        </tbody>
+      </table></div>
+      <div class="row"><span class="lb">每台附加贡献(金融返点 + 配件毛利)$</span><input type="number" id="fi" value="210" min="0" step="10"></div>
+      <div class="row"><span class="lb">刷卡手续费 %(从售价中扣除)</span><input type="number" id="card" value="2" min="0" max="5" step="0.1"></div>
+    </div>
+
+    <div class="panel">
+      <h2>② 人员成本(自填月薪 × 人数)</h2>
+      <div style="overflow-x:auto"><table>
+        <thead><tr><th>岗位</th><th>月薪 $</th><th>人数</th><th>小计</th></tr></thead>
+        <tbody>
+          <tr><td><input type="text" id="j0" value="技师"></td><td><input type="number" id="w0" value="4500" min="0" step="100"></td><td><input type="number" id="n0" value="1" min="0" step="1"></td><td class="calc" id="l0"></td></tr>
+          <tr><td><input type="text" id="j1" value="销售"></td><td><input type="number" id="w1" value="3300" min="0" step="100"></td><td><input type="number" id="n1" value="0" min="0" step="1"></td><td class="calc" id="l1"></td></tr>
+          <tr><td><input type="text" id="j2" value="其他"></td><td><input type="number" id="w2" value="0" min="0" step="100"></td><td><input type="number" id="n2" value="0" min="0" step="1"></td><td class="calc" id="l2"></td></tr>
+        </tbody>
+      </table></div>
+      <div class="row"><span class="lb">雇主负担率 %(税+工伤险,LA 基准 12–18)</span><input type="number" id="burden" value="15" min="0" max="40" step="1"></div>
+      <div class="kv"><span><b>人员合计/月</b></span><b id="labortotal"></b></div>
+      <p class="mini">参考:LA 2026 最低工资 $18.42/时(全职约 $3,190/月);摩托技师市场价 $25–29/时(约 $4,350–5,000/月)。老板亲营销售 = 销售人数填 0。</p>
+    </div>
+
+    <div class="panel">
+      <h2>③ 其他固定成本(可改)</h2>
+      <div class="row"><span class="lb">租金 + NNN $/月</span><input type="number" id="rent" value="3000" min="0" step="100"></div>
+      <div class="row"><span class="lb">保险(garage + 财产)$/月</span><input type="number" id="ins" value="500" min="0" step="50"></div>
+      <div class="row"><span class="lb">店面电费 $/月</span><input type="number" id="elec" value="150" min="0" step="25"></div>
+      <div class="row"><span class="lb">软件/POS $/月</span><input type="number" id="sw" value="400" min="0" step="50"></div>
+      <div class="row"><span class="lb">营销 $/月</span><input type="number" id="mkt" value="800" min="0" step="100"></div>
+      <div class="row"><span class="lb">杂项/安防/牌照摊销 $/月</span><input type="number" id="misc" value="400" min="0" step="50"></div>
+      <div class="kv"><span><b>固定成本合计(含人员)</b></span><b id="fixtotal"></b></div>
+    </div>
+
+    <div class="panel">
+      <h2>④ 经常性收入</h2>
+      <div class="row"><span class="lb">换电订阅数(人)</span><input type="number" id="subs" value="100" min="0" step="5"></div>
+      <div class="row"><span class="lb">订阅价 $/月(锚:PopWheels $75)</span><input type="number" id="subp" value="69" min="0" step="5"></div>
+      <div class="row"><span class="lb">每订阅成本 $/月(电+电池损耗+柜摊销)</span><input type="number" id="subc" value="24" min="0" step="2"></div>
+      <div class="row"><span class="lb">INNO 在租台数</span><input type="number" id="rq" value="20" min="0" step="1"></div>
+      <div class="row"><span class="lb">INNO 月租价 $</span><input type="number" id="rp" value="139" min="0" step="10"></div>
+      <div class="row"><span class="lb">租赁车摊销月数(车价按上表 INNO 成本)</span><input type="number" id="ram" value="24" min="1" step="1"></div>
+      <div class="row"><span class="lb">每台租赁维保+盗损准备 $/月</span><input type="number" id="rmx" value="25" min="0" step="5"></div>
+      <div class="row"><span class="lb">维修/配件月毛利 $</span><input type="number" id="svc" value="1500" min="0" step="100"></div>
+    </div>
+
+    <div class="panel wide">
+      <h2>⑤ 月度损益</h2>
+      <div class="grid" style="margin-top:0">
+        <div>
+          <div class="kv"><span>卖车毛利(FLASH+Lightning+INNO)</span><b id="r_veh"></b></div>
+          <div class="kv"><span>金融+配件贡献</span><b id="r_fi"></b></div>
+          <div class="kv"><span>换电订阅毛利</span><b id="r_sub"></b></div>
+          <div class="kv"><span>INNO 租赁毛利</span><b id="r_ren"></b></div>
+          <div class="kv"><span>维修/配件毛利</span><b id="r_svc"></b></div>
+        </div>
+        <div>
+          <div class="kv"><span><b>毛利合计</b></span><b id="r_gp"></b></div>
+          <div class="kv"><span>人员成本</span><b id="r_lab"></b></div>
+          <div class="kv"><span>其他固定成本</span><b id="r_ofx"></b></div>
+          <div class="kv"><span><b>净利/月</b></span><b id="r_net"></b></div>
+          <div class="row" style="border-bottom:0;margin-top:6px"><span class="lb">启动资金 $(装修+库存+电池池+押金)</span><input type="number" id="capex" value="125000" min="0" step="5000"></div>
+        </div>
+      </div>
+      <div style="margin-top:10px"><button class="reset" id="reset" type="button">恢复默认值</button></div>
+    </div>
+  </div>
+
+  <p class="fn">固定参考(可在框里改):租金按 Santa Fe Row 3,000 SF 实盘 $2,700+NNN;保险/电费/软件为 2026 年 LA 核实基准;订阅成本默认 $24 = 电费 $8(LADWP ~$0.22/kWh)+ LFP 电池循环 $3 + 柜体摊销与损耗 $13;INNO 租赁毛利 = 月租 − INNO 成本÷摊销月数 − 维保盗损。默认车辆成本/售价为竞品锚定的占位数(NIU/Segway/CSC/Fly-E),请替换为 HMP 实际数字。数据只存在你浏览器的 localStorage,不上传。</p>
+</main>
+
+<script>
+(function(){
+  var $ = function(id){ return document.getElementById(id); };
+  var IDS = ['c0','p0','q0','c1','p1','q1','c2','p2','q2','fi','card',
+             'j0','w0','n0','j1','w1','n1','j2','w2','n2','burden',
+             'rent','ins','elec','sw','mkt','misc',
+             'subs','subp','subc','rq','rp','ram','rmx','svc','capex'];
+  var DEFAULTS = {};
+  IDS.forEach(function(id){ DEFAULTS[id] = $(id).value; });
+  var KEY = 'hmp-calc-v2';
+  function fmt(n){ return (n<0?'-$':'$') + Math.abs(Math.round(n)).toLocaleString(); }
+  function num(id){ return parseFloat($(id).value) || 0; }
+  function save(){
+    try { var o={}; IDS.forEach(function(id){ o[id]=$(id).value; }); localStorage.setItem(KEY, JSON.stringify(o)); } catch(e){}
+  }
+  function load(){
+    try { var o = JSON.parse(localStorage.getItem(KEY)||'null'); if(o) IDS.forEach(function(id){ if(o[id]!=null) $(id).value=o[id]; }); } catch(e){}
+  }
+  function calc(){
+    var cardPct = num('card')/100, fi = num('fi');
+    var vehGP = 0, units = 0;
+    for (var i=0;i<3;i++){
+      var c=num('c'+i), p=num('p'+i), q=num('q'+i);
+      var unit = p*(1-cardPct) - c;
+      vehGP += unit*q; units += q;
+      $('u'+i).textContent = fmt(unit); $('m'+i).textContent = fmt(unit*q);
+    }
+    var fiGP = fi*units;
+    var burden = 1 + num('burden')/100, labor = 0;
+    for (var k=0;k<3;k++){
+      var sub = num('w'+k)*num('n'+k)*burden;
+      labor += sub; $('l'+k).textContent = fmt(sub);
+    }
+    var otherFix = num('rent')+num('ins')+num('elec')+num('sw')+num('mkt')+num('misc');
+    var fixed = labor + otherFix;
+    var subGP = num('subs') * Math.max(0, num('subp')-num('subc'));
+    var innoCost = num('c2');
+    var renUnit = Math.max(0, num('rp') - innoCost/Math.max(1,num('ram')) - num('rmx'));
+    var renGP = num('rq')*renUnit;
+    var svc = num('svc');
+    var gp = vehGP + fiGP + subGP + renGP + svc;
+    var net = gp - fixed;
+    $('labortotal').textContent = fmt(labor);
+    $('fixtotal').textContent = fmt(fixed);
+    $('r_veh').textContent = fmt(vehGP); $('r_fi').textContent = fmt(fiGP);
+    $('r_sub').textContent = fmt(subGP); $('r_ren').textContent = fmt(renGP);
+    $('r_svc').textContent = fmt(svc); $('r_gp').textContent = fmt(gp);
+    $('r_lab').textContent = fmt(-labor); $('r_ofx').textContent = fmt(-otherFix);
+    $('r_net').textContent = fmt(net);
+    var el = $('net'); el.textContent = fmt(net) + ' /月';
+    el.className = 'big ' + (net>=0?'pos':'neg');
+    $('gpfx').textContent = fmt(gp) + ' / ' + fmt(fixed);
+    var cap = num('capex');
+    $('payback').textContent = net>0 ? Math.ceil(cap/net) + ' 个月' : '—';
+    var perSale = units>0 ? (vehGP+fiGP)/units : (2400*(1-cardPct)-1500+fi);
+    var needed = Math.max(0,(fixed - subGP - renGP - svc)) / Math.max(1,perSale);
+    $('beline').textContent = '打平需卖约 ' + needed.toFixed(1) + ' 台/月(按当前车型组合的平均单台贡献 ' + fmt(perSale) + ')· 经常性毛利已覆盖固定成本的 ' + Math.min(999, Math.round((subGP+renGP+svc)/Math.max(1,fixed)*100)) + '%';
+    save();
+  }
+  IDS.forEach(function(id){ $(id).addEventListener('input', calc); });
+  $('reset').addEventListener('click', function(){
+    IDS.forEach(function(id){ $(id).value = DEFAULTS[id]; });
+    try { localStorage.removeItem(KEY); } catch(e){}
+    calc();
+  });
+  load(); calc();
+})();
+</script>

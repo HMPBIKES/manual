@@ -1,0 +1,319 @@
+<title>南DTLA 中枢地图</title>
+<style>
+  :root {
+    --paper: #FAF8F4; --card: #FFFFFF; --ink: #23262B; --ink-2: #5C594F;
+    --muted: #8A857A; --line: #E5E0D4; --line-soft: #EFEAE0;
+    --accent: #C85F06; --accent-mark: #D2650A; --accent-wash: rgba(210, 101, 10, 0.07);
+    --deemph: #A39B8C; --lane: #C9C2B2; --wash: rgba(138, 133, 122, 0.09);
+    --ok: #008300; --river: #9DB8C4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+      --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+      --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217, 111, 20, 0.12);
+      --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
+      --ok: #008300; --river: #3E5560;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+    --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+    --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217, 111, 20, 0.12);
+    --deemph: #6E6A61; --lane: #4A4D53; --wash: rgba(110, 106, 97, 0.14);
+    --ok: #008300; --river: #3E5560;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.7; }
+  main { max-width: 60em; margin: 0 auto; padding: 0 20px 80px; }
+  header { padding: 44px 0 6px; }
+  .eyebrow { font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+  h1 { font-size: clamp(26px, 4.6vw, 36px); font-weight: 900; margin: 0 0 8px; line-height: 1.3; text-wrap: balance; }
+  .dek { color: var(--ink-2); margin: 0 0 4px; max-width: 46em; }
+  .meta { font-size: 12.5px; color: var(--muted); margin: 0; }
+  figure.map { margin: 24px 0 8px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 10px 4px; }
+  figure.map svg { width: 100%; height: auto; display: block; }
+  .maplegend { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 8px 10px 10px; font-size: 12.5px; color: var(--ink-2); border-top: 1px solid var(--line-soft); }
+  .maplegend .k { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--deemph); display: inline-block; }
+  .ring { width: 13px; height: 13px; border-radius: 50%; border: 2.5px solid var(--ok); display: inline-block; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 22px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px 12px; border-top: 4px solid var(--accent-mark); }
+  .card h3 { margin: 0 0 4px; font-size: 15.5px; font-weight: 800; }
+  .card p { margin: 3px 0; font-size: 13px; color: var(--ink-2); }
+  .card .total { font-size: 20px; font-weight: 800; color: var(--ink); margin-top: 7px; }
+  .card .total small { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .card a.lk { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; margin: 7px 6px 0 0; text-decoration: none; }
+  .card a.lk:hover, .card a.lk:focus-visible { border-color: var(--accent); }
+  .fn { font-size: 12.5px; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+  .st { font-size: 11px; fill: var(--muted); letter-spacing: 0.04em; }
+  .area-label { font-size: 12px; font-weight: 800; fill: var(--muted); letter-spacing: 0.12em; }
+  .pin-label { font-size: 11.5px; font-weight: 700; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .np-label { font-size: 10.5px; font-weight: 600; fill: var(--muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .pin-num { font-size: 13px; font-weight: 800; fill: #FFFFFF; text-anchor: middle; }
+  .fwy { stroke: var(--lane); stroke-width: 5; fill: none; stroke-linecap: round; }
+  .fwy-label { font-size: 10px; font-weight: 800; fill: var(--muted); }
+  .street { stroke: var(--line); stroke-width: 2; }
+  .mi-ring { fill: none; stroke: var(--lane); stroke-width: 1.5; stroke-dasharray: 4 5; }
+  .mi-label { font-size: 10.5px; font-weight: 700; fill: var(--muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  svg a { cursor: pointer; }
+  svg a:hover circle, svg a:hover rect { filter: brightness(0.86); }
+  svg a:hover .pin-label, svg a:hover .np-label { fill: var(--accent); }
+  svg a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  details.links { margin: 10px 0; background: var(--card); border: 1px solid var(--line); border-radius: 10px; }
+  details.links summary { cursor: pointer; padding: 11px 16px; font-weight: 700; font-size: 14px; }
+  details.links .body { padding: 0 18px 12px; font-size: 13px; }
+  details.links li { margin: 4px 0; }
+  details.links a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  details.links a:hover { border-bottom-color: var(--accent); }
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">HMP Bikes · 3,000 SF Hub Sweep · 2026-08-15</p>
+    <h1>南 DTLA 充电换电中枢:候选地图</h1>
+    <p class="dek">以 2221 S Main St(✛)为基准,虚线圈为 0.5 / 1 英里半径。橙色大钉 = 前三推荐(编号即排名),<strong>绿圈 = 挂盘明确写有喷淋系统</strong>,灰点 = 其他候选。所有图钉可点击直达房源页。</p>
+    <p class="meta">经纬度投影示意图,街道简化;房源为 2026-08-15 挂盘信息,签约前核实。Boyle Heights(河东)已按要求排除,Santa Fe Row 在河西岸。</p>
+  </header>
+
+  <figure class="map">
+    <svg viewBox="0 0 900 660" role="img" aria-label="南 DTLA 工业带地图,显示 3000 平方英尺充电换电中枢候选点位">
+      <!-- mile rings -->
+      <circle class="mi-ring" cx="334" cy="263" r="127"></circle>
+      <circle class="mi-ring" cx="334" cy="263" r="254"></circle>
+      <text class="mi-label" x="238" y="358">0.5 mi</text>
+      <text class="mi-label" x="498" y="93">1 mi</text>
+
+      <!-- streets -->
+      <line class="street" x1="261" y1="40" x2="261" y2="620"></line>
+      <line class="street" x1="290" y1="40" x2="290" y2="620"></line>
+      <line class="street" x1="334" y1="40" x2="334" y2="620"></line>
+      <line class="street" x1="392" y1="40" x2="392" y2="500"></line>
+      <line class="street" x1="457" y1="40" x2="457" y2="620"></line>
+      <line class="street" x1="726" y1="40" x2="726" y2="500"></line>
+      <line class="street" x1="40" y1="70"  x2="860" y2="70"></line>
+      <line class="street" x1="40" y1="193" x2="860" y2="193"></line>
+      <line class="street" x1="40" y1="319" x2="740" y2="319"></line>
+      <line class="street" x1="40" y1="403" x2="740" y2="403"></line>
+      <line class="street" x1="40" y1="455" x2="600" y2="455"></line>
+      <line class="street" x1="40" y1="578" x2="740" y2="578"></line>
+      <text class="st" x="44" y="66">Pico Bl</text>
+      <text class="st" x="44" y="189">Washington Bl</text>
+      <text class="st" x="44" y="315">Adams Bl</text>
+      <text class="st" x="44" y="399">Jefferson Bl</text>
+      <text class="st" x="44" y="451">Exposition Bl</text>
+      <text class="st" x="44" y="574">MLK Jr Bl</text>
+      <text class="st" transform="rotate(-90 256 120)" x="256" y="120">Hill St</text>
+      <text class="st" transform="rotate(-90 285 630)" x="285" y="630" text-anchor="start"></text>
+      <text class="st" transform="rotate(-90 286 120)" x="286" y="120">Broadway</text>
+      <text class="st" transform="rotate(-90 330 120)" x="330" y="120">Main St</text>
+      <text class="st" transform="rotate(-90 388 120)" x="388" y="120">Maple Av</text>
+      <text class="st" transform="rotate(-90 452 120)" x="452" y="120">San Pedro St</text>
+      <text class="st" transform="rotate(-90 721 120)" x="721" y="120">Alameda St</text>
+
+      <!-- freeways + river -->
+      <path class="fwy" d="M 0 150 L 900 118"></path>
+      <path class="fwy" d="M 131 40 L 131 620"></path>
+      <path d="M 866 40 Q 872 300 862 620" stroke="var(--river)" stroke-width="8" fill="none"></path>
+      <text class="fwy-label" x="640" y="112">I-10</text>
+      <text class="fwy-label" x="112" y="600">110</text>
+      <text class="fwy-label" transform="rotate(-90 884 340)" x="884" y="340">LA RIVER</text>
+
+      <!-- area labels -->
+      <text class="area-label" x="160" y="100">SOUTH PARK</text>
+      <text class="area-label" x="540" y="92">FASHION DISTRICT</text>
+      <text class="area-label" x="48" y="478">USC</text>
+      <text class="area-label" x="400" y="628">SOUTH LA</text>
+
+      <!-- hub -->
+      <g><title>基准点:2221 S Main St(用户 pin)</title>
+        <circle cx="334" cy="263" r="11" fill="none" stroke="var(--accent-mark)" stroke-width="3"></circle>
+        <circle cx="334" cy="263" r="4" fill="var(--accent-mark)"></circle>
+        <line x1="334" y1="245" x2="334" y2="252" stroke="var(--accent-mark)" stroke-width="3"></line>
+        <line x1="334" y1="274" x2="334" y2="281" stroke="var(--accent-mark)" stroke-width="3"></line>
+        <line x1="316" y1="263" x2="323" y2="263" stroke="var(--accent-mark)" stroke-width="3"></line>
+        <line x1="345" y1="263" x2="352" y2="263" stroke="var(--accent-mark)" stroke-width="3"></line>
+        <text class="pin-label" x="346" y="286" style="fill: var(--accent)">2221 S Main 基准点</text>
+      </g>
+
+      <!-- reference: 3221 S Hill -->
+      <a href="https://www.loopnet.com/Listing/3221-S-Hill-St-Los-Angeles-CA/27810766/" target="_blank" rel="noopener"><g><title>3221 S Hill St(此前尽调通过的仓储备选,750–1,100 SF $1,300 起,2015 年喷淋许可)</title>
+        <rect x="232" y="414" width="16" height="16" rx="4" fill="var(--deemph)" stroke="var(--ok)" stroke-width="2"></rect>
+        <text class="np-label" x="226" y="411" text-anchor="end">3221 S Hill(仓储备选)</text>
+      </g></a>
+
+      <!-- TOP 3 -->
+      <a href="https://www.loopnet.com/Listing/2023-2043-S-Santa-Fe-Ave-Los-Angeles-CA/41443781/" target="_blank" rel="noopener"><g><title>🥇 Santa Fe Row #2041:3,000 SF · ~$2,700/月 · 确认干式喷淋 · 400A 三相 · M3 分区 · 18-20 英尺层高;Kamran Rahimi (Hudson Group) 310-431-9099</title>
+        <circle cx="827" cy="359" r="17" fill="none" stroke="var(--ok)" stroke-width="2.5"></circle>
+        <circle cx="827" cy="359" r="13" fill="var(--accent-mark)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="827" y="363.5">1</text>
+        <text class="pin-label" x="808" y="390" text-anchor="end">Santa Fe Row · 3,000SF · $2,700</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/901-E-31st-St-Los-Angeles-CA/41566810/" target="_blank" rel="noopener"><g><title>🥈 901 E 31st St:2,500 SF 可合并 · $4,500/月 · 确认 ESFR 喷淋 · 楼宇 600A 三相 · 2024 整翻;⚠️ CM-CPIO 需核实电池用途;Michael Davood 310-940-2669</title>
+        <circle cx="464" cy="446" r="17" fill="none" stroke="var(--ok)" stroke-width="2.5"></circle>
+        <circle cx="464" cy="446" r="13" fill="var(--accent-mark)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="464" y="450.5">2</text>
+        <text class="pin-label" x="484" y="442">901 E 31st · $4,500</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/148-W-32nd-St-Los-Angeles-CA/40443115/" target="_blank" rel="noopener"><g><title>🥉 148 W 32nd St:2,300 SF · $4,002/月 · 卷帘门 · 200A/240V 三相 · 1984 年建(喷淋大概率)· LAM1;Eunice Oh 213-788-1178</title>
+        <circle cx="250" cy="447" r="13" fill="var(--accent-mark)" stroke="var(--card)" stroke-width="2.5"></circle>
+        <text class="pin-num" x="250" y="451.5">3</text>
+        <text class="pin-label" x="266" y="443">148 W 32nd · $4,002</text>
+      </g></a>
+
+      <!-- confirmed-sprinkler others -->
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/1600-s-broadway-unit-1a/" target="_blank" rel="noopener"><g><title>1600 S Broadway #1A:3,200 SF · 标价 ~$2,600(平台价格矛盾,电话核实)· 挂盘注明有喷淋;Jim Halferty, Lee &amp; Associates</title>
+        <circle cx="290" cy="193" r="7" fill="var(--deemph)" stroke="var(--ok)" stroke-width="2.5"></circle>
+        <text class="np-label" x="278" y="184" text-anchor="end">1600 S Broadway ~$2,600?</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/3449-S-Main-St-Los-Angeles-CA/41031190/" target="_blank" rel="noopener"><g><title>3449 S Main St:4,903 SF · $5,393(面积/价格双超,可谈)· 确认湿式喷淋 · 200-225A 三相 · 1988 年建 · MR1-2;Jay Park 323-985-6400</title>
+        <circle cx="304" cy="499" r="7" fill="var(--deemph)" stroke="var(--ok)" stroke-width="2.5"></circle>
+        <text class="np-label" x="316" y="503">3449 S Main 4,903SF $5,393</text>
+      </g></a>
+
+      <!-- value pick -->
+      <a href="https://www.craigslist.org/view/d/los-angeles-4000-month-sq-ft-warehouse/dA6b5DqdQqpa99mhnNHy81" target="_blank" rel="noopener"><g><title>2266 E 15th St:2,550 SF · $4,000 全包(水电网)· 三相电 + 220V · 两个卷帘门 + 装卸台 · 门禁停车 24/7</title>
+        <circle cx="769" cy="333" r="8" fill="var(--deemph)" stroke="var(--card)" stroke-width="2"></circle>
+        <text class="np-label" x="759" y="322" text-anchor="end" style="font-weight:700">2266 E 15th $4,000 全包</text>
+      </g></a>
+
+      <!-- other candidates -->
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2100-s-hill-st/" target="_blank" rel="noopener"><g><title>2100 S Hill St:4,940 SF · $4,693 · 1956 年建喷淋未知 · 距基准点最近</title>
+        <circle cx="261" cy="245" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="251" y="242" text-anchor="end">2100 S Hill 4,940SF</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-155-washington-creative/41pBVF5i2mLEeoRJ6twiQu" target="_blank" rel="noopener"><g><title>155 W Washington:1,500-5,500 SF 单元 $1.25/SF · 高层单元,核实货梯与一层装卸</title>
+        <circle cx="305" cy="193" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="313" y="207">155 W Washington</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/1728-Maple-Ave-Los-Angeles-CA/38745444/" target="_blank" rel="noopener"><g><title>1728 Maple Ave:3,900 SF · $5,031(顶预算,可谈)· drive-in · 10 个门禁车位 · 1946 年建</title>
+        <circle cx="392" cy="245" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="402" y="242">1728 Maple 3,900SF</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-1144-main-st-grnd-flr-flex/etyLjBCzNns8jmVUoaWqY1" target="_blank" rel="noopener"><g><title>1144 S Main:4,200 SF(3,400 一层 + 900 夹层)· $4,200 + 电 · 前后双卷帘门、后巷装卸;短信 213-304-4727</title>
+        <circle cx="370" cy="179" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="380" y="176">1144 S Main $4,200</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/2710-S-San-Pedro-Los-Angeles-CA/41223751/" target="_blank" rel="noopener"><g><title>2710 S San Pedro(转租):3,640 SF · $3,968 · 200A 三相 · 卷帘门 · 央空;⚠️ C2-CPIO 核实用途;Daniel Park 213-446-0396</title>
+        <circle cx="457" cy="376" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="467" y="373">2710 S San Pedro $3,968</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/3220-S-Main-St-Los-Angeles-CA/38718336/" target="_blank" rel="noopener"><g><title>3220 S Main:3,260 SF 二层(核实坡道/货梯)· $3,260 · 300A 三相 · 1905 年建</title>
+        <circle cx="312" cy="455" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="322" y="468">3220 S Main 2F</text>
+      </g></a>
+      <a href="https://www.loopnet.com/Listing/1116-E-12th-St-Los-Angeles-CA/40322567/" target="_blank" rel="noopener"><g><title>1116 E 12th St:4,980 SF · $4,582 · 200A · drive-in · 1967 年建;Moon Lim 213-308-2056</title>
+        <circle cx="617" cy="245" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="627" y="242">1116 E 12th 4,980SF</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-dtla-industrial-warehouse/frKVTBWLHGZvxM6LSGe2qY" target="_blank" rel="noopener"><g><title>796 E 14th Pl:4,500 SF · $6,500(超预算 30%,唯一明示 200A + M2 + 门禁装卸,可压价/分租)</title>
+        <circle cx="581" cy="280" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="591" y="277">796 E 14th Pl(超)</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-951-crocker-grnd-flr/shza8mMaD8Ss8sSMbUhCmr" target="_blank" rel="noopener"><g><title>951 Crocker #3:2,088 SF $2,401(另有 #1-2 4,380 SF $5,037 可谈)· 2009 年建(喷淋大概率)· 卷帘门;短信 213-304-4727</title>
+        <circle cx="631" cy="149" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="641" y="146">951 Crocker(2009)</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-11th-st-grnd-flr-retail/mDveX6ZHWSNoGmHVBCxmGA" target="_blank" rel="noopener"><g><title>526-530 E 11th St:1,900 SF · $2,375 + 电 · 卷帘门 · 央空(面积偏小的后备)</title>
+        <circle cx="508" cy="184" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="518" y="181">526 E 11th 1,900SF</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-800-12th-grnd-flr-story/qM1Xo5nQfSDWSeshvCGDz3" target="_blank" rel="noopener"><g><title>800 E 12th St #132:2,186 SF 三层 · $2,490 · 2008 年建(喷淋大概率)· 无卷帘门(展厅型)</title>
+        <circle cx="537" cy="193" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="547" y="211">800 E 12th(2008)</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-warehouse-for-rent-2495/v25J2hHoGdMamDQm5aaL7R" target="_blank" rel="noopener"><g><title>776 Gladys Ave:2,071 SF · $2,495 + 水电 · 报警系统 24/7 · 一年约</title>
+        <circle cx="675" cy="193" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="685" y="190">776 Gladys $2,495</text>
+      </g></a>
+      <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/1518-e-15th-st-1/" target="_blank" rel="noopener"><g><title>1518 E 15th St:4,000 SF · ~$4,000(价格口径需核实)· 1962 年建,喷淋/电力由租户核实</title>
+        <circle cx="697" cy="341" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="687" y="356" text-anchor="end">1518 E 15th</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-amazing-industrial-creative/6huWAGbeFraXh7s2fCeb2J" target="_blank" rel="noopener"><g><title>Broadway Pl &amp; MLK 转角:3,500 SF · $4,000 · 砖楼 · 室内停车(drive-in 潜力)· 近 USC</title>
+        <circle cx="217" cy="578" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="227" y="573">Broadway Pl&amp;MLK $4,000</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-commercial-creative-office/3ynQJhDtag1WTcVZciGReZ" target="_blank" rel="noopener"><g><title>253 W MLK:1,400 SF · $1,900 · 一层卷帘门 · 独立电表(小型卫星点)</title>
+        <circle cx="166" cy="578" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="156" y="595" text-anchor="end">253 W MLK $1,900</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-commercial-warehouse-2500/aHKTeM8KYkpmmFZg1wRvGp" target="_blank" rel="noopener"><g><title>USC/Coliseum 仓(看房给地址):2,500 SF · $3,750 · 前后门装卸 · 2 门禁车位(位置为约略)</title>
+        <circle cx="116" cy="525" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="126" y="522">USC 仓 $3,750(约)</text>
+      </g></a>
+      <a href="https://www.craigslist.org/view/d/los-angeles-prime-creative-studio/hLxwvwfBQ5u7KStutF6ATK" target="_blank" rel="noopener"><g><title>3430 S Hill #202:2,300 SF 二层 · $3,995 · 2013 年翻新(与 3221 S Hill 同运营商)</title>
+        <circle cx="254" cy="490" r="6" fill="var(--deemph)"></circle>
+        <text class="np-label" x="244" y="504" text-anchor="end">3430 S Hill 2F</text>
+      </g></a>
+      <!-- FlexEtc off-map -->
+      <a href="https://www.flexetc.com/cowarehousing/ca/los-angeles/e-12th-st/" target="_blank" rel="noopener"><g><title>FlexEtc(3040 E 12th St,河东 90023,~3 mi):300–3,000 SF 月付 $1,300 起,明示允许 EV 充电,有装卸;Plan B</title>
+        <text class="np-label" x="852" y="630" text-anchor="end" style="font-weight:700">FlexEtc 河东 3mi(Plan B)→</text>
+      </g></a>
+    </svg>
+    <div class="maplegend">
+      <span class="k"><span class="sw" style="background: var(--accent-mark)"></span>橙钉 = 前三推荐(编号即排名)</span>
+      <span class="k"><span class="ring"></span>绿圈 = 挂盘确认有喷淋</span>
+      <span class="k"><span class="dot"></span>灰点 = 其他候选</span>
+      <span class="k">✛ = 2221 S Main 基准点 · 虚线圈 0.5/1 mi</span>
+    </div>
+  </figure>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🥇 Santa Fe Row #2041</h3>
+      <p>3,000 SF 正好 · <b>确认干式喷淋 · 400A 三相 · M3 分区</b> · 18–20' 层高 · drive-in;1929 年建,河西岸,距基准 2.1 mi</p>
+      <p><a class="lk" href="https://www.loopnet.com/Listing/2023-2043-S-Santa-Fe-Ave-Los-Angeles-CA/41443781/" target="_blank" rel="noopener">房源页 ↗</a></p>
+      <p class="total">~$2,700<small>/月($0.90/SF)· Hudson Group 310-431-9099</small></p>
+    </div>
+    <div class="card">
+      <h3>🥈 901 E 31st St</h3>
+      <p>2,500 SF 可合并 · <b>ESFR 喷淋 · 楼宇 600A 三相 · 2024 整翻</b> · 21' 层高;⚠️ CM-CPIO 核实电池用途;0.9 mi</p>
+      <p><a class="lk" href="https://www.loopnet.com/Listing/901-E-31st-St-Los-Angeles-CA/41566810/" target="_blank" rel="noopener">房源页 ↗</a></p>
+      <p class="total">$4,500<small>/月($1.80/SF)· Davood 310-940-2669</small></p>
+    </div>
+    <div class="card">
+      <h3>🥉 148 W 32nd St</h3>
+      <p>2,300 SF · <b>卷帘门 · 200A/240V 三相 · 1984 年建 · LAM1</b> · 17' 层高——文档最齐的常规单元;0.7 mi</p>
+      <p><a class="lk" href="https://www.loopnet.com/Listing/148-W-32nd-St-Los-Angeles-CA/40443115/" target="_blank" rel="noopener">房源页 ↗</a></p>
+      <p class="total">$4,002<small>/月($1.74/SF)· Omega 213-788-1178</small></p>
+    </div>
+    <div class="card">
+      <h3>性价比 · 2266 E 15th St</h3>
+      <p>2,550 SF · <b>$4,000 全包含水电网</b> · 三相 + 220V · 两个卷帘门 + 装卸台 · 门禁停车 24/7;1.9 mi</p>
+      <p><a class="lk" href="https://www.craigslist.org/view/d/los-angeles-4000-month-sq-ft-warehouse/dA6b5DqdQqpa99mhnNHy81" target="_blank" rel="noopener">房源页 ↗</a></p>
+      <p class="total">$4,000<small>/月全包 · Craigslist 直联房东</small></p>
+    </div>
+  </div>
+
+  <details class="links">
+    <summary>全部候选链接(19 处 + 灵活仓)</summary>
+    <div class="body"><ul>
+      <li><a href="https://www.loopnet.com/Listing/2023-2043-S-Santa-Fe-Ave-Los-Angeles-CA/41443781/" target="_blank" rel="noopener">🥇 Santa Fe Row #2041 — 3,000 SF ~$2,700,喷淋✓,400A 三相,M3</a></li>
+      <li><a href="https://www.loopnet.com/Listing/901-E-31st-St-Los-Angeles-CA/41566810/" target="_blank" rel="noopener">🥈 901 E 31st — 2,500 SF $4,500,ESFR✓,600A,2024 整翻</a></li>
+      <li><a href="https://www.loopnet.com/Listing/148-W-32nd-St-Los-Angeles-CA/40443115/" target="_blank" rel="noopener">🥉 148 W 32nd — 2,300 SF $4,002,卷帘门,200A 三相,1984</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-4000-month-sq-ft-warehouse/dA6b5DqdQqpa99mhnNHy81" target="_blank" rel="noopener">2266 E 15th — 2,550 SF $4,000 全包,三相,双卷帘门</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/1600-s-broadway-unit-1a/" target="_blank" rel="noopener">1600 S Broadway #1A — 3,200 SF ~$2,600(核实),喷淋✓</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3449-S-Main-St-Los-Angeles-CA/41031190/" target="_blank" rel="noopener">3449 S Main — 4,903 SF $5,393(可谈),湿式喷淋✓,200-225A 三相</a></li>
+      <li><a href="https://www.loopnet.com/Listing/2710-S-San-Pedro-Los-Angeles-CA/41223751/" target="_blank" rel="noopener">2710 S San Pedro(转租)— 3,640 SF $3,968,200A 三相,卷帘门</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-1144-main-st-grnd-flr-flex/etyLjBCzNns8jmVUoaWqY1" target="_blank" rel="noopener">1144 S Main — 4,200 SF $4,200,前后双卷帘门(房东 213-304-4727)</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-951-crocker-grnd-flr/shza8mMaD8Ss8sSMbUhCmr" target="_blank" rel="noopener">951 Crocker #3 — 2,088 SF $2,401,2009 年建</a> · <a href="https://www.craigslist.org/view/d/los-angeles-951-crocker-grnd-flr/p5UXeL9bVusu1yQ8eg85LM" target="_blank" rel="noopener">#1-2 — 4,380 SF $5,037</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/2100-s-hill-st/" target="_blank" rel="noopener">2100 S Hill — 4,940 SF $4,693(最近,0.1 mi)</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-155-washington-creative/41pBVF5i2mLEeoRJ6twiQu" target="_blank" rel="noopener">155 W Washington — 1,500-5,500 SF $1.25/SF(高层,核实货梯)</a></li>
+      <li><a href="https://www.loopnet.com/Listing/1728-Maple-Ave-Los-Angeles-CA/38745444/" target="_blank" rel="noopener">1728 Maple — 3,900 SF $5,031(顶预算)</a></li>
+      <li><a href="https://www.loopnet.com/Listing/3220-S-Main-St-Los-Angeles-CA/38718336/" target="_blank" rel="noopener">3220 S Main — 3,260 SF 二层 $3,260,300A 三相</a></li>
+      <li><a href="https://www.loopnet.com/Listing/1116-E-12th-St-Los-Angeles-CA/40322567/" target="_blank" rel="noopener">1116 E 12th — 4,980 SF $4,582,200A</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-dtla-industrial-warehouse/frKVTBWLHGZvxM6LSGe2qY" target="_blank" rel="noopener">796 E 14th Pl — 4,500 SF $6,500(超预算,200A+M2,可压价)</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-800-12th-grnd-flr-story/qM1Xo5nQfSDWSeshvCGDz3" target="_blank" rel="noopener">800 E 12th #132 — 2,186 SF $2,490,2008 年建(无卷帘门)</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-warehouse-for-rent-2495/v25J2hHoGdMamDQm5aaL7R" target="_blank" rel="noopener">776 Gladys — 2,071 SF $2,495</a> · <a href="https://www.craigslist.org/view/d/los-angeles-11th-st-grnd-flr-retail/mDveX6ZHWSNoGmHVBCxmGA" target="_blank" rel="noopener">526 E 11th — 1,900 SF $2,375</a> · <a href="https://www.craigslist.org/view/d/los-angeles-commercial-creative-office/3ynQJhDtag1WTcVZciGReZ" target="_blank" rel="noopener">253 W MLK — 1,400 SF $1,900</a></li>
+      <li><a href="https://www.craigslist.org/view/d/los-angeles-amazing-industrial-creative/6huWAGbeFraXh7s2fCeb2J" target="_blank" rel="noopener">Broadway Pl &amp; MLK — 3,500 SF $4,000(室内停车)</a> · <a href="https://www.craigslist.org/view/d/los-angeles-commercial-warehouse-2500/aHKTeM8KYkpmmFZg1wRvGp" target="_blank" rel="noopener">USC/Coliseum 仓 — 2,500 SF $3,750</a> · <a href="https://www.craigslist.org/view/d/los-angeles-prime-creative-studio/hLxwvwfBQ5u7KStutF6ATK" target="_blank" rel="noopener">3430 S Hill #202 — 2,300 SF $3,995(二层)</a></li>
+      <li><a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/1518-e-15th-st-1/" target="_blank" rel="noopener">1518 E 15th — 4,000 SF ~$4,000(口径核实)</a> · <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/671-mill-street/" target="_blank" rel="noopener">671 Mill St — 3,857 SF 询价</a> · <a href="https://www.commercialcafe.com/commercial-property/us/ca/los-angeles/796-e-14th-place-1/" target="_blank" rel="noopener">796 E 14th Pl(1989 楼)询价</a></li>
+      <li>灵活仓:<a href="https://www.flexetc.com/cowarehousing/ca/los-angeles/e-12th-st/" target="_blank" rel="noopener">FlexEtc(河东 3 mi,允许 EV 充电,$1,300 起月付)</a> · <a href="https://readyspaces.com/location/los-angeles/downtown-los-angeles/" target="_blank" rel="noopener">ReadySpaces(超预算)</a> · <a href="https://www.join-portal.com/location/los-angeles" target="_blank" rel="noopener">Portal 334 S Main(单元偏小)</a> · <a href="https://www.cubework.com/locations/california/los-angeles" target="_blank" rel="noopener">Cubework Vernon(4.7 mi)</a></li>
+    </ul></div>
+  </details>
+
+  <p class="fn">⚠️ Craigslist 链接时效性强(约 30–45 天过期),失效时按地址搜索或联系表内经纪人。一个房东(短信 213-304-4727)持有 1144 S Main、951 Crocker、526 E 11th 等 5 处——可一次连看。看房必问:单元内喷淋覆盖证明(NFPA 25)、配电面板安培数、租约用途条款是否接受"电池充电/车辆维护"。完整分析见仓库 <code>la-ktown-combo-site-options.md</code> 第八节。</p>
+</main>

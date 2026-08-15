@@ -1,0 +1,249 @@
+<title>Santa Fe 覆盖圈</title>
+<style>
+  :root {
+    --paper: #FAF8F4; --card: #FFFFFF; --ink: #23262B; --ink-2: #5C594F;
+    --muted: #8A857A; --line: #E5E0D4; --line-soft: #EFEAE0;
+    --accent: #C85F06; --accent-mark: #D2650A; --accent-wash: rgba(210, 101, 10, 0.07);
+    --deemph: #A39B8C; --lane: #C9C2B2; --river: #9DB8C4;
+    --m-flash: #eb6834; --m-inno: #1baf7a; --m-light: #2a78d6;
+    --band: rgba(35, 38, 43, 0.13);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+      --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+      --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217, 111, 20, 0.12);
+      --deemph: #6E6A61; --lane: #4A4D53; --river: #3E5560;
+      --m-flash: #d95926; --m-inno: #199e70; --m-light: #3987e5;
+      --band: rgba(236, 233, 225, 0.18);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16181C; --card: #1E2126; --ink: #ECE9E1; --ink-2: #B5B1A6;
+    --muted: #837F74; --line: #32353B; --line-soft: #282B31;
+    --accent: #F08A2B; --accent-mark: #D96F14; --accent-wash: rgba(217, 111, 20, 0.12);
+    --deemph: #6E6A61; --lane: #4A4D53; --river: #3E5560;
+    --m-flash: #d95926; --m-inno: #199e70; --m-light: #3987e5;
+    --band: rgba(236, 233, 225, 0.18);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+    font-size: 15px; line-height: 1.75; }
+  main { max-width: 60em; margin: 0 auto; padding: 0 20px 80px; }
+  header { padding: 44px 0 6px; }
+  .eyebrow { font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 700; margin: 0 0 10px; }
+  h1 { font-size: clamp(26px, 4.6vw, 36px); font-weight: 900; margin: 0 0 8px; line-height: 1.3; text-wrap: balance; }
+  h2 { font-size: 21px; font-weight: 800; margin: 40px 0 6px; }
+  .dek { color: var(--ink-2); margin: 0 0 4px; max-width: 46em; }
+  .meta { font-size: 12.5px; color: var(--muted); margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0 6px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 15px 18px 13px; }
+  .stat .label { font-size: 12.5px; color: var(--ink-2); margin: 0 0 2px; }
+  .stat .value { font-size: 32px; font-weight: 800; line-height: 1.15; }
+  .stat .value .unit { font-size: 15px; font-weight: 650; color: var(--ink-2); margin-left: 2px; }
+  .stat .sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+  @media (max-width: 560px) { .stats { grid-template-columns: 1fr; } }
+  figure.map { margin: 22px 0 8px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 10px 4px; }
+  figure.map svg { width: 100%; height: auto; display: block; }
+  .maplegend { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 8px 10px 10px; font-size: 12.5px; color: var(--ink-2); border-top: 1px solid var(--line-soft); }
+  .st-label { font-size: 11.5px; font-weight: 600; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .st-label.far { fill: var(--muted); font-weight: 500; }
+  .ring-label { font-size: 13px; font-weight: 800; fill: var(--ink-2); paint-order: stroke; stroke: var(--card); stroke-width: 4px; }
+  .mi-ring { fill: none; stroke: var(--lane); stroke-width: 2; stroke-dasharray: 6 6; }
+  .fwy { stroke: var(--lane); stroke-width: 4; fill: none; stroke-linecap: round; opacity: 0.7; }
+  .fwy-label { font-size: 10px; font-weight: 800; fill: var(--muted); }
+  figure.chart { margin: 20px 0; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px 14px; }
+  figure.chart .ct { font-size: 15px; font-weight: 750; }
+  figure.chart .cs { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  .bars { display: grid; grid-template-columns: max-content 1fr; gap: 14px 12px; align-items: center; margin: 18px 0 6px; }
+  .bars .rl { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+  .bars .rl b { color: var(--ink); }
+  .track { position: relative; height: 22px; }
+  .bar { position: absolute; left: 0; top: 2px; height: 18px; border-radius: 0 4px 4px 0; }
+  .track .val { position: absolute; top: 50%; transform: translateY(-50%); font-size: 12.5px; font-weight: 700; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .refwrap { position: relative; height: 30px; margin-top: 2px; grid-column: 2; }
+  .chart-frame { position: relative; }
+  .band { position: absolute; top: 0; bottom: 0; background: var(--band); }
+  .refline { position: absolute; top: 0; bottom: 0; width: 0; border-left: 1.5px dashed var(--ink-2); }
+  .reflabel { position: absolute; font-size: 10.5px; font-weight: 700; color: var(--muted); white-space: nowrap; }
+  figure.chart .src { font-size: 11.5px; color: var(--muted); margin-top: 12px; border-top: 1px solid var(--line-soft); padding-top: 8px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin: 18px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 15px 17px 13px; border-top: 4px solid var(--line); }
+  .card.flash { border-top-color: var(--m-flash); }
+  .card.inno { border-top-color: var(--m-inno); }
+  .card.light { border-top-color: var(--m-light); }
+  .card h3 { margin: 0 0 3px; font-size: 15.5px; font-weight: 800; }
+  .card .spec { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+  .card .pct { font-size: 30px; font-weight: 800; line-height: 1.1; }
+  .card .pct small { font-size: 12px; font-weight: 650; color: var(--muted); }
+  .card p { margin: 6px 0 0; font-size: 13px; color: var(--ink-2); }
+  ul { padding-left: 1.3em; margin: 10px 0; }
+  li { margin: 5px 0; }
+  .fn { font-size: 12.5px; color: var(--muted); margin-top: 14px; line-height: 1.7; }
+  em { font-style: normal; background: linear-gradient(transparent 68%, var(--accent-wash) 68%); }
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">HMP Bikes · Coverage &amp; Range Fit · 2026-08-15</p>
+    <h1>Santa Fe Row 中枢:3 / 5 / 10 英里覆盖圈</h1>
+    <p class="dek">以 2023-2043 S Santa Fe Ave(🥇 候选中枢)为原点。人口数字用周边 4 份商业地产招商册的半径人口表锚定(两份就在 Santa Fe Ave 同街 0.5–1.2 英里内),10 英里圈为分区加总 + 密度交叉验证。</p>
+    <p class="meta">经纬度投影示意图;人口为 2020–2025 口径,LoopNet/CoStar 预测各圈 2025–2030 变化 -1% ~ -2.4%(基本持平)。</p>
+    <div class="stats">
+      <div class="stat">
+        <p class="label">3 英里圈(DTLA·Boyle Heights·USC)</p>
+        <div class="value">≈37<span class="unit">万人</span></div>
+        <p class="sub">区间 35–39 万 · 密度 ~13,000 人/平方英里</p>
+      </div>
+      <div class="stat">
+        <p class="label">5 英里圈(+Westlake·East LA·Silver Lake)</p>
+        <div class="value">≈115<span class="unit">万人</span></div>
+        <p class="sub">区间 105–125 万 · K-town 在 5.2 mi 圈外沿</p>
+      </div>
+      <div class="stat">
+        <p class="label">10 英里圈(+Hollywood·Glendale·Inglewood)</p>
+        <div class="value">≈320<span class="unit">万人</span></div>
+        <p class="sub">区间 290–340 万 · 覆盖 LA 盆地核心</p>
+      </div>
+    </div>
+  </header>
+
+  <figure class="map">
+    <svg viewBox="0 0 900 880" role="img" aria-label="以 Santa Fe Row 为中心的 3、5、10 英里覆盖圈地图,标注圈内主要社区">
+      <!-- freeways (faint) -->
+      <path class="fwy" d="M 0 430 L 900 415"></path>
+      <path class="fwy" d="M 420 40 L 420 860"></path>
+      <path class="fwy" d="M 560 300 L 560 860"></path>
+      <text class="fwy-label" x="835" y="410">I-10</text>
+      <text class="fwy-label" x="404" y="845">110</text>
+      <text class="fwy-label" x="544" y="845">710</text>
+      <!-- LA river -->
+      <path d="M 430 140 Q 466 350 462 445 Q 470 540 505 640 L 525 880" stroke="var(--river)" stroke-width="6" fill="none" opacity="0.7"></path>
+
+      <!-- rings -->
+      <circle class="mi-ring" cx="459" cy="445" r="115" style="stroke: var(--accent-mark); opacity:.9"></circle>
+      <circle class="mi-ring" cx="459" cy="445" r="191"></circle>
+      <circle class="mi-ring" cx="459" cy="445" r="383"></circle>
+      <text class="ring-label" x="459" y="316" text-anchor="middle" style="fill: var(--accent)">3 mi · ≈37 万人</text>
+      <text class="ring-label" x="459" y="240" text-anchor="middle">5 mi · ≈115 万人</text>
+      <text class="ring-label" x="459" y="48" text-anchor="middle">10 mi · ≈320 万人</text>
+
+      <!-- hub -->
+      <g><title>Santa Fe Row 中枢:2023-2043 S Santa Fe Ave,3,000 SF ~$2,700/月,喷淋✓ 400A 三相 M3</title>
+        <circle cx="459" cy="445" r="11" fill="none" stroke="var(--accent-mark)" stroke-width="3"></circle>
+        <circle cx="459" cy="445" r="4" fill="var(--accent-mark)"></circle>
+        <text class="st-label" x="472" y="466" style="fill: var(--accent); font-weight:800">Santa Fe Row 中枢</text>
+      </g>
+
+      <!-- landmarks: inside 3mi -->
+      <circle cx="397" cy="376" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="388" y="368" text-anchor="end">DTLA(2.4)</text>
+      <circle cx="483" cy="416" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="492" y="411">Boyle Heights(1.0)</text>
+      <circle cx="461" cy="496" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="470" y="507">Vernon(1.3)</text>
+      <circle cx="472" cy="555" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="481" y="560">Huntington Park(2.9)</text>
+      <!-- 3-5mi -->
+      <circle cx="340" cy="451" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="331" y="447" text-anchor="end">USC(3.1)</text>
+      <circle cx="360" cy="355" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="351" y="349" text-anchor="end">Westlake(3.5)</text>
+      <circle cx="588" cy="443" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="597" y="439">East LA(3.4)</text>
+      <circle cx="527" cy="320" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="536" y="315">Lincoln Hts(3.7)</text>
+      <circle cx="395" cy="299" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="386" y="293" text-anchor="end">Echo Park(4.1)</text>
+      <circle cx="500" cy="627" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="509" y="632">South Gate(4.8)</text>
+      <circle cx="373" cy="275" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="364" y="268" text-anchor="end">Silver Lake(4.9)</text>
+      <circle cx="558" cy="568" r="4.5" fill="var(--ink-2)"></circle><text class="st-label" x="567" y="573">Bell·Maywood(4.1)</text>
+      <!-- 5-10mi -->
+      <circle cx="288" cy="342" r="4" fill="var(--muted)"></circle><text class="st-label far" x="279" y="336" text-anchor="end">K-town(5.2)</text>
+      <circle cx="435" cy="669" r="4" fill="var(--muted)"></circle><text class="st-label far" x="426" y="682" text-anchor="end">Watts(5.9)</text>
+      <circle cx="230" cy="427" r="4" fill="var(--muted)"></circle><text class="st-label far" x="221" y="422" text-anchor="end">West Adams(6.0)</text>
+      <circle cx="544" cy="211" r="4" fill="var(--muted)"></circle><text class="st-label far" x="553" y="207">Highland Park(6.4)</text>
+      <circle cx="209" cy="387" r="4" fill="var(--muted)"></circle><text class="st-label far" x="200" y="382" text-anchor="end">Mid-City(6.7)</text>
+      <circle cx="696" cy="341" r="4" fill="var(--muted)"></circle><text class="st-label far" x="705" y="337">Monterey Park(6.7)</text>
+      <circle cx="735" cy="467" r="4" fill="var(--muted)"></circle><text class="st-label far" x="744" y="472">Montebello(7.2)</text>
+      <circle cx="687" cy="259" r="4" fill="var(--muted)"></circle><text class="st-label far" x="696" y="255">Alhambra(7.7)</text>
+      <circle cx="241" cy="240" r="4" fill="var(--muted)"></circle><text class="st-label far" x="232" y="233" text-anchor="end">Hollywood(7.8)</text>
+      <circle cx="406" cy="133" r="4" fill="var(--muted)"></circle><text class="st-label far" x="415" y="128">Glendale(8.2)</text>
+      <circle cx="191" cy="624" r="4" fill="var(--muted)"></circle><text class="st-label far" x="182" y="637" text-anchor="end">Inglewood(8.4)</text>
+      <circle cx="483" cy="784" r="4" fill="var(--muted)"></circle><text class="st-label far" x="492" y="789">Compton(8.8)</text>
+      <circle cx="97" cy="443" r="4" fill="var(--muted)"></circle><text class="st-label far" x="106" y="439">Culver City(9.5)</text>
+      <circle cx="650" cy="115" r="4" fill="var(--muted)"></circle><text class="st-label far" x="659" y="111">Pasadena(9.9)</text>
+      <circle cx="121" cy="267" r="4" fill="var(--muted)"></circle><text class="st-label far" x="130" y="262">WeHo(10.0)</text>
+    </svg>
+    <div class="maplegend">
+      <span class="k">括号内为直线英里数 · 深色点 = 5 英里内 · 浅色点 = 5–10 英里</span>
+      <span class="k">Santa Monica(14 mi)、Long Beach(15 mi)、San Fernando Valley 在 10 英里圈外</span>
+    </div>
+  </figure>
+
+  <h2>三台车的续航 vs 骑手真实日程</h2>
+  <p class="dek">基准来自纽约骑手实测研究(NYSERDA/DCWP/市交通局换电试点,详见图注)与 LA 骑手证言:全职两轮骑手日程中位数 ≈20–30 英里,P75 ≈40–50,P90 ≈60–80;摩托类(坐式)骑手因接更远单,日均基准 ≈62 英里,重度用户日耗 ≈80 英里。全职日普遍横跨午晚双高峰(11am–9pm,7–13 小时在线)。</p>
+
+  <figure class="chart">
+    <figcaption>
+      <div class="ct">续航里程 vs 日程基准(英里)</div>
+      <div class="cs">灰色带 = 全职日中位区间 20–30 mi;虚线 = 摩托类日均 62 mi 与 P90 重度日 80 mi</div>
+    </figcaption>
+    <div class="bars">
+      <span class="rl"><b>FLASH</b> · 10 h</span>
+      <span class="track chart-frame">
+        <span class="bar" style="width:88.9%; background: var(--m-flash)"></span>
+        <span class="band" style="left:22.2%; width:11.1%"></span>
+        <span class="refline" style="left:68.9%"></span>
+        <span class="refline" style="left:88.9%"></span>
+        <span class="val" style="left:calc(88.9% + 8px)">80 mi</span>
+      </span>
+      <span class="rl"><b>INNO-A Pro</b></span>
+      <span class="track chart-frame">
+        <span class="bar" style="width:66.7%; background: var(--m-inno)"></span>
+        <span class="band" style="left:22.2%; width:11.1%"></span>
+        <span class="refline" style="left:68.9%"></span>
+        <span class="refline" style="left:88.9%"></span>
+        <span class="val" style="left:calc(66.7% + 8px)">60 mi</span>
+      </span>
+      <span class="rl"><b>Lightning MK.II</b> · 6 h</span>
+      <span class="track chart-frame">
+        <span class="bar" style="width:55.6%; background: var(--m-light)"></span>
+        <span class="band" style="left:22.2%; width:11.1%"></span>
+        <span class="refline" style="left:68.9%"></span>
+        <span class="refline" style="left:88.9%"></span>
+        <span class="val" style="left:calc(55.6% + 8px)">50 mi</span>
+      </span>
+      <span></span>
+      <span class="refwrap chart-frame">
+        <span class="reflabel" style="left:22.2%; top:2px">中位 20–30</span>
+        <span class="reflabel" style="left:calc(68.9% - 30px); top:2px">摩托类日均 62</span>
+        <span class="reflabel" style="left:calc(88.9% - 26px); top:15px">P90 ≈80</span>
+      </span>
+    </div>
+    <p class="src">基准来源:NYSERDA/ECP 纽约电动车骑手调查(日均 20.25 mi,n=180);NYC DCWP 平台数据(每在线小时 ≈2.9 引擎里程);行业指南(市区 8 小时班 30–40 mi);RMI 汽油摩托骑手基准 ≈62 mi/日;纽约重度用户日耗 ≈80 mi(55 mi 电池 × 1.45 次充电/日)。LA 摩托类偏向此区间上沿(本地骑手证言:scooter 模式日均 ≈50 mi)。</p>
+  </figure>
+
+  <div class="cards">
+    <div class="card flash">
+      <h3>FLASH · 80 mi / 10 h</h3>
+      <p class="spec">全天一块电池打法(对标 Whizz 旗舰 85 mi "up to 35 orders")</p>
+      <div class="pct">≈90–95%<small> 全职骑手日程无需中途换电</small></div>
+      <p>唯一清过 62 mi 摩托类基准且留 ≥25% 余量的车型;10 小时电池撑满 11am–9pm 双高峰。10 英里圈深处的远单(20 mi 往返)只耗 25% 电量——三台车里唯一能全圈接单的。<em>定位:全职重度骑手的租赁/购车旗舰。</em></p>
+    </div>
+    <div class="card inno">
+      <h3>INNO-A Pro · 60 mi</h3>
+      <p class="spec">中位—P75 日程全覆盖,重度日贴线</p>
+      <div class="pct">≈75–85%<small> 日程无需中途换电</small></div>
+      <p>盖住 50 mi 的典型全职日、正好压在 62 mi 基准上——正常日够用,爆单日需换一次电。5 英里圈(115 万人)内运营几乎无焦虑。<em>定位:主力走量机型,天然的"1 次/日换电"订阅客户。</em></p>
+    </div>
+    <div class="card light">
+      <h3>Lightning MK.II · 50 mi / 6 h</h3>
+      <p class="spec">兼职完美 / 全职必配换电</p>
+      <div class="pct">≈55–70%<small> 全职日程(兼职 ≈90%+)</small></div>
+      <p>6 小时电池无法横跨 13 小时双高峰日——全职骑手必然在午晚峰之间回站换电,而这恰是纽约已验证的行为(53.7% 骑手每天充电 ≥2 次,换电柜用户每周换 8–14 块)。<em>定位:入门价格 + 换电订阅的发动机——续航"短板"就是换电中枢的收入来源。</em></p>
+    </div>
+  </div>
+
+  <h2>覆盖圈 × 车型:接单半径怎么读</h2>
+  <ul>
+    <li><b>3 英里圈(≈37 万人)</b>:DTLA + Boyle Heights + USC + Pico-Union 南缘。往返 ≤6 mi,三台车都能一天跑 8 次以上循环——<b>Lightning 的主场</b>。</li>
+    <li><b>5 英里圈(≈115 万人)</b>:加入 Westlake、East LA、Silver Lake/Echo Park、South Gate。K-town 在 5.2 mi 圈外沿(往返 10.4 mi = Lightning 电量的 21%)——<b>INNO 在此圈内几乎无焦虑,Lightning 一天 4–5 个 K-town 循环后就要回站</b>。</li>
+    <li><b>10 英里圈(≈320 万人)</b>:Hollywood、Glendale、Inglewood、Culver City、Pasadena 边缘。深处往返 20 mi:FLASH 耗 25%、INNO 33%、Lightning 40%——<b>只有 FLASH 能把全圈当日常接单范围</b>。</li>
+    <li><b>换电经济学</b>:纽约试点显示骑手宁可背备用电池也不愿中途停车充电(69.6% 不在班中充电、>50% 随身带 2 块以上)——<em>换电柜正是把这个痛点变成订阅收入</em>:Lightning/INNO 骑手是天然订阅者(每天 1–2 次),FLASH 骑手是高客单的整车客户。纽约 5 个换电柜 6 个月完成 12,100 次换电,PopWheels 不到 6 个月破 10 万次——需求已被验证。</li>
+  </ul>
+
+  <p class="fn">人口来源:MyEListing 招商册半径人口表(1520 S Santa Fe:3mi 371,700 / 5mi 1,237,496;923 S Santa Fe:386,033 / 1,224,381)、LoopNet/CoStar 2025(2263 E Vernon:354,097 / 1,161,070;3100 E 26th:322,619 / 1,051,652);10 英里圈为城市/规划区加总(~321 万)+ 密度交叉验证(314 平方英里 × 9,500–10,500 人/平方英里)。骑手日程来源:NYSERDA、NYC DCWP、NYC DOT 换电试点、Cornell ILR/WJP、RMI、Whizz/行业规格。接受度百分比为基于上述分布的推断区间,非实测;LA 摩托类骑手日程偏纽约自行车骑手上沿。完整链接见仓库报告第九节。</p>
+</main>
