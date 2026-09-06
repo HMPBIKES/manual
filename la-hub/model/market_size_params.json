@@ -1,5 +1,5 @@
 {
- "_readme": "Every parameter: lo = conservative (fewer riders / smaller market), base, hi = aggressive. tag: FACT (public, verified, cited in research/03-market-size.md), ESTIMATE (derived from several sources), ASSUMPTION (no direct evidence; replace with HMP data or field tests). Sources are abbreviated; full citations in research/03-market-size.md and research/raw/market/.",
+ "_readme": "Every parameter: lo = conservative (fewer riders / smaller market), base, hi = aggressive. tag: FACT (public, verified, cited in research/03-market-size.md), ESTIMATE (derived from several sources), ASSUMPTION (no direct evidence; replace with HMP data or field tests). Sources are abbreviated; full citations in research/03-market-size.md and research/raw/market/. Change log 2026-09-06: M5 (DoorDash two-wheel miles) removed from the two-wheel blend after an SF back-test showed the miles->courier conversion overstates SF 3x; kept as a labelled sanity output. M4 rebuilt on a per-rider basis (HMP share of SF two-wheel weekly-active people) instead of per-restaurant. 2026-09-06 v2 after LA-reality review: DoorDash 49% haircut for declared-mode misreporting; mode-specific weekly/daily for two-wheelers; standing e-scooter bucket split out; gas share raised; zone intensity, reach, penetration and maturity lowered; robot displacement added; SOM route B rebuilt on customers per daily-active two-wheel courier. v3 after methodology review: orders_per_courier_day derived from deliveries/week and weekly->daily (one free parameter, not two); M1 and M2 are acknowledged as ONE orders route (M1's LA/NYC intensity ratio is built from M2's inputs) cross-checked against M3 (supply) only; M5 rebuilt as an NYC-transfer of DoorDash two-wheel miles (sanity range, not blended); delivery_share_of_app_workers restricted to de-duplicated restaurant couriers; doordash_us_share on an all-vertical basis.",
  "restaurants_target_zone": {
   "lo": 1962,
   "base": 1962,
@@ -99,25 +99,25 @@
   "note": "NYC ~0.33 deliveries/resident/week (2.77M/wk / 8.48M) vs US average ~0.11 (DoorDash 'over 3M/day' US 2024 / ~0.62 share / 340M). LA assumed 1.2-1.8x US average -> 0.4-0.6 of NYC per capita; restaurants per capita similar in both (2.7 vs 2.9 per 1,000). Also consistent with DoorDash two-wheel miles LA 38.3M vs NYC 45.2M at 49% vs 55% shares (city label boundary undefined)"
  },
  "la_deliveries_per_courier_week": {
-  "lo": 28,
-  "base": 22,
-  "hi": 17,
+  "lo": 24,
+  "base": 18,
+  "hi": 14,
   "tag": "ESTIMATE",
-  "note": "per weekly-active courier. NYC career couriers 39-45; Seattle all on-demand apps 12.7 offers/account-week; DoorDash national average Dasher ~4 hrs/wk x ~1.5/hr = ~6. LA blend of car-based casual majority and full-time minority (Berkeley 2024: 12% of CA delivery drivers full-time, 59% of trips by 20+ hr/wk drivers). lo = higher productivity = fewer couriers"
+  "note": "deliveries per weekly-active courier (people). Anchors: DoorDash US 8M annual Dashers x ~10/52 weeks active = ~1.5M weekly-active; 3.6M deliveries/day x 7 / 1.5M = 16.4 per weekly-active Dasher-week; Seattle 12.7 offers/account-week; NYC career couriers 39-45. lo = higher productivity = fewer couriers"
  },
  "weekly_to_daily_active": {
   "lo": 0.3,
-  "base": 0.4,
-  "hi": 0.5,
+  "base": 0.35,
+  "hi": 0.42,
   "tag": "ESTIMATE",
-  "note": "no source publishes daily/weekly. DoorDash: avg 4 hrs/wk in 2-3 hr sessions -> 0.2-0.35; NYC full-timers 6+ days/wk -> ~0.85; blend weighted by hours (heavy users do most hours)"
+  "note": "blended daily/weekly for all couriers (car-dominated). DoorDash: ~4 hrs/wk in 2-3 hr sessions -> 0.2-0.35; NYC full-timers ~0.85; DoorDash-consistent pair with 16.4 deliveries/wk and ~7 orders/day is 0.33. orders_per_courier_day is DERIVED = deliveries_per_courier_week / (7 x this)"
  },
  "zone_order_intensity_vs_county": {
-  "lo": 0.9,
-  "base": 1.15,
-  "hi": 1.4,
+  "lo": 0.85,
+  "base": 1.05,
+  "hi": 1.25,
   "tag": "ASSUMPTION",
-  "note": "app orders per restaurant in DTLA/Ktown/Westlake/USC vs LA County average: dense residential + office lunch + late-night; DPH counts in DTLA include hotel/stadium/institutional kitchens which pulls the other way"
+  "note": "app orders per DPH restaurant in the zone vs county: DTLA DPH count includes arena/convention/hotel/Grand Central Market stalls/mission kitchens (+32% vs NAICS 7225) and DTLA office occupancy is ~half of 2019 (CBRE Q3 2025 vacancy 33%); offsets: Koreatown late-night, USC students, orders exported to Silver Lake/Mid-City"
  },
  "doordash_us_deliveries_per_day": {
   "lo": 3300000,
@@ -127,11 +127,11 @@
   "note": "DoorDash Dash Report 2025 (2024 data): 'over 3 million deliveries per day' US; FY2025 global Total Orders 3,172M (+23%, ex-Deliveroo +20% in Q4) -> 2025 US 3.3-4.0M/day"
  },
  "doordash_us_share": {
-  "lo": 0.67,
-  "base": 0.62,
-  "hi": 0.58,
+  "lo": 0.65,
+  "base": 0.6,
+  "hi": 0.55,
   "tag": "ESTIMATE",
-  "note": "Bloomberg Second Measure Mar 2024: DoorDash 67% of US meal-delivery sales, Uber Eats 25% (incl. Postmates), Grubhub 8%; 2025-26 aggregators 56-61%. lo = higher share = smaller total market"
+  "note": "DoorDash's share of ALL US app deliveries (its 3.6M/day numerator includes grocery/DashMart). Second Measure Mar 2024: 67% of meal-delivery SALES; all-vertical share ~60%; 2025-26 aggregators 56-61%. lo = higher share = smaller total market"
  },
  "la_county_share_us_orders": {
   "lo": 0.0287,
@@ -139,13 +139,6 @@
   "hi": 0.0416,
   "tag": "ESTIMATE",
   "note": "LA County 9.76M / US 340.1M = 2.87% population share x intensity 1.0 / 1.2 / 1.45 (DoorDash: 'Greater Los Angeles' is its highest-volume metro; warm climate; but car-based)"
- },
- "orders_per_courier_day": {
-  "lo": 12,
-  "base": 9,
-  "hi": 7,
-  "tag": "ESTIMATE",
-  "note": "per daily-active courier: NYC 2.72M/wk over ~49k daily-active (61k x 0.8) = ~8/day even with career riders; Gridwise 2025 median 1.5-1.7 deliveries per active hour; LA car couriers 1.5-2.5/hr x 4-7 hrs. lo = more productive = fewer couriers"
  },
  "ca_app_based_workers_quarter_active": {
   "lo": 850000,
@@ -162,53 +155,53 @@
   "note": "LA County = 24.85% of CA population (DOF 2026), 26.6% of CA NAICS 722 employment (QCEW Jun 2025), 26.2% of CA NAICS 492 nonemployer couriers (Census 2023: 44,977 of 171,603)"
  },
  "delivery_share_of_app_workers": {
-  "lo": 0.55,
-  "base": 0.65,
-  "hi": 0.75,
-  "tag": "ASSUMPTION",
-  "note": "share of quarter-active CA app workers who do food/goods delivery rather than only rideshare; DoorDash alone reports 8M+ annual US Dashers vs Uber+Lyft ~2M US drivers, so delivery is the majority of app workers"
+  "lo": 0.4,
+  "base": 0.5,
+  "hi": 0.6,
+  "tag": "ESTIMATE",
+  "note": "share of quarter-active CA app-worker REGISTRATIONS that are restaurant couriers after de-duplicating multi-platform registrations (UCR: 800k 'may include duplicate drivers across platforms'; Flex: 1.9 platforms per worker; Berkeley: 45% multi-app) and excluding rideshare-only, Instacart and Amazon Flex"
  },
  "quarterly_to_weekly_active": {
   "lo": 0.3,
   "base": 0.4,
   "hi": 0.5,
-  "tag": "FACT",
+  "tag": "ESTIMATE",
   "note": "NYC DCWP: 61,000 weekly / 122,104 quarterly-unique = 0.50; Seattle OLS: ~13.7k weekly unique / 34,646 quarterly = ~0.40; DoorDash: typical Dasher active ~10 of 52 weeks, 73% dash <4 weeks per quarter -> ~0.25-0.30"
  },
  "la_two_wheel_delivery_share": {
-  "lo": 0.4,
-  "base": 0.46,
+  "lo": 0.35,
+  "base": 0.42,
   "hi": 0.49,
-  "tag": "FACT",
-  "note": "DoorDash 2026 Two-Wheeled Progress Report p.7: Los Angeles, CA 49% of deliveries on two wheels (2025, two-month window, 'approximate'; city boundary undefined). Uber Eats LA unknown and likely lower (scooter mode capped at <50cc) -> blended 40-49%"
+  "tag": "ESTIMATE",
+  "note": "DoorDash 2026 Two-Wheeled Progress Report: Los Angeles, CA 49% of deliveries on two wheels (2025; FACT for DoorDash's DECLARED dash type). Haircut for (a) car couriers running 'bike' mode to catch short high-paying orders (DoorDash policy explicitly threatens deactivation for mode misreporting; TikTok how-tos exist) and (b) Uber Eats/Grubhub LA being more car-heavy (scooter mode <50cc only). lo 0.35 = 25% misreporting + Uber blend; hi 0.49 = DoorDash figure taken at face value"
  },
  "two_wheel_delivery_to_courier_share": {
-  "lo": 0.8,
-  "base": 0.88,
-  "hi": 0.95,
+  "lo": 0.72,
+  "base": 0.8,
+  "hi": 0.9,
   "tag": "ESTIMATE",
-  "note": "two-wheel couriers do more deliveries per hour (DoorDash: +10%/hr; NYC e-bike 2.03 vs car 1.13) and more hours, so courier share < delivery share. NYC: non-car 56% of workers vs 78% of deliveries (0.72); DoorDash LA gap smaller -> 0.8-0.95"
+  "note": "two-wheel couriers do more deliveries per hour and more hours per active day, so courier share < delivery share. NYC DCWP: non-car 56% of workers vs 78% of deliveries (0.72), 69% of hours (0.89). For daily-active the factor sits between the hours and workers ratios"
  },
  "zone_two_wheel_uplift": {
-  "lo": 1.1,
-  "base": 1.3,
-  "hi": 1.5,
+  "lo": 1.05,
+  "base": 1.25,
+  "hi": 1.45,
   "tag": "ASSUMPTION",
-  "note": "dense core (DTLA/Ktown/Westlake/USC) vs LA-wide 49%; SF citywide 72%, Oakland 63%; DoorDash: two-wheel trips under 2 miles in dense cores >=10% faster than cars. No neighborhood data exists"
+  "note": "dense core vs LA-wide. Critic's restaurant-weighted sub-zone view: DTLA ~50% two-wheel couriers, Koreatown ~35% (KBBQ pickups car-dominated), Westlake/Pico-Union ~45%, USC ~30% -> ~42% zone courier share. No neighborhood data exists"
  },
  "ebike_emoped_share_of_two_wheel": {
-  "lo": 0.5,
-  "base": 0.65,
-  "hi": 0.75,
+  "lo": 0.4,
+  "base": 0.5,
+  "hi": 0.62,
   "tag": "ESTIMATE",
-  "note": "NYC intercept (NYSERDA 2025): personal e-bike 48% + rental e-bike 24% + e-moped 7% = 79% electric, gas moped 13%, pedal 5%. LA: Uber Eats scooter mode (<50cc gas) and cheaper used gas scooters push gas share up; no LA data"
+  "note": "e-bikes incl. e-moto (Surron/Talaria/Super73) and e-mopeds (NIU/Segway/HMP-class), EXCLUDING standing e-scooters. NYC intercept 2025: 79% electric incl. 24% rental e-bikes (no LA equivalent). LA pushes gas up (Uber <50cc rule, $899 Keeway 50, lane-splitting legal, walk-up housing without charging) and electric toward standing scooters and sub-$1,200 fat-tire e-bikes"
  },
  "gas_scooter_share_of_two_wheel": {
-  "lo": 0.35,
-  "base": 0.22,
-  "hi": 0.12,
+  "lo": 0.4,
+  "base": 0.28,
+  "hi": 0.18,
   "tag": "ESTIMATE",
-  "note": "gas 49-150cc scooters and motorcycles; NYC 13% gas moped; Craigslist LA snapshot: 50-150cc scooters $899-2,795, one explicit 'delivery scooter'. lo = more gas = fewer HMP-type riders"
+  "note": "gas 49-150cc scooters and motorcycles; NYC 13% gas moped; LA drivers: Uber Eats scooter mode, $899-2,795 used 50-150cc (Craigslist LA 2026-09-06), Latin American moto-delivery culture, DTLA 'Honda Ruckus delivery setup' videos. lo = more gas = fewer HMP-type riders"
  },
  "two_wheel_serviceable_share": {
   "lo": 0.6,
@@ -225,32 +218,32 @@
   "note": "share of car couriers in the zone who would switch to two wheels within 24 months; critics: 2-8% realistic vs 20-30% implied; DoorDash Chicago/Whizz program converted 'more than 150' car Dashers city-wide"
  },
  "reachable_share_768ceres": {
-  "lo": 0.35,
-  "base": 0.5,
-  "hi": 0.65,
+  "lo": 0.3,
+  "base": 0.4,
+  "hi": 0.55,
   "tag": "ASSUMPTION",
-  "note": "share of zone riders who would use a hub at 768 Ceres: DTLA/Little Tokyo/Arts District/Fashion District within 1.5 mi (~50% of zone restaurants) high; Koreatown 4-5 mi, Westlake 3.3 mi, USC 3 mi low; Skid Row edge after dark"
+  "note": "share of zone two-wheel riders who would use 768 Ceres: road miles 7th/Figueroa 1.5, Little Tokyo <1, Westlake 2.8, USC 2.7, Wilshire/Western 4.5 (31% of zone restaurants); no walk-in frontage; Skid Row edge after dark. Mitigant: the site sits on the inbound path from Boyle Heights / Lincoln Heights / South Central where DTLA two-wheel couriers live"
  },
  "penetration_m12": {
-  "lo": 0.05,
-  "base": 0.1,
-  "hi": 0.18,
+  "lo": 0.04,
+  "base": 0.07,
+  "hi": 0.12,
   "tag": "ASSUMPTION",
-  "note": "share of SAM (weekly-active people) that are paying HMP customers by month 12; SF reached 600-1,000 vehicles in ~25 months against an SF two-wheel weekly-active pool plausibly 3-9k -> 10-30% at month 25"
+  "note": "share of SAM paying by month 12. Priors: Zoomo retreated from LA to NYC-only; Whizz skipped LA; DoorDash+Whizz Chicago converted 'more than 150' car Dashers in ~9 months citywide; SF reached 600-1,000 vehicles in ~25 months WITH founder on site, walk-in and seeded referrals"
  },
  "penetration_m24": {
-  "lo": 0.1,
-  "base": 0.2,
-  "hi": 0.3,
+  "lo": 0.08,
+  "base": 0.14,
+  "hi": 0.22,
   "tag": "ASSUMPTION",
-  "note": "by month 24; upper end = SF-like community dynamics replicate"
+  "note": "by month 24; hi = SF-like dynamics replicate"
  },
  "hmp_sf_active_customers": {
   "lo": 600,
   "base": 800,
   "hi": 1000,
-  "tag": "FACT",
-  "note": "HMP: >1,000 vehicles sold, 300+ battery subscribers, ~100 on rent; Gazetteer SF 2026-04-02: 'over 600 e-mopeds in SF, targeting 1,000 by year-end'. Active = vehicles in regular use"
+  "tag": "ESTIMATE",
+  "note": "HMP: >1,000 vehicles sold, 300+ battery subscribers, ~100 on rent; Gazetteer SF 2026-04-02: 'over 600 e-mopeds in SF, targeting 1,000 by year-end'. Active = vehicles in regular use. Retagged ESTIMATE after SF back-test: cumulative sales include non-SF, commuters, retired units; verified recurring-paying count is ~400 (300+ battery + ~100 rental)"
  },
  "sf_two_wheel_courier_share": {
   "lo": 0.65,
@@ -260,11 +253,11 @@
   "note": "SF 72% of DoorDash deliveries on two wheels (2025) x delivery-to-courier factor 0.75-0.9. lo = higher SF share = LA looks relatively smaller"
  },
  "la_maturity_vs_sf_at_m24": {
-  "lo": 0.6,
-  "base": 0.8,
-  "hi": 1.0,
+  "lo": 0.5,
+  "base": 0.7,
+  "hi": 0.9,
   "tag": "ASSUMPTION",
-  "note": "LA hub at month 24 vs SF store at ~25 months (registered 2024-08): no founder on site, no seeded referral network, Spanish/Korean-speaking communities, no walk-in"
+  "note": "LA hub at month 24 vs SF store at ~25 months: no founder on site, no seeded network, Spanish/Korean-speaking communities, no walk-in, Skid Row edge"
  },
  "la_two_wheel_miles_per_day_doordash": {
   "lo": 627948,
@@ -275,30 +268,79 @@
  },
  "county_share_of_doordash_label_miles": {
   "lo": 0.75,
-  "base": 0.9,
-  "hi": 1.0,
+  "base": 1.0,
+  "hi": 1.5,
   "tag": "ASSUMPTION",
-  "note": "DoorDash does not define the 'Los Angeles, CA' boundary. If it is the metro, LA County holds ~75% of population but more of the dense two-wheel activity; if it is the city, county >= label (capped at 1.0)"
+  "note": "DoorDash does not define 'Los Angeles, CA'. The same table lists Santa Clara, Sunnyvale, Oakland and San Jose separately, so labels are sub-metro; if the label is the City of LA, the county holds ~1.5x the label's miles; if metro, ~0.75x. On-app miles per two-wheel delivery come out ~11-12 for both NYC and LA under the county reading, favouring 1.0"
  },
- "miles_per_two_wheel_courier_day": {
-  "lo": 80,
-  "base": 60,
-  "hi": 45,
+ "zone_residual_reach_vs_sf": {
+  "lo": 0.5,
+  "base": 0.7,
+  "hi": 0.9,
+  "tag": "ASSUMPTION",
+  "note": "SF penetration already embeds SF's spatial decay (all SF restaurants within 5 mi of 261 6th St, 77% within 3 mi). The LA zone stretches 4-6 mi to Koreatown/USC and the hub sits on the zone's east edge next to Skid Row, so a residual discount applies; la_maturity_vs_sf_at_m24 carries the no-founder/no-walk-in handicap separately"
+ },
+ "standing_escooter_share_of_two_wheel": {
+  "lo": 0.15,
+  "base": 0.13,
+  "hi": 0.1,
   "tag": "ESTIMATE",
-  "note": "on-app miles per daily-active two-wheel courier incl. cruising; NYC avg delivery 1.77 mi but LA legs 2-5 mi (ShiftTracker); full-time e-moped rider 8 hrs x ~8-12 mph effective = 60-100 mi; casual riders far less. lo = more miles = fewer couriers"
+  "note": "standing e-scooters (Levy partner shops in 90010/90006; Amazon-grade). Not an e-moped customer in the same way. lo = more standing scooters"
+ },
+ "two_wheel_weekly_to_daily": {
+  "lo": 0.75,
+  "base": 0.65,
+  "hi": 0.55,
+  "tag": "ESTIMATE",
+  "note": "mode-specific daily/weekly for two-wheel couriers: they bought a vehicle for the job and work 5-6 days (NYC non-car 22.2 hrs/wk; NYC full-timers 6+ days -> ~0.85). lo = higher ratio = fewer distinct people"
+ },
+ "robot_displacement_m24": {
+  "lo": 0.75,
+  "base": 0.88,
+  "hi": 0.97,
+  "tag": "ASSUMPTION",
+  "note": "sidewalk robots (Coco >1,000 robots incl. DTLA/Koreatown/USC, targeting 10,000; Serve on DoorDash/Uber Eats/Grubhub) take the sub-1.5-mile orders bike-mode couriers depend on; factor on zone two-wheel demand at M24"
+ },
+ "hmp_sf_customers_per_two_wheel_daily": {
+  "lo": 0.2,
+  "base": 0.33,
+  "hi": 0.45,
+  "tag": "ESTIMATE",
+  "note": "HMP active SF customers (600-1,000; press 600+ e-mopeds on SF streets Apr 2026) / SF daily-active two-wheel couriers from the same model run on SF (M1-M3: ~2,160; scenario 0.8k-5.1k). 800/2,160 = 0.37. Ratio of people to daily-actives, so it does not depend on the weekly/daily ratio. lo = lower penetration"
+ },
+ "nyc_two_wheel_miles_per_day_doordash": {
+  "lo": 741623,
+  "base": 741623,
+  "hi": 741623,
+  "tag": "FACT",
+  "note": "DoorDash 2026 report p.7: New York, NY 45,238,991 two-wheel miles / 61 days"
+ },
+ "doordash_share_nyc": {
+  "lo": 0.28,
+  "base": 0.35,
+  "hi": 0.45,
+  "tag": "ESTIMATE",
+  "note": "DoorDash share of NYC app deliveries: McKinsey via DCWP 2022 ~25-28%; DoorDash has gained share nationally since. lo = smaller DoorDash NYC base -> smaller LA transfer"
+ },
+ "nyc_two_wheel_delivery_share_doordash": {
+  "lo": 0.55,
+  "base": 0.55,
+  "hi": 0.55,
+  "tag": "FACT",
+  "note": "DoorDash 2026 report: New York 55% of deliveries on two wheels"
+ },
+ "nyc_two_wheel_weekly_to_daily": {
+  "lo": 0.85,
+  "base": 0.85,
+  "hi": 0.85,
+  "tag": "ESTIMATE",
+  "note": "NYC micromobility couriers: 86% work >5 days/week (NYSERDA 2025)"
  },
  "doordash_share_of_two_wheel_couriers_la": {
   "lo": 0.7,
   "base": 0.6,
   "hi": 0.5,
   "tag": "ESTIMATE",
-  "note": "DoorDash ~60-67% of US meal-delivery sales (Second Measure 2024); Uber Eats two-wheel share in LA likely lower (scooter mode <50cc), so DoorDash's share of two-wheel couriers is above its order share. lo = higher share = fewer total"
- },
- "nyc_miles_calibration": {
-  "lo": 0.45,
-  "base": 0.6,
-  "hi": 0.8,
-  "tag": "ESTIMATE",
-  "note": "applying the same miles route to NYC (742k two-wheel mi/day / 40-60 mi = 12-18k) overshoots the DCWP-implied DoorDash two-wheel daily-active (~8k: 61-65k weekly x ~0.28 DoorDash NYC share x 0.55 two-wheel x 0.85 daily/weekly) by 1.5-2.3x -> multiply LA result by 0.45-0.65; hi allows the NYC label to be metro-wide"
+  "note": "DoorDash's share of LA two-wheel couriers: above its ~60% order share because Uber Eats LA caps scooter mode at <50cc and skews to cars. lo = higher share = fewer total"
  }
 }

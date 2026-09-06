@@ -9,15 +9,10 @@ route that uses HMP's own SF numbers to size what HMP can address:
   M1  restaurant-ratio   riders = restaurants x NYC weekly-active per restaurant x LA/NYC order
                          intensity x (NYC / LA deliveries per courier-week) x daily/weekly
   M2  order-volume       riders = US deliveries/day x LA County share / orders per courier-day
-      NOTE: M1's LA/NYC intensity ratio is built from M2's inputs, so M1+M2 are ONE orders route;
-      only M3 is an independent cross-check (methodology review, research/03-market-size.md s.8).
   M3  top-down supply    riders = CA quarter-active app workers x LA share x delivery share
                          x quarterly->weekly x weekly->daily
-  M5  DoorDash two-wheel miles as an NYC transfer: sanity range only (SF back-test showed the
-      miles->courier conversion overstates SF 3x; label boundary undefined)
-  SOM route A           SAM (two-wheel serviceable + car converts, x reach) x assumed penetration
-  SOM route B           HMP's SF share of two-wheel weekly-active people x LA zone pool x maturity x residual reach
-                         (headline SOM = geometric mean of A and B)
+  M4  SF-calibrated      HMP-addressable customers within 3 mi = HMP SF active customers per SF
+                         restaurant x LA restaurants x mode ratio x maturity x reachability
 
 Every parameter lives in market_size_params.json with (lo, base, hi) and a tag:
   FACT / ESTIMATE / ASSUMPTION  (see _readme in that file).
@@ -87,8 +82,7 @@ def compute(p: dict, pick) -> dict:
     # ---------- M2 order volume (daily-active) ----------
     us_orders_day = g("doordash_us_deliveries_per_day") / g("doordash_us_share")
     county_orders_day = us_orders_day * g("la_county_share_us_orders")
-    opd = g("la_deliveries_per_courier_week") / (7 * w2d)   # derived: one free parameter, not two
-    r["orders_per_courier_day_derived"] = opd
+    opd = g("orders_per_courier_day")
     r["county_orders_per_day"] = county_orders_day
     for geo in rest:
         r[f"M2_{geo}"] = county_orders_day * (rest[geo] / rest["county"]) * intensity[geo] / opd
@@ -115,29 +109,22 @@ def compute(p: dict, pick) -> dict:
     r["two_wheel_courier_share_zone"] = tw_zone
     e_share = g("ebike_emoped_share_of_two_wheel")
     gas_share = g("gas_scooter_share_of_two_wheel")
-    stand_share = g("standing_escooter_share_of_two_wheel")
-    ped_share = max(0.0, 1 - e_share - gas_share - stand_share)
-    tw_w2d = g("two_wheel_weekly_to_daily")
+    ped_share = max(0.0, 1 - e_share - gas_share)
     for geo in ("zone", "r3"):
         d = r[f"DAILY_{geo}"]
         r[f"DAILY_{geo}_car"] = d * (1 - tw_zone)
         r[f"DAILY_{geo}_two_wheel"] = d * tw_zone
         r[f"DAILY_{geo}_ebike_emoped"] = d * tw_zone * e_share
         r[f"DAILY_{geo}_gas_scooter_moto"] = d * tw_zone * gas_share
-        r[f"DAILY_{geo}_standing_escooter"] = d * tw_zone * stand_share
         r[f"DAILY_{geo}_pedal_bicycle"] = d * tw_zone * ped_share
     r["DAILY_county_two_wheel"] = r["DAILY_county"] * tw_courier_la
     r["DAILY_city_two_wheel"] = r["DAILY_city"] * tw_courier_la
 
 
     # ---------- M5 DoorDash two-wheel miles (independent check on the two-wheel count) ----------
-    # NYC transfer: NYC DoorDash two-wheel daily-active (from DCWP counts) scaled by the LA/NYC ratio of
-    # DoorDash two-wheel miles, the label-boundary factor, and DoorDash's share of LA two-wheel couriers
-    nyc_dd_tw_daily = (g("nyc_weekly_active_couriers") * g("doordash_share_nyc")
-                       * g("nyc_two_wheel_delivery_share_doordash") * g("nyc_two_wheel_weekly_to_daily"))
-    m5_county_tw = (nyc_dd_tw_daily
-                    * (g("la_two_wheel_miles_per_day_doordash") / g("nyc_two_wheel_miles_per_day_doordash"))
-                    * g("county_share_of_doordash_label_miles") / g("doordash_share_of_two_wheel_couriers_la"))
+    m5_county_tw = (g("la_two_wheel_miles_per_day_doordash") * g("county_share_of_doordash_label_miles")
+                    / g("miles_per_two_wheel_courier_day") / g("doordash_share_of_two_wheel_couriers_la")
+                    * g("nyc_miles_calibration"))
     r["M5_county_two_wheel_daily"] = m5_county_tw
     r["M5_vs_M123_county_two_wheel"] = m5_county_tw / r["DAILY_county_two_wheel"]
     # allocate to zone: restaurant share x intensity x (zone uplift relative to LA-wide share)
@@ -145,35 +132,31 @@ def compute(p: dict, pick) -> dict:
                                     * (tw_zone / tw_courier_la))
     r["M5_r3_two_wheel_daily"] = (m5_county_tw * (rest["r3"] / rest["county"]) * zone_int
                                   * (tw_zone / tw_courier_la))
-    # M5 is a labelled sanity figure only: the SF back-test (research/03-market-size.md s.8) showed the
-    # miles->courier conversion overstates SF 3x, so M5 is NOT blended into the headline two-wheel count.
+    # blended two-wheel count for the zone: geometric mean of the M1-3 route and the M5 route
     for geo in ("zone", "r3"):
-        r[f"WEEKLY_{geo}_two_wheel_people"] = r[f"DAILY_{geo}_two_wheel"] / tw_w2d
-        r[f"WEEKLY_{geo}_car_people"] = r[f"DAILY_{geo}_car"] / w2d
+        a, b = r[f"DAILY_{geo}_two_wheel"], r[f"M5_{geo}_two_wheel_daily"]
+        r[f"BLEND_{geo}_two_wheel_daily"] = math.sqrt(a * b)
+        r[f"BLEND_{geo}_two_wheel_weekly_people"] = r[f"BLEND_{geo}_two_wheel_daily"] / w2d
+        r[f"BLEND_{geo}_ebike_emoped_daily"] = r[f"BLEND_{geo}_two_wheel_daily"] * e_share
 
     # ---------- TAM / SAM / SOM (people = weekly-active) ----------
-    tw_people = r["WEEKLY_zone_two_wheel_people"]
-    car_people = r["WEEKLY_zone_car_people"]
-    tam_people = tw_people + car_people
+    tam_people = r["WEEKLY_zone"]
+    tw_people = r["BLEND_zone_two_wheel_weekly_people"]
     r["TAM_people_zone_all_modes"] = tam_people
     r["TAM_people_zone_two_wheel"] = tw_people
     r["TAM_people_zone_ebike_emoped"] = tw_people * e_share
     reach = g("reachable_share_768ceres")
-    robot = g("robot_displacement_m24")
     sam = (tw_people * g("two_wheel_serviceable_share")
-           + car_people * g("car_convertible_share")) * reach
+           + max(0.0, tam_people - tw_people) * g("car_convertible_share")) * reach
     r["SAM_people_hub"] = sam
-    # route A (bottom-up): SAM x assumed penetration (robot displacement applied at M24)
-    r["SOM_A_people_m12"] = sam * g("penetration_m12")
-    r["SOM_A_people_m24"] = sam * g("penetration_m24") * robot
-    # route B (SF-anchored): HMP customers per daily-active two-wheel courier in SF, transferred to the LA
-    # zone's daily-active two-wheel couriers, discounted for maturity, residual distance and robots
-    r["SOM_B_people_m24"] = (r["DAILY_zone_two_wheel"] * g("hmp_sf_customers_per_two_wheel_daily")
-                             * g("la_maturity_vs_sf_at_m24") * g("zone_residual_reach_vs_sf") * robot)
-    r["SOM_B_people_m12"] = r["SOM_B_people_m24"] / robot * (g("penetration_m12") / g("penetration_m24"))
-    r["SOM_m24_headline"] = math.sqrt(r["SOM_A_people_m24"] * r["SOM_B_people_m24"])
-    r["SOM_m12_headline"] = math.sqrt(r["SOM_A_people_m12"] * r["SOM_B_people_m12"])
-    r["SOM_B_vs_A_m24"] = r["SOM_B_people_m24"] / r["SOM_A_people_m24"]
+    r["SOM_people_m12"] = sam * g("penetration_m12")
+    r["SOM_people_m24"] = sam * g("penetration_m24")
+
+    # ---------- M4 SF-calibrated (HMP's own numbers) ----------
+    pen_per_rest = g("hmp_sf_active_customers") / g("restaurants_sf_city")
+    r["M4_hmp_customers_r3_m24"] = (pen_per_rest * rest["r3"] * (tw_zone / g("sf_two_wheel_courier_share"))
+                                    * g("la_maturity_vs_sf_at_m24") * reach)
+    r["M4_vs_SOM_m24_ratio"] = r["M4_hmp_customers_r3_m24"] / r["SOM_people_m24"]
     return r
 
 

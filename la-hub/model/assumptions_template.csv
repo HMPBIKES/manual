@@ -1,25 +1,25 @@
 id,block,variable,unit,status,sf_value,la_conservative,la_base,la_aggressive,source_or_owner,notes
-M01,market,pop_dtla,residents,FACT_PENDING,,,,,ACS 5yr / LA Times Mapping LA,DTLA 常住人口；用 census tract 聚合，不用媒体粗数
-M02,market,pop_ktown,residents,FACT_PENDING,,,,,ACS 5yr / LA Times Mapping LA,Koreatown 常住人口
-M03,market,pop_service_radius_3mi,residents,FACT_PENDING,,,,,ACS tracts within 3 mi of 768 Ceres,以 768 Ceres 为圆心的常住人口
-M04,market,restaurants_dtla,count,FACT_PENDING,,,,,LA County DPH inspection dataset (lat/long),只算 restaurant 类别，剔除 grocery/school
-M05,market,restaurants_ktown,count,FACT_PENDING,,,,,LA County DPH inspection dataset,
-M06,market,restaurants_radius_3mi,count,FACT_PENDING,,,,,LA County DPH inspection dataset,3 英里内餐厅数
+M01,market,pop_dtla,residents,FACT,,65583,65583,65583,ACS 5yr / LA Times Mapping LA,"ACS 2020-2024 5yr, Downtown LA NC + Arts District/Little Tokyo NC"
+M02,market,pop_ktown,residents,FACT,,93936,93936,93936,ACS 5yr / LA Times Mapping LA,"ACS 2020-2024 5yr, Wilshire Center-Koreatown NC"
+M03,market,pop_service_radius_3mi,residents,FACT,,451823,451823,451823,ACS tracts within 3 mi of 768 Ceres,"ACS 2020-2024 5yr, 3 mi circle"
+M04,market,restaurants_dtla,count,FACT,,910,910,910,LA County DPH inspection dataset (lat/long),LA County DPH inventory 2026-07
+M05,market,restaurants_ktown,count,FACT,,611,611,611,LA County DPH inspection dataset,LA County DPH inventory 2026-07
+M06,market,restaurants_radius_3mi,count,FACT,,2021,2021,2021,LA County DPH inspection dataset,LA County DPH inventory 2026-07
 M07,market,riders_per_100_restaurants,riders,ESTIMATE,,,,,NYC DCWP / SF benchmark cross-check,方法 A：餐厅密度法
 M08,market,riders_per_1000_residents,riders,ESTIMATE,,,,,NYC / Seattle / SF studies,方法 B：人口法（仅作交叉验证，不单独使用）
 M09,market,orders_per_day_area,orders,ESTIMATE,,,,,platform proxies / Second Measure,方法 C：订单量法（订单/骑手/天 反推）
 M10,market,orders_per_rider_day,orders,ESTIMATE,,,,,Reddit / rider reports,每骑手每天单量
-M11,market,daily_active_riders_area,riders,ESTIMATE,,,,,三种方法取交集,DTLA+Ktown 每日活跃骑手
+M11,market,daily_active_riders_area,riders,ESTIMATE,,628,1753,4645,三种方法取交集,market_size.py v3; credible 1100-2800
 M12,market,multi_app_overlap,ratio,ASSUMPTION,,,,,rider surveys,一人多平台去重系数
-M13,market,mode_share_car,ratio,ESTIMATE,,,,,surveys / observation count,
-M14,market,mode_share_motorcycle_scooter,ratio,ESTIMATE,,,,,surveys / observation count,
-M15,market,mode_share_ebike,ratio,ESTIMATE,,,,,surveys / observation count,
-M16,market,mode_share_bicycle,ratio,ESTIMATE,,,,,surveys / observation count,
-M17,market,two_wheel_convertible_share_of_car,ratio,ASSUMPTION,,,,,SF customer history,有多少开车骑手会换两轮
-M18,market,reachable_share_768ceres,ratio,ASSUMPTION,,,,,field test,愿意到 768 Ceres 取车/换电/维修的骑手比例
-M19,market,tam_riders,riders,DERIVED,,,,,,
-M20,market,sam_riders,riders,DERIVED,,,,,,
-M21,market,som_riders_m12,riders,DERIVED,,,,,,
+M13,market,mode_share_car,ratio,ESTIMATE,,0.36,0.58,0.74,surveys / observation count,car share of zone daily-active couriers
+M14,market,mode_share_motorcycle_scooter,ratio,ESTIMATE,,,0.12,,surveys / observation count,gas scooter/motorcycle share of zone couriers (28% of two-wheel)
+M15,market,mode_share_ebike,ratio,ESTIMATE,,,0.21,,surveys / observation count,e-bike/e-moped share of zone couriers (50% of two-wheel)
+M16,market,mode_share_bicycle,ratio,ESTIMATE,,,0.04,,surveys / observation count,pedal bicycle share (standing e-scooter 0.05 separate)
+M17,market,two_wheel_convertible_share_of_car,ratio,ASSUMPTION,,0.02,0.05,0.10,SF customer history,car_convertible_share
+M18,market,reachable_share_768ceres,ratio,ASSUMPTION,,0.30,0.40,0.55,field test,reachable_share_768ceres
+M19,market,tam_riders,riders,DERIVED,,222,1133,5400,,"weekly-active two-wheel people, zone"
+M20,market,sam_riders,riders,DERIVED,,49,398,2892,,SAM people hub
+M21,market,som_riders_m12,riders,DERIVED,,3,41,453,,SOM m12 headline (m24 base 72; SF-anchored 105)
 S01,sf_benchmark,sf_vehicles_sold_cum,vehicles,FACT,1000,,,,HMP,>1000 已售并在客户手中
 S02,sf_benchmark,sf_battery_subscribers,subscribers,FACT,300,,,,HMP,300+ 买车客户仍租电池
 S03,sf_benchmark,sf_whole_bike_rentals_active,vehicles,FACT,100,,,,HMP,约 100 台整车在租
@@ -32,10 +32,10 @@ S09,sf_benchmark,sf_delivery_rider_share_of_customers,ratio,ASK_HMP,,,,,HMP,客�
 S10,sf_benchmark,sf_rental_to_purchase_conversion,ratio,ASK_HMP,,,,,HMP,租转买比例
 S11,sf_benchmark,sf_rental_avg_tenure,weeks,ASK_HMP,,,,,HMP,整车租赁平均时长
 S12,sf_benchmark,sf_battery_sub_churn_monthly,ratio,ASK_HMP,,,,,HMP,电池订阅月流失率
-S13,sf_benchmark,sf_core_zone_pop,residents,FACT_PENDING,,,,,ACS,SoMa+Mission+TL+FiDi/South Beach
-S14,sf_benchmark,sf_core_zone_restaurants,count,FACT_PENDING,,,,,SF DPH dataset,
-S15,sf_benchmark,sf_daily_active_riders_est,riders,ESTIMATE,,,,,same 3 methods as LA,
-S16,sf_benchmark,la_to_sf_market_ratio,ratio,DERIVED,,,,,,LA 目标区 / SF 核心区
+S13,sf_benchmark,sf_core_zone_pop,residents,FACT,135657,135657,135657,135657,ACS,"ACS 2023 5yr, SoMa+Mission+Tenderloin+FiDi"
+S14,sf_benchmark,sf_core_zone_restaurants,count,FACT,1628,1628,1628,1628,SF DPH dataset,SF DPH tvy3-wexg restaurants
+S15,sf_benchmark,sf_daily_active_riders_est,riders,ESTIMATE,3412,1490,3412,7167,same 3 methods as LA,"SF backtest: daily-active all modes citywide; two-wheel ~2,160"
+S16,sf_benchmark,la_to_sf_market_ratio,ratio,DERIVED,0.33,,0.33,,,LA r3 two-wheel daily / SF citywide two-wheel daily
 S17,sf_benchmark,sf_ramp_curve_shape,curve,ASK_HMP,,,,,HMP,M3/M6/M12/M24 SF 当年实际
 S18,sf_benchmark,sf_referral_share_of_new_customers,ratio,ASK_HMP,,,,,HMP,新客中转介绍比例
 R01,revenue,price_sale_tier_A_ebike,USD,ASK_HMP,,,,,hmpbikes.com / HMP,20-25 mph e-bike 售价

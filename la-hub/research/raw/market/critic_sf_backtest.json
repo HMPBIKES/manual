@@ -1,0 +1,109 @@
+{
+  "sf_backtest": {
+    "method": "Same M1/M2/M3/M5 + geometric-mean blend as market_size.py, SF inputs: 4,514 DPH restaurants / 836k pop (3-mi around 261 6th St: 3,458 / 437k); SF orders-per-restaurant vs NYC 0.35/0.43/0.50 (SF per-capita 0.7-1.0x NYC divided by SF 5.4 vs NYC 2.7 restaurants per 1,000); SF deliveries per courier-week 32/25/19; weekly->daily 0.35/0.45/0.55; SF share of US orders = 0.246% pop share x 1.8/2.3/2.8 intensity (-> 0.18-0.40 orders/resident-week; Seattle 0.25, NYC 0.32); orders per courier-day 11/8.5/6.5; SF share of CA gig 0.019/0.023/0.028 (pop 2.11%, NAICS 492 1.86%); two-wheel delivery share 0.65/0.72/0.75 x 0.8/0.88/0.95 courier factor; M5 = 351,035 DD two-wheel mi/day / 70/52/40 mi per courier-day / 0.7/0.6/0.5 DD share x 0.45/0.6/0.8 NYC calibration. Script: scratchpad/market/sf_backtest.py; raw: sf_backtest_raw.json. Arrays are [conservative, base, aggressive] scenario stacks; MC = 20k triangular draws P10/P50/P90.",
+    "sf_daily_active_all_modes": [1490, 3412, 7167],
+    "sf_daily_active_all_modes_mc": [2947, 3371, 3850],
+    "sf_route_split_daily_all_modes_base": {"M1": 4019, "M2": 3865, "M3": 2556},
+    "sf_daily_active_two_wheel": [1457, 3820, 8468],
+    "sf_daily_active_two_wheel_mc": [3175, 3645, 4180],
+    "sf_daily_active_two_wheel_M123_only": [775, 2162, 5107],
+    "sf_daily_active_two_wheel_M5_only": [2740, 6751, 14041],
+    "sf_weekly_people_two_wheel": [4163, 8489, 15396],
+    "sf_weekly_people_two_wheel_mc": [6963, 8115, 9497],
+    "sf_weekly_people_two_wheel_M123_only": [2213, 4804, 9285],
+    "sf_weekly_people_two_wheel_M5_only": [7829, 15001, 25530],
+    "sf_weekly_people_all_modes": [4256, 7582, 13032],
+    "hmp_penetration_of_sf_two_wheel_weekly": [0.065, 0.094, 0.144],
+    "hmp_penetration_mc": [0.080, 0.098, 0.120],
+    "hmp_penetration_M123_only": [0.108, 0.167, 0.271],
+    "hmp_penetration_M5_only": [0.039, 0.053, 0.077],
+    "hmp_penetration_recurring_customers_only_base": 0.047,
+    "hmp_penetration_note": "lo/base/hi are numeric (lo = 600 vehicles over the aggressive pool ... hi = 1,000 over the conservative pool). 'recurring' = 300+ battery subscribers + ~100 renters (~400) over the base pool. Every route lands in the plausible 4-27% band; nothing approaches 50%, so the model does NOT grossly under-count SF (or, by extension, LA) two-wheel couriers.",
+    "passes": true,
+    "internal_consistency_fail": "The two routes disagree by 3.1x in SF (M5/M123 = 2.4-4.1x; LA 0.94x). The geometric-mean blend therefore yields more two-wheel couriers (3,820/day) than all-modes couriers (3,412/day), i.e. a 112% two-wheel share. Under M2's SF order volume, DoorDash's 351k two-wheel mi/day imply 24 miles per DD two-wheel delivery (LA 9, NYC 12 under the same construction) in a 7x7-mile city. The NYC-derived nyc_miles_calibration (0.6) would have to be ~0.19 for SF (or SF e-moped riders would have to log ~2.5x NYC e-bike miles per day). The miles->courier conversion is therefore not transferable across cities and M5 is not an independent check.",
+    "independent_anchor": "Seattle OLS: 15,489 weekly engaged accounts / 781k pop = 2.0% (all on-demand apps, 75% of workers live outside the city). Scaled to SF 836k and trimmed to restaurant work -> ~10-12k weekly all-modes vs model 7.6k (MC 6.7-8.4k); NYC-scaled (0.74% of pop) -> 6.2k. SF is Seattle-like (commuter-magnet core), so the model's SF all-modes count is probably 25-35% low, mostly from residence-based M3 (2,556 vs M1/M2 ~3,900). That would put HMP penetration nearer 7-8%, not 9-10%."
+  },
+  "la_sf_ratios": {
+    "two_wheel_daily_3mi_model": 0.31,
+    "two_wheel_daily_3mi_model_by_route": {"blend": 0.31, "M123_only": 0.56, "M5_only": 0.17, "scenario_range_blend": [0.23, 0.41]},
+    "sf_3mi_two_wheel_daily": {"blend": 3380, "M123_only": 1913, "M5_only": 5973},
+    "doordash_two_wheel_miles": 1.79,
+    "doordash_ratio_comparable_model_quantities": {"LA_county_M5 / SF_city_M5": 1.40, "LA_city_all_modes / SF_city_all_modes": 2.93, "LA_county_all_modes / SF_city_all_modes": 7.25},
+    "restaurants_3mi": 0.58,
+    "restaurants_LA3mi_over_SFcity_used_by_M4": 0.448,
+    "M4_implicit_ratio_now": 0.395,
+    "recommended_ratio_for_M4": 0.31,
+    "recommended_ratio_definition": "LA r3 two-wheel weekly-active people (2,604) / SF citywide two-wheel weekly-active people (8,489) = 0.307 (scenario 0.21-0.46; MC P50 0.31). HMP's 600-1,000 SF customers are riders drawn from the whole city (96% of SF restaurants lie within 5 mi of 261 6th St, 77% within 3 mi), so the SF denominator is the city pool and the LA numerator is the 3-mi pool. Neither the DoorDash miles ratio (1.79 = city-label vs city-label with an undefined LA boundary; LA's 3-mi circle holds 7% of county restaurants, SF's holds 77% of the city's) nor the raw 3-mi restaurant ratio (0.58; ignores two-wheel share 0.53 vs 0.67 and SF's 2x restaurants per capita) is the right scaler. Naively using 1.79 would give M4 = 573.",
+    "M4_recomputed_m24": [45, 157, 456],
+    "M4_recomputed_decomposition": {"model_now": [31, 126, 369], "per_courier_basis_with_model_reach_0.35_0.5_0.65": [26, 98, 297], "per_courier_basis_mc": [68, 98, 141], "per_courier_basis_with_residual_reach_0.6_0.8_1.0": [45, 157, 456], "per_courier_basis_no_reach": [74, 196, 456]},
+    "sf_consistent_SOM_m24": [72, 190, 443],
+    "sf_consistent_SOM_m24_definition": "SF penetration (scenario-matched) x LA zone two-wheel weekly people x maturity; compare model SOM_people_m24 [19, 202, 1263] and MC [128, 194, 283]"
+  },
+  "verdict": "estimate_holds",
+  "verdict_note": "Base case survives the SF back-test: HMP's SF base is 6.5-14% (MC 8-12%) of the SF two-wheel weekly pool the model's own logic produces, and the LA base SOM_m24 (202 = 8% of the zone two-wheel pool) is what SF's 9.4% x 0.8 maturity predicts (190). M4 recomputed on the correct per-rider basis is 98-157 vs 126, so its conclusion (M4 < SOM) stands. What fails is (a) the M5 miles route as a cross-check (3x off in SF), so the LA two-wheel point estimate rests on M1-3 alone and its honest band is ~640-1,340 daily in the 3-mi circle rather than the MC's 823-1,236; and (b) the scenario extremes: conservative SOM_m24 (19) is ~4x below anything SF-consistent (~70), aggressive (1,263) is ~3x above (~450). Use the MC band, not the stacked scenarios.",
+  "objections": [
+    {
+      "severity": "high",
+      "target": "M5 route and BLEND_*_two_wheel (nyc_miles_calibration 0.45/0.6/0.8; county_share_of_doordash_label_miles 0.75/0.9/1.0; miles_per_two_wheel_courier_day 80/60/45)",
+      "claim": "The miles->couriers conversion does not transfer across cities, so LA's M5/M123 = 0.94 'agreement' is partly by construction and M5 adds no independent evidence; it also understates the uncertainty of the two-wheel count.",
+      "evidence": "Same construction on SF gives M5 = 3.1x (2.4-4.1x) the M1-3 two-wheel count and a blended two-wheel count above the all-modes count. Required calibration to reconcile: NYC 0.60, LA 0.64, SF 0.19. Implied DD miles per DD two-wheel delivery: SF 24, NYC 12, LA 9. DoorDash's city labels behave like sub-market geographies with 10x per-capita spread (San Jose 28.4M mi for 1.0M pop; Santa Clara 7.7M for 130k; Sunnyvale 6.9M for 155k; SF 21.4M for 836k; LA 38.3M), so the 'Los Angeles' label is more likely city-scale or smaller than metro/county-scale, which would make county_share >1 (1.5-1.8), not 0.75-1.0. SF's e-moped-heavy fleet (HMP FLASH, 30+ mph, swap batteries) plausibly rides 80-120 mi/day vs NYC e-bike 40-60, another 2x factor the single calibration cannot hold.",
+      "suggested_value_or_fix": "Drop M5 from the blend (report it as a labelled sanity figure only) or weight it 0.25. If kept: county_share_of_doordash_label_miles 1.0/1.5/1.8 if the label is the City of LA; nyc_miles_calibration widened to 0.2/0.5/0.8; miles_per_two_wheel_courier_day tied to vehicle mix (e-moped 90, e-bike 50, gas scooter 100). Replace the NYC calibration with HMP's own SF battery-swap telemetry (mi/vehicle-day).",
+      "effect_on_output": "LA r3 two-wheel daily point estimate barely moves (M1-3 alone: 1,074 vs blend 1,042) but the credible band widens to ~640-1,340 (M5 x0.38 to x1.65). M5_vs_M123 line should not be cited as validation."
+    },
+    {
+      "severity": "medium",
+      "target": "M4 construction: pen_per_rest = hmp_sf_active_customers / restaurants_sf_city, x LA r3 restaurants x (tw_zone / sf_two_wheel_courier_share)",
+      "claim": "Per-restaurant is the wrong transfer unit; HMP's customers are riders and restaurants per rider differ 1.5x between SF and LA.",
+      "evidence": "SF has 5.4 DPH restaurants per 1,000 residents vs LA County 2.9 and NYC 2.7, so SF restaurants each carry roughly half the orders and riders of an LA restaurant. Back-test: SF two-wheel weekly people per restaurant 8,489/4,514 = 1.88 vs LA r3 2,604/2,021 = 1.29 (ratio 0.69); the model's share correction 0.53/0.60 = 0.88 recovers only part of that. Implicit M4 ratio 0.395 vs rider-pool ratio 0.307.",
+      "suggested_value_or_fix": "M4 = (hmp_sf_active / SF two-wheel weekly-active people) x LA r3 (or zone) two-wheel weekly-active people x la_maturity_vs_sf_at_m24 x residual reach. Base penetration 0.094 (MC 0.080-0.120), or 0.107 if measured on the SF 3-mi pool.",
+      "effect_on_output": "Basis change alone: M4 126 -> 98 (MC 68-141), -22%; M4_vs_SOM_m24 0.62 -> 0.49."
+    },
+    {
+      "severity": "medium",
+      "target": "M4 and SAM: reachable_share_768ceres (0.35/0.5/0.65) applied on top of a 3-mile pool while the SF penetration is measured citywide",
+      "claim": "Distance is discounted twice in M4. SF penetration already embeds SF's spatial decay (all SF restaurants within 5 mi of the store, 77% within 3 mi), and reach was defined for the zone (Koreatown 4-5 mi, Westlake 3.3 mi) which mostly lies outside the r3 circle anyway.",
+      "evidence": "SF: 800 customers / 8,489 citywide two-wheel weekly people = 9.4%, or 10.7% on the 3-mi pool (7,511). LA r3 is the geometric analogue of SF's 3-mi pool. The only residual LA-specific handicaps (Skid Row edge vs 6th St SoMa, no walk-in, no founder) are already priced in la_maturity_vs_sf_at_m24 0.6/0.8/1.0.",
+      "suggested_value_or_fix": "For M4 use residual reach 0.6/0.8/1.0 (or 1.0 with pen_r3 = 0.107 and maturity alone). Keep reach 0.5 only where the pool is the full zone including Koreatown.",
+      "effect_on_output": "M4 per-courier 98 -> 157 (45-456); net vs model's 126: +25%. Does not change SOM (SOM's 0.75 x 0.5 x 0.2 = 7.5% of the two-wheel TAM collapses to SF's 9.4% x 0.8 anyway)."
+    },
+    {
+      "severity": "medium",
+      "target": "Scenario stacks for SOM_people_m24 [19, 202, 1,263] (penetration_m24 0.1/0.2/0.3 on SAM; conservative/aggressive parameter stacking)",
+      "claim": "Neither scenario extreme is SF-consistent; only the base and the MC band are.",
+      "evidence": "SF demonstrates 6.5% penetration of the two-wheel weekly pool even on the aggressive-sized pool (15.4k) and 14.4% on the conservative pool (4.2k) at month ~25 with founder, walk-in and seeded community. SF-consistent LA SOM_m24 = pen_SF x LA zone two-wheel weekly x maturity = 72 / 190 / 443. Conservative SOM 19 = 2.3% of an 836-person pool (3.8x too low); aggressive 1,263 = 18.5% of a 6,820 pool, i.e. it needs both the aggressive pool and 2x SF's demonstrated penetration (2.9x too high). The MC P10-P90 (128-283) is already right.",
+      "suggested_value_or_fix": "Report the MC band as the range and drop the stacked-scenario columns from the headline, or reset SOM_m24 scenarios to ~70/190/450 (penetration_m24 on SAM: 0.38/0.19/0.11, i.e. penetration should fall as the pool grows, not rise with it).",
+      "effect_on_output": "Base unchanged; conservative floor x3.8, aggressive ceiling /2.8. Same compression applies to SOM_m12 and M4 scenario columns."
+    },
+    {
+      "severity": "medium",
+      "target": "hmp_sf_active_customers 600/800/1,000 tagged FACT; definition of the SOM unit ('paying HMP customers')",
+      "claim": "'Active courier customers' is inferred; the only verified recurring-paying count is ~400, and the model mixes one-time vehicle buyers with subscribers.",
+      "evidence": ">1,000 cumulative vehicles sold since 2024-08 (some outside SF, some commuters, some retired/stolen); 300+ battery subscribers + ~100 renters = ~400 recurring; press '600+ e-mopeds on SF streets' (Apr 2026). Penetration on recurring customers = 400/8,489 = 4.7%; on vehicles-in-use 9.4%; on cumulative sales 11.8%.",
+      "suggested_value_or_fix": "Retag as ESTIMATE with lo 500. Split SOM into vehicles sold (one-time revenue) and recurring subscribers/renters (~40-50% of vehicles in use, per SF), and state which one 'penetration_m24' means.",
+      "effect_on_output": "If SOM means recurring customers, SF-consistent SOM_m24 is ~95 (0.047 x 2,528 x 0.8), half the model's 202; if it means vehicles sold/in use, 202 holds. Revenue model, not headcount, is where this bites."
+    },
+    {
+      "severity": "low",
+      "target": "M3 top-down supply (la_county_share_ca_gig; residence-based NAICS 492 and population shares) and the NYC per-capita anchor in la_orders_per_restaurant_vs_nyc",
+      "claim": "Residence-based shares undercount couriers who work in a dense core but live outside it; the effect is large for SF and small for LA County, but it means SF penetration is probably lower than 9.4%.",
+      "evidence": "Seattle OLS: 74.7% of engaged worker accounts live outside the city; weekly engaged = 2.0% of city pop vs NYC 0.74%. In SF, M3 (2,556/day) sits 34% below M1/M2 (~3,900). Seattle-scaled SF all-modes weekly is ~10-12k vs model 7.6k.",
+      "suggested_value_or_fix": "For SF use sf_share_ca_gig 0.025/0.032/0.040 (workers operating in SF, not residents); for LA nothing changes at county level, but note the r3 allocation is by restaurants (demand), which is correct.",
+      "effect_on_output": "SF two-wheel weekly ~10k -> HMP penetration ~8% -> SF-consistent LA SOM_m24 ~160 (vs 190-202); -15 to -20%."
+    },
+    {
+      "severity": "low",
+      "target": "restaurants_* denominators used as the cross-city unit (M1 for LA is NYC-based; M4 is SF-based)",
+      "claim": "DPH/permit restaurant counts are not a stable unit across cities; any per-restaurant transfer needs an explicit restaurants-per-capita correction.",
+      "evidence": "SF 5.4, LA 2.9, NYC 2.7 DPH/permit restaurants per 1,000 residents; QCEW NAICS 722 establishments confirm the SF/LA gap (4.5 vs 2.4 per 1,000). M1 for LA happens to be safe because LA ~ NYC; M4 is not.",
+      "suggested_value_or_fix": "Covered by the per-rider M4 fix; if a per-restaurant transfer is retained, multiply by (SF restaurants per capita / LA restaurants per capita) = 1.9 in the denominator, i.e. scale HMP customers per SF *resident* (800/836k = 0.96 per 1,000) x LA r3 population 452k x two-wheel share ratio = ~380 before maturity/reach, which is also higher than the model's 358 pre-adjustment figure.",
+      "effect_on_output": "Small once objection 2 is adopted."
+    }
+  ],
+  "what_would_settle_it": [
+    "HMP's own SF data: vehicles with a battery swap, rental payment or app login in the last 30 days, split courier vs commuter and by home zip / usual delivery zone. Gives the true active-courier numerator (600-1,000 vs ~400) and the real catchment radius from 261 6th St, which settles both the penetration figure and the reach double-count.",
+    "HMP battery-swap telemetry: miles per vehicle-day (and swaps per day) for SF courier customers. Pins miles_per_two_wheel_courier_day for an e-moped fleet and decides whether DoorDash's 351k SF two-wheel mi/day means ~4k or ~12k SF two-wheel couriers, i.e. whether M5 can be rescued.",
+    "DoorDash's definition of the city label ('Los Angeles, CA' = city, county or sub-market) and of 'two-wheel miles' (on-trip vs on-app), ideally the LA figure split City of LA vs county; ask through the Chicago/Whizz-style partnership channel or the SF E-Bike Delivery Pilot contacts.",
+    "A one-week intercept count at 10-15 high-volume DTLA/Koreatown pickup restaurants (mode, app, home base, hours/week) and the same at 5 restaurants within 1 mile of 261 6th St asking 'which brand of e-moped' -- the SF leg ties an observed two-wheel courier density to HMP's known customer count and gives a measured penetration to transfer, replacing every ASSUMPTION-tagged factor in M4.",
+    "Any SF or LA weekly-active courier count from a regulator or platform (SF LAFCo/OEWD gig study, Uber Eats or DoorDash SF courier counts shared with the SF E-Bike Delivery Pilot, or the Seattle OLS-style 2.0%-of-population ratio confirmed for a California core city) to decide whether SF/LA cores are Seattle-like (2% of pop weekly) or NYC-like (0.74%)."
+  ]
+}

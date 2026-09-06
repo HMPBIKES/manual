@@ -1,0 +1,117 @@
+{
+  "verdict": "estimate_holds",
+  "central_correction_factor": {
+    "zone_daily_all_modes": 1.0,
+    "zone_daily_two_wheel": 1.0,
+    "_range_all_modes": "0.6-1.6 (scenario envelope 684-5,098 is the honest band; MC P10-P90 1,636-2,351 is spurious precision)",
+    "_range_two_wheel": "0.75-1.4",
+    "_downstream_sam_people_hub": 0.75,
+    "_downstream_som_m24": 0.65
+  },
+  "objections": [
+    {
+      "severity": "high",
+      "target": "M1 vs M2 independence (la_orders_per_restaurant_vs_nyc, la_county_share_us_orders, doordash_us_deliveries_per_day, doordash_us_share)",
+      "claim": "M1 and M2 are the same route. M1 reduces algebraically to LA orders / productivity: restaurants x (NYC weekly-active x NYC deliveries/courier-week / NYC restaurants) x ratio = LA orders/week, then / la_deliveries_per_courier_week x w2d. And the ratio parameter 0.35/0.45/0.60 is derived (per its own note) from M2's inputs: (3.6M/0.62 x 7/340.1M) x (la_county_share/0.0287) / (2.77M/8.48M) = 0.31/0.44/0.63.",
+      "evidence": "Recomputed LA County orders/day from M1 inputs vs M2 inputs: conservative 145,641 vs 141,358 (1.03), base 208,269 vs 199,742 (1.04), aggressive 306,972 vs 286,897 (1.07). The only difference between M1 and M2 is the productivity divisor (M1-implied opd = dpcw/(7 x w2d) = 13.3/7.9/4.9 vs M2's 12/9/7). All three routes also share the zone allocation (restaurant share x zone_order_intensity) and w2d (M1, M3) or its identity twin opd (M2). Correlated Monte Carlo (tying the shared quantities) drops SPREAD_zone P50 from 1.35 to 1.16: the agreement is structural, not evidential.",
+      "suggested_value_or_fix": "Drop the 'three independent routes agree' claim. Treat M1+M2 as one orders route (LA ~200k orders/day) and M3 as one supply route; report the spread between those two (county 24k vs 25.7k) and, more importantly, the scenario envelope. Derive orders_per_courier_day from dpcw/(7 x w2d) instead of parameterizing it twice.",
+      "effect_on_output": "No change to the base point estimate (geomean 1,981 stays); the SPREAD 1.19 metric and the MC P10-P90 band should be discarded as evidence of robustness. Honest zone all-modes band is roughly 700-5,000 (scenario corners), central ~2,000."
+    },
+    {
+      "severity": "high",
+      "target": "weekly_to_daily_active applied to two-wheel riders (BLEND_zone_two_wheel_weekly_people -> SAM_people_hub -> SOM)",
+      "claim": "Weekly two-wheel PEOPLE are computed as two-wheel courier-days / blended w2d (0.40). Two-wheel couriers are the career segment with a much higher daily/weekly ratio, so the model over-counts distinct two-wheel people (and under-counts distinct car people, who barely enter SAM).",
+      "evidence": "NYC DCWP 2022 Table 6: 46.6% of e-bike workers full-time vs 34.9% car; NYSERDA 2025 intercept: 86.2% of micromobility couriers work >5 days/week (daily/weekly ~0.85); DoorDash 2026: two-wheel Dashers earn >10% more per hour and two-wheel deliveries grew ~4x faster; the params note itself says 'NYC full-timers 6+ days/wk -> ~0.85'. With two-wheel w2d 0.55-0.65 and car 0.25-0.30 the blended ratio is 0.42-0.46 (consistent with the model's 0.40), but two-wheel weekly people fall from 2,528 to 1,556-1,839.",
+      "suggested_value_or_fix": "Add mode-specific weekly_to_daily: two-wheel 0.50/0.60/0.70, car 0.20/0.28/0.35; compute weekly people per mode, then SAM.",
+      "effect_on_output": "SAM_people_hub 1,009 -> 677-807 (central ~750, x0.75); SOM_m12 101 -> 68-81; SOM_m24 202 -> 135-160; TAM_people_zone_ebike_emoped 1,643 -> ~1,010-1,200."
+    },
+    {
+      "severity": "high",
+      "target": "M4 SF-calibrated check (restaurants_sf_city, restaurants_radius_3mi, hmp_sf_active_customers)",
+      "claim": "M4 divides HMP SF customers by an SF DPH count that is NARROWER than NAICS, then multiplies by an LA DPH count that is BROADER than NAICS, and treats all HMP SF customers as active couriers. The SF-calibrated figure is overstated, which hides that HMP's own data says SOM(M24) should be ~70-95, not ~200.",
+      "evidence": "sf_zones.csv: SF citywide DPH 4,514 vs NAICS 722 5,364 (0.84x). la_zones.csv: r3 DPH 2,021 vs NAICS 7225 geocoded 1,568 (1.29x; 26.6% of Socrata rows lack coordinates, so ~2,136 adjusted). Mismatch factor 1.53x. NAICS-consistent M4 = 800/5,364 x 1,568..2,136 x (0.526/0.60) x 0.8 x 0.5 = 82-112. hmp_sf_active_customers note: '>1,000 vehicles sold, 300+ battery subscribers, ~100 on rent' is cumulative units, not active couriers; the Gazetteer '600 e-mopeds in SF' is a fleet count. If 85% of SF buyers are couriers, M4 = 70-95.",
+      "suggested_value_or_fix": "Use the same establishment definition on both sides (NAICS 722 for SF and LA, or DPH restaurant-class only for both); set hmp_sf_active_customers to courier-only 30-day-active count (HMP has this in its CRM); M4 base ~85.",
+      "effect_on_output": "M4 126 -> 66-95; M4_vs_SOM_m24 0.62 -> 0.33-0.47 (0.45-0.65 after the SAM fix above). The two SOM routes then disagree 1.5-2x; reconciling requires penetration_m24 ~0.12-0.15 (base 0.20). Central SOM_m24 ~120-150; SOM_m12 ~60-75."
+    },
+    {
+      "severity": "medium",
+      "target": "orders_per_courier_day (12/9/7), la_deliveries_per_courier_week (28/22/17), weekly_to_daily_active (0.30/0.40/0.50)",
+      "claim": "The three parameters are one quantity parameterized twice and are set inconsistently at the corners; and the base pair (opd 9, w2d 0.40) is inconsistent with DoorDash's own annual-unique / weeks-active / deliveries-per-day disclosures.",
+      "evidence": "Identity opd = dpcw/(7 x w2d): conservative 13.3 vs 12 (+11%), base 7.86 vs 9 (-13%), aggressive 4.86 vs 7 (-31%). The M1/M2 disagreement at the aggressive corner (6,164 vs 3,998, spread 1.54) is entirely this. DoorDash: 8M annual US Dashers x ~10/52 weeks = 1.54M weekly-active; 3.6M deliveries/day x 7 / 1.54M = 16.4 deliveries per weekly-active Dasher-week (model 22). Implies opd x w2d = 2.34 vs model 3.6; at opd 9 -> w2d 0.26; at w2d 0.40 -> opd 5.8. LA County weekly-active Dashers = 1.54M x 3.44% = 53k; all-app 73-85k after 15% multi-app overlap (model 62k). Implied online hours at the model base: 9 orders/day at 1.0-1.5/online-hr (Gridwise 1.51/active hr, Seattle 1.06/online hr) = 6-9 hrs per active day, 15-22 online hrs/week per weekly-active courier (NYC-level; Seattle 12.0; DoorDash CA ~6 engaged).",
+      "suggested_value_or_fix": "Keep one free parameter: dpcw 14/18/24 (Seattle 12.7/account, DoorDash 16.4, NYC 45), w2d 0.30/0.35/0.42 (blended), opd derived = dpcw/(7 x w2d) = 6.7/7.3/8.2. Report weekly-active county as 65-80k.",
+      "effect_on_output": "Zone all-modes daily: opd 9->7 alone gives 2,154 (+9%); dpcw 22->16.4 alone gives 2,185 (+10%); w2d 0.40->0.30 alone gives 1,635 (-18%) but WEEKLY_zone 5,451 (+10%). Net central effect on daily-active roughly +5-10% (within noise); WEEKLY_county 62k -> 66-75k."
+    },
+    {
+      "severity": "medium",
+      "target": "M5 miles route (nyc_miles_calibration 0.45/0.60/0.80, miles_per_two_wheel_courier_day 80/60/45, county_share_of_doordash_label_miles 0.75/0.90/1.0)",
+      "claim": "The calibration factor and miles/day cancel when derived consistently, so M5 is an NYC-transfer route (NYC DoorDash two-wheel daily-active x LA/NYC miles ratio 0.847 x county/label / 0.6), not an independent miles route. Its corners pair inconsistent values, its NYC anchor uses a stale 2022 DoorDash share, and the label-boundary range excludes the sub-metro reading that the same table implies.",
+      "evidence": "NYC two-wheel miles 45,238,991/61 = 741,623/day. NYC DoorDash two-wheel daily-active anchor = 63k x 0.28 x 0.55 x 0.85 = 8,247. Consistent cal = 8,247/(741,623/mpd): mpd 60 -> 0.67 (model 0.60), mpd 80 -> 0.89 (model pairs lo 0.45: conservative M5 3,785 is 2.0x too low), mpd 45 -> 0.50 (model pairs hi 0.80: aggressive M5 22,327 is 1.6x too high). DoorDash NYC share 0.28 is McKinsey 2022 (DoorDash has gained share nationally 55%->67%); at 0.35 the consistent M5 county two-wheel is 13.1-14.5k (M5/M123 1.31-1.45). The report lists Santa Clara, Sunnyvale, Oakland separately from San Jose/SF, so labels are sub-metro; if 'Los Angeles, CA' = City of LA, county/label ~1.5 -> M5 17.5k. Counter-check: city-label reading implies 28 on-app miles per DoorDash two-wheel delivery vs 11-12 for both NYC and LA-county-label, so the county/metro reading is more plausible.",
+      "suggested_value_or_fix": "Compute M5 as NYC_DD_two_wheel_daily x (LA_miles/NYC_miles) x county_share / dd_share_LA with DoorDash NYC share 0.28/0.35/0.45 as the sampled parameter; drop miles_per_two_wheel_courier_day and nyc_miles_calibration; widen county_share_of_doordash_label_miles to 0.75/1.0/1.5.",
+      "effect_on_output": "Base M5 county two-wheel 9,419 -> 11,687 (cal 0.67, label 1.0) to 14,478 (share 0.35); BLEND_zone_two_wheel_daily 1,011 -> 1,126-1,254 (+11-24%); e-bike/e-moped 657 -> 732-815. M5 is more likely to push two-wheel UP than down; the published M5 MC band (7,227-11,843) is spurious."
+    },
+    {
+      "severity": "medium",
+      "target": "zone_order_intensity_vs_county (0.9/1.15/1.4) and restaurant-share allocation shared by M1, M2, M3, M5",
+      "claim": "Every route allocates county activity to the zone by the same DPH restaurant share x 1.15, so the zone number carries a single unhedged assumption. The 1.15 uplift on top of a 2.1x restaurants-per-capita ratio pushes zone per-capita ordering to NYC-citywide levels.",
+      "evidence": "Zone orders/day = 199,742 x 1,962/28,161 x 1.15 = 16,004 = 0.351 orders/resident-week (NYC citywide 0.327; LA County 0.143; US 0.120). By neighborhood: Downtown 0.79/resident-week, Koreatown 0.37, Westlake 0.12, Pico-Union 0.20, USC 0.16. Population-share allocation gives 6,504 orders/day (0.41x). Restaurants per 1,000: zone 6.14, county 2.87, NYC 2.71. The params note concedes DTLA DPH counts include hotel/stadium/institutional kitchens; DPH/NAICS ratio in zone (Downtown 1.32, Koreatown 1.24) is similar to citywide (1.33), so no differential bias LA-zone vs LA-city, but ~25% of Downtown's 910 facilities are likely not app-order sources.",
+      "suggested_value_or_fix": "zone_order_intensity_vs_county 0.8/1.0/1.3; keep restaurant-share as the allocation basis (pickup presence is what matters for a hub) but justify the base with daytime population (DTLA office/visitor lunch) rather than an ASSUMPTION tag.",
+      "effect_on_output": "1.15 -> 1.0: DAILY_zone 1,981 -> 1,722 (-13%); BLEND two-wheel 1,011 -> 879; SAM 1,009 -> 877; SOM_m24 202 -> 175."
+    },
+    {
+      "severity": "medium",
+      "target": "two_wheel_delivery_to_courier_share (0.80/0.88/0.95)",
+      "claim": "The range excludes the only measured value of this ratio (NYC 0.72), and the justification for a smaller LA gap uses DoorDash's earnings-per-hour (+10%), which is not a deliveries-per-hour measure.",
+      "evidence": "DCWP Table 3: non-car 56.1% of workers vs 77.7% of deliveries (0.72); hours share 69.4% (0.89 vs deliveries). For daily-active the applicable factor is between the hours ratio (0.89) and the workers ratio (0.72) depending on hours per active day (NYC full-timers 7+ hrs/day vs car 4-5). With two-wheel opd 1.5-2.2x car opd and zone delivery share 0.60, two-wheel share of courier-days is 0.40-0.50 (model 0.526).",
+      "suggested_value_or_fix": "0.72/0.80/0.89.",
+      "effect_on_output": "0.88 -> 0.78: DAILY_zone_two_wheel 1,042 -> 924 (-11%); BLEND 1,011 -> 952 (-6%, M5 damps it); SAM -5%; M4 111 (it also uses tw_zone)."
+    },
+    {
+      "severity": "low",
+      "target": "M3 (ca_app_based_workers_quarter_active 950k, delivery_share_of_app_workers 0.65, quarterly_to_weekly_active tagged FACT)",
+      "claim": "M3 mixes accounts with people and counts grocery/package workers as food couriers; quarterly_to_weekly is a 0.3-0.5 estimate mislabelled FACT.",
+      "evidence": "UCR CEFD: 800k is 'the registration count of unique app-based drivers... may include duplicate drivers across platforms'; Flex 870k with 'an average of 1.9 platforms'; Berkeley 2022: 45% of CA/LA drivers multi-app over two weeks. quarterly_to_weekly anchors: NYC 0.50 is people/people, Seattle 0.45 is accounts/people (0.40 deduped), DoorDash 0.25-0.30. delivery_share 0.65 covers Instacart and Amazon Flex (in the Flex/UCR counts) who are not restaurant couriers and not HMP customers. Offsetting check: DoorDash-only bottom-up (53k weekly-active LA Dashers, 73-85k all-app) supports the model's WEEKLY_county 62k as slightly low, so M3's total is roughly right for partly wrong reasons.",
+      "suggested_value_or_fix": "delivery_share_of_app_workers (restaurant-only, deduped) 0.40/0.50/0.60; retag quarterly_to_weekly_active as ESTIMATE.",
+      "effect_on_output": "0.65 -> 0.50: M3_county 25,688 -> 19,760; geomean DAILY_county 24,723 -> 22,653 (-8%); DAILY_zone 1,981 -> 1,815."
+    },
+    {
+      "severity": "low",
+      "target": "nyc_weekly_active_couriers (61/63/65k) and nyc_deliveries_per_courier_week (39/42/45): units",
+      "claim": "hi = 45 is per trip-performing ACCOUNT (2.72M/60k, not deduplicated) while lo = 39 is per PERSON (124M/52/61k); hi = 65k (NYSERDA 'rely on micromobility') is a micromobility-only population, not DCWP's all-mode count.",
+      "evidence": "DCWP Q4 2024 Table 1 footnote: 'Statistics are not adjusted for multi-apping'; DCWP 2022 accounts/person 1.80 pre-rule. NYC implied metrics: 45.3 deliveries and 17.9 total app-hours per trip-performing account-week; 2.53 deliveries per total hour; with 1.2 accounts/person and w2d 0.85, ~9-10 orders per courier-day. Model's note (61k x 0.8 -> 7.9/day) is consistent.",
+      "suggested_value_or_fix": "No numeric change needed: in M1 the product cpr x dpcw = NYC orders per restaurant-week, so the unit mismatch cancels. Fix the notes so that lo/base/hi are on one basis (people): 39/42/46.",
+      "effect_on_output": "None on outputs; hygiene only."
+    },
+    {
+      "severity": "low",
+      "target": "restaurant denominators (restaurants_county_la 28,161 DPH vs QCEW NAICS 722 23,099; nyc_restaurants 23,000 SBS)",
+      "claim": "LA County DPH count is 1.22x the QCEW establishment count, while NYC's 23,000 (SBS permit list) is closer to the narrow definition; but this does not bias M1 at county level because the 0.45 ratio was derived per capita and the restaurant count is a pass-through, and zone/county shares use DPH consistently.",
+      "evidence": "QCEW 2025Q2 LA County NAICS 722 establishments 23,099; DPH 28,161 (1.22x). Zone DPH/NAICS 1.27 vs city 1.33 (geocoded) or 0.92 (incl. non-geocoded), so no differential institutional-kitchen bias between zone and city. The mismatch does bias M4 (see objection 3).",
+      "suggested_value_or_fix": "State explicitly that M1's restaurant count cancels; use one establishment definition for every cross-city ratio (M4).",
+      "effect_on_output": "None on M1-3; M4 -25% (already counted in objection 3)."
+    },
+    {
+      "severity": "low",
+      "target": "doordash_us_deliveries_per_day / doordash_us_share (numerator-denominator mismatch)",
+      "claim": "Numerator is all Dasher deliveries (restaurant + grocery + DashMart + package); denominator is DoorDash's share of MEAL-delivery sales. The quotient is neither total food deliveries nor total app deliveries.",
+      "evidence": "Dash Report: 'over 3 million deliveries per day' (all verticals); Second Measure 67%/62% is 'meal delivery sales' (dollar share, Mar 2024, stale). Restaurant-only DoorDash deliveries are plausibly 80-85% of 3.6M.",
+      "suggested_value_or_fix": "doordash_us_deliveries_per_day 2.8/3.1/3.6M restaurant-only, or keep 3.6M and use an all-vertical share (~0.60).",
+      "effect_on_output": "county_orders_per_day -10 to -15% if restaurant-only (199,742 -> ~172k); zone all-modes -10%. Partly offset by objection 4 (+5-10%)."
+    }
+  ],
+  "things_the_model_got_right": [
+    "Arithmetic reproduces exactly from the params (every scenario cell re-derived; no sign or unit errors in the pipeline); lo/hi are correctly flipped for divisor parameters (doordash_us_share, la_deliveries_per_courier_week, orders_per_courier_day, miles_per_two_wheel_courier_day, doordash_share_of_two_wheel_couriers_la, gas_scooter_share).",
+    "LA County order volume (~200k/day, 0.44x NYC per capita, 1.2x US) is coherent with DCWP (2.72-2.77M/wk NYC), DoorDash US 'over 3M/day', and LA's restaurant-employment share (26.6% of CA vs 24.9% population).",
+    "County weekly-active ~62k is within 15-25% of an independent DoorDash-only bottom-up (8M annual x 10/52 weeks x 3.44% = 53k Dashers; 73-85k all-app after overlap) and NYC per-capita scaling; if anything it is slightly low.",
+    "The zone daily-active headline (~2,000 all-modes, ~1,000 two-wheel) survives the parameter corrections because they cancel: a critic-central run (opd 7.5, dpcw 18, intensity 1.05, courier factor 0.80, consistent M5, restaurant-only M3, NAICS-consistent M4) gives 1,944 all-modes and 1,054 two-wheel.",
+    "Using NYC to calibrate the DoorDash miles figure was the right instinct: raw miles overshoot NYC's DCWP-implied count 1.5-2x, and on-app miles per two-wheel delivery come out similar for NYC (12.4) and LA county-label (11.4), supporting the county/metro reading of the label.",
+    "Restaurant-share allocation is the right basis for courier presence at pickups (what a hub cares about); DPH/NAICS ratios in the zone (1.27) and citywide (1.33) show no differential institutional-kitchen inflation between the zone and the rest of the city.",
+    "Mode shares are closed (e-bike/e-moped + gas + pedal = 1), the zone two-wheel share is capped at 0.90, and SAM does not double count two-wheel and car people.",
+    "M1's restaurant denominator is a pass-through (the 0.45 ratio was built per capita), so the DPH-vs-SBS definitional gap does not bias M1 at county level."
+  ],
+  "what_would_settle_it": [
+    "Cheapest and highest-yield: a 3-evening intercept count (2 people, 6-9 pm) at 6-8 high-volume pickup points in DTLA and Koreatown (ghost-kitchen facilities, Chipotle/Chick-fil-A/McDonald's on Wilshire, Figueroa, 6th St): tally couriers per hour by vehicle type and ask each one 'how many days a week do you deliver around here?' and 'how many orders on a typical day?'. This pins zone two-wheel share, two-wheel daily/weekly ratio, and orders per courier-day at once, which are the three parameters driving both the two-wheel count and the SAM/SOM overstatement.",
+    "One email to the DoorDash policy/communications team that authored the 2026 Two-Wheeled Progress Report asking what geography 'Los Angeles, CA' denotes (city, submarket, or metro) and whether they will share a DTLA/Koreatown two-wheel share; resolves county_share_of_doordash_label_miles and zone_two_wheel_uplift.",
+    "Pull HMP's SF customer records: share of buyers/renters who are app couriers and share active (rode or swapped a battery in the last 30 days), plus the SF restaurant count on the same NAICS basis; this fixes M4 within a day and is the only route anchored on HMP's own data.",
+    "Digitize DCWP 2022 Figure 10 (daily average workers connected by hour) or file a FOIL for its data to get a hard NYC daily/weekly-active ratio by mode; it is the only public source that can anchor weekly_to_daily_active for career two-wheel riders vs casual car couriers."
+  ]
+}
