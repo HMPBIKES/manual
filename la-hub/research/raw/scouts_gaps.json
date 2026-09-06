@@ -1,0 +1,290 @@
+{
+  "missing_modalities": [
+    {
+      "source": "DoorDash 2026 'Two-Wheeled Progress Report' full PDF (and the Feb-2025 edition PDF) plus a direct ask to DoorDash's LA market / Dasher-community team for the LA two-wheel share and whether Motorcycle/Scooter dash types are enabled in the LA market",
+      "why_it_matters": "The single most decision-relevant public number is LA's two-wheel delivery share (SF = 72%, San Diego = 30%, LA absent from every snippet the scouts saw). Scouts only captured snippets; nobody opened the PDF. If LA is ~25-35% two-wheel, the SF-derived ramp must be cut by roughly half before any other adjustment.",
+      "cost": "free"
+    },
+    {
+      "source": "Korean-language and Spanish-language courier channels: Radio Korea / Korea Daily (중앙일보) / Korea Times LA classifieds, Naver cafes and KakaoTalk open chats for LA delivery, Spanish Facebook groups (Repartidores / Delivery Los Angeles), WhatsApp groups, TikTok en espanol",
+      "why_it_matters": "Every scout searched English-only. Koreatown and Westlake/Pico-Union are two of the three anchor zones and their courier communities, informal vehicle rentals and price expectations live in these channels. This is the cheapest route to the vehicle-mode split and to informal competitors (task 1, 4, 5).",
+      "cost": "cheap"
+    },
+    {
+      "source": "Craigslist LA / OfferUp / Facebook Marketplace scrape: (a) 'e-bike / moped rental for delivery' and 'delivery driver job, vehicle provided' ads, (b) used e-moped / e-motorcycle asking prices and days-on-market",
+      "why_it_matters": "(a) reveals the informal fleet operators who are the real LA competition for a courier hub; (b) gives residual values for the rent-to-own and depreciation lines in the unit economics. Competitors scout found only sale listings via search and flagged that a manual scrape is needed.",
+      "cost": "cheap"
+    },
+    {
+      "source": "Google Places API business counts (not review counts) by ZIP for e-bike/scooter/moped sales, rental and repair shops in 90005-07, 90010-21, 90057 versus SF 94103/94110/94102",
+      "why_it_matters": "A count of two-wheel businesses is a legitimate cross-check on the two-wheel ecosystem and identifies local repair competitors for the site score. It is NOT to be used as a rider-count proxy (known rule).",
+      "cost": "free"
+    },
+    {
+      "source": "CA DMV open data: vehicles registered by ZIP with motorcycle/moped body types, and M1/M2 driver-license counts (county-level public; ZIP-level via PRA request)",
+      "why_it_matters": "Tiers B-D (moped, motor-driven cycle, motorcycle) all require an M1/M2 licence in California. If licensed riders are rare in the target ZIPs, the 40-70 mph fleet has no addressable pool regardless of demand, which reshapes task 4 and the capital plan.",
+      "cost": "free"
+    },
+    {
+      "source": "NHTSA vPIC WMI/manufacturer registration and FMVSS certification-label check for HMP FLASH / Lightning MK.II / Lightning 3000, plus DMV registration prerequisites (17-digit VIN, MCO)",
+      "why_it_matters": "Vehicle-regulation scout flagged that registrability of imported electric mopeds/motorcycles is unverified. If FLASH-class units cannot be plated in CA the moped/motorcycle tiers are dead on arrival; a 10-minute lookup settles it.",
+      "cost": "free"
+    },
+    {
+      "source": "UL Product iQ / Intertek / TUV certification directories for HMP battery packs (48V 24Ah, 74V 45Ah), chargers and complete e-bikes (UL 2271 / UL 2849 / EN 15194)",
+      "why_it_matters": "SB 1271 bars leasing/renting uncertified e-bikes, batteries and chargers (scouts disagree on whether from 2026-01-01 or 2028-01-01, but either way inside the 24-month horizon). An uncertified swap-battery fleet makes the core LA product illegal and uninsurable.",
+      "cost": "free"
+    },
+    {
+      "source": "ZIMAS (APN 5146-003-059) + LADBS permit / Certificate of Occupancy history for 768 Ceres, and SF DBI / SFFD permit records for 261 6th St",
+      "why_it_matters": "Zoning, overlays and existing CofO decide whether repair + fleet storage + battery charging is by-right at 768 Ceres; the SF permit file shows what HMP already had to obtain, which is the best predictor of LA permitting cost and time. Site scout had the APN but did not run it.",
+      "cost": "free"
+    },
+    {
+      "source": "LAFD Fire Prevention Bureau pre-application inquiry and LADBS zoning-counter visit for a charging/swap room under the 2025 CFC Sec. 320 / NFPA 855",
+      "why_it_matters": "Aggregate lithium storage above the 20 kWh ESS threshold (300 swap batteries at ~1-3 kWh each is 300-900 kWh) can trigger a change of occupancy, sprinkler or dedicated-room requirements that dwarf the $10k/month rent. No scout could find LAFD-specific guidance; only a counter conversation settles it.",
+      "cost": "cheap"
+    },
+    {
+      "source": "Two insurance broker quotes for the LA address (property incl. lithium, GL, garagekeepers, fleet physical damage with gig-delivery use) from one micromobility MGA and one general commercial broker",
+      "why_it_matters": "No public premium or exclusion language exists for e-moped rental fleets in CA (theft scout). Insurance is a top-3 opex line and a possible hard blocker at a Skid Row-adjacent address.",
+      "cost": "cheap"
+    },
+    {
+      "source": "SFPD incident dataset (DataSF wg3w-h783) within 500 m of 261 6th St, run with the same protocol as the LAPD NIBRS query around 768 Ceres",
+      "why_it_matters": "HMP already operates on one of SF's roughest blocks. A paired crime-radius comparison converts the abstract 'edge of Skid Row' concern into 'X times what we already tolerate', which is the only framing the founder can act on.",
+      "cost": "free"
+    },
+    {
+      "source": "LADOT personal-delivery-device (sidewalk robot) permits and Coco / Serve Robotics LA coverage maps (Uber Eats and DoorDash both route short orders to robots in DTLA and Koreatown)",
+      "why_it_matters": "Robots substitute for exactly the short-hop, high-density orders that make two-wheel couriers viable in the target zones. Nobody scouted this; it caps the two-wheel share trajectory over the 24-month window.",
+      "cost": "free"
+    },
+    {
+      "source": "SF E-Bike Delivery Pilot (SF Environment / DOE grant, NACTO write-up) applicant and participant counts",
+      "why_it_matters": "An independent SF-side count of couriers who applied for delivery e-bikes; one of the few public numerators for the SF benchmark that is not HMP's own data.",
+      "cost": "free"
+    },
+    {
+      "source": "LA City Clerk council files on e-bike / moped enforcement, impounds (AB 875 implementation) and the DTLA 2040 / Skid Row community-plan items; LAPD Central Division CompStat 2025-2026",
+      "why_it_matters": "Enforcement posture toward high-power two-wheelers determines whether tier B-D couriers get impounded in DTLA (Boston/NYC/DC precedent); community-plan changes can alter allowed uses at the parcel. Medium value; a two-hour desk task.",
+      "cost": "free"
+    },
+    {
+      "source": "ACS tract tables for the target zones vs SF core: zero-vehicle households (B08201), foreign-born non-citizen share (B05001), commute mode (B08301)",
+      "why_it_matters": "Courier labor pools skew immigrant and car-less (NYC 91% non-white; Whizz's 'no SSN' pitch). Useful only as a cross-check ratio LA-zone/SF-zone, never as a stand-alone sizer (known rule).",
+      "cost": "free"
+    },
+    {
+      "source": "CA Secretary of State entity search and a phone call for Zoomo's CA operations and Whizz's LA activity",
+      "why_it_matters": "Two scouts have Zoomo simultaneously 'operating in LA' (2025 blog, GO-Biz) and 'collapsed to one NYC store'. A ten-minute check fixes the competitor table.",
+      "cost": "free"
+    },
+    {
+      "source": "LADWP commercial service check for 768 Ceres (confirm 400A/240V 3-phase, upgrade cost and lead time)",
+      "why_it_matters": "A charging hub for 100+ vehicles and 300+ swap batteries can exceed the listed service; an LADWP upgrade in DTLA can take months and tens of thousands, which affects the Month-3 opening trigger.",
+      "cost": "cheap"
+    },
+    {
+      "source": "Lime S-1 (EDGAR, May 2026) risk-factor sections on theft, vandalism, battery fires and insurance availability",
+      "why_it_matters": "Low-to-medium value: Lime's dockless model differs from assigned-renter, so loss rates do not transfer, but the insurance and fire-safety language is the only public disclosure by a large micromobility operator. Read for two specific sections only.",
+      "cost": "free"
+    },
+    {
+      "source": "Deprioritize: Metro Bike Share station joins, Placer.ai free POI tool, YouTube Data API vlog metadata, Google Trends DMA index",
+      "why_it_matters": "All exist and are free but none changes the GO/NO-GO: bike-share riders are not couriers, Placer gives office foot traffic not orders, vlogs give one rider's anecdote, Trends is a relative index. Spend the hours on the items above instead.",
+      "cost": "free"
+    }
+  ],
+  "per_task_sufficiency": [
+    {
+      "task": "1 Market sizing of daily-active riders in DTLA+Koreatown, vehicle-mode split, TAM/SAM/SOM in 3 scenarios",
+      "public_data_sufficiency": "insufficient",
+      "what_is_missing": "No public LA courier headcount (LA has no NYC/Seattle-style pay ordinance generating platform data); no LA two-wheel share (absent from all DoorDash city lists captured); no daily-active vs ever-active conversion (DoorDash avg ~4 hrs/week, Seattle 92,801 ever-active over 18 months); no bike / e-bike / moped / motorcycle split (NYC snippet suggests ~44% car even there); no neighborhood order volume (metro ranking only). What does exist publicly: LA County DPH restaurant inventory (07/2026, lat/long) and LA Office of Finance NAICS 7225 points; ACS residents/units; NYC 60k weekly-active and Seattle benchmarks; SF 72% two-wheel share; DoorDash 'greater LA is the #1 metro by orders'.",
+      "best_substitute": "Build three independent estimates rather than three parameter tweaks of one: (a) restaurant-ratio method using LA County inventory x HMP's observed SF customers-per-core-zone-restaurant; (b) NYC/Seattle per-capita-per-restaurant ratios scaled by the LA two-wheel share once the DoorDash 2026 PDF or LA market team supplies it; (c) field intercept counts at hotspots paired with identical counts in SF. Calibrate orders-per-rider-day and active share from HMP SF rider self-reports. Paid transaction panels (Second Measure / Earnest) are metro-level only and not worth buying."
+    },
+    {
+      "task": "2 Reverse-engineer SF active customers and scale to LA at M3/M6/M12/M24",
+      "public_data_sufficiency": "partial",
+      "what_is_missing": "SF-side denominators are available publicly (SF Registered Business Locations g8m3-pdis and DPH tvy3-wexg with analysis_neighborhood, ACS tract profiles, 72% two-wheel share, business registration date 2024-08-09). The numerator is entirely missing: monthly SF sales, rental starts/ends, battery-subscription starts/churn, customer home and work ZIPs, active share of the >1,000 sold, model mix, and whether Davis/online sales are inside the 1,000. The 1,000 vs 600+ reconciliation and the HMP-vs-415 eBikes ownership question also block the ramp curve.",
+      "best_substitute": "Pull directly from HMP systems (Shopify and Stripe connectors are attached in this session): orders by ship-to/pickup ZIP, SKU and date; subscription created/cancelled dates and plan. Add swap-station logs for delivery-zone geography. Scale to LA with two explicit multipliers, LA/SF two-wheel share and licensed-rider share for moped tiers, and present M3-M24 as a band until the field tests narrow it."
+    },
+    {
+      "task": "3 Parametric unit economics with break-even",
+      "public_data_sufficiency": "partial",
+      "what_is_missing": "Public gives MSRPs by SKU (with a configuration ladder), competitor price ceilings (Zoomo $20-65/wk, Whizz $139-179/mo, $49/mo swap add-on, $19/mo protection, $500 theft cap), rent $1.20-1.60 PSF/mo in a market down 32% over 36 months, guard $25-40/hr billed, camera monitoring $30-150/cam/mo, GPS $9-45/veh/mo, CA minimum liability 30/60/15, and rider affordability ($5.93/hr net per Berkeley/USC vs $22-30/hr gross at peak). Missing: landed cost per model, utilization, repair cost and parts revenue, theft/non-return/bad-debt rates, deposit policy, battery-subscription price and swap economics, insurance premium, NNN/opex load, staffing, TI and permitting capex, LADWP upgrade, churn/LTV.",
+      "best_substitute": "HMP SF P&L by line and Stripe churn/ARPU (internal), the broker's written term sheet (lease type and opex), two insurance quotes, LAFD/LADBS pre-application for capex, LADWP service check. No paid source substitutes for any of these."
+    },
+    {
+      "task": "4 Fleet mix across 20-25 mph e-bike / 28-35 mph / 40-50 mph e-moped / 50-70+ mph e-motorcycle",
+      "public_data_sufficiency": "partial",
+      "what_is_missing": "Regulation is well covered (CA e-bike ≤750 W with pedals; CVC 406 moped needs M1/M2 and plate; motor-driven cycle/motorcycle need M1, registration and 30/60/15 insurance; SB 1271 certification; AB 875 impounds; Uber Eats LA scooter rule 'under 50cc' with no motorcycle mode; DoorDash Motorcycle dash type market-dependent; two-wheel Dashers earn ~10% more). Missing: LA courier mode split, whether DoorDash Motorcycle/Scooter dash types are live in LA, whether Uber accepts electric mopeds under the 50cc rule, M1 prevalence among couriers, HMP SF fleet and earnings by model, registrability (VIN/MCO/FMVSS) of FLASH/MK.II, verbatim CVC 405/406 thresholds (the 30 mph moped cap is from prior knowledge, unverified).",
+      "best_substitute": "Field: attempt platform sign-up in LA per vehicle class. Internal: HMP SF mix, earnings and platform registration mode by model. Free: DMV licence/registration stats, NHTSA vPIC, leginfo text of CVC 400/405/406. Bilingual rider survey for the observed mode split."
+    },
+    {
+      "task": "5 Competitor table (Whizz, Zoomo, Wombi, local, informal)",
+      "public_data_sufficiency": "partial",
+      "what_is_missing": "Whizz national/SF terms are well documented (from $179/mo, narrow maintenance scope with $9 visit fee, $500 theft cap, 15% DoorDash discount, 2,500 bikes and >$8M ARR in 2024). Missing: Whizz LA status (app-shell page, $139/mo indexed title, not on the 31-shop locations page, LA absent from the July-2026 DoorDash guide); Zoomo LA status (site serves NYC content; 2025 blog and GO-Biz say LA); any e-moped/e-motorcycle courier competitor (none found); local shops and informal renters (unscouted); P2P (Riders-Share 50+ scooters, FriendWithA $520/mo) are snippets only; Wombi is a consumer product, not a competitor.",
+      "best_substitute": "Mystery-shop the Whizz app with a Koreatown address and call Zoomo; CA SoS entity check; Google Places counts by ZIP; Craigslist/OfferUp/Facebook Marketplace and Korean/Spanish classifieds scrape; ask HMP for intel from former Zoomo riders."
+    },
+    {
+      "task": "6 Site score for 768 Ceres vs Koreatown / Westlake / Fashion District / South Park / Arts District / Historic South Central",
+      "public_data_sufficiency": "partial",
+      "what_is_missing": "For 768 Ceres: asking-rent range and APN are known, twin 2015 buildings (768 and 772, 16,887 SF), 'Full Service' per two mirrors, listed 400A 3-phase, Central LA market $1.34-1.52 PSF NNN, LAPD NIBRS dataset located but not queried, homelessness +23% and Central Division aggravated assaults +25%, Skid Row homicide 17x city rate, bike lane on 7th ends at Main St. Missing: ZIMAS zoning/overlays and CofO, clear height/doors/parking, availability (one LoopNet record says 'no longer advertised'), lease type, incident counts within a radius, measured transit/freeway/bike distances, rider willingness to travel there. For the six alternatives: only LoopNet listing counts (Fashion District 31, Arts District 13, Koreatown 10, none for Westlake/South Park/Historic South Central); no rents, no crime, no rider-proximity scoring.",
+      "best_substitute": "Free: ZIMAS/LADBS lookup, NIBRS and SFPD paired radius queries, broker-supplied comps for the six alternatives (CoStar access via the broker beats buying it). Field: four-time-slot site walks and neighbor interviews, plus the hub-location question in the rider intercept survey. Internal: SF depot visit patterns and rider home ZIPs to set the catchment radius."
+    }
+  ],
+  "recommended_field_tests": [
+    {
+      "rank": 1,
+      "test": "Platform eligibility and heat-map test in LA: with LA-set DoorDash and Uber Eats courier accounts, try to add Motorcycle and Scooter dash types and register an electric moped under Uber's 'under 50cc' scooter rule; log the Dasher busy map 4x/day for 14 days for DTLA, Koreatown, Westlake, USC; run 2-3 dinner-peak shifts each on a Class-2 e-bike and a moped-class vehicle in DTLA and Koreatown recording orders/hr, $/hr and trip distance.",
+      "cost_and_time": "$0-100 (existing accounts, a rider's time); 14 days, runs in parallel with everything else",
+      "pass_bar": "DoorDash offers Motorcycle or Scooter dash type in LA AND at least one platform accepts an electric moped/motorcycle; DTLA+Koreatown show 'busy/very busy' in ≥60% of logged peak slots; test shifts average ≥2.5 orders/hr and ≥$22/hr gross at dinner peak on two wheels",
+      "fail_bar": "Neither platform accepts anything above a Class-2 e-bike (then tiers C-D are removed from the LA plan and the fleet becomes e-bike/Class-2 plus CVC-406 mopeds only), or test shifts average <1.5 orders/hr",
+      "decides": "Task 4 fleet mix, the mode-split ceiling in task 1, and rider affordability in task 3"
+    },
+    {
+      "rank": 2,
+      "test": "Regulatory, insurance and certification clearance: ZIMAS lookup on APN 5146-003-059; LADBS zoning-counter question on repair + fleet storage + battery charging; LAFD Fire Prevention pre-application inquiry for a charging/swap room under 2025 CFC Sec. 320 / NFPA 855; two broker insurance quotes for the address; UL Product iQ / Intertek lookup of HMP packs and chargers; NHTSA vPIC check of FLASH/MK.II VINs.",
+      "cost_and_time": "$0-500 (optional one hour of a fire-code consultant); 2-3 weeks of elapsed time, mostly waiting on the LAFD and brokers",
+      "pass_bar": "Use allowed by right or with a simple change-of-use permit (≤$10k); charging room achievable within $25k TI; at least one insurer binds with no lithium exclusion at ≤$2,000/month for the site plus ≤$25 per vehicle-month for fleet physical damage; batteries and chargers carry UL 2271/2849 or EN 15194 listings; FLASH/MK.II are registrable in CA",
+      "fail_bar": "Change of occupancy requiring sprinkler or ESS-room build-out >$75k, no insurer willing to write the address, or uncertified swap batteries (SB 1271 makes the rental unlawful) - NO-GO on this site or on the rental model until fixed",
+      "decides": "Task 6 site viability, task 3 capex/opex, and whether the swap/rental product is lawful in CA within the 24-month horizon"
+    },
+    {
+      "rank": 3,
+      "test": "Paired rider intercept count and survey, LA vs SF: 5 LA sites (Wilshire/Western and 6th/Vermont in Koreatown; 7th/Flower or Grand Central Market in DTLA; Traction/Alameda in the Arts District; Figueroa/Jefferson at USC) 5:30-8:30 pm Thu/Fri/Sat, counting couriers by mode (car / pedal bike / Class-2 e-bike / throttle e-moped / motorcycle) and running an 8-question EN/ES/KO intercept (platform, own vs rent, weekly vehicle spend, hours/week, home ZIP, would you ride to 8th and Ceres for swap/repair, would you ride to a Koreatown/Westlake hub); same protocol for one evening at two SF sites to calibrate.",
+      "cost_and_time": "$800-1,500 (two bilingual counters, $5 gift cards); 2 weeks",
+      "pass_bar": "LA per-site motorized two-wheel courier count ≥60% of the SF per-site count; ≥30% of LA couriers already on throttle e-bikes/mopeds/motorcycles; ≥40% renting or paying weekly for their vehicle; ≥25% say yes to riding to 8th and Ceres and ≥50% to a Koreatown/Westlake hub",
+      "fail_bar": "LA per-site count <30% of SF, or <15% willing to come to 8th and Ceres (site fails even if the market passes)",
+      "decides": "Task 1 order of magnitude and mode split, task 6 site vs Koreatown alternative, task 4"
+    },
+    {
+      "rank": 4,
+      "test": "Lease-term and comps request: written term sheet from Lee & Associates (base rent, lease type, opex, term, free rent, TI, escalations, early-termination or sublease right, whether 768 alone is available or only 768+772); three comps each of 3,000-8,000 SF industrial/showroom in Koreatown, Westlake, Fashion District, South Park, Arts District and Historic South Central.",
+      "cost_and_time": "$0; 1 week",
+      "pass_bar": "All-in rent ≤$1.35 PSF/month including opex (about $11.4k), ≥2 months free rent, 2-3 year term with a 12-18 month termination option or assignment/sublease right, and the landlord's written consent to battery charging, repair and indoor fleet parking",
+      "fail_bar": "NNN structure pushing all-in above $1.60 PSF/month, a 5-year term with no exit, or landlord refusal of charging/repair use",
+      "decides": "Fixed-cost line and exit risk in task 3; structure of a CONDITIONAL GO (Month-12 trigger)"
+    },
+    {
+      "rank": 5,
+      "test": "LA geo-targeted waitlist and channel probe: EN/ES/KO landing page ('HMP Los Angeles - delivery e-bikes and e-mopeds from $X/week, battery swap included, opening DTLA'), $500 across Instagram/Facebook/TikTok targeted to 90005-07, 90010-21, 90057, plus posts in Korean and Spanish rider groups, Craigslist gigs and Radio Korea classifieds; collect phone, platform, vehicle interest and home ZIP; call 30 to verify they currently deliver.",
+      "cost_and_time": "$500-800 ad spend plus a landing page; 14 days",
+      "pass_bar": "≥120 verified-active courier sign-ups in 14 days at ≤$6 per sign-up, ≥30% living within 3 miles of Ceres or willing to travel, ≥25% asking for moped/motorcycle class (rationale: SF ramped at roughly 40 units/month; 120 sign-ups at 15-25% conversion is 18-30 Month-1 customers, i.e. on the SF curve)",
+      "fail_bar": "<40 verified sign-ups or cost per lead >$15",
+      "decides": "Month-3 ramp bar in task 2, SOM in task 1, marketing CAC in task 3"
+    },
+    {
+      "rank": 6,
+      "test": "Site safety and neighbor walk plus crime-radius query: visit 768 Ceres at 06:00, 14:00, 21:00 and 23:30 on a weekday and a Saturday; count encampments within 300 ft and along the approach from the 7th St bike lane; photograph lighting, gate and yard; interview five adjacent businesses about break-ins in the last 12 months; query LAPD NIBRS within 500 m for 12 months (burglary, robbery, aggravated assault, vehicle theft) and the identical SFPD query around 261 6th St.",
+      "cost_and_time": "$0-150; 1 week",
+      "pass_bar": "500 m incident counts ≤1.5x the SF 261 6th St baseline; ≤1 of 5 neighbors reports a break-in in 12 months; approach not blocked by encampments at 21:00-23:30; ≥25% of riders in test 3 willing to come",
+      "fail_bar": "≥3 of 5 neighbors report burglaries, or the block is a documented takeover/encampment hotspot at night (riders will not come after dark) - prefer a Koreatown or Fashion District site",
+      "decides": "Task 6 site score and the security opex line in task 3"
+    },
+    {
+      "rank": 7,
+      "test": "Competitor mystery shop: sign up in the Whizz app with a Koreatown address and record whether pickup/delivery is offered, price, deposit and lead time; call Zoomo and run a CA Secretary of State entity check; rent a Riders-Share moped for a day and ask the owner how many delivery renters they see; Google Places query for rental/repair shops in target ZIPs.",
+      "cost_and_time": "$0-179 (one Whizz month if the sign-up goes through, then cancel); 1 week",
+      "pass_bar": "White space confirmed: neither Whizz nor Zoomo can put a courier e-bike in a DTLA/Koreatown rider's hands within 7 days and no local shop offers weekly courier rentals with swap",
+      "fail_bar": "Whizz is live in LA at ≤$139/month with delivery in ≤3 days - HMP's e-bike tier must price at or below ~$35/week and differentiate on moped class, swap and full-service repair",
+      "decides": "Task 5 and the price ceiling in task 3"
+    },
+    {
+      "rank": 8,
+      "test": "Pop-up swap/repair/demo day (run only if tests 1-5 pass): one Saturday in Koreatown (near the CloudKitchens facility at 1842 W Washington or a Korean plaza lot) and one in DTLA near 7th/Central; van 5-6 demo vehicles from SF; free tune-ups, demo rides, $50 refundable deposits for pre-orders; log how far each rider travelled.",
+      "cost_and_time": "$1,500-3,000 (van, lot or partner parking, two staff, two Saturdays); 3 weeks",
+      "pass_bar": "≥40 couriers engage per day, ≥10 refundable deposits per day, ≥25% travelled more than 3 miles",
+      "fail_bar": "<15 engaged per day or <3 deposits per day",
+      "decides": "Conversion assumption in tasks 2 and 3; upgrades a CONDITIONAL GO to GO"
+    }
+  ],
+  "contradictions": [
+    {
+      "topic": "Asking rent and lease type for 768 Ceres",
+      "values": "LoopNet snippet $19.20/SF/yr (= $1.60/SF/mo, about $13.5k/mo, type unstated); PropertyShark $1.20/SF/mo 'Full Service' (about $10.1k/mo, matches the ~$10k in the brief); combined 768+772 listing $1.40/SF/mo Full Service; Kidder Q2-2026 Central LA $1.34 and LA city $1.52 PSF/mo NNN; CBRE says LA rents down 32.4% over 36 months",
+      "resolution": "Get the broker's written term sheet (test 4). Until then model rent as a range $10.1k-$13.5k/month and add an NNN sensitivity of +$0.25-0.40 PSF/month opex; never present $10k as settled"
+    },
+    {
+      "topic": "Whether 768 Ceres is still available and what unit is being marketed",
+      "values": "PropertyShark 'Available Immediate, 1 space'; one LoopNet record says the property 'is no longer being advertised'; a third aggregator markets 768 and 772 together (16,887 SF, 0.42 ac)",
+      "resolution": "Confirm with Lee & Associates whether 768 alone is on offer; if only the 16,887 SF assemblage is available the fixed-cost base doubles and the decision changes"
+    },
+    {
+      "topic": "SF installed base",
+      "values": "Brief: >1,000 vehicles sold; Gazetteer SF (2026-04-02): '600+ e-mopeds in SF, targeting 1,000 by year-end'; hmp_public_footprint frames the SF courier fleet as Class-2 Inno-based; SWFT MAXX (named in the brief) appears on neither storefront",
+      "resolution": "Ask HMP for cumulative units by channel (SF store vs Davis vs online) and by model and date; use an SF-store-only, dated series for the ramp; define 'e-moped' consistently (Gazetteer's mopeds may be the Inno/Lightning 3000 class, not FLASH/MK.II)"
+    },
+    {
+      "topic": "SF operating history / ramp clock start",
+      "values": "Gazetteer: HMP founded 2022 (Davis); DataSF: '415 Ebikes' (Mandala Global, LLC) registered 2024-08-09 at 261 6th St; first Wayback capture of 415ebike.com 2026-04-18",
+      "resolution": "Start the SF ramp clock at 2024-08 (about 25 months of history as of 2026-09) unless HMP documents earlier SF sales; the LA M3/M6/M12/M24 curve must be benchmarked on a 25-month ramp, not a 4-year one"
+    },
+    {
+      "topic": "Corporate structure of the SF benchmark",
+      "values": "Brief treats HMP Bikes / 415 eBikes as one business; Gazetteer and DataSF show 415 eBikes as a separately named dealership entity of a Davis-based brand; no HMP DBA registered in SF",
+      "resolution": "Ask HMP whether the SF store is owned or an independent dealer; this defines whether 'replicating SF' in LA means an owned hub with its own P&L or a dealer relationship, and which cost base is comparable"
+    },
+    {
+      "topic": "Whizz presence and price in LA",
+      "values": "Brief assumes an established Whizz LA operation; Whizz locations page lists 31 shops with a single CA hub in SF; Whizz July-2026 DoorDash guide omits LA; indexed LA page title says 'from $139/mo' (below the $179 national and the $159 2023 price); the live page is an app shell",
+      "resolution": "Mystery shop (test 7); until then treat Whizz LA as 'unconfirmed, possibly demand-test landing page' and use $139/mo as the price ceiling only in the pessimistic scenario"
+    },
+    {
+      "topic": "Zoomo status in LA",
+      "values": "Zoomo 2025 blog: 'operates in NYC, San Francisco, Los Angeles and Philadelphia'; GO-Biz: SF and LA were 'top performing markets'; Zoomo site's LA URL renders NYC content with one NYC store; PitchBook headcount falling 201 to 192",
+      "resolution": "Phone call plus CA SoS check; assume Zoomo LA has wound down unless proven otherwise, and ask HMP for ex-Zoomo rider intel (why it failed in LA is itself a datapoint)"
+    },
+    {
+      "topic": "SB 1271 effective date for rentals/leases",
+      "values": "theft_security_insurance scout: second phase Jan 1, 2028 bars renting uncertified e-bikes/batteries; vehicle_regulation scout: certification requirement applies to leasing from 2026-01-01",
+      "resolution": "Read the chaptered text on leginfo before modeling; either date falls inside the 24-month horizon, so the certification check (test 2) is required regardless, but the 2026 reading would make it a pre-opening blocker rather than a Month-16 one"
+    },
+    {
+      "topic": "Moped (CVC 406) definition threshold",
+      "values": "DMV page paraphrases mopeds as 'less than 4 gross brake horsepower' (cc-based framing); the scout's prior knowledge adds a 30 mph on-level-ground cap; neither the 405 nor 406 verbatim text was fetched",
+      "resolution": "Fetch CVC 400/405/406 verbatim; the 30 mph line decides whether the 28-35 mph tier is a moped (M1/M2 + plate) or a motor-driven cycle (M1 + registration + 30/60/15 insurance)"
+    },
+    {
+      "topic": "Uber Eats LA scooter rider minimum age",
+      "values": "rider_communities snippet: 'at least 19 years old'; vehicle_regulation (live LA page): minimum age 21",
+      "resolution": "Use the live page (21); minor, but it shows the snippets are not all current"
+    },
+    {
+      "topic": "Vehicle-theft risk framing at the Skid Row edge",
+      "values": "Brief frames the location as a major theft concern; Crosstown's LAPD motorized-device theft analysis (2020-2024) names University Park (206) and Venice (95) as top neighborhoods with no mention of Downtown; meanwhile Skid Row homicide rate is 17x the city, Central Division aggravated assaults +25%, Downtown/Skid Row homelessness +23% (and RAND says undercounted by 39%)",
+      "resolution": "Separate two risks: personal-safety deterrence of riders (evidence points high) versus depot burglary/vehicle theft (unquantified, possibly under-reported). Quantify the second with the NIBRS radius query paired with SFPD around 261 6th St (test 6); score the first through the rider survey"
+    },
+    {
+      "topic": "Rider earnings in LA",
+      "values": "DoorDash: LA Dashers 'around $35/hour while on deliveries' (2023); Berkeley/USC/National Equity Atlas: California delivery workers $5.93/hour net of expenses excluding tips (2024); ShiftTracker: $22-30/hour gross at peak (2026, car-centric)",
+      "resolution": "These measure different things (gross while active vs net of expenses and waiting time). For affordability use net-after-vehicle-cost from HMP's SF 'confirm earnings' self-reports; model weekly rental plus swap as a share of $20-28/hour gross active time, and stress-test at the $5.93 net figure"
+    },
+    {
+      "topic": "DoorDash Dasher count",
+      "values": "Dash Report / Community Impact Report: 'more than 8 million people dashed in 2025'; 10-K FY2025 summary: 'over 9 million'",
+      "resolution": "Immaterial to LA sizing (ever-active, ~4 hrs/week average); cite the 10-K if a national figure is needed and never derive LA from it"
+    },
+    {
+      "topic": "Dataset freshness named in the brief",
+      "values": "LAPD 'Crime Data from 2020 to Present' is frozen (renamed 2020-2024, last update 2026-03-04); City of LA restaurant inspections Socrata (29fd-3paw) dead since 2018-09-10 with no coordinates; SF LIVES inspections (pyih-qa8i) stopped 2019; LA County portal is ArcGIS Hub, not Socrata; LA County inspection reports after 2025-08-25 require a CPRA request",
+      "resolution": "Use LAPD NIBRS Offenses (bi-weekly since Oct 2024) for crime; LA County DPH Restaurant and Market Inventory 07/01/2026 (ArcGIS, lat/long) and LA Office of Finance Active Businesses (2026-06-04, NAICS + lat/long) for density; SF DPH tvy3-wexg (2024-present) and SF Registered Business Locations g8m3-pdis (2026-09-06) on the SF side; compare NAICS 7225 counts in both cities for a like-for-like ratio"
+    },
+    {
+      "topic": "DTLA and Koreatown population figures",
+      "values": "DTLA: 61,000 and 65,211 (vendor polygons) vs 100,000 residential units (DTLA Alliance district) vs the prior 80-90k; Koreatown: 124,281 (Mapping L.A., 2008) vs ~120,000 (blog) vs prior ~110k; Westlake 116,376 (2024, unverified)",
+      "resolution": "Boundary-dependent, not wrong. Fix one tract-built polygon per zone (Mapping L.A. tract lists or community-plan areas) and compute residents, units and zero-vehicle households from ACS 2024 5-year; use the same construction for the SF core zone via DataSF Analysis Neighborhoods"
+    },
+    {
+      "topic": "Central LA industrial vacancy",
+      "values": "Unattributed snippet 3.7% vs Kidder Mathews 6.2% (Q2 2026)",
+      "resolution": "Use Kidder/CBRE; both agree rents are falling, which strengthens the negotiating position regardless"
+    },
+    {
+      "topic": "NYC courier car share as a mode-split prior",
+      "values": "Search summary of the NYC DCWP study attributes ~44% car use to NYC delivery workers, conflicting with the common belief that NYC couriers are overwhelmingly on e-bikes",
+      "resolution": "Verify against the primary DCWP report before using NYC as a mode-split anchor; if it holds, LA's car share is likely well above 50% and the two-wheel addressable share must be modeled explicitly rather than assumed"
+    }
+  ]
+}

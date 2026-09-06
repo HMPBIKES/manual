@@ -1,0 +1,457 @@
+{
+ "unique": [
+  {
+   "id": "A01",
+   "theme": "site",
+   "assumption": "Riders who work Koreatown, Westlake, USC and DTLA will detour to 768 Ceres Ave (Warehouse District, one to two blocks off Skid Row) for battery swaps 3-7x/week, rentals, returns and service at an SF-like 'share willing to visit' (implicitly 70-90%), so the SF 'sell the vehicle, keep renting the battery' line (300+ of 1,000+ buyers, ~30% attach) becomes LA's recurring revenue engine from a single hub with no geography penalty and no formal swap competitor.",
+   "why_it_may_be_wrong": "SF geography does not transfer: 261 6th St sits within ~1.5 mi of nearly every SF delivery hotspot, so a swap, warranty swap or return is a 5-10 minute detour. 768 Ceres is ~1-1.7 mi from Little Tokyo / the DTLA core but ~4.3-6 mi from Wilshire/Western-Vermont, ~3.3-3.5 mi from MacArthur Park/Westlake and ~3 mi from USC, across the 110 and the DTLA one-way grid: 18-35 minutes each way at dinner peak, i.e. a 40-60 minute round trip costing 1.5-2.5 orders (~$12-20 gross) plus the swap fee, every swap. LA couriers commute in from South LA, East LA, Pico-Union, the SGV and the Valley, so the depot is off-route for most and home charging beats hub swapping; battery swap is the most distance-sensitive behavior because it requires the most frequent visits. Skid Row adjacency adds reluctance to leave a $3-5k vehicle, walk in, or visit after dark, exactly when swap demand peaks. Zero walk-by visibility also removes the cheapest acquisition channel a bike shop has. SF's own swap stations only launched June 2026, so the 300+ SF battery renters are mostly home-charging rentals and there is no SF evidence yet that swap-hub economics work anywhere. Separately, DoorDash now lists Swobbee (battery-swap subscription, 50% off for 3 months) as a Dasher partner alongside Whizz and Dirwin, and Whizz/Zoomo bundle battery, maintenance and theft cover into the rental, so a platform-steered network of swap cabinets beats a single hub on convenience and the standalone battery upsell disappears for their riders.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Koreatown share willing to visit 20-40% instead of 70-90%; effective daily-swap catchment shrinks to DTLA core, Arts District, Fashion District and Little Tokyo (40-60% smaller than the target list implies); battery attach falls from ~30% of buyers to 5-15% outside a ~1.5-mile radius; LA year-one subscriber ceiling plausibly 50-100 rather than an SF-scaled 300 and recurring battery revenue roughly one-third of an SF-scaled projection. Since Koreatown is the largest chunk of proposed TAM, SAM drops 30-60% and the recurring (swap/rental) lines drop more than sales; rental-vehicle utilization falls as pickup/return friction rises; Month 6/12 subscriber triggers would be set against the wrong denominator. Theft/vandalism shrink of 1-2 units per month on a 50-100 unit fleet is 12-24%/yr fleet loss before insurance.",
+   "cheap_test": "Ride Wilshire/Western to 768 Ceres and back on a FLASH / 28 mph moped at 6:30-8pm and 9:30pm on a weekday with a timer; visit the block 9-11pm on a Friday and note conditions; overlay DoorDash/Uber Eats hotspot maps and Yelp/Google restaurant density on 1.5/3/5-mile rings from the site; intercept-survey 30 couriers at K-town clusters (6th/Western, Wilshire/Vermont) on home ZIP, the maximum detour minutes they would accept for a swap at a stated price, whether they would ride to 7th & Ceres weekly and at what hour, or would rather pay Whizz's bundled price; count e-mopeds parked outside DTLA vs K-town restaurants at 7pm; check Swobbee/Popwheels station maps and any LA-specific Dasher perks; ask the landlord and neighbors about break-ins in the last 12 months; get an insurance quote for a 50-vehicle fleet at that address. Build an SF distance-decay curve (attach and churn by 0-1 / 1-2 / 2-4 / 4+ mi from 6th & Folsom) and apply LA target-zone distances to 768 Ceres.",
+   "hmp_internal_data_needed": "SF customer home and work-zone ZIPs vs distance to 261 6th St; battery-rental attach rate over time, swap/exchange frequency per subscriber per week and churn by distance band; share of subscribers living or working more than 2 miles from the shop and whether anyone in SF regularly rides more than 15 minutes to swap; share of visits after 7pm; share of SF battery renters using the June-2026 swap station vs home charging; rental-return and service-visit frequency; average distance riders travel to swap; SF theft/loss rate per vehicle-year; SF share of customers acquired by walk-in; any change in attach or churn after Whizz's DoorDash SF launch.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "demand_sizing_method",
+    "ramp_and_cac",
+    "site_operations_safety",
+    "sf_to_la_transferability",
+    "competition_and_platforms"
+   ],
+   "merged_from_count": 5
+  },
+  {
+   "id": "A02",
+   "theme": "competition_platforms",
+   "assumption": "HMP can hold SF-level whole-vehicle rental pricing in LA (~$45-65/week, ~$195-280/mo) plus a separate battery subscription (implied $50-90/week all-in for a moped) because Whizz only offers pedal e-bikes and its LA 'from $139/mo' price is a static floor.",
+   "why_it_may_be_wrong": "Whizz's LA page advertises delivery e-bike rental from $139-169/month ALL-IN (unlimited battery swaps, maintenance, GPS, no credit check) and rent-to-own at $169/mo with ownership in 12 months, directly copying HMP's rent-then-buy funnel; Zoomo prices NYC at $20-24/week. Whizz is VC-funded, already runs DoorDash-co-branded subsidies ($400 off; $80 off first month after 25 deliveries; 15% off with code 15DD), added four DoorDash cities in 2026, and a $139 LA headline below its $169 national price is itself evidence of seeding-mode promotional pricing; if a hub at 768 Ceres starts pulling riders, the rational response is a 2-3 month $99 promo funded from marketing budget, which HMP, carrying $10k/mo rent plus a physical fleet, cannot match without breaking unit economics. The courier's willingness to pay is anchored by the cheapest all-in competitor and by LA earnings (~$150-250/day gross); HMP's standalone battery subscription, the recurring-revenue thesis, is exactly the line Whizz (and Swobbee via DoorDash) bundles for free. A moped premium (speed, range, orders/hour) exists but has not been priced in LA, and SF pricing was set before a $139-169 all-in competitor existed there at scale. Zoomo once called LA a 'top performing market' but its US site now reads NYC-only; a funded operator retreating from LA signals that LA courier e-bike rental economics were not good enough, not an open field.",
+   "direction": "flatters_LA_case",
+   "magnitude": "20-40% lower realized rental ARPU per active vehicle (e.g. $55/wk assumed vs $35-40/wk realized on e-bikes; roughly -$40 to -$70 per unit per month) and battery-subscription revenue on rentals collapsing toward $0 because it must be bundled to match Whizz. On 100 active rentals that is $6-9k/month, close to the full base rent; if the e-bike class is more than half the LA fleet plan, rental-fleet payback stretches from ~12 to 18-24 months and the Month-12 trigger is at risk.",
+   "cheap_test": "Sign up on getwhizz.com as an LA courier and mystery-shop Whizz, Zoomo-style and local LA operators for the true out-the-door weekly price, deposit, theft fee, wait time, pickup address and what 'free maintenance' excludes; find out whether Whizz has a staffed LA hub or drop-ships bikes; call Zoomo to confirm whether an LA hub still operates; compare Whizz LA vs SF Google review counts as a proxy for active riders; check monthly whether LA appears on DoorDash's Dasher Central bike page (Sep 2026 lists NYC, SF, DC, Philadelphia, Chicago, Jersey City, not LA) because that is the moment Whizz gets zero-CAC in-app distribution. Run a 2-week Facebook Marketplace / Craigslist / WhatsApp-group ad in Spanish and English at the intended LA price and count qualified sign-ups; survey 30 couriers at DTLA/Koreatown hotspots on current cost, what they ride and max weekly price.",
+   "hmp_internal_data_needed": "SF realized (not list) weekly rental price net of discounts and free weeks, and active rental count by month for the 12 months before and after Whizz's 2026 DoorDash SF launch; churn of e-bike-class renters vs moped/motorcycle-class renters in that window; SF battery-subscription price and churn; exit-interview reasons mentioning Whizz or price; share of SF renters who switched to a competitor and why.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "competition_and_platforms",
+    "unit_economics_capital"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A03",
+   "theme": "ramp_cac",
+   "assumption": "HMP can reach ~100 whole-vehicle rentals in LA within 6-12 months through the same walk-in / referral / word-of-mouth engine (rider rents -> confirms earnings -> buys -> refers coworkers) that produced 1,000+ SF sales, at near-zero SF-like CAC, without the founder physically on site every day and without a platform partnership.",
+   "why_it_may_be_wrong": "SF adoption rides on a specific dense immigrant courier community HMP is embedded in: riders quoted in press are Nepali (Oli, Basnet), there is a 500-member Bay Area WeChat group of Chinese-speaking delivery/rideshare drivers, the founder's prior venture (Xiaocun) targeted the Chinese-speaking community, and in SF the founder is simultaneously salesperson, mechanic, WhatsApp-group admin and trust anchor. LA starts at zero seeded riders, so a referral loop has no base to multiply for the first months and early acquisition must be bought (street promo, Spanish/Korean paid social, referral bounties, sign-up discounts, bilingual staff hours). DTLA/Westlake/Pico-Union couriers are predominantly Latino/Spanish-speaking with a Korean-speaking layer in Koreatown; their channels are WhatsApp/Facebook/TikTok/KakaoTalk/church/restaurant back-door networks, not WeChat, and there is no HMP-riding cousin to vouch for the product. SF's 1,000+ were built over years before Whizz had DoorDash distribution in SF; in LA Whizz is already present at $139/mo with $0 down on pre-owned bikes, gets zero-CAC placement inside Dasher onboarding (Dasher Central 'bike dashing' page, promo codes tied to delivery milestones; all four 2026 Whizz launches were DoorDash-driven, so LA is the obvious next switch to flip) and Uber Eats does the same for Zoomo in NYC (promo through Dec 31, 2026). HMP has no platform partnership, LA's courier community is spread across a car-dominant metro rather than SF's compact Tenderloin/SoMa/Mission cluster, and a no-storefront depot has zero walk-by visibility. 2025-26 immigration enforcement in exactly these neighborhoods (DTLA, Fashion District, MacArthur Park) makes unlicensed riders less willing to sign KYC-heavy rental contracts or be visibly mobile.",
+   "direction": "flatters_LA_case",
+   "magnitude": "SF blended CAC plausibly $0-50 per paying rider (organic); LA first-6-months CAC $150-400 per paying rider once staff time, promos and bounties are loaded (3-8x). On a $40-60/wk rental with 30-40% early churn a $300 CAC is not recovered for 3-5 months per rider; ramp to 100 rentals takes 12-18 months instead of 6, i.e. an extra $60-120k of lease alone plus idle-fleet carrying cost; Month-6 trigger likely missed and Month-12 marginal; rental-to-purchase conversion could be half SF's rate for the first 12-18 months.",
+   "cheap_test": "Two-to-three-week pre-lease demand test: $1-2k of geo-targeted Meta/TikTok ads (Spanish, Korean, Chinese, English) within 3 miles of 768 Ceres plus ~500 flyers at Koreatown/DTLA restaurant pickup zones at 6-8pm, pointing to a phone-verified waitlist with a real weekly price and a refundable $20-50 deposit; measure cost per verified courier deposit, not per click (pass bar: >=150 verified leads and >=30 deposits). Four dinner-rush street intercepts at Koreatown (6th/Western), Little Tokyo, USC/Figueroa and Westlake (Alvarado) collecting 50 phone numbers with a 'we open in Nov' pitch and measuring call-back response; ask 30+ riders their language, where they got their vehicle and which group chat they use; ask 3 restaurant owners per cluster whether they will host a flyer/QR and note staff language. Join LA courier Facebook/WhatsApp/Telegram groups and post a rental offer to measure inbound interest. Apply to DoorDash's and Uber's courier-perks programs to learn whether HMP can be listed at all and on what terms. Check Zoomo LA (Leimert Park) and Whizz LA review volume and rider nationality mix as a proxy.",
+   "hmp_internal_data_needed": "SF acquisition-channel mix per customer (walk-in, referral, online ads, platform-related) for the ~100 renters and ~300 battery subscribers; % of sales attributable to referrals and the identity and count of top referrers; preferred language / country of origin of SF customers (WeChat vs WhatsApp contact); license status distribution of buyers; months from SF opening to 100 active rentals; marketing spend per new renter; founder hours per week spent selling in SF year 1 vs now; share of SF customers who came via any DoorDash/Uber channel; any LA-area inbound inquiries already received.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "competition_and_platforms",
+    "ramp_and_cac",
+    "sf_to_la_transferability"
+   ],
+   "merged_from_count": 3
+  },
+  {
+   "id": "A04",
+   "theme": "ramp_cac",
+   "assumption": "SF's cumulative totals (>1,000 vehicles sold, ~300 battery renters, ~100 on rent) can be back-cast into an LA Month-3/6/12/24 curve and SOM = SAM x a 12-month penetration capped by today's SF penetration, so LA can reach a meaningful fraction of SF's installed base (e.g. 50-100 rental bikes by Month 6, hundreds of active riders and 300 battery subscribers by M12-M24) because SF 'did it'.",
+   "why_it_may_be_wrong": "The SF numbers are a stock, not a flow, and the duration is unknown. Public reporting (Gazetteer SF) says HMP launched in 2022 and has 600+ e-mopeds operating in SF with a target of 1,000 by end-2026, i.e. ~4 years to the current base, ~17 units/month on average with the first 6 months almost certainly far below that (founder-led, and probably boosted by the 2020-2022 delivery boom that will not repeat). That growth compounded through a closed rider community in a market where HMP had the SF delivery-moped niche largely to itself and captured roughly 30% of the ~2,000 active Uber Eats/DoorDash couriers cited for SF. LA year 1 resembles SF year 1 (2022-23), not SF year 4: no reputation, no referral base, competitors (Zoomo Leimert Park, Whizz LA at $139/mo) already present, and a depot with no walk-in on the Skid Row edge. HMP also knows its SF numerator but not its denominator (SF two-wheel daily-active couriers; the Google-review episode shows that denominator was once off by ~5x), so if SF penetration is 20% rather than 50% the cap changes 2.5x; cumulative sales also overstate active riders (quitters, repeat buyers, out-of-zone buyers). Any LA Month-3/6 target not literally derived from SF's own first-12-months ledger is invented, and triggers set off mature SF numbers will look like failure even if LA is tracking SF's own year-1 pace.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If SF's first 6 months were 3-8 units/month (typical for a one-founder shop), an LA Month-6 target of 50-100 rental bikes is 3-10x SF's own early pace; if SF sold 150-300 units in its first 12 months, LA year-1 sales of 100-250 units are the realistic base case. Getting the ramp wrong by 2-3x moves break-even from ~Month 12 to Month 24+ on a 36-60 month lease; at ~$10k/mo rent plus 2-3 staff and a replacement fleet, M12 cash break-even is unlikely and the lease burns $120k+ before the trigger math is meaningful. Using SF year-1 rather than current penetration as the cap cuts the 12-month LA forecast by more than half (2-4x on SOM).",
+   "cheap_test": "Before signing: export every SF vehicle sale, rental start and battery-rental start with its date (Shopify orders + Stripe subscription start dates + rental ledger) and plot cumulative units by month since day 1; read off months 1-3, 4-6, 7-12 and set LA M3/M6/M12/M24 triggers off SF's own actuals, using SF year-1 penetration as the LA month-12 cap and SF year-2 as the month-24 cap. Tag each unit by acquisition year to separate 2020-2022 pandemic demand from 2024-2026. Run the same four sizing methods on SF to get a denominator range and see whether they converge where the answer is partly known. Cross-check growth shape (not level) with Google/Yelp review counts by year for 415 eBikes.",
+   "hmp_internal_data_needed": "Per-customer first-transaction date, unit type (sale / whole-vehicle rental / battery-only) and current status (active, churned, stolen, resold); monthly units sold, rentals started and battery rentals started 2022-2026; marketing spend by month; share of first-year sales that were referrals; SF opening date and founder time allocation in year 1; current active-customer count (battery renters plus repair visits in the last 90 days); acquisition source (referral vs walk-in vs online) and customer work-zone distribution.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "ramp_and_cac",
+    "sf_to_la_transferability",
+    "demand_sizing_method"
+   ],
+   "merged_from_count": 3
+  },
+  {
+   "id": "A05",
+   "theme": "transferability",
+   "assumption": "The SF installed base is a stable, repeatable outcome of the model rather than an artifact of a particular 2022-2025 period, so LA can be sized from lifetime SF averages.",
+   "why_it_may_be_wrong": "HMP's SF sales accumulated 2022-2026 alongside (a) an unusual inflow of newly arrived migrants (press cites Nepal, Venezuela, Morocco) who needed license-free income immediately, (b) SF's exceptionally high per-capita app-delivery demand (downtown malls reported kept alive by food delivery; low car ownership; high incomes), and (c) tolerant local enforcement of 3-5 kW 'class 2' mopeds. All three are shifting: 2025-26 immigration enforcement reduces the inflow and raises rider risk; per-order pay on the apps has fallen; SF is now debating moped-styled e-bike enforcement. If SF's own new-customer rate has already slowed in 2025-26, an LA hub sized from 2023-24 SF cohorts is sized to a market that no longer exists even in SF.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If SF new-customer acquisition in the last 12 months is 30-50% below its 2023-24 peak, LA projections built on lifetime SF averages are overstated by the same amount; the LA lease would be a bet on re-creating peak-SF conditions in a harder city.",
+   "cheap_test": "Plot SF new buyers and new renters per month for the last 36 months; check whether 2025-26 quarters are flat or declining versus 2023-24. Cross-check with SF Environment Department / MissionLocal courier counts by year and with Uber/DoorDash LA onboarding waitlists.",
+   "hmp_internal_data_needed": "New-customer counts by month and cohort (2022-2026), renter-to-buyer conversion by cohort, rental churn by cohort, country-of-origin mix by cohort if recorded.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "sf_to_la_transferability"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A06",
+   "theme": "ramp_cac",
+   "assumption": "Trigger thresholds like 'Month 3 >= X active riders' will be measured honestly on paying, retained riders (not sign-ups, test rides, WhatsApp members or free-week promo takers), and '>1,000 sold' is the right SF base for expressing rentals, battery subscribers and revenue per rider.",
+   "why_it_may_be_wrong": "Every early-stage rental business inflates 'active riders' with anyone who ever took a bike, and a $0-first-week promo used to hit a Month-3 number produces a spike that churns in weeks 2-4. 'Active riders' also conflates a battery-only subscriber (low ARPU) with a whole-vehicle renter (5-10x ARPU) and a one-time buyer (no recurring revenue); because the founder wants LA to happen, metric definitions will be chosen after the fact to fit whatever happened. On the SF side, public reporting puts HMP at '600+ e-mopeds operating in SF' while the founder counts '>1,000 sold'; both can be true only if roughly 40% of sold units are no longer active (theft, write-offs, riders who quit or left the region, vehicles resold). The active revenue-generating base is therefore ~600, not ~1,000, and 100 rentals + 300 battery renters should be expressed as shares of active riders (~17% and ~50%), not of cumulative sales; LA's theft environment will make the LA active/sold ratio worse than SF's.",
+   "direction": "flatters_LA_case",
+   "magnitude": "In weekly-rental cohorts 30-50% churn in the first 4 weeks is common; counting ever-rented instead of paid-4-consecutive-weeks can overstate the Month-3 number by ~2x, and counting battery subscribers together with vehicle renters overstates revenue-relevant riders by 3-5x. Scaling from cumulative sales overstates the active base and recurring revenue per vehicle sold by 30-50%. Mostly changes the M3/M12/M24 trigger definitions rather than the go decision by itself, but a threshold SF never met is a threshold LA will not meet.",
+   "cheap_test": "Write the metric definitions now, before any LA activity: paid-active-4wk, paid-active-8wk, ARPU by product, gross margin per rider, theft-adjusted fleet count. Apply the same definitions retroactively to SF Stripe/rental data; if SF itself would have missed the proposed LA thresholds in its first 6 months, the thresholds are wrong. Count distinct SF vehicles (by VIN/frame number or customer) with any service visit, part purchase, battery exchange or rental payment in the last 90 days and divide by cumulative units sold; compare with the '600+' press figure and reconcile any Google-review-based estimate against it (the known past error).",
+   "hmp_internal_data_needed": "SF weekly rental cohort retention (week 1 -> 4 -> 8 -> 12), share of renters who ever purchased, median weeks from first rental to purchase, promo usage vs full-price starts, battery-subscriber vs vehicle-renter revenue split; last-service-date and last-purchase-date per VIN/customer, active battery-rental accounts, GPS/app-active units if any, theft and total-loss reports by year.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "ramp_and_cac",
+    "sf_to_la_transferability"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A07",
+   "theme": "demand_sizing",
+   "assumption": "DTLA/Koreatown app couriers are mostly on two wheels or readily convertible from cars (implicitly 20-30% of car couriers, because parking is bad), the two-wheelers are e-bike/e-moped riders HMP can serve as in SF (not gas 125-150cc scooter/motorcycle riders or cheap Amazon e-scooter riders), and because LA is spread out they want faster FLASH / Lightning-class vehicles, so a 100+ unit rental fleet weighted toward tiers C/D is addressable near 768 Ceres.",
+   "why_it_may_be_wrong": "LA app couriers are overwhelmingly car-based: DoorDash reports 72% of SF deliveries on two wheels but only ~30% in San Diego; LA is unpublished and plausibly at or below San Diego, with two-wheeler deliveries growing ~4x faster than car (2024-25) but from a low base. LA car couriers take long-radius orders (platforms route farther, higher-payout orders to cars; a Koreatown car courier delivers to Hollywood, Mid-City, Silver Lake), stack Uber rides / Instacart / Amazon Flex on the same car and use it for family; switching means giving up range and multi-platform income, choosing 'bike/scooter' on Uber Eats restricts the delivery radius, and the parking penalty applies at pickup only while drop-offs are spread far. It is unproven that SF growth came from car converts; SF buyers may have been upgrading from bicycles, gas scooters, cheap e-bikes or foot. Two customers are conflated: HMP's FLASH / Lightning MK.II buyers skew toward commuters and car-replacement buyers who BUY, while couriers who RENT are cash-constrained and choose the cheapest vehicle that clears the app and the law, which in California is a Class 2 e-bike. The two-wheel minority is concentrated in dense pockets (DTLA, K-town, Hollywood, Westwood, Santa Monica/Venice) where a 20 mph e-bike already suffices, which is exactly why those couriers are on two wheels; 'LA is spread out, therefore faster vehicles' has the causality backwards. A car-first rider who does switch needs range and 35-50 mph over longer LA legs, pushing toward Lightning-class vehicles that require license, registration, insurance and an M1/M2, destroying the 'no license' value prop that drove SF sales; the SF installed base is dominated by 20 mph class-2-styled mopeds and there is little SF evidence HMP can sell or rent licensed 40-70 mph vehicles at volume. Whatever two-wheel share exists may also be gas scooters and motorcycles (freeway-legal, 60+ mile range, no charging, bought used on OfferUp) who need no battery subscription, or cheap Amazon e-bikes/e-scooters whose riders will not buy a $3-5k vehicle. The site question and the fleet-mix question are the same question: the right fleet for a Ceres Ave hub may be tier A for DTLA, and the right site for tier A may not be Ceres Ave.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Addressable two-wheel couriers in DTLA+Koreatown may be 300-800 active riders, not several thousand; at an SF-like 30% share ceiling that is 100-250 vehicles. Realistic 12-month car-to-two-wheel conversion 2-8% instead of 20-30%; if convertible car riders are the majority of proposed SAM, SAM shrinks 50-70%. E-bike/e-moped fraction of observed two-wheelers could be 30-60% rather than the ~90% implied by SF, shrinking battery-subscription SAM (e-motorcycle sales SAM might be modestly larger). If LA two-wheel share is ~20-30% and tier C/D demand within it is <20%, the addressable tier C/D rental pool near Ceres Ave could be in the low dozens of riders versus a plan sized for 100+ rental units, with lower conversion and higher warranty/insurance friction on the licensed share.",
+   "cheap_test": "Three dinner rushes (Fri/Sat/Sun 6-9pm) of vehicle-type tallies (car / gas scooter / motorcycle / e-bike / e-moped / other; note plates and licensing) at 5-10 LA hotspots (DTLA/Arts District, Koreatown, Westlake, USC, Hollywood, Westwood, Santa Monica) and at 10 SF hotspots at the same hour to compute observed two-wheel share directly. Intercept-survey 50 car couriers at 3 Koreatown pickup hotspots: prior vehicle, apps used, typical order radius, whether they would switch and what would make them. Check Uber Eats / DoorDash LA sign-up flows for what vehicle choice does to assignment radius and whether 'bike/scooter' onboarding is waitlisted (a demand signal). Ask DoorDash's LA city team for LA two-wheel share (they publish it for other cities). Look at Whizz LA and Zoomo LA fleet type and pricing (20-28 mph e-bikes, implying where LA two-wheel demand sits). Count LA OfferUp/Craigslist 'delivery' scooter listings by type. Pull HMP's Shopify orders shipped to LA County zips by model and email those buyers a 3-question survey (courier vs commuter, would you rent, which tier).",
+   "hmp_internal_data_needed": "Prior vehicle of SF buyers (car / gas scooter / cheap e-bike / bicycle / none; if fewer than ~15% were car converts, exclude car riders from LA SAM); SF sales mix by model and speed class (FLASH vs Lightning vs SWFT vs e-bike) 2022-2026; share of FLASH / Lightning MK.II buyers who are delivery riders vs commuters/enthusiasts; share of SF couriers who rent tier A vs any faster tier; SF renter-to-buyer conversion by tier; SF rental waitlist by vehicle type; return/complaint rate on licensed vehicles; average daily miles per rider from battery/GPS data; battery-subscription attach rate by product line; Shopify sales to LA County zips by model and buyer type.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "demand_sizing_method",
+    "sf_to_la_transferability",
+    "regulation_and_fleet_mix"
+   ],
+   "merged_from_count": 4
+  },
+  {
+   "id": "A08",
+   "theme": "demand_sizing",
+   "assumption": "A riders-per-restaurant ratio calibrated on NYC (~65k-80k app couriers against ~25k restaurants, i.e. ~2.5-3 couriers per restaurant, almost all on e-bikes/gas mopeds) or on SF can be multiplied by DTLA/Koreatown restaurant counts to get a TWO-WHEEL rider count, and the four sizing methods are independent cross-checks anchored by dinner-peak field counts at restaurant clusters.",
+   "why_it_may_be_wrong": "The NYC ratio is a total-courier ratio in a city where car delivery is near-impossible and Manhattan-style density is 3-5x Koreatown's, so it embeds a ~100% two-wheel mode share; the quantity HMP needs is two-wheel couriers per restaurant in a car-dominated metro, which nobody has measured in LA. Koreatown's restaurant count is inflated by dine-in KBBQ/bars/late-night venues with low app share, and DTLA/Koreatown restaurants are served by couriers who drive in from outside the zone. Applying 2.5 riders/restaurant to ~900 Koreatown restaurants gives ~2,250 riders; a car-dominated reality could be 200-600 two-wheelers. The methods are not independent: method 1 (restaurants x riders/restaurant) and method 3 (order volume / orders per rider per day) share inputs because LA order volume is not public and will be constructed from restaurants x orders/restaurant with platform-wide orders-per-rider averages, so 1 and 3 are one estimate in two costumes; method 2 is a bound only. That leaves field counts as the sole independent method, and they carry known biases: Friday/Saturday dinner peaks overstate typical daily-actives by 1.5-2x; cluster counts re-count riders circling; multi-app riders and non-courier e-bike riders are indistinguishable; counting at restaurant doors over-represents two-wheelers because car couriers stage in lots or double-park elsewhere. A biased founder can make three dependent methods 'converge' by parameter choice.",
+   "direction": "flatters_LA_case",
+   "magnitude": "3-10x overstatement of two-wheel TAM if the NYC ratio is used unadjusted; 1.5-3x if the SF ratio is used, because SF is also far more car-hostile than LA. 1.5-3x on the count-to-daily-active conversion; a false convergence could conceal a 3x error in the whole stack.",
+   "cheap_test": "Before touching LA, apply the NYC ratio to SoMa/Mission/Tenderloin restaurant counts (SF open data) and see whether it predicts an SF two-wheel courier count consistent with HMP's 1,000+ vehicles plus the rest of the SF ecosystem; if it over-predicts SF by 2x or more, it will over-predict LA by more. Pre-register parameter ranges before counting. Count Tue/Thu/Sat in three bands (lunch, 6-8pm, 9-11pm) at 5 Koreatown and DTLA pickup hotspots, at both restaurant doors and nearby car staging spots, tallying vehicle type (car / gas scooter / motorcycle / e-bike / e-moped); use capture-recapture across two nights. Run the identical protocol in SoMa/Mission first and check it reproduces HMP's known SF numbers (1,000+ sold, ~100 on rent, 300+ battery renters plus non-HMP riders) within ~30% before trusting it in LA.",
+   "hmp_internal_data_needed": "HMP's own estimate of what share of SF two-wheel couriers it serves (active customers / estimated SF two-wheel daily-actives); SF customer counts tagged by work zone and restaurant counts in those zones, to derive an actual SF two-wheel riders-per-restaurant figure; the SF known fleet as a calibration target; any SF counts HMP staff have done at pickup hotspots.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "demand_sizing_method"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A09",
+   "theme": "demand_sizing",
+   "assumption": "Published courier headcounts (Seattle's 92,801 workers covered by its ordinance over 18 months; NYC's 65k-80k who earned at least $1,500 in a year; platform 'Dasher' totals) can be scaled per capita to DTLA/Koreatown as a daily-active bound, and per-platform figures can be summed.",
+   "why_it_may_be_wrong": "These are registration/annual-touch numbers, not daily-active. Seattle's 92,801 covered workers coexist with only ~200k completed offers per week; at 80-120 offers per week for a full-timer that implies on the order of 2-5k full-time-equivalent riders, i.e. 20-40x below the headline. NYC's 80k figure counts anyone earning $1,500 in a year. Most Dashers work a few hours a week and are irrelevant to a vehicle-purchase business. Summing DoorDash + Uber Eats + Grubhub double counts the majority of full-timers, who run 2+ apps. HMP's SF customers are overwhelmingly full-timers, so the relevant denominator is daily-active full-timers, a small fraction of any headline count.",
+   "direction": "flatters_LA_case",
+   "magnitude": "3-20x depending on which source is used; multi-app double counting alone adds ~1.5-2x.",
+   "cheap_test": "Recompute every source as full-time-equivalent daily-actives: for Seattle use weekly offers divided by 80-120 offers per full-time rider per week; for NYC use the DCWP/NYSERDA hours distribution to keep only 25+ hr/week workers. Run a unique-rider count at peak with capture-recapture (distinctive vehicles/plates) over two nights at the same spots to estimate the actual population instead of counting sightings.",
+   "hmp_internal_data_needed": "Hours-per-week distribution of HMP's SF buyers and renters (rental agreements, earnings screenshots shown at purchase), the share of buyers who are full-time, and how many apps they run; this tells HMP what fraction of any headline courier count is its real market.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "demand_sizing_method"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A10",
+   "theme": "transferability",
+   "assumption": "The 1,000+ SF vehicles were bought by riders who work the SF 'core delivery zone' (SoMa+Mission+Tenderloin+FiDi), so 'SF core zone vs DTLA+Koreatown (180-200k residents)' is a like-for-like per-capita scaling base.",
+   "why_it_may_be_wrong": "415 eBikes at 6th & Folsom is within a 15-minute e-bike ride of essentially all of SF's 7x7, and many couriers live in Daly City, the Excelsior/Bayview, Oakland and beyond and commute in. The installed base is almost certainly a whole-city (and partly Bay Area) count, not a core-zone count. If only 30-50% of buyers primarily work SoMa/Mission/TL/FiDi, dividing 1,000 vehicles by the core-zone population and multiplying by DTLA+Koreatown overstates LA potential by 2-3x. Worse, LA's two target zones are ~5 miles apart with a single hub on the far east edge of one of them, so the LA 'core' is not one contiguous catchment the way SoMa-to-Mission is.",
+   "direction": "flatters_LA_case",
+   "magnitude": "2-3x overstatement of the LA rider pool if SF customers are city-wide; the Koreatown half of the LA zone may behave as a separate, unserved market.",
+   "cheap_test": "Pull home ZIP / billing ZIP for every SF buyer and renter from Shopify, Stripe and the rental contracts; bucket by ZIP (94103/94110/94102/94105/94107 vs everything else vs non-SF). Separately, stand at 5 SF delivery hotspots outside the core (Richmond/Clement, Sunset/Irving, Bayview/3rd St, Chinatown, Marina) at Friday 6-9pm and count HMP-style mopeds vs the same count at 5 core hotspots.",
+   "hmp_internal_data_needed": "Customer address ZIP for all sales and rental contracts since 2022; service-ticket ZIPs; pickup-service (broken vehicle) addresses; battery-rental customer addresses.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "sf_to_la_transferability"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A11",
+   "theme": "regulation_fleet",
+   "assumption": "The target LA courier holds, or will readily obtain, a driver's license and M1/M2, and DoorDash / Uber Eats treat HMP's moped and motorcycle riders the same in LA as in SF, so tiers B-D have the same addressable renter pool as tier A and the platforms' vehicle-class rules will not bite.",
+   "why_it_may_be_wrong": "The addressable LA two-wheel courier is disproportionately a recent immigrant without a California license; AB 60 licenses exist but require a separate M1/M2 written test plus skills test or CMSP course (verify whether AB 60 licenses can carry M endorsements), which costs weeks and a few hundred dollars that a rider choosing to rent rather than buy does not have. The NYC precedent is exactly this population: the great majority of moped-riding deliveristas were unlicensed and unregistered, and NYPD seized on the order of 10,000+ illegal mopeds in 2023-24 (verify), because the license/registration pathway did not fit them. Platforms gate dash types per market: 'motorcycle' / 'scooter' mode requires a driver's license, registration and insurance, a filter that excludes a large share of immigrant couriers who currently ride 'bike' mode without a DL; a rider registered as 'bike' on an out-of-class vehicle (throttle-only, >28 mph, no pedals) is exposed to platform deactivation and, in LA specifically, to LAPD 'e-moto' enforcement sweeps that intensified in 2025-26. The founder's 'faster is better for LA' preference quietly assumes the licensed motorcyclist demographic, a car-owning commuter demographic, not a renter demographic. The whole fleet-mix task rests on this untested assumption, and it determines whether HMP's motorcycle tier is a genuine differentiator vs Whizz (motorcycle dashers get car-radius orders and can lane-split) or a compliance liability.",
+   "direction": "either",
+   "magnitude": "If 40-80% of prospective LA renters lack an M license / DL / insurance (NYC pattern), tiers B-D address 20-50% of the pool tier A addresses while carrying higher capex per unit; a 100-vehicle fleet planned at 60% tier B-D could see those units run at 30-50% utilization while tier A is sold out. If fast-e-bike riders in 'bike' mode face confiscation or deactivation at even 5% per year, replacement-vehicle cost and deposit disputes rise materially and the 'replacement vehicle' line becomes a cost center rather than a product.",
+   "cheap_test": "Three dinner rushes at LA pickup hotspots (DTLA/Arts District, Koreatown, Hollywood, Westwood, Santa Monica): 10-minute intercept survey of 100 two-wheel couriers on what they ride vs what they registered on the app, whether they hold a CA license and which class, whether they would rent and at what weekly price (two people, three evenings, gift cards). Create Dasher and Uber Eats courier accounts with LA addresses (90021, 90005, 90017) and record which vehicle types the apps actually offer. Compare with DMV Class M issuance counts for LA County (public data request). Scan LAPD/LADOT releases and r/doordash_drivers LA threads for confiscation and deactivation reports in the last 12 months.",
+   "hmp_internal_data_needed": "For SF's ~100 renters and ~300 swap subscribers: license class on file at signup (or whether license class is even collected); product class x platform x registered dash type x license status; annual incidence of deactivations, confiscations and replacement-vehicle events per product class; share of SF motorcycle-class buyers registered as 'motorcycle' on the platform vs 'bike'; share of SF FLASH / Lightning MK.II buyers who are couriers vs commuters; SF conversion from tier A rental to any faster tier.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "regulation_and_fleet_mix",
+    "competition_and_platforms"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A12",
+   "theme": "regulation_fleet",
+   "assumption": "Tier B (28-35 mph 'fast e-bike / scooter') is an e-bike-adjacent product with e-bike-like friction (no license, plate, insurance or enforcement exposure), so the legal cliff sits between tiers B and C, and HMP's current vehicles and swap batteries can be sold and leased in LA as they are in SF.",
+   "why_it_may_be_wrong": "In California the cliff sits between A and B. CVC 312.5 (verify) caps e-bikes at 750 W with Class 3 = pedal-assist-only to 28 mph and throttle to 20 mph; anything with a throttle above 20 mph or assist above 28 mph is a motorized bicycle / motor-driven cycle / motorcycle (CVC 406 / 405 / 400, verify) requiring an M1 (M2 only for <=30 mph, <4 hp mopeds), DMV registration and a plate, and for motor-driven cycles/motorcycles proof of financial responsibility. SB 1271 (effective 2025) removed the 'switchable class' loophole and, from 1 Jan 2026, prohibits selling OR LEASING an e-bike or powered mobility device without UL 2849 / EN 15194 (bike) and UL 2271 (battery) certification; 'lease' plausibly captures HMP's rental and swap batteries. AB 1774 bans modifying to exceed class speed, and 2025-26 follow-on bills gave police explicit authority to impound out-of-class devices for 48h+ (verify bill number and LAPD/LASD policy). A courier on a 32 mph throttle 'e-bike' 8-10 hours a day is the highest-exposure rider on the road: no M license (CVC 12500), unregistered (CVC 4000(a)), uninsured (CVC 16028), impound plus ~$300+ release fees and 2-7 days of lost rental revenue per event. Net effect: the tiering collapses to two legal classes, (A) <=20 mph throttle / <=28 mph pedal-assist with no friction and (B+C+D) M-license + plate + insurance, and tier B gets the worst of both: motorcycle-grade compliance cost at e-bike-grade rental price.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If the LA fleet plan is 40-60% tier B/C, roughly half the fleet carries a compliance burden the plan prices at zero. One impound per vehicle per year at ~$300 fees + 5 days downtime is ~10-15% of annual rental revenue on a $60/wk vehicle; a 20% impound rate per vehicle-year is a rounding error, a 100% rate is a business-model change. SB 1271 certification gaps on any non-UL swap battery SKU are a stop-ship for the swap product in LA.",
+   "cheap_test": "One day of desk work: read CVC 312.5, 406, 405, 400, 12500, 4000, 16028 and the DMV 'Motorcycles, Mopeds, and Scooters' page; pull the final chaptered text of SB 1271 and the 2025-26 impound bill; call LAPD Central Traffic Division and the Newton / Central area senior lead officers about e-bike/moped enforcement posture around Ceres Ave. Spend two evenings in LA courier WhatsApp/Reddit/Facebook groups counting impound and citation reports by vehicle type. Ask the battery supplier for UL 2271 / UL 2849 certificates for every swap SKU.",
+   "hmp_internal_data_needed": "SF rental fleet (~100 vehicles) split by legal class (Class 1/2/3 vs motorized bicycle vs motor-driven cycle vs motorcycle); count of SF renter citations, impounds and DMV notices in the last 12 months by class; whether SF rental vehicles above 20 mph throttle are registered and plated today; UL certification status for each battery SKU in the ~300-subscriber swap program.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "regulation_and_fleet_mix"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A13",
+   "theme": "regulation_fleet",
+   "assumption": "If an unlicensed renter crashes a 45 mph HMP moped, the exposure is the rider's (and the rider's platform insurance), not HMP's, so the rental operator can lease tiers B-D without verifying M licenses.",
+   "why_it_may_be_wrong": "CVC 14608 prohibits renting a motor vehicle to anyone not licensed for it and CVC 14609 (verify) requires inspecting and recording the license; violating a statutory standard raises a rebuttable presumption of negligence (negligence per se), the textbook negligent-entrustment fact pattern (CACI 724). The federal Graves Amendment shields rental companies only from vicarious liability, expressly not from negligent entrustment. Commercial liability policies for rental fleets typically exclude unlicensed operators, so the one claim that matters is the one not covered. DoorDash / Uber Eats occupational accident and third-party coverage attach to the courier while on an active delivery in the declared mode; a rider registered in 'bike' mode on a moped is arguably outside that coverage. A single serious pedestrian or rider injury at 45 mph in LA routinely settles above $1M, more than eight years of Ceres Ave rent, and the small-business owner is the deep pocket in the room.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Tail risk: one uninsured seven-figure claim ends the company. Expected value: if 100 tier B-D vehicles ride 300 days/yr at 60 mi/day and serious-injury crashes run ~1 per 100,000-300,000 moped-miles (verify against CHP SWITRS), the fleet sees 6-18 serious crashes per year, enough that 'we never had one in SF' is a small-sample artifact, not a risk estimate.",
+   "cheap_test": "Before signing: get 2-3 written quotes from specialty insurers (Zoomo's / Revel-style fleet programs, XInsurance, motorcycle rental carriers) for a fleet of registered mopeds/motorcycles rented to gig couriers, asking explicitly (a) whether unlicensed-operator crashes are excluded, (b) the per-vehicle-month premium, (c) whether 'delivery use' is covered at all. Pay an LA insurance-defense attorney for one hour on CVC 14608/14609 and negligent entrustment as applied to gig-courier rentals. Pull SWITRS motorcycle/moped injury rates for LAPD Central and Newton areas.",
+   "hmp_internal_data_needed": "SF rental agreement text and the current SF policy: named carrier, covered vehicle classes, exclusions for unlicensed operators and commercial delivery use; the SF incident/claim log for rentals (all crashes, injuries, third-party demands) by vehicle class; whether SF verifies license class today and keeps CVC 14609-style records.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "regulation_and_fleet_mix"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A14",
+   "theme": "regulation_fleet",
+   "assumption": "Delivery platforms reward speed: a 40-50 mph vehicle in LA gets more and longer orders per hour than a 20 mph e-bike, which justifies a higher rental price ceiling for tiers C-D.",
+   "why_it_may_be_wrong": "Platforms dispatch by DECLARED mode, not actual speed. DoorDash 'bike' mode requires no license and is radius-limited to short-hop orders (typically ~2-3 miles, verify per market); 'scooter/motorcycle' mode requires a driver's license and, for motorcycles, proof of insurance. Uber Eats 'scooter' mode requires a valid driver's license, a motorized scooter under 50cc equivalent and state-minimum liability insurance; 'bicycle' mode needs only ID. So the rider who lacks an M license can only monetize a moped in bike mode, where the app hands out e-bike-radius orders and the speed premium is never paid; the rider who IS licensed and insured can and often will declare 'car' or 'scooter' and is then competing with cars on long orders, not with e-bikes. Either way the incremental hourly earnings of tier C over tier A are far smaller than raw speed suggests, and the tier C price ceiling converges toward tier A's. DoorDash's own 2025 claim that two-wheelers earn ~10% more per hour than cars is an argument for dense-area e-bikes, not for 45 mph mopeds in spread-out LA.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If tier C earns riders only +10-20% per hour over tier A rather than the +40-60% implied by speed, the sustainable weekly rental premium is ~$10-20, not ~$50-80, which does not cover the extra ~$2,000-4,000 capex, registration and insurance per unit; tiers C-D then cannot price above tier A and the fleet capex plan is wrong by roughly the tier C/D share.",
+   "cheap_test": "One week, two riders, one phone each: run a DoorDash and an Uber Eats account in 'bike' mode on a tier A e-bike and another in 'scooter/motorcycle' mode on a FLASH from the Ceres Ave area; log every offer (distance, pay, accept/decline) and hourly net. Cross-check with screenshots from 10 LA couriers in each mode. Read the current DoorDash and Uber Eats help pages on per-mode eligibility and any LA-specific mode availability.",
+   "hmp_internal_data_needed": "Self-reported weekly earnings and app mode for SF renters by vehicle model; SF rental price and utilization by tier (do SF couriers already pay a premium for FLASH over an e-bike?); SF renter churn by tier.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "regulation_and_fleet_mix"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A15",
+   "theme": "unit_economics",
+   "assumption": "Theft/non-return, bad debt, crash damage and insurance total ~3-5% of fleet value per year, scale only modestly with vehicle speed, and are neutralized by ~$15-30k of gate, cameras, alarm, indoor storage and vehicle GPS at the depot, so per-unit contribution margin holds across tiers even with vehicles used on-street 10+ hours a day and 100-300 packs stored on the edge of Skid Row.",
+   "why_it_may_be_wrong": "Three cost lines move against faster tiers: (1) an unregistered e-bike fleet needs general liability only, but a registered moped/motorcycle fleet rented to commercial couriers needs per-vehicle auto liability on a specialty program (historically why Revel exited moped sharing in NYC/SF/DC in late 2023 and Scoot's SF fleet shrank), with realistic quotes at $60-200 per vehicle per month or declined outright for 'delivery use'; (2) crash energy scales with v^2, so a 45 mph crash carries ~5x the energy of a 20 mph one and write-off frequency rises; (3) LA e-scooter/e-moped theft rose sharply (LAPD cited a 129% jump in an earlier period; e-bike theft up 25-40% YoY per industry trackers) with 5-10% recovery, and while a plated, keyed moped with GPS/immobilizer may do better than an e-bike on theft, the ~$4-8k replacement cost per loss is 3-4x higher. Delivery-rental operators in high-theft US cities report double-digit annual loss rates (stolen on delivery, non-return by churned riders, stripped for parts, stolen from the depot); no-credit-check weekly renters produce chargebacks and unpaid final weeks; fleet insurers price LA as high-theft, apply per-unit deductibles of several hundred dollars and often exclude theft away from premises or unattended vehicles, so 'insurance' is largely self-insurance plus premium. The depot inventory is unusually attractive: a 40-lb pack resells for $500-1,000 with no registry, carries out by hand and is not GPS-tracked; a box-truck break-in between 1am and 6am blends into produce-district truck traffic and 50 packs leave in ten minutes ($50-100k). The lot is only 9,091 SF against an 8,443 SF building (~650 SF outdoors), so the 'yard gate' is a driveway, not a secured queue: riders' own vehicles wait at the curb on Ceres while they are inside, and curb theft of a courier's moped is a business-ending review. Insurers writing lithium-inventory cover at this address will likely require monitored guard service or 24/7 staffing as protective conditions, converting one-time capex into a recurring cost comparable to rent.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If tier C rents for ~$250-300/month and insurance alone is $100-150/vehicle/month, insurance consumes 35-60% of revenue before depreciation, repairs and theft; a 5-8% annual fleet-value theft/total-loss rate on $6k units is another ~$30-40/vehicle/month, so tier C/D contribution margin can go negative while tier A stays positive. At 100 units of $2,500-4,000 landed value, 12-20% annual loss = $30-80k/year (3-8 months of base rent); bad debt 5-8% of rental billings; recurring security $3-10k/mo (evening/overnight guard at $25-35/hr, or 24/7 staffing), i.e. 30-100% of the $10k rent; single-event pack loss $50-100k plus deductible. Combined this is the single largest gap between an SF-derived cost sheet and LA reality.",
+   "cheap_test": "Get three written fleet quotes (property + theft + GL, and auto liability for registered tiers) using the actual address and 'rental to delivery couriers' as the use (same calls as A13), and read the exclusions; ask a commercial insurance broker for the minimum protective requirements to cover $200k of lithium inventory at this address. Pull LAPD Central and Newton area vehicle-theft and commercial-burglary counts for the 700-900 blocks of Ceres/Crocker/Towne and the 90021 zip from LAPD open data for the last 12 months; walk the site at 10pm and 5am. Get three written quotes from LA guard/patrol companies for evening and overnight coverage at 768 Ceres; ask the neighbors what they spend on security. Ask Whizz / local operators their LA deposit and theft-fee policy (reveals their loss experience) and, via LinkedIn, a former Revel/Scoot/Zoomo ops lead for per-vehicle insurance and loss rates. Price GPS + immobilizer per unit.",
+   "hmp_internal_data_needed": "SF per-vehicle-month figures by model: theft/total-loss rate, thefts and non-returns per 100 rental-vehicle-months, gross write-offs, deposits retained, chargeback and unpaid-balance rate, repair cost per 1,000 miles, average crash repair bill, downtime days; current SF insurance premium per vehicle, deductibles, exclusions, and claims paid vs claims filed; SF shrink log at 261 6th St (break-ins and attempts, packs lost, customer vehicles stolen from the curb, monthly security spend) as the closest high-incident comparable.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "regulation_and_fleet_mix",
+    "unit_economics_capital",
+    "site_operations_safety"
+   ],
+   "merged_from_count": 3
+  },
+  {
+   "id": "A16",
+   "theme": "unit_economics",
+   "assumption": "The SF path 'rent -> confirm earnings -> buy -> keep renting battery' holds in LA, so weekly renters convert to buyers and battery subscribers at SF-like rates with low churn, rental fleet utilization runs ~85-90% and average renter tenure is 6+ months, so '100 vehicles on rent' means ~100 vehicles' worth of revenue every month.",
+   "why_it_may_be_wrong": "SF is compact, hilly, parking-hostile and dense, so a moped's earnings advantage over a car is large and obvious within weeks; DTLA/Koreatown/USC is flatter but far more spread out, car delivery is the default, many couriers already own a car, and platform zone rules limit where bike/scooter mode is even offered, so the earnings uplift that triggers the 'buy' step may be much smaller and renters stay renters, churn back to cars, or churn to Whizz at $139/mo with $0 down and ownership in 6-12 months. DTLA summer heat and a more transient courier population raise churn. A delivery rental fleet always has units in repair, being reconditioned between renters, impounded, held as loaners, or idle, so realistic days-rented / days-owned is 60-75%; courier tenure is short (gig earnings swing, deactivations, seasonality, riders leaving the platform) and HMP's own funnel removes the best renters from the pool when they buy. The SF figure '100 on rent' is a numerator without a denominator: if SF owns 150 rental units, utilization is ~67%.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If rent-to-buy conversion is half SF's and weekly churn is 1.5-2x SF's, the LA depot becomes a capital-intensive rental fleet instead of a sales channel, with effective utilization of 60-70% and the rest idle, in repair or lost. Every 10 points of utilization shortfall raises the vehicles (and capital) required for break-even by ~12-15%; at 65% vs 90% utilization the fleet needed for the same rental revenue is ~38% larger, adding roughly $100-150k of vehicle capital and proportionally more theft and depreciation exposure.",
+   "cheap_test": "Compute from SF records: total rental units owned vs units on rent each week for the last 12 months; median tenure per renter; % of renters converting to purchase within 90 days. Survey 50 DTLA/Koreatown couriers in Spanish, Korean and English: current vehicle, weekly hours, weekly gross, whether bike/scooter mode is available in their zone, willingness to pay per week, awareness of Whizz/Zoomo, and (for Whizz-type riders) how long they have been renting. Check DoorDash and Uber Eats LA courier sign-up flows to see which DTLA zones allow bike/scooter/moped. Count e-bikes vs mopeds vs cars at 10 restaurant clusters at Friday dinner rush.",
+   "hmp_internal_data_needed": "SF rental ledger: fleet count by status (rented / in shop / idle / lost), rented-days per unit per month, renter cohort churn curves, rent-to-purchase conversion rate and time-to-conversion, average rental tenure before buy or churn, rental fleet utilization %, battery-swap frequency per subscriber per week.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "ramp_and_cac",
+    "unit_economics_capital"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A17",
+   "theme": "unit_economics",
+   "assumption": "Battery packs on subscription last 3+ years (depreciation modeled at consumer-guide lifetimes), the battery line is the highest-margin recurring revenue, and SF's swap economics (~300 subscribers around one shop, ~1.5 packs per subscriber) carry over to 40-50 mph vehicles on LA delivery distances served from a single hub.",
+   "why_it_may_be_wrong": "Consumer guides quote 500-1,000 cycles = 3-5 years at a few charges a week, but a courier doing 60+ miles/day puts 1-2 full cycles a day on a pack, so 500-800 useful cycles arrives in 10-18 months, faster with heat, fast charging and deep discharge. Energy per mile rises roughly with v^2 (aero), so a 45 mph moped draws ~40-60 Wh/mile versus ~15-25 Wh/mile for a 20 mph e-bike (verify on HMP's own vehicles): 2-3x the Wh per delivery-mile on top of LA's longer average delivery distance, so either the vehicle carries a 2-3x larger (heavier, costlier, often non-swappable) pack or the rider swaps 2-3x as often; cycle life is shorter at higher discharge rates. A moped-class 60-72V pack costs roughly $600-1,500 to replace, plus a swap float of ~1.5-2 packs per subscriber (3-4 larger packs on faster tiers), electricity, charging labor and BMS/connector failures; at ~$40-60/month a pack may not recover its cost before replacement, and warranty-style expectations from 300 SF subscribers holding degraded packs are a latent liability. A rider 4-8 miles from the hub will not ride mid-shift to swap; they buy a bigger-battery vehicle and charge at home, leaving the swap revenue line entirely.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Battery depreciation/replacement line 2-3x the modeled value; battery capex per subscriber roughly triples on faster tiers; battery contribution margin could fall from an assumed 50-60% to near zero or negative once float, replacement, charging labor and electricity are included. If the effective catchment is DTLA only, the LA subscriber ceiling in year one may be 50-100, not 300. This is the line the recurring-revenue thesis rests on; it is a pricing/product change (larger packs, home charging, mobile swap van) rather than a hub-lease decision, but it removes the swap line from the Ceres Ave revenue stack.",
+   "cheap_test": "Read the BMS on the 20 oldest SF subscription packs: cycles-to-date, months in service, remaining capacity; plot capacity vs cycles and extrapolate to the LA duty cycle. Instrument one vehicle from each tier with a Wh meter and ride representative LA delivery loops (DTLA, K-town, Hollywood) for a week; compute Wh/mile and swaps per 8-hour shift. Get a written replacement price and lead time from the pack supplier including tariffs and freight. Overlay a 3-mile radius from 768 Ceres on a restaurant-density heat map and DoorDash 'busy' zones to size the true swap catchment.",
+   "hmp_internal_data_needed": "SF battery registry (purchase date, cost, cycles, measured capacity, replacement / warranty events, cycle count at retirement by model); Wh/mile and swaps per week per subscriber by vehicle model; swap-station electricity bill; subscription price and churn; number of packs in float per subscriber; swap revenue vs battery capex per subscriber; subscriber home/work distance from the shop and churn vs distance.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "unit_economics_capital",
+    "regulation_and_fleet_mix"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A18",
+   "theme": "unit_economics",
+   "assumption": "Rental vehicles depreciate on a 36-month straight line to a 20-30% residual, and maintenance per unit is similar to a consumer-owned vehicle.",
+   "why_it_may_be_wrong": "60+ miles/day is ~18-22k miles/year, i.e. a 'used-up' moped in 12-18 months: 3-4 sets of tires, multiple brake pad and chain/belt replacements, suspension, controller and connector failures, cosmetic damage, and a third-party resale value near parts value at 24 months. The offsetting possibility is that HMP's captive shop and its own buyer base can recondition and resell ex-rental units at close to retail with a warranty, which would raise residuals above what an outside operator gets.",
+   "direction": "either",
+   "magnitude": "Depreciation plus wear maintenance per rental-vehicle-month could be $120-180 instead of ~$70-90 on a $3,000 unit; across 100 units that is $4-9k/month of hidden cost. If HMP's captive resale works, the error may be smaller or reversed by $1-3k/month.",
+   "cheap_test": "List two 12-month ex-rental SF units on OfferUp / Craigslist and observe clearing price vs HMP's own certified-used price. Tally the last 12 months of repair tickets on SF rental units to get cost per mile.",
+   "hmp_internal_data_needed": "SF repair-ticket cost per rental unit by age and odometer, realized sale prices of ex-rental units through HMP vs third-party, average miles/day per rental unit from GPS or odometer.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "unit_economics_capital"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A19",
+   "theme": "lease_commitment",
+   "assumption": "Fixed cost is 'about $10k/month rent plus utilities', the site is financeable from cash flow with capital mostly the first few months of rent, and the Month-3 checkpoint is a real decision point at which HMP can stop before the lease has burned meaningful cash.",
+   "why_it_may_be_wrong": "$10k/month on 8,443 sqft is ~$1.18/sqft, below DTLA industrial asking rents: the 768 Ceres listing quotes $19.20/sqft/yr (~$13.5k/mo base, ~35% above plan) and current listings run $16.80-19.20/SF/yr, which suggests the $10k is base rent with NNN (taxes, insurance, CAM ~$0.20-0.40/sqft = $1.7-3.4k/month) on top, a Skid Row-adjacency discount, or both. A 7-day rider hub with repair and battery charging needs at least 2 people on site per shift plus a mechanic: 3.5-4.5 FTE at LA minimum wage with burden is ~$16-22k/month; add security ($1-3k+/month), fleet and GL insurance ($1.5-4k/month), electricity for a charging wall, LAFD / NFPA 855-style lithium storage and charging tenant improvements, a security deposit (1-3 months) and likely a personal guarantee. Working capital: 100 rental units ($250-400k landed), a battery float for 100-300 subscribers ($60-200k), parts and sales inventory ($50-100k), plus 6-12 months of operating losses. A 3-5 year industrial lease is non-cancellable: before Month 3 arrives HMP will have paid deposit, NNN, buildout (racking, charging circuits, fencing/security, insurance), initial LA fleet and staff, roughly $80-150k out the door, and will still owe the remaining 33-57 months, so a 'NO-GO at Month 3' is not a decision but a loss-mitigation event (sublease, buy-out, or personal-guarantee exposure) against an inherently noisy Month-3 signal.",
+   "direction": "flatters_LA_case",
+   "magnitude": "True fixed cost $35-50k/month (3.5-5x the headline rent); total capital at risk before break-even $500k-900k; committed exposure of $360-600k base rent over 3-5 years (more at $13.5k/mo: $490-810k) plus $80-150k startup cash. At a realistic $40-60/month contribution per rental vehicle after depreciation, theft and battery, break-even needs roughly 250-400 active rentals plus subscribers, not 100, unless vehicle sales carry it. Even a successful sublease typically takes 3-6 months and a rent concession.",
+   "cheap_test": "Get the LOI/lease draft and read: term length, base vs NNN with an itemized NNN estimate and last year's NNN reconciliation from Lee & Associates, TI allowance, deposit, personal guarantee, free-rent months, assignment/sublease clause, early-termination option and its price. Ask the broker for a 12-month term or a 12-month kick-out; if refused, price a month-to-month yard, container storage, or a 1,500-2,500 sqft sublease within 90021/90013 for a 6-month pilot and compare pilot cost to the difference in exposure. Get an LAFD or insurer opinion on lithium storage/charging in an industrial tenancy. Price a staffing plan against the California minimum wage and payroll burden.",
+   "hmp_internal_data_needed": "SF lease terms and the month in which SF gross margin first covered SF rent; SF store's actual monthly fixed-cost stack (rent, wages by role, utilities, insurance, security, card fees) and fully loaded contribution per rental-vehicle-month and per battery subscriber, so LA break-even can be derived rather than assumed; current SF cash balance and monthly free cash flow available to fund LA losses for 12-18 months.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "ramp_and_cac",
+    "unit_economics_capital"
+   ],
+   "merged_from_count": 2
+  },
+  {
+   "id": "A20",
+   "theme": "unit_economics",
+   "assumption": "'SF is proven' means SF is profitable per unit, and vehicle sales shorten LA break-even because sales gross margin is 35-45% and sales add battery subscribers.",
+   "why_it_may_be_wrong": "The SF facts are volume facts (1,000+ sold, ~300 battery subscribers, ~100 on rent), not margin facts: 300 of 1,000 buyers still subscribing means ~70% of buyers exited the recurring stream. Landed cost of a China-origin moped after freight, Section 301 and 2025 reciprocal tariffs, warranty reserve, card/BNPL fees (4-6%) and free-service promises is more likely to leave 15-25% gross margin than 35-45%. Each sale also removes a renter (often the best one) from the rental pool and hands theft/depreciation risk to the rider, good for capital but bad for the rental line the hub depends on. If SF's per-unit P&L is unmeasured, the LA model is extrapolating an unknown.",
+   "direction": "flatters_LA_case",
+   "magnitude": "A 10-15 point error in sales gross margin on $60-120k/month of LA sales is $6-18k/month; if SF is at or below break-even per unit, LA adds a second unprofitable location with a lease and cannot be fixed by volume.",
+   "cheap_test": "Build a 12-month SF contribution P&L from QuickBooks/Shopify/Stripe split into sales, whole-vehicle rental, battery subscription, repair and parts, with tariffs, freight, warranty and card fees allocated per unit. Check the current tariff rate on the HS code of the imported vehicles and packs.",
+   "hmp_internal_data_needed": "SF landed cost per model (FOB, freight, duty/tariff, warranty), gross and contribution margin by revenue line, warranty and free-service cost per sold unit, share of buyers who continue battery subscription at 3/6/12 months, and whether SF's 100 rentals are cash-positive after depreciation and theft.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "unit_economics_capital"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A21",
+   "theme": "site",
+   "assumption": "A 2015-built, sprinklered warehouse with 400A/240V 3-phase power makes lithium charging/swap compliance an incremental cost (tens of thousands, a few weeks), so a 100-300 pack swap room can open at 768 Ceres within the pilot's first quarter.",
+   "why_it_may_be_wrong": "The 2025 California Fire Code (in force since Jan 2026) treats this as a regulated use, not a tenant fit-out. CFC 320 requires an operational permit above 15 cubic feet of loose lithium batteries; a Lightning MK.II pack is 74V/45Ah (~3.3 kWh, ~40 lb, roughly 0.6-0.9 cu ft), so the threshold is crossed at ~20 packs, and an SF-scale swap room (300+ subscribers) holds 165-1,000 kWh. Above the limited-container thresholds CFC 320 requires a fire-protection-engineer technical opinion and report evaluating thermal-runaway deflagration and the sprinkler design basis; the building's 'calculated sprinklers' were designed for the 2015 tenant's commodity class, not lithium storage, which FM/NFPA data treat as high-hazard (reduced pile height, in-rack or ESFR). CFC 322 (powered micromobility) only permits charging of LISTED devices using LISTED charging equipment, requires 18 inches between each removable pack unless isolated by fire-resistive material, one dedicated receptacle per charger (no power strips: 100 packs on 840W chargers = ~100 dedicated 15/20A circuits and ~84 kW), and a fire alarm using air-aspirating or radiant-energy detection. HMP's product pages claim DOT approval but no UL 2271/2849 for packs or UL 1310 for the 840W portable chargers; LAFD can simply refuse to permit charging of unlisted equipment.",
+   "direction": "flatters_LA_case",
+   "magnitude": "One-time $40k-150k (FPE report $8-20k; aspirating detection + monitored alarm $20-50k; dedicated circuits $30-80k; sprinkler upgrade if required $50-150k) plus 3-9 months of LAFD/LADBS permitting during which the swap product cannot legally operate at scale. If packs/chargers are not listed, the charging use may be denied outright, leaving a $10k+/mo box that can only do repair and vehicle storage.",
+   "cheap_test": "Before LOI: (1) one email to the OEM requesting UL 2271/2849 certificates for every pack SKU and UL 1310/62368 for every charger SKU; (2) a pre-application call/meeting with LAFD Fire Prevention (Fire Development Services) describing 200 packs and 100 simultaneous chargers at 768 Ceres; (3) ask Lee & Associates for the sprinkler hydraulic placard (design density/area) and last 5-year certification; (4) a $2-3k feasibility letter from a fire protection engineer.",
+   "hmp_internal_data_needed": "Complete battery/charger SKU list with any listing certificates; peak count of loose packs on-site at 261 6th St and what SFFD actually permitted there (permit number, conditions, inspection findings); any thermal events or near-misses in SF; measured pack dimensions to compute cubic feet.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "site_operations_safety"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A22",
+   "theme": "site",
+   "assumption": "The landlord, the landlord's property insurer and HMP's own carrier will accept 'lithium battery charging/swap + electric motorcycle repair' as a permitted use at roughly standard terms, and the ~$10k/mo figure absorbs it.",
+   "why_it_may_be_wrong": "The building is marketed as showroom/industrial (the paired 768/772 listing is 'full service', ~43% office). Post-NYC-fire underwriting, many property carriers exclude or surcharge lithium charging operations, and landlords are inserting explicit 'no lithium battery charging/storage' clauses or requiring the tenant to carry the landlord's premium increase through NNN. A motorcycle repair use may also require an LADBS change of occupancy / CofO. HMP's own general liability and property policy may already exclude battery charging of unlisted equipment. None of this appears in a $10k/mo number, and asking rents on current listings are $16.80-19.20/SF/yr ($11.8k-13.5k/mo for 8,443 SF), so base rent itself may be understated by 20-35%.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Insurance +$1-3k/mo and a possible NNN pass-through; rent gap $2-3.5k/mo vs listings; a landlord or carrier prohibition on lithium charging is a hard stop for the swap product; a CofO change adds 2-4 months.",
+   "cheap_test": "Before LOI, get in writing from Lee & Associates: the landlord's acceptance of lithium charging/swap and motorcycle repair as permitted use, the landlord's carrier's position, and lease type (NNN vs gross) with an itemized estimate; check ZIMAS for zoning and the current Certificate of Occupancy; obtain two quotes for HMP's property/GL at this address with declared kWh on-site.",
+   "hmp_internal_data_needed": "Current SF policy declarations and exclusions (carrier, premium, declared battery inventory, any lithium exclusions); the permitted-use language in the 261 6th St lease; any SFFD operational permit; loss history.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "site_operations_safety"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A23",
+   "theme": "site",
+   "assumption": "The depot can run rider-facing hours until ~10-11pm seven days a week, because that is when couriers finish dinner shifts and need swaps, repairs and replacement vehicles.",
+   "why_it_may_be_wrong": "The site's peak-demand window coincides with the block's peak-risk window. 8th & Ceres is one to two blocks south of the official Skid Row boundary (7th St); LAPD and aggregated data show Skid Row incidents peak late evening to early morning. The adjacent produce-district businesses operate roughly 1am-noon, so from 6pm to midnight the street is dark, empty and un-surveilled by neighbors. Staff closing at 10:30pm with $100-300k of fungible packs inside, and riders arriving with $3-5k vehicles and a phone, are both exposed. Two outcomes: riders refuse evening visits (demand shifts to midday when it is worth less to them), and evening staff are hard to hire and keep (two-person minimum, wage premium, turnover). If hours contract to daytime, the 'replacement vehicle tonight' promise, the core of the Rider Center pitch, fails.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If SF's after-7pm share of swaps/service visits is 30-50% (needs data), that volume is at risk or displaced; evening labor +$3-5k/mo for two-person staffing; one assault or robbery of a rider outside the gate ends word-of-mouth in a tight courier community.",
+   "cheap_test": "Three evening site visits (Thu/Fri/Sat, 8-11pm) logging encampments, lighting, foot traffic and incidents within 300 ft of the door; request calls-for-service for the reporting district from the LAPD Central Division Senior Lead Officer; ask the 772 Ceres tenant and two produce neighbors about after-dark break-ins and whether they will operate after 6pm; check that streetlights on the 700-800 blocks of Ceres are working.",
+   "hmp_internal_data_needed": "Hourly distribution of swaps, service check-ins and replacement-vehicle handoffs at 261 6th St; share of revenue after 7pm; evening staff incident log; evening-shift attrition over 12 months; whether SoMa evening operations required any security measures beyond locks.",
+   "could_flip_decision_alone": true,
+   "raised_by_lenses": [
+    "site_operations_safety"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A24",
+   "theme": "site",
+   "assumption": "8,443 SF is open warehouse floor, 'far more than a pilot needs', with a usable yard, so the pilot has room to grow into it.",
+   "why_it_may_be_wrong": "Listing data suggest otherwise in both directions. The building was completed in 2015 with '100% HVAC', a 'modern office layout' and two executive offices; the paired 768/772 listing reports 7,250 SF of office out of 16,887 SF, implying 768 may carry ~3,000-3,600 SF of built-out office. Open floor is then ~5,000 SF, of which a compliant battery room at 18-inch spacing consumes ~6 SF per pack (200 packs = ~1,200 SF plus aisles) before any fleet, repair bays or parts. The site is not oversized; it is mis-shaped: 35-45% of rent buys air-conditioned office a depot does not need, and there is no yard for rider queueing or secured outdoor parking. Grade-level doors appear to be one per building, and Ceres Ave is a narrow produce-district street with early-morning truck congestion.",
+   "direction": "either",
+   "magnitude": "$3.5-4.5k/mo of the rent attributable to office space; usable floor 30-40% smaller than the headline; if the swap room and 100+ rental/replacement vehicles must fit, the site may actually be tight, which undercuts both the 'oversized' critique and the 'room to grow' story.",
+   "cheap_test": "Get the floor plan from the broker and walk the site with a tape measure: office SF, clear height, door count and width, yard SF, and whether a moped can be ridden in through the door; time a loading test at 7am when produce trucks are active.",
+   "hmp_internal_data_needed": "Square feet per stored vehicle, per repair bay and per charging pack at 261 6th St; vehicles and packs on-site at peak; repair throughput per bay, to size what the LA pilot actually needs.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "site_operations_safety"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A25",
+   "theme": "site",
+   "assumption": "One consolidated hub at Ceres is the minimum viable footprint and is cheaper and simpler than a two-node model (small Koreatown swap point plus a low-cost warehouse in Vernon/Boyle Heights).",
+   "why_it_may_be_wrong": "A 800-1,500 SF Koreatown/Westlake storefront or light-industrial bay at ~$2.50-3.50/SF/mo ($2.5-5k/mo) plus a 3,000-4,000 SF Vernon/Boyle Heights warehouse at ~$1.10-1.40/SF/mo ($3.5-5.5k/mo) lands at $6-10k/mo, the same envelope as Ceres, but puts the swap point where the named riders actually are, isolates the fire-code-heavy charging room in cheap space with no rider traffic, and can be assembled from month-to-month or sublease deals instead of a 3-5 year commitment ($360-600k of lease liability on Ceres). The counterarguments (split staff, two fire permits, less co-location of repair and swap) are real but are exactly the kind of thing a 90-day pop-up can test before any lease.",
+   "direction": "either",
+   "magnitude": "Does not change total occupancy cost much but changes the risk shape: swap demand validated in the rider's neighborhood, lease exposure cut by 60-80%, and Skid Row exposure limited to staff and inventory rather than customers. Likely moves the decision from GO to CONDITIONAL GO rather than to NO-GO.",
+   "cheap_test": "Pull ten sub-1,500 SF Koreatown/Westlake listings and five Vernon/Boyle Heights warehouse listings this week; run a 60-90 day van-based swap pop-up in a K-town parking lot at dinner peak (no lease) and count paying swaps per night; compare against the DTLA-only catchment from a pop-up near 7th/Los Angeles St.",
+   "hmp_internal_data_needed": "SF revenue and margin split by service line (swap subscription vs repair vs rental); share of swap visits that also generate a repair ticket (the co-location value); how often a subscriber uses replacement vehicles; staffing per node in SF.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "site_operations_safety"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A26",
+   "theme": "ramp_cac",
+   "assumption": "Delivery demand and rider supply in LA are flat enough across the year that a Month-3 vs Month-6 comparison reflects the ramp rather than the calendar (with a Sept 2026 decision and Oct-Nov opening, Month 3 lands in Dec-Jan and Month 6 in Mar-Apr).",
+   "why_it_may_be_wrong": "Order volume peaks in the holiday and rainy months (Dec-Feb), while rider willingness to be on a moped drops in rain and rises in spring; the two effects do not cancel. Platform policy changes (LA delivery-worker minimum-pay rules, DoorDash/Uber courier caps or zone changes) can shift active courier supply 20-30% inside a quarter. A Dec-Jan Month-3 number will therefore look better than a Mar-Apr Month-6 number for reasons unrelated to HMP.",
+   "direction": "either",
+   "magnitude": "Plus or minus 20-30% on any single-month metric, enough to cross a threshold in either direction without any change in underlying traction.",
+   "cheap_test": "Pull SF monthly new rentals and revenue by calendar month for the last 2-3 years and compute a seasonal index; check Google Trends for 'doordash driver' and 'uber eats bike' in Los Angeles by month; check current LA City Council status on app-delivery worker pay ordinances. Set the LA thresholds as trailing-3-month averages, seasonally adjusted with SF's index.",
+   "hmp_internal_data_needed": "SF monthly new rentals, new sales, churn and battery-swap volume by calendar month, 2023-2026.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "ramp_and_cac"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A27",
+   "theme": "competition_platforms",
+   "assumption": "Sidewalk robots are a novelty, and the sub-1.5-mile order pool in DTLA and Koreatown that e-bike couriers depend on will be intact through the 24-month trigger horizon.",
+   "why_it_may_be_wrong": "Serve Robotics reports an eleven-fold LA fleet increase since 2024 and coverage of ~40 LA neighborhoods; it has DoorDash (multi-year deal, Oct 2025), Uber Eats, and Grubhub (Aug 2026, 100+ LA merchants) integrations; Coco is live on DoorDash with ~600 LA merchants. Koreatown and DTLA are flat, dense and restaurant-dense, exactly the geography robots target and among Serve's earliest LA neighborhoods. Robots take the shortest trips, which are the highest per-hour-earning trips for bike-mode couriers; losing them cuts courier earnings in precisely the hub's catchment and therefore willingness to pay for rentals. SF cannot be used as a control because robot density in SF is negligible.",
+   "direction": "flatters_LA_case",
+   "magnitude": "If robots capture 10-20% of sub-1.5-mile orders in Koreatown/DTLA by 2028, bike-mode courier per-hour earnings in the catchment fall roughly 5-10%, lowering rental affordability and retention. Hits the pure e-bike tier hardest; motorcycle-class riders on longer trips are less exposed.",
+   "cheap_test": "Place ~20 orders (weekday/weekend, lunch/dinner) from Koreatown/DTLA/Little Tokyo restaurants on DoorDash, Uber Eats and Grubhub and log robot vs human fulfillment; count robots per hour on Wilshire, 6th, Western and in Little Tokyo; read Serve's latest 10-Q for LA robot count and daily deliveries; check LADOT personal delivery device permit counts.",
+   "hmp_internal_data_needed": "Nothing in SF settles it. At most, trip-length distributions from SF courier interviews to estimate what share of a bike-mode courier's earnings sits in sub-1.5-mile trips.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "competition_and_platforms"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A28",
+   "theme": "competition_platforms",
+   "assumption": "Informal weekly rentals from individuals (Facebook Marketplace, OfferUp, WhatsApp groups) are marginal and will not undercut a formal hub that requires ID, a card and a deposit.",
+   "why_it_may_be_wrong": "LA's courier base skews heavily immigrant and includes many riders on shared or rented app accounts. Informal lenders rent e-bikes and mopeds at roughly $40-60/week in cash, with no deposit, no ID, no card, delivered to the rider, and they tolerate riders who fail platform KYC. A formal hub may be locked out of the single largest segment. Informal lenders also buy HMP-type vehicles wholesale and rent them out, undercutting HMP's own rental line with HMP's own product.",
+   "direction": "flatters_LA_case",
+   "magnitude": "Could remove 30-50% of the visible renter pool from HMP's reach and compress the achievable weekly price toward $40-50; also sets a low anchor that makes HMP's deposit requirement a conversion killer.",
+   "cheap_test": "One afternoon: search Facebook Marketplace, OfferUp and Craigslist LA for 'renta bicicleta electrica delivery', 'moto electrica renta semanal', and Korean-language equivalents; count active listings and prices; message 10 lenders to learn fleet size and terms. Then ask 30 couriers in Koreatown at 6-8pm where their vehicle came from and what they pay per week.",
+   "hmp_internal_data_needed": "SF: share of renters paying cash vs card; walk-away rate when a deposit or ID is required; number of SF customers who bought multiple vehicles (proxy for informal re-renters); price of informal SF listings vs HMP's rental price.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "competition_and_platforms"
+   ],
+   "merged_from_count": 1
+  },
+  {
+   "id": "A29",
+   "theme": "regulation_fleet",
+   "assumption": "LA's regulatory environment for app couriers is static for 24 months, and an NYC/Seattle-style minimum-pay rule is either irrelevant to LA or would help by raising courier earnings.",
+   "why_it_may_be_wrong": "Prop 22 sets a state pay floor and is widely read as preempting local ordinances on app-based driver compensation, so LA City cannot easily copy NYC's rule; that keeps the LA courier pool oversupplied and per-hour earnings low, which caps rental affordability. But the state has moved quickly (AB 1340, Oct 2025, gave rideshare drivers collective bargaining) and a delivery-courier equivalent, or platform responses like NYC's app lockouts and scheduling restrictions, would cut active courier counts and hours precisely during the hub's ramp. Either way, the plan should not assume today's courier count, hours per courier, or earnings per hour.",
+   "direction": "either",
+   "magnitude": "A pay rule with NYC-style platform lockouts could shrink the active renter pool 10-25% within a year; no rule at all means $150-250/mo rentals stay at 15-25% of a typical courier's gross, which limits retention and pricing power.",
+   "cheap_test": "Search the LA City Clerk council file index and the CA legislature for 'app-based delivery' items; monitor DoorDash/Uber LA courier forums for 'no dash now' waitlist and lockout frequency; confirm Prop 22's local-preemption text (Bus. & Prof. Code 7465) with counsel.",
+   "hmp_internal_data_needed": "SF renters' self-reported weekly gross earnings at onboarding and rental price as a share of earnings, to estimate how retention responds to a 10-20% earnings drop.",
+   "could_flip_decision_alone": false,
+   "raised_by_lenses": [
+    "competition_and_platforms"
+   ],
+   "merged_from_count": 1
+  }
+ ]
+}
