@@ -1,0 +1,131 @@
+{
+  "emphasis": "probability_of_being_wrong",
+  "ranking": [
+    {
+      "id": "A07",
+      "p_wrong": 0.8,
+      "reason": "The only hard datum on LA-type markets points the wrong way: DoorDash publishes 72% two-wheel in SF but ~30% in San Diego, and LA (unpublished) is a car-default metro where couriers stack Uber/Instacart/Flex on one car and platforms route long-radius orders to cars. Tried to argue it is true (LA has dense pockets, two-wheel growing 4x faster) and failed: the pockets that already exist are where a 20 mph e-bike suffices, so 'LA is spread out, therefore faster tiers' has the causality backwards, and Zoomo's retreat to NYC-only after once calling LA a top market is consistent with a thin two-wheel courier base. Consequence: SAM shrinks 50-70% and the fleet mix is tilted toward the wrong tiers; this is the denominator every other number sits on."
+    },
+    {
+      "id": "A01",
+      "p_wrong": 0.8,
+      "reason": "Koreatown is 4-5 miles from 768 Ceres across the 110; ZIP 90021 has ~2,900 residents, so there is neither local demand nor walk-by. Swapping is the most frequent visit and therefore the most distance-sensitive behavior, and SF's own swap station only opened June 2026, so there is no evidence even in SF that a hub-swap model works at any distance. Tried to argue single hubs work (Whizz/Zoomo run one per city) and failed: they bundle swaps into the rental and 261 6th St is within ~1.5 mi of every SF hotspot, which Ceres is not. Skid Row adjacency adds after-dark reluctance exactly when swap demand peaks. Consequence: Koreatown/Westlake/USC largely fall out of the catchment, battery attach drops to 5-15% outside ~1.5 mi, and the recurring-revenue engine the lease is justified on is about one-third of an SF-scaled projection."
+    },
+    {
+      "id": "A12",
+      "p_wrong": 0.85,
+      "reason": "Statute is unambiguous: California e-bikes are <=750 W with throttle <=20 mph; anything faster is a moped/motor-driven cycle/motorcycle needing M1/M2, plate and (above moped) insurance, police get impound authority from 2026, and SB 1271 bars selling OR leasing uncertified e-bikes and batteries. Tried to argue 'we already run these vehicles in SF' and failed: it is the same law, only tolerant SFPD enforcement differs, while LAPD has been running e-moto sweeps and LA is the plan's stated reason to push faster tiers. Tier B therefore carries motorcycle-grade compliance at e-bike-grade rental prices. Consequence: roughly half the planned fleet is priced at zero compliance cost, and any non-UL swap-battery SKU is a stop-ship for the swap line in LA."
+    },
+    {
+      "id": "A03",
+      "p_wrong": 0.8,
+      "reason": "SF's engine is a founder physically embedded in a Nepali/Chinese-speaking courier community with a storefront and a WeChat group; LA's target couriers are Spanish- and Korean-speaking, HMP has zero seeded riders, no storefront, the founder is 380 miles away, and Whizz already sits inside DoorDash's Dasher onboarding nationally. Tried to argue the product sells itself via referral and failed: a referral loop multiplies a base, and the LA base is zero with no trust anchor. Consequence: CAC 3-8x SF, ramp to 100 rentals takes 12-18 months rather than 6, so the Month-6 trigger is set to fail on schedule rather than on merit."
+    },
+    {
+      "id": "A19",
+      "p_wrong": 0.8,
+      "reason": "Listing mirrors show $1.20/SF Full Service (~$10.1k) or $19.20/SF/yr (~$13.5k), so the rent line itself may be fine at FS, but the stack is not: 3.5-4.5 FTE for 7-day rider hours, Skid Row-edge security, fleet/GL insurance and LAFD tenant work put true fixed cost at $35-50k/mo, and a 3-5-year industrial lease makes a 'Month-3 NO-GO' a loss-mitigation event after $80-150k is already out the door. Tried to argue 'we will negotiate a kick-out' and failed: it is only true if it is in the signed lease. Consequence: without a 12-month term or termination option the entire M3/M6/M12/M24 trigger framework is decorative."
+    },
+    {
+      "id": "A11",
+      "p_wrong": 0.75,
+      "reason": "Uber Eats' LA courier page offers only car / scooter (<50cc, age 21, driver's license) / bicycle / on-foot with no motorcycle mode, so a Lightning-class rider cannot declare legally on Uber Eats in LA at all and any moped rider needs a DL; DoorDash gates scooter/motorcycle the same way. The addressable immigrant courier largely lacks a CA license and M endorsement (the NYC deliverista pattern). Tried to argue AB 60 licenses solve it and failed: the M1/M2 test or CMSP course costs weeks and a few hundred dollars that a rider choosing to rent does not have. Consequence: tiers B-D address 20-50% of tier A's pool, and riders running out-of-class vehicles in 'bike' mode face deactivation and impound, turning the replacement-vehicle promise into a cost center."
+    },
+    {
+      "id": "A15",
+      "p_wrong": 0.75,
+      "reason": "The site is one to two blocks off Skid Row with ~650 SF of yard, storing 100-300 hand-carriable, unregistered packs worth $500-1,000 each on a street whose neighbors run 1am-noon, so evening and overnight are unsurveilled; LA e-bike/e-moped theft is rising with single-digit recovery, and a registered moped/motorcycle fleet rented for delivery needs per-vehicle auto liability on a specialty program (the reason Revel left moped sharing). Tried to argue $15-30k of gate/cameras/GPS neutralizes it and failed: insurers writing lithium inventory at this address will impose monitored guard or 24/7 staffing as protective conditions, converting capex into a recurring cost comparable to rent. Consequence: 12-20% annual fleet loss plus $3-10k/mo security plus $60-200/vehicle/mo insurance can push tier C/D contribution negative; the biggest gap between an SF cost sheet and LA reality."
+    },
+    {
+      "id": "A13",
+      "p_wrong": 0.85,
+      "reason": "CVC 14608 forbids renting a motor vehicle to an unlicensed driver; a statutory breach gives negligence per se, the Graves Amendment shields only vicarious liability, commercial rental policies exclude unlicensed operators, and platform occupational cover attaches only in the declared mode. Tried to argue 'no claim in SF so far' and failed: that is a small-sample artifact, and the LA plan deliberately scales tiers B-D to a renter pool that is mostly unlicensed. Consequence is a tail rather than a monthly line, which is why it ranks last of the eight: one uninsured seven-figure pedestrian claim exceeds eight years of Ceres rent, and the compliant fix (verify M licenses) collapses tier B-D demand per A11, which is the fleet plan's premium half."
+    }
+  ],
+  "dismissed": [
+    {
+      "id": "A02",
+      "why_minor": "Partly rescued by scouts: Whizz's own locations page lists no LA shop and Zoomo's US site is NYC-only, so formal price pressure is thinner than the critics assumed and the moped-vs-pedal-e-bike premium is real; p_wrong ~0.5 with a <=$9k/mo consequence, second-order to A07/A01."
+    },
+    {
+      "id": "A04",
+      "why_minor": "Resolvable in one day from HMP's own SF ledger before signing (and the 2024-08 registration vs 2022 press launch discrepancy makes the 'SF took four years' argument itself uncertain); the ramp risk is A03 and the trigger-calibration fix is mechanical."
+    },
+    {
+      "id": "A05",
+      "why_minor": "Press has SF at 600+ mopeds in April 2026 targeting 1,000 by year end, i.e. SF acquisition is still growing, so 'period artifact' is less likely (~0.4) than the critics claim; the transfer risk is already carried by A03/A07."
+    },
+    {
+      "id": "A06",
+      "why_minor": "Metric-definition hygiene the founder can settle by writing paid-active definitions now; changes trigger wording, not the GO decision."
+    },
+    {
+      "id": "A08",
+      "why_minor": "A sizing-method error whose real-world content (LA two-wheel share far below NYC/SF) is A07; the fix is simply not to use the NYC ratio."
+    },
+    {
+      "id": "A09",
+      "why_minor": "Headline courier headcounts are upper bounds only; same substance as A07/A08 and easily corrected to FTE daily-actives."
+    },
+    {
+      "id": "A10",
+      "why_minor": "SF ZIP-scaling error in the same direction as A01/A07 and settled by the same customer-ZIP pull."
+    },
+    {
+      "id": "A14",
+      "why_minor": "Dispatch-by-declared-mode is real but it is the pricing consequence of A11, not an independent assumption; the critics themselves mark it as non-flipping."
+    },
+    {
+      "id": "A16",
+      "why_minor": "Its drivers are A07 (smaller earnings uplift in a car-default metro) and A02 (Whizz churn); the residual utilization parameter can be read straight from the SF rental ledger."
+    },
+    {
+      "id": "A17",
+      "why_minor": "The catchment half is A01; the pack-life half is a pricing/product fix (bigger packs, home charging) rather than a lease decision."
+    },
+    {
+      "id": "A18",
+      "why_minor": "Direction either: HMP's captive reconditioned-resale channel plausibly offsets courier wear; a few $k/mo, not decision-flipping."
+    },
+    {
+      "id": "A20",
+      "why_minor": "Founder-verifiable from HMP's own books; nothing LA-specific makes SF per-unit economics more likely negative, and HMP is the brand owner on FLASH/Lightning so 35-45% is not implausible."
+    },
+    {
+      "id": "A21",
+      "why_minor": "CFC 320/322 is real, but SF has run a swap room under the same California Fire Code since June 2026, so LAFD is delay and cost rather than the most probable failure; the UL-listing stop-ship is carried by A12 and one pre-LOI LAFD call settles the rest."
+    },
+    {
+      "id": "A22",
+      "why_minor": "A cheap written pre-LOI check with the broker and landlord's carrier; overlaps A21 and A19."
+    },
+    {
+      "id": "A23",
+      "why_minor": "After-dark rider reluctance is inside A01 and evening security/staffing cost is inside A15."
+    },
+    {
+      "id": "A24",
+      "why_minor": "Direction either, settled by a floor plan and a tape measure; does not flip the decision."
+    },
+    {
+      "id": "A25",
+      "why_minor": "An alternative footprint, not a factual assumption likely to be wrong; moves GO to CONDITIONAL GO rather than NO-GO."
+    },
+    {
+      "id": "A26",
+      "why_minor": "Real but +/-20-30% on a single month and fixed by trailing-3-month seasonally adjusted thresholds."
+    },
+    {
+      "id": "A27",
+      "why_minor": "Serve's 11x LA growth is real, but a 5-10% hit to bike-mode earnings over 24 months is second-order and falls mostly on tier A."
+    },
+    {
+      "id": "A28",
+      "why_minor": "No LA evidence was gathered on informal cash lenders; speculative, and the price-anchor effect is already carried by A02/A03."
+    },
+    {
+      "id": "A29",
+      "why_minor": "Prop 22 preemption makes an LA-specific pay ordinance unlikely inside 24 months; direction either and modest."
+    }
+  ]
+}

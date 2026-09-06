@@ -1,0 +1,123 @@
+{
+  "emphasis": "model_output_sensitivity",
+  "ranking": [
+    {
+      "id": "A19",
+      "reason": "Moves break-even rental count and capital at risk with elasticity ~1 and the largest plausible input error in the set. True fixed cost is $35-50k/mo (listing rent ~$13.5k + NNN $1.7-3.4k + 3.5-4.5 FTE $16-22k + insurance/security/power) versus the $10k headline, a 3.5-5x error. Break-even N = (fixed cost - sales/battery contribution) / contribution per rental, so at a realistic $40-60/mo contribution N goes from ~100 to 250-400. Capital at risk is not 'a few months of rent' but the non-cancellable 36-60 month lease ($360-810k) plus $80-150k startup cash plus fleet and float, i.e. $500-900k, and a Month-3 NO-GO does not reduce it. No other input changes two of the four outputs by 3x+ with this certainty."
+    },
+    {
+      "id": "A02",
+      "reason": "Contribution per rental is a thin residual (ARPU ~$240/mo minus $150-200/mo of depreciation, insurance, theft and battery), so break-even count has elasticity ~3-4 to ARPU: a 20-40% realized-price shortfall against Whizz's $139-169 all-in ($55/wk assumed vs $35-40/wk realized, -$40-70 per unit-month) cuts contribution 50-100% and doubles-to-quintuples the rentals needed. On 100 units it removes $6-9k/mo of Month-12 revenue, roughly the whole base rent, and it zeroes the battery-subscription line on rentals because the bundle must match Whizz. A 2x error here ($60 vs $30/wk) makes contribution negative, i.e. no break-even at any count."
+    },
+    {
+      "id": "A15",
+      "reason": "Cost-side twin of A02 on the same thin residual, plus a fixed-cost add. Per-vehicle auto liability $60-200/mo on registered tiers is 35-60% of a $250-300/mo tier C rental; theft/total loss at 12-20% of fleet value per year is $30-80k on 100 units; bad debt 5-8% of billings; recurring security $3-10k/mo is 30-100% of headline rent. Tier C/D contribution goes to <=$0, so break-even count for those units is undefined and the fleet-mix module's $3-6k/unit capex on them becomes pure capital at risk; one depot pack theft is $50-100k. Modeled at 3-5% of fleet value, a 3-4x error here is the biggest per-unit cost miss in an SF-derived cost sheet."
+    },
+    {
+      "id": "A08",
+      "reason": "Top of the market-size funnel; every downstream factor multiplies it, so elasticity on SOM is 1 in all three scenarios. Applying NYC's ~2.5-3 couriers per restaurant (which embeds ~100% two-wheel mode share) to ~900 Koreatown restaurants gives ~2,250 riders where a car-dominated reality may be 200-600 two-wheelers: a 3-10x overstatement (1.5-3x even with the SF ratio). Because methods 1 and 3 share constructed inputs and field counts overstate daily-actives 1.5-3x, an apparent 'convergence' can hide a 3x error in TAM, SAM and SOM at once. A 2x error here is a 2x error in SOM and in the rider-count denominator of every trigger."
+    },
+    {
+      "id": "A04",
+      "reason": "Sets the ramp curve and the penetration cap, so it moves Month-12 revenue with elasticity ~1 and capital at risk through months-to-break-even. SF's 1,000+ is a ~4-year stock (~17 units/mo average, far less in year 1); using mature-SF penetration as the LA cap instead of SF year-1 cuts the 12-month SOM 2-4x, and a Month-6 target of 50-100 rentals is 3-10x SF's own early pace. Each halving of the ramp delays break-even 6-12 months, which at $35-50k/mo true burn (A19) is $200-600k of additional capital at risk; if SF penetration is 20% rather than 50%, the cap alone moves 2.5x."
+    },
+    {
+      "id": "A07",
+      "reason": "Two multiplicative SAM factors with independent 2-3x errors: (1) two-wheel share and convertibility (LA plausibly at or below San Diego's ~30% two-wheel share; car-to-two-wheel conversion 2-8% not 20-30%, so SAM -50-70% if car converts are the majority of proposed SAM) and (2) the HMP-serviceable fraction of observed two-wheelers (e-bike/e-moped 30-60% rather than ~90%, shrinking battery SAM). It also drives the fleet-mix module: the tier C/D rental pool near Ceres may be in the low dozens versus a plan for 100+ units, so $200-400k of tier C/D fleet capex is sized to a pool that may not exist. Addressable riders 300-800 rather than several thousand; at a 30% share cap that is 100-250 vehicles, a 2-4x change in SOM."
+    },
+    {
+      "id": "A01",
+      "reason": "The geography term in SAM and the volume term of the recurring line. Koreatown/Westlake/USC sit 3-6 miles and a 40-60 minute peak round trip from Ceres, so willing-to-visit falls from an implied 70-90% to 20-40% for the largest chunk of TAM (SAM -30-60%); battery attach falls from ~30% to 5-15% outside ~1.5 miles, so the year-one subscriber ceiling is 50-100 rather than an SF-scaled 300 and recurring battery revenue is ~1/3 of projection. Rental utilization also falls with pickup/return friction. A 2x error in the visit-willingness share moves SAM and the swap line roughly 1:1 and mis-sets the denominator of every Month-6/12 subscriber trigger."
+    },
+    {
+      "id": "A16",
+      "reason": "Converts 'on rent' into revenue and capital. At a realistic 60-75% days-rented/days-owned instead of 85-90%, revenue per owned unit falls ~28% and the fleet needed for the same rental revenue is ~38% larger (+$100-150k vehicle capital plus proportional theft and depreciation), so break-even in owned units rises 1.4x+ because depreciation and insurance keep running on idle units. Halving rent-to-buy conversion halves the sales-margin offset that A19 needs to carry fixed cost, and 1.5-2x churn cuts the Month-12 active count. Three outputs move from one SF ledger query (units owned vs on rent, tenure, conversion)."
+    }
+  ],
+  "dismissed": [
+    {
+      "id": "A03",
+      "why_minor": "Its numeric effect is the ramp curve, already carried by A04; the residual CAC line ($150-400 x ~150-250 acquisitions/yr = $2-7k/mo) is real but smaller than A19's fixed-cost error and folds into it."
+    },
+    {
+      "id": "A05",
+      "why_minor": "A 30-50% cohort-decline haircut on the SF benchmark: leverage 1 but smaller than A04's 2-4x, and resolved by the same SF-ledger-by-cohort export."
+    },
+    {
+      "id": "A06",
+      "why_minor": "Mainly trigger-definition hygiene; the active-vs-sold correction (600 vs 1,000) is a 1.3-1.7x adjustment already embedded in A04's use of SF actuals."
+    },
+    {
+      "id": "A09",
+      "why_minor": "Same TAM-numerator slot as A08 and used as an upper bound only; its 3-20x error inflates the high scenario, and A08's SF-calibration test catches it."
+    },
+    {
+      "id": "A10",
+      "why_minor": "A 2-3x error in the SF per-capita scaling base, which is the same 'unknown SF denominator' parameter A04 and A08 already move; one ZIP query resolves it."
+    },
+    {
+      "id": "A11",
+      "why_minor": "Halves the addressable pool for tiers B-D, but A15 already drives tier B-D contribution to <=0 and A02 caps their price, so pool size becomes second-order for break-even; its independent effect is capex allocation, which the founder can defer by buying tier A first."
+    },
+    {
+      "id": "A12",
+      "why_minor": "Compliance cost on tiers B-D (~10-15% of revenue per impound-year) is smaller than A15's insurance and theft on the same units; the SB 1271 UL stop-ship is a binary gate covered by A21's certificate request."
+    },
+    {
+      "id": "A13",
+      "why_minor": "Seven-figure tail risk, not a model elasticity; its expected-value component is the insurance premium already carried in A15."
+    },
+    {
+      "id": "A14",
+      "why_minor": "Compresses the tier C/D premium to $10-20/wk, but A02 already caps whole-fleet ARPU and A15 zeros tier C/D contribution; the increment is the tier C/D share of a line that is already gone."
+    },
+    {
+      "id": "A17",
+      "why_minor": "Battery-line margin to ~0 and float capex x3 matter at Month 24, but A01 already cuts subscribers to 50-100, so at Month 12 the line is ~$2-5k/mo of revenue and the margin error is <=$3k/mo; re-test after A01's catchment test."
+    },
+    {
+      "id": "A18",
+      "why_minor": "Depreciation and wear at $120-180 vs $70-90 per unit-month is $4-9k/mo on 100 units, real but in the same per-unit cost slot as A15 at half the size, and captive resale may reverse the sign."
+    },
+    {
+      "id": "A20",
+      "why_minor": "Closest call: 10-15 GM points on LA year-1 sales ($30-100k/mo) is $3-15k/mo and decides whether sales can carry fixed cost; but sales volume is set by A04 and A16's conversion, and 'SF per-unit P&L unmeasured' is the same anchor question A19's SF contribution-data request surfaces; landed cost is a one-day QuickBooks read with no LA-specific uncertainty."
+    },
+    {
+      "id": "A21",
+      "why_minor": "One-time $40-150k and a 3-9 month swap-line delay: 5-20% of capital at risk and a small Month-12 revenue effect once A01/A17 shrink the line; a binary permit gate that belongs in the site score rather than the elasticity ranking."
+    },
+    {
+      "id": "A22",
+      "why_minor": "Rent gap ($2-3.5k/mo) and insurance (+$1-3k/mo) are line items inside A19's fixed-cost stack; the lithium-prohibition hard stop is covered by A21."
+    },
+    {
+      "id": "A23",
+      "why_minor": "After-dark demand loss and +$3-5k/mo evening labor are subsets of A01 (Skid Row visit reluctance) and A19 (staffing)."
+    },
+    {
+      "id": "A24",
+      "why_minor": "Office share of rent ($3.5-4.5k/mo) and usable-floor limits are capacity and site-score facts, not demand or margin parameters; the rent itself is already in A19."
+    },
+    {
+      "id": "A25",
+      "why_minor": "An alternative footprint at the same occupancy envelope changes risk shape and lease exposure, not the parametric model's outputs."
+    },
+    {
+      "id": "A26",
+      "why_minor": "Plus or minus 20-30% noise on a single-month trigger reading; a trailing-3-month adjustment fixes it and it has no level effect on SOM, break-even or capital."
+    },
+    {
+      "id": "A27",
+      "why_minor": "A 5-10% courier-earnings effect by 2028, mostly beyond the 24-month horizon and hitting affordability only indirectly."
+    },
+    {
+      "id": "A28",
+      "why_minor": "Its price-anchor effect is A02's mechanism and its pool effect is a subset of A07's addressability cut; the independent increment is unquantified and testable in an afternoon."
+    },
+    {
+      "id": "A29",
+      "why_minor": "A 10-25% pool shift in either direction on a 12-24 month horizon; smaller than A07/A08 and not directional."
+    }
+  ]
+}

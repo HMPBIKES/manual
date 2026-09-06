@@ -1,0 +1,123 @@
+{
+  "emphasis": "least_testable_pre_lease",
+  "ranking": [
+    {
+      "id": "A16",
+      "reason": "The rent -> confirm earnings -> buy -> keep-renting-battery funnel, LA renter churn, tenure and true fleet utilization have no pre-lease proxy: the SF ledger pull only tells you SF's baseline, surveys measure stated intent, and the LA-specific conversion rate depends on an earnings uplift that only exists once riders are actually working LA routes on HMP vehicles for weeks. Nothing short of 4-6 months of rental cohorts answers it, and if it is wrong the hub silently turns from a sales channel into a capital-hungry rental fleet needing ~38% more vehicles and $100-150k more capital for the same revenue. I tried to argue it collapses into A03 (ramp) or A20 (SF margins); it does not, because those can be settled from SF data or a two-week demand test while this is purely a revealed-behavior number in a new city."
+    },
+    {
+      "id": "A01",
+      "reason": "Whether Koreatown / Westlake / USC riders will repeatedly detour to a Skid-Row-edge warehouse 3-7x/week for swaps is a revealed-preference, repeat-behavior question. The cheap tests only bound it: a timed ride gives the objective detour cost, intercept surveys give stated willingness (unreliable for a 40-60 minute round trip), the SF distance-decay curve has no customers in a 4-6 mile band across a freeway, and a K-town pop-up tests in-neighborhood demand rather than detour-to-Ceres demand. Worse, the swap-hub model itself is unproven even in SF (stations launched June 2026), so there is no base to transfer. It is the largest chunk of proposed TAM and could flip the decision alone; only A16 is less testable, because at least the detour cost here is physically measurable."
+    },
+    {
+      "id": "A02",
+      "reason": "Mystery-shopping Whizz settles today's $139-169 all-in price, but the assumption that matters is that this is a static floor. A VC-funded competitor's promotional response to a new hub pulling its riders, and the timing of DoorDash flipping LA onto its Dasher Central bike page (zero-CAC distribution for Whizz), cannot be observed until HMP is operating and visible. Realized rental ARPU 20-40% below plan on 100 units is roughly the whole base rent, and the standalone battery subscription is exactly the line the competitor bundles for free. The founder signs while blind to the competitor's second move by construction."
+    },
+    {
+      "id": "A03",
+      "reason": "The 2-3 week ad/flyer/deposit test is a genuine pre-lease measure of initial cost per verified courier, so the top of the funnel is testable. What is not testable is the compounding: whether a referral loop ignites among Spanish/Korean-speaking LA couriers with no HMP-riding cousin to vouch, and whether it happens at all without the founder as daily salesperson-mechanic-trust-anchor on site. Those reveal only over months of operation, and getting them wrong stretches ramp-to-100 from 6 to 12-18 months, i.e. an extra $60-120k of lease alone. Kept below A02 because the deposit test at least bounds the first-order CAC."
+    },
+    {
+      "id": "A15",
+      "reason": "Insurance premium, exclusions and protective conditions at this address are quotable pre-lease (and those quotes may kill tier C/D by themselves), and LAPD open data gives the block's base rate. But the realized loss rate for no-credit-check weekly renters riding 10+ hours a day on LA streets (non-return by churned riders, on-delivery theft, chargebacks, unpaid final weeks) is a property of HMP's own LA renter population and depot, and only shows after several months of rentals; SF's shrink log is the closest comparable but in a different theft environment. At 12-20% annual fleet loss plus $3-10k/mo recurring security this is the biggest single gap between an SF cost sheet and LA reality, and part of it stays unknown until the lease is signed."
+    },
+    {
+      "id": "A23",
+      "reason": "Three evening site visits and an LAPD calls-for-service pull settle what the block looks like at 10pm, so the conditions are testable. What is not: whether riders actually show up after dark (stated willingness vs revealed), whether two-person evening staff can be hired and retained on that block (a months-long attrition curve), and whether a single rider robbery at the gate ends word-of-mouth. If hours contract to daytime, the 'replacement vehicle tonight' promise at the heart of the Rider Center pitch fails and 30-50% of swap/service volume is displaced. Distinct from A01 (detour distance) because it is about hours-of-operation viability, not catchment."
+    },
+    {
+      "id": "A07",
+      "reason": "The observed two-wheel share and e-bike vs gas mix at LA hotspots is a three-evening tally, so the current addressable pool is testable and the plan should be sized on it. The residuals are not: whether car couriers convert at 20-30% or 2-8%, and whether tier C/D (licensed, 40-70 mph) vehicles actually get rented at volume by cash-constrained couriers rather than sitting at 30-50% utilization while tier A sells out. That is a fleet-capex shape decision (tens of units at $4-6k each) that must be made before opening and is only validated by months of rental uptake; A11's license survey partially bounds it, which is why it ranks here and not higher."
+    },
+    {
+      "id": "A27",
+      "reason": "Twenty test orders and Serve's 10-Q settle today's robot penetration in Koreatown/DTLA, but the assumption is about the 24-month trajectory in exactly the flat, dense, sub-1.5-mile order pool the hub's e-bike tier depends on, with Serve at 11x since 2024 and DoorDash/Uber Eats/Grubhub integrations live. It is exogenous, so neither a pre-lease test nor operating resolves it, and SF offers no control. Magnitude is modest (5-10% of bike-mode earnings) and it hits the cheapest tier to exit, so it takes the last slot rather than a higher one; A29 is dismissed on the same exogenous logic but with weaker evidence of a trend."
+    }
+  ],
+  "dismissed": [
+    {
+      "id": "A04",
+      "why_minor": "Testable pre-lease via exporting SF's own first-12-month ledger (Shopify/Stripe/rental dates) and setting M3/M6/M12 triggers off SF actuals; a data pull, not an operating unknown."
+    },
+    {
+      "id": "A05",
+      "why_minor": "Testable pre-lease via plotting SF new buyers/renters by month for 36 months; whether LA re-creates peak conditions is covered by A03 and A16."
+    },
+    {
+      "id": "A06",
+      "why_minor": "Testable pre-lease via writing metric definitions now and reconciling SF active base (600 vs 1,000) from service/rental records; a governance fix, not a blind spot."
+    },
+    {
+      "id": "A08",
+      "why_minor": "Testable pre-lease via calibrating the NYC/SF ratio against SF's known fleet and pre-registering field-count parameters; a methodology error, fixable at the desk."
+    },
+    {
+      "id": "A09",
+      "why_minor": "Testable pre-lease via recomputing headcounts as full-time-equivalent daily-actives and capture-recapture counts; desk work plus two evenings."
+    },
+    {
+      "id": "A10",
+      "why_minor": "Testable pre-lease via a ZIP pull on every SF sale, rental and battery contract."
+    },
+    {
+      "id": "A11",
+      "why_minor": "Testable pre-lease via a 100-courier intercept survey on license class and by creating LA Dasher/Uber accounts to see which modes are offered; the residual (enforcement/deactivation incidence) is controllable by fleet choice and folded into A07."
+    },
+    {
+      "id": "A12",
+      "why_minor": "Testable pre-lease via one day reading CVC/SB 1271, requesting UL 2271/2849 certificates, and calling LAPD Central Traffic; the legal class of each tier is knowable and HMP can choose to plate or drop tier B."
+    },
+    {
+      "id": "A13",
+      "why_minor": "Dangerous but testable pre-lease via 2-3 written fleet-insurer quotes asking explicitly about unlicensed-operator exclusions plus one hour with an LA insurance-defense attorney."
+    },
+    {
+      "id": "A14",
+      "why_minor": "Testable pre-lease via a one-week two-rider bike-mode vs scooter-mode earnings log from the Ceres area; could_flip is false."
+    },
+    {
+      "id": "A17",
+      "why_minor": "Testable pre-lease via BMS reads on the 20 oldest SF packs plus a one-week Wh/mile instrumentation of each tier on LA loops; pack life at LA duty cycle is a calculation, and the catchment element is covered by A01."
+    },
+    {
+      "id": "A18",
+      "why_minor": "Testable pre-lease via SF repair-ticket cost per mile and listing two ex-rental units; could_flip is false and direction is 'either'."
+    },
+    {
+      "id": "A19",
+      "why_minor": "Dangerous but testable pre-lease via reading the LOI/lease (term, NNN, guarantee, kick-out) and pricing staffing/insurance; it is the lever that makes the other blind spots expensive (negotiate a 12-month kick-out), not itself an operating unknown."
+    },
+    {
+      "id": "A20",
+      "why_minor": "Testable pre-lease via a 12-month SF contribution P&L from QuickBooks/Shopify/Stripe with tariffs and card fees allocated; the most important data pull in the file, but a data pull."
+    },
+    {
+      "id": "A21",
+      "why_minor": "Testable pre-LOI via a UL-certificate request to the OEM, an LAFD Fire Prevention pre-application meeting and a $2-3k FPE feasibility letter; a possible hard stop, but knowable before signing."
+    },
+    {
+      "id": "A22",
+      "why_minor": "Testable pre-LOI via written landlord/carrier acceptance of lithium charging and motorcycle repair as permitted use, ZIMAS zoning and two property/GL quotes."
+    },
+    {
+      "id": "A24",
+      "why_minor": "Testable pre-lease via the floor plan and a site walk with a tape measure; could_flip is false."
+    },
+    {
+      "id": "A25",
+      "why_minor": "An alternative structure rather than a blind assumption; the 60-90 day van pop-up it proposes is itself the best partial pre-lease test for A01."
+    },
+    {
+      "id": "A26",
+      "why_minor": "Testable pre-lease via an SF seasonal index and by defining triggers as trailing-3-month seasonally adjusted averages; could_flip is false."
+    },
+    {
+      "id": "A28",
+      "why_minor": "Testable pre-lease in one afternoon of Marketplace/OfferUp searches plus 30 courier asks on where their vehicle came from and what they pay."
+    },
+    {
+      "id": "A29",
+      "why_minor": "Current posture is desk work (council files, Prop 22 preemption with counsel); future rule changes are exogenous and unresolvable by operating either, could_flip is false, and A27 already occupies the exogenous-trend slot with stronger evidence."
+    }
+  ]
+}

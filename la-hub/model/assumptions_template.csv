@@ -126,3 +126,27 @@ D04,decision,trigger_cac_max,USD,DERIVED,,,,,,
 D05,decision,trigger_utilization_min,ratio,DERIVED,,,,,,
 D06,decision,trigger_theft_rate_max,ratio,DERIVED,,,,,,
 D07,decision,trigger_m12_revenue_min,USD/month,DERIVED,,,,,,
+M22,market,mode_share_gas_scooter_motorcycle,ratio,ESTIMATE,,,,,field count,燃油 scooter / 摩托车（不需要电池订阅）
+M23,market,riders_with_m1_m2_license_share,ratio,ESTIMATE,,,,,intercept survey / DMV,持 M1/M2 的骑手比例，决定 B–D 档可租池
+M24,market,robot_share_short_orders_m24,ratio,ASSUMPTION,,,,,Serve / Coco coverage,送餐机器人 24 个月内吃掉的 <1.5 英里订单比例
+F13,fleet,tier_ul_certified,bool,ASK_HMP,,,,,UL Product iQ / OEM 证书,SB 1271 销售/出租前提
+F14,fleet,tier_registrable_in_ca,bool,ASK_HMP,,,,,NHTSA vPIC / MCO,B–D 档能否上牌
+F15,fleet,tier_platform_mode_doordash_la,enum,FACT_PENDING,,,,,实测,bike / scooter / motorcycle / none
+F16,fleet,tier_platform_mode_ubereats_la,enum,FACT_PENDING,,,,,实测,bicycle / scooter<50cc / none
+F17,fleet,tier_insurance_per_vehicle_month,USD,ESTIMATE,,,,,broker quotes,已注册档的每车责任险
+C33,cost,fire_code_compliance_onetime,USD,ESTIMATE,,,,,LAFD 预咨询 / FPE,2025 CFC Sec.320/322：探测、回路、间距、喷淋
+C34,cost,lease_term_months,months,ASK_LANDLORD,,,,,LOI,
+C35,cost,early_termination_option,bool,ASK_LANDLORD,,,,,LOI,有没有 12–18 个月 kick-out
+C36,cost,lease_type,enum,ASK_LANDLORD,,,,,LOI,full_service / gross / NNN
+C37,cost,personal_guarantee,bool,ASK_LANDLORD,,,,,LOI,
+C38,cost,security_monthly_guard,USD/month,ESTIMATE,,,,,guard quotes,晚班/夜班保安（保险公司可能强制）
+C39,cost,tariff_rate_vehicles,ratio,ASK_HMP,,,,,HS code,落地成本里的关税
+K05,competitor,whizz_la_live,bool,FACT_PENDING,,,,,mystery shop,官网无 LA 店；页面为空壳
+K06,competitor,zoomo_la_live,bool,FACT_PENDING,,,,,phone / CA SoS,官网 LA 页显示 NYC
+K07,competitor,swobbee_or_swap_network_la,bool,FACT_PENDING,,,,,station map,DoorDash 合作换电网络是否进 LA
+K08,competitor,informal_weekly_rental_price_la,USD/week,FACT_PENDING,,,,,Marketplace / OfferUp 抓取,非正规现金周租价格锚
+L10,site,dist_768ceres_to_westlake_center,miles,FACT_PENDING,,,,,map,
+L11,site,crime_incidents_500m_sf_261_6th,count,FACT_PENDING,,,,,SFPD open data,SF 店对照基线
+L12,site,office_sqft_share,ratio,FACT_PENDING,,,,,floor plan,768 可能有 3000–3600 SF 办公区
+L13,site,yard_sqft,sqft,FACT_PENDING,,,,,floor plan,地块 9091 − 建筑 8443 ≈ 650
+L14,site,two_node_alt_total_rent,USD/month,ESTIMATE,,,,,listings,Koreatown 换电点 + Vernon/Boyle Heights 仓库
