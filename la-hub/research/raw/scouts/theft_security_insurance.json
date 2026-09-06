@@ -1,0 +1,333 @@
+{
+  "modality": "theft_security_insurance",
+  "sources": [
+    {
+      "name": "Crosstown LA - Electric scooter thefts skyrocket across Los Angeles (LAPD data analysis)",
+      "url": "https://xtown.la/2025/02/27/electric-scooter-thefts-continue-to-climn-in-los-angeles-in-2024/",
+      "contains": "Analysis of LAPD public crime data for the 'motorized device' theft category (explicitly includes e-bikes), Jan 1 2020 - Dec 31 2024: annual counts, YoY change, monthly peaks, top neighborhoods, data caveats",
+      "granularity": "City of LA, annual and monthly, by neighborhood",
+      "year": "2020-2024 (published 2025-02-27)",
+      "headline_datapoints": [
+        "2024: 1,046 reports of stolen motorized devices in the city, a 22.3% increase from the previous year; more than four times the 2021 count",
+        "University Park (USC): 206 reports in 2024 (+22.6% YoY); Venice: 95 reports in 2024. Downtown and Skid Row are NOT among neighborhoods named",
+        "Sep, Oct, Nov 2024 produced the three highest monthly counts ever, well more than 100 each month; caveat: LAPD RMS migration means not all crimes appear in public data, and figures are an undercount"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "LAPD NIBRS Offenses Dataset 2024 to 2025 (City of LA open data via data.gov)",
+      "url": "https://catalog.data.gov/dataset/lapd-nibrs-offenses-dataset",
+      "contains": "Offense-level LAPD records under the NIBRS-aligned records management system effective March 7, 2024; includes offense codes, area/reporting district, location, dates; the source needed to query motorized-device / bicycle / vehicle theft and burglary counts near 768 Ceres Ave (Central Division)",
+      "granularity": "Incident-level with reporting district and coordinates",
+      "year": "2024-2025 (ongoing)",
+      "headline_datapoints": [
+        "Effective March 7, 2024 LAPD implemented a new Records Management System aligned with FBI NIBRS; data merged into the LAPD NIBRS Offenses Dataset (snippet)",
+        "Crosstown caveat: not all crimes show up in public databases since the migration"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["3", "4", "6"]
+    },
+    {
+      "name": "Bike Index 2025 Annual Bike Theft Report",
+      "url": "https://bikeindex.org/news/bike-indexs-2025-annual-bike-theft-report",
+      "contains": "National registry-based theft report: reported thefts, recovery rate, e-bike share of thefts; PDF version hosted by Bicycle Retailer",
+      "granularity": "National, with some city breakdowns",
+      "year": "2024 data, published Jan 2025",
+      "headline_datapoints": [
+        "Reported thefts rising 15% in 2024 (snippet)",
+        "Joint UC Davis / UC Santa Barbara / Bike Index / YouGov 2025 study: an estimated 2.4 million bicycles stolen annually, over $1.4 billion in losses (natlawreview.com press release snippet)",
+        "Bike Index: only about 2% of stolen bikes and e-bikes are found (snippet via Whizz blog)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "BikinginLA - SoCal Stolen Bike Database listings",
+      "url": "https://bikinginla.com/stolen-bike-listings/",
+      "contains": "Crowd-sourced listing of stolen bikes in Southern California; could be scraped for DTLA/e-bike share but no aggregate statistics",
+      "granularity": "Individual listings",
+      "year": "ongoing",
+      "headline_datapoints": [],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Whizz - App Store listing (company theft-rate claim)",
+      "url": "https://apps.apple.com/us/app/whizz-e-bike-rental-service/id1668800684",
+      "contains": "Delivery e-bike rental operator's self-reported theft and recovery claims",
+      "granularity": "Company-wide claim, no methodology",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Less than 1% of Whizz bikes get stolen (snippet)",
+        "Whizz has recovered 94% of stolen bikes (snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "Whizz - What happens if the rented e-bike is stolen or lost (FAQ)",
+      "url": "https://www.getwhizz.com/blog/faqs/what-happens-if-the-rented-e-bike-is-stolen-or-lost",
+      "contains": "Renter liability structure for delivery-rental operator: full-value charge if not returned, optional Protection Plan, lock-compliance conditions, mandatory police report, GPS recovery conditions",
+      "granularity": "Policy description",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Rental companies 'may charge the full value of the e-bike if it's not returned'; failure to comply with lock requirements (frame lock + wheel lock or lock to fixed object) results in full liability",
+        "Optional Protection Plan lets renter 'pay only a tiny sum instead of the full price of the bike if it is stolen'; if GPS-tracked bike is found quickly renter likely owes no fee",
+        "Approximately 15,000 bikes are stolen annually in NYC (as cited by Whizz)"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Whizz - Is Whizz Worth It review page (Protection Plan terms)",
+      "url": "https://www.getwhizz.com/blog/how-to-choose/is-whizz-worth-it-review",
+      "contains": "Whizz Protection Plan pricing structure and liability cap for NYC delivery riders",
+      "granularity": "Policy terms",
+      "year": "2026",
+      "headline_datapoints": [
+        "Protection Plan covers 50% of repair costs and caps theft liability at $500 (snippet)",
+        "SF rental from $169/mo per getwhizz.com/san-francisco page title"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Zoomo vs Whizz comparison (Zoomo theft cover terms)",
+      "url": "https://www.getwhizz.com/blog/all-about-e-bikes/whizz-or-zoomo",
+      "contains": "Competitor comparison stating Zoomo's theft insurance price and renter co-pay if stolen; Zoomo's own site (ridezoomo.com/us/home) states bikes have native motor lock and in-built GPS with a theft recovery team",
+      "granularity": "Policy terms",
+      "year": "2025",
+      "headline_datapoints": [
+        "Zoomo: theft insurance for $15 per week; if bike is stolen renter pays $600 (snippet, per Whizz-authored comparison)",
+        "Zoomo requires payment for theft cover at time of bike pickup (snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Oversharing (Alison Griswold) - Bird made better scooters, now it... / The Drive - Investors cool as Bird hits speedbumps",
+      "url": "https://oversharing.substack.com/p/bird-made-better-scooters-now-it",
+      "contains": "Reporting on Bird investor communications about theft/vandalism losses and scooter lifespan in early shared-scooter era",
+      "granularity": "Company-level qualitative plus per-unit loss",
+      "year": "2018-2019 (retrospectives 2024-2026)",
+      "headline_datapoints": [
+        "Scooters lasted 29 days instead of 200+, losing $450 per unit (snippet)",
+        "Bird investor communications: 'losses due to damage, theft and vandalism were underestimated by a serious multiple' (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Lime S-1 breakdown (Mostly Metrics) - Lime filed S-1 May 2026",
+      "url": "https://www.mostlymetrics.com/p/lime-scooters-ipo-s1-breakdown",
+      "contains": "Summary of Lime's May 2026 S-1; risk factors mention theft and vandalism including organized retail crime; underlying S-1 is public on SEC EDGAR but was not fetched",
+      "granularity": "Company-level financials; no fleet-wide loss %",
+      "year": "2026",
+      "headline_datapoints": [
+        "Lime filed S-1 in May 2026 for Nasdaq listing under ticker LIME; $886.7 million 2025 revenue (snippet)",
+        "S-1 references vehicles being stolen and vandalized including by organized retail crime but does not appear to disclose specific fleet-wide loss percentages (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Monimoto motorcycle/moped GPS tracker pricing (reviews: The Drive, hotairtag, Monimoto)",
+      "url": "https://hotairtag.com/monimoto-review/",
+      "contains": "Device price and subscription cost for a self-monitored anti-theft GPS tracker suited to mopeds/motorcycles",
+      "granularity": "Per-device retail pricing",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Monimoto 9: $179 (rechargeable), subscription $49 per year (snippet)",
+        "Monimoto 7: $129; after two free months, $3.50 per month or $42.00 per year (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4", "6"]
+    },
+    {
+      "name": "Invoxia GPS Tracker Pro subscription and prices (Invoxia Help Center)",
+      "url": "https://support.invoxia.com/hc/en-us/articles/7426340090013-Subscription-And-Prices-GPS-Tracker-Pro",
+      "contains": "Device and subscription pricing for a small LTE-M tracker usable on bicycles/e-bikes",
+      "granularity": "Per-device retail pricing (EUR shown in snippet)",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "GPS Tracker Pro 99 EUR without subscription; subscription 50.00 EUR first year then 59.85 EUR/year; version with 3-year subscription included at 129 EUR (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "Spytec - Fleet GPS Tracking Pricing Comparison 2026 / One Step GPS",
+      "url": "https://spytec.com/blogs/news/fleet-tracking-pricing-comparison",
+      "contains": "Fleet telematics per-vehicle monthly pricing comparison (Samsara, Motive, Verizon Connect, Spytec); One Step GPS advertises no-equipment-cost plan",
+      "granularity": "Per-vehicle monthly pricing",
+      "year": "2026",
+      "headline_datapoints": [
+        "Fleet GPS tracking costs $8.95-$45/vehicle/month in 2026; Spytec from $14.95/vehicle/month monthly or $8.95/vehicle/month annual (snippet)",
+        "One Step GPS: $13.95/mo, no contracts, no equipment cost (onestepgps.com title)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "OMNI / PowUnity / ScanningAssist - IoT GPS + immobilizer modules for e-moped and e-bike rental fleets",
+      "url": "https://www.omnismartiot.com/Fleet-Management/iot-device-with-gps-tracking-for-e-mopeds.html",
+      "contains": "B2B IoT hardware vendors offering GPS + remote lock/immobilizer + QR unlock modules for shared/rental e-mopeds and e-bikes; pricing not shown in snippets (quote-based)",
+      "granularity": "Product pages, no public pricing",
+      "year": "2025-2026",
+      "headline_datapoints": [],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "GNS Guard - Security Guard Costs in Los Angeles: 2026 Price Guide",
+      "url": "https://www.gnsguard.com/security-guard-cost-los-angeles/",
+      "contains": "Vendor price guide for unarmed/armed guard billing rates in LA and typical monthly warehouse security spend",
+      "granularity": "Hourly billing rates and monthly ranges",
+      "year": "2026",
+      "headline_datapoints": [
+        "Unarmed guards in Los Angeles typically cost between $25 and $40 per hour (snippet)",
+        "A typical warehouse might spend $8,000 to $18,000 monthly on security depending on value of goods and facility size (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "ZipRecruiter - Warehouse Security Guard pay, Los Angeles",
+      "url": "https://www.ziprecruiter.com/Salaries/Security-Guard-Salary-in-Los-Angeles,CA",
+      "contains": "Wage data (employee pay, not vendor billing rate) for warehouse security guards in LA",
+      "granularity": "Hourly wage distribution",
+      "year": "2026",
+      "headline_datapoints": [
+        "As of May 28, 2026 average hourly pay for warehouse security guard in Los Angeles is $20.51; most earn $16.59-$20.19/hr (snippet)",
+        "DTLA warehouse postings $18.00-$20.00/hr DOE (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "Guardian Integrated Security - Remote Video Monitoring Cost: California 2026 Pricing Guide",
+      "url": "https://www.guardianintegratedsecurity.com/remote-video-monitoring-cost/",
+      "contains": "Vendor pricing guide for remote/virtual guard video monitoring for California businesses; Valley Alarm and TMC pages give LA alarm monitoring price floors",
+      "granularity": "Per-camera and per-site monthly ranges",
+      "year": "2026",
+      "headline_datapoints": [
+        "Standard remote video monitoring $50 to $150 per camera per month; basic alarm-triggered monitoring from around $30 per camera (snippet)",
+        "Remote video monitoring $200-$3,000/month depending on camera count and coverage hours (snippet)",
+        "TMC alarm monitoring Los Angeles from $9.99/mo (page title)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "WP Insure - California E-Bike Insurance: New Laws, Old Coverage Gaps / Velosurance California",
+      "url": "https://wpinsure.com/blog/california-e-bike-insurance/",
+      "contains": "Broker blog on California e-bike coverage gaps (motorized-vehicle exclusion in HO-3/HO-4), UL battery certification, SB 1271 rental prohibition; Velosurance offers personal (not fleet) e-bike theft/liability policies in CA",
+      "granularity": "Regulatory and coverage-structure narrative; no fleet premiums",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "California SB 1271 second phase Jan 1, 2028: no one may rent out an e-bike, charging system, or storage battery unless tested to ANSI/CAN/UL 2849 or EN 15194 (snippet)",
+        "Standard business policies 'may not adequately cover e-bike-related risks, necessitating specialized coverage' (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "CBS Sacramento - Burglars steal 100 electric bikes from North Highlands business over 10 days",
+      "url": "https://www.cbsnews.com/sacramento/news/burglars-steal-100-electric-bikes-from-north-highlands-business-over-10-days",
+      "contains": "News report of repeated warehouse break-ins at a California e-bike business; useful as a site-burglary precedent for task 6",
+      "granularity": "Single incident",
+      "year": "2024-2025 (date not confirmed)",
+      "headline_datapoints": [
+        "100 electric bikes stolen from one business over 10 days (headline)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "Fortune - Delivery drivers' mopeds/scooters seized by police (Boston, NYC, DC)",
+      "url": "https://www.fortune.com/2024/06/08/delivery-drivers-mopeds-scooters-police-seizure-doordash-grubhub-uber-eats",
+      "contains": "Cities seizing illegally registered/driven delivery mopeds; a non-theft loss channel for the moped/motorcycle tier of a rental fleet",
+      "granularity": "Qualitative, multi-city",
+      "year": "2024-06-08",
+      "headline_datapoints": [
+        "Boston, NYC, DC issuing warning letters to delivery companies, seizing illegally registered or driven vehicles, launching patrols (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "Alterlock blog - E-bike theft in the USA (cites NICB and Bike Index)",
+      "url": "https://alterlock.net/en/e-bike-theft-in-the-usa-why-your-3000-ride-needs-more-than-a-u-lock",
+      "contains": "Vendor blog aggregating NICB / Bike Index figures on e-bike theft growth by city",
+      "granularity": "National / major-city narrative",
+      "year": "2025",
+      "headline_datapoints": [
+        "E-bike theft reports climbed 25-40% year-over-year in major cities including Los Angeles (snippet, attributed to NICB and Bike Index)",
+        "E-bikes 2.5x more likely to be stolen than a car, only 4% ever recovered (snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "Deccan Herald - 395 rented scooters not returned to firm since March 2019 (Bengaluru)",
+      "url": "https://www.deccanherald.com/india/karnataka/bengaluru/395-rented-scooters-not-returned-to-firm-since-march-2019-1047998.html",
+      "contains": "Non-US example of mass renter non-return at a two-wheeler rental firm despite ID collection; illustrates non-return pattern",
+      "granularity": "Single company case",
+      "year": "2019-2022",
+      "headline_datapoints": [
+        "395 two-wheelers not returned by customers since March 2019 leading to police complaint; customers had submitted ID documents (snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    }
+  ],
+  "gaps": [
+    "No Skid Row / DTLA / LAPD Central Division-specific counts for e-bike, moped or motorcycle theft or commercial burglary were found; the Crosstown analysis names University Park and Venice as top neighborhoods and does not mention Downtown. Answering this requires a direct query of the LAPD NIBRS open dataset by reporting district around 768 Ceres Ave.",
+    "No 2025 or 2026 LA motorized-device theft totals surfaced (Crosstown coverage ends Dec 2024).",
+    "No LA-specific breakdown by vehicle tier (e-bike vs moped vs motorcycle); NICB motorcycle theft data and LAPD vehicle-theft codes for motorcycles/mopeds were not searched in this pass.",
+    "No operator-disclosed fleet theft or non-return percentage beyond Whizz's unverified marketing claim (<1% stolen, 94% recovered); Zoomo, Lime, Bird do not publish fleet-wide loss rates. Lime's May 2026 S-1 on EDGAR was not read and may contain vehicle-loss or depreciation disclosures.",
+    "No named commercial insurer, MGA or broker writing e-bike / e-moped rental-fleet property or theft coverage in California was identified, and no premium, deductible or lithium-battery exclusion language was obtained. Only personal-lines (Velosurance) and broker blogs were found.",
+    "No Reddit r/smallbusiness, r/ebikes or operator-interview threads on renter fraud / non-return were surfaced by search; needs targeted site:reddit.com queries.",
+    "No Bike Index Los Angeles city-level counts or 529 Garage LA data found; only national figures.",
+    "GPS tracker pricing found is consumer/retail (Monimoto, Invoxia, Spytec); fleet IoT vendors (OMNI, PowUnity) are quote-based with no public pricing. No immobilizer-specific pricing.",
+    "Security-guard and camera figures are vendor marketing ranges, not quotes for an 8,443 sqft DTLA warehouse; bad-debt / collections benchmarks for rider subscriptions were not found."
+  ],
+  "must_ask_hmp": [
+    "Actual SF theft, non-return and unrecovered-loss rates per month by tier (e-bike, moped, motorcycle) on the ~100 rented vehicles and ~300+ battery subscriptions, and the GPS recovery rate.",
+    "Current SF insurance program: carrier(s), coverage types (property/inland marine for fleet, garagekeepers, general liability, product liability), premium, deductibles, any lithium battery or rental exclusions, and whether the carrier will extend to an LA location.",
+    "Existing anti-theft stack and cost: GPS/immobilizer hardware installed per vehicle, telematics subscription per unit per month, lock policy.",
+    "Deposit, ID, credit-check and payment-verification policy used in SF, deposit amounts by tier, and the bad-debt / charge-off rate on rentals and battery subscriptions.",
+    "History of break-ins, burglaries or attempted theft at the SF facility and current site-security spend (alarm, cameras, guards).",
+    "Whether SF rental vehicles are UL 2849 / EN 15194 certified (relevant to SB 1271 rental prohibition from Jan 1, 2028 and to insurability)."
+  ],
+  "surprises": [
+    "Crosstown's analysis of LAPD motorized-device theft data (2020-2024) does not list Downtown or Skid Row among top neighborhoods; University Park (USC, 206 reports) and Venice (95) lead. This does not confirm the CONTEXT assumption that the Skid Row edge is the city's theft epicenter for e-bikes, though under-reporting there is plausible.",
+    "Whizz publicly claims less than 1% of its rental e-bikes are stolen and 94% of stolen bikes are recovered, which if true is far lower than the loss levels implied by the CONTEXT's 'major concern' framing (claim is marketing, unaudited).",
+    "Bird's early investor communications reportedly conceded theft/vandalism losses were 'underestimated by a serious multiple' (29-day lifespan vs 200+ planned), a cautionary datapoint for dockless-style models, though HMP's assigned-renter model differs.",
+    "California SB 1271 phase 2 (Jan 1, 2028) bars renting out e-bikes, chargers or batteries not tested to UL 2849 / EN 15194, a regulatory constraint on rental-fleet vehicle choice and insurability that was not in the CONTEXT.",
+    "Lime filed an S-1 in May 2026, so a public micromobility loss-rate/risk-factor source now exists on EDGAR that did not before."
+  ]
+}

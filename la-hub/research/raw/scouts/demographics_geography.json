@@ -1,0 +1,237 @@
+{
+  "modality": "demographics_geography",
+  "sources": [
+    {
+      "name": "Census Reporter - ZIP 90021 (ZCTA) profile, ACS 2024 5-year",
+      "url": "https://censusreporter.org/profiles/86000US90021-90021/",
+      "contains": "ACS 5-year profile for the ZIP containing 768 Ceres Ave: population, land area, density, income, travel time. Census Reporter also serves the same ACS tables at tract and block-group level (commute mode B08301, vehicles available B08201/B25044) with CSV/GeoJSON download, which makes a radius computation around 768 Ceres Ave feasible; the tract pull was NOT executed or verified in this pass.",
+      "granularity": "ZCTA (this page); tract / block group available on same site",
+      "year": "ACS 2024 5-year",
+      "headline_datapoints": [
+        "ZIP 90021 total population 2,897 (ACS 2024 5-year)",
+        "ZIP 90021 land area 2 sq mi; density 1,465.3 people per sq mi",
+        "ZIP 90021 median household income $32,222 (+/- $11,563); mean travel time to work 36.1 min"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "2", "6"]
+    },
+    {
+      "name": "DTLA Alliance (formerly Downtown Center BID) 2024 neighborhood statistics, via LA Downtown News",
+      "url": "https://www.ladowntownnews.com/news/a-look-to-the-future-dtla-alliance-unveils-2024-neighborhood-statistics/article_beedd938-c10e-4bd1-924a-f71a996ee53d.html",
+      "contains": "Summary of DTLA Alliance annual survey (1,233 responses, Jan 27 - Feb 14 2025, announced Mar 18 2025): residential units, tenure, resident commute mode, jobs, visitors, retail density. Does NOT state a resident headcount or the boundary in square miles.",
+      "granularity": "DTLA Alliance district (BID boundary, not a census geography)",
+      "year": "2024 data / March 2025 release",
+      "headline_datapoints": [
+        "100,000 residential units; 87% rent rather than own; median age 36",
+        "Resident commute: 46% drive alone, 6% carpool, 23% walk/bike/transit, 23% work from home",
+        "Jobs grew from 298,000 to nearly 325,000 since 2021; 18+ million visitors in 2024; 747 retail/food/drink businesses per square mile"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["1", "2", "6"]
+    },
+    {
+      "name": "DTLA Alliance / Downtown Center BID - Reports & Research and 'Why DTLA' pages",
+      "url": "https://downtownla.com/business/reports-and-research",
+      "contains": "Index of the BID's demographic study, quarterly market reports and residential market analyses (the primary DCBID demographic study the task asks for). Not opened in this pass; companion page https://downtownla.com/business/why-dtla.",
+      "granularity": "BID district",
+      "year": "unknown (not opened)",
+      "headline_datapoints": [
+        "Search snippet: 'comprehensive examination of the current residential market in DTLA' plus quarterly market reports (no figures captured)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Point2Homes - Downtown Los Angeles demographics",
+      "url": "https://www.point2homes.com/US/Neighborhood/CA/Los-Angeles/Downtown-Los-Angeles-Demographics.html",
+      "contains": "Commercial aggregator of ACS data for a vendor-defined 'Downtown Los Angeles' polygon; population and income.",
+      "granularity": "vendor neighborhood polygon (boundary not stated in snippet)",
+      "year": "2024 (per snippet)",
+      "headline_datapoints": [
+        "Downtown Los Angeles 65,211 inhabitants (snippet; a second unnamed source in the same results says 61,000)",
+        "Average household income $99,859 in 2024; median $44,832"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "LA City Planning - Downtown Community Plan Area demographic profile (standard_report2023_DOWNTOWN.pdf)",
+      "url": "https://planning.lacity.gov/odocument/a83976f3-2e12-4d2e-85de-5e36bc229175/standard_report2023_DOWNTOWN.pdf",
+      "contains": "Official City Planning demographic profile for the Downtown community plan area (2023 series; sibling PDFs exist for other plan areas such as Wilshire, Westlake, South LA - not confirmed). Fetch returned HTTP 403, so contents unverified.",
+      "granularity": "community plan area (tract-built)",
+      "year": "2023 report series",
+      "headline_datapoints": [
+        "No figures captured (403 Forbidden to fetcher; likely opens in a browser)"
+      ],
+      "reliability": "high",
+      "access": "unavailable",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "LA Times Mapping L.A. - neighborhood pages (Koreatown, Downtown, Westlake, Pico-Union, University Park)",
+      "url": "https://maps.latimes.com/neighborhoods/neighborhood/koreatown/",
+      "contains": "Canonical LA neighborhood polygons with population, area, density (2000 census base with 2008 estimates), income, renter share. Fetcher blocked (maps.latimes.com not fetchable); Downtown page https://maps.latimes.com/neighborhoods/neighborhood/downtown/ also blocked. Snippets elsewhere cite its figures.",
+      "granularity": "neighborhood polygon (Mapping L.A. boundaries)",
+      "year": "2000 census / 2008 estimates",
+      "headline_datapoints": [
+        "2000 census density (Wikipedia template citing Mapping L.A.): Koreatown 42,611 per sq mi, Westlake 38,214 per sq mi, Pico-Union 25,352 per sq mi",
+        "Koreatown area 2.7 sq mi; 2008 population 124,281; density 46,208 per sq mi (Wikipedia, citing Mapping L.A.)",
+        "Pico-Union boundaries per Mapping L.A.: Olympic Blvd (N), Harbor Fwy (E), Santa Monica Fwy (S), Normandie Ave (W)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Wikipedia - Westlake, Los Angeles / Pico-Union, Los Angeles / Koreatown, Los Angeles",
+      "url": "https://en.wikipedia.org/wiki/Westlake,_Los_Angeles",
+      "contains": "Neighborhood articles with population figures (sources vary: Mapping L.A., ACS, other). Companion pages https://en.wikipedia.org/wiki/Pico-Union,_Los_Angeles and https://en.wikipedia.org/wiki/Koreatown,_Los_Angeles.",
+      "granularity": "neighborhood (boundary per cited source)",
+      "year": "mixed; Westlake figure labelled 2024 in snippet",
+      "headline_datapoints": [
+        "Westlake 2024 population 116,376 (snippet; underlying source not verified)",
+        "Pico-Union 'home to over 40,000 residents' (snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "SF Planning - San Francisco Neighborhoods Socio-Economic Profiles 2012-2016 ACS",
+      "url": "https://sfplanning.org/resource/san-francisco-neighborhoods-socio-economic-profiles-2012-2016",
+      "contains": "PDF profiles for 41 Analysis Neighborhoods (incl. Tenderloin, South of Market, Mission, Financial District/South Beach): population, housing tenure, employment, commute mode, built from tract-level ACS. Older editions (2005-2009, 2006-2010, 2010-2014) at default.sfplanning.org. Newer official PDF not found in this pass.",
+      "granularity": "Analysis Neighborhood (tract-built, 41 polygons)",
+      "year": "ACS 2012-2016",
+      "headline_datapoints": [
+        "Profiles 'compile census-tract-level ACS data for each neighborhood and provide select demographic and housing characteristics as well as information on employment and the commute to work' (no numbers captured)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "DataSF - Analysis Neighborhoods boundary dataset",
+      "url": "https://data.sfgov.org/Geographic-Locations-and-Boundaries/Analysis-Neighborhoods/p5b7-5n3h",
+      "contains": "Official 41-neighborhood polygon layer (groups of 2010 census tracts; referenced in Planning Code Sec. 415). Downloadable GeoJSON/shapefile; lets current ACS tract tables be aggregated to SoMa/Mission/Tenderloin/FiDi-South Beach for the SF-core benchmark.",
+      "granularity": "neighborhood polygon (tract-built)",
+      "year": "2010-tract basis; dataset maintained",
+      "headline_datapoints": [
+        "41 neighborhoods created by grouping 2010 census tracts (DPH / MOHCD / Planning)"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Metro Bike Share - open trip and station data",
+      "url": "https://bikeshare.metro.net/about/data/",
+      "contains": "Quarterly anonymized trip CSVs from July 2016 through 2026 Q2 (trip duration, start/end timestamps, start/end station IDs with lat/long, bike type incl. electric, passholder type, round trip vs one way); station table (updated July 15 2026) with region tags DTLA / Pasadena / Port of LA / Venice; live GBFS/GeoJSON. Allows station-level trip counts within a radius of 768 Ceres Ave.",
+      "granularity": "trip-level with station lat/long",
+      "year": "2016-Q3 through 2026-Q2",
+      "headline_datapoints": [
+        "Most recent dataset available: 2026 Q2 (April-June)",
+        "Station table last updated July 15, 2026; regions: DTLA, Pasadena, Port of LA, Venice"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "LADOT - 'Micro-mobility: A Look at the Data' (dockless trip starts & deployment datasets)",
+      "url": "https://ladot.lacity.gov/dotnews/micro-mobility-look-data",
+      "contains": "Announces two LA Open Data Portal datasets: Monthly Dockless Trip Starts (aggregate trip-start counts by census block group, all operators) and Monthly Dockless Deployment. Exact data.lacity.org dataset URLs not captured in this pass.",
+      "granularity": "census block group, monthly",
+      "year": "Apr 15 2019 - Feb 29 2020",
+      "headline_datapoints": [
+        "Monthly Dockless Trip Starts: 'aggregate count of vehicle trip start locations by all dockless mobility companies grouped by census block group ... April 15, 2019 - February 29, 2020'"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "LADOT Walk & Bike Count program (2019 report PDF)",
+      "url": "https://ladot.lacity.gov/sites/default/files/documents/ladot2019walkandbikecount.pdf",
+      "contains": "Biennial (odd-year) intersection counts of people walking, biking and riding motorized scooters; program page https://ladot.lacity.gov/walkbikecount. Whether 2021/2023/2025 editions are posted was not verified.",
+      "granularity": "intersection / count location",
+      "year": "2019 (program runs every odd year)",
+      "headline_datapoints": [
+        "'LADOT performs a count every odd year'; modes separated: walking, biking, motorized scooters"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "LA Downtown News - 'State of the Scooters' (2019)",
+      "url": "https://www.ladowntownnews.com/news/state-of-the-scooters/article_1522609e-b57e-11e9-998c-afcb23430f2c.html",
+      "contains": "Reporting on dockless deployment by council district under the LADOT pilot.",
+      "granularity": "council district",
+      "year": "2019",
+      "headline_datapoints": [
+        "14th District (covers Downtown) ranks fourth with 3,300 vehicles; density maps show Central City among the most packed neighborhoods"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "SpotAngels - Koreatown monthly parking rates and LA monthly parking guide",
+      "url": "https://www.spotangels.com/los-angeles/koreatown-monthly-parking",
+      "contains": "Listing-aggregator price ranges for monthly parking by neighborhood; LA-wide guide at https://www.spotangels.com/blog/the-ultimate-guide-to-find-monthly-parking-in-los-angeles/.",
+      "granularity": "neighborhood (listing averages)",
+      "year": "2026",
+      "headline_datapoints": [
+        "Koreatown monthly parking average $188-$313; cheaper surface spots $95-$120/mo",
+        "Downtown and Westside monthly spots 'often priced at $250 to $350'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "The Gramercy LA - Koreatown Parking Survival Guide 2026",
+      "url": "https://www.thegramercyla.com/blog/koreatown-parking-survival-guide",
+      "contains": "Apartment-marketing blog on Koreatown parking scarcity; repeats the ~120k / 2.7 sq mi density claim and daily garage rates.",
+      "granularity": "neighborhood (anecdotal)",
+      "year": "2026",
+      "headline_datapoints": [
+        "'120,000 residents packed into 2.7 square miles'; daily garage rates 'often reaching $15 to $30'",
+        "'Parking is the single most discussed pain point among Koreatown residents'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "6"]
+    }
+  ],
+  "gaps": [
+    "No demographic source counts food-delivery couriers; all of the above are resident/commuter proxies and cannot be used alone (per the known past error).",
+    "DTLA resident headcount is boundary-dependent: snippets give 61k-65k for vendor polygons, while the DTLA Alliance cites 100,000 residential units for its broader district; the BID's full demographic study and the LA City Planning Downtown profile (403) were not opened, so no boundary-explicit DTLA population was captured.",
+    "Car ownership (vehicles per household / zero-vehicle share) and commute mode for Koreatown, Westlake, Pico-Union, USC/University Park, Arts District, Little Tokyo were NOT captured this pass; they require pulling ACS tract tables (B08201/B25044, B08301) and aggregating to Mapping L.A. or community-plan polygons.",
+    "LA Times Mapping L.A. site is blocked to the fetcher; its polygons would have to be reconstructed from tract lists or a scraped GeoJSON.",
+    "Arts District and Little Tokyo are not separate Mapping L.A. neighborhoods (likely inside its 'Downtown' polygon) - confirmation and a sub-DTLA breakdown need tract or block-group work.",
+    "Latest official SF neighborhood profile PDF found is ACS 2012-2016; a current SF-core benchmark needs tract aggregation over the DataSF Analysis Neighborhoods layer.",
+    "No shared e-scooter trip data after Feb 2020 was found; LADOT MDS-based data may exist but was not located.",
+    "Metro Bike Share station-level trip totals around 768 Ceres were not computed (data exists; needs download and radius join).",
+    "Parking cost/scarcity evidence is from listing aggregators and marketing blogs only; no official LADOT meter-rate or occupancy study was captured.",
+    "Daytime population / employment and restaurant density in each zone belong to other modalities and were not scoped here."
+  ],
+  "must_ask_hmp": [
+    "Home and work ZIP/neighborhood for the 300+ SF battery-rental subscribers, ~100 whole-vehicle renters, and the 1,000+ buyers, so the 'SF core zone' in the benchmark ratio matches where customers actually come from rather than an assumed SoMa/Mission/TL/FiDi polygon.",
+    "Distribution of distance riders travel to the SF shop for swaps and repairs (sets the defensible catchment radius to apply around 768 Ceres Ave).",
+    "Whether SF riders live inside the delivery zone or commute in from elsewhere (needed to decide if resident demographics are even the right proxy).",
+    "Share of HMP riders who own a car / have household vehicle access (public car-ownership data covers residents, not couriers).",
+    "Hour-of-day and day-of-week pattern of swaps/visits in SF (to judge night-time operation on the Skid Row edge in the site evaluation).",
+    "Any existing LA customer list or LA-origin web/Shopify orders (ZIP codes) as a direct demand signal."
+  ],
+  "surprises": [
+    "Site ZIP 90021 has only 2,897 residents (ACS 2024 5-yr) at 1,465/sq mi - the depot sits in a near-empty industrial pocket; the rider population must come from adjacent ZIPs (Skid Row/Arts District 90013, Little Tokyo 90012, Fashion District 90015, Boyle Heights 90033).",
+    "DTLA population snippets (65,211 / 61,000) are BELOW the prior 80-90k, yet the DTLA Alliance's 100,000 residential units implies a far larger figure for its wider boundary - the prior number is not wrong so much as boundary-undefined.",
+    "Koreatown figure derived from Mapping L.A. (124,281 in 2008, 2.7 sq mi) is above the prior ~110k+; and Westlake is reported at 116,376 (2024, unverified), i.e. roughly Koreatown-sized and closer to 768 Ceres than Koreatown - Westlake may deserve equal weight.",
+    "DTLA Alliance survey: 46% of DTLA residents drive alone to work and 23% work from home; only 23% walk/bike/transit - resident car reliance is higher than the 'cars are disadvantaged' prior would suggest (caveat: residents, not couriers)."
+  ]
+}

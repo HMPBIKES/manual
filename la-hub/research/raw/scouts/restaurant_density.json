@@ -1,0 +1,211 @@
+{
+  "modality": "restaurant_density",
+  "sources": [
+    {
+      "name": "LA County DPH Environmental Health - Restaurant and Market Inventory (ArcGIS Hub)",
+      "url": "https://data.lacounty.gov/datasets/4f31c9a99e444a40a3806e3bbe7b5fdd",
+      "contains": "Inventory of all active food facilities (restaurants and markets) permitted by LA County Environmental Health. Fields confirmed via hub.arcgis.com/api/v3/datasets/4f31c9a99e444a40a3806e3bbe7b5fdd: FACILITY ID, FACILITY NAME, PROGRAM NAME, PROGRAM ELEMENT, PE DESCRIPTION (facility type / seat-count / risk class), FACILITY ADDRESS, FACILITY CITY, FACILITY STATE, FACILITY ZIP, FACILITY LATITUDE, FACILITY LONGITUDE, OWNER ID/NAME/ADDRESS. Coverage: unincorporated LA County plus 85 of 88 cities (excludes Pasadena, Long Beach, Vernon) - so City of LA (DTLA, Koreatown) is included. Updated quarterly. Has lat/long, so radius counts around 768 Ceres Ave are possible. Record count not shown in the metadata I retrieved; must download to count. No neighborhood field - needs spatial join to neighborhood polygons.",
+      "granularity": "facility-level point data (lat/long), county-wide",
+      "year": "snapshot titled 07/01/2026 in API (search listing showed a 04/01/2026 edition; metadata 'last item modified' 2025-01-01)",
+      "headline_datapoints": [
+        "Dataset title: 'Environmental Health Restaurant and Market Inventory 07/01/2026' (quarterly snapshot)",
+        "Fields include FACILITY LATITUDE and FACILITY LONGITUDE and PE DESCRIPTION (facility type)",
+        "Coverage: unincorporated areas + 85 of 88 cities in LA County (excludes Pasadena, Long Beach, Vernon)"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "LA County DPH Environmental Health - Restaurant and Market Inspections 07/01/2023 to 06/30/2026 (and companion Violations dataset)",
+      "url": "https://data.lacounty.gov/datasets/19b6607ac82c4512b10811870975dbdc",
+      "contains": "Routine and complaint inspections of restaurants and markets regulated by LA County Environmental Health; companion violations dataset at https://data.lacounty.gov/datasets/5eaea9f89b7549ee841da7617d3a9cba. Not opened; fields not confirmed (likely same facility/PE fields as inventory). Search snippet notes inspection REPORTS conducted on or after 2025-08-25 must now be requested via CPRA, so the open inspections dataset may be truncated after that date.",
+      "granularity": "inspection-level, facility identifiers; lat/long not confirmed",
+      "year": "2023-07-01 to 2026-06-30",
+      "headline_datapoints": [
+        "Snippet: 'reports for restaurant and food market inspections conducted on or after August 25, 2025, must be requested through a California Public Records Act (CPRA) request'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "LA County DPH Environmental Health - View Inspection Results (facility lookup)",
+      "url": "http://publichealth.lacounty.gov/eh/i-want-to/view-inspection-results.htm",
+      "contains": "Per-facility search UI for grades/inspections; not a bulk dataset. Useful only for spot checks.",
+      "granularity": "single facility lookup",
+      "year": "current",
+      "headline_datapoints": [],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "City of LA Open Data - Restaurant and Market Health Inspections (Socrata 29fd-3paw)",
+      "url": "https://data.lacity.org/Community-Economic-Development/Restaurant-and-Market-Health-Inspections/29fd-3paw",
+      "contains": "City-of-LA subset of county inspections. Confirmed via https://data.lacity.org/api/views/29fd-3paw.json: 20 columns incl. facility_name, facility_address, facility_city, facility_zip, pe_description (30 facility types by seat count / risk), program_element_pe (codes 1610-1641), score, grade, program_status. NO latitude/longitude column. STALE: rowsUpdatedAt = 2018-09-10.",
+      "granularity": "inspection-level, address + zip, no lat/long",
+      "year": "rows last updated 2018-09-10 (viewLastModified 2020-12-01)",
+      "headline_datapoints": [
+        "rowsUpdatedAt = 2018-09-10 (dataset not maintained since)",
+        "pe_description has 30 facility-type categories; program_element_pe codes 1610-1641"
+      ],
+      "reliability": "medium",
+      "access": "public_dataset",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "City of LA Office of Finance - Listing of Active Businesses (Socrata 6rrh-rzua)",
+      "url": "https://data.lacity.org/api/views/6rrh-rzua.json",
+      "contains": "All active businesses registered with LA Office of Finance (City of LA only). Confirmed columns: location_account, business_name, dba_name, street_address, city, zip_code, location_description, mailing fields, naics (2007 NAICS), primary_naics_description, council_district, location_start_date, location_end_date, location_1 (lat/long location type). Computed regions: zip codes, council districts, census tracts, precincts, specific plans, neighborhood councils. Updated monthly. Allows NAICS 722 (food services) filtering and radius counts around 768 Ceres; also non-restaurant merchant density (grocery, pharmacy). Caveat: NAICS self-reported at registration, coordinates completeness not verified.",
+      "granularity": "business-location-level point data with NAICS, City of LA only",
+      "year": "rowsUpdatedAt = 2026-06-04 (monthly)",
+      "headline_datapoints": [
+        "rowsUpdatedAt 2026-06-04; has location_1 (lat/long) and naics + primary_naics_description columns",
+        "Computed region: neighborhood councils (e.g., Wilshire Center-Koreatown NC, Downtown LA NC) usable as neighborhood proxy"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "SF DPH - Health Inspection Scores (2024-Present) (Socrata tvy3-wexg)",
+      "url": "https://data.sfgov.org/api/views/tvy3-wexg.json",
+      "contains": "Current SF DPH food facility inspections 2024 onward. Confirmed columns: inspection_date, district, subdistrict, subsector, permit_number, dba, permit_type (facility type), street_address, inspection_type, facility_rating_status (Pass / Conditional Pass / Closure), violation_count, violation_codes, latitude, longitude, point, analysis_neighborhood, supervisor_district, data_as_of. Dedupe on permit_number to get active facility counts by Analysis Neighborhood (South of Market, Mission, Tenderloin, Financial District/South Beach).",
+      "granularity": "inspection-level with facility lat/long and Analysis Neighborhood",
+      "year": "2024-present; rowsUpdatedAt = 2026-09-06",
+      "headline_datapoints": [
+        "rowsUpdatedAt 2026-09-06; includes latitude, longitude, point, analysis_neighborhood, permit_type",
+        "Rating is categorical (Pass / Conditional Pass / Closure), not numeric score"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "SF DPH - Food Inspections LIVES Standard (Socrata pyih-qa8i)",
+      "url": "https://data.sfgov.org/Health-and-Social-Services/Food-Inspections-LIVES-Standard/pyih-qa8i",
+      "contains": "Legacy 2016-2019 inspections with business_id, business_name, business_address, business_latitude, business_longitude, business_location, inspection_score, risk_category, plus computed Analysis Neighborhoods / SF Find Neighborhoods. Metadata states 'this dataset is no longer being updated'. Useful only as a historical benchmark.",
+      "granularity": "inspection-level with lat/long and Analysis Neighborhoods",
+      "year": "2016-2019; rowsUpdatedAt = 2021-09-24",
+      "headline_datapoints": [
+        "Metadata: 'this dataset is no longer being updated but will remain on the open data portal'",
+        "rowsUpdatedAt 2021-09-24"
+      ],
+      "reliability": "medium",
+      "access": "public_dataset",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "SF Treasurer & Tax Collector - Registered Business Locations - San Francisco (Socrata g8m3-pdis)",
+      "url": "https://data.sfgov.org/api/views/g8m3-pdis.json",
+      "contains": "One row per registered business location. Confirmed columns: dba_name, full_business_address, business_zip, dba_start_date, dba_end_date, location_start_date, location_end_date, administratively_closed, self_reported_naics_code, lic / lic_code_description / lic_code_descriptions_list (includes DPH food permits), location (point), business_corridor, supervisor_district, neighborhoods_analysis_boundaries (Analysis Neighborhoods), data_as_of. Directly comparable to LA 6rrh-rzua for SF-vs-LA merchant density by NAICS within neighborhoods.",
+      "granularity": "business-location-level point data with NAICS and Analysis Neighborhood",
+      "year": "rowsUpdatedAt = 2026-09-06",
+      "headline_datapoints": [
+        "rowsUpdatedAt 2026-09-06; has location (point), self_reported_naics_code, neighborhoods_analysis_boundaries"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "SF.gov - Get restaurant health inspection results / Food Safety program page",
+      "url": "https://www.sf.gov/get-restaurant-health-inspection-results",
+      "contains": "Program description; search snippet gives the size of SF DPH's inspected food-facility universe. Not opened directly.",
+      "granularity": "city-wide total",
+      "year": "current page (undated)",
+      "headline_datapoints": [
+        "Snippet: 'Environmental Health food safety inspectors inspect over 7,000 locations in San Francisco, including restaurants, bars, markets, bakeries, pushcarts, and stadium food facilities'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Koreatown restaurant count - travel/guide reporting (resident.com 2026 guide; Wikipedia Koreatown article)",
+      "url": "https://resident.com/los-angeles/2026/06/03/72-hours-in-koreatown-los-angeles-the-ultimate-guide-to-food-spas-and-nightlife",
+      "contains": "Search snippet (attribution among results not certain; most likely the resident.com June 2026 guide) states Koreatown's area and a restaurant count. Wikipedia (https://en.wikipedia.org/wiki/Koreatown,_Los_Angeles) claims highest concentration of restaurants and nightclubs in Southern California, many open 24 hours. No primary source cited; treat as unverified until cross-checked against the county inventory dataset.",
+      "granularity": "neighborhood total",
+      "year": "2026 (guide); Wikipedia undated",
+      "headline_datapoints": [
+        "Snippet: 'Koreatown occupies a dense 2.7-square-mile area that holds more than 700 restaurants' (2026 guide, unverified)",
+        "Snippet: Koreatown 'is said to have the highest concentration of restaurants and nightclubs in all of Southern California, many of which are open 24 hours'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Uber Eats neighborhood merchant listing pages - Koreatown and Downtown LA",
+      "url": "https://www.ubereats.com/neighborhood/koreatown-los-angeles-ca",
+      "contains": "Uber Eats public neighborhood pages listing merchants delivering in Koreatown (also https://www.ubereats.com/neighborhood/downtown-los-angeles-ca). Could yield a platform-side merchant count per neighborhood but pages are JS-rendered and would need scraping (ToS risk); not opened.",
+      "granularity": "neighborhood merchant list",
+      "year": "live",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "requires_scraping",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "LA Elite Rentals blog - Best DoorDash & Uber Eats Pickup Zones in LA / Best Neighborhoods for Food Delivery Tips",
+      "url": "https://laeliterentals.com/best-doordash-uber-eats-pickup-zones-in-la/",
+      "contains": "Courier-oriented blog (car-rental marketing) describing qualitative delivery hotspots: Koreatown late-night, DTLA all day (office lunch + high-rise dinner), Fashion District and Little Tokyo short trips. No numbers. Companion post: https://laeliterentals.com/best-neighborhoods-for-food-delivery-tips-in-los-angeles/",
+      "granularity": "qualitative neighborhood",
+      "year": "undated (recent)",
+      "headline_datapoints": [
+        "Snippet: 'Koreatown is a nonstop delivery hotspot, especially during late-night hours'; 'DTLA is one of the most active DoorDash and Uber Eats zones'; 'Fashion District and Little Tokyo offering a steady flow of short, profitable deliveries'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "DTLA Alliance (formerly Downtown Center BID) - Reports & Research (Quarterly Market Report) and Restaurant Guide",
+      "url": "https://downtownla.com/business/reports-and-research",
+      "contains": "DTLA Alliance publishes a Quarterly Market Report and a 2026 state-of-downtown report; restaurant guide at https://downtownla.com/explore/dining-and-drinks/restaurant-guide could be counted. Not opened; no restaurant total captured.",
+      "granularity": "DTLA-wide",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Snippet: Downtown LA has had 'over 100 new restaurant and bar openings over the past couple of years'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "6"]
+    },
+    {
+      "name": "data.gov catalog mirror - City of Los Angeles Restaurant and Market Health Inspections / Violations",
+      "url": "https://catalog.data.gov/dataset/restaurant-and-market-health-inspections",
+      "contains": "Federal catalog mirror of the stale City of LA Socrata datasets (29fd-3paw and violations). Same limitations (2018 cutoff, no lat/long).",
+      "granularity": "inspection-level",
+      "year": "through 2018",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "public_dataset",
+      "relevant_tasks": ["1"]
+    }
+  ],
+  "gaps": [
+    "No public source gives delivery ORDER volume or platform merchant counts by LA neighborhood; restaurant density is a proxy that still needs an orders-per-restaurant and deliveries-per-courier conversion from other modalities.",
+    "LA County inventory record count and the share of rows with valid lat/long are unconfirmed; the dataset must be downloaded to count facilities within 1/2/3 miles of 768 Ceres Ave and inside DTLA/Koreatown polygons.",
+    "LA datasets carry no neighborhood field; DTLA vs Koreatown vs Westlake counts require a spatial join to neighborhood boundaries (e.g., LA Times Mapping L.A. polygons or LA City neighborhood-council boundaries) - boundaries not retrieved in this pass.",
+    "No authoritative Koreatown or DTLA restaurant totals found; the '700+ restaurants / 2.7 sq mi' Koreatown figure comes from a travel guide and is unverified.",
+    "LA County inspection REPORTS on/after 2025-08-25 now require a CPRA request; freshness of the open inspections dataset after that date is unverified (inventory snapshot still appears quarterly).",
+    "Ghost kitchens / virtual brands (a large DTLA/Koreatown delivery supply source) cannot be distinguished from dine-in restaurants in either county inventory or business-license data without manual tagging by PE description or address clustering.",
+    "SF and LA facility taxonomies differ (SF permit_type vs LA PE DESCRIPTION), so like-for-like SF-vs-LA counts need a harmonized definition (e.g., NAICS 7225 in both business-license datasets as the cleaner comparison).",
+    "Uber Eats / DoorDash neighborhood merchant pages exist but only via scraping; no press release with LA neighborhood-level merchant or order counts was found in this pass."
+  ],
+  "must_ask_hmp": [
+    "Geocoded (or zip-level) home and primary-work locations for the ~1,000 SF buyers, ~300 battery renters and ~100 vehicle renters, so the SF core-zone restaurant count can be converted into an observed customers-per-restaurant ratio for task 2.",
+    "Which SF neighborhoods customers actually deliver in (their platform zone / hotspot), distinct from where they live, to define the SF comparison polygon correctly.",
+    "Self-reported platform mix (DoorDash / Uber Eats / Grubhub) and average deliveries per shift among SF customers, to anchor the restaurants-to-riders conversion.",
+    "Any existing LA-area orders, inquiries or leads by zip code (web store ship-to, Instagram DMs) as an independent early demand signal for DTLA/Koreatown.",
+    "Whether HMP already has courier-community contacts (WhatsApp/KakaoTalk groups) in Koreatown who could provide platform screenshots of merchant density / order heat maps."
+  ],
+  "surprises": [
+    "LA County's open data portal (data.lacounty.gov) is now ArcGIS Hub, not Socrata; the Socrata-style https://data.lacounty.gov/api/views/<id>.json endpoint suggested in the brief does not apply - use https://hub.arcgis.com/api/v3/datasets/<id> instead. The City of LA Socrata mirror of inspections (29fd-3paw) has been dead since 2018-09-10 and has no coordinates.",
+    "LA County DPH has restricted inspection reports dated on/after 2025-08-25 to CPRA requests, so the county inspection dataset is less current than expected; the quarterly facility INVENTORY (with lat/long) is the usable density source instead.",
+    "SF's well-known LIVES inspections dataset (pyih-qa8i) stopped in 2019; a successor dataset (tvy3-wexg, 2024-present, rows updated 2026-09-06) exists with lat/long and analysis_neighborhood, and switched from numeric scores to Pass/Conditional Pass/Closure.",
+    "Both cities have current, monthly-or-better business-license datasets with NAICS and coordinates (LA 6rrh-rzua updated 2026-06-04; SF g8m3-pdis updated 2026-09-06), giving a cleaner apples-to-apples restaurant-density method than health inspections."
+  ]
+}

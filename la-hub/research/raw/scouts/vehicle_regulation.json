@@ -1,0 +1,372 @@
+{
+  "modality": "vehicle_regulation",
+  "sources": [
+    {
+      "name": "California DMV - Motorcycles, Mopeds, and Scooters (registration page)",
+      "url": "https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/motorcycles-mopeds-and-scooters/",
+      "contains": "DMV plain-language definitions of motorcycle (CVC 400), motor-driven cycle (CVC 405), moped/motorized bicycle (CVC 406), motorized scooter (CVC 407.5); registration, license class, insurance, age, helmet requirements per class",
+      "granularity": "per vehicle class, statewide",
+      "year": "2026 (page copyright)",
+      "headline_datapoints": [
+        "Moped (CVC 406): 'A moped has 2-3 wheels and an electric motor with an automatic transmission that produces less than 4 gross brake horsepower.' Requires M1 or M2 license; registration required with special plate/ID card; '$23 one-time registration fee'; DMV states insurance is not required to register a moped; min age 16; helmet required.",
+        "Motor-driven cycle (CVC 405): DMV paraphrase 'engine size smaller than 149 cc'; registration required, M1 license required, insurance required.",
+        "Motorcycle (CVC 400): DMV paraphrase 'engine size larger than 150 cc'; registration + insurance required. NOTE: the WebFetch summary table rendered the motorcycle license row as 'Class C (or M1 for 3-wheel)', which is almost certainly inverted (Class C covers 3-wheel/sidecar; 2-wheel motorcycle needs M1) - verify directly on the page."
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "SB 1271 (2024) - Electric bicycles, powered mobility devices, and storage batteries (bill text, leginfo)",
+      "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1271",
+      "contains": "Amended CVC 312.5 e-bike definition (fully operable pedals, motor 750 W or less, throttle only on Class 2 capped at 20 mph); battery/e-bike/charging-system accredited-lab certification requirement for sale or lease; State Fire Marshal rulemaking mandate",
+      "granularity": "statute, statewide",
+      "year": "2024 (definition changes effective 2025-01-01; battery certification effective 2026-01-01 per secondary sources)",
+      "headline_datapoints": [
+        "Snippet: 'Commencing January 1, 2026, the State Fire Marshal must adopt regulations promoting fire and electrical safety of electric bicycles and powered mobility devices, and prohibits distributing, selling, or leasing electric bicycles or powered mobility devices unless the storage battery has been tested by an accredited testing laboratory for compliance with a specified standard.'",
+        "Secondary summary: certification to UL 2849 or EN 15194 (or an OSFM-adopted standard); product must carry permanent mark showing testing lab and standard met.",
+        "Secondary summary: 'Anything over 750W (or capable of over 20 mph on motor power alone) doesn't meet California's e-bike definition and legally can't be sold or labeled as one.'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4", "6"]
+    },
+    {
+      "name": "AB 545 (2025) - e-bike classification clarification (LegiScan chaptered text; Assembly Transportation analysis)",
+      "url": "https://legiscan.com/CA/text/AB545/id/3261576",
+      "contains": "2025 follow-on to SB 1271 clarifying e-bike classification; Assembly Transportation committee analysis at https://atrn.assembly.ca.gov/system/files/2025-04/ab-545-davies.pdf",
+      "granularity": "statute, statewide",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'Approved by Governor July 14, 2025. This bill follows a similar bill from 2024 that clarified California's e-bike classification system and further defines e-bikes as having fully operable pedals and a motor of 750 watts or less.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "SB 455 (2025-2026, Blakespear) - Electric bicycles / 'low-power moped' labeling (leginfo bill page)",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB455",
+      "contains": "Bill revising device definitions, renaming motorized bicycles as mopeds / low-power mopeds, and a manufacturer/distributor permanent-label requirement; status as of 2026-09-06 not confirmed (LegiScan copy found was an 'Amended' version)",
+      "granularity": "statute, statewide",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Snippet: 'This bill revises the definitions of described devices and refers to motorized bicycles as mopeds or low-power mopeds, and commencing July 1, 2026, requires manufacturers and distributors of low-power mopeds to apply an etching, an engraving, or a label that is permanently affixed to each low-power moped that contains a statement that the device is a low-power moped and not an electric bicycle.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "AB 875 (2025) - impound of non-compliant high-power two/three-wheelers (secondary summary, bikeeffect.com)",
+      "url": "https://bikeeffect.com/news/california-e-bike-rules-explained/",
+      "contains": "Consumer-facing summary of 2025-2026 CA e-bike rule changes incl. AB 875 impound authority; leginfo text not fetched",
+      "granularity": "statewide",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "Snippet: 'Effective January 1, 2026, police may impound a vehicle for a minimum of 48 hours if it's either a Class 3 e-bike operated by someone under 16, or a non-compliant, high-power two- or three-wheeled vehicle.'",
+        "Snippet: 'Class 2 is now the only class that allows a throttle, capped at 20 mph. Class 3 provides pedal assist up to 28 mph with no throttle allowed.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "AB 1774 (2024) - ban on e-bike speed-modification devices (CalBike / Bike Legal summaries)",
+      "url": "https://www.bikelegalfirm.com/california-e-bike-laws",
+      "contains": "Summary of AB 1774 (signed July 2, 2024): prohibits selling/installing devices that modify e-bike speed beyond class limits; tampering above 28 mph",
+      "granularity": "statewide",
+      "year": "2024 (effective 2025-01-01)",
+      "headline_datapoints": [
+        "Snippet: 'The governor signed AB 1774 into law on July 2, 2024.'",
+        "Snippet: 'Laws such as AB 1774 prohibit altering the bike's speed capability beyond its assigned class. Selling or installing speed-modification kits is also prohibited.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "CalBike - E-Bike Bills and Regulations Update (2024 session tracker)",
+      "url": "https://www.calbike.org/e-bike-bills-and-regulations-update/",
+      "contains": "Status of 2024 e-bike bills as of June 18, 2024: SB 1271, AB 1774, AB 1778 (Marin under-16 pilot), AB 2234 (San Diego County under-12 pilot through 2029), AB 1773 (failed)",
+      "granularity": "bill-level, statewide",
+      "year": "2024 (published 2024-06-18; stale on final outcomes)",
+      "headline_datapoints": [
+        "AB 2234: 'San Diego County pilot allowing local jurisdictions to prohibit riders under 12 on Class I/II e-bikes through 2029' (status on page: advancing/amended - final outcome not on page).",
+        "AB 1778: would extend Class 3 restrictions to Class 2 via a Marin County pilot banning riders under 16 (status on page: advancing)."
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "CalBike - E-Bikes on the Agenda for California Legislature in 2025",
+      "url": "https://www.calbike.org/e-bikes-on-the-agenda-for-california-legislature-in-2025/",
+      "contains": "Advocacy overview of 2025 session e-bike bills (SB 455 etc.); not fetched",
+      "granularity": "bill-level, statewide",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'CalBike is most hopeful for SB 455 (Blakespear), which strengthens existing e-bike regulations and would penalize manufacturers and dealers selling high-speed motorized bikes to underage riders as e-bikes.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "CHP - Motorcycles and Similar Vehicles (California Motorcyclist Safety Program)",
+      "url": "https://www.chp.ca.gov/programs-services/programs/california-motorcyclist-safety/motorcycles-and-similar-vehicles",
+      "contains": "CHP explainer distinguishing motorcycles, motor-driven cycles, mopeds, motorized scooters, e-bikes; likely covers helmet and roadway restrictions; not fetched",
+      "granularity": "per vehicle class, statewide",
+      "year": "unknown",
+      "headline_datapoints": [
+        "URL surfaced in search only; no content captured."
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "SB 1107 (2022) - Vehicles: insurance (raised minimum financial responsibility limits, effective 2025-01-01)",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB1107",
+      "contains": "Statute raising CA minimum liability limits from 15/30/5 to 30/60/15 for private passenger, commercial and recreational vehicles; applies to registered motorcycles",
+      "granularity": "statewide",
+      "year": "2022 (effective 2025-01-01)",
+      "headline_datapoints": [
+        "Snippet (AIS/Coverage Criteria): 'Starting January 1, 2025, these limits doubled under Senate Bill 1107' to '$30,000 for bodily injury per person, $60,000 per accident, and $15,000 for property damage'.",
+        "Snippet: 'California requires all registered motorcycles to carry minimum liability insurance of 30/60/15 (as of January 1, 2025).' Riding without insurance violates CVC 16029."
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "DoorDash Help - How to Add a New Vehicle Dash Type or Switch Between Vehicle Dash Types",
+      "url": "https://help.doordash.com/en-us/dashers/article/switching-dash-types",
+      "contains": "List of DoorDash dash types (Car, Motorcycle, Scooter, Bicycle) and note that availability is market-dependent; how to switch",
+      "granularity": "platform policy, market-dependent",
+      "year": "2026 (current help center)",
+      "headline_datapoints": [
+        "Snippet: 'DoorDash offers the following dash types: Car (motorized), Motorcycle (motorized), Scooter (motorized), and Bicycle. However, dash types available to you are dependent on your market.'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "DoorDash Help - Can I dash on a bike, scooter, or by walking?",
+      "url": "https://help.doordash.com/en-us/dashers/article/can-i-dash-on-a-bike-scooter-or-by-walking",
+      "contains": "Brief FAQ; confirms bike/scooter dashing is market-dependent; no license/insurance/radius detail",
+      "granularity": "platform policy",
+      "year": "2026",
+      "headline_datapoints": [
+        "Verbatim: 'Depending on your local market, you may be able to use scooters or bikes to dash.'",
+        "Page does NOT state motorcycle eligibility, insurance/registration requirements, or whether bike dashers receive shorter-radius orders."
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "DoorDash Dasher Central - Requirements (dasher.doordash.com) / Help 'Requirements for Dashing'",
+      "url": "https://dasher.doordash.com/en-us/requirements",
+      "contains": "Baseline Dasher requirements: age, license/insurance for car, bike needs no license/insurance",
+      "granularity": "platform policy, US",
+      "year": "2026",
+      "headline_datapoints": [
+        "Snippet: 'You can use a car to deliver, provided you have a valid domestic driver's license and valid personal auto insurance.'",
+        "Snippet: 'For bike delivery, you must be at least 18 years old ... you do NOT need a driver's license or vehicle insurance for bike delivery.'",
+        "Snippet: 'In most markets, you'll get the most orders if you dash with a car ... certain areas are more favorable to dash with a bike instead.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "Uber - Become a food delivery driver in Los Angeles, CA (vehicle requirements)",
+      "url": "https://www.uber.com/us/en/e/deliver/los-angeles-ca-us/",
+      "contains": "Uber Eats LA-specific requirements for car, scooter, bicycle, on-foot delivery; no motorcycle option listed",
+      "granularity": "city (Los Angeles)",
+      "year": "2026",
+      "headline_datapoints": [
+        "Scooter (LA): minimum age 21; 'motorized scooter under 50cc'; valid driver's license in applicant's name; select 'Delivery by scooter' at signup.",
+        "Bicycle (LA): minimum age 18; government-issued ID; 'Delivery by bicycle'. Walking available 'in certain cities'.",
+        "Motorcycles: not mentioned anywhere on the LA page. Car: age 21, '2-door or 4-door car'."
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "Uber - Become a Delivery Driver Using Uber Eats (national) + Driversnote summary",
+      "url": "https://www.uber.com/us/en/deliver/",
+      "contains": "National Uber Eats requirements; secondary summaries (driversnote, savingadvice) add DMV registration and state-minimum liability insurance requirement for scooter mode",
+      "granularity": "platform policy, US",
+      "year": "2024-2026",
+      "headline_datapoints": [
+        "Snippet: 'Your motorized scooter must have an engine size below 50cc, so motorcycles typically won't qualify.'",
+        "Snippet: 'You must properly register any scooter with your state's department of motor vehicles' and 'purchase at least the state minimum in driver liability insurance coverage.'",
+        "Snippet (other CA cities): scooter age minimum 19 - conflicts with LA page (21); verify per city."
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "UpCodes - California Fire Code 2022, Chapter 12 Energy Systems (Section 1207 ESS)",
+      "url": "https://up.codes/viewer/california/ca-fire-code-2022/chapter/12/energy-systems",
+      "contains": "Full text of 2022 CFC Chapter 12 incl. Section 1207 Electrical Energy Storage Systems, thresholds Table 1207.1.3, permits, mobile ESS; superseded by 2025 CFC on 2026-01-01",
+      "granularity": "code section, statewide (LA amends via LAMC Ch. 5 Art. 7)",
+      "year": "2022 (in force through 2025-12-31)",
+      "headline_datapoints": [
+        "Snippet: 'If an ESS's nameplate energy capacity exceeds the thresholds in Table 1207.1.3 (for example, 20 kWh for many lithium-ion systems and 70 kWh for lead-acid types), the installation must comply with Section 1207.'",
+        "Snippet: 'Construction permits shall be obtained for stationary ESS installations and for mobile ESS charging and storage installations covered by Section 1207.10.1.'"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "2025 California Fire Code (Title 24 Part 9, based on IFC 2024) - Section 320 Battery Storage (ICC) and full code on UpCodes",
+      "url": "https://codes.iccsafe.org/s/CAFC2025P1/chapter-3-general-requirements/CAFC2025P1-Pt02-Ch03-Sec320",
+      "contains": "New battery storage section replacing 2022 CFC Sec. 322; covers storage, collection, labeling, fire protection, signage for lithium-ion and other batteries; full 2025 CFC also at https://up.codes/viewer/california/ca-fire-code-2025; DGS change summary at https://www.dgs.ca.gov/BSC/Resources/2025-Title-24-California-Code-Changes; El Dorado County 'significant changes' PDF at https://www.eldoradocounty.ca.gov/files/assets/county/v/1/documents/land-use/building-services-documents/build-codes-policies/2025-california-fire-code.pdf",
+      "granularity": "code section, statewide",
+      "year": "2025 (effective 2026-01-01)",
+      "headline_datapoints": [
+        "Snippet: 'The 2025 California Fire Code takes effect January 1, 2026. The existing amendments in 2022 CFC Section 322 have been replaced with new 2024 IFC Section 320 (amended in 2025 CFC) to address all battery storage regardless of the battery type.'",
+        "Whether Section 320 / Chapter 12 explicitly regulates charging rooms for removable micromobility batteries (vs. storage) was not confirmed in this pass."
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "Code Red Consultants - New CA Fire Code Requirements for Existing Lithium-Ion ESS",
+      "url": "https://coderedconsultants.com/insights/new-ca-fire-code-requirements-for-existing-lithium-ion-ess/",
+      "contains": "Fire-protection consultant explainer on 2025 CFC lithium-ion ESS changes incl. retroactive requirements",
+      "granularity": "statewide code commentary",
+      "year": "2025",
+      "headline_datapoints": [
+        "URL surfaced in search only; content not captured."
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "NYC DCWP / City Council - Local Law 39 of 2023 enforcement press release (reference regime)",
+      "url": "https://www.nyc.gov/site/dca/news/041-24/mayor-adams-speaker-adams-new-enforcement-powers-prevent-sale-dangerous-",
+      "contains": "NYC certification mandate for sale/lease/rental of e-bikes, e-scooters and standalone batteries; 2024 enforcement expansion; FDNY outcome data",
+      "granularity": "city (NYC), reference only",
+      "year": "2023-2024",
+      "headline_datapoints": [
+        "Snippet: 'Local Law 39 went into effect on September 16, 2023.' 'It is illegal to sell, lease, or rent an e-scooter, an e-bike, or a stand-alone lithium-ion battery in the city unless it is certified ... UL 2272 for e-scooters, UL 2849 for e-bikes, and UL 2271 for the batteries.'",
+        "Snippet (ULSE): 'The FDNY reported that battery fire deaths dropped from 18 in 2023 to 6 in 2024.'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "LA Business Navigator - Business Tax Registration Certificate (BTRC) + LA Office of Finance Tax Information Booklet",
+      "url": "https://business.lacity.gov/plan-business/register-your-business/business-tax-registration-certificate",
+      "contains": "City of LA BTRC requirement, online application, temporary certificate, new-business exemption; Office of Finance booklet at https://finance.lacity.gov/tax-information-booklet has rate classes",
+      "granularity": "city (Los Angeles)",
+      "year": "2026",
+      "headline_datapoints": [
+        "Snippet: 'All persons engaged in business in the City of Los Angeles must obtain a Business Tax Registration Certificate (BTRC), unless specifically exempted.'",
+        "Snippet: 'Due to a special business tax exemption, most new businesses do not need to pay business taxes for their first two years of operation.' (eligibility conditions not captured)",
+        "Snippet: temporary BTRC issued online; permanent certificate mailed 'within four weeks'."
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "CDTFA - Online Services Registration (California seller's permit)",
+      "url": "https://cdtfa.ca.gov/services/registration.htm",
+      "contains": "State seller's permit registration for selling or leasing taxable tangible personal property; separate from BTRC",
+      "granularity": "statewide",
+      "year": "2026",
+      "headline_datapoints": [
+        "Snippet: 'A California seller's permit is handled by CDTFA and is usually tied to selling or leasing taxable tangible goods.' Existing SF permit likely needs a new sub-location added for 768 Ceres Ave (not verified)."
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "BikeInsure - Business Bike Fleet Insurance (and Bicycle Retailer 2025-06-27 announcement)",
+      "url": "https://www.bikeinsure.com/fleet",
+      "contains": "Insurtech offering commercial fleet insurance for bikes/e-bikes used in leasing, rentals, subscriptions (damage/theft); announcement at https://www.bicycleretailer.com/announcements/2025/06/27/how-smart-bike-businesses-secure-bikeinsure-commercial-fleet-insurance",
+      "granularity": "insurer product page",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'BikeInsure ... has launched Business Bike Fleet Insurance for commercial use bikes and e-bikes, which has been available since 2021 on a call-in basis.'",
+        "Snippet: 'protects against accidental damage and theft, offering solutions for leasing, rentals, subscriptions'. Does not indicate coverage for registered mopeds/motorcycles."
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Levy Fleets - Scooter Rental Insurance Guide (2026)",
+      "url": "https://fleets.levyelectric.com/blog/scooter-rental-insurance-guide",
+      "contains": "Operator-oriented guide to coverage types (general liability, physical damage, renter liability) for scooter/e-bike rental fleets; names insurers/brokers",
+      "granularity": "industry guide",
+      "year": "2026",
+      "headline_datapoints": [
+        "Snippet: 'Most micromobility rental operators carry general liability coverage, which covers third-party bodily injury and property damage claims arising from operations.'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Founder Shield - Micromobility Business Insurance; Cachet micromobility fleet insurance; USI new-mobility practice (via Atom Mobility article)",
+      "url": "https://foundershield.com/industry/micro-mobility/",
+      "contains": "Brokers/MGAs marketing micromobility fleet coverage: Founder Shield (https://foundershield.com/industry/micro-mobility/), Cachet (https://cachet.me/micromobility-fleet-management/), USI Insurance Services referenced in https://www.atommobility.com/blog/everything-you-need-to-know-about-micromobility-fleet-insurance",
+      "granularity": "broker/insurer marketing pages",
+      "year": "2024-2026",
+      "headline_datapoints": [
+        "Snippet: 'USI Insurance Services is a full-service insurance brokerage with a specialized consulting group for all forms of new mobility, including e-scooter sharing, e-bike sharing, and all on-demand services.'",
+        "Snippet: 'Cachet offers tailored insurance, rental tracking, claims handling, and compliance tools for e-scooter and e-bike fleet management.'",
+        "None of the snippets name a carrier writing California liability policies for a rental fleet of registered electric mopeds/motorcycles (tiers C-D)."
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    }
+  ],
+  "gaps": [
+    "Verbatim statutory text of CVC 400 (motorcycle), 405 (motor-driven cycle: 'less than 15 gross brake horsepower' per prior knowledge) and 406(a) (moped: <4 bhp AND 'maximum speed of not more than 30 miles per hour on level ground' per prior knowledge) was not fetched from leginfo; the DMV page paraphrases in cc, which does not map to electric motors. The 30 mph cap in 406(a) is the decisive line between tier B (moped) and tiers C/D (motor-driven cycle/motorcycle) and must be verified.",
+    "Freeway and lane restrictions were not verified: CVC 21960 (Caltrans may prohibit motor-driven cycles/mopeds on freeways by sign), CVC 21207.5 (e-bike class 3 on bike paths), lane-splitting (CVC 21658.1, legal for motorcycles), and helmet statute (CVC 27803 for motorcycles/motor-driven cycles/mopeds; CVC 21212 under-18 and Class 3 riders).",
+    "Final enacted status and chaptered text of SB 455 (2025-26) and AB 875 (2025) were not confirmed on leginfo; only snippets/secondary summaries found.",
+    "Office of the State Fire Marshal regulations implementing SB 1271 (accepted standards list, marking format, enforcement, whether rentals/subscriptions count as 'lease') were not located.",
+    "Whether Uber Eats treats electric mopeds/motorcycles (no cc rating) as '<50cc scooters' is undocumented publicly; Uber's LA page lists no motorcycle mode. DoorDash's Motorcycle/Scooter dash-type availability in the LA market, and any shorter-radius order logic for bike/scooter dashers, are not published.",
+    "Grubhub courier vehicle policy was not searched.",
+    "LAFD-specific requirements were not found: LAFD Fire Prevention Bureau permit types, LAMC Chapter 5 Article 7 (LA Fire Code) amendments to 2025 CFC, any LAFD guidance on e-bike battery charging rooms, and whether a warehouse charging/swap hub triggers a change of occupancy (S-1/S-2 or F) or high-piled storage review.",
+    "NFPA 855 (2023/2026 edition) chapter applicability to a removable-battery charging/swap facility (vs. stationary ESS) and the 2025 CFC Section 320 / Chapter 12 text for micromobility charging were not read; only that Sec. 320 replaced Sec. 322 on 2026-01-01.",
+    "No public source gives premium levels; insurance availability for a rental fleet of DMV-registered electric mopeds/motorcycles (tiers C-D) with commercial gig-delivery use is unconfirmed - all named providers market to e-bike/e-scooter fleets.",
+    "DMV registration prerequisites for imported electric mopeds/motorcycles (17-digit VIN, Manufacturer's Certificate of Origin, DOT/FMVSS compliance label, CARB on-road status) were not researched; these determine whether tiers B-D can be registered at all.",
+    "LA City BTRC rate class and rate for equipment rental vs. retail, and the exact first-two-year exemption conditions, were not captured.",
+    "AB 2234 and AB 1778 (2024 local age-restriction pilots) final status not confirmed; not directly relevant to adult couriers."
+  ],
+  "must_ask_hmp": [
+    "For each product (HMP FLASH, Lightning MK.II, SWFT MAXX, each e-bike model): rated motor watts / gross brake hp, top speed on motor alone, throttle presence, pedal presence, and how it is currently classified and registered with the DMV in SF (e-bike / CVC 406 moped plate / CVC 405 motor-driven cycle / CVC 400 motorcycle), plus whether each has a 17-digit VIN, MCO, DOT/FMVSS and CARB documentation.",
+    "Which certification (UL 2849 / UL 2271 / EN 15194 / UL 2272) each product and each swap battery/charger currently holds, and the accredited lab and marking - required for any CA sale or lease from 2026-01-01 under SB 1271.",
+    "How SF couriers on HMP vehicles currently sign up on Uber Eats and DoorDash (bike vs scooter vs motorcycle mode), whether Uber has accepted FLASH/Lightning as '<50cc scooters', and observed differences in order radius/pay by mode.",
+    "Current SF insurance program: carrier/broker, coverage form (GL, physical damage, renter liability, hired/non-owned), premium per vehicle by tier, and whether renters carry their own 30/60/15 policies for registered vehicles.",
+    "Current SF battery storage/charging setup (kWh on site, charger count, room construction, SFFD permits held) to compare against 2025 CFC / LAFD requirements at 768 Ceres Ave.",
+    "Share of current riders holding an M1 or M2 license; whether HMP assists with licensing (affects feasibility of tiers B-D)."
+  ],
+  "surprises": [
+    "Uber Eats' Los Angeles sign-up page lists only car, scooter ('motorized scooter under 50cc', age 21, driver's license), bicycle and on-foot - no motorcycle mode. Secondary sources state 'motorcycles typically won't qualify'. This undercuts the prior belief that LA favors 40-70 mph vehicles, at least for Uber Eats couriers, unless HMP has evidence Uber accepts electric mopeds under the 50cc rule.",
+    "Tier B (28-35 mph) is not an e-bike in California at all: after SB 1271 (2024) / AB 545 (2025), an e-bike must have operable pedals, a motor of 750 W or less, throttle only on Class 2 capped at 20 mph; anything faster on motor power is a moped/motor-driven cycle needing M1/M2 license, DMV plate and helmet, and from 2026-01-01 police can impound non-compliant high-power two-wheelers (AB 875, per secondary summary).",
+    "Tiers C and D (40-70+ mph) cannot be CVC 406 mopeds (moped definition capped at 30 mph per prior knowledge - verify); they are motor-driven cycles or motorcycles requiring an M1 license, annual registration, and mandatory liability insurance whose minimums doubled to 30/60/15 on 2025-01-01 (SB 1107) - a per-rider licensing and insurance barrier not present for SF's 20 mph e-bike fleet.",
+    "Even the moped tier (CVC 406) requires an M1 or M2 license and DMV registration ($23 one-time fee); DoorDash's bike mode requires no license, so any move above 20/28 mph shrinks the eligible courier pool to licensed riders.",
+    "SB 1271's battery certification requirement applies to leasing, not just selling, from 2026-01-01 - HMP's LA rental fleet and swap batteries must carry accredited-lab marks (UL 2849/EN 15194 or OSFM-accepted standard); California has effectively adopted the NYC Local Law 39 approach statewide.",
+    "The 2025 California Fire Code took effect 2026-01-01 with a new Section 320 on battery storage replacing 2022 Section 322 - the fire-code baseline for 768 Ceres Ave is the 2025 CFC (IFC 2024 basis), not the 2022 code most consultant guidance still cites.",
+    "SB 455 (if enacted as amended) would require a permanent 'low-power moped, not an electric bicycle' label from manufacturers/distributors commencing 2026-07-01 - directly affects how HMP labels FLASH-class products sold in CA.",
+    "DoorDash does offer a Motorcycle dash type (market-dependent), so DoorDash - not Uber Eats - may be the only major platform where tiers C-D are usable; availability in LA unconfirmed."
+  ]
+}

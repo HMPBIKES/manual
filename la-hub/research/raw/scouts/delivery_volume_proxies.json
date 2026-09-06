@@ -1,0 +1,247 @@
+{
+  "modality": "delivery_volume_proxies",
+  "sources": [
+    {
+      "name": "UCSC Institute for Social Transformation / SF LAFCo - 'On-Demand and On-the-Edge: Ride-hailing and Delivery Workers in San Francisco' (Benner et al., May 2020)",
+      "url": "https://transform.ucsc.edu/on-demand-and-on-the-edge/",
+      "contains": "In-person representative survey of SF app-based ride-hail and delivery workers commissioned by SF LAFCo; earnings, hours, demographics, platform mix, COVID follow-up. PDF link on the page (transform.ucsc.edu/wp-content/uploads/2020/05/OnDemand-n-OntheEdge_MAY2020.pdf) redirected to bpb-us-w2.wpmucdn.com and returned 404 in this pass; landing page itself not opened. Snippets do NOT show a total SF workforce-size estimate - must confirm in full PDF (alternate host: reworkthebay.org/our-work/on-demand-and-on-edge-ride-hailing-and-delivery-workers-in-sf/).",
+      "granularity": "City of San Francisco; sample-level, not a census",
+      "year": "2020 (fieldwork pre-COVID + April-May 2020 follow-up)",
+      "headline_datapoints": [
+        "Survey reached 643 workers with Uber, Lyft, DoorDash, GrubHub, Instacart, and Shipt (May 2020)",
+        "Median earnings before expenses: $900/week ride-hail, $500/week delivery; tips = 30% of delivery worker earnings (May 2020)",
+        "App-based delivery workers averaged $450/week, $270/week after mileage expenses; workforce 56% immigrant, average 40 hours/week; 57% rely entirely on platform work (May 2020)"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2", "1"]
+    },
+    {
+      "name": "phys.org / University of California news - 'Already vulnerable, gig economy workers in SF suffer during pandemic, survey finds'",
+      "url": "https://phys.org/news/2020-05-vulnerable-gig-economy-workers-sf.html",
+      "contains": "Press summary of the UCSC/LAFCo survey above; same n=643 and earnings figures. Useful as a citable fallback if the PDF stays unreachable.",
+      "granularity": "City of San Francisco",
+      "year": "2020",
+      "headline_datapoints": [
+        "643 workers surveyed across Uber, Lyft, Doordash, GrubHub, Instacart, Shipt (May 2020)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "SF Examiner - 'City commission urges new protections, support for gig workers' (SF LAFCo hearing coverage)",
+      "url": "https://sfexaminer.com/news/city-commission-urges-new-protections-support-for-gig-workers",
+      "contains": "Coverage of LAFCo's adoption of the gig-worker study and recommendations; may quote LAFCo's own workforce framing.",
+      "granularity": "City of San Francisco",
+      "year": "2020",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "NELP - 'App-Based Workers Speak: Studies Reveal Anxiety, Frustration, and a Desire for Good Jobs' (Oct 2021)",
+      "url": "https://www.nelp.org/app/uploads/2021/11/App-Based-Workers-Speak-Oct-2021-1.pdf",
+      "contains": "Meta-compilation of worker surveys including the SF LAFCo/UCSC study and a UCLA 2018 Los Angeles study; side-by-side SF vs LA worker characteristics.",
+      "granularity": "City-level summaries (SF, LA) drawn from separate surveys",
+      "year": "2021 (compiling 2018-2020 studies)",
+      "headline_datapoints": [
+        "71 percent of [app-based] workers in Los Angeles are full time; gig work is primary income for two-thirds and sole income for half (UCLA 2018, as cited by NELP 2021)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "DoorDash - 'State of Local Commerce' report (first edition, Nov 10 2025)",
+      "url": "https://about.doordash.com/en-us/news/state-of-local-commerce-2025",
+      "contains": "City-level indices from DoorDash order data: downtown/business-district weekday lunch order trends, Breakfast Basics price index, restaurant retention. Fetched successfully. Companion PDF: https://assets.ctfassets.net/trvmqu12jq2l/KXKeMBlHZmxIVfBeyMBdb/33fce8c0c247dae7516cd9703f261bc4/DoorDash_State_of_Local_Commerce_11-11__1_.pdf ; microsite doordash-local-commerce.com; page mentions a full dataset download but no URL was exposed. No Los Angeles-specific datapoint on the news page; PDF/microsite not opened.",
+      "granularity": "City / metro indices (relative changes, no absolute order counts)",
+      "year": "2025 (window March-Sept 2025; retention vs Sept 2024)",
+      "headline_datapoints": [
+        "'Weekday lunch orders from business districts are slowly rising in more than 50% of cities nationally'; national increase 2.5% (Nov 2025)",
+        "Chandler, AZ and San Francisco, CA lead the downtown weekday-lunch rebound with increases more than 6x the national rate (Nov 2025)",
+        "Breakfast Basics Index down 14% between March and September 2025"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "DoorDash - 'Takeout in... Bed? New Data from DoorDash Showcases Latest Trends in Food Delivery' (city order-volume ranking)",
+      "url": "https://about.doordash.com/en-us/news/new-data-from-doordash-showcases-latest-trends",
+      "contains": "DoorDash's own ranked list of highest-order-volume metros. Ranking only, no absolute volumes; publication year not visible in snippet (appears pre-2021). Page not opened.",
+      "granularity": "Metro ranking (greater LA, SF Bay Area etc.), no neighborhood split",
+      "year": "unknown from snippet (likely 2019-2020)",
+      "headline_datapoints": [
+        "'The highest volume of orders come from greater Los Angeles, the New York metropolitan area, the San Francisco Bay Area, Chicago, Houston, Philadelphia, Atlanta, Dallas, Detroit, Denver, and Boulder' (date not shown in snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "DoorDash Dasher Central - 'Dash Report 2025'",
+      "url": "https://dasher.doordash.com/en-us/dash-report-2025",
+      "contains": "National Dasher counts and earnings; may include state/city Dasher stats deeper in the page (not verified).",
+      "granularity": "National (city detail unverified)",
+      "year": "2025",
+      "headline_datapoints": [
+        "'More than 8 million people chose to dash in 2025, earning nearly $20 billion' (2025)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "DoorDash 2025 U.S. Economic Impact Report (Public First) + microsite",
+      "url": "https://about.doordash.com/en-us/news/2025-eir",
+      "contains": "National economic-impact figures; the Public First microsite (https://doordash2025.publicfirst.co/) typically offers state and congressional-district drilldowns that could give California / LA-area Dasher counts (not verified in this pass).",
+      "granularity": "National; possibly state/district on microsite",
+      "year": "2025",
+      "headline_datapoints": [
+        "DoorDash supported more than $130 billion in U.S. economic activity in 2025, nearly $25 billion in tax revenues, more than 1.5 million FTE jobs (2025)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "DoorDash - 'Thanks to California's Prop 22 Dashers are Doing Better than Ever'",
+      "url": "https://about.doordash.com/en-us/news/dashers-doing-better-than-ever-under-prop-22",
+      "contains": "California and Los Angeles Dasher hourly earnings claims under Prop 22; company-sourced.",
+      "granularity": "State and Los Angeles metro",
+      "year": "2024 (reporting 2023 data)",
+      "headline_datapoints": [
+        "'Los Angeles Dashers earned around $35 per hour while on deliveries in 2023, a 39% increase from 2020'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "CloudKitchens - Los Angeles locations page and Koreatown facility page",
+      "url": "https://cloudkitchens.com/locations/los-angeles",
+      "contains": "Operator-published list of CloudKitchens ghost-kitchen facilities in LA with addresses and kitchen sizes; Koreatown page at https://cloudkitchens.com/locations/los-angeles/koreatown ; neighborhood-selection blog at https://cloudkitchens.com/blog/best-location-for-ghost-kitchen-in-los-angeles . Direct fetch returned HTTP 403 (bot-blocked).",
+      "granularity": "Facility / street address",
+      "year": "2026 (live page)",
+      "headline_datapoints": [
+        "'CloudKitchens currently operates 11 ghost kitchens in Los Angeles, including locations in Long Beach and Koreatown' (snippet, 2026)",
+        "Koreatown location listed at 1842 W Washington Blvd, Los Angeles, CA 90007; 'larger kitchens around 220 sq ft, built to fulfill higher order volumes' (snippet, 2026)"
+      ],
+      "reliability": "medium",
+      "access": "requires_scraping",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "LAist - 'Your guide to why a ghost kitchen may have made that takeout' + We Like LA '23 L.A. Ghost Kitchens' list",
+      "url": "https://laist.com/news/food/your-guide-to-why-a-ghost-kitchen-may-have-made-that-takeout-from-your-favorite-restaurant",
+      "contains": "Journalistic overview of LA ghost-kitchen landscape (CloudKitchens, DTLA Kitchens etc.); We Like LA list (https://www.welikela.com/23-l-a-ghost-kitchens-with-exciting-options-for-delivery-takeout/) names individual facilities. Neither gives a systematic count by neighborhood.",
+      "granularity": "Named facilities, anecdotal",
+      "year": "undated in snippet (approx. 2021-2023)",
+      "headline_datapoints": [],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Placer.ai Office Index (May 2025 edition and later monthly editions) via Placer.ai Anchor blog and IREI coverage",
+      "url": "https://www.placer.ai/anchor/articles/placer-ai-may-2025-office-index",
+      "contains": "Metro-level office foot-traffic recovery vs 2019 for LA, SF and other markets; IREI summary at https://irei.com/news/placer-ai-west-coast-leads-office-foot-traffic-rebound/ . No DTLA- or Koreatown-specific series in public posts; neighborhood/POI-level data needs the Placer platform (analytics.placer.ai, paid) or the free POI lookup tool (https://www.placer.ai/free-tools/points-of-interest, one POI at a time).",
+      "granularity": "Metro (office buildings); neighborhood only via paid platform",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "'Los Angeles recorded the highest year-over-year growth among markets analyzed, with visits rising 16.6 percent in March, though still down 36.1 percent compared to March 2019' (IREI/Placer.ai; year of the March not confirmed in snippet - article attributes part of the gain to a weak early-2025 base after the January wildfires)"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Bloomberg Second Measure - Food & Dining data points (public blog) / metro panel (paid)",
+      "url": "https://secondmeasure.com/datapoints/category/food-dining/",
+      "contains": "Public posts give national US meal-delivery market share (DoorDash/Uber Eats/Grubhub) and grocery-delivery trends; metro-level share of spend (LA vs SF) is only in the paid transaction panel. Earnest and YipitData metro cuts not surfaced by search at all.",
+      "granularity": "National (public); metro (paywalled)",
+      "year": "2024-2026 (rolling)",
+      "headline_datapoints": [
+        "'Metropolitan areas show a greater reliance on food and grocery delivery services' (grocery post, undated in snippet)"
+      ],
+      "reliability": "high",
+      "access": "paywalled",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "UCLA Labor Center gig-economy estimate for Los Angeles County (as cited by a law-firm page; primary UCLA report not located)",
+      "url": "https://workercomplaw.com/gig-workers-comp-attorneys-los-angeles/",
+      "contains": "Secondary citation of a UCLA Labor Center estimate of total gig-economy workers in LA County; covers all gig work, not app-based food delivery specifically. Primary source should be located at https://labor.ucla.edu/.",
+      "granularity": "Los Angeles County, all gig work",
+      "year": "undated citation (UCLA study likely 2018-2021)",
+      "headline_datapoints": [
+        "'about 450,000 workers in Los Angeles County alone were employed in the gig economy' (UCLA Labor Center estimate, as cited; date not shown)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "USC Equity Research Institute / National Equity Atlas - 'Prop 22 Depresses Wages and Deepens Inequities for California Workers'",
+      "url": "https://dornsife.usc.edu/eri/publications/prop-22-depresses-wages-and-deepens-inequities-for-california-workers/",
+      "contains": "Post-Prop 22 pay study of California app-based drivers/couriers; companion page https://nationalequityatlas.org/prop22-paystudy . May contain CA-wide and LA/SF worker-count context and hours/deliveries per week usable for orders-per-rider assumptions (not opened).",
+      "granularity": "California; possibly regional samples",
+      "year": "2022-2023",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "ScienceDirect (2025) - 'Navigating the gig economy: transportation labor challenges facing California's app-based ridehailing and courier drivers'",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214367X25002364",
+      "contains": "Peer-reviewed 2025 paper on California ride-hail and courier drivers; likely cites workforce-size estimates for CA/SF/LA from prior surveys. Not opened; probably paywalled.",
+      "granularity": "California / possibly metro",
+      "year": "2025",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "paywalled",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Uber Eats Cravings Report (annual; US 2022 edition located, US 2025 edition not surfaced)",
+      "url": "https://www.uber.com/us/en/newsroom/uber-eats-cravings-report-2022/",
+      "contains": "Annual consumer-ordering trends; 2025 search results returned only South Africa, Australia and NZ editions plus generic newsroom pages. No LA vs SF order-volume figures seen in any snippet; mostly item-level 'most ordered' lists.",
+      "granularity": "National / occasional city mentions",
+      "year": "2022 (US); 2025 international editions",
+      "headline_datapoints": [],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["1"]
+    }
+  ],
+  "gaps": [
+    "No public source provides absolute order counts for DTLA/Koreatown or for SoMa/Mission/Tenderloin/FiDi; platform year-end reports give metro rankings and relative indices only, so the orders-per-day input to riders = orders/day / orders per rider per day cannot be sourced publicly at neighborhood granularity.",
+    "No SF-specific headcount of app-based delivery couriers was found in this pass: the SF LAFCo/UCSC 2020 study is a sample (n=643) and its PDF was unreachable (redirect to wpmucdn returned 404); whether the full report contains a workforce-size estimate must be checked via the UCSC landing page or the ReWork the Bay mirror.",
+    "Third-party transaction panels (Bloomberg Second Measure, Earnest, YipitData) publish only national market share; LA and SF metro share-of-spend is paywalled, and Earnest/YipitData metro cuts did not surface in search at all.",
+    "Placer.ai public posts cover metro-level office foot traffic only; DTLA and Koreatown neighborhood series need the paid platform or POI-by-POI use of the free lookup tool.",
+    "Google Trends DMA comparison (Los Angeles DMA vs San Francisco-Oakland-San Jose DMA for 'doordash' / 'uber eats') was not run within the search budget; in principle a comparable series exists but it is a relative interest index, not order volume, and must be exported manually from trends.google.com.",
+    "LA courier sign-up waitlists (DoorDash/Uber Eats onboarding status by market) were not searched; SF OLSE gig-worker data was not searched; Grubhub city-level reports were not searched.",
+    "Ghost-kitchen density: only CloudKitchens' self-reported '11 in Los Angeles' was found; Kitchen United and Reef LA footprints (both reportedly restructured) and any DTLA/Koreatown facility count were not established, and the CloudKitchens site blocks automated fetches (HTTP 403).",
+    "DoorDash's State of Local Commerce 2025 references a downloadable dataset and a 90+ page PDF that were not opened; LA-specific downtown-lunch and neighborhood indices may exist there.",
+    "The 'greater Los Angeles' vs 'San Francisco Bay Area' DoorDash ranking is metro-scale and undated in the snippet; it cannot be narrowed to the DTLA+Koreatown vs SF-core comparison frame without HMP-internal or paid data."
+  ],
+  "must_ask_hmp": [
+    "HMP's SF customer base split by primary working zone (SoMa / Mission / Tenderloin / FiDi-South Beach vs elsewhere) and by platform (DoorDash / Uber Eats / Grubhub) - the only reliable SF-side numerator for the benchmark ratio.",
+    "Observed orders per rider per day (and hours per day) among HMP's SF battery-rental and vehicle-rental customers, from customer conversations, app screenshots, or telematics - needed to convert any order-volume proxy into rider counts.",
+    "Battery-swap and vehicle telematics ride heatmaps showing where SF renters actually deliver, to define the SF core zone consistently with the LA zone.",
+    "Any fleet-partner or courier-program data HMP has from DoorDash/Uber Eats (e.g., active-Dasher counts by zone, fleet-partner dashboards) that no public source replicates.",
+    "Geographic origin of existing LA-area inquiries and web orders (Shopify shipping/billing zip codes in 900xx, especially 90005-90007, 90010-90021, 90057) as a bottom-up demand signal for the Ceres Ave hub.",
+    "Which vehicle classes (e-bike vs e-moped vs e-motorcycle) SF couriers in the core zone rent, to judge whether LA's car-dominated, longer-distance delivery geography changes the addressable share."
+  ],
+  "surprises": [
+    "DoorDash's Nov 2025 State of Local Commerce names San Francisco (with Chandler, AZ) as leading the downtown weekday-lunch rebound at more than 6x the national rate - the SF core zone may be growing faster than the CONTEXT's implicit view of SF as a mature baseline, which affects the SF-benchmark ratio.",
+    "DoorDash's own city ranking puts 'greater Los Angeles' first and 'the San Francisco Bay Area' third by order volume, but only at metro scale; nothing found supports a DTLA+Koreatown-specific volume claim.",
+    "Placer.ai/IREI report LA office visits still down 36.1% vs March 2019 even after a 16.6% year-over-year gain, so DTLA weekday office-lunch demand may be structurally below pre-pandemic assumptions.",
+    "The CloudKitchens 'Koreatown' facility is listed at 1842 W Washington Blvd, 90007, which is south of Koreatown proper (Pico-Union / USC-adjacent) - inside the proposed hub's service area, but a warning that operator neighborhood labels are loose.",
+    "The widely cited SF LAFCo/UCSC study appears (from snippets) to report earnings and demographics rather than a citywide courier headcount, so the SF-side denominator may not exist in public form and may have to be built from order-volume proxies or HMP internal data."
+  ]
+}

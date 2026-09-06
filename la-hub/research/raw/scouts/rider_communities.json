@@ -1,0 +1,274 @@
+{
+  "modality": "rider_communities",
+  "sources": [
+    {
+      "name": "Reddit (r/doordash_drivers, r/UberEATS, r/couriersofreddit, r/LosAngeles, r/ebikes, r/electricscooters)",
+      "url": "https://www.reddit.com/r/doordash_drivers/",
+      "contains": "Rider self-reports of $/hr, orders/hr, vehicle choice, theft, Whizz/Zoomo mentions. NOT REACHABLE: WebSearch with allowed_domains=reddit.com returned 'API Error: 400 The following domains are not accessible to our user agent: [reddit.com]' (3 attempts, 2026-09-06). Zero Reddit threads surfaced in 8 general-web searches either.",
+      "granularity": "individual posts/threads; would need manual browsing or Reddit official API",
+      "year": "n/a",
+      "headline_datapoints": [
+        "No Reddit content could be retrieved or quoted in this pass."
+      ],
+      "reliability": "medium",
+      "access": "unavailable",
+      "relevant_tasks": ["1", "3", "4", "5", "6"]
+    },
+    {
+      "name": "YouTube - '33 Bike Deliveries in DTLA with Uber Eats and DoorDash - GoPro POV'",
+      "url": "https://www.youtube.com/watch?v=yUwkVZLbOGo",
+      "contains": "Full-shift GoPro POV of bicycle deliveries in Downtown LA on Uber Eats + DoorDash. Page fetch returned only YouTube footer; channel, views, description, comments not extracted.",
+      "granularity": "single rider, single shift, DTLA",
+      "year": "2020 (search snippet: 'a video from February 2020')",
+      "headline_datapoints": [
+        "Title: '33 Bike Deliveries in DTLA with Uber Eats and DoorDash - GoPro POV' (33 deliveries in one session, per title)",
+        "Search snippet: 'a ride-along showing bike deliveries in Downtown Los Angeles with various adventures and situations that occur in the process' (Feb 2020)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "YouTube - Crank Hustle: 'GoPro Max POV Bike Deliveries with Uber Eats and DoorDash in Downtown Los Angeles'",
+      "url": "https://www.youtube.com/watch?v=ygtVL5_X2XA",
+      "contains": "Channel 'Crank Hustle' POV bike delivery in DTLA; earnings/vehicle details not visible in snippet",
+      "granularity": "single rider, single shift, DTLA",
+      "year": "unknown",
+      "headline_datapoints": [
+        "Title only: 'GoPro Max POV Bike Deliveries with Uber Eats and DoorDash in Downtown Los Angeles - Crank Hustle'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "YouTube - 'Delivering Uber Eats & DoorDash On My Bike Vs. A Car + ...'",
+      "url": "https://www.youtube.com/watch?v=doadzRaTQLM",
+      "contains": "Bike-vs-car delivery comparison vlog; city not confirmed from snippet",
+      "granularity": "single rider comparison",
+      "year": "unknown",
+      "headline_datapoints": [
+        "Title only: 'Delivering Uber Eats & DoorDash On My Bike Vs. A Car + ...'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "TikTok creator @bikedasher (bike/e-bike delivery POVs tagged #california)",
+      "url": "https://www.tiktok.com/@bikedasher/video/7252917535358700843",
+      "contains": "Series of short POV delivery clips tagged #ubereats #doordash #bike #electric #california. Related clips: https://www.tiktok.com/@bikedasher/video/7330846325732379947 ('7 Minutes Raw Delivery POV ... #electric #california'), https://www.tiktok.com/@bikedasher/video/7364231988418563370 ('Delivery Guy POV (ASMR Ride)'), https://www.tiktok.com/@bikedasher/video/7341231712162057515 ('Shortest Food Delivery PoV in History (80Feet)'). Cross-posted to Facebook page 'Bike Dasher' (https://m.facebook.com/61564112430937/videos/butter-smooth-deliveries-pov-part2-food-delivery-doordash-ubereats-bike-work-fyp/846892190843983/). City within California NOT confirmed.",
+      "granularity": "single rider, per-clip (minutes to 30 min)",
+      "year": "unverified; not extractable from snippets",
+      "headline_datapoints": [
+        "Clip title: '4 Deliveries In 30 minutes (30$POV) #food #delivery #ubereats #doordash #pr #bike #work #california #fyp' (implies $30 for 4 deliveries in 30 min, per creator's own title)",
+        "Clip title: '7 Minutes Raw Delivery POV #food #delivery #pov #bike #doordash #ubereats #electric #california #work #pov'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "TikTok discover page - 'How to Start Uber Eats on A Bike Los Angeles'",
+      "url": "https://www.tiktok.com/discover/how-to-start-uber-eats-on-a-bike-los-angeles",
+      "contains": "Aggregation of LA bike-delivery TikToks; snippet mentions 'posts about Uber Eats food bike delivery in DTLA Downtown Los Angeles' and 'how much can be made delivering food by bike in Los Angeles'. Companion page: https://www.tiktok.com/discover/ebike-doordash",
+      "granularity": "many short creator clips; requires scraping to enumerate",
+      "year": "rolling (page aggregates current content)",
+      "headline_datapoints": [
+        "Snippet: content exists on 'Uber Eats food bike delivery in DTLA Downtown Los Angeles' (no numbers visible in snippet)"
+      ],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "ShiftTracker blog - 'LA DoorDash Earnings 2026: $28/Hr Strategy & Prop 22'",
+      "url": "https://shifttrackerapp.com/blog/doordash-earnings-los-angeles-ca-2026",
+      "contains": "Car-courier oriented LA earnings guide by a gig-app vendor; hourly by daypart, miles between orders, parking time, zone lists. No external citations; no bike/e-bike/moped mention.",
+      "granularity": "LA-wide, by daypart and named zones",
+      "year": "2026 (published 2026-04-15, updated 2026-07-28)",
+      "headline_datapoints": [
+        "'LA Dashers typically gross $22–$30/hour during peak windows'; 'Dinner peak (5pm–9pm)... $25–$32/hour gross in strong zones'; 'Take-home after gas... typically lands drivers at $15–$22 per active hour'",
+        "'In most of LA, you're looking at 2–5 miles' between drop-off and next pickup (vs 'about half a mile in places like Manhattan or downtown Chicago')",
+        "'Restaurant pickups... frequently require 3–7 minutes of parking hunting'; 'Drop-offs in apartment-heavy neighborhoods like Koreatown, Westwood, and Downtown add another 2–4 minutes'; Downtown LA listed as a lunch zone; Koreatown not listed as a recommended zone"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["1", "3", "6"]
+    },
+    {
+      "name": "Axios - DoorDash bicycle delivery map (2025-02-25)",
+      "url": "https://www.axios.com/2025/02/25/doordash-bicycle-delivery-map",
+      "contains": "DoorDash-released city-level share of deliveries done on two wheels (surfaced incidentally; belongs to platform/press modality but is a strong lead for task 1)",
+      "granularity": "city-level",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'More than half of DoorDash deliveries are made on two wheels in San Francisco, New York City, Washington, D.C., and several other cities.' (LA figure not visible in snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Axios San Diego - 'About one third of DoorDash deliveries in San Diego use bikes' (2026-03-19)",
+      "url": "https://www.axios.com/local/san-diego/2026/03/19/about-one-third-of-doordash-deliveries-in-san-diego-use-bikes",
+      "contains": "DoorDash data on two-wheel share and relative productivity/earnings of two-wheel Dashers; implies a ranked list of a dozen+ cities exists (LA may be in it)",
+      "granularity": "city-level, platform-wide",
+      "year": "2026 (data 'last year' = 2025)",
+      "headline_datapoints": [
+        "Snippet: 'About 30% of DoorDash deliveries in San Diego used two-wheeled vehicles (bikes, e-bikes, scooters, etc.) last year, which is lower than about a dozen other major U.S. cities'",
+        "Snippet: two-wheeled Dashers spend 'around 15% less time traveling from offer acceptance to pickup, and earning over 10% more money per hour on average'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "Axios - 'DoorDash says delivery drivers are earning more after Prop. 22' (2021-02-25)",
+      "url": "https://www.axios.com/2021/02/25/doordash-says-delivery-drivers-are-earning-more-after-prop-22",
+      "contains": "DoorDash-claimed LA hourly earnings post-Prop 22 (company claim, dated)",
+      "granularity": "metro-level",
+      "year": "2021",
+      "headline_datapoints": [
+        "Snippet: 'Los Angeles and San Diego drivers earning more than $33 per hour, though these figures included tips and mileage reimbursements' (DoorDash claim, 2021)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Uber - 'Become a food delivery driver in Los Angeles, CA' (vehicle eligibility)",
+      "url": "https://www.uber.com/us/en/e/deliver/los-angeles-ca-us/?id",
+      "contains": "Uber Eats LA vehicle classes and rider eligibility (car / bike / scooter)",
+      "granularity": "platform rules, LA page",
+      "year": "2026 (live page)",
+      "headline_datapoints": [
+        "Snippet: deliver 'using a car, bike, or scooter'; 'If delivering by scooter, you must be at least 19 years old and have a motorized scooter under 50cc'; bicycle couriers 'must be at least 18 years old and have a government-issued ID'"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "DoorDash Dasher Central - 'DoorDash Bike Delivery: Deliver on a Bike or E-Bike'",
+      "url": "https://dasher.doordash.com/en-us/about/bike-dashing",
+      "contains": "DoorDash bike/e-bike dashing rules and pitch",
+      "granularity": "platform rules, national",
+      "year": "2026 (live page)",
+      "headline_datapoints": [
+        "Title only; not opened in this pass"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["4"]
+    },
+    {
+      "name": "Whizz blog - 'Zoomo or Whizz - Which one is better?'",
+      "url": "https://www.getwhizz.com/blog/all-about-e-bikes/whizz-or-zoomo",
+      "contains": "Vendor-authored comparison; theft-rate claim; positioning vs Zoomo",
+      "granularity": "company-level marketing",
+      "year": "unknown (likely 2024-2025)",
+      "headline_datapoints": [
+        "Snippet: 'Whizz reports less than 1% theft rate with technology to help find bikes fast'",
+        "Snippet: 'Whizz stands out with its local presence, variety of models, and transparent pricing, while Zoomo offers more flexible short-term options'"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Zoomo blog - 'Whizz or Zoomo E-Bikes? NYC Delivery Rider Guide for 2025'",
+      "url": "https://www.ridezoomo.com/blog/whizz-or-zoomo-nyc-delivery-rider-guide-for-2025",
+      "contains": "Vendor-authored comparison; Zoomo city footprint incl. Los Angeles; service inclusions",
+      "granularity": "company-level marketing",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'Zoomo currently operates in New York City, San Francisco, Los Angeles and Philadelphia'",
+        "Snippet: 'Zoomo includes free full repairs for common issues like flats, brakes, and chains, with bikes coming with GPS tracking and a mobile app'"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "California GO-Biz - Zoomo company page",
+      "url": "https://business.ca.gov/zoomo",
+      "contains": "State economic-development profile of Zoomo's California operations",
+      "granularity": "company-level",
+      "year": "unknown",
+      "headline_datapoints": [
+        "Snippet: Zoomo 'established operations in California in 2019, with San Francisco and Los Angeles becoming their top performing markets globally'"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "TechCrunch - 'Whizz wants to own the delivery e-bike subscription space, starting with NYC' (2024-06-05)",
+      "url": "https://techcrunch.com/2024/06/05/whizz-wants-to-own-the-delivery-e-bike-subscription-space-starting-with-nyc",
+      "contains": "Whizz funding and expansion plans",
+      "granularity": "company-level",
+      "year": "2024",
+      "headline_datapoints": [
+        "Snippet: 'Whizz was founded in 2022 and has raised $12 million to expand beyond New York to other cities'"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Apple App Store - Whizz e-bike rental service",
+      "url": "https://apps.apple.com/us/app/-/id1668800684",
+      "contains": "App listing; user reviews may include LA rider complaints/praise (not read in this pass)",
+      "granularity": "individual user reviews",
+      "year": "rolling",
+      "headline_datapoints": [
+        "Listing title only: 'Whizz — e-bike rental service'"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Poyst business listing - 415 eBikes San Francisco",
+      "url": "https://www.poyst.com/business/415-ebikes",
+      "contains": "Third-party listing/review aggregator for 415 eBikes (do NOT use review counts to infer fleet size)",
+      "granularity": "business listing",
+      "year": "rolling",
+      "headline_datapoints": [
+        "Snippet: '415 eBikes carries HMP bikes and offers free battery swap and free parking'",
+        "No Reddit/forum mentions of '415 ebikes', 'HMP bikes' or 'HMP FLASH' surfaced in search"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["2"]
+    }
+  ],
+  "gaps": [
+    "Reddit is hard-blocked for the search/fetch user agent (API 400 on allowed_domains=reddit.com) and no Reddit threads surfaced in general-web snippets; the modality's core evidence (rider-reported $/hr and orders/hr by vehicle type in LA, trip distances, theft anecdotes, Whizz/Zoomo/HMP mentions) is entirely unscouted and needs manual browsing or the official Reddit API.",
+    "No LA-specific e-bike, moped, or e-motorcycle delivery earnings figure from any rider source was found; the only LA $/hr numbers found are car-centric (ShiftTracker) or DoorDash corporate claims.",
+    "No LA rider theft stories located: theft searches returned only NYC (CBS New York) incidents; nothing on DTLA/Skid Row/Arts District e-bike or moped theft from rider communities.",
+    "No moped/e-moped/e-motorcycle delivery discussion for LA surfaced at all; whether LA couriers use 40-70 mph vehicles and how they register them on platforms is unknown from this pass.",
+    "YouTube pages did not render (fetch returned footer only): channel names, upload dates, view counts, descriptions and comments require yt-dlp or the YouTube Data API v3; TikTok clip metadata likewise requires scraping.",
+    "Facebook groups and Discord servers for LA delivery riders were not reachable (login/membership required); the @bikedasher Facebook cross-post needs login.",
+    "The most prominent DTLA bike-delivery vlog found is from Feb 2020 (pre-pandemic); no clearly 2025-2026 DTLA/Koreatown e-bike delivery vlog was confirmed, so recency of rider content is unknown.",
+    "English-only search; Spanish-language (and Korean, for Koreatown) TikTok/Facebook/WhatsApp courier communities were not covered and may be the main venue for LA riders.",
+    "Whether the @bikedasher TikTok clips are filmed in LA is unconfirmed (tagged only #california)."
+  ],
+  "must_ask_hmp": [
+    "Rider earnings self-reports captured during the 'rent -> confirm earnings -> buy' step in SF: $/hr, orders/hr, platform mix, hours/week, by vehicle model (e-bike vs FLASH vs Lightning MK.II vs SWFT MAXX).",
+    "Any existing LA demand signal: online orders shipped to LA ZIP codes, LA inbound rental/sales inquiries, SF customers who relocated to LA, LA-area repair requests.",
+    "SF theft/loss incidents per vehicle-year by model, GPS recovery rate, insurance claims, and what security setup (locks, GPS, parking) riders actually use.",
+    "Which platform vehicle profile (bicycle / scooter under 50cc / motorcycle / car) FLASH and Lightning MK.II riders use on Uber Eats and DoorDash, and whether platforms have rejected any HMP vehicle class.",
+    "Battery swap frequency, swaps per shift, and typical daily miles per SF rider by model (the only ground truth for range needs in a more spread-out LA zone).",
+    "SF rider demographics and acquisition channels (word of mouth, WhatsApp/WeChat/Telegram groups, referral chains, language) to judge whether the same community channels exist in DTLA/Koreatown.",
+    "Whether HMP runs or has access to any rider group chats it could poll directly about LA interest."
+  ],
+  "surprises": [
+    "Reddit, the primary planned source for this modality, is not scoutable with the available tooling at all (domain-level block), so any Reddit-based evidence must come from a human or an API workflow.",
+    "DoorDash itself publishes city-level two-wheel delivery share (Axios 2025-02-25: 'more than half' in SF/NYC/DC; Axios San Diego 2026-03-19: ~30% in San Diego, 'lower than about a dozen other major U.S. cities', with two-wheel Dashers 'earning over 10% more money per hour on average'). An LA figure likely exists in the same releases and would anchor task 1 better than any rider anecdote.",
+    "Uber Eats LA page snippet limits the 'scooter' class to 'a motorized scooter under 50cc' (rider 19+); if accurate on the live page, 40-70+ mph e-mopeds/e-motorcycles like FLASH do not fit that class and riders would have to onboard as motorcycle/car, which affects the fleet-mix assumption in task 4.",
+    "ShiftTracker (car-courier view, 2026) reports LA drop-off-to-next-pickup distances of '2-5 miles' vs 'about half a mile' in Manhattan/downtown Chicago, and flags Koreatown/Downtown as parking-pain drop-off areas; this supports the CONTEXT's long-range/car-disadvantage thesis but gives no DTLA-specific trip length.",
+    "No forum or social mention of '415 ebikes', 'HMP bikes' or 'HMP FLASH' surfaced outside HMP's own sites and a listing aggregator, despite >1,000 vehicles in SF; rider word-of-mouth for HMP appears to live off the open web."
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "modality": "platform_official_stats",
+  "sources": [
+    {
+      "name": "DoorDash Q4 and Full-Year 2025 Financial Results press release (IR site)",
+      "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-Releases-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx",
+      "contains": "Quarterly and FY2025 headline KPIs: Total Orders, Marketplace GOV, merchant sales, aggregate Dasher earnings, country count. Consolidated/global only; no US, state or city split; no Dasher headcount in this release.",
+      "granularity": "global (consolidated)",
+      "year": "2025",
+      "headline_datapoints": [
+        "Q4 2025: 'Total Orders increased 32% year-over-year (Y/Y) to 903 million'",
+        "FY2025: 'nearly $75 billion in sales for local merchants across over 40 countries and over $20 billion in earnings for Dashers'",
+        "Q3 2025 (companion release): Total Orders 776 million, +21% Y/Y"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "DoorDash US Community Impact Report 2025 (Public First microsite + PDF)",
+      "url": "https://doordash2025.publicfirst.co/",
+      "contains": "US-only Dasher count, Dasher earnings, weekly hours, Dasher demographics (survey n=1,210, Dec 2025-Jan 2026), merchant and consumer stats, macro economic-impact figures. PDF at /content/Doordash_US_2025.pdf. Explicitly NO state, California, LA or city breakdown and NO vehicle-type data.",
+      "granularity": "national (US)",
+      "year": "2025",
+      "headline_datapoints": [
+        "'Over 8 million people dashed in U.S.' in 2025",
+        "'Nearly $20 billion earned (including tips)' by US Dashers in 2025",
+        "Dashers averaged 'approximately 4 hours per week' in Q4 2025; 85% have other income/responsibilities"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "DoorDash 'Keeping Dollars Local: 2025 U.S. Economic Impact Report' news post",
+      "url": "https://about.doordash.com/en-us/news/2025-eir",
+      "contains": "Announcement summary of the 2025 US economic impact report (same underlying data as the Public First microsite).",
+      "granularity": "national (US)",
+      "year": "2025",
+      "headline_datapoints": [
+        "'more than $130 billion in U.S. economic activity' supported in 2025",
+        "'nearly $25 billion in tax revenues' and 'more than 1.5 million full-time equivalent jobs'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "DoorDash 'How Two-wheeled Deliveries' report (Feb 25, 2025) - news post + PDF",
+      "url": "https://about.doordash.com/en-us/news/two-wheeled-deliveries-report",
+      "contains": "Share of DoorDash deliveries completed on two-wheeled devices for selected cities, growth since 2022, two-wheel vs car earnings comparison, miles traveled. PDF: https://assets.ctfassets.net/trvmqu12jq2l/5AAyRdEX66k5HQTaVA7W6c/4ff6a98add1ee34073275526e9895fff/How_Two-wheeled_Deliveries_Report-R12.pdf. Los Angeles, San Francisco, Seattle and New York are NOT named in this edition; no split between bicycle / e-bike / scooter / moped.",
+      "granularity": "US+Canada aggregate, plus selected cities (Washington DC, Philadelphia, Toronto, Boston)",
+      "year": "2025 (data through late 2024)",
+      "headline_datapoints": [
+        "Two-wheeled share of deliveries: Washington DC 57%, Philadelphia 35%, Toronto 32%, Boston 32%",
+        "'Share of two-wheeled deliveries tripled across U.S. and Canada' since 2022",
+        "'Dashers using two-wheeled devices earned approximately 10% more than car-using Dashers in top 20 cities'; over 40 million miles on two-wheeled devices in a four-week period"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1", "2", "4"]
+    },
+    {
+      "name": "DoorDash 2026 'Two-Wheeled Progress Report' (newer edition, cited in search summary only)",
+      "url": "unknown - not located; cited in search-engine summary for query 'DoorDash Dasher impact report percent of deliveries by bike scooter'",
+      "contains": "Per search summary: updated per-city two-wheeled delivery shares including San Francisco and Seattle. Page not opened; URL not found within budget. Must be located in the full research pass.",
+      "granularity": "selected US cities (San Francisco, Seattle named); LA not mentioned in snippet",
+      "year": "2026",
+      "headline_datapoints": [
+        "Snippet: 'Two-wheeled devices accounted for 72% of deliveries in San Francisco and 66% in Seattle'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2", "4"]
+    },
+    {
+      "name": "DoorDash 'Making The Dasher Experience On Two Wheels Even Better' (Mar 19, 2025)",
+      "url": "https://about.doordash.com/en-us/news/dasher-two-wheels-experience",
+      "contains": "DoorDash two-wheel Dasher program announcements: Whizz e-bike rental partnership (Chicago), Swobbee battery-swap discount (NYC), repeat of tripled-since-2022 and +10% earnings stats. No city shares, no Dasher counts, LA not mentioned.",
+      "granularity": "national; Chicago and New York City named",
+      "year": "2025",
+      "headline_datapoints": [
+        "Whizz e-bike rental offer for Dashers in Chicago: '$9 in the first month'",
+        "Swobbee battery swapping: '50% discount on a 3-month subscription'",
+        "'Since 2022, DoorDash has tripled the share of deliveries made using two-wheeled devices throughout the United States and Canada'"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["4", "5"]
+    },
+    {
+      "name": "DoorDash Help Center - 'Can I dash on a bike, scooter, or by walking?' and 'Choose Vehicles' subcategory",
+      "url": "https://help.doordash.com/en-us/dashers/article/can-i-dash-on-a-bike-scooter-or-by-walking",
+      "contains": "Official Dasher vehicle-type policy: which dash types (car, bicycle, e-bike, scooter, motorcycle, walking) are permitted and that availability depends on market; how to switch dash types (https://help.doordash.com/en-us/dashers/article/switching-dash-types). No counts or shares.",
+      "granularity": "national policy, market-dependent",
+      "year": "current (2025-2026)",
+      "headline_datapoints": [
+        "Snippet: Dashers 'can use other modes of transportation such as a bicycle, electric bike, scooter, or even walking, depending on the market and local DoorDash policies'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "Dasher Central blog - 'Bike vs. Car vs. Scooter on DoorDash: Which Earns More?' and 'E-Bike or E-Scooter: What's Best for Dashing in the City?'",
+      "url": "https://dasher.doordash.com/en-us/blog/bike-vs-car-vs-scooter-doordash-earnings",
+      "contains": "DoorDash-authored guidance on vehicle-mode earnings and suitability in dense cities (companion: https://dasher.doordash.com/en-us/blog/electric-scooter-delivery-comparison). Qualitative; may cite the +10% two-wheel earnings figure.",
+      "granularity": "national",
+      "year": "2025",
+      "headline_datapoints": [
+        "Not opened; no verbatim numbers captured"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "Dasher Central - 'DoorDash Statistics: Delivery Data & Trends' (Dash Report 2025)",
+      "url": "https://dasher.doordash.com/en-us/dash-report-2025",
+      "contains": "DoorDash-published annual stats page; per search summary it ranks metros by order volume.",
+      "granularity": "national with metro ranking (greater Los Angeles, NY metro, SF Bay Area, Chicago, Houston, Philadelphia, Atlanta, Dallas, Detroit, Denver/Boulder)",
+      "year": "2025",
+      "headline_datapoints": [
+        "Snippet: 'The highest volume of orders come from greater Los Angeles, the New York metropolitan area, the San Francisco Bay Area, Chicago, Houston, Philadelphia, Atlanta, Dallas, Detroit, Denver, and Boulder' (ordering suggests LA is #1 by order volume; no numbers given)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "DoorDash - 'Thanks to California's Prop 22 Dashers are Doing Better than Ever'",
+      "url": "https://about.doordash.com/en-us/news/dashers-doing-better-than-ever-under-prop-22",
+      "contains": "California-specific Dasher earnings under Prop 22, with city-level hourly earnings including Los Angeles. Not opened; attribution of the LA figure to this page is from the search summary and should be verified.",
+      "granularity": "California state and named cities (Los Angeles)",
+      "year": "2023-2024",
+      "headline_datapoints": [
+        "Search summary: 'Los Angeles Dashers earned around $35 per hour while on deliveries in 2023, a 39% increase from 2020'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "DoorDash Form 10-K (FY2024 filing on SEC EDGAR; FY2025 filing summarized by StockTitan)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1792789/000162828025005715/dash-20241231.htm",
+      "contains": "Annual report with global Dasher headcount ('people who dashed'), Total Orders, Marketplace GOV, Dasher earnings, risk factors. FY2025 10-K summary: https://www.stocktitan.net/sec-filings/DASH/10-k-door-dash-inc-files-annual-report-16ce41338de6.html. No state/metro data.",
+      "granularity": "global / national (US not always isolated)",
+      "year": "FY2024 and FY2025",
+      "headline_datapoints": [
+        "Search summary (FY2025): 'Over 9 million people dashed in 2025'; 'Dashers earned more than $20 billion in 2025'",
+        "Search summary (FY2024, attribution uncertain): 'in 2024, approximately 8 million people worked as dashers, earning over $18 billion'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Uber Technologies Form 10-K FY2025 (SEC EDGAR; FY2024 URL surfaced) and Q4-2025 earnings materials",
+      "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315125000008/uber-20241231.htm",
+      "contains": "Combined 'drivers and couriers' monthly active count, MAPCs, Trips, Gross Bookings by segment (Mobility vs Delivery). Drivers and couriers are NOT split; no Eats-only courier count; no vehicle-type share; no state/metro data. FY2025 10-K listings: https://last10k.com/sec-filings/uber and https://www.stocktitan.net/sec-filings/UBER/10-k-uber-technologies-inc-files-annual-report-0f8bed3e7508.html. Q4-25 prepared remarks PDF (https://s23.q4cdn.com/407969754/files/doc_earnings/2025/q4/transcript/Uber-Q4-25-Prepared-Remarks.pdf) downloaded but text could not be extracted in this environment.",
+      "granularity": "global",
+      "year": "FY2025",
+      "headline_datapoints": [
+        "Search summary: '9.7 million monthly drivers and couriers at the end of Q4 2025, representing 19% year-over-year growth'",
+        "Search summary: '10 million active drivers and couriers coordinating an average of 42 million rides plus delivery orders daily by the end of 2025'",
+        "Search summary: MAPCs 202 million (+20% Y/Y); Gross Bookings $193.45 billion in 2025"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Uber - 'Become a food delivery driver in Los Angeles, CA' and 'Flexible grocery delivery jobs in Los Angeles' (courier requirements pages)",
+      "url": "https://www.uber.com/us/en/e/deliver/los-angeles-ca-us/",
+      "contains": "Uber Eats LA courier sign-up page with vehicle options and requirements by mode (car / scooter / bike), age and license rules. Companion: https://www.uber.com/us/en/e/deliver/grocery/los-angeles-ca-us/ and https://www.uber.com/us/en/deliver/. No courier counts.",
+      "granularity": "Los Angeles city page (policy only)",
+      "year": "current (2026)",
+      "headline_datapoints": [
+        "Snippet: 'get around Los Angeles by car, scooter, or bike to pick up orders'",
+        "Snippet (third-party restatement of Uber rules): bike couriers must be 18+; scooter couriers must be 19+, hold a valid driver's license, and the 'motorized scooter must have an engine size below 50cc, so motorcycles typically won't qualify'",
+        "Snippet: no vehicle inspection or insurance submission required for bike/e-bike/scooter delivery"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "Grubhub courier count (Wikipedia / about.grubhub.com Drivers news category) and Wonder acquisition coverage",
+      "url": "https://en.wikipedia.org/wiki/Grubhub",
+      "contains": "Only public statement of Grubhub courier scale found ('more than 200,000 couriers'), undated in snippet; Wonder acquisition closed Q1 2025 for $650M (https://www.restaurantbusinessonline.com/technology/wonder-completes-acquisition-grubhub-650m). Grubhub driver news archive: https://about.grubhub.com/news_cat/drivers/. No LA or vehicle-type data; no post-acquisition disclosures (Grubhub is private under Wonder).",
+      "granularity": "national",
+      "year": "undated (pre-2025); acquisition 2025",
+      "headline_datapoints": [
+        "Snippet: Grubhub 'has more than 200,000 couriers in cities across the country'",
+        "Snippet: Wonder acquired Grubhub for $650 million, closed Q1 2025; brings 'more than 375,000' merchants"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    }
+  ],
+  "gaps": [
+    "No platform (DoorDash, Uber, Grubhub) discloses courier headcount at state, county, metro or city level; no 'X Dashers in Los Angeles' or 'X in San Francisco' figure exists in official filings or impact reports found.",
+    "Official counts are 'ever-active in the year' (DoorDash 'people who dashed', Uber 'monthly active drivers and couriers'); the only official intensity stat is DoorDash's ~4 hours/week average (Q4 2025). No official daily-active or full-time-equivalent courier count exists, so daily-active rider counts for DTLA+Koreatown cannot be read off any platform disclosure.",
+    "Uber reports drivers and couriers as one combined number; no Eats-only courier count, no US/CA split, no vehicle-mode share.",
+    "DoorDash publishes per-city two-wheeled shares only for a handful of cities (DC, Philadelphia, Boston, Toronto in the Feb-2025 report; SF and Seattle in a 2026 edition per snippet). Los Angeles is absent from every DoorDash two-wheel city list found, so LA's official two-wheel share is unknown.",
+    "No platform breaks 'two-wheeled' down into bicycle vs e-bike vs e-scooter vs moped vs motorcycle, and no platform publishes a car / two-wheel / walking split for LA. The task-1 vehicle-mode split cannot come from official platform data alone.",
+    "Grubhub's 200,000-courier figure is undated and pre-Wonder; Grubhub now has no public filings.",
+    "Platform order volumes are global/consolidated; no LA or SF order counts are disclosed (only a qualitative metro ranking placing greater LA first).",
+    "The 2026 DoorDash Two-Wheeled Progress Report URL was not located within budget; the SF 72% figure is snippet-only and must be verified.",
+    "Platform vehicle-class eligibility for 40-70 mph e-mopeds/e-motorcycles (HMP FLASH, Lightning MK.II) is unclear: Uber's public scooter rule is '<50cc'; whether these register as 'motorcycle' or 'car' class on DoorDash/Uber Eats, and whether that affects order allocation, is not documented in sources found."
+  ],
+  "must_ask_hmp": [
+    "Platform mix of HMP's SF customers (DoorDash / Uber Eats / Grubhub / Amazon Flex / other) and share who multi-app - no public source gives this.",
+    "Self-reported working intensity of HMP customers: days per week, hours per day, orders per day, monthly gross earnings by vehicle class (needed to convert platform 'ever-active' counts into daily-active professional riders).",
+    "How HMP customers register their FLASH / Lightning MK.II / SWFT MAXX on each platform (bike, scooter, motorcycle, car dash type) and whether any have been deactivated or restricted for vehicle class - determines which platform vehicle category the LA fleet should target.",
+    "Whether HMP has any existing contact or partnership discussion with DoorDash (Dasher perks / two-wheel program, like the Whizz-Chicago and Swobbee-NYC deals) or Uber Eats courier programs.",
+    "Home and working zip codes / neighborhoods of the >1,000 SF vehicle owners and ~300 battery renters, to define the SF core-zone benchmark denominator.",
+    "Any HMP customer who already works in LA or has relocated from SF to LA, and any inbound LA inquiries by month (demand signal no platform data can provide)."
+  ],
+  "surprises": [
+    "DoorDash's San Francisco two-wheeled delivery share is reported at 72% (2026 report, snippet-only; DC was 57% in the 2025 report). SF is one of the most two-wheel-heavy DoorDash markets in North America, which means the SF benchmark may overstate what LA (absent from all DoorDash two-wheel city lists) will deliver.",
+    "DoorDash states two-wheeled Dashers earn ~10% more than car Dashers in the top 20 delivery cities - an official talking point HMP can cite to riders.",
+    "DoorDash's average Dasher works only ~4 hours/week (Q4 2025) and 85% have other income; the 8-9 million Dasher headline is therefore an extremely loose upper bound on professional couriers, reinforcing the CONTEXT's warning against single-ratio estimates.",
+    "Uber Eats' public scooter requirement is an engine 'below 50cc'; HMP's 40-70 mph e-moped/e-motorcycle products may fall outside Uber's 'scooter' class, which could affect LA fleet-mix and platform eligibility assumptions.",
+    "DoorDash already channels Dashers to competitors' services: an official Whizz e-bike rental partnership (Chicago, $9 first month) and a Swobbee battery-swap discount (NYC) - the platform itself is a distribution channel for rental/swap providers, relevant to the Whizz/Zoomo competitor task.",
+    "The search summary ranks greater Los Angeles first among DoorDash metros by order volume (ahead of NY metro and SF Bay Area), supporting LA demand scale even though no LA Dasher count exists."
+  ]
+}

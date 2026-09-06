@@ -1,0 +1,68 @@
+{
+  "lens": "ramp_and_cac",
+  "assumptions": [
+    {
+      "assumption": "SF's cumulative totals (>1,000 vehicles sold, ~300 battery renters, ~100 vehicles on rent) can be back-cast into an LA Month-3/6/12/24 curve. Implicit claim: LA can reach a meaningful fraction of SF's installed base (e.g. 50-100 rental bikes by Month 6) because SF 'did it'.",
+      "why_it_may_be_wrong": "The SF numbers are a stock, not a flow, and the duration is unknown. If SF took ~5 years to sell 1,000 vehicles, that is ~17/month on average, and the first 6 months were almost certainly well below that because the curve was founder-led and probably boosted by the 2020-2022 delivery boom that will not repeat. Any LA Month-3/6 target that is not literally derived from SF's own first-12-months ledger is invented. There is also a survivorship problem: 1,000 sold does not say how many of those riders are still active, resold, or lost the bike to theft.",
+      "direction": "flatters_LA_case",
+      "magnitude": "If SF's first 6 months were 3-8 units/month (typical for a one-founder shop), an LA Month-6 target of 50-100 rental bikes is 3-10x SF's own early pace. Getting the ramp wrong by 2-3x moves break-even from ~Month 12 to Month 24+ on a lease that runs 36-60 months.",
+      "cheap_test": "Before signing: export every SF vehicle sale and rental start with its date (Shopify orders + Stripe subscription start dates + rental ledger) and plot cumulative units by month from day 1. Read off months 1-3, 4-6, 7-12. Also tag each unit with acquisition year to see how much of the 1,000 is 2020-2022 pandemic demand vs 2024-2026.",
+      "hmp_internal_data_needed": "Per-customer first-transaction date, unit type (sale / whole-vehicle rental / battery-only), and current status (active, churned, stolen, resold). SF opening date and founder time allocation in year 1.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "SF's referral / word-of-mouth engine (rider rents -> confirms earnings -> buys -> refers coworkers) replicates in LA at near-zero CAC without the founder physically on site every day.",
+      "why_it_may_be_wrong": "In SF the founder is simultaneously the salesperson, mechanic, WhatsApp-group admin and trust anchor inside a specific language community that already had HMP riders to seed referrals. LA starts at zero seeded riders, and the DTLA / Koreatown / Westlake courier base is dominantly Spanish-speaking (Central American, Mexican) and Korean, with a different set of WhatsApp / KakaoTalk / church / restaurant back-door networks that HMP has no presence in. A referral loop with a k-factor needs a base to multiply; at 0 riders the loop contributes nothing for the first months, so early acquisition must be bought (street promo, Spanish/Korean paid social, referral bounties, sign-up discounts, staff hours). Whizz is already in LA at $139/mo with $0 down on pre-owned bikes, so 'first mover trust' is not available.",
+      "direction": "flatters_LA_case",
+      "magnitude": "SF blended CAC is plausibly under $50 per paying rider (organic). LA first-6-months CAC could be $150-400 per paying rider once staff time, promos and bounties are loaded, i.e. 3-8x. On a weekly rental at roughly $40-60/wk gross and 30-40% early churn, a $300 CAC is not recovered for 3-5 months per rider.",
+      "cheap_test": "Two-week pre-lease field test: (1) $1,000 of geo-targeted Spanish/Korean/English Meta + TikTok ads to a landing page with a refundable $20 deposit for LA; measure cost per verified courier deposit, not per click. (2) Four dinner-rush street intercepts at Koreatown (6th/Western), Little Tokyo, USC/Figueroa, Westlake (Alvarado) counting couriers on e-bikes/mopeds vs cars, and collecting 50 phone numbers with a 'we open in Nov' pitch; measure how many respond when called back. (3) Ask 3 restaurant owners per cluster whether they will host a flyer/QR; note language of staff.",
+      "hmp_internal_data_needed": "SF acquisition source per customer (referral / walk-in / online / platform partner), % of sales attributable to referrals, the identity and count of top referrers, language of each customer, and founder hours per week spent selling in SF year 1 vs now.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "The Month-3 checkpoint is a real decision point: if targets are missed, HMP can stop before the lease has burned meaningful cash.",
+      "why_it_may_be_wrong": "A 3-5 year industrial lease is non-cancellable. The listing for 768 Ceres quotes $19.20/sqft/yr, which on 8,443 sqft is ~$13.5k/mo base, ~35% above the ~$10k/mo in the plan unless negotiated. Before Month 3 even arrives HMP will have paid a deposit (1-3 months), NNN, buildout (racking, charging circuits, fencing/security for a Skid Row-adjacent yard, insurance), initial LA fleet, and staff, i.e. roughly $80-150k out the door, and it will still owe the remaining 33-57 months. A 'NO-GO at Month 3' is therefore not a decision, it is a loss-mitigation event (sublease, buy-out, or personal-guarantee exposure).",
+      "direction": "hurts_LA_case",
+      "magnitude": "Committed exposure of $360-600k base rent over 3-5 years (more at $13.5k/mo: $490-810k) plus $80-150k startup cash, against a Month-3 signal that is inherently noisy. Even a successful sublease typically takes 3-6 months and a rent concession.",
+      "cheap_test": "Get the LOI/lease draft and read: term length, personal guarantee, free-rent months, TI allowance, assignment/sublease clause, early-termination option and its price. Ask the broker for a 12-month term or a 12-month kick-out; if refused, price a month-to-month yard, container storage, or a 1,500-2,500 sqft sublease within 90021/90013 for a 6-month pilot. Compare pilot cost to the difference in exposure.",
+      "hmp_internal_data_needed": "SF lease terms and the month in which SF gross margin first covered SF rent; current SF cash balance and monthly free cash flow available to fund LA losses for 12-18 months.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Trigger thresholds like 'Month 3 >= X active riders' will be measured honestly on paying, retained riders rather than on sign-ups, test rides, WhatsApp members, or free-week promo takers.",
+      "why_it_may_be_wrong": "Every early-stage rental business inflates 'active riders' with anyone who ever took a bike, and a $0-first-week promo used to hit a Month-3 number will produce a spike that churns in weeks 2-4. 'Active riders' also conflates a battery-only subscriber (low ARPU) with a whole-vehicle renter (5-10x ARPU) with a one-time buyer (no recurring revenue). Because the founder wants LA to happen, the metric definitions will be chosen after the fact to fit whatever happened.",
+      "direction": "flatters_LA_case",
+      "magnitude": "In weekly-rental cohorts 30-50% churn in the first 4 weeks is common; counting ever-rented instead of paid-4-consecutive-weeks can overstate the Month-3 number by ~2x. Counting battery subscribers together with vehicle renters can overstate revenue-relevant riders by 3-5x.",
+      "cheap_test": "Write the metric definitions now, before any LA activity: paid-active-4wk, paid-active-8wk, ARPU by product, gross margin per rider, theft-adjusted fleet count. Then apply those same definitions retroactively to SF Stripe/rental data. If SF itself would have missed the proposed LA thresholds in its first 6 months, the thresholds are either wrong or LA is being held to a standard SF never met.",
+      "hmp_internal_data_needed": "SF weekly rental cohort retention (week 1 -> 4 -> 8 -> 12), share of renters who ever purchased, median weeks from first rental to purchase, promo usage vs full-price starts, and battery-subscriber vs vehicle-renter revenue split.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "The SF path 'rent -> confirm earnings -> buy -> keep renting battery' holds in LA, so weekly renters convert into buyers and battery subscribers at SF-like rates and low churn.",
+      "why_it_may_be_wrong": "SF is compact, hilly, parking-hostile and dense, so a moped's earnings advantage over a car is large and obvious within weeks. DTLA/Koreatown/USC is flatter but far more spread out, car delivery is the default, many couriers already own a car, and platform zone rules limit where bike/scooter mode is even offered. The earnings uplift that triggers the 'buy' step may be much smaller, so renters stay renters, churn back to cars, or churn to Whizz at $139/mo with $0 down and ownership in 6-12 months. Also, DTLA summer heat and a more transient courier population raise churn.",
+      "direction": "flatters_LA_case",
+      "magnitude": "If rent-to-buy conversion is half of SF's and weekly churn is 1.5-2x SF's, the LA depot becomes a capital-intensive rental fleet instead of a sales channel: each rental unit needs many more paid weeks to return its cost, and effective utilization can fall to 60-70% with the rest idle, in repair, or lost.",
+      "cheap_test": "Survey 50 DTLA/Koreatown couriers in Spanish, Korean and English: current vehicle, weekly hours, weekly gross, whether bike/scooter mode is available in their zone, willingness to pay per week, awareness of Whizz/Zoomo. Check DoorDash and Uber Eats LA courier sign-up flows to see which DTLA zones allow bike/scooter/moped. Count e-bikes vs mopeds vs cars at 10 restaurant clusters at Friday dinner rush.",
+      "hmp_internal_data_needed": "SF rent-to-purchase conversion rate and time-to-purchase, weekly-renter churn curve, rental fleet utilization %, average rental tenure before buy or churn, and battery-swap frequency per subscriber per week.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "A warehouse depot at 768 Ceres Ave, with no storefront and located on the edge of Skid Row, can both acquire riders and get them to visit 3-7x/week for battery swaps.",
+      "why_it_may_be_wrong": "The target riders work in Koreatown (~5-6 mi west), Westlake, USC and Little Tokyo; Ceres Ave is in the Warehouse District east of Skid Row, off their delivery routes, and reaching it means riding through Skid Row, including at night for swaps. Skid Row's crime index is roughly 2x the national average, which raises both fleet shrink and rider reluctance. In SF the shop presumably sits inside riders' daily radius; a battery-swap subscription is a convenience product and its take-rate collapses when the swap point is a 20-30 minute detour. Zero walk-by visibility also removes the cheapest acquisition channel a bike shop has.",
+      "direction": "hurts_LA_case",
+      "magnitude": "Battery subscription take-rate could be a small fraction of SF's 300+ unless HMP adds satellite swap points (restaurant back rooms, Koreatown lockers), each adding rent, staff or partner cost. Theft/vandalism shrink of 1-2 units per month on a 50-100 unit fleet is a 12-24%/yr fleet loss before insurance.",
+      "cheap_test": "Map platform hot zones vs Ceres Ave; time the Koreatown -> Ceres ride at 9pm on a moped; ask the 50 surveyed couriers whether they would ride to Ceres Ave weekly and at what hour; ask the landlord and neighbors about break-ins in the last 12 months; get an insurance quote for a 50-vehicle fleet at that address.",
+      "hmp_internal_data_needed": "SF customer home/work zip codes vs shop location, average distance riders travel to swap, swap visits per subscriber per week, SF theft/loss rate per vehicle-year, and SF share of customers acquired by walk-in.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Delivery demand and rider supply in LA are flat enough across the year that a Month-3 vs Month-6 comparison reflects the ramp rather than the calendar. With a Sept 2026 decision and Oct-Nov opening, Month 3 lands in Dec-Jan and Month 6 in Mar-Apr.",
+      "why_it_may_be_wrong": "Order volume peaks in the holiday and rainy months (Dec-Feb), while rider willingness to be on a moped drops in rain and rises in spring; the two effects do not cancel. Platform policy changes (LA delivery-worker minimum-pay rules, DoorDash/Uber courier caps or zone changes) can shift active courier supply 20-30% inside a quarter. A Dec-Jan Month-3 number will therefore look better than a Mar-Apr Month-6 number for reasons unrelated to HMP.",
+      "direction": "either",
+      "magnitude": "Plus or minus 20-30% on any single-month metric, enough to cross a threshold in either direction without any change in underlying traction.",
+      "cheap_test": "Pull SF monthly new rentals and revenue by calendar month for the last 2-3 years and compute a seasonal index; check Google Trends for 'doordash driver' and 'uber eats bike' in Los Angeles by month; check current LA City Council status on app-delivery worker pay ordinances. Set the LA thresholds as trailing-3-month averages, seasonally adjusted with SF's index.",
+      "hmp_internal_data_needed": "SF monthly new rentals, new sales, churn and battery-swap volume by calendar month, 2023-2026.",
+      "could_flip_decision_alone": false
+    }
+  ]
+}

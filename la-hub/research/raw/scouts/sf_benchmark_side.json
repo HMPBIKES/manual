@@ -1,0 +1,208 @@
+{
+  "modality": "sf_benchmark_side",
+  "sources": [
+    {
+      "name": "SF Registered Business Locations (DataSF, Socrata API g8m3-pdis) - query for DBA names containing EBIKE / HMP",
+      "url": "https://data.sfgov.org/resource/g8m3-pdis.json?$where=upper(dba_name)%20like%20%27%25EBIKE%25%27%20OR%20upper(dba_name)%20like%20%27%25HMP%25%27&$limit=50",
+      "contains": "City business-registration records with dba_name, ownership_name, address, location_start_date, dba_start_date, business_end_date, NAICS code, and Planning 'Analysis Neighborhood'. Confirms the SF store's legal entity and registration start date; also lists other SF e-bike businesses (Third Rail Ebikes 2020-10-30 Potrero Hill; Handlebikes Inc 2020-06-16). No record with 'HMP' in the DBA name exists in SF (only a false wildcard match 'Thmpson Glch').",
+      "granularity": "individual business location; neighborhood field = SF Planning Analysis Neighborhoods (e.g., 'South of Market', 'Tenderloin', 'Mission', 'Financial District/South Beach')",
+      "year": "live dataset, retrieved 2026-09-06",
+      "headline_datapoints": [
+        "DBA '415 Ebikes', ownership 'Mandala Global, LLC', 261 6th St, location_start_date 2024-08-09, dba_start_date 2024-08-09, business_end_date null, NAICS 441227, neighborhood 'South of Market'",
+        "No SF business registration found under an 'HMP' DBA name (query run 2026-09-06)",
+        "Other active SF e-bike registrations: 'Third Rail Ebikes, LLC' 750 24th St, start 2020-10-30; 'Handlebikes, Inc' 1981 Eddy St, start 2020-06-16"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "SF Registered Business Locations - per-neighborhood count of active NAICS 722 (Food Services) locations (aggregate query attempted, failed)",
+      "url": "https://data.sfgov.org/resource/g8m3-pdis.json",
+      "contains": "Same dataset; a SoQL group-by on neighborhoods_analysis_boundaries filtered to naic_code like '722%' AND business_end_date IS NULL would yield restaurant/food-service counts per SF Planning neighborhood, i.e., the SF-side restaurant density for SoMa, Mission, Tenderloin, FiDi/South Beach. Two group-by attempts returned HTTP 400 (syntax with count(*) alias / starts_with); the plain filter query on the same endpoint works, so the dataset is reachable and the fix is query syntax or a CSV export aggregated locally. Caveat: many records carry null NAICS codes, so counts undercount.",
+      "granularity": "business location -> SF Planning Analysis Neighborhood",
+      "year": "live dataset",
+      "headline_datapoints": [
+        "No figures obtained: group-by queries returned HTTP 400 twice (2026-09-06)"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Gazetteer SF - 'Meet the moped flocking SF streets' (Eddie Kim)",
+      "url": "https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets",
+      "contains": "Feature on HMP e-mopeds in SF: fleet-on-streets figure, growth target, Inno package price, typical monthly rental, HMP HQ/launch year, the 415 eBikes dealership location (Folsom & 6th, SoMa), battery-swap station timing, delivery-driver usage (drivers seen outside McDonald's and The Melt on Market St), founder quote (Peter Chu). Neighborhoods mentioned: Financial District, Market Street.",
+      "granularity": "city (San Francisco) / company",
+      "year": "2026-04-02",
+      "headline_datapoints": [
+        "600+ e-mopeds in SF (as of 2026-04-02); growth target 1,000 by end of year",
+        "'Inno' package price $2,500 (e-moped, storage rack, carrying bag, extra battery); typical monthly rental ~$380",
+        "HMP headquarters Davis, launched 2022; battery-swapping stations 'debuting June' (2026), first at the dealership"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Axios - DoorDash bicycle delivery map (city share of two-wheeled DoorDash deliveries)",
+      "url": "https://www.axios.com/2025/02/25/doordash-bicycle-delivery-map",
+      "contains": "City-by-city share of DoorDash deliveries made on bikes/e-bikes/scooters, from a DoorDash report; SF is among the highest. Page returned HTTP 403 on fetch, so LA's share and the exact source/report name were not read.",
+      "granularity": "city (major US cities)",
+      "year": "2025-02-25 (figures described as 2025)",
+      "headline_datapoints": [
+        "Search snippet: 'San Francisco has one of the highest shares of two-wheeled DoorDash deliveries among major U.S. cities at 72% in 2025'",
+        "Search snippet (attribution to this or a related Axios/Blind page unclear): '76% of San Francisco DoorDash deliveries are done on bikes, e-bikes, scooters and so on'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Axios San Diego - 'About one third of DoorDash deliveries in San Diego use bikes'",
+      "url": "https://www.axios.com/local/san-diego/2026/03/19/about-one-third-of-doordash-deliveries-in-san-diego-use-bikes",
+      "contains": "Newer (2026) DoorDash two-wheel-share data for San Diego, likely with comparison cities (possibly SF and LA). Not opened.",
+      "granularity": "city",
+      "year": "2026-03-19",
+      "headline_datapoints": [
+        "Title only: about one third of DoorDash deliveries in San Diego use bikes (2026-03-19)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "SF LAFCo - Emerging Mobility Labor Study (UC Santa Cruz, Chris Benner)",
+      "url": "https://lafco.archive.sf.gov/emerging-mobility-labor-study",
+      "contains": "Landing page listing the LAFCo-commissioned on-demand-worker study reports with PDF links: 'On-Demand and On-the-Edge: Summer 2020 Survey of Delivery Workers' (10/16/20); 'San Francisco and an Electric Bicycle Rebate Program' (9/18/20); 'Cooperatives as an Alternative to Gig Economy Platforms' (9/18/20); 'LAFCO's Preliminary Recommendations...' (5/15/20); 'Preliminary Results: Survey of COVID-19 Impacts on Ride Hailing and Food Delivery Workers' (4/21/20). Timeline Oct 2018 - Oct 2020. The landing page itself gives no headcount of SF app-based workers; any citywide estimate, delivery-vs-rideshare split and vehicle-mode split would be inside the PDFs, which were not opened.",
+      "granularity": "city (San Francisco)",
+      "year": "2018-2020",
+      "headline_datapoints": [
+        "Reports listed with dates; no numeric worker-count on landing page",
+        "Companion UCSC press release (news.ucsc.edu, 2020-05): survey 'reached 643 workers with Uber, Lyft, Doordash, GrubHub, Instacart, and Shipt early this year' (2020)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "UC Santa Cruz news - 'Already vulnerable, gig economy workers in San Francisco suffer during coronavirus pandemic, survey reveals'",
+      "url": "https://news.ucsc.edu/2020/05/benner-workers/",
+      "contains": "Press summary of the LAFCo/UCSC survey (demographics, income drop, immigrant share). Sample size stated; no citywide headcount in snippet.",
+      "granularity": "city (San Francisco), survey sample",
+      "year": "2020-05-05",
+      "headline_datapoints": [
+        "'The survey reached 643 workers with Uber, Lyft, Doordash, GrubHub, Instacart, and Shipt' (early 2020)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "NACTO - 'Urban Delivery by Bike: Subsidizing E-Bikes Bolstered Deliveries by Bike in San Francisco'",
+      "url": "https://nacto.org/latest/urban-delivery-by-bike-subsidizing-e-bikes-bolstered-deliveries-by-bike-in-san-francisco/",
+      "contains": "Write-up of San Francisco's E-Bike Delivery Pilot (SF Environment / SFMTA) that gave e-bikes and gear to couriers; likely contains pilot participant counts and courier-mode context. Not opened. Related snippet (moderndelivery.substack.com): SF received a $600k US DOE grant to expand the E-Bike Delivery Pilot.",
+      "granularity": "city program",
+      "year": "unknown (pilot circa 2023-2025)",
+      "headline_datapoints": [
+        "Snippet: 'San Francisco received a $600k federal Department of Energy Grant to expand its E-Bike Delivery Pilot program, which gives out ebikes, equipment and delivery gear to city couriers'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "SF Planning - San Francisco Neighborhoods Socio-Economic Profiles 2012-2016 (ACS 5-year)",
+      "url": "https://sfplanning.org/resource/san-francisco-neighborhoods-socio-economic-profiles-2012-2016",
+      "contains": "Per-Analysis-Neighborhood profiles (population, households, housing, employment, commute mode) compiled from census-tract ACS data, for all SF Planning neighborhoods including South of Market, Mission, Tenderloin, Financial District/South Beach. Dated (2012-2016 ACS); newer profile editions may exist on sfplanning.org but were not found in this pass. Page not opened, so no verbatim numbers.",
+      "granularity": "SF Planning Analysis Neighborhood (same boundaries as the business dataset's neighborhood field)",
+      "year": "2012-2016 ACS (published 2018)",
+      "headline_datapoints": [
+        "Resource page exists; described as compiling 'census-tract-level ... American Community Survey census data for each neighborhood' with 'demographic and housing characteristics as well as information on employment and the commute to work'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "SF MOHCD - Tenderloin neighborhood snapshot (PDF)",
+      "url": "https://sfmohcd.org/sites/default/files/FileCenter/Documents/2345-Snapshot_Tenderloin.pdf",
+      "contains": "Tenderloin population, households, density. Not opened; vintage of the ACS data unknown.",
+      "granularity": "neighborhood (Tenderloin)",
+      "year": "unknown (ACS, likely 2010s)",
+      "headline_datapoints": [
+        "Snippet: 'About 29,155 people live in the Tenderloin across 16,148 households'",
+        "Snippet: '71,694 residents per square mile'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Metropolitan Shuttle blog - 'SOMA vs. The Tenderloin'",
+      "url": "https://www.metropolitanshuttle.com/soma-vs-the-tenderloin-contrasting-two-of-sfs-most-talked-about-neighborhoods/",
+      "contains": "Blog comparison with a SoMa population/density figure of unknown provenance and boundary definition (looks low versus Planning's SoMa Analysis Neighborhood). Use only as a pointer, not a datapoint.",
+      "granularity": "neighborhood (SoMa, Tenderloin), boundary undefined",
+      "year": "unknown",
+      "headline_datapoints": [
+        "Snippet: 'SoMa has 11,457 residents and 18,000 people per square mile'"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "415ebike.com / hmpbikes.com store pages and third-party listing aggregators (poyst.com, wheree.com, wanderboat.ai)",
+      "url": "https://www.hmpbikes.com/pages/store-information",
+      "contains": "Store address (261 6th St, SF 94103), hours, 'free battery swap and free parking' claims, HMP-415 eBikes partnership statement ('HMP Bikes is partnered with 415 eBikes'). Aggregator pages (https://www.poyst.com/business/415-ebikes, https://415-ebikes.wheree.com/) carry Google-review mirrors that could yield earliest review dates; not opened, no dates captured.",
+      "granularity": "store",
+      "year": "2026 (live)",
+      "headline_datapoints": [
+        "Snippet: '415 e-bikes has HMP bikes and free battery swap and free parking'",
+        "Snippet: 'HMP Bikes is partnered with 415 eBikes to support riders in San Francisco and the surrounding Bay Area'"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["1", "2"]
+    },
+    {
+      "name": "Wayback Machine CDX API - first captures of 415ebikes.com and hmpbikes.com",
+      "url": "http://web.archive.org/cdx/search/cdx?url=415ebikes.com&limit=5&fl=timestamp,original,statuscode",
+      "contains": "Would give the earliest archived snapshot dates of both domains (operating-history proxy). Fetch blocked from this environment ('unable to fetch from web.archive.org'); must be run from a normal browser or the parent agent's tooling.",
+      "granularity": "domain",
+      "year": "n/a",
+      "headline_datapoints": [
+        "Not retrieved: web.archive.org blocked in this environment (2026-09-06)"
+      ],
+      "reliability": "high",
+      "access": "unavailable",
+      "relevant_tasks": ["2"]
+    }
+  ],
+  "gaps": [
+    "No public headcount of app-based delivery couriers in SF was found in this pass; the LAFCo/UCSC 2020 PDFs (especially 'On-Demand and On-the-Edge', Oct 2020) and the SF E-Bike Delivery Pilot / NACTO write-up need to be opened for any citywide estimate, delivery-vs-rideshare split, and bike/moped mode share; no press item quoting 'X Dashers in SF' surfaced.",
+    "Verbatim population and land area for the four SF core neighborhoods (SoMa, Mission, Tenderloin, FiDi/South Beach) were not captured: SF Planning profile page not opened, Census Reporter not queried; only a Tenderloin figure (29,155) and a low-reliability SoMa figure (11,457) came through snippets. Newer Planning profile editions (post-2016 ACS) were not located.",
+    "Restaurant counts/density per neighborhood: DataSF group-by queries on the Registered Business dataset returned HTTP 400 twice (syntax), so no counts; the SF DPH restaurant-inspection dataset ('Restaurant Scores - LIVES Standard') was not verified as still published on data.sfgov.org and no URL was confirmed.",
+    "Reddit evidence (r/sanfrancisco, r/doordash_drivers) on e-bike/moped delivery culture and mentions of 415 eBikes/HMP: the site:reddit.com search returned no Reddit results; needs direct old.reddit.com fetches or a different query.",
+    "Earliest Google/Yelp review dates for 415 eBikes not retrieved (aggregator pages listed but not opened); Wayback Machine blocked in this environment.",
+    "SFMTA bike-network and SoMa/FiDi parking-scarcity context not searched (budget exhausted).",
+    "Axios DoorDash map article body returned 403, so Los Angeles's two-wheel DoorDash share (the LA-side counterpart to SF's 72%) and the exact DoorDash report name were not read."
+  ],
+  "must_ask_hmp": [
+    "Monthly SF sales and rental starts/ends since August 2024 (vehicle units, battery-rental subscriptions, whole-vehicle rentals) - the only source for a real SF ramp curve.",
+    "Whether the >1,000 vehicles sold figure is SF-city-only or Bay Area/online, and how it reconciles with the '600+ e-mopeds in SF' quoted in press on 2026-04-02 with a '1,000 by end of year' target.",
+    "Customer geography: home zip/neighborhood and primary delivery zones of SF buyers/renters, to isolate the share attributable to the SoMa/Mission/Tenderloin/FiDi core zone (needed for the core-zone-to-core-zone ratio).",
+    "Legal/operational relationship between HMP Bikes (Davis, launched 2022) and '415 Ebikes' / Mandala Global, LLC (registered 2024-08-09) - owned store vs independent dealer - since it defines what 'replicating SF' in LA means.",
+    "Any SF activity before the 2024-08-09 business registration (pre-store sales, pop-ups) so the ramp clock starts at the right date.",
+    "Customer mix by platform (DoorDash / Uber Eats / Grubhub), full-time vs part-time, and language/community channels that drove adoption (word of mouth, WhatsApp/WeChat groups) - to judge LA transferability.",
+    "Battery-rental cohort data: when the 300+ battery renters signed up, churn, and how the June-2026 swap stations changed take-up.",
+    "Theft, repossession and non-payment rates for the ~100 vehicles on rent, and the SF store's fixed cost base (rent for 261 6th St) as the LA hub comparator."
+  ],
+  "surprises": [
+    "The SF store ('415 Ebikes', Mandala Global, LLC) has a city business-registration start date of 2024-08-09, i.e., roughly 25 months of SF operation as of 2026-09-06 - a shorter history than a '>1,000 sold' installed base might suggest, which makes the SF ramp steep and the ramp curve for LA correspondingly short-horizon.",
+    "Press (Gazetteer SF, 2026-04-02) reported '600+ e-mopeds in SF' with a target of 1,000 by end of 2026; the CONTEXT states >1,000 already sold by 2026-09-06 - either ~400 units in five months or a definitional difference (sold vs on-street, SF vs Bay Area). Needs HMP reconciliation before the SF benchmark is fixed.",
+    "HMP is headquartered in Davis, CA (launched 2022), not San Francisco, and no 'HMP' DBA is registered in SF; the SF presence is a separately-named dealership entity.",
+    "SF is a national outlier for two-wheeled delivery: search snippets cite 72% of SF DoorDash deliveries on two wheels in 2025. A pure population/restaurant ratio LA-vs-SF will overstate LA unless the (unknown, likely far lower) LA two-wheel mode share is applied - this is a structural, not incidental, correction.",
+    "Battery-swap stations in SF only debuted in June 2026 (per press), so the 300+ battery-rental customers were acquired largely without swap infrastructure - the LA hub plan should not assume swap stations were a precondition for SF adoption."
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "modality": "la_gig_worker_studies",
+  "sources": [
+    {
+      "name": "Flex Association - App-Based Industry Impact: California (one-page fact sheet)",
+      "url": "https://www.flexassociation.org/wp-content/uploads/2024/03/California-App-Based-Industry-Impact.pdf",
+      "contains": "Industry-lobby one-pager (Public First analysis of Flex member rideshare + delivery data for 2022; Morning Consult 2023 survey). Statewide counts of 'active app-based workers' (rideshare and delivery combined, 'active' undefined), transactions, economic impact. No LA breakdown, no delivery-vs-rideshare split, no vehicle type.",
+      "granularity": "state (California) and national",
+      "year": "published March 2024, data year 2022",
+      "headline_datapoints": [
+        "870,000 active app-based workers in California (2022 data)",
+        "660M app-based platform transactions in California (2022)",
+        "7.3M app-based workers in the U.S.; 4.3B app-based transactions (2022)"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "National Equity Atlas / UC Berkeley Labor Center / USC ERI - 'Prop 22 Depresses Wages and Deepens Inequities for California Workers' (Prop 22 pay study)",
+      "url": "https://www.nationalequityatlas.org/research/analyses/prop-22-pay-study",
+      "contains": "Post-Prop 22 earnings study of California rideshare and delivery drivers (SF and LA), net hourly earnings after expenses, healthcare-stipend qualification analysis. Methodology page at https://www.nationalequityatlas.org/about/our-data/prop-22-pay-study-report-methodology (fetch returned HTTP 403). Also hosted by USC ERI: https://dornsife.usc.edu/eri/publications/prop-22-depresses-wages-and-deepens-inequities-for-california-workers/",
+      "granularity": "state, with SF and LA metro samples",
+      "year": "2024 (May)",
+      "headline_datapoints": [
+        "Average earnings after expenses, not including tips: $7.12/hr for ride-hailing drivers, $5.93/hr for delivery workers (2024 study, per search summary)",
+        "Drivers who qualify for the health care stipend could earn the equivalent of ~$6.75/hr; majority of drivers could not qualify for the stipend (per search summary)",
+        "Press coverage: California app drivers make 'as little as $7.63 an hour' after expenses; SF and LA drivers earned less than drivers in three non-California cities (SF Examiner, May 2024)"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "UC Berkeley Labor Center / CWED - 'Gig Passenger and Delivery Driver Pay in Five Metro Areas'",
+      "url": "https://laborcenter.berkeley.edu/gig-passenger-and-delivery-driver-pay-in-five-metro-areas/",
+      "contains": "Trip-level earnings analysis for gig passenger and delivery drivers in Boston, Chicago, Los Angeles, SF Bay Area, Seattle; uses driver-submitted trip data. Press release: https://laborcenter.berkeley.edu/release-gig-passenger-and-delivery-driver-pay-in-five-metro-areas/",
+      "granularity": "metro (includes Los Angeles and SF Bay)",
+      "year": "data January 2022; published 2022/2023",
+      "headline_datapoints": [
+        "52,370 trips by 1,088 drivers across Boston, Chicago, Los Angeles, San Francisco Bay and Seattle metros, January 2022 (per search summary)",
+        "Drivers often earned less than the local minimum wage after expenses such as gas (per search summary)"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2", "3"]
+    },
+    {
+      "name": "UCLA Labor Center / IRLE - 'More Than a Gig: A Survey of Ride-hailing Drivers in Los Angeles'",
+      "url": "https://labor.ucla.edu/wp-content/uploads/2018/06/Final-Report.-UCLA-More-than-a-Gig.pdf",
+      "contains": "First comprehensive survey of TNC (Uber/Lyft) drivers in LA County: hours, income dependence, vehicle costs, organizing preferences. RIDE-HAIL only, not food delivery; no e-bike/moped data. Summary: https://irle.ucla.edu/2018/05/31/new-ucla-report-finds-driving-is-more-than-a-casual-gig-for-la-ride-hailing-drivers/",
+      "granularity": "LA County",
+      "year": "2018 (May)",
+      "headline_datapoints": [
+        "260 surveys and 8 in-depth interviews with TNC drivers in LA County (2018)",
+        "About half of drivers work full-time hours; for 1 in 2 drivers driving is their sole job; 2 of 3 rely on driving as main income source (2018)"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "UCLA Labor Center - 'Worker Ownership, COVID-19, and the Future of the Gig Economy'",
+      "url": "https://www.labor.ucla.edu/wp-content/uploads/2020/10/UCLA_coop_report_Final.pdf",
+      "contains": "UCLA Labor Center report on gig economy during COVID and cooperative models; surfaced in search only, contents not verified. Possible LA gig-worker context; unlikely to contain courier counts or vehicle splits.",
+      "granularity": "LA / national (unverified)",
+      "year": "2020 (October)",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "NYC DCWP - 'A Minimum Pay Rate for App-Based Restaurant Delivery Workers in NYC' (study + proposed rule)",
+      "url": "https://www.nyc.gov/site/dca/news/055-22/new-york-city-proposes-nation-s-first-minimum-pay-rate-specific-app-based-restaurant-delivery",
+      "contains": "DCWP study (Nov 2022) using platform-submitted trip data plus worker survey: weekly-active worker count, demographics, pay before/after expenses, transport mode, per-hour expense allowance for e-bike workers. Hearing/report page: https://www.nyc.gov/site/dca/workers/Delivery-Worker-Public-Hearing-Minimum-Pay-Rate.page ; 2025 rule update: https://rules.cityofnewyork.us/wp-content/uploads/2025/12/DCWP-NOA-Rules-Relating-to-Contracted-Delivery-Workers.pdf ; full-rate-in-effect release (Apr 2025): https://www.nyc.gov/site/dca/news/009-25/mayor-adams-full-minimum-pay-rate-app-based-restaurant-delivery-workers-now-in",
+      "granularity": "city (NYC) - METHODOLOGY BENCHMARK",
+      "year": "study Nov 2022; rule adopted June 2023; full rate April 2025",
+      "headline_datapoints": [
+        "More than 60,000 New Yorkers perform deliveries for a restaurant app on any given week; 58% aged 18-34, 75% male, 91% non-white or Hispanic (2022)",
+        "Average $14.18/hr before expenses (half app pay, half tips); $11.12/hr after expenses with tips; $4.03/hr after expenses without tips (2022)",
+        "Search summary claims ~44% of food delivery workers used cars and 56% used non-car modes, principally e-bikes, and DCWP added $2.26/hr as average e-bike expense - UNVERIFIED against primary report; the car share looks high for NYC and must be checked before use as a mode-split benchmark"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "Seattle Office of Labor Standards - First App-Based Worker Minimum Payment Ordinance (SMC 8.37) Data Report",
+      "url": "https://www.seattle.gov/documents/Departments/LaborStandards/SMC_8.37_Data_Report_ADA.pdf",
+      "contains": "Administrative data submitted by the five largest network companies (restaurant, grocery/retail, package delivery) covering Jan 15 2024 - Jun 29 2025: covered worker counts, offers, pay per engaged hour, mileage. Announcement: https://content.govdelivery.com/accounts/WASEATTLE/bulletins/414169a ; research page: https://www.seattle.gov/laborstandards/ordinances/app-based-worker-ordinances/app-based-worker-research ; UW Harry Bridges Center update (May 2026): https://labor.washington.edu/news/2026-05/research-update-app-based-worker-minimum-pay-ordinance",
+      "granularity": "city (Seattle) - METHODOLOGY BENCHMARK",
+      "year": "published April 2026; data Jan 2024 - Jun 2025",
+      "headline_datapoints": [
+        "92,801 workers covered over the first 18 months across the five largest network companies; ~15 million offers (2024-2025)",
+        "Average network company payment per engaged hour $30.12 after subtracting mileage expenses during engaged time (2024-2025)",
+        "Note: 92,801 is a cumulative 18-month count of anyone who worked, NOT daily-active; includes grocery and package delivery, not only restaurant couriers"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1", "3"]
+    },
+    {
+      "name": "UCSC Institute for Social Transformation - 'On-Demand and On-the-Edge: Ride-hailing and Delivery Workers in San Francisco'",
+      "url": "https://transform.ucsc.edu/on-demand-and-on-the-edge/",
+      "contains": "Survey of SF ride-hailing and delivery workers (commissioned SF study). Surfaced in search by title only; the URL returned HTTP 404 on fetch, so sample size, vehicle-mode split and worker-count estimates could not be verified in this pass. Likely useful for SF benchmark if located under a new URL or via SF LAFCo.",
+      "granularity": "city (San Francisco)",
+      "year": "circa 2020 (unverified)",
+      "headline_datapoints": [],
+      "reliability": "high",
+      "access": "unavailable",
+      "relevant_tasks": ["2", "4"]
+    },
+    {
+      "name": "ScienceDirect (Travel Behaviour and Society) - 'Navigating the gig economy: transportation labor challenges facing California's app-based ridehailing and courier drivers'",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214367X25002364",
+      "contains": "2025 peer-reviewed study of California ridehailing and courier drivers' transportation/labor challenges; potentially includes vehicle-type data for couriers. Fetch returned HTTP 403; abstract not read. Check for open-access preprint (e.g., UC eScholarship / UC ITS).",
+      "granularity": "state (California), cities unverified",
+      "year": "2025",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "paywalled",
+      "relevant_tasks": ["1", "4"]
+    },
+    {
+      "name": "NELP - 'App-Based Workers Speak: Studies Reveal Anxiety, Frustration, and a Desire for Good Jobs'",
+      "url": "https://www.nelp.org/app/uploads/2021/11/App-Based-Workers-Speak-Oct-2021-1.pdf",
+      "contains": "Compilation/synthesis of worker surveys on app-based work (national, includes California studies). Advocacy organization; useful as an index of primary surveys rather than as a data source.",
+      "granularity": "national with state/city sub-studies",
+      "year": "2021 (October)",
+      "headline_datapoints": [],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["1"]
+    },
+    {
+      "name": "Uber Newsroom - 'First Independent Survey Shows 4 out of 5 California Drivers with Uber Are Happy Prop 22 Passed'",
+      "url": "https://www.uber.com/us/en/newsroom/prop-22-survey-results/",
+      "contains": "Platform-commissioned driver satisfaction survey post-Prop 22; company-funded, no courier counts or vehicle mode expected.",
+      "granularity": "state (California)",
+      "year": "2021 (unverified)",
+      "headline_datapoints": [],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "LA City Clerk Council File Management System (search portal for any delivery-worker pay motions)",
+      "url": "https://cityclerk.lacity.org/lacityclerkconnect/",
+      "contains": "Where any LA City Council motion on app-based delivery worker minimum pay would be filed. One targeted web search found NO such motion or ordinance for 2025; LA results were all hotel/airport ($30/hr by 2028) and general minimum wage ordinances. Not yet searched directly.",
+      "granularity": "city (Los Angeles)",
+      "year": "n/a",
+      "headline_datapoints": [
+        "No LA City ordinance or council motion specific to app-based delivery worker minimum pay surfaced in this pass (as of 2026-09-06 search)"
+      ],
+      "reliability": "high",
+      "access": "requires_scraping",
+      "relevant_tasks": ["3", "6"]
+    }
+  ],
+  "gaps": [
+    "No public source found that counts daily-active or weekly-active food-delivery couriers in Los Angeles City/County, let alone DTLA + Koreatown; unlike NYC and Seattle, LA has no delivery-worker pay ordinance generating platform-submitted administrative data.",
+    "No LA-specific survey with a vehicle-mode split (car / motorcycle-scooter / e-bike / bicycle) for delivery couriers was found; the UCLA Labor Center LA work found is 2018 ride-hail (car) only. Vehicle-mode split remains the biggest unknown for tasks 1 and 4.",
+    "Prop 22 healthcare-stipend enrollment counts: only qualitative findings (majority cannot qualify) surfaced; no absolute enrollment numbers by county were found. These would be held by platforms or the state and may not be public.",
+    "California EDD and BLS gig-work surveys (e.g., BLS Contingent Worker Supplement, EDD labor market data) were not searched in this pass due to the call budget; expect national/state granularity only, no LA courier counts.",
+    "Primary pages for the two most relevant studies (National Equity Atlas Prop 22 methodology; ScienceDirect 2025 CA courier paper) returned 403; UCSC SF delivery-worker study URL returned 404. Sample sizes and LA/SF splits are therefore unverified and must be pulled in the full-research pass (try PDF mirrors, USC ERI, UC eScholarship).",
+    "NYC and Seattle counts are weekly-active (NYC) or cumulative 18-month (Seattle) and cover grocery/package delivery in Seattle; converting them to a daily-active per-capita or per-restaurant ratio requires the restaurant/population denominators from other modalities and a separate active-vs-registered adjustment.",
+    "The Flex Association '870,000 active app-based workers in California' figure is industry-funded, combines rideshare and delivery, does not define 'active', and cannot be apportioned to LA without an external allocation key.",
+    "No academic or government source addresses theft/security exposure of courier vehicles in DTLA/Skid Row (task 6); that will need police/crime modalities."
+  ],
+  "must_ask_hmp": [
+    "Actual vehicle-mode mix of HMP's 1,000+ SF customers (e-bike vs 28-35 mph vs 40-50 mph e-moped vs e-motorcycle) and which platform(s) each rider works for - no public LA/SF survey substitutes for this.",
+    "Daily-active share of the 1,000+ sold vehicles and of the ~300 battery renters / ~100 whole-vehicle renters (how many riders actually deliver on a given day/week), needed to calibrate any NYC/Seattle-style active-worker ratio.",
+    "Rider earnings data HMP collects at the 'confirm earnings' step before purchase (hourly/weekly gross, hours, platform) - a far better LA unit-economics input than the Prop 22 study's statewide $5.93/hr net figure.",
+    "Home ZIP codes vs delivery-zone ZIP codes of SF riders, to estimate how far riders will travel to a depot (critical for whether a Skid-Row-edge hub can serve Koreatown/Westlake riders).",
+    "Churn, theft/loss incidents, and repair frequency per vehicle class in SF, to set LA replacement-fleet and security parameters.",
+    "Any existing LA customer or inbound-inquiry data (web orders shipped to LA ZIPs, LA phone inquiries) that would give a direct read on LA demand independent of public studies."
+  ],
+  "surprises": [
+    "Seattle's ordinance data report shows 92,801 distinct covered workers over 18 months in a city of roughly three-quarters of a million residents - the pool of people who EVER deliver is an order of magnitude larger than plausible daily-active counts; any ratio-based LA estimate must explicitly separate registered/ever-active from daily-active.",
+    "The search summary of the NYC DCWP study attributes ~44% car use to NYC food-delivery workers, which conflicts with the common belief that NYC couriers are overwhelmingly on e-bikes; if it holds up against the primary report, LA (a far more car-oriented city) could have a much larger car share than the CONTEXT's e-bike/moped framing assumes - verify before use.",
+    "The 2024 Berkeley/USC/National Equity Atlas Prop 22 study puts California delivery workers at $5.93/hr net of expenses excluding tips (vs $7.12 for ride-hail), i.e., delivery riders' ability to carry a weekly rental plus battery subscription is thinner than ride-hail-based intuition suggests.",
+    "Los Angeles has no delivery-worker minimum-pay ordinance or equivalent data-reporting requirement (none surfaced for 2025), so unlike NYC/Seattle there is no administrative dataset to anchor LA courier counts; the LA sizing will have to be triangulated rather than read off a government report."
+  ]
+}

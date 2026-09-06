@@ -1,0 +1,68 @@
+{
+  "lens": "competition_and_platforms",
+  "assumptions": [
+    {
+      "assumption": "Whizz's advertised LA price ('from $139/mo', already below its $169/mo national headline) is a static floor, and HMP can hold SF-level whole-vehicle rental pricing (~$45-65/week, i.e. ~$195-280/mo) in LA because Whizz only offers pedal e-bikes.",
+      "why_it_may_be_wrong": "Whizz is VC-funded and already runs DoorDash-co-branded subsidies ($400 off; $80 off first month after 25 deliveries; 15% off with code 15DD) and added four DoorDash cities in 2026 alone; a $139 LA headline below its national price is itself evidence of seeding-mode promotional pricing. If a new hub at 768 Ceres starts pulling riders, the rational response is a 2-3 month $99 promo funded from marketing budget, which HMP, carrying $10k/mo rent plus a physical fleet, cannot match without breaking unit economics. Separately, Zoomo once called LA a 'top performing market' but its US site now reads NYC-only; a funded operator retreating from LA is a signal that LA courier e-bike rental economics were not good enough, not evidence of an open field.",
+      "direction": "flatters_LA_case",
+      "magnitude": "20-35% lower realized rental price on the e-bike / fast-e-bike tiers (roughly -$40 to -$70 per unit per month); if e-bike class is more than half of the LA fleet plan, payback on the rental fleet stretches from ~12 to 18-24 months and the Month-12 trigger is at risk.",
+      "cheap_test": "(a) Sign up on getwhizz.com as an LA courier and obtain the real quote, deposit, wait time and pickup address; find out whether Whizz has a staffed LA hub or is drop-shipping bikes. (b) DoorDash's own Dasher Central bike page (Sep 2026) lists Whizz in NYC, SF, DC, Philadelphia, Chicago and Jersey City but NOT LA; check monthly whether LA appears, because that is the moment Whizz gets zero-CAC in-app distribution. (c) Call Zoomo to confirm whether an LA hub still operates. (d) Compare Whizz LA vs SF Google review counts as a proxy for active riders.",
+      "hmp_internal_data_needed": "SF realized weekly rental price and active rental count by month for the 12 months before and after Whizz's 2026 DoorDash SF launch; churn of e-bike-class renters vs moped/motorcycle-class renters in that window; exit-interview reasons that mention Whizz or price.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "HMP can reach ~100 whole-vehicle rentals in LA within 6-12 months through the same walk-in / word-of-mouth channel that produced 1,000+ SF sales, so the Month-6 and Month-12 triggers are attainable at SF-like customer acquisition cost.",
+      "why_it_may_be_wrong": "SF's 1,000 vehicles were built over years, before Whizz had DoorDash distribution in SF. In LA HMP starts from zero brand recognition while Whizz gets zero-CAC placement inside Dasher onboarding (Dasher Central 'bike dashing' page, promo codes tied to delivery milestones) and Uber Eats does the same for Zoomo in NYC (promo valid through Dec 31, 2026). All four of Whizz's 2026 launches were DoorDash-driven, so LA is the obvious next switch to flip; once it flips, every new LA bike-dasher sees Whizz before they ever hear of HMP. HMP has no platform partnership, and LA's courier community is spread across a car-dominant metro rather than SF's compact Tenderloin/SoMa/Mission cluster where the SF store gets walk-ins.",
+      "direction": "flatters_LA_case",
+      "magnitude": "CAC 2-3x SF; ramp to 100 rentals takes 12-18 months instead of 6, i.e. an extra $60-120k of lease alone plus idle-fleet carrying cost; Month-6 trigger likely missed and Month-12 marginal.",
+      "cheap_test": "Run a 3-week pre-lease demand test: $1.5-2k of geo-targeted ads (Spanish, Korean, Chinese, English) within 3 miles of 768 Ceres plus ~500 flyers at Koreatown/DTLA restaurant pickup zones at 6-8pm, pointing to a phone-verified waitlist with a real weekly price. Pass bar: >=150 verified leads and >=30 who place a $50 refundable deposit. In parallel, apply to DoorDash's and Uber's courier-perks programs to learn whether HMP can be listed at all, and on what terms.",
+      "hmp_internal_data_needed": "SF acquisition-channel mix (walk-in, referral, online ads, platform-related) for the ~100 renters and ~300 battery subscribers; months from SF opening to 100 active rentals; marketing spend per new renter in SF; share of SF customers who came via any DoorDash/Uber channel.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "HMP's SF fleet mix (heavy in e-moped / e-motorcycle plus fast e-bikes) transfers to LA because DoorDash and Uber Eats treat those riders the same in LA as in SF, and the platforms' vehicle-class rules will not bite.",
+      "why_it_may_be_wrong": "Platforms gate dash types per market. 'Motorcycle' mode requires a driver's license, registration and insurance, a filter that excludes a large share of immigrant couriers who currently ride 'bike' mode without a DL. A rider registered as 'bike' on an out-of-class vehicle (throttle-only, >28 mph, no pedals) is exposed to platform deactivation and, in LA specifically, to LAPD 'e-moto' enforcement sweeps that intensified in 2025-26. In the other direction, bike-mode order density per square mile in LA is thinner than SF (car-dominant metro), so the pure e-bike tier may underperform SF. The whole fleet-mix task (task 4) rests on this untested assumption, and it also determines whether HMP's motorcycle tier is a genuine differentiator vs Whizz (motorcycle dashers get car-radius orders and can lane-split) or a compliance liability.",
+      "direction": "either",
+      "magnitude": "If 40-60% of LA prospects lack a DL / M1 or insurance, the moped/motorcycle rental tier's addressable pool shrinks by that fraction. If fast-e-bike riders in 'bike' mode face confiscation or deactivation at even 5% per year, replacement-vehicle cost and deposit disputes rise materially and the 'replacement vehicle' line becomes a cost center rather than a product.",
+      "cheap_test": "Create Dasher and Uber Eats courier accounts with LA addresses (90021, 90005, 90017) and record which vehicle types the apps actually offer; ask 30 couriers at Koreatown/DTLA hotspots what they ride vs what they registered, and whether they hold a DL / M1; scan LAPD/LADOT releases and r/doordash_drivers LA threads for confiscation and deactivation reports in the last 12 months.",
+      "hmp_internal_data_needed": "For SF customers: product class x platform x registered dash type x license status; annual incidence of deactivations, confiscations and replacement-vehicle events per product class; share of SF whole-vehicle renters holding an M1/M2; share of SF motorcycle-class buyers who are registered as 'motorcycle' on the platform vs 'bike'.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Sidewalk robots are a novelty, and the sub-1.5-mile order pool in DTLA and Koreatown that e-bike couriers depend on will be intact through the 24-month trigger horizon.",
+      "why_it_may_be_wrong": "Serve Robotics reports an eleven-fold LA fleet increase since 2024 and coverage of ~40 LA neighborhoods; it has DoorDash (multi-year deal, Oct 2025), Uber Eats, and Grubhub (Aug 2026, 100+ LA merchants) integrations; Coco is live on DoorDash with ~600 LA merchants. Koreatown and DTLA are flat, dense and restaurant-dense, exactly the geography robots target and among Serve's earliest LA neighborhoods. Robots take the shortest trips, which are the highest per-hour-earning trips for bike-mode couriers; losing them cuts courier earnings in precisely the hub's catchment and therefore willingness to pay for rentals. SF cannot be used as a control because robot density in SF is negligible.",
+      "direction": "hurts_LA_case",
+      "magnitude": "If robots capture 10-20% of sub-1.5-mile orders in Koreatown/DTLA by 2028, bike-mode courier per-hour earnings in the catchment fall roughly 5-10%, lowering rental affordability and retention. Hits the pure e-bike tier hardest; motorcycle-class riders on longer trips are less exposed.",
+      "cheap_test": "Place ~20 orders (weekday/weekend, lunch/dinner) from Koreatown/DTLA/Little Tokyo restaurants on DoorDash, Uber Eats and Grubhub and log robot vs human fulfillment; count robots per hour on Wilshire, 6th, Western and in Little Tokyo; read Serve's latest 10-Q for LA robot count and daily deliveries; check LADOT personal delivery device permit counts.",
+      "hmp_internal_data_needed": "Nothing in SF settles it. At most, trip-length distributions from SF courier interviews to estimate what share of a bike-mode courier's earnings sits in sub-1.5-mile trips.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "Informal weekly rentals from individuals (Facebook Marketplace, OfferUp, WhatsApp groups) are marginal and will not undercut a formal hub that requires ID, a card and a deposit.",
+      "why_it_may_be_wrong": "LA's courier base skews heavily immigrant and includes many riders on shared or rented app accounts. Informal lenders rent e-bikes and mopeds at roughly $40-60/week in cash, with no deposit, no ID, no card, delivered to the rider, and they tolerate riders who fail platform KYC. A formal hub may be locked out of the single largest segment. Informal lenders also buy HMP-type vehicles wholesale and rent them out, undercutting HMP's own rental line with HMP's own product.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Could remove 30-50% of the visible renter pool from HMP's reach and compress the achievable weekly price toward $40-50; also sets a low anchor that makes HMP's deposit requirement a conversion killer.",
+      "cheap_test": "One afternoon: search Facebook Marketplace, OfferUp and Craigslist LA for 'renta bicicleta electrica delivery', 'moto electrica renta semanal', and Korean-language equivalents; count active listings and prices; message 10 lenders to learn fleet size and terms. Then ask 30 couriers in Koreatown at 6-8pm where their vehicle came from and what they pay per week.",
+      "hmp_internal_data_needed": "SF: share of renters paying cash vs card; walk-away rate when a deposit or ID is required; number of SF customers who bought multiple vehicles (proxy for informal re-renters); price of informal SF listings vs HMP's rental price.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "HMP's battery subscription / swap line (300+ subscribers among 1,000+ SF buyers, ~30% attach) will replicate in LA with no formal competitor and no geography penalty.",
+      "why_it_may_be_wrong": "DoorDash now lists Swobbee (battery-swap subscription, 50% off for 3 months) as a Dasher partner alongside Whizz and Dirwin, and Whizz/Zoomo bundle battery, maintenance and theft cover into the rental, so the standalone battery upsell disappears for their riders. 768 Ceres sits on the eastern edge of DTLA, 2-4 miles from Koreatown and Westlake; a single-hub swap model depends on riders detouring there, whereas SF's compactness makes hub swaps nearly free. If a platform steers riders to a network of swap cabinets, a single hub loses on convenience.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Attach rate falling from ~30% to 10-15% would remove roughly half of the recurring, highest-margin revenue line assumed for LA.",
+      "cheap_test": "Check Swobbee / Popwheels station maps for LA and any LA-specific Dasher perks; map ride time from Koreatown, USC and Westlake to 768 Ceres at 5-8pm; ask 30 riders whether they would ride a 25-40 minute round trip for a swap or would rather pay Whizz's bundled price.",
+      "hmp_internal_data_needed": "SF battery-subscription attach rate over time; subscriber home/work zip distribution vs distance to the SF hub; swaps per subscriber per week; any change in attach or churn after Whizz's DoorDash SF launch.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "LA's regulatory environment for app couriers is static for 24 months, and an NYC/Seattle-style minimum-pay rule is either irrelevant to LA or would help by raising courier earnings.",
+      "why_it_may_be_wrong": "Prop 22 sets a state pay floor and is widely read as preempting local ordinances on app-based driver compensation, so LA City cannot easily copy NYC's rule; that keeps the LA courier pool oversupplied and per-hour earnings low, which caps rental affordability. But the state has moved quickly (AB 1340, Oct 2025, gave rideshare drivers collective bargaining) and a delivery-courier equivalent, or platform responses like NYC's app lockouts and scheduling restrictions, would cut active courier counts and hours precisely during the hub's ramp. Either way, the plan should not assume today's courier count, hours per courier, or earnings per hour.",
+      "direction": "either",
+      "magnitude": "A pay rule with NYC-style platform lockouts could shrink the active renter pool 10-25% within a year; no rule at all means $150-250/mo rentals stay at 15-25% of a typical courier's gross, which limits retention and pricing power.",
+      "cheap_test": "Search the LA City Clerk council file index and the CA legislature for 'app-based delivery' items; monitor DoorDash/Uber LA courier forums for 'no dash now' waitlist and lockout frequency; confirm Prop 22's local-preemption text (Bus. & Prof. Code 7465) with counsel.",
+      "hmp_internal_data_needed": "SF renters' self-reported weekly gross earnings at onboarding and rental price as a share of earnings, to estimate how retention responds to a 10-20% earnings drop.",
+      "could_flip_decision_alone": false
+    }
+  ]
+}

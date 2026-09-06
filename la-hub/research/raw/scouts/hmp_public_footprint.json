@@ -1,0 +1,263 @@
+{
+  "modality": "hmp_public_footprint",
+  "sources": [
+    {
+      "name": "hmpbikes.com homepage (Shopify storefront)",
+      "url": "https://hmpbikes.com",
+      "contains": "Full product lineup with regular + sale prices, SF store address/hours/phone, warranty/shipping/returns policy, social links, collection URLs. No rental, subscription, LA, courier or founding-year content.",
+      "granularity": "per-SKU list price",
+      "year": "2026-09 (live page fetched 2026-09-06)",
+      "headline_datapoints": [
+        "FLASH 75 MPH Motorcycle $4,999 (was $5,499); Lightning MK.II 56 MPH Motorcycle $3,999 (was $4,499); Lightning 3000 - 30 Ah $2,999 (was $3,499); Lightning 3000 Plus - 45 Ah $3,599 (was $4,399)",
+        "LIVA 7 Class 2 E-bike $1,599 (was $1,799); INNO-A Pro Class 2 E-bike (48V) $2,599 (was $2,799); Delivery Combo (INNO + Battery + Rack + Bag) $2,499 (was $3,099); Battery 48V 24Ah $599.00; Alarm Disc Lock $49.95; Baby Seat $149.00",
+        "Store: 261 6th St, San Francisco, CA 94103; phone 916-926-3649; open 7 days 10:00 AM-1:00 PM, 2:00 PM-6:00 PM; 3-year warranty claim; free USA shipping 5-7 days; 14-day returns; socials Instagram @hmpbikes, TikTok @hmpbikes, Facebook hmpbikes1, YouTube channel UCeYMGyNhrs-IAhVA1AvvqFA"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "hmpbikes.com Electric Motorcycles collection",
+      "url": "https://www.hmpbikes.com/collections/electric-motorcycles",
+      "contains": "FLASH and Lightning MK.II listing cards with price and headline specs; product URLs.",
+      "granularity": "per-SKU",
+      "year": "2026-09",
+      "headline_datapoints": [
+        "FLASH: $4,999.00 sale / $5,499.00 regular; '75 mph'; peak '15,000 W'; max range '106 mi'; battery '45 Ah single or 90 Ah dual'; ABS + traction control; Apple CarPlay dash; 397 lb load; IPX6; M1 motorcycle license (product URL /products/flash-electric-motorcycle)",
+        "Lightning MK.II: $3,999.00 sale / $4,499.00 regular; '56 mph'; peak '7,000 W'; max range '62 mi'; battery '45 Ah single'; 397 lb load; IPX6; motorcycle license required (product URL /products/lightning-mkii-electric-motorcycle)",
+        "Lightning 3000 variants are NOT on this collection (they sit in /collections/lightning-series as mopeds)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "hmpbikes.com Lightning MK.II product page",
+      "url": "https://www.hmpbikes.com/products/lightning-mkii-electric-motorcycle",
+      "contains": "Complete spec table incl. battery voltage/Ah/kWh, rated vs peak motor, range test conditions, charge time, weight, legal status, warranty, financing note, pickup locations.",
+      "granularity": "full spec sheet",
+      "year": "2026-09",
+      "headline_datapoints": [
+        "Price $3,999 launch (regular $4,499); motor rated 4,000 W / peak 7,000 W side-mounted gear motor; top speed 56 mph",
+        "Battery 74V 45Ah ~3.33 kWh, ~40 lb, removable; max range 62 mi (reference at steady 30 mph), working city estimate 40-48 mi; charge ~4.5 h empty-to-full with included 110V 8A/840W portable charger",
+        "Vehicle ~260 lb; load 397 lb; seat 30.7 in; street-legal DOT motorcycle, M1 endorsement, VIN/MCO/registration docs; warranty 1 yr / 10,000 mi (motorcycle and battery, battery covered below 70% capacity); financing available; free local pickup in Davis and San Francisco; use cases cite 'delivery work'"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "hmpbikes.com FLASH product page(s)",
+      "url": "https://www.hmpbikes.com/products/flash-electric-motorcycle",
+      "contains": "FLASH spec sheet (also a duplicate listing at /products/flash-electric-moped). Not opened in this pass; specs below come from the collection card and press.",
+      "granularity": "full spec sheet (expected)",
+      "year": "2026",
+      "headline_datapoints": [
+        "Collection card: 75 mph, 15,000 W peak, 106 mi max range, 45 Ah single or 90 Ah dual battery, $4,999 sale / $5,499 regular"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "Electrek - 'New HMP Flash brings affordable 75 MPH electric scooters to the US'",
+      "url": "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/",
+      "contains": "Press launch coverage of FLASH with price ladder by battery/charger configuration, battery kWh, power, tested range and test conditions, charging.",
+      "granularity": "product launch article",
+      "year": "2026-07-18",
+      "headline_datapoints": [
+        "Pricing 'starts at $4,799 for the single-battery model without the onboard charger and reaches $5,999 for the fully-optioned dual-battery version equipped with the integrated charger'",
+        "Two removable packs 'each rated at 3.3 kWh (total 6.6 kWh)'; tested range 70 miles (SF city streets, 200 lb rider, 80/20 city/highway) and 106 miles at steady 37 mph",
+        "Peak 15 kW (20 hp), continuous 6 kW (8 hp); 75 mph top speed; onboard 2 kW charger 20-80% in ~2 h; included 840 W portable charger"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "Additional FLASH / HMP press (Electrek 2026-07-31, New Atlas, The Autopian, TechTimes, Buck City Biker)",
+      "url": "https://electrek.co/2026/07/31/hmps-new-3999-electric-scooter-is-the-affordable-street-legal-commuter-the-us-needs/",
+      "contains": "Cluster of July 2026 product-press pieces: Electrek 7/31 covers a '$3,999 electric scooter' (matches Lightning MK.II launch price); New Atlas (https://newatlas.com/motorcycles/hmp-flash/), Autopian, TechTimes (2026-07-20) cover FLASH at 75 mph 'under $5,000' / 'below $6K'. Useful for brand credibility, not for SF rider-business data.",
+      "granularity": "article",
+      "year": "2026-07",
+      "headline_datapoints": [
+        "Electrek headline: 'HMP's new $3,999 electric scooter is the affordable, street-legal commuter the US needs' (2026-07-31)",
+        "New Atlas headline: 'Street-legal electric scooter hits 75 mph for under $5,000'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "415ebike.com homepage (SF dealership Shopify storefront; note domain is 415ebike.com singular - 415ebikes.com returned HTTP 503)",
+      "url": "https://www.415ebike.com/",
+      "contains": "Dealer product list (HMP models + Big Sur e-bikes + Freeboy scooters) with prices, store address/phone, nav to /pages/rental and /pages/warranty, /collections/hmp-bikes. No specs, no rental prices on homepage.",
+      "granularity": "per-SKU list price",
+      "year": "2026-09 (page still shows a Dec 20-31 Christmas 'Save up to $1400' banner)",
+      "headline_datapoints": [
+        "HMP Lightning 3000 - 30 Ah Moped $2,999.00 (reg $3,499.00); Lightning 3000 - 45 Ah $3,599.00 (reg $4,399.00); HMP LIVA 7 $1,599.00 (reg $1,799.00); HMP INNO-A Pro $2,699.00 (reg $2,799.00) - NB $100 higher than hmpbikes.com's $2,599",
+        "Big Sur Ebike $1,799.00; Big Sur Sport Ebike $1,799.00; FREEBOY J-03 scooter $229.90; Freeboy J15 MAX $578.88",
+        "261 6th Street, San Francisco, CA; 916-926-3649; business@hmpbikes.com; collections /collections/electirc-bike, /collections/electirc-scooter, /collections/electirc-moped, /collections/parts-accessories"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "4"]
+    },
+    {
+      "name": "415ebike.com Rental page",
+      "url": "https://www.415ebike.com/pages/rental",
+      "contains": "Subscription rental terms: inclusions, theft/loss fees, optional insurance, ID requirements, battery-swap claim, SF-only. Actual weekly/monthly prices are embedded in images (Inno-a_pro_rental_price.webp, Liva_rental_price.webp) and were NOT readable as text.",
+      "granularity": "policy text; price tables as images",
+      "year": "2026-09",
+      "headline_datapoints": [
+        "'Your subscription includes a bike, a phone stand, a delivery bag rack, a delivery bag, and a helmet. It also includes one free repair and servicing each month.'",
+        "Theft/loss: if recovered '$150 retrieval fee plus any damages'; if unrecovered security deposit forfeited plus an 'additional $500'; enhanced insurance '$25 per month' removes the extra charge; 'Unlimited Range with Battery Swap' (no swap price stated)",
+        "Requirements: 'US Photo ID, be 18 years or older, and proof of residency is optional but recommended'; location listed as San Francisco only, 261 6th St"
+      ],
+      "reliability": "high",
+      "access": "requires_scraping",
+      "relevant_tasks": ["3", "2"]
+    },
+    {
+      "name": "hmpbikes.com Rental page",
+      "url": "https://www.hmpbikes.com/pages/rental-page",
+      "contains": "'Electric Bike Rentals | HMP Bikes' - surfaced in search; not opened in this pass. May duplicate the 415ebike.com rental terms or carry the price table.",
+      "granularity": "unknown",
+      "year": "2026",
+      "headline_datapoints": [
+        "Page title only: 'Electric Bike Rentals | HMP Bikes'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "Gazetteer SF - 'Meet the moped flocking SF streets' (Eddie Kim)",
+      "url": "https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets",
+      "contains": "Only substantive press profile of the SF delivery-rider business: founder, founding year, SF fleet count, package price, rent-to-own monthly, battery-swap rollout, rider quotes (Nepali delivery riders), HMP HQ location, founder's prior ventures.",
+      "granularity": "feature article",
+      "year": "2026-04-02",
+      "headline_datapoints": [
+        "Founder Peter Chu; company founded 2022; HMP headquartered in Davis, 415 eBikes = SoMa dealership; Chu previously ran Xiaocun (2017) and Muncho delivery service",
+        "'Over 600 e-mopeds in SF; targeting 1,000 by year-end' (as of April 2026); '$2,500 package' (Inno e-moped + storage rack + large delivery bag + extra battery); '~$380/month rent-to-own payment plan'; gas alternatives Honda PCX/ADV '$5,000+'",
+        "'Battery-swapping stations launching June 2026; first location at 415 eBikes near Folsom and Sixth streets'; Inno classified 'class two' e-bike (20 mph), no license/registration/insurance; rider quotes from Kamal Oli and Medsraj Basnet; no DoorDash/Uber Eats earnings figures; no Los Angeles mention"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["2", "3", "4", "1"]
+    },
+    {
+      "name": "Wayback Machine availability API for 415ebike.com",
+      "url": "http://archive.org/wayback/available?url=415ebike.com&timestamp=20150101",
+      "contains": "Closest archived snapshot to 2015-01-01; because the API returns the nearest capture, the result is effectively the EARLIEST capture of this domain.",
+      "granularity": "single timestamp",
+      "year": "2026",
+      "headline_datapoints": [
+        "closest.timestamp = 20260418204449 (http://web.archive.org/web/20260418204449/https://www.415ebike.com/) - i.e. no Wayback capture of 415ebike.com before 2026-04-18; the SF business predates this (Gazetteer: founded 2022), so the domain is likely newer than the business or was previously on another domain (415ebikes.com / hmpbikes.com not checked)"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Poyst business listing - 415 eBikes",
+      "url": "https://www.poyst.com/business/415-ebikes",
+      "contains": "Aggregated rating and hours for 415 eBikes SF (mirrors Google). Review COUNT not captured in snippet.",
+      "granularity": "listing",
+      "year": "2026",
+      "headline_datapoints": [
+        "Title: '415 eBikes San Francisco - 5.0★ Reviews & Hours' (count unknown; do not infer fleet from reviews)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Wheree / Wanderboat aggregator listings - 415 eBikes",
+      "url": "https://415-ebikes.wheree.com/",
+      "contains": "Scraped Google-reviews aggregators (Wheree 'Updated August 2026'; Wanderboat https://wanderboat.ai/local-businesses/united-states/san-francisco/415-ebikes/iQw-JH0CTcyzoWm_YPpb1g). Carry paraphrased customer reviews mentioning rental, battery swap up to 50 mi range, GPS tracker, free trial; describe HMP Bikes as 'partnered with 415 eBikes'.",
+      "granularity": "listing + review excerpts",
+      "year": "2026-08",
+      "headline_datapoints": [
+        "Review excerpt: customer 'got an e-bike on the day they visited, appreciated the one-week free trial ... two weeks of free parking'",
+        "Snippet: 'battery swap service ... maintaining a range of up to 50 miles, which is particularly advantageous for food delivery'; bikes have 'GPS tracker, vibration alarm, and multiple locking mechanisms'",
+        "Wheree categorises the shop as 'Cycling Class' (mis-categorised); review counts and Google rating not captured"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Yelp - HMP Bikes (Davis, CA)",
+      "url": "https://www.yelp.com/biz/hmp-bikes-davis",
+      "contains": "Yelp listing for HMP's Davis HQ/shop at 440 F St, Davis; 'Updated July 2026'. No Yelp page for the SF 415 eBikes location surfaced in search.",
+      "granularity": "listing",
+      "year": "2026-07",
+      "headline_datapoints": [
+        "HMP BIKES - 440 F St, Davis, California (rating/review count not captured)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "Social handles (from hmpbikes.com footer + search)",
+      "url": "https://www.tiktok.com/@415.ebikes",
+      "contains": "TikTok @415.ebikes (SF shop account) and @hmpbikes; Instagram @hmpbikes; Facebook hmpbikes1; YouTube channel https://www.youtube.com/channel/UCeYMGyNhrs-IAhVA1AvvqFA. Follower counts and post dates not captured; earliest-post date could serve as founding evidence.",
+      "granularity": "account handles only",
+      "year": "2026",
+      "headline_datapoints": [
+        "TikTok @415.ebikes exists as a separate SF-shop account distinct from brand @hmpbikes"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["2"]
+    },
+    {
+      "name": "415ebikes.com (plural domain named in brief)",
+      "url": "https://415ebikes.com",
+      "contains": "Returned HTTP 503 on 2026-09-06. Live storefront is www.415ebike.com.",
+      "granularity": "n/a",
+      "year": "2026",
+      "headline_datapoints": [
+        "HTTP 503 Service Unavailable"
+      ],
+      "reliability": "low",
+      "access": "unavailable",
+      "relevant_tasks": []
+    }
+  ],
+  "gaps": [
+    "Weekly / monthly rental prices for INNO-A Pro and LIVA are published only as images (Inno-a_pro_rental_price.webp, Liva_rental_price.webp) on 415ebike.com/pages/rental - need image download/OCR or the company's own rate card; hmpbikes.com/pages/rental-page not yet opened and may hold the same table.",
+    "Battery subscription / swap pricing: no public price found; rental page only says 'Unlimited Range with Battery Swap' and Gazetteer says swap stations launched June 2026.",
+    "Security deposit amount: referenced ('security deposit is forfeited') but the dollar figure was not in readable text.",
+    "Rental pricing for FLASH / Lightning MK.II / Lightning 3000 (whole e-moped or motorcycle rental): nothing public; only a '~$380/month rent-to-own' figure for the Inno package via Gazetteer.",
+    "Google Maps rating + review count and Yelp SF listing: only a third-party '5.0★' snippet; counts not captured (and per brief must not be used for inference anyway).",
+    "SWFT MAXX: not found on hmpbikes.com or 415ebike.com homepages/collections in this pass; specs and price unverified.",
+    "FLASH battery voltage/Wh not read from the product page itself (press says 2 x 3.3 kWh; Lightning MK.II page confirms 74V 45Ah ~3.33 kWh, implying the same pack); FLASH continuous vs rated motor W from product page unverified.",
+    "INNO-A Pro and LIVA 7 detailed specs (motor W, battery Wh, range) not captured - only '48V' and 'Class 2' and the $599 48V 24Ah replacement battery.",
+    "Founding date of the SF rider business rests on one press article (2022) - no Wayback capture of 415ebike.com before 2026-04-18; hmpbikes.com and 415ebikes.com Wayback histories and earliest Google/Yelp review dates not checked.",
+    "No published SF customer testimonials with DoorDash / Uber Eats earnings figures found; rider quotes in Gazetteer are qualitative only.",
+    "No public mention anywhere of Los Angeles plans or 768 Ceres Ave.",
+    "Instagram / TikTok / YouTube follower counts and posting history not captured."
+  ],
+  "must_ask_hmp": [
+    "Current SF rental rate card (weekly and monthly) per model incl. deposit amount, insurance add-on, and rent-to-own schedule - the public page hides prices in images.",
+    "Battery subscription / swap plan pricing and terms (per-swap vs monthly, which models, swap-station count and throughput).",
+    "Actual fleet composition on rent (~100 vehicles) by model, and the ~300 battery subscribers by battery type (48V 24Ah e-bike packs vs 74V 45Ah moped packs).",
+    "Date the SF shop opened at 261 6th St and any prior locations (public evidence only supports 'founded 2022').",
+    "Dealer cost / landed cost per model vs the public MSRP (needed for unit economics; public sites only show retail and sale prices, which differ between hmpbikes.com and 415ebike.com).",
+    "Repair/parts revenue and warranty-claim rates, rental utilisation, theft/loss frequency (public page only shows the $150 / $500 / $25-per-month fee structure).",
+    "Which SKUs are intended for LA (Class 2 Inno/Liva vs M1-licensed FLASH/MK.II) and whether the 'HMP Bikes vs 415 eBikes' brand split will be replicated in LA."
+  ],
+  "surprises": [
+    "Gazetteer SF (2026-04-02) reports 'over 600 e-mopeds in SF; targeting 1,000 by year-end', while the CONTEXT states >1,000 vehicles sold - reconcilable if the company figure is cumulative across all vehicle types or post-dates April, but the two should be reconciled with HMP.",
+    "HMP is headquartered in Davis, CA (440 F St; Gazetteer + Yelp + 'free local pickup in Davis and San Francisco') - 415 eBikes is described as HMP's SoMa 'dealership' / 'partner', not the parent; the LA hub would be a second retail outpost of a Davis brand.",
+    "The live SF storefront domain is 415ebike.com (singular); 415ebikes.com returned HTTP 503.",
+    "FLASH pricing differs by source: hmpbikes.com shows $4,999 sale / $5,499 regular, while July 2026 press quotes a $4,799 (single battery, no onboard charger) to $5,999 (dual battery + charger) ladder - configuration-dependent, so a single 'FLASH MSRP' default is ambiguous.",
+    "INNO-A Pro is $2,599 on hmpbikes.com but $2,699 on 415ebike.com (both 'sale' vs $2,799 regular).",
+    "FLASH and Lightning MK.II are DOT-registered motorcycles requiring an M1 licence - only the Inno/Liva Class 2 e-bikes and (likely) the Lightning 3000 mopeds fit the 'no license' courier positioning; the SF courier fleet described in press is Class 2 Inno-based, not FLASH/MK.II.",
+    "Battery-swap stations were slated to launch June 2026 (first at 415 eBikes) - so the ~300 battery subscribers in CONTEXT may be a very new product line with short operating history.",
+    "SWFT MAXX (named in CONTEXT) does not appear on either storefront's visible lineup."
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "modality": "site_768_ceres",
+  "sources": [
+    {
+      "name": "LoopNet listing 18987164 - 768 Ceres Ave Industrial for Lease",
+      "url": "https://www.loopnet.com/Listing/768-Ceres-Ave-Los-Angeles-CA/18987164/",
+      "contains": "Primary broker listing (Lee & Associates). Search snippet gives: built 2015; 8,443 SF rentable industrial; 0.21 ac (9,091 SF) lot; cross street Ceres Ave / E 8th St; 'AIR - CBD' submarket; flex/office warehouse, 'modern office layout', '100% HVAC', '2 executive offices', power '400A, 240V, 3P, 4W', 'calculated sprinklers', 'electrical yard gate'; described as 'Arts District & Downtown Adjacent'. Snippet also says the property 'is no longer being advertised on LoopNet.com' (unclear which of the two LoopNet listing IDs that status applies to). Fetch returned HTTP 403.",
+      "granularity": "parcel / single listing",
+      "year": "listing date unknown; snippet retrieved 2026-09-06",
+      "headline_datapoints": [
+        "asking rent '$19.20 per square foot per year' (snippet; lease type not stated)",
+        "8,443 SF, built 2015, lot 0.21 ac; power '400A, 240V, 3P, 4W'; 'electrical yard gate'",
+        "broker David Brandt, Lee & Associates, 323-767-2104; listing status 'no longer being advertised on LoopNet.com'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "LoopNet listing 23495851 and LoopNet property record APN 5146-003-059 - 768 Ceres Ave",
+      "url": "https://www.loopnet.com/Listing/768-Ceres-Ave-Los-Angeles-CA/23495851/",
+      "contains": "Second LoopNet listing ID for the same address (may be a different marketing period or the 768 & 772 combined offering). The property record page https://www.loopnet.com/property/768-ceres-ave-los-angeles-ca-90021/06037-5146003059/ gives the assessor parcel number. Neither page could be opened (LoopNet blocks fetch).",
+      "granularity": "parcel",
+      "year": "2026 (search snippet)",
+      "headline_datapoints": [
+        "APN / Parcel ID 5146-003-059 (LA County assessor number needed for ZIMAS lookup)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "PropertyShark CRE page - 768 Ceres Ave",
+      "url": "https://www.propertyshark.com/cre/commercial-property/us/ca/los-angeles/768-ceres-ave/",
+      "contains": "Syndicated listing mirror: building SF, lot size, year built, land use, asking rent, lease type, office area, availability. Zoning code, APN, owner, sale history NOT shown on the free CRE page (PropertyShark's parcel page at https://www.propertyshark.com/mason/Property/141956732/768-S-Ceres-Ave-Los-Angeles-CA-90021/ likely holds owner/zoning but is paywalled/registration).",
+      "granularity": "parcel / single listing",
+      "year": "listing date not shown; fetched 2026-09-06",
+      "headline_datapoints": [
+        "'For Lease $1.20/SF/MO', 'Lease Type Full Service', 'Available Date Immediate', '1 Space Available'",
+        "'Total square feet available 8,443 SF', 'Office Area 3,467 SF', '0.21 Acre', year built '2015'",
+        "Land use 'Industrial - Showroom - Industrial'"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "LargeWarehouseSpace.com - 768 & 772 Ceres Ave combined listing",
+      "url": "https://www.largewarehousespace.com/listings/view/ly8xg/768-772-ceres-ave/",
+      "contains": "Aggregator listing marketing 768 AND 772 Ceres together as one 16,887 SF facility (i.e. 768 appears to be one of two twin ~8,443 SF buildings on adjoining lots). Gives rent, lease type, office SF, loading, lot, year built, occupancy. No broker, power, clear height, sprinklers or zoning.",
+      "granularity": "two-parcel assemblage",
+      "year": "listing date not shown; fetched 2026-09-06",
+      "headline_datapoints": [
+        "'$1.40/SF/MO ($16.80/SF/YR)', lease type 'Full Service'",
+        "16,887 SF total, 7,250 SF office, '2 grade-level doors', 0.42 acre, built 2015, 'immediate occupancy'",
+        "use described as 'showroom and industrial operations'; mentions 'lease renewal options'"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "Other aggregator mirrors of the 768 Ceres listing (Moody's CRE, iRealEdge, MyEListing)",
+      "url": "https://www.moodyscre.com/marketplace/property/1135615/768-ceres-ave-los-angeles-ca-90021",
+      "contains": "Additional syndicated copies of the same listing: https://irealedge.com/listing/fc4e1aee57aa4418/694930-lease/ and https://myelisting.com/listing/192456/768-ceres-avenue-los-angeles-ca-90021/ . Not opened in this pass; useful for cross-checking listing date, photos, floor plan and whether the space is still active.",
+      "granularity": "single listing",
+      "year": "unknown",
+      "headline_datapoints": [
+        "URLs located only; no data extracted"
+      ],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "LA City business registration - '768 Ceres LLC'",
+      "url": "https://opendatalacity.com/business/0002968501-0001-9",
+      "contains": "Third-party mirror of the City of LA business-tax registry showing an entity named '768 Ceres LLC' registered at 768 Ceres Avenue, 90021 - probable property-owning LLC (landlord identity lead). Not opened.",
+      "granularity": "entity",
+      "year": "unknown",
+      "headline_datapoints": [
+        "entity name '768 Ceres LLC' at 768 Ceres Avenue, Los Angeles 90021 (search result title only)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3"]
+    },
+    {
+      "name": "LAPD Crime Data from 2020 to Present (Socrata id 2nrs-mtv8) - now renamed 'Crime Data from 2020 to 2024'",
+      "url": "https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8",
+      "contains": "Incident-level LAPD crime records with lat/lon. Socrata metadata (https://data.lacity.org/api/views/2nrs-mtv8.json) confirms columns: dr_no, date_rptd, date_occ, time_occ, area, area_name, rpt_dist_no, part_1_2, crm_cd, crm_cd_desc, mocodes, vict_age, vict_sex, vict_descent, premis_cd, premis_desc, weapon_used_cd, weapon_desc, status, status_desc, crm_cd_1..4, location (text, hundred block), cross_street, lat (number), lon (number). Because lat/lon are plain numeric columns (no Socrata 'point' column), a radius query must be done with a SoQL bounding box on lat/lon (e.g. $where=lat between .. and lon between ..) via https://data.lacity.org/resource/2nrs-mtv8.json, then filtered to a circle client-side; rpt_dist_no allows aggregation by LAPD reporting district. Area 01 = Central Division covers DTLA/Skid Row.",
+      "granularity": "incident, hundred-block geocoded, LAPD reporting district",
+      "year": "2020-2024 (frozen)",
+      "headline_datapoints": [
+        "rowsUpdatedAt 2026-03-04T17:17:20Z; notice: 'the Crime Data from 2020 to Present dataset will no longer be updated. It will remain available on the portal for historical reference only.'",
+        "'On March 7th, 2024, the Los Angeles Police Department (LAPD) adopted a new Records Management System' (NIBRS); successor datasets 'LAPD NIBRS Offenses Dataset' and 'LAPD NIBRS Victims Dataset' 'were introduced in October 2024 and are refreshed on a bi-weekly schedule' (their Socrata ids were not captured this pass)",
+        "'Address fields are only provided to the nearest hundred block'; 'Some location fields with missing data are noted as (0°, 0°)'"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "data.gov catalog entry - Crime Data from 2020 to Present (CSV/JSON/RDF mirrors)",
+      "url": "https://catalog.data.gov/dataset/crime-data-from-2020-to-present/resource/c89bc8f6-aeb8-4bb3-b479-972502a35292",
+      "contains": "Federal catalog mirror of the same LAPD dataset with bulk download links (CSV: https://data.lacity.org/api/views/2nrs-mtv8/rows.csv?accessType=DOWNLOAD ). Same 2020-2024 coverage limitation.",
+      "granularity": "incident",
+      "year": "2020-2024",
+      "headline_datapoints": [
+        "bulk CSV/JSON download of full dataset available without API key"
+      ],
+      "reliability": "high",
+      "access": "public_dataset",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "Kidder Mathews - Los Angeles Industrial Market Report Q2 2026",
+      "url": "https://kidder.com/market-reports/los-angeles-industrial-market-report/",
+      "contains": "Quarterly county-wide industrial report with submarket table (asking rent PSF/month NNN, direct and total vacancy) including a 'Central LA' cluster with Vernon, Commerce and 'Los Angeles' (city) submarkets. Does not break out Fashion District / Arts District / Koreatown / Westlake / South Park / Historic South Central individually.",
+      "granularity": "submarket (Central LA; Vernon; Commerce; Los Angeles city)",
+      "year": "Q2 2026",
+      "headline_datapoints": [
+        "LA overall: 'The average direct asking lease rate was $1.37 PSF/month NNN in Q2 2026', down 6.16% YoY from $1.46",
+        "Central LA: $1.34 PSF/month NNN; 6.2% direct vacancy, 6.7% total vacancy",
+        "'Los Angeles' (city) submarket $1.52 PSF/month NNN (6.7% direct vacancy); Vernon $1.23 (6.3%); Commerce $1.29 (6.6%); South Bay $1.47; Mid-Cities $1.29"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "CBRE - Los Angeles Industrial Figures Q2 2026",
+      "url": "https://www.cbre.com/insights/figures/los-angeles-industrial-figures-q2-2026",
+      "contains": "CBRE quarterly figures for LA industrial (rent trend, vacancy, absorption). Only the search snippet was read; the PDF/page likely contains a Central LA submarket line.",
+      "granularity": "market / submarket",
+      "year": "Q2 2026",
+      "headline_datapoints": [
+        "LA industrial asking rents fell '2.5% quarter-over-quarter, 7.0% year-over-year, and 32.4% over the past 36 months' (Q2 2026)"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "Other Q2 2026 LA industrial reports (Savills, Matthews, KBC Advisors)",
+      "url": "https://www.savills.us/research_articles/256536/392578-0",
+      "contains": "Additional brokerage reports located but not opened: Matthews https://www.matthews.com/insights/los-angeles-ca-industrial-market-report-q2-2026 ; KBC Advisors https://www.kbcadvisors.com/insights/q2-2026-los-angeles-market-report . Search summary mentioned a 'Central Los Angeles ... 3.7% vacancy rate in Q2 2026' but did not attribute it to a specific report - treat as unverified.",
+      "granularity": "market / submarket",
+      "year": "Q2 2026",
+      "headline_datapoints": [
+        "unattributed snippet: Central Los Angeles 3.7% vacancy Q2 2026 (unverified; conflicts with Kidder's 6.2%)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "LoopNet neighborhood market pages - Fashion District / Arts District / Koreatown industrial for lease",
+      "url": "https://www.loopnet.com/search/industrial-space/fashion-district-los-angeles-ca/for-lease/",
+      "contains": "Listing-count and per-listing asking rents for each LoopNet neighborhood polygon. Also: https://www.loopnet.com/search/industrial-space/arts-district-los-angeles-ca/for-lease/ , https://www.loopnet.com/search/industrial-space/koreatown-los-angeles-ca/for-lease/ , https://www.loopnet.com/search/industrial-space/warehouse-district-los-angeles-ca/for-lease/ , https://www.loopnet.com/search/listings/warehouses/los-angeles-ca-90021/for-lease/ . No pages for Westlake, South Park or Historic South Central industrial surfaced in search. LoopNet returns 403 to fetch, so per-listing $/SF needs manual browsing or a scraping workaround.",
+      "granularity": "neighborhood listing inventory",
+      "year": "2026-09 (live)",
+      "headline_datapoints": [
+        "Fashion District: 31 industrial listings for lease; Arts District: 13; Koreatown: 10 (search snippet counts)",
+        "LoopNet LA-wide industrial 'average price of $20 per SF' (snippet; presumably $/SF/yr)"
+      ],
+      "reliability": "medium",
+      "access": "requires_scraping",
+      "relevant_tasks": ["3", "6"]
+    },
+    {
+      "name": "LA Downtown News - '23% Increase: Homelessness rises in Downtown and across city' (2026 count)",
+      "url": "https://www.ladowntownnews.com/news/23-increase-homelessness-rises-in-downtown-and-across-city/article_3e7fa4e7-9e20-4f36-8dd9-45c5448f7aa7.html",
+      "contains": "Local reporting on LAHSA's 2026 point-in-time count with the DTLA/Skid Row figure, city and county totals, unsheltered change, chronic-homelessness share. Article does not separate CD14 or sheltered/unsheltered for downtown, and the 4,215 figure is described as Downtown 'especially in Skid Row' (geography of the number - Skid Row only vs all DTLA - is ambiguous).",
+      "granularity": "downtown / city / county",
+      "year": "published 2026-08-03, updated 2026-08-24 (count January 2026)",
+      "headline_datapoints": [
+        "Downtown LA/Skid Row 'rising 23% from 3,427 in 2025 to 4,215 people in 2026'",
+        "City of LA 45,194 (+3.4%); county 73,040 (+1.2% Jan 2025 to Jan 2026); city unsheltered +7.9%",
+        "county chronic homelessness 44.1% (2026) vs 40.9% (2025)"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "LAHSA - 2026 Greater Los Angeles Homeless Count Data",
+      "url": "https://www.lahsa.org/news?article=1078-2026-greater-los-angeles-homeless-count-data",
+      "contains": "Official LAHSA release for the 2026 count (city/county/SPA/council-district tables and dashboard). Not opened this pass; LAHSA's data dashboard normally allows filtering to Council District 14 / Skid Row community. LAist reports LAHSA is reviewing the 2026 numbers (https://laist.com/news/housing-homelessness/lahsa-to-review-2026-homeless-count-numbers).",
+      "granularity": "county / SPA / council district / community",
+      "year": "2026 (Jan 20-22 count)",
+      "headline_datapoints": [
+        "count conducted January 20-22, 2026; numbers under review per LAist"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "RAND commentary (Aug 2026) and CBS LA on undercount of Skid Row homelessness",
+      "url": "https://www.rand.org/pubs/commentary/2026/08/why-las-homelessness-numbers-no-longer-tell-the-full.html",
+      "contains": "RAND's independent LA LEADS counts in Skid Row, Hollywood and Venice vs LAHSA's official count; argues the official count undercounts, worst in Skid Row. CBS LA summary: https://www.cbsnews.com/amp/losangeles/news/rand-study-says-homelessness-in-key-la-county-neighborhoods-is-18-higher-than-currently-reported/",
+      "granularity": "neighborhood (Skid Row, Hollywood, Venice)",
+      "year": "2026",
+      "headline_datapoints": [
+        "official count 'missed 39 percent of the true homeless population' in Skid Row (snippet)",
+        "count 'captured just 68% of the unsheltered population in Skid Row, Venice and Hollywood'; RAND: key neighborhoods '18% higher than currently reported'"
+      ],
+      "reliability": "high",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "FOX 11 - '$26M Skid Row campus: Violence, drug use surge at Meth Mansion' (Crocker St)",
+      "url": "https://www.foxla.com/news/meth-mansion-26m-taxpayer-funded-skid-row-campus-sees-surge-violence-drug-use-officials-stay-silent",
+      "contains": "2026 investigative piece using LAPD call and crime data for the 400-500 block of Crocker St (Skid Row) and Central Division aggravated-assault trend. Distance from 768 Ceres not measured this pass.",
+      "granularity": "two city blocks / LAPD Central Division",
+      "year": "2026",
+      "headline_datapoints": [
+        "LAPD responded to the 400-500 block of Crocker Street '693 times since January 1, 2026'",
+        "'4 homicides' on those two blocks in the first four months of 2026 vs 0 in same period 2024 and 1 in 2025",
+        "'25% overall increase in aggravated assaults within the LAPD's Central Division'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "The LA Local - 'Skid Row's murder rate is 17 times higher than LA overall'",
+      "url": "https://thelalocal.org/housing/skid-rows-murder-rate-is-17-times-higher-than-la-overall/",
+      "contains": "Analysis of LAPD data on Skid Row homicide rate vs citywide. Publication year and data period not captured.",
+      "granularity": "neighborhood",
+      "year": "unknown (2024-2026)",
+      "headline_datapoints": [
+        "'LAPD data show Skid Row has a homicide rate 17 times higher than Los Angeles overall'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "Hoodline - Aug 2026 Skid Row incident reporting",
+      "url": "https://hoodline.com/2026/08/shooting-investigation-shuts-down-san-pedro-and-crocker-streets-in-skid-row/",
+      "contains": "Hyperlocal news: San Pedro St / Crocker St shooting (Aug 2026) and 'Skid Row cops yanked as 50-car donut mob takes over downtown LA' (https://hoodline.com/2026/08/skid-row-cops-yanked-as-50-car-donut-mob-takes-over-downtown-la/). Anecdotal; no statistics.",
+      "granularity": "incident",
+      "year": "2026-08",
+      "headline_datapoints": [
+        "two Skid Row-area incidents reported August 2026 (shooting; street takeover pulling Central Division officers)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "Streetsblog LA - 7th Street bike lane history (DTLA and Koreatown)",
+      "url": "https://la.streetsblog.org/2020/05/07/protected-bike-lanes-coming-to-dtlas-7th-street",
+      "contains": "Chronology of the 7th St bike corridor: 2011 road-diet lanes Koreatown to DTLA, 2013 extension to Main St, 2020 protected lanes Figueroa-Main, 2021 Koreatown gap fill Kingsley-Western (https://la.streetsblog.org/2021/04/14/eyes-on-the-street-new-bike-lanes-on-7th-street-in-koreatown). LADOT Main St two-way protected lane: https://ladotlivablestreets.org/news/Main-Street-Protected-Bike-Lane . Koreatown-Pico Union Neighborhood Connect (2-mile greenway, engagement phase) per Streetsblog 2025-11-14. No source found for any bike facility on 7th St EAST of Main St toward Ceres Ave, nor on Olympic/Pico/Venice east of the 110.",
+      "granularity": "corridor",
+      "year": "2011-2025",
+      "headline_datapoints": [
+        "2011: '2.2 miles of road diet bike lanes from Koreatown just into DTLA' on 7th St; 2013: 'extended eastward 0.6-miles to Main Street'",
+        "2020: protected bike lanes 7th St Figueroa to Main; 2021: Koreatown 7th St lanes Kingsley Dr to Western Ave (~1/3 mile)",
+        "Koreatown-Pico Union Neighborhood Connect: planned 2-mile calm-street route, engagement phase (Nov 2025)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["6"]
+    },
+    {
+      "name": "LADOT weekly updates 2026 (bike / street projects)",
+      "url": "https://ladot.lacity.gov/dotnews/weekly-update-august-06-2026",
+      "contains": "LADOT project bulletins (also https://ladot.lacity.gov/dotnews/weekly-update-may-07-2026 , .../weekly-update-april-30-2026). Not opened; source for any 2026 DTLA/Koreatown bike-lane installations.",
+      "granularity": "project",
+      "year": "2026",
+      "headline_datapoints": [
+        "URLs located only"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["6"]
+    }
+  ],
+  "gaps": [
+    "ZIMAS (zimas.lacity.org) was not queried - zoning code, DTLA 2040 / Central City community-plan designation, overlays (CPIO, hazardous-materials or fire-district flags) and the official Skid Row / Central City East / Fashion District BID boundary relative to the parcel are unverified. APN 5146-003-059 is available for the lookup. Listing mirrors only say land use 'Industrial - Showroom' and 'Arts District & Downtown Adjacent'.",
+    "Clear height, dock-high vs grade doors for 768 alone, parking count, column spacing and truck access were not found (only '2 grade-level doors' for the combined 768 & 772 listing).",
+    "Lease type conflict unresolved: PropertyShark and LargeWarehouseSpace show 'Full Service'; LoopNet snippet shows $19.20/SF/yr with no type. Need the broker flyer / LOI to know NNN vs gross and the opex load.",
+    "No crime radius query was run. The 2nrs-mtv8 dataset is frozen at 2024; the successor 'LAPD NIBRS Offenses Dataset' id, columns and whether it carries lat/lon or reporting district were not captured. 2025-2026 incident counts near Ceres/8th therefore still need that dataset.",
+    "No LA Times article on Skid Row/DTLA crime 2024-2026 surfaced; coverage found is FOX 11, Hoodline, The LA Local, LA Downtown News.",
+    "The 2026 '4,215' homeless figure may be all of Downtown, not Skid Row alone; LAHSA's CD14 / community-level table was not opened.",
+    "Metro rail (Little Tokyo/Arts District station on A/E lines, Pico station) and bus lines on 7th, Central, Alameda and Olympic were not verified this pass; distances from 768 Ceres to those stops are unmeasured. Use metro.net line maps / Google Maps transit.",
+    "Freeway access (I-10 at Alameda or Central, US-101 at Alameda, I-110, SR-60) not verified; ramp distances and truck-route restrictions unmeasured.",
+    "Bike connectivity east of Main St is undocumented: no source found for lanes on 7th, 8th, Olympic, Pico or Venice between the 110 and Ceres Ave; bike route through Skid Row blocks not assessed.",
+    "Per-neighborhood industrial asking rents for Fashion District, Arts District, Koreatown, Westlake, Historic South Central and South Park were not obtained (LoopNet 403s; Kidder only gives Central LA $1.34 and 'Los Angeles' $1.52 PSF/mo NNN). Westlake, South Park and Historic South Central have no LoopNet industrial market page in search results.",
+    "Security-cost and insurance inputs (task 3) are outside what this modality found; no source on Skid Row-area commercial insurance premiums or guard/camera costs."
+  ],
+  "must_ask_hmp": [
+    "The actual offer / LOI from Lee & Associates (David Brandt): base rent, whether NNN or full service, CAM/tax/insurance pass-throughs, term, escalations, security deposit, free rent, TI allowance, renewal options, and whether the ~$10,000/mo figure in the proposal is base rent or all-in.",
+    "Whether the space is still available (LoopNet shows 'no longer being advertised') and whether the landlord is marketing 768 alone or 768 & 772 (16,887 SF) together.",
+    "Landlord identity (likely '768 Ceres LLC') and stance on lithium-ion battery charging/storage, e-moped repair, indoor fleet parking, generator/EV charger installation, LAFD hazardous-materials and Title 24 / electrical permitting, and any use restrictions in the lease.",
+    "Confirmation of electrical service (listing says 400A / 240V / 3-phase / 4-wire) vs HMP's planned charging load, and whether the landlord will allow panel upgrades.",
+    "Existing security infrastructure at the site (listing mentions an 'electrical yard gate'), fenced yard dimensions, camera/alarm wiring, and any incident history the landlord or neighbors can share.",
+    "HMP's insurance broker quotes for this address (property, liability, battery/fire) and any carrier exclusions for the 90021 Skid Row-adjacent area.",
+    "HMP's own rider data: where target couriers live and start shifts, current SF depot usage patterns (visits/day, dwell time) to judge rider convenience vs Koreatown/Westlake alternatives."
+  ],
+  "surprises": [
+    "Asking rent is inconsistent across mirrors: LoopNet snippet '$19.20 per square foot per year'; PropertyShark '$1.20/SF/MO ... Full Service'; combined 768 & 772 listing '$1.40/SF/MO ($16.80/SF/YR) ... Full Service'. Arithmetic only: $1.20 x 8,443 SF = about $10,132/mo (matches the CONTEXT's ~$10,000/mo), whereas $19.20/SF/yr x 8,443 SF = about $13,509/mo. Two mirrors label the lease 'Full Service' rather than NNN.",
+    "At least one LoopNet listing for the address states the property 'is no longer being advertised on LoopNet.com' - the space may be leased or the listing pulled.",
+    "768 Ceres appears to be one of two twin 2015 buildings (768 & 772, 16,887 SF, 0.42 ac) marketed together on at least one aggregator - possible expansion option or landlord preference to lease both.",
+    "The LAPD 'Crime Data from 2020 to Present' dataset named in the CONTEXT is frozen: renamed 'Crime Data from 2020 to 2024', last rows updated 2026-03-04, 'will no longer be updated'; 2024-2026 crime must come from the LAPD NIBRS Offenses dataset (bi-weekly since Oct 2024).",
+    "Listing marketing describes the site as 'Arts District & Downtown Adjacent' in the 'AIR - CBD' submarket, not Skid Row or Fashion District; meanwhile 2026 reporting shows Downtown/Skid Row homelessness up 23% (3,427 to 4,215) and Central Division aggravated assaults up 25%, and RAND says the official Skid Row count is undercounted by ~39%.",
+    "Kidder Mathews Q2 2026 puts Central LA industrial at $1.34 PSF/mo NNN and the 'Los Angeles' city submarket at $1.52 PSF/mo NNN, with LA-wide rents down 32.4% over 36 months per CBRE - i.e. a falling-rent market at the time of negotiation."
+  ]
+}

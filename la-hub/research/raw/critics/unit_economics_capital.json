@@ -1,0 +1,68 @@
+{
+  "lens": "unit_economics_capital",
+  "assumptions": [
+    {
+      "assumption": "LA riders will pay an SF-style stack of weekly vehicle rental PLUS a separate battery subscription (implied $50-90/week all-in for a moped) even though Whizz's LA page advertises delivery e-bike rental from $139-169/month ALL-IN (unlimited battery swaps, maintenance, GPS, no credit check) and rent-to-own at $169/month with ownership in 12 months, and Zoomo prices NYC at $20-24/week.",
+      "why_it_may_be_wrong": "The courier's willingness to pay is anchored by the cheapest all-in competitor and by delivery earnings (~$150-250/day gross in LA, with a per-mile cost that a moped only partly improves). Whizz's rent-to-own directly copies HMP's rent-then-buy funnel at a published $169/mo. HMP's separate battery-subscription line, which is the recurring-revenue thesis, is exactly the line Whizz bundles for free. A moped premium exists (speed, range, more orders/hour) but has not been priced in LA; SF pricing was set before a $139-169 all-in competitor existed there at scale.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Rental ARPU per active vehicle 20-40% below an SF-based assumption; e.g. $55/wk assumed vs $35-40/wk realized on e-bikes, and battery subscription revenue on rentals collapsing toward $0 because it must be bundled to match Whizz. On 100 active rentals that is $6-9k/month of revenue, close to the full base rent.",
+      "cheap_test": "Mystery-shop Whizz, Zoomo-style and local LA operators for the true out-the-door weekly price, deposit, theft fee and what 'free maintenance' excludes. Run a 2-week Facebook Marketplace / Craigslist / WhatsApp-group ad in Spanish and English at the intended LA price and count qualified sign-ups. Survey 30 couriers at DTLA / Koreatown hotspots on current cost, what they ride, and max weekly price.",
+      "hmp_internal_data_needed": "SF realized (not list) weekly rental price net of discounts and free weeks; SF battery-subscription price and churn; any SF pricing or churn change observed after Whizz entered SF; share of SF renters who switched to a competitor and why.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Rental fleet utilization of ~85-90% and average renter tenure of 6+ months, so '100 vehicles on rent' means ~100 vehicles' worth of revenue every month.",
+      "why_it_may_be_wrong": "A delivery rental fleet always has units in repair, being reconditioned between renters, impounded, held as loaners, or idle; realistic days-rented / days-owned is 60-75%. Courier tenure is short (gig earnings swing, deactivations, seasonality, riders leaving the platform) and HMP's own funnel removes the best renters from the pool when they buy. The SF figure '100 on rent' is a numerator without a denominator: if SF owns 150 rental units, utilization is ~67%.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Every 10 points of utilization shortfall raises the vehicles (and capital) required for break-even by ~12-15%; at 65% vs 90% utilization the fleet needed to hit the same rental revenue is ~38% larger, adding roughly $100-150k of vehicle capital and proportionally more theft and depreciation exposure.",
+      "cheap_test": "Compute from SF records: total rental units owned vs units on rent each week for the last 12 months; median tenure per renter; % of renters converting to purchase within 90 days. Ask Whizz-type competitors' riders how long they have been renting.",
+      "hmp_internal_data_needed": "SF rental ledger: fleet count by status (rented / in shop / idle / lost), rented-days per unit per month, renter cohort churn curves, rent-to-buy conversion rate and time-to-conversion.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "Battery packs on subscription last 3+ years and the battery line is the highest-margin recurring revenue, with depreciation/replacement modeled at consumer-guide lifetimes.",
+      "why_it_may_be_wrong": "Consumer guides quote 500-1,000 cycles = 3-5 years at a few charges a week. A courier doing 60+ miles/day puts 1-2 full cycles a day on a pack, so 500-800 useful cycles arrives in 10-18 months, faster with heat, fast charging and deep discharge. A moped-class 60-72V pack costs roughly $600-1,500 to replace, plus a swap float of ~1.5-2 packs per subscriber, plus electricity, plus BMS/connector failures. At a subscription of ~$40-60/month a pack may not recover its cost before it must be replaced, and warranty-style expectations from 300 SF subscribers holding degraded packs are a latent liability, not an asset.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Battery depreciation/replacement line 2-3x the modeled value; battery contribution margin could fall from an assumed 50-60% to near zero or negative once float, replacement, charging labor and electricity are included. This is the line the recurring-revenue thesis rests on.",
+      "cheap_test": "Read the BMS on the 20 oldest SF subscription packs: cycles-to-date, months in service, remaining capacity. Plot capacity vs cycles; extrapolate to the LA duty cycle. Get a written replacement price and lead time from the pack supplier including tariffs and freight.",
+      "hmp_internal_data_needed": "SF battery registry (purchase date, cost, cycles, measured capacity, replacement / warranty events), swap-station electricity bill, subscription price and churn, number of packs in float per subscriber.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Theft/non-return and bad debt on weekly rentals total ~3-5% of fleet value per year and insurance will cover the rest, even with the depot on the edge of Skid Row and the vehicles used on-street 10+ hours a day.",
+      "why_it_may_be_wrong": "Delivery-rental operators in high-theft US cities report double-digit annual loss rates (stolen on delivery, non-return by churned riders, stripped for parts, stolen from the depot). No-credit-check weekly renters produce chargebacks and unpaid final weeks. Fleet insurers price LA as a high-theft market, price the policy on the storage and tracking policy, apply per-unit deductibles of several hundred dollars and often exclude theft away from premises or unattended vehicles, so 'insurance' is largely self-insurance plus premium. A Skid Row-adjacent depot raises break-in probability and the cost of securing it.",
+      "direction": "flatters_LA_case",
+      "magnitude": "At 100 units of $2,500-4,000 landed value, 12-20% annual loss = $30-80k/year, i.e. 3-8 months of base rent; add bad debt of 5-8% of rental billings and $1-3k/month of guard/monitoring/hardening. Combined this is the single largest gap between an SF-derived cost sheet and LA reality.",
+      "cheap_test": "Pull LAPD Central Division crime map for the 700 block of Ceres and adjacent blocks; walk the site at 10pm and 5am. Get three written fleet quotes (property + theft + GL) using the actual address and 'rental to delivery couriers' as the use, and read the exclusions. Ask Whizz / local operators their LA deposit and theft-fee policy, which reveals their loss experience. Price GPS + immobilizer per unit.",
+      "hmp_internal_data_needed": "SF thefts and non-returns per 100 rental-vehicle-months, gross write-offs, deposits retained, chargeback and unpaid-balance rate, current SF insurance premium/deductibles/exclusions and claims paid vs claims filed.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Rental vehicles depreciate on a 36-month straight line to a 20-30% residual, and maintenance per unit is similar to a consumer-owned vehicle.",
+      "why_it_may_be_wrong": "60+ miles/day is ~18-22k miles/year, i.e. a 'used-up' moped in 12-18 months: 3-4 sets of tires, multiple brake pad and chain/belt replacements, suspension, controller and connector failures, cosmetic damage, and a third-party resale value near parts value at 24 months. The offsetting possibility is that HMP's captive shop and its own buyer base can recondition and resell ex-rental units at close to retail with a warranty, which would raise residuals above what an outside operator gets.",
+      "direction": "either",
+      "magnitude": "Depreciation plus wear maintenance per rental-vehicle-month could be $120-180 instead of ~$70-90 on a $3,000 unit; across 100 units that is $4-9k/month of hidden cost. If HMP's captive resale works, the error may be smaller or reversed by $1-3k/month.",
+      "cheap_test": "List two 12-month ex-rental SF units on OfferUp / Craigslist and observe clearing price vs HMP's own certified-used price. Tally the last 12 months of repair tickets on SF rental units to get cost per mile.",
+      "hmp_internal_data_needed": "SF repair-ticket cost per rental unit by age and odometer, realized sale prices of ex-rental units through HMP vs third-party, average miles/day per rental unit from GPS or odometer.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "Fixed cost is 'about $10k/month rent plus utilities', and the site is financeable from cash flow; the capital required is mostly the first few months of rent.",
+      "why_it_may_be_wrong": "$10k/month on 8,443 sqft is ~$1.18/sqft, below DTLA industrial asking rents, which suggests it is base rent with NNN (taxes, insurance, CAM, ~$0.20-0.40/sqft = $1.7-3.4k/month) on top, or a location discount for Skid Row adjacency, or both. A 7-day rider hub with repair and battery charging needs at least 2 people on site per shift plus a mechanic: 3.5-4.5 FTE at LA minimum wage with burden is ~$16-22k/month. Add security ($1-3k/month), fleet and GL insurance ($1.5-4k/month), electricity for a charging wall, LAFD / NFPA 855-style lithium storage and charging requirements that may require tenant improvements, a security deposit and likely a personal guarantee. Working capital: 100 rental units ($250-400k landed), a battery float for 100-300 subscribers ($60-200k), parts and sales inventory ($50-100k), plus 6-12 months of operating losses.",
+      "direction": "flatters_LA_case",
+      "magnitude": "True fixed cost $35-50k/month (3.5-5x the headline rent); total capital at risk before break-even $500k-900k. At a realistic $40-60/month contribution per rental vehicle after depreciation, theft and battery, break-even needs roughly 250-400 active rentals plus subscribers, not 100, unless vehicle sales carry it.",
+      "cheap_test": "Obtain the lease draft: base vs NNN, NNN estimate, TI allowance, deposit, guarantee, term and early-termination. Ask the listing agent (Lee & Associates) for last year's NNN reconciliation. Get an LAFD or insurer opinion on lithium battery storage/charging in an industrial tenancy. Price a staffing plan against the California minimum wage and payroll burden.",
+      "hmp_internal_data_needed": "SF store's actual monthly fixed-cost stack (rent, wages by role, utilities, insurance, security, card fees) and SF's fully loaded contribution per rental-vehicle-month and per battery subscriber, so LA break-even can be derived rather than assumed.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "'SF is proven' means SF is profitable per unit, and vehicle sales shorten LA break-even because sales gross margin is 35-45% and sales add battery subscribers.",
+      "why_it_may_be_wrong": "The SF facts are volume facts (1,000+ sold, ~300 battery subscribers, ~100 on rent), not margin facts: 300 of 1,000 buyers still subscribing means ~70% of buyers exited the recurring stream. Landed cost of a China-origin moped after freight, Section 301 and 2025 reciprocal tariffs, warranty reserve, card/BNPL fees (4-6%) and free-service promises is more likely to leave 15-25% gross margin than 35-45%. Each sale also removes a renter (often the best one) from the rental pool and hands the theft/depreciation risk to the rider, which is good for capital but bad for the rental line the hub depends on. If SF's per-unit P&L is unmeasured, the LA model is extrapolating an unknown.",
+      "direction": "flatters_LA_case",
+      "magnitude": "A 10-15 point error in sales gross margin on $60-120k/month of LA sales is $6-18k/month; if SF is at or below break-even per unit, LA adds a second unprofitable location with a lease and cannot be fixed by volume.",
+      "cheap_test": "Build a 12-month SF contribution P&L from QuickBooks/Shopify/Stripe split into sales, whole-vehicle rental, battery subscription, repair and parts, with tariffs, freight, warranty and card fees allocated per unit. Check the current tariff rate on the HS code of the imported vehicles and packs.",
+      "hmp_internal_data_needed": "SF landed cost per model (FOB, freight, duty/tariff, warranty), gross and contribution margin by revenue line, warranty and free-service cost per sold unit, share of buyers who continue battery subscription at 3/6/12 months, and whether SF's 100 rentals are cash-positive after depreciation and theft.",
+      "could_flip_decision_alone": true
+    }
+  ]
+}

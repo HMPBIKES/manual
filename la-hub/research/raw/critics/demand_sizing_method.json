@@ -1,0 +1,68 @@
+{
+  "lens": "demand_sizing_method",
+  "assumptions": [
+    {
+      "assumption": "Riders-per-restaurant calibrated on NYC (~65k-80k app couriers against ~25k restaurants, i.e. roughly 2.5-3 couriers per restaurant, almost all on e-bikes/gas mopeds) or on SF can be multiplied by DTLA/Koreatown restaurant counts to get a TWO-WHEEL rider count for LA.",
+      "why_it_may_be_wrong": "The NYC ratio is a total-courier ratio in a city where car delivery is near-impossible and Manhattan-style density is 3-5x Koreatown's, so it embeds a ~100% two-wheel mode share. The quantity HMP needs is two-wheel couriers per restaurant in a car-dominated metro, which nobody has measured in LA. Koreatown's restaurant count is also inflated by dine-in KBBQ/bars/late-night venues with low app share, and DTLA/Koreatown restaurants are served by couriers who drive in from outside the zone. Applying 2.5 riders/restaurant to ~900 Koreatown restaurants gives ~2,250 riders; a car-dominated reality could be 200-600 two-wheelers.",
+      "direction": "flatters_LA_case",
+      "magnitude": "3-10x overstatement of two-wheel TAM if the NYC ratio is used unadjusted; 1.5-3x if SF ratio is used, because SF is also far more car-hostile than LA.",
+      "cheap_test": "Before touching LA, apply the NYC ratio to SoMa/Mission/Tenderloin restaurant counts (SF open data) and see whether it predicts an SF two-wheel courier count consistent with HMP's 1,000+ vehicles plus the rest of the SF ecosystem. If it over-predicts SF by 2x or more, it will over-predict LA by more. Then do 3 evenings of vehicle-type tallies (car / gas scooter / motorcycle / e-bike / e-moped) at 5 Koreatown and DTLA pickup hotspots and compute observed two-wheel share directly.",
+      "hmp_internal_data_needed": "HMP's own estimate of what share of SF two-wheel couriers it serves (active customers / estimated SF two-wheel daily-actives), SF customer counts tagged by work zone, and restaurant counts in those zones, to derive an actual SF two-wheel riders-per-restaurant figure rather than a borrowed NYC one.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Published courier headcounts (Seattle's 92,801 workers covered by its ordinance over 18 months; NYC's 65k-80k who earned at least $1,500 in a year; platform 'Dasher' totals) can be scaled per capita to DTLA/Koreatown as a daily-active bound, and per-platform figures can be summed.",
+      "why_it_may_be_wrong": "These are registration/annual-touch numbers, not daily-active. Seattle's 92,801 covered workers coexist with only ~200k completed offers per week; at 80-120 offers per week for a full-timer that implies on the order of 2-5k full-time-equivalent riders, i.e. 20-40x below the headline. NYC's 80k figure counts anyone earning $1,500 in a year. Most Dashers work a few hours a week and are irrelevant to a vehicle-purchase business. Summing DoorDash + Uber Eats + Grubhub figures double counts the majority of full-timers, who run 2+ apps. HMP's SF customers are overwhelmingly full-timers, so the relevant denominator is daily-active full-timers, which is a small fraction of any headline count.",
+      "direction": "flatters_LA_case",
+      "magnitude": "3-20x depending on which source is used; multi-app double counting alone adds ~1.5-2x.",
+      "cheap_test": "Recompute every source as full-time-equivalent daily-actives: for Seattle use weekly offers divided by 80-120 offers per full-time rider per week; for NYC use the DCWP/NYSERDA hours distribution to keep only 25+ hr/week workers. Run a unique-rider count at peak with capture-recapture (distinctive vehicles/plates) over two nights at the same spots to estimate the actual population instead of counting sightings.",
+      "hmp_internal_data_needed": "Hours-per-week distribution of HMP's SF buyers and renters (rental agreements, earnings screenshots shown at purchase), the share of buyers who are full-time, and how many apps they run; this tells HMP what fraction of any headline courier count is its real market.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "A fixed share (implicitly 20-30%) of DTLA/Koreatown car couriers are 'convertible' to two wheels because parking is bad, and they belong in SAM.",
+      "why_it_may_be_wrong": "LA car couriers take long-radius orders (platforms route farther, higher-payout orders to cars; a Koreatown car courier delivers to Hollywood, Mid-City, Silver Lake), stack Uber rides / Instacart / Amazon Flex on the same car, and use the car for family. Switching means giving up range and multi-platform income; choosing 'bike/scooter' on Uber Eats restricts the delivery radius. The parking penalty applies at pickup only, while LA drop-offs are spread far. It is also unproven that SF's growth came from car converts: SF buyers may have already been on bikes, gas scooters, cheap e-bikes or foot and were upgrading, not switching.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Realistic 12-month conversion of 2-8% instead of 20-30%; if convertible car riders are the majority of the proposed SAM, SAM shrinks 50-70%.",
+      "cheap_test": "Intercept survey of 50 car couriers at 3 Koreatown pickup hotspots: prior vehicle, apps used, typical order radius, whether they would switch and what would make them. Check Uber Eats / DoorDash LA signup flows for what vehicle choice does to order assignment radius.",
+      "hmp_internal_data_needed": "Prior vehicle of HMP's SF buyers (car / gas scooter / cheap e-bike / bicycle / none). If fewer than ~15% of SF buyers were car converts, car riders should be excluded from LA SAM entirely.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Riders who work DTLA/Koreatown will travel to 768 Ceres Ave (edge of Skid Row) for battery swap, repair and rentals, at a 'share willing to visit' comparable to SF (implicitly 70-90%).",
+      "why_it_may_be_wrong": "768 Ceres is ~1 mile from Little Tokyo/Arts District but ~5-6 miles from the Koreatown core (Wilshire/Western), ~3.5 miles from Westlake and ~3 miles from USC; SF's core zone is compact and HMP's SF customers are a short ride from the shop. LA couriers largely commute in from South LA, East LA, the SGV and the Valley, so a depot is off-route for most, and battery swap is the most distance-sensitive behavior because it requires frequent visits. The Skid Row edge adds reluctance to leave a $3-5k vehicle, to walk in, or to visit after dark, which is exactly when swap demand peaks. The assumption that Koreatown riders live nearby is unsupported.",
+      "direction": "flatters_LA_case",
+      "magnitude": "Koreatown share willing to visit could be 20-40% instead of 70-90%; since Koreatown is the biggest chunk of proposed TAM, SAM drops 30-60% and the recurring (swap/rental) lines drop more than sales.",
+      "cheap_test": "Ride Koreatown to 768 Ceres on an e-moped at 6-8pm and time it; visit the block at 9-11pm on a Friday and note conditions; survey 30 riders on home ZIP and maximum detour they would accept for a swap. Map HMP SF customers' home/work ZIPs against distance to the SF shop to build a distance-decay curve and apply it to LA.",
+      "hmp_internal_data_needed": "SF customer home and work-zone addresses vs shop distance, battery swap frequency and churn by distance bucket, and share of visits after 7pm.",
+      "could_flip_decision_alone": true
+    },
+    {
+      "assumption": "Whatever two-wheel delivery share exists in LA is e-bike/e-moped riders HMP can serve as in SF, rather than gas 125-150cc scooter and motorcycle riders or unlicensed Amazon e-scooters.",
+      "why_it_may_be_wrong": "LA's longer per-order distances and freeway geography favor gas scooters and motorcycles (freeway-legal, 60+ mile range, no charging), which immigrant courier populations buy used on OfferUp. Gas riders do not need a battery subscription, HMP's recurring line, and converting them to an HMP e-moped is a range argument to win, not a like-for-like sale. If instead the two-wheel share is mostly cheap Amazon e-bikes/e-scooters, those riders are price-sensitive and may not buy a $3-5k vehicle.",
+      "direction": "either",
+      "magnitude": "E-bike/e-moped fraction of observed two-wheelers could be 30-60% rather than the ~90% implied by SF; battery-subscription SAM shrinks accordingly, while e-motorcycle sales SAM might be modestly larger.",
+      "cheap_test": "Vehicle-type tally (car / gas scooter / motorcycle / e-bike / e-moped / other) at 5 hotspots x 3 evenings; count LA OfferUp/Craigslist listings of 'delivery' scooters by type; note plate/licensing (gas scooters over 50cc need M license and plates, a hurdle HMP products may or may not avoid).",
+      "hmp_internal_data_needed": "SF customers' prior vehicle mix, SF sales split between e-bike / e-moped / e-motorcycle, and battery-subscription attach rate by product line.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "The four sizing methods are independent cross-checks, and dinner-peak field counts at restaurant clusters anchor them.",
+      "why_it_may_be_wrong": "Method 1 (restaurants x riders/restaurant) and method 3 (order volume / orders per rider per day) share the same inputs: LA order volume is not public and will be constructed from restaurants x orders/restaurant with platform-wide orders-per-rider averages, so 1 and 3 are one estimate in two costumes. Method 2 is a bound only. That leaves field counts as the sole independent method, and they carry known biases: Friday/Saturday dinner peaks overstate typical daily-actives by 1.5-2x; cluster counts re-count riders circling; multi-app riders and non-courier e-bike riders are indistinguishable; counting at restaurant doors over-represents two-wheelers because car couriers stage in lots or double-park elsewhere. A biased founder can make three dependent methods 'converge' by parameter choice.",
+      "direction": "flatters_LA_case",
+      "magnitude": "1.5-3x on the count-to-daily-active conversion; a false convergence could conceal a 3x error in the whole stack.",
+      "cheap_test": "Pre-register parameter ranges before counting. Count Tue/Thu/Sat in three bands (lunch, 6-8pm, 9-11pm) at both restaurant doors and nearby car staging spots; use capture-recapture across two nights. Critically, run the identical protocol in SoMa/Mission first and check it reproduces HMP's known SF numbers (1,000+ sold, ~100 on rent, 300+ battery renters plus non-HMP riders) within ~30% before trusting it in LA.",
+      "hmp_internal_data_needed": "The SF known fleet as a calibration target, SF customer work-zone tags, and any SF counts HMP staff have done at pickup hotspots.",
+      "could_flip_decision_alone": false
+    },
+    {
+      "assumption": "SOM = SAM x 12-month penetration capped by SF penetration, where SF penetration is known and can be reached in 12 months from a non-retail depot.",
+      "why_it_may_be_wrong": "HMP knows its SF numerator (1,000+ vehicles sold cumulatively) but not its denominator (SF two-wheel daily-active couriers); the Google-review episode shows that denominator was once off by ~5x. If SF penetration is 20% rather than 50%, the cap changes 2.5x. Cumulative sales also overstate active riders (quitters, repeat buyers, out-of-zone buyers). And SF penetration was built over several years with walk-in retail and dense word-of-mouth in a compact city; a depot with no walk-in on the Skid Row edge will not reach SF steady-state penetration in year 1, so the relevant cap is SF year-1 penetration, likely a small fraction of today's.",
+      "direction": "flatters_LA_case",
+      "magnitude": "2-4x on SOM; using year-1 SF penetration instead of current could cut the 12-month LA forecast by more than half.",
+      "cheap_test": "Reconstruct the SF cohort curve (units sold in months 1-12 after opening, then by year) and compute penetration per year; run the same four methods on SF to get a denominator range and see whether they even converge where the answer is partly known. Use SF year-1 penetration as the LA month-12 cap and SF year-2 as the month-24 cap.",
+      "hmp_internal_data_needed": "Monthly unit sales since inception, current active-customer count (battery renters plus repair visits in the last 90 days), acquisition source (referral vs walk-in vs online), and customer work-zone distribution.",
+      "could_flip_decision_alone": true
+    }
+  ]
+}

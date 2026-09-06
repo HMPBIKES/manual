@@ -1,0 +1,273 @@
+{
+  "modality": "competitors",
+  "sources": [
+    {
+      "name": "Whizz - Los Angeles delivery e-bike landing page",
+      "url": "https://www.getwhizz.com/cities/deliver/los-angeles",
+      "contains": "Google-indexed title reads 'Get the best delivery e-bike in Los Angeles from 139/mo'. Live HTML (233 KB, fetched 2026-09-06 via WebFetch and raw curl) renders only the string 'Whizz Personal Account' - content is JS-rendered app shell or the page is a placeholder. No LA address, price table, or plan details were extractable.",
+      "granularity": "city landing page (LA)",
+      "year": "2026 (index snapshot; page render date unknown)",
+      "headline_datapoints": [
+        "Search-index title: 'Get the best delivery e-bike in Los Angeles from 139/mo' (company-claimed, snippet only, 2026-09-06)",
+        "Rendered page body: 'Whizz Personal Account' only - no visible pricing or address"
+      ],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "Whizz - Locations page (31 shops) incl. FAQ on Rent-to-Own, Protection Plan, Battery Swapping",
+      "url": "https://www.getwhizz.com/locations",
+      "contains": "Static Webflow page. City switcher lists New York, New Jersey, Philadelphia, Washington DC, Chicago, San Francisco (no Los Angeles). Headline price, all 8 hub addresses, rent-to-own mechanics, deposit, protection plan, theft liability, battery-swap pricing and cities, WhizzCare, included/excluded repairs, models (Storm-2, Thunder, Breeze).",
+      "granularity": "national / per-hub addresses; single headline price",
+      "year": "2026 (fetched 2026-09-06)",
+      "headline_datapoints": [
+        "'From $179/month - pick up at any of 31 shops across NY, NJ, PA, DC, IL and CA. No SSN required.' (company-claimed, 2026-09-06)",
+        "Only CA address: 'San Francisco, CA - 1231 Stevenson St, Suite 101, CA 94103'; NO Los Angeles address listed; HQ '229 W 13th St, New York, NY 10011'",
+        "Rent-to-Own: 'make 12 monthly payments, and then you can buy out your e-bike for $99'; 'All Weekly plans require a mandatory $99 deposit'; new bikes '$99 down payment', pre-owned no down payment",
+        "Protection Plan '$19 + tax per month ... covers 50% of repair and damage costs'; theft/loss 'maximum liability is capped at $500, as long as the working battery is returned'; recovery team fee '$150, or $75 if you have the Protection Plan'",
+        "Included maintenance = tubes + brake pads + adjustments only, '$9.00 service fee applied per service request' (another FAQ says $4.90); 'All other parts are not included'",
+        "Battery Swapping: NY add-on '$49/month'; 'In Washington, DC and Philadelphia, Battery Swapping is included for free with Rent-to-Own plans'; owners '$75/month'; swap cabinets listed only in NYC, DC, Philadelphia - none in CA",
+        "'Storm-2 All-in is available in New York, New Jersey, Philadelphia, Chicago, and Washington, DC' (not SF); All-in plan 'includes an extra battery'",
+        "WhizzCare Membership for owners '$19 per month'; door-to-door delivery '$35 in New York and New Jersey' only",
+        "On-site badge: '4.8 ... Based on Google Maps rating' (company-claimed; no review count shown)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["5", "3", "4"]
+    },
+    {
+      "name": "Whizz blog - 'DoorDash E-Bike Rental: How It Works (2026 Guide)'",
+      "url": "https://www.getwhizz.com/blog/for-delivery/doordash-ebike-rental",
+      "contains": "Whizz's own description of its DoorDash partner discounts by city, cities served, plan names (All-in-One Plan, Battery Swapping, WhizzCare, Protection Plan, Maintenance), bike models. No numeric prices.",
+      "granularity": "national, per-city discount terms",
+      "year": "Published June 16, 2026; Updated July 22, 2026",
+      "headline_datapoints": [
+        "Cities served: 'NYC, San Francisco, Washington DC, Philadelphia, Chicago, and Jersey City' - Los Angeles NOT listed (company-claimed, 2026-07-22)",
+        "DoorDash offer in 'Chicago, Washington DC, San Francisco, Philadelphia: new Dashers can get up to $250 off their first five months by hitting delivery targets'",
+        "NYC/NJ: 'standing 15% Dasher discount (code 15DD) on rentals, rent-to-own, and accessories'",
+        "Models: Storm, Storm 2, Thunder, Monster"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "Whizz Series A press coverage (Bicycle Retailer / micromobilitybiz / FinSMEs, June 2024)",
+      "url": "https://www.bicycleretailer.com/announcements/2024/06/30/whizz-raises-12m-series-funding",
+      "contains": "Funding round, total raised, ARR, fleet size claim, growth rate, expansion target. All figures originate from Whizz's press release.",
+      "granularity": "company-level, national",
+      "year": "2024",
+      "headline_datapoints": [
+        "'$12 million Series A led by LETA Capital ... total funding to $20M ... ARR of more than $8M' (company-claimed via press release, June 2024)",
+        "'fleet of 2,500 e-bikes, primarily in New York and New Jersey' with '3.5x year-over-year growth'; goal 'more than 200,000 vehicles by 2030' (company-claimed, June 2024)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Whizz seed round coverage (Forbes / AlleyWatch, April 2023)",
+      "url": "https://www.forbes.com/sites/jonathankeane/2023/04/11/whizz-raises-34-million-for-its-e-bike-subscriptions/",
+      "contains": "$3.4M raise, 2023 monthly price point, founding year, delivery-platform partners named.",
+      "granularity": "company-level",
+      "year": "2023",
+      "headline_datapoints": [
+        "'$159/month rental subscriptions' (company-claimed, April 2023) - vs $179/mo headline on locations page Sept 2026 and $139/mo in LA page title",
+        "'founded in 2022 ... partners with DoorDash, Grubhub, and other delivery enterprises'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "Zoomo - Los Angeles city URL (renders NYC content)",
+      "url": "https://www.ridezoomo.com/cities/los-angeles",
+      "contains": "Page title 'E-bike Rentals for Delivery from $20/Week | Zoomo NYC'. Current US plan tiers, range, contract minimum, purchase price, inclusions, single US store address (NYC), Uber Eats special, on-site review badge. Contains NO Los Angeles store or LA-specific content.",
+      "granularity": "US plan tiers; one store address",
+      "year": "2026 (fetched 2026-09-06)",
+      "headline_datapoints": [
+        "Zoomo Zero Standard 'From $39/week', 50 mi range, '4-week minimum'; Zoomo Zero Uber Eats Special '$20/week' (Uber Eats riders only); Premium 'From $65/week', 100 mi, two batteries (company-claimed, 2026-09-06)",
+        "Purchase option '$790'; included: '24/7 access ... Battery Charger, Phone Holder ... Secure U-Lock, Full Maintenance & Customer Support'",
+        "Only store: '252 W 38th Street New York, NY 10018'; phone '+18336864847'; badge '4.7' with '1160+ reviews' (company-claimed, platform unspecified)"
+      ],
+      "reliability": "high",
+      "access": "public",
+      "relevant_tasks": ["5", "3", "4"]
+    },
+    {
+      "name": "Zoomo blog - 'Old vs New: Understanding our updated US Price Plans'",
+      "url": "https://www.ridezoomo.com/blog/old-vs-new-understanding-our-updated-us-price-plans",
+      "contains": "Zoomo's explanation of its earlier US pricing restructure (Flex / Boost / Ride-To-Own). Useful for price-history baseline.",
+      "granularity": "US national plan tiers",
+      "year": "unknown (likely 2023-2024)",
+      "headline_datapoints": [
+        "'Flex plan at $49/week with no contract ... unlimited miles ... parts replacement and repairs'; 'Ride-To-Own plan for $279/month on a 12-month contract' (company-claimed, snippet, undated)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "5"]
+    },
+    {
+      "name": "Zoomo Los Angeles - Facebook page",
+      "url": "https://www.facebook.com/RideZoomoLA/",
+      "contains": "Existence of a Zoomo LA social page; last-post date and store status not checked. Would indicate whether an LA store ever operated and when it went quiet.",
+      "granularity": "LA store",
+      "year": "unknown",
+      "headline_datapoints": [
+        "Page exists in search results as 'Zoomo Los Angeles | Los Angeles CA | Facebook' - no content captured"
+      ],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Zoomo - Trustpilot reviews",
+      "url": "https://www.trustpilot.com/review/ridezoomo.com",
+      "contains": "Third-party review count/rating for Zoomo globally; not opened in this pass.",
+      "granularity": "company-level",
+      "year": "2026",
+      "headline_datapoints": [
+        "Not captured - listing exists"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Zoomo - PitchBook company profile (headcount)",
+      "url": "https://pitchbook.com/profiles/company/327521-17",
+      "contains": "Third-party headcount trend and funding history; mostly paywalled.",
+      "granularity": "company-level",
+      "year": "2026",
+      "headline_datapoints": [
+        "'as of May 31, 2026, the latest employee count at Zoomo is 192' vs 201 earlier (third-party-reported, snippet)",
+        "No press found in this pass reporting a Zoomo LA closure or US city exits in 2025-2026; a ~2023 Startup Daily piece reports job cuts after MilkRun collapse (https://www.startupdaily.net/topic/business/subscription-e-bike-startup-zoomo-cuts-jobs-again-in-wake-of-milkrun-collapse/)"
+      ],
+      "reliability": "medium",
+      "access": "paywalled",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Wombi - Los Angeles e-bike subscription page",
+      "url": "https://wombi.us/pages/los-angeles-wombi",
+      "contains": "Consumer/commuter cargo e-bike subscription (Tern bikes) in LA, Bay Area, Seattle. Not courier-specific but is an LA monthly e-bike price reference.",
+      "granularity": "LA city page",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "'E-Bike Subscription Los Angeles: Monthly Plans from $135' with 'Tern cargo and commuter e-bikes that include insurance, service, and delivery'; 'theft protection, 24/7 Rider Rescue, and the option to purchase' (company-claimed, snippet)",
+        "Launched LA Summer 2023; Seattle August 2024 (company-claimed)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "The Rideshare Guy - 'Best E-Bike Rental Companies For Couriers'",
+      "url": "https://therideshareguy.com/ebike-rentals-for-delivery/",
+      "contains": "Roundup of courier e-bike/scooter rental brands with prices: Zoomo, Rybit (SF storefront), Sunryde, Zygg, JOCO, Pico. Dated - useful as a historical price baseline and to name smaller players.",
+      "granularity": "national brand list; no LA-specific data",
+      "year": "last updated October 11, 2022",
+      "headline_datapoints": [
+        "Zoomo 'Flex ($49), Boost ($199), Ride-to-own ($279)' (2022)",
+        "Rybit (SF storefront) 'Starter ($14), Premium ($80), Elite ($240)'; Sunryde 'Weekly ($50), Monthly ($185)'; Zygg 'Weekly ($54-$59), Monthly ($129-$159)'; JOCO '7-day weekly pass ($65)'; Pico scooters/mopeds 'Weekly plans start at $25' (2022)"
+      ],
+      "reliability": "low",
+      "access": "public",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "Riders-Share - 'Benefits of Renting a Scooter for Uber Eats & Doordash' (P2P gas scooter/moped rental)",
+      "url": "https://www.riders-share.com/blog/article/scooter-rental-delivery",
+      "contains": "Peer-to-peer motorcycle/scooter rental marketplace marketing daily/weekly/monthly scooter rentals to LA delivery drivers; LA supply claim.",
+      "granularity": "LA metro",
+      "year": "2025-2026",
+      "headline_datapoints": [
+        "'50+ scooters available across LA, Santa Monica, Venice Beach, and Hollywood' (company-claimed, snippet)",
+        "Scooters 'from $25/Day' (https://www.riders-share.com/type/scooter); explicitly markets to 'DoorDash, Uber Eats, Grubhub'"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "FriendWithA - Moped rentals in Los Angeles (P2P)",
+      "url": "https://friendwitha.com/rentals/moped/los-angeles-ca/",
+      "contains": "Peer-to-peer moped rental price floor for LA; not courier-specific.",
+      "granularity": "LA metro",
+      "year": "2026",
+      "headline_datapoints": [
+        "'Moped rentals in Los Angeles start at $65 per day, $227 per week, or $520 per month' (platform-claimed, snippet)"
+      ],
+      "reliability": "low",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["3", "5"]
+    },
+    {
+      "name": "Craigslist Los Angeles - e-bikes hub",
+      "url": "https://www.craigslist.org/search/area/losangeles?hub=e-bikes",
+      "contains": "Live classified listings; informal weekly e-bike rentals to couriers would appear here, but web search surfaced no such listings. Needs manual browsing of Craigslist / OfferUp / Facebook Marketplace (https://www.facebook.com/marketplace/la/bicycles/).",
+      "granularity": "listing-level",
+      "year": "2026",
+      "headline_datapoints": [
+        "No weekly-rental-for-delivery listings found via search; only sale listings and 'delivery driver jobs ... vehicle provided' ads (snippet)"
+      ],
+      "reliability": "low",
+      "access": "requires_scraping",
+      "relevant_tasks": ["5", "3"]
+    },
+    {
+      "name": "DoorDash Dasher Central - Bike Dashing page",
+      "url": "https://dasher.doordash.com/en-us/about/bike-dashing",
+      "contains": "DoorDash's official e-bike partner offers for Dashers; confirms Whizz as a named partner.",
+      "granularity": "national",
+      "year": "2026",
+      "headline_datapoints": [
+        "'DoorDash offers all Dashers 15% off rental and rent-to-own e-bike plans through Whizz' (snippet)"
+      ],
+      "reliability": "medium",
+      "access": "search_snippet_only",
+      "relevant_tasks": ["5"]
+    },
+    {
+      "name": "Whizz - iOS App Store listing",
+      "url": "https://apps.apple.com/us/app/whizz-e-bike-rental-service/id1668800684",
+      "contains": "App rating and review count (a scale proxy independent of Google review counts); not opened.",
+      "granularity": "company-level",
+      "year": "2026",
+      "headline_datapoints": [
+        "Not captured"
+      ],
+      "reliability": "medium",
+      "access": "public",
+      "relevant_tasks": ["5"]
+    }
+  ],
+  "gaps": [
+    "Whizz LA: the $139/mo figure exists only in Google's indexed page title; the live page renders an app shell. Unknown whether LA is a live market, delivery-only service, or a demand-test landing page. No LA address, weekly price, deposit, or plan table captured. Needs headless-browser scrape or a test signup in the Whizz app with an LA zip.",
+    "Whizz SF: SF-specific monthly/weekly price not captured (only national 'from $179/month'); Google review count for 1231 Stevenson St store and Trustpilot count not captured.",
+    "Zoomo LA: current status unverified. Site's LA URL serves NYC content with a single NYC store; no closure press found. Zoomo LA Facebook page exists but was not read.",
+    "No e-moped / e-motorcycle rental or subscription company targeting LA couriers was found in this pass (Revel, Dance, JOCO, Ryde returned no LA results; not individually verified). The competitor set surfaced is pedal-assist e-bikes (Whizz, Zoomo, Wombi) and peer-to-peer gas scooters (Riders-Share, FriendWithA) - HMP's FLASH/Lightning class may have no direct LA competitor, or one that search does not index.",
+    "LA-local independent e-bike/scooter shops advertising weekly rentals to delivery riders: none surfaced by search; needs Google Maps / Yelp query in DTLA, Koreatown, Westlake zips.",
+    "Informal Craigslist / OfferUp / Facebook Marketplace weekly e-bike rentals in LA: not surfaced by search; requires manual listing scrape.",
+    "Fleet sizes: only Whizz 2,500 (company-claimed, June 2024, national, mostly NY/NJ). No LA- or SF-level fleet figures for any competitor. Do not infer from review counts.",
+    "Battery-swap competition in CA: Whizz swap cabinets exist only in NYC, DC, Philadelphia; Storm-2 All-in not offered in SF. No LA battery-swap competitor found.",
+    "Repair/replacement policy detail captured only for Whizz; Zoomo 'Full Maintenance' inclusions and theft liability not captured."
+  ],
+  "must_ask_hmp": [
+    "HMP's current SF rental price list by model (weekly/monthly), deposit, and rent-to-own terms - needed to benchmark against Whizz SF (from $179/mo, $99 deposit weekly, $99 buyout after 12 months) and Zoomo NYC ($20-$65/week).",
+    "HMP's SF unit economics per rented vehicle: utilization, monthly repair cost, theft/loss rate, replacement frequency - no public source substitutes for this.",
+    "Any inbound LA demand signals: SF riders who relocated to LA, LA web/app traffic, DMs, or DoorDash/Uber contacts asking about LA.",
+    "Whether HMP has or is negotiating a DoorDash/Uber fleet-partner or Dasher-discount arrangement comparable to Whizz's '$250 off first five months' program.",
+    "HMP's battery-subscription pricing and swap-station economics (~300+ subscribers) - to compare against Whizz's $49/mo NY swap add-on and to decide whether swap is a defensible LA differentiator.",
+    "Any direct intel on Zoomo's former LA operation (staff, former customers, why it wound down) or on Whizz's LA activity (riders who tried it)."
+  ],
+  "surprises": [
+    "Whizz appears to have NO physical Los Angeles location: its locations page (Sept 2026) lists 31 shops across 6 cities with a single CA hub in SF (1231 Stevenson St, Suite 101, 94103), and its DoorDash guide updated 2026-07-22 lists cities served without LA. The LA '$139/mo' page is an app-shell. CONTEXT's assumption of an established Whizz LA presence is not supported by Whizz's own site.",
+    "Whizz's advertised LA price ($139/mo, indexed title) is BELOW its national headline ($179/mo) and below its 2023 price ($159/mo) - either LA is a promotional/test market or the page is stale.",
+    "Zoomo's US web presence has collapsed to a single NYC store; its LA city URL serves NYC content. US pricing fell from Flex $49/wk / RTO $279/mo to 'from $39/week', a '$20/week' Uber Eats special, and '$790' outright purchase - price ceilings for pedal-assist courier e-bikes are lower than the 2022-2024 baseline.",
+    "Whizz's 'all-in' positioning is narrower than the name implies: included maintenance is tubes, brake pads, and adjustments with a $9 service fee per visit; all other parts are extra; theft liability is capped at $500 (with Protection Plan $19/mo). This leaves room for a genuinely full-service repair/replacement offer.",
+    "Wombi (LA, from $135/mo) is a Tern cargo/commuter subscription for consumers, not couriers - not a direct competitor despite appearing in LA e-bike subscription searches.",
+    "Whizz 2024 press: 2,500-bike fleet with >$8M ARR and total funding $20M (all company-claimed) - a venture-backed competitor roughly 25x HMP's ~100 whole-vehicle rental base, but concentrated in NY/NJ."
+  ]
+}
