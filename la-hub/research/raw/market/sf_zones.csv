@@ -1,0 +1,11 @@
+zone,area_sqmi,population_acs,population_year,zero_vehicle_hh_share,restaurants_naics722,restaurants_dph,restaurants_per_sqmi,notes
+South of Market,0.88,24698,ACS 2023 5-yr,0.571,258,168,291.7,DataSF polygon sum_sqmi=0.88; LIC-restaurant cross-check=150; DPH broad food-service=240; tracts=7
+Mission,1.88,54431,ACS 2023 5-yr,0.375,481,557,255.5,DataSF polygon sum_sqmi=1.88; LIC-restaurant cross-check=403; DPH broad food-service=682; tracts=17
+Tenderloin,0.39,32009,ACS 2023 5-yr,0.776,260,310,662.3,DataSF polygon sum_sqmi=0.39; LIC-restaurant cross-check=240; DPH broad food-service=411; tracts=12
+Financial District/South Beach,1.12,24519,ACS 2023 5-yr,0.386,715,593,636.7,DataSF polygon sum_sqmi=1.12; LIC-restaurant cross-check=477; DPH broad food-service=696; tracts=10
+CORE,4.28,135657,ACS 2023 5-yr,0.522,1714,1628,400.2,LIC-restaurant cross-check=1270; DPH broad food-service=2029; tracts=46
+RING,4.48,130673,ACS 2023 5-yr,0.437,1298,930,289.6,LIC-restaurant cross-check=797; DPH broad food-service=1175; tracts=42
+radius_1.5mi,6.39,210255,ACS 2023 5-yr,0.525,2751,2300,430.8,area = SF land within 1.5 mi circle (full circle 7.1 sqmi incl. bay/outside SF); pop = SF tracts w/ centroid in circle; LIC-restaurant cross-check=1848; DPH broad food-service=2855; tracts=72
+radius_3mi,17.99,437238,ACS 2023 5-yr,0.398,4055,3458,225.5,area = SF land within 3 mi circle (full circle 28.3 sqmi incl. bay/outside SF); pop = SF tracts w/ centroid in circle; LIC-restaurant cross-check=2846; DPH broad food-service=4368; tracts=145
+radius_5mi,38.56,741809,ACS 2023 5-yr,0.316,5005,4327,129.8,area = SF land within 5 mi circle (full circle 78.5 sqmi incl. bay/outside SF); pop = SF tracts w/ centroid in circle; LIC-restaurant cross-check=3581; DPH broad food-service=5467; tracts=218
+City of SF,46.72,836321,ACS 2023 5-yr,0.299,5364,4514,114.8,LIC-restaurant cross-check=3816; DPH broad food-service=5755; tracts=244; NAICS722 w/o coordinates but city=SF included=147

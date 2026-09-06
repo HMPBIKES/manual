@@ -1,0 +1,419 @@
+{
+ "site_address": "768 Ceres Ave, Los Angeles, CA 90021",
+ "site_latlon": [
+  34.036264920367,
+  -118.244701075709
+ ],
+ "site_geocode": {
+  "census_geocoder": [
+   34.036264920367,
+   -118.244701075709
+  ],
+  "nominatim_top": [
+   34.0397338,
+   -118.2414402
+  ],
+  "note": "Census Public_AR_Current address-range match used; Nominatim returned street-level matches ~150-400 m away. Site falls inside Downtown Los Angeles NC."
+ },
+ "date_accessed": "2026-09-06",
+ "sources": [
+  {
+   "name": "City of LA Listing of Active Businesses (Socrata 6rrh-rzua)",
+   "url": "https://data.lacity.org/resource/6rrh-rzua.json",
+   "rows": {
+    "naics_722_all": 19492,
+    "naics_722_with_coords": 15871,
+    "restaurant_codes_raw": 12548,
+    "restaurant_unique_name_addr": 12399,
+    "restaurant_unique_with_coords": 9107,
+    "strict_7225x_raw": 1325,
+    "strict_7225x_unique_with_coords": 551,
+    "drinking_raw": 380,
+    "drinking_unique": 376,
+    "drinking_unique_with_coords": 276
+   },
+   "date_accessed": "2026-09-06",
+   "filters": "starts_with(naics,'722'); restaurants = NAICS in {722110,722211,722212,722213 (NAICS-2007 codes still used by most rows), 722511,722513,722514,722515 (NAICS-2012+)}; drinking places = 722410/722400; excluded 7223x (caterers, mobile food, food service contractors). Deduped on normalized (dba_name or business_name)+street_address. Coordinates from location_1 (lat rounded to 3 decimals in source).",
+   "coverage": "City of Los Angeles only (business tax registrations; includes some stale registrations)."
+  },
+  {
+   "name": "LA County DPH Environmental Health Restaurant and Market Inventory (07/01/2026 release)",
+   "url": "https://services.arcgis.com/RmCCgQtiZLDCtblq/arcgis/rest/services/Environmental_Health_Restaurant_and_Market_Inventory_33/FeatureServer/0/query",
+   "hub_page": "https://data.lacounty.gov/datasets/4f31c9a99e444a40a3806e3bbe7b5fdd",
+   "rows": {
+    "all": 41197,
+    "restaurant_program_elements": 30348,
+    "restaurant_unique_facilities": 28161,
+    "restaurant_unique_with_valid_coords": 28117
+   },
+   "date_accessed": "2026-09-06",
+   "filters": "PE_DESCRIPTION contains 'RESTAURANT' (all seat-size and risk classes); FOOD MKT RETAIL rows excluded; deduped on FACILITY_ID then normalized name+address+city. Valid coords = within lat 33-35, lon -119.5 to -117.",
+   "coverage": "LA County excluding cities with their own health departments (Pasadena, Long Beach, Vernon)."
+  },
+  {
+   "name": "EmpowerLA Neighborhood Council Boundaries - City of Los Angeles (LA GeoHub)",
+   "url": "https://services5.arcgis.com/7nsPwEMP38bSkCjy/arcgis/rest/services/Neighborhood_Council_Boundaries_2018_City_of_Los_Angeles/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson",
+   "rows": 99,
+   "date_accessed": "2026-09-06",
+   "filters": "all 99 NC polygons; cross-checked against LABSS copy services1.arcgis.com/PTh9WC0Sf2WS7AAq/.../Neighborhood_Councils"
+  },
+  {
+   "name": "ACS 2020-2024 5-year table-based summary file, B01003 (total population) and B25044 (tenure by vehicles available)",
+   "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b01003.dat (and -b25044.dat)",
+   "rows": 2498,
+   "date_accessed": "2026-09-06",
+   "filters": "GEO_ID starting 1400000US06037 (LA County tracts). Census API (api.census.gov) refused key-less requests (\"Missing Key\"), so the FTP summary file was used instead."
+  },
+  {
+   "name": "Census Gazetteer 2024 tracts (INTPTLAT/INTPTLONG, ALAND)",
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_tracts_06.txt",
+   "rows": 2498,
+   "date_accessed": "2026-09-06",
+   "filters": "GEOID starts with 06037"
+  },
+  {
+   "name": "TIGER/Line 2024 tract polygons (area-weighted population cross-check)",
+   "url": "https://www2.census.gov/geo/tiger/TIGER2024/TRACT/tl_2024_06_tract.zip",
+   "rows": 2498,
+   "date_accessed": "2026-09-06",
+   "filters": "GEOID starts with 06037"
+  },
+  {
+   "name": "Census Geocoder (site geocode)",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=768+Ceres+Ave+Los+Angeles+CA+90021&benchmark=Public_AR_Current&format=json",
+   "rows": 1,
+   "date_accessed": "2026-09-06"
+  }
+ ],
+ "polygons_used": [
+  {
+   "nc_name_empowerla": "Downtown Los Angeles",
+   "nc_name_labss": "DOWNTOWN LOS ANGELES",
+   "area_sqmi_empowerla": 5.028,
+   "area_sqmi_labss": 5.037,
+   "used_in_zone": "Downtown"
+  },
+  {
+   "nc_name_empowerla": "Arts District Little Tokyo",
+   "nc_name_labss": "HISTORIC CULTURAL NC",
+   "area_sqmi_empowerla": 0.879,
+   "area_sqmi_labss": 0.882,
+   "used_in_zone": "Downtown"
+  },
+  {
+   "nc_name_empowerla": "Wilshire Center Koreatown",
+   "nc_name_labss": "WILSHIRE CENTER - KOREATOWN NC",
+   "area_sqmi_empowerla": 2.4,
+   "area_sqmi_labss": 2.376,
+   "used_in_zone": "Koreatown"
+  },
+  {
+   "nc_name_empowerla": "Westlake North",
+   "nc_name_labss": "WESTLAKE NORTH NC",
+   "area_sqmi_empowerla": 0.505,
+   "area_sqmi_labss": 0.504,
+   "used_in_zone": "Westlake"
+  },
+  {
+   "nc_name_empowerla": "Westlake South",
+   "nc_name_labss": "WESTLAKE SOUTH NC",
+   "area_sqmi_empowerla": 0.544,
+   "area_sqmi_labss": 0.484,
+   "used_in_zone": "Westlake"
+  },
+  {
+   "nc_name_empowerla": "Pico Union",
+   "nc_name_labss": "PICO UNION NC",
+   "area_sqmi_empowerla": 1.613,
+   "area_sqmi_labss": 1.602,
+   "used_in_zone": "Pico-Union"
+  },
+  {
+   "nc_name_empowerla": "Empowerment Congress North",
+   "nc_name_labss": "EMPOWERMENT CONGRESS NORTH AREA NDC",
+   "area_sqmi_empowerla": 3.821,
+   "area_sqmi_labss": 3.827,
+   "used_in_zone": "USC"
+  },
+  {
+   "nc_name_empowerla": "Historic Cultural North",
+   "nc_name_labss": "HISTORIC CULTURAL NORTH NC",
+   "area_sqmi_empowerla": 1.43,
+   "area_sqmi_labss": 1.432,
+   "used_in_zone": "not used (Chinatown; reported in notes only)"
+  },
+  {
+   "zone": "Downtown",
+   "area_sqmi": 5.907,
+   "components": [
+    "Downtown Los Angeles",
+    "Arts District Little Tokyo"
+   ]
+  },
+  {
+   "zone": "Koreatown",
+   "area_sqmi": 2.4,
+   "components": [
+    "Wilshire Center Koreatown"
+   ]
+  },
+  {
+   "zone": "Westlake",
+   "area_sqmi": 1.05,
+   "components": [
+    "Westlake North",
+    "Westlake South"
+   ]
+  },
+  {
+   "zone": "Pico-Union",
+   "area_sqmi": 1.613,
+   "components": [
+    "Pico Union"
+   ]
+  },
+  {
+   "zone": "USC",
+   "area_sqmi": 3.821,
+   "components": [
+    "Empowerment Congress North"
+   ]
+  },
+  {
+   "zone": "radius_1.5mi",
+   "area_sqmi": 7.069,
+   "components": "circle"
+  },
+  {
+   "zone": "radius_3mi",
+   "area_sqmi": 28.274,
+   "components": "circle"
+  },
+  {
+   "zone": "radius_5mi",
+   "area_sqmi": 78.539,
+   "components": "circle"
+  },
+  {
+   "zone": "City of LA",
+   "area_sqmi": 438.755,
+   "components": "all NCs"
+  }
+ ],
+ "usc_nc_check": "USC campus point (34.0224,-118.2851) falls inside Empowerment Congress North Area NDC in both boundary files; that NC was used for the USC / University Park / Exposition Park zone.",
+ "downtown_chinatown_variant": {
+  "area_sqmi": 7.34,
+  "population_acs": 90913,
+  "population_areaweighted_tiger": 91440,
+  "restaurants_dph": 1034,
+  "restaurants_naics7225": 784,
+  "drinking_places_naics7224": 40
+ },
+ "socrata_naics_breakdown_by_zone": {
+  "Downtown": {
+   "722211": 237,
+   "722110": 419,
+   "722511": 9,
+   "722515": 14,
+   "722514": 2,
+   "722513": 9
+  },
+  "Koreatown": {
+   "722211": 106,
+   "722110": 357,
+   "722513": 15,
+   "722511": 7,
+   "722515": 6,
+   "722514": 2
+  },
+  "Westlake": {
+   "722110": 59,
+   "722511": 3,
+   "722211": 28,
+   "722513": 2
+  },
+  "Pico-Union": {
+   "722110": 92,
+   "722511": 3,
+   "722513": 6,
+   "722211": 28,
+   "722515": 1
+  },
+  "USC": {
+   "722110": 92,
+   "722211": 62,
+   "722515": 3,
+   "722513": 5
+  },
+  "radius_1.5mi": {
+   "722110": 450,
+   "722211": 243,
+   "722511": 9,
+   "722513": 11,
+   "722515": 15,
+   "722514": 3
+  },
+  "radius_3mi": {
+   "722110": 988,
+   "722211": 495,
+   "722515": 21,
+   "722513": 36,
+   "722511": 21,
+   "722514": 7
+  },
+  "radius_5mi": {
+   "722110": 1867,
+   "722211": 855,
+   "722515": 48,
+   "722513": 72,
+   "722511": 38,
+   "722514": 12
+  },
+  "City of LA": {
+   "722211": 2365,
+   "722110": 5706,
+   "722515": 144,
+   "722511": 114,
+   "722513": 204,
+   "722514": 35
+  }
+ },
+ "dph_pe_breakdown_by_zone": {
+  "Downtown": {
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 54,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 177,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 112,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 137,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 247,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 27,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 10,
+   "RESTAURANT (0-30) SEATS LOW RISK": 82,
+   "RESTAURANT (61-150) SEATS LOW RISK": 22,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 12,
+   "RESTAURANT (31-60) SEATS LOW RISK": 24,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 6
+  },
+  "Koreatown": {
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 21,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 106,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 114,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 134,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 167,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 20,
+   "RESTAURANT (0-30) SEATS LOW RISK": 30,
+   "RESTAURANT (31-60) SEATS LOW RISK": 4,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 3,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 7,
+   "RESTAURANT (61-150) SEATS LOW RISK": 4,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 1
+  },
+  "Westlake": {
+   "RESTAURANT (0-30) SEATS HIGH RISK": 47,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 24,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 3,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 11,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 6,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 4,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 3,
+   "RESTAURANT (31-60) SEATS LOW RISK": 2,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 1,
+   "RESTAURANT (0-30) SEATS LOW RISK": 3
+  },
+  "Pico-Union": {
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 36,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 42,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 17,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 17,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 1,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 4,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 2,
+   "RESTAURANT (61-150) SEATS LOW RISK": 1,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 2,
+   "RESTAURANT (31-60) SEATS LOW RISK": 2,
+   "RESTAURANT (0-30) SEATS LOW RISK": 2
+  },
+  "USC": {
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 44,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 13,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 12,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 69,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 30,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 7,
+   "RESTAURANT (0-30) SEATS LOW RISK": 18,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 12,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 2,
+   "RESTAURANT (61-150) SEATS LOW RISK": 1,
+   "RESTAURANT (31-60) SEATS LOW RISK": 2,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 1
+  },
+  "radius_1.5mi": {
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 208,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 264,
+   "RESTAURANT (0-30) SEATS LOW RISK": 83,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 11,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 117,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 143,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 56,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 29,
+   "RESTAURANT (61-150) SEATS LOW RISK": 22,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 13,
+   "RESTAURANT (31-60) SEATS LOW RISK": 23,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 6
+  },
+  "radius_3mi": {
+   "RESTAURANT (31-60) SEATS HIGH RISK": 297,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 206,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 89,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 606,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 471,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 67,
+   "RESTAURANT (0-30) SEATS LOW RISK": 146,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 41,
+   "RESTAURANT (31-60) SEATS LOW RISK": 41,
+   "RESTAURANT (61-150) SEATS LOW RISK": 26,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 13,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 18
+  },
+  "radius_5mi": {
+   "RESTAURANT (0-30) SEATS HIGH RISK": 1209,
+   "RESTAURANT (61-150) SEATS HIGH RISK": 421,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 961,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 137,
+   "RESTAURANT (0-30) SEATS LOW RISK": 263,
+   "RESTAURANT (31-60) SEATS LOW RISK": 76,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 644,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 144,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 83,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 22,
+   "RESTAURANT (61-150) SEATS LOW RISK": 40,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 22
+  },
+  "City of LA": {
+   "RESTAURANT (61-150) SEATS HIGH RISK": 1377,
+   "RESTAURANT (31-60) SEATS HIGH RISK": 1915,
+   "RESTAURANT (31-60) SEATS LOW RISK": 226,
+   "RESTAURANT (0-30) SEATS HIGH RISK": 3193,
+   "RESTAURANT (0-30) SEATS LOW RISK": 796,
+   "RESTAURANT (0-30) SEATS MODERATE RISK": 2592,
+   "RESTAURANT (61-150) SEATS MODERATE RISK": 273,
+   "RESTAURANT (151 + ) SEATS HIGH RISK": 418,
+   "RESTAURANT (151 + ) SEATS LOW RISK": 31,
+   "RESTAURANT (31-60) SEATS MODERATE RISK": 426,
+   "RESTAURANT (61-150) SEATS LOW RISK": 104,
+   "RESTAURANT (151 + ) SEATS MODERATE RISK": 45
+  }
+ },
+ "caveats": [
+  "Socrata 'restaurants_naics7225' column actually counts NAICS 7221x/7222x/7225x (restaurants & other eating places under both NAICS-2007 and NAICS-2012+ coding): only 1325 of 12548 restaurant rows citywide carry 7225x codes; a literal 7225-only filter would undercount ~7x. Strict counts are in restaurants_socrata_strict7225_only.",
+  "26.6% of unique Socrata restaurant records (and 26.6% of drinking places) have no coordinates and are not assigned to any zone/radius; zone counts from source A are therefore floors. DPH records are 100% geocoded (44 invalid).",
+  "Socrata is a business-tax registry for the City of LA only: the 5-mile (and part of the 3-mile) circle extends into Vernon, Huntington Park, unincorporated East LA etc. where source A has no coverage; DPH (county-wide except Pasadena/Long Beach/Vernon) is used for restaurants_per_sqmi.",
+  "Population is assigned by tract internal-point-in-polygon (ACS 2020-2024 5-yr); for small zones this is coarse, so an area-weighted TIGER interpolation is provided in population_areaweighted_tiger. The 'City of LA' polygon is the union of NC polygons, which has minor overlaps/slivers vs. the official city boundary. Downtown excludes Chinatown (Historic Cultural North NC); a variant with it is in the notes JSON.",
+  "DPH restaurant PEs include institutional/hotel/stadium/school kitchens and every seating-size class, and Socrata includes stale registrations; neither source is a clean count of consumer-facing delivery restaurants. Source A vs B disagree by design; ratios between zones are more robust than absolute counts."
+ ],
+ "failed_steps": [
+  "Census API (api.census.gov/data/2023 and /2022 acs5) returned 'Missing Key' HTML for key-less requests; replaced by the ACS table-based summary-file .dat downloads (no key needed) \u2014 2024 5-year vintage used (latest available).",
+  "GeoHub service names 'Neighborhood_Councils_(Certified)' / 'Neighborhood_Council_Boundaries' were 400 / 'Token Required'; the EmpowerLA 'Neighborhood_Council_Boundaries_2018_City_of_Los_Angeles' service (public) was used instead, cross-checked with the LABSS copy.",
+  "Socrata query with 'location IS NOT NULL' failed (column is 'location_1'); a literal NAICS starts_with('7225') filter returned only 1,325 rows because most rows use NAICS-2007 codes 722110/722211 \u2014 broadened to all 722 codes and re-filtered locally.",
+  "LA Times Mapping L.A. neighborhoods GeoJSON was not needed (NC polygons sufficed) and was not fetched."
+ ]
+}

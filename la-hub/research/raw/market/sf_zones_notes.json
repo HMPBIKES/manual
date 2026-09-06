@@ -1,0 +1,122 @@
+{
+ "shop_latlon": [
+  37.7792,
+  -122.4064
+ ],
+ "shop_geocode": "Census Geocoder (Public_AR_Current) match for 261 6TH ST, SAN FRANCISCO, CA 94103 -> (37.779202, -122.406385); falls inside Analysis Neighborhood 'South of Market'",
+ "run_date": "2026-09-06",
+ "sources": [
+  {
+   "name": "DataSF Registered Business Locations - San Francisco",
+   "id": "g8m3-pdis",
+   "url": "https://data.sfgov.org/resource/g8m3-pdis.json",
+   "how_used": "Active locations (location_end_date IS NULL) whose self_reported_naics_code starts with '722'; deduped on normalized dba_name + full_business_address; assigned to neighborhoods by point-in-polygon (fallback: neighborhoods_analysis_boundaries field)",
+   "stats": {
+    "registry_rows_pulled": 9916,
+    "naics722_rows": 5710,
+    "naics722_dedup": 5584,
+    "naics722_dedup_in_sf": 5364,
+    "naics722_share_lacking_location": 0.0274,
+    "lic_restaurant_dedup_in_sf": 3816,
+    "pip_vs_field_agreement_registry": 1.0
+   }
+  },
+  {
+   "name": "DataSF Health Inspection Scores (2024-Present)",
+   "id": "tvy3-wexg",
+   "url": "https://data.sfgov.org/resource/tvy3-wexg.json",
+   "how_used": "Distinct permit_number with permit_type matching RESTAURANT / TAKE-OUTS / FAST FOOD OUTLETS (H24/H25/H26/H28/H29 and their -R variants); has latitude/longitude and analysis_neighborhood",
+   "stats": {
+    "dph_restaurant_facilities": 4514,
+    "dph_restaurant_lacking_coords": 15,
+    "dph_broad_food_service": 5755,
+    "dph_inspection_window": "2024-01-02 to present (dataset tvy3-wexg)"
+   }
+  },
+  {
+   "name": "DataSF Analysis Neighborhoods (polygons)",
+   "id": "ajp5-b2md (mirror of p5b7-5n3h)",
+   "url": "https://data.sfgov.org/resource/ajp5-b2md.geojson",
+   "how_used": "41 neighborhood MultiPolygons; 'Financial District' label aliased to 'Financial District/South Beach'; areas computed in EPSG:26910 (UTM 10N)"
+  },
+  {
+   "name": "ACS 2023 5-year table-based summary file, B01003 (total population) and B08201 (household size by vehicles available)",
+   "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/",
+   "how_used": "244 SF County tracts (GEO_ID 1400000US06075*); zero_vehicle_hh_share = sum(B08201_E002)/sum(B08201_E001)"
+  },
+  {
+   "name": "Census 2023 Gazetteer, tracts, California",
+   "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_gaz_tracts_06.txt",
+   "how_used": "Tract internal-point (INTPTLAT/INTPTLONG) used for centroid point-in-polygon assignment to neighborhoods and radii; ALAND_SQMI used only as a city-area cross-check"
+  },
+  {
+   "name": "Census Geocoder",
+   "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress",
+   "how_used": "Shop coordinates"
+  }
+ ],
+ "zone_definitions": {
+  "CORE": [
+   "South of Market",
+   "Mission",
+   "Tenderloin",
+   "Financial District/South Beach"
+  ],
+  "RING": [
+   "Chinatown",
+   "Nob Hill",
+   "Hayes Valley",
+   "Western Addition",
+   "Castro/Upper Market",
+   "Potrero Hill",
+   "Mission Bay"
+  ],
+  "radius_*": "Euclidean distance from shop in UTM 10N; area_sqmi = SF land (union of neighborhood polygons) inside the circle; population = SF tracts whose internal point lies inside the circle; restaurants = SF-dataset points inside the circle",
+  "City of SF": "Union of the 41 Analysis Neighborhood polygons (46.72 sqmi; gazetteer land area 46.69)"
+ },
+ "caveats": [
+  "restaurants_naics722 uses the SELF-REPORTED NAICS on the business registration and spans all of 722 (full-service 722511, limited-service 722513, snack/coffee 722515, food-service contractors 722310, caterers 722320, mobile food 722330, bars 722410). Financial District/South Beach is inflated by caterers/contractors registered at office addresses. 2.7% of 722 rows lack coordinates; those with a neighborhood field were still assigned, the rest count only in 'City of SF'.",
+  "The registry marks a location active only when TTX has been told it closed; closures lag, so NAICS counts overstate operating restaurants. A stricter cross-check (locations carrying a DPH RESTAURANT/TAKE-OUT/FAST FOOD health-permit LIC code) gives 3,816 citywide vs 5,364 NAICS-722; per-zone LIC counts are in the notes column.",
+  "restaurants_dph counts distinct DPH permits inspected since 2024-01-02 with a RESTAURANT/TAKE-OUT/FAST FOOD permit type; facilities not inspected in that window are missing, and bars, bakeries, food trucks, caterers and markets with food prep are excluded (broader 'food-service' count = 5,755 citywide, per-zone in notes).",
+  "Population is ACS 2023 5-year (2019-2023 average) allocated by whole tract via tract internal point, so neighborhood/radius populations are approximate where tracts straddle boundaries; three zero-population water/island tracts were snapped to the nearest polygon. Tract sums total 836,321.",
+  "Radius rows use only San Francisco data (restaurants, tracts, land); the 3- and 5-mile circles cover bay water and, at 5 miles, reach beyond the county line, so their full geometric areas (28.3 and 78.5 sqmi) are not the denominators used. Neighborhood polygons include some pier/shoreline fill, so areas can differ slightly from other published figures.",
+  "Zero-vehicle share is households with no vehicle available (B08201) over all households, aggregated across the tracts assigned to each zone."
+ ],
+ "failed_steps": [
+  "p5b7-5n3h (Analysis Neighborhoods) .geojson and geospatial export endpoints returned features with null geometry/empty rows (dataset appears to be a tabular view now); used the identical 41-polygon computed-region dataset ajp5-b2md instead.",
+  "api.census.gov ACS endpoint returned a 'Missing Key' HTML page (an API key is now required for tract queries); fell back to the ACS 2023 5-year table-based summary files (.dat) for B01003 and B08201.",
+  "g8m3-pdis does not expose naic_code / naic_code_description / business_end_date as described; the live schema has self_reported_naics_code (no description, no ranges like '7220-7229') and location_end_date, which were used instead. The administratively_closed flag was null for every active food-service row.",
+  "DPH tvy3-wexg has 10 grouped rows with null permit_number (deduped on dba+address instead) and 15 restaurant permits without coordinates (assigned via analysis_neighborhood; excluded from radius rows)."
+ ],
+ "working_stats": {
+  "registry_rows_pulled": 9916,
+  "naics722_rows": 5710,
+  "naics722_dedup": 5584,
+  "naics722_dedup_in_sf": 5364,
+  "naics722_share_lacking_location": 0.0274,
+  "naics722_admin_closed_dropped": 0,
+  "lic_restaurant_dedup_in_sf": 3816,
+  "pip_vs_field_agreement_registry": 1.0,
+  "dph_restaurant_facilities": 4514,
+  "dph_restaurant_lacking_coords": 15,
+  "dph_broad_food_service": 5755,
+  "dph_inspection_window": "2024-01-02 to present (dataset tvy3-wexg)",
+  "tracts": 244,
+  "tracts_snapped_to_nearest_polygon": [
+   {
+    "GEOID": "06075980401",
+    "pop": 0
+   },
+   {
+    "GEOID": "06075990100",
+    "pop": 0
+   },
+   {
+    "GEOID": "06075990200",
+    "pop": 0
+   }
+  ],
+  "city_area_from_polygons_sqmi": 46.72,
+  "city_area_gazetteer_land_sqmi": 46.69
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "registry_rows_pulled": 9916,
+ "naics722_rows": 5710,
+ "naics722_dedup": 5584,
+ "naics722_dedup_in_sf": 5364,
+ "naics722_share_lacking_location": 0.0274,
+ "naics722_admin_closed_dropped": 0,
+ "lic_restaurant_dedup_in_sf": 3816,
+ "pip_vs_field_agreement_registry": 1.0,
+ "dph_restaurant_facilities": 4514,
+ "dph_restaurant_lacking_coords": 15,
+ "dph_broad_food_service": 5755,
+ "dph_inspection_window": "2024-01-02 to present (dataset tvy3-wexg)",
+ "tracts": 244,
+ "tracts_snapped_to_nearest_polygon": [
+  {
+   "GEOID": "06075980401",
+   "pop": 0
+  },
+  {
+   "GEOID": "06075990100",
+   "pop": 0
+  },
+  {
+   "GEOID": "06075990200",
+   "pop": 0
+  }
+ ],
+ "city_area_from_polygons_sqmi": 46.72,
+ "city_area_gazetteer_land_sqmi": 46.69
+}
