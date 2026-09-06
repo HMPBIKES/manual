@@ -1,0 +1,128 @@
+id,block,variable,unit,status,sf_value,la_conservative,la_base,la_aggressive,source_or_owner,notes
+M01,market,pop_dtla,residents,FACT_PENDING,,,,,ACS 5yr / LA Times Mapping LA,DTLA 常住人口；用 census tract 聚合，不用媒体粗数
+M02,market,pop_ktown,residents,FACT_PENDING,,,,,ACS 5yr / LA Times Mapping LA,Koreatown 常住人口
+M03,market,pop_service_radius_3mi,residents,FACT_PENDING,,,,,ACS tracts within 3 mi of 768 Ceres,以 768 Ceres 为圆心的常住人口
+M04,market,restaurants_dtla,count,FACT_PENDING,,,,,LA County DPH inspection dataset (lat/long),只算 restaurant 类别，剔除 grocery/school
+M05,market,restaurants_ktown,count,FACT_PENDING,,,,,LA County DPH inspection dataset,
+M06,market,restaurants_radius_3mi,count,FACT_PENDING,,,,,LA County DPH inspection dataset,3 英里内餐厅数
+M07,market,riders_per_100_restaurants,riders,ESTIMATE,,,,,NYC DCWP / SF benchmark cross-check,方法 A：餐厅密度法
+M08,market,riders_per_1000_residents,riders,ESTIMATE,,,,,NYC / Seattle / SF studies,方法 B：人口法（仅作交叉验证，不单独使用）
+M09,market,orders_per_day_area,orders,ESTIMATE,,,,,platform proxies / Second Measure,方法 C：订单量法（订单/骑手/天 反推）
+M10,market,orders_per_rider_day,orders,ESTIMATE,,,,,Reddit / rider reports,每骑手每天单量
+M11,market,daily_active_riders_area,riders,ESTIMATE,,,,,三种方法取交集,DTLA+Ktown 每日活跃骑手
+M12,market,multi_app_overlap,ratio,ASSUMPTION,,,,,rider surveys,一人多平台去重系数
+M13,market,mode_share_car,ratio,ESTIMATE,,,,,surveys / observation count,
+M14,market,mode_share_motorcycle_scooter,ratio,ESTIMATE,,,,,surveys / observation count,
+M15,market,mode_share_ebike,ratio,ESTIMATE,,,,,surveys / observation count,
+M16,market,mode_share_bicycle,ratio,ESTIMATE,,,,,surveys / observation count,
+M17,market,two_wheel_convertible_share_of_car,ratio,ASSUMPTION,,,,,SF customer history,有多少开车骑手会换两轮
+M18,market,reachable_share_768ceres,ratio,ASSUMPTION,,,,,field test,愿意到 768 Ceres 取车/换电/维修的骑手比例
+M19,market,tam_riders,riders,DERIVED,,,,,,
+M20,market,sam_riders,riders,DERIVED,,,,,,
+M21,market,som_riders_m12,riders,DERIVED,,,,,,
+S01,sf_benchmark,sf_vehicles_sold_cum,vehicles,FACT,1000,,,,HMP,>1000 已售并在客户手中
+S02,sf_benchmark,sf_battery_subscribers,subscribers,FACT,300,,,,HMP,300+ 买车客户仍租电池
+S03,sf_benchmark,sf_whole_bike_rentals_active,vehicles,FACT,100,,,,HMP,约 100 台整车在租
+S04,sf_benchmark,sf_years_operating,years,ASK_HMP,,,,,HMP,SF 开始做骑手业务的年份
+S05,sf_benchmark,sf_sales_per_month_trailing12,vehicles/month,ASK_HMP,,,,,HMP,最近 12 个月月均销量
+S06,sf_benchmark,sf_sales_by_year,vehicles/year,ASK_HMP,,,,,HMP,逐年销量（推 ramp curve）
+S07,sf_benchmark,sf_active_customers_90d,customers,ASK_HMP,,,,,HMP,90 天内有交易的客户数
+S08,sf_benchmark,sf_customer_share_core_zone,ratio,ASK_HMP,,,,,HMP CRM 地址,客户在 SoMa/Mission/TL/FiDi 的比例
+S09,sf_benchmark,sf_delivery_rider_share_of_customers,ratio,ASK_HMP,,,,,HMP,客户中职业外卖员比例
+S10,sf_benchmark,sf_rental_to_purchase_conversion,ratio,ASK_HMP,,,,,HMP,租转买比例
+S11,sf_benchmark,sf_rental_avg_tenure,weeks,ASK_HMP,,,,,HMP,整车租赁平均时长
+S12,sf_benchmark,sf_battery_sub_churn_monthly,ratio,ASK_HMP,,,,,HMP,电池订阅月流失率
+S13,sf_benchmark,sf_core_zone_pop,residents,FACT_PENDING,,,,,ACS,SoMa+Mission+TL+FiDi/South Beach
+S14,sf_benchmark,sf_core_zone_restaurants,count,FACT_PENDING,,,,,SF DPH dataset,
+S15,sf_benchmark,sf_daily_active_riders_est,riders,ESTIMATE,,,,,same 3 methods as LA,
+S16,sf_benchmark,la_to_sf_market_ratio,ratio,DERIVED,,,,,,LA 目标区 / SF 核心区
+S17,sf_benchmark,sf_ramp_curve_shape,curve,ASK_HMP,,,,,HMP,M3/M6/M12/M24 SF 当年实际
+S18,sf_benchmark,sf_referral_share_of_new_customers,ratio,ASK_HMP,,,,,HMP,新客中转介绍比例
+R01,revenue,price_sale_tier_A_ebike,USD,ASK_HMP,,,,,hmpbikes.com / HMP,20-25 mph e-bike 售价
+R02,revenue,price_sale_tier_B_fast,USD,ASK_HMP,,,,,HMP,28-35 mph 售价
+R03,revenue,price_sale_tier_C_moped,USD,ASK_HMP,,,,,HMP FLASH?,40-50 mph 售价
+R04,revenue,price_sale_tier_D_moto,USD,ASK_HMP,,,,,Lightning MK.II?,50-70+ mph 售价
+R05,revenue,cogs_tier_A,USD,ASK_HMP,,,,,HMP,落地成本（含运费关税）
+R06,revenue,cogs_tier_B,USD,ASK_HMP,,,,,HMP,
+R07,revenue,cogs_tier_C,USD,ASK_HMP,,,,,HMP,
+R08,revenue,cogs_tier_D,USD,ASK_HMP,,,,,HMP,
+R09,revenue,rental_weekly_tier_A,USD/week,ASK_HMP,,,,,HMP,
+R10,revenue,rental_weekly_tier_B,USD/week,ASK_HMP,,,,,HMP,
+R11,revenue,rental_weekly_tier_C,USD/week,ASK_HMP,,,,,HMP,
+R12,revenue,rental_weekly_tier_D,USD/week,ASK_HMP,,,,,HMP,
+R13,revenue,rental_monthly_discount,ratio,ASK_HMP,,,,,HMP,月租相对周租折扣
+R14,revenue,rental_deposit,USD,ASK_HMP,,,,,HMP,
+R15,revenue,battery_sub_monthly_price,USD/month,ASK_HMP,,,,,HMP,
+R16,revenue,battery_swap_fee,USD/swap,ASK_HMP,,,,,HMP,
+R17,revenue,swaps_per_subscriber_month,swaps,ASK_HMP,,,,,HMP,
+R18,revenue,repair_revenue_per_active_customer_month,USD,ASK_HMP,,,,,HMP,
+R19,revenue,repair_gross_margin,ratio,ASK_HMP,,,,,HMP,
+R20,revenue,parts_accessory_attach_per_sale,USD,ASK_HMP,,,,,HMP,箱子/锁/手机架等
+R21,revenue,parts_gross_margin,ratio,ASK_HMP,,,,,HMP,
+R22,revenue,rental_utilization_target,ratio,ASSUMPTION,,,,,SF actual,在租/总租赁车队
+R23,revenue,rental_to_purchase_conversion_la,ratio,ASSUMPTION,,,,,SF actual,
+R24,revenue,sales_mix_tier_A_B_C_D,ratio,DERIVED,,,,,Task 4,
+C01,cost,rent_monthly,USD,FACT,,10000,10000,10000,listing,768 Ceres
+C02,cost,rent_nnn_cam_taxes,USD/month,ASK_LANDLORD,,,,,listing,是否 NNN；物业税/保险/CAM
+C03,cost,tenant_improvements_onetime,USD,ESTIMATE,,,,,contractor,门禁/隔断/充电区/消防
+C04,cost,security_onetime,USD,ESTIMATE,,,,,quotes,gate/camera/alarm
+C05,cost,security_monthly,USD/month,ESTIMATE,,,,,quotes,监控/报警/保安
+C06,cost,gps_per_vehicle,USD,ESTIMATE,,,,,quotes,含订阅
+C07,cost,utilities_monthly,USD/month,ESTIMATE,,,,,,
+C08,cost,electricity_per_kwh,USD,FACT_PENDING,,,,,LADWP rate,
+C09,cost,kwh_per_swap,kWh,ESTIMATE,,,,,battery spec,
+C10,cost,headcount_by_role,FTE,ASSUMPTION,,,,,SF staffing,店长/技师/前台
+C11,cost,wage_technician_hourly,USD/hr,ESTIMATE,,,,,BLS LA / SF actual,
+C12,cost,wage_frontdesk_hourly,USD/hr,ESTIMATE,,,,,LA min wage,
+C13,cost,payroll_load,ratio,ASSUMPTION,,,,,,税+工伤险
+C14,cost,insurance_gl_property_monthly,USD/month,ASK_HMP,,,,,SF policy,
+C15,cost,insurance_rental_fleet_monthly,USD/month,ASK_HMP,,,,,SF policy,
+C16,cost,theft_loss_rate_rental_fleet_annual,ratio,ASK_HMP,,,,,SF actual,被盗/不归还
+C17,cost,bad_debt_rate_rental_revenue,ratio,ASK_HMP,,,,,SF actual,
+C18,cost,card_fee_rate,ratio,ASSUMPTION,,,,,Stripe/Shopify,
+C19,cost,vehicle_cost_rental_tier_A,USD,ASK_HMP,,,,,HMP,
+C20,cost,vehicle_life_months_rental,months,ASK_HMP,,,,,SF actual,
+C21,cost,vehicle_residual_ratio,ratio,ASSUMPTION,,,,,,
+C22,cost,maintenance_per_rental_vehicle_month,USD,ASK_HMP,,,,,SF actual,
+C23,cost,battery_cost,USD,ASK_HMP,,,,,HMP,
+C24,cost,battery_life_cycles,cycles,ASK_HMP,,,,,cell spec,
+C25,cost,battery_life_months_delivery_use,months,ASK_HMP,,,,,SF actual,
+C26,cost,batteries_per_subscriber,count,ASSUMPTION,,,,,SF ops,含在充/备用
+C27,cost,cac_per_rider,USD,ASSUMPTION,,,,,SF actual,
+C28,cost,marketing_monthly,USD/month,ASSUMPTION,,,,,,
+C29,cost,permits_taxes_monthly,USD/month,ESTIMATE,,,,,LA business tax,
+C30,cost,inventory_days,days,ASK_HMP,,,,,SF,
+C31,cost,initial_rental_fleet_size,vehicles,ASSUMPTION,,,,,,
+C32,cost,initial_battery_pool,units,ASSUMPTION,,,,,,
+F01,fleet,tier_A_share,ratio,DERIVED,,,,,Task 4,20-25 mph e-bike
+F02,fleet,tier_B_share,ratio,DERIVED,,,,,Task 4,28-35 mph
+F03,fleet,tier_C_share,ratio,DERIVED,,,,,Task 4,40-50 mph moped
+F04,fleet,tier_D_share,ratio,DERIVED,,,,,Task 4,50-70+ mph motorcycle
+F05,fleet,tier_license_required,bool,FACT_PENDING,,,,,CA DMV,M1/M2
+F06,fleet,tier_registration_required,bool,FACT_PENDING,,,,,CA DMV,
+F07,fleet,tier_insurance_required,bool,FACT_PENDING,,,,,CA DMV,
+F08,fleet,tier_platform_allowed,bool,FACT_PENDING,,,,,DoorDash/Uber policy,
+F09,fleet,tier_theft_multiplier,ratio,ASSUMPTION,,,,,,
+F10,fleet,tier_maintenance_multiplier,ratio,ASSUMPTION,,,,,,
+F11,fleet,tier_rental_price_ceiling,USD/week,ESTIMATE,,,,,competitor pricing,
+F12,fleet,tier_rider_earning_uplift,USD/hr,ESTIMATE,,,,,rider reports,
+K01,competitor,whizz_weekly_price_la,USD/week,FACT_PENDING,,,,,whizz.com,
+K02,competitor,whizz_deposit,USD,FACT_PENDING,,,,,whizz.com,
+K03,competitor,zoomo_weekly_price_la,USD/week,FACT_PENDING,,,,,zoomo,
+K04,competitor,competitor_fleet_la_estimate,vehicles,ESTIMATE,,,,,mark as estimate,
+L01,site,dist_768ceres_to_ktown_center,miles,FACT_PENDING,,,,,map,
+L02,site,dist_768ceres_to_dtla_restaurant_centroid,miles,FACT_PENDING,,,,,map,
+L03,site,crime_incidents_500m_12mo,count,FACT_PENDING,,,,,LAPD open data,
+L04,site,alt_site_rent_psf_ktown,USD/sqft/mo,FACT_PENDING,,,,,listings,
+L05,site,alt_site_rent_psf_fashion_district,USD/sqft/mo,FACT_PENDING,,,,,listings,
+L06,site,alt_site_rent_psf_arts_district,USD/sqft/mo,FACT_PENDING,,,,,listings,
+L07,site,alt_site_rent_psf_westlake,USD/sqft/mo,FACT_PENDING,,,,,listings,
+L08,site,alt_site_rent_psf_south_central,USD/sqft/mo,FACT_PENDING,,,,,listings,
+L09,site,sqft_needed_pilot,sqft,ASSUMPTION,,,,,SF footprint,
+D01,decision,trigger_m3_active_riders,riders,DERIVED,,,,,,
+D02,decision,trigger_m6_rental_vehicles,vehicles,DERIVED,,,,,,
+D03,decision,trigger_m6_battery_subscribers,subscribers,DERIVED,,,,,,
+D04,decision,trigger_cac_max,USD,DERIVED,,,,,,
+D05,decision,trigger_utilization_min,ratio,DERIVED,,,,,,
+D06,decision,trigger_theft_rate_max,ratio,DERIVED,,,,,,
+D07,decision,trigger_m12_revenue_min,USD/month,DERIVED,,,,,,
