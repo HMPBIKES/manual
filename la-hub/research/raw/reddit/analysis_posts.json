@@ -1,0 +1,2470 @@
+{
+ "meta": {
+  "generated": "2026-09-07",
+  "corpus_docs": 878,
+  "corpus_docs_la_verified": 671,
+  "all_posts": 7742,
+  "la_verified_posts_all_subs": 3095,
+  "two_wheel_unique_posts": 80,
+  "two_wheel_docs_incl_crossposts": 112,
+  "method": "Every two-wheel/earnings/theft doc and all docs for the small candidate areas were read in full; counts come from curated ID lists (see two_wheel_ids) and regex tallies over docs that pass a stricter LA-verification rule (LA marker present and no out-of-state marker unless a core LA marker also appears). All quotes were asserted to be verbatim substrings of the source post."
+ },
+ "area_ranking": [
+  {
+   "area": "DTLA",
+   "la_verified_mentions": 103,
+   "two_wheel_mentions": 29,
+   "two_wheel_docs_incl_crossposts": 31,
+   "two_wheel_ids": [
+    "11khbg4",
+    "12vic27",
+    "14ah15y",
+    "191gamv",
+    "1ce67b8",
+    "1dmru9y",
+    "1dnmppt",
+    "1qlhg3s",
+    "1tydibj",
+    "7u8jh1",
+    "avp2wa",
+    "brglc9",
+    "dm5uhi",
+    "er4dw9",
+    "exguvj",
+    "hadavv",
+    "ift0z2",
+    "igu9bi",
+    "nq3ho0",
+    "nqiyyx",
+    "plw6fe",
+    "ps4sre",
+    "pvyfqo",
+    "q0yp2w",
+    "srp8mj",
+    "syz06v",
+    "udhb8g",
+    "ujwab7",
+    "xmdxgz"
+   ],
+   "car_mentions": 23,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "By far the most two-wheel courier discussion of any LA area (29 unique posts, 2017-2026): riders on bicycles, standing e-scooters, Ninebot, a 72V e-moped and a 49cc scooter all work or plan to work DTLA; the top-scoring post in the whole corpus (1,172 upvotes) is a car-to-e-scooter switch in Downtown LA, and an r/dtla bicycle courier found DTLA busier than Beverly Hills or Hollywood. Recurring complaints: bicycle mode gets almost no orders (only scooter/car mode does), orders get sent far outside the core, inclines are tiring on a pedal bike, homeless encounters, and volume has been thin since 2020.",
+   "confidence": "medium",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/",
+    "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+    "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/"
+   ]
+  },
+  {
+   "area": "Hollywood/East Hollywood",
+   "la_verified_mentions": 136,
+   "two_wheel_mentions": 14,
+   "two_wheel_docs_incl_crossposts": 16,
+   "two_wheel_ids": [
+    "11khbg4",
+    "1f9x83i",
+    "1ke5hch",
+    "1kyp7be",
+    "1qlhg3s",
+    "7u8jh1",
+    "avp2wa",
+    "djzc4p",
+    "dm0jhp",
+    "e9pn3f",
+    "fah04r",
+    "ffvecm",
+    "piraz3",
+    "pvdxq6"
+   ],
+   "car_mentions": 36,
+   "sentiment_for_two_wheel": "positive",
+   "why": "Second-largest two-wheel cluster (14 posts). A 2019-2020 rider series on 'big electric scooters' in Hollywood reports 'unicorn' orders and $5 peak pay 'all done on scooter'; car drivers in the Hollywood-Silverlake DoorDash zone say Silverlake is 'flooded with orders' while Beverly Hills is dead; downsides are Hollywood Hills climbs on a pedal bike and post-2023 saturation ($8/hr peak-hour reports).",
+   "confidence": "medium",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/dm0jhp/unicorns_in_hollywood_my_acceptance_rate_is_about/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/",
+    "https://www.reddit.com/r/UberEATS/comments/pvdxq6/on_bicycle_are_shorter_trips_more/"
+   ]
+  },
+  {
+   "area": "Santa Monica/Venice",
+   "la_verified_mentions": 93,
+   "two_wheel_mentions": 6,
+   "two_wheel_docs_incl_crossposts": 8,
+   "two_wheel_ids": [
+    "1d5qonh",
+    "1e612mu",
+    "1gn3r1q",
+    "1ke5hch",
+    "exguvj",
+    "fj5pr9"
+   ],
+   "car_mentions": 22,
+   "sentiment_for_two_wheel": "positive",
+   "why": "Six two-wheel docs, the most positive e-bike sentiment in the corpus: two 2024 e-bike riders cite the Santa Monica Prop 22 floor (~$20-21/hr active) and 'bike lanes everywhere'; a Pasadena bicyclist rides all the way to SM to dash. Car drivers call SM the worst place to dash (traffic, parking, cops) and report heavy saturation ($14-15 for 5-7.5 hrs in 2024-25).",
+   "confidence": "medium",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1d5qonh/prop_22_questions/",
+    "https://www.reddit.com/r/doordash/comments/e8om7y/what_are_some_of_the_worst_citys_you_have_dashed/"
+   ]
+  },
+  {
+   "area": "Valley/SFV",
+   "la_verified_mentions": 89,
+   "two_wheel_mentions": 5,
+   "two_wheel_docs_incl_crossposts": 6,
+   "two_wheel_ids": [
+    "1f9x83i",
+    "1iwx1s0",
+    "1kyp7be",
+    "rkx1qz",
+    "zoqc22"
+   ],
+   "car_mentions": 25,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Five two-wheel docs including the corpus's most experienced e-scooter courier (5,500+ deliveries on an Unagi + Metro bus, West SFV, McDonald's 'command center'); other riders in NoHo/818 ask whether a bike beats a car for parking. Not a candidate hub area but a source of riders who ride into Hollywood/WeHo.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+    "https://www.reddit.com/r/UberEATS/comments/1kyp7be/best_area_to_do_bicycle_deliveries_in_los_angeles/",
+    "https://www.reddit.com/r/UberEATS/comments/1f9x83i/bike_riding_for_ubereats_in_burbanknorth/"
+   ]
+  },
+  {
+   "area": "Pasadena",
+   "la_verified_mentions": 73,
+   "two_wheel_mentions": 4,
+   "two_wheel_docs_incl_crossposts": 4,
+   "two_wheel_ids": [
+    "4ptffv",
+    "84qfz0",
+    "fj5pr9",
+    "udhb8g"
+   ],
+   "car_mentions": 20,
+   "sentiment_for_two_wheel": "positive",
+   "why": "Four two-wheel docs (2016-2022): an e-scooter courier says Pasadena is 'working out great' (2018); an e-bike applicant plans to try Pasadena because downtown had no e-bike option. Outside the candidate list.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/84qfz0/wanna_sign_up_orientation_is_too_far_no_car/",
+    "https://www.reddit.com/r/grubhubdrivers/comments/udhb8g/ebike_delivery_in_los_angeles/",
+    "https://www.reddit.com/r/doordash_drivers/comments/fj5pr9/help_pleaseeee/"
+   ]
+  },
+  {
+   "area": "Glendale/Burbank",
+   "la_verified_mentions": 63,
+   "two_wheel_mentions": 4,
+   "two_wheel_docs_incl_crossposts": 4,
+   "two_wheel_ids": [
+    "1f9x83i",
+    "dm5uhi",
+    "exguvj",
+    "uwesb7"
+   ],
+   "car_mentions": 22,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Four two-wheel docs: a Glendale 49cc scooter owner planning to ride into downtown, a Glendale moped rider whose Uber navigation routed onto freeways, a Burbank/NoHo bike hopeful. Not a candidate hub.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/UberEATS/comments/dm5uhi/ubereats_scooter_delivery_in_los_angeles_worth_it/",
+    "https://www.reddit.com/r/UberEATS/comments/uwesb7/mopedscooter_algorithm/",
+    "https://www.reddit.com/r/UberEATS/comments/1f9x83i/bike_riding_for_ubereats_in_burbanknorth/"
+   ]
+  },
+  {
+   "area": "West Hollywood",
+   "la_verified_mentions": 71,
+   "two_wheel_mentions": 3,
+   "two_wheel_docs_incl_crossposts": 4,
+   "two_wheel_ids": [
+    "10k0vso",
+    "1kyp7be",
+    "7sdaho"
+   ],
+   "car_mentions": 14,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Three two-wheel docs: a 2018 night bike messenger (6pm-midnight) repeatedly stopped by LAPD in BH/WeHo, a NYC bike courier planning to work WeHo, and a Valley bicyclist who ventures into WeHo/Hollywood. Car drivers historically earned $18-30/hr here (2024) but 20-driver pileups at popular restaurants and dead afternoons are common.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+    "https://www.reddit.com/r/UberEATS/comments/10k0vso/whats_the_la_market_like_for_couriers/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1gmn1zo/has_doordash_been_really_slow_since_the_election/"
+   ]
+  },
+  {
+   "area": "Westwood/UCLA",
+   "la_verified_mentions": 26,
+   "two_wheel_mentions": 3,
+   "two_wheel_docs_incl_crossposts": 3,
+   "two_wheel_ids": [
+    "avp2wa",
+    "ur25fd",
+    "wmx6he"
+   ],
+   "car_mentions": 4,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Three two-wheel docs plus a student-run scooter fleet: a bicycle dasher names 'Westwood blvd x Ohio Ave' as one of only two bike hotspots (with 6th & Spring DTLA); Duffl's Westwood couriers ride Ninebot G30P standing scooters on 3-hour shifts and say the scooters 'break constantly' on hilly, broken roads; a student asks if Westwood is compact enough to dash on a Citi Bike. Car drivers complain of UCLA dorm/hospital runs with no parking, red-zone tickets, hills, $3 incentives nobody takes, and hour-long waits.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+    "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+    "https://www.reddit.com/r/grubhubdrivers/comments/1t5n6cg/wish_we_can_report_customers_that_steal/"
+   ]
+  },
+  {
+   "area": "Koreatown",
+   "la_verified_mentions": 15,
+   "two_wheel_mentions": 3,
+   "two_wheel_docs_incl_crossposts": 3,
+   "two_wheel_ids": [
+    "11khbg4",
+    "162vejl",
+    "iowfiq"
+   ],
+   "car_mentions": 2,
+   "sentiment_for_two_wheel": "negative",
+   "why": "Small count (<5 two-wheel docs). A 2020 screenshot of Koreatown morning bicycle mode is captioned 'depressing'; a 2023 rider who just moved to K-town asks if bike delivery is doable; a Hollywood/Silverlake driver notes the DoorDash zone includes Koreatown and considers a bike for parking. Car drivers report bad reception, tip-baits and 'not worth it' vs Santa Monica; the Sweetgreen Koreatown hotspot is a closed store.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/UberEATS/comments/iowfiq/lakoreatown_area_morning_bicycle_mode_this_is/",
+    "https://www.reddit.com/r/doordash/comments/162vejl/bike_delivery_in_la_ktown/",
+    "https://www.reddit.com/r/doordash/comments/11khbg4/dashing_on_a_bike_in_la_worth_it/"
+   ]
+  },
+  {
+   "area": "Beverly Hills/Century City",
+   "la_verified_mentions": 78,
+   "two_wheel_mentions": 2,
+   "two_wheel_docs_incl_crossposts": 2,
+   "two_wheel_ids": [
+    "7sdaho",
+    "7u8jh1"
+   ],
+   "car_mentions": 17,
+   "sentiment_for_two_wheel": "negative",
+   "why": "One two-wheel doc (2018 bike messenger harassed by police in BH/WeHo) plus an observation that 'Beverly hill drivers use Bird'. Car drivers describe BH as dead most days, evil traffic, valet-only restaurants and low tips from upscale customers.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+    "https://www.reddit.com/r/doordash/comments/dcno96/all_los_angeles_drivers_need_answers_please/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/"
+   ]
+  },
+  {
+   "area": "Culver City",
+   "la_verified_mentions": 32,
+   "two_wheel_mentions": 2,
+   "two_wheel_docs_incl_crossposts": 4,
+   "two_wheel_ids": [
+    "1ke5hch",
+    "ift0z2"
+   ],
+   "car_mentions": 9,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Two two-wheel docs (a DTLA bike dasher asking about Culver, and a car driver in Culver/SM/Hollywood considering an e-bike). Car drivers call the Culver City zone slow (urban 'donut'), and roam Venice Blvd (Robertson-Sepulveda) and Palms (Overland-National) between pings; Culver City Cuisine ghost kitchen is a pickup cluster.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/ift0z2/anyone_doordash_on_a_bike_in_culver_city/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1c10313/whats_your_ratio_of_how_long_youll_park_in_a/",
+    "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/"
+   ]
+  },
+  {
+   "area": "Silver Lake/Echo Park",
+   "la_verified_mentions": 24,
+   "two_wheel_mentions": 2,
+   "two_wheel_docs_incl_crossposts": 2,
+   "two_wheel_ids": [
+    "11khbg4",
+    "f9p8t5"
+   ],
+   "car_mentions": 7,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "Only 2 two-wheel docs: a bike courier says Silver Lake tippers are cheap and 'biking up some of those curvy hills is no joke'; the Hollywood-Silverlake zone is repeatedly described (by car drivers) as the busy half of Hollywood. Echo Park/Dodger Stadium traffic and Baxter St hills are complaints.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/couriersofreddit/comments/f9p8t5/cheap_ass_people_in_silver_lake_and_biking_up/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/",
+    "https://www.reddit.com/r/UberEATS/comments/nzb8ga/no_requests_in_beverly_hillswest_holly/"
+   ]
+  },
+  {
+   "area": "South Bay",
+   "la_verified_mentions": 25,
+   "two_wheel_mentions": 1,
+   "two_wheel_docs_incl_crossposts": 1,
+   "two_wheel_ids": [
+    "obd8b4"
+   ],
+   "car_mentions": 7,
+   "sentiment_for_two_wheel": "mixed",
+   "why": "One e-bike planner in Torrance asks LA bike couriers whether 20+ mph suffices; Gardena/Hawthorne zone car earnings are dismal ($90 in 31 hrs, 2026).",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/obd8b4/ebike_deliveries_in_south_bay_torrance_ca_to_la/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1v0bins/had_a_pretty_good_saturday_breakfastlunch_dash/"
+   ]
+  },
+  {
+   "area": "USC/Exposition",
+   "la_verified_mentions": 7,
+   "two_wheel_mentions": 1,
+   "two_wheel_docs_incl_crossposts": 2,
+   "two_wheel_ids": [
+    "15dae0o"
+   ],
+   "car_mentions": 1,
+   "sentiment_for_two_wheel": "none",
+   "why": "One USC grad student plans to deliver by bike and asks about safety; car dashers say the USC area 'at least gets some orders' but tips are ~$1 because customers are students; DoorDash created a 'USC island' zone in 2019; Grand Food Depot (358 W 38th St) ghost kitchen and the Figueroa/Expo restaurant row are pickup clusters.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/UberEATS/comments/15dae0o/what_is_it_like_doing_ubereats_in_los_angeles/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1mgovuq/summer_slowness/",
+    "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/"
+   ]
+  },
+  {
+   "area": "Long Beach",
+   "la_verified_mentions": 66,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 20,
+   "sentiment_for_two_wheel": "none",
+   "why": "No two-wheel docs among LA-verified mentions; car-driver posts only.",
+   "confidence": "low",
+   "sample_urls": []
+  },
+  {
+   "area": "South LA",
+   "la_verified_mentions": 33,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 10,
+   "sentiment_for_two_wheel": "none",
+   "why": "No two-wheel docs. Car drivers report feeling unsafe on late-night Compton/Watts runs and lower-income areas tipping better; Grand Food Depot ghost kitchen (W 38th St) is a pickup cluster.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/spranu/decline_due_to_unsafe_neighborhoods/",
+    "https://www.reddit.com/r/UberEATS/comments/1bzlapj/new_to_uber_eats_just_wanted_some_insight_on_how/",
+    "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/"
+   ]
+  },
+  {
+   "area": "East LA/Boyle Heights",
+   "la_verified_mentions": 19,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 4,
+   "sentiment_for_two_wheel": "none",
+   "why": "No two-wheel docs; an East LA resident drives to Westwood/USC to find orders.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/UberEATS/comments/1aw4ual/where_in_la_is_the_best_place_to_do_ubereats_and/"
+   ]
+  },
+  {
+   "area": "Mid-City/Fairfax",
+   "la_verified_mentions": 16,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 7,
+   "sentiment_for_two_wheel": "none",
+   "why": "No two-wheel docs. Evidence is car-based: a 2026 armed robbery of a BevMo delivery at Olympic & Cochran, a Mid-City courier naming the CloudKitchens hub on W Washington Blvd, a Mid-Wilshire/Pico ghost-kitchen hub, and Park La Brea access complaints.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/",
+    "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+    "https://www.reddit.com/r/AskLosAngeles/comments/1vxn88f/people_who_live_on_park_la_brea_and_order_food/"
+   ]
+  },
+  {
+   "area": "Westlake/MacArthur Park",
+   "la_verified_mentions": 1,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 1,
+   "sentiment_for_two_wheel": "none",
+   "why": "Only 1 LA-verified courier-sub doc mentions Westlake/MacArthur Park (a car driver passing through) plus one r/AskLosAngeles resident post worrying about bike theft near the park; none describe two-wheel delivery there. The neighborhood sits inside the Hollywood-Silverlake/Koreatown-DTLA zones riders describe but is never named as a base.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/g5xv03/no_orders_all_over_la_today/",
+    "https://www.reddit.com/r/AskLosAngeles/comments/5px3e9/first_time_living_in_la_hows_westlake_for_an/"
+   ]
+  },
+  {
+   "area": "Pico-Union",
+   "la_verified_mentions": 1,
+   "two_wheel_mentions": 0,
+   "two_wheel_docs_incl_crossposts": 0,
+   "two_wheel_ids": [],
+   "car_mentions": 0,
+   "sentiment_for_two_wheel": "none",
+   "why": "Three docs: one East Hollywood driver who sometimes ends up in Pico-Union, and two posts naming the ghost-kitchen hub at 1842 W Washington Blvd (CloudKitchens, ~30 restaurants) where all-app drivers cluster (inferred location: Pico-Union/West Adams edge). No two-wheel rider mentions.",
+   "confidence": "low",
+   "sample_urls": [
+    "https://www.reddit.com/r/UberEATS/comments/12i4jje/lack_of_deliveries_in_la_anyone_else/",
+    "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+    "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/"
+   ]
+  }
+ ],
+ "two_wheel_hotspots": [
+  {
+   "place": "Downtown LA core (Historic Core / Financial District; hotspot named at 6th St & Spring St)",
+   "evidence_count": 29,
+   "quotes": [
+    {
+     "quote": "I used to dash with a car, now an electric scooter, Downtown LA",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/",
+     "sub": "r/doordash",
+     "year": 2021,
+     "score": 1172
+    },
+    {
+     "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood. I thought nobody lives in downtown, it's only offices,  but I guess I was wrong, so many foreigners rent there. A lot of Asians and international students.",
+     "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+     "sub": "r/dtla",
+     "year": 2018,
+     "score": 1
+    },
+    {
+     "quote": "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+     "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 1
+    }
+   ]
+  },
+  {
+   "place": "Hollywood (Hollywood & Highland / Sunset-La Brea corridor) and the DoorDash Hollywood-Silverlake zone",
+   "evidence_count": 13,
+   "quotes": [
+    {
+     "quote": "Unicorns in Hollywood 🦄 - My acceptance rate is about 15%. I’m on an electric scooter and these are the jobs that I really make a killing on. Anything with a 10 to 1 $ to miles ratio is a unicorn to me",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/dm0jhp/unicorns_in_hollywood_my_acceptance_rate_is_about/",
+     "sub": "r/doordash_drivers",
+     "year": 2019,
+     "score": 71
+    },
+    {
+     "quote": "I live in Hollywood and dash in both Hollywood-Beverly Hills as well as Hollywood-Silverlake zones. It’s crazy to me how Bev zone is SOOOOO dead every day and Silverlake be flooded with orders.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 1
+    },
+    {
+     "quote": "I also dash mainly in Hollywood/Silverlake, which already has bad parking, but that delivery zone also has Koreatown in it and sometimes sends you to customers in DTLA, so I think parking would be a lot easier.",
+     "url": "https://www.reddit.com/r/doordash/comments/11khbg4/dashing_on_a_bike_in_la_worth_it/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 1
+    }
+   ]
+  },
+  {
+   "place": "Santa Monica (flat, bike lanes, Prop 22 wage floor pegged to SM minimum wage)",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "Prop 22 in CA makes it that if you are working you are making at least $21 an hour during a delivery in Santa Monica, CA. (Downside is LOTS of drivers).",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 0
+    },
+    {
+     "quote": "with prop 22 in Los Angeles I’m guaranteed 120% of the minutes wage of Santa Monica ($16.90). So if I’m trying to just make $20 an hour wouldn’t it be worth it to say yes to every delivery?",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1d5qonh/prop_22_questions/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 1
+    },
+    {
+     "quote": "I see some around 300$ - 500$ on Amazon with 50-60 miles of range. There’s bike lanes everywhere so it won’t be a problem.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1gn3r1q/electric_bike/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 1
+    }
+   ]
+  },
+  {
+   "place": "Westwood Village (Westwood Blvd & Ohio Ave named as a bicycle hotspot; Duffl student scooter fleet)",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "But what is the closest area to that HOTSPOT in Westwood that you can start Dashing at? Closer to Hollywood.",
+     "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 1
+    },
+    {
+     "quote": "I work at a company called Duffl which has 3 hour delivery shifts. Don’t need crazy range. max of 3 hours worth. I live in Westwood, Los Angeles, California where the roads are SHIT and filled with hills everywhere. Our store scooters are G30P’s but they break constantly because of the shit roads.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+     "sub": "r/ElectricScooters",
+     "year": 2022,
+     "score": 4
+    },
+    {
+     "quote": "Is Westwood compact enough to deliver DoorDash on a bicycle? Does DD even give a bike option there?",
+     "url": "https://www.reddit.com/r/ucla/comments/wmx6he/doordashing_on_a_citi_bike_in_westwood/",
+     "sub": "r/ucla",
+     "year": 2022,
+     "score": 1
+    }
+   ]
+  },
+  {
+   "place": "Koreatown (inside the Hollywood-Silverlake zone; Melrose Food Co ghost kitchen at 615 N Western)",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "LA/Koreatown Area Morning Bicycle Mode ! This is depressing lol",
+     "url": "https://www.reddit.com/r/UberEATS/comments/iowfiq/lakoreatown_area_morning_bicycle_mode_this_is/",
+     "sub": "r/UberEATS",
+     "year": 2020,
+     "score": 7
+    },
+    {
+     "quote": "Does anyone deliver on bike? Any tips and information is much appreciated! I live in la ktown just moved here.",
+     "url": "https://www.reddit.com/r/doordash/comments/162vejl/bike_delivery_in_la_ktown/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 1
+    },
+    {
+     "quote": "Melrose Food Co: 615 N Western Ave, Los Angeles, CA 90004",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 138
+    }
+   ]
+  },
+  {
+   "place": "West Hollywood (night bike-messenger territory; 20-driver pileups at popular restaurants)",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "i am a bike messenger in LA , i deliver during dinner time , from 6 to 12am , and i have to cover myself with a hoodie and wear gloves",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "r/LosAngeles",
+     "year": 2018,
+     "score": 0
+    },
+    {
+     "quote": "likely going to be doing ubereats & grubhub in LA, more specifically West Hollywood & surrounding areas, on a bike.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/10k0vso/whats_the_la_market_like_for_couriers/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 0
+    },
+    {
+     "quote": "I got a really good offer, $14 for less than 2 miles away, but when I arrived, there were about 20 other drivers waiting for a pick up.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/139c1kf/cinco_de_mayo_madness_at_gardens_of_taxco_in_west/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 3
+    }
+   ]
+  },
+  {
+   "place": "Pasadena (Old Town) - outside candidate list but explicit e-scooter success",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "I have been doing deliveries using my electric scooter in Pasadena and working out great",
+     "url": "https://www.reddit.com/r/doordash/comments/84qfz0/wanna_sign_up_orientation_is_too_far_no_car/",
+     "sub": "r/doordash",
+     "year": 2018,
+     "score": 1
+    }
+   ]
+  },
+  {
+   "place": "West San Fernando Valley (e-scooter + Metro bus model; McDonald's near the mall as base)",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "I’m a DoorDasher from the West San Fernando Valley part of Los Angeles, and I’m currently at over 5500 deliveries using just my Unagi electric scooter and the Metro Bus system to save battery (I can fold it and store it under the seats).",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "r/doordash",
+     "year": 2022,
+     "score": 2
+    }
+   ]
+  }
+ ],
+ "vehicle_types": {
+  "counting_note": "Counts are unique LA-verified courier posts (cross-posts merged) where the poster uses or is choosing that vehicle for delivery; a post can count in several rows. Total unique two-wheel courier posts = 80 (112 docs incl. cross-posts). Area-unspecified LA posts = 22.",
+  "ebike": {
+   "count": 19,
+   "ids": [
+    "18i6zgk",
+    "191gamv",
+    "1czczag",
+    "1d5qonh",
+    "1daqn0k",
+    "1dizbwm",
+    "1dnmppt",
+    "1e612mu",
+    "1gn3r1q",
+    "1ke5hch",
+    "1lcn2d4",
+    "1nu0ot9",
+    "1tydibj",
+    "ex3goz",
+    "kz19g9",
+    "obd8b4",
+    "syz06v",
+    "udhb8g",
+    "xmdxgz"
+   ],
+   "quotes": [
+    {
+     "quote": "I deliver by my e-bike (which isn't your typical e-bike, it can travel up to speeds of 40+ MPH, and has a range of about 40 miles on a full charge), and I have my app marked as delivering by car to get more deliveries.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1lcn2d4/how_lucrative_is_delivering_by_ebike_in/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 0
+    },
+    {
+     "quote": "Ideally I’d like one that goes at least 20-25 mph and has a range of at least 40-50 miles. Also, one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+     "sub": "r/doordash_drivers",
+     "year": 2022,
+     "score": 1
+    },
+    {
+     "quote": "now i have an Electric bicycle that makes climbing hills a breeze, but I've noticed i only get around two offers in an hour",
+     "url": "https://www.reddit.com/r/doordash/comments/1dizbwm/is_it_worth_it_to_deactivate_my_account_and_start/",
+     "sub": "r/doordash",
+     "year": 2024,
+     "score": 0
+    },
+    {
+     "quote": "Does Ebike Dash still work in Los Angeles? I have got 1 offer in a week.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1nu0ot9/la_ebike_dash_working/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 1
+    },
+    {
+     "quote": "E-bike... Started a few weeks ago. Los Angeles.... 3 apps at a time, getting the hang of it!",
+     "url": "https://www.reddit.com/r/UberEATS/comments/kz19g9/ebike_started_a_few_weeks_ago_los_angeles_3_apps/",
+     "sub": "r/UberEATS",
+     "year": 2021,
+     "score": 13
+    },
+    {
+     "quote": "Please recommend me e-bike rental companies in Los Angeles. E-bike for delivery not for personal use",
+     "url": "https://www.reddit.com/r/ebikes/comments/18i6zgk/ebike_rental_companies/",
+     "sub": "r/ebikes",
+     "year": 2023,
+     "score": 0
+    },
+    {
+     "quote": "I’m in downtown LA and also an international student who needs to make ends meet.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1dnmppt/best_ebike_for_delivery_in_downtown_la/",
+     "sub": "r/ebikes",
+     "year": 2024,
+     "score": 1
+    },
+    {
+     "quote": "i live in LA urban area. Might use it to pick up nephews from school or go to Ralphs to buy some stuff. Thinking about riding it in downtown too to do some local delivery jobs.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1tydibj/planning_to_get_a_motorbike_what_do_you_guys/",
+     "sub": "r/ebikes",
+     "year": 2026,
+     "score": 0
+    }
+   ],
+   "rental_demand_note": "One explicit 2023 request for an LA e-bike RENTAL company \"for delivery not for personal use\" (r/ebikes) and a 2024 international student in DTLA asking which e-bike to buy for DoorDash; a 2024 Chinese-language rider posts ~25 \"Ubereats, Doordash, Grabhub Ebike Adventure Los Angeles\" POV videos to r/ebikes and r/doordash."
+  },
+  "standing_escooter": {
+   "count": 13,
+   "ids": [
+    "14ah15y",
+    "1ce67b8",
+    "1tydibj",
+    "1v45xof",
+    "84qfz0",
+    "dm0jhp",
+    "e9pn3f",
+    "fah04r",
+    "ffvecm",
+    "nq3ho0",
+    "syz06v",
+    "ur25fd",
+    "zoqc22"
+   ],
+   "quotes": [
+    {
+     "quote": "I used to dash with a car, now an electric scooter, Downtown LA",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/",
+     "sub": "r/doordash",
+     "year": 2021,
+     "score": 1172
+    },
+    {
+     "quote": "While waiting for orders, I hang out at the McDonald’s closest to the mall and plug in what I like to call “the command center”; iPad, iPhone, Nintendo Switch, 2 portable power banks, and my scooter all charging at once.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "r/doordash",
+     "year": 2022,
+     "score": 2
+    },
+    {
+     "quote": "I have a Ninebot scooter. Going to be installing a Ulip (amazon) rear rack on top of the back tire.",
+     "url": "https://www.reddit.com/r/doordash/comments/14ah15y/advice_on_size_of_food_storage_bag/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 1
+    },
+    {
+     "quote": "Trying to start dashing in Los Angeles, but I don’t have a car and I suck at riding a bike so I thought I’d buy an electric scooter",
+     "url": "https://www.reddit.com/r/doordash/comments/1v45xof/best_cheap_electric_scooter_to_start_dashing/",
+     "sub": "r/doordash",
+     "year": 2026,
+     "score": 4
+    },
+    {
+     "quote": "Our store scooters are G30P’s but they break constantly because of the shit roads.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+     "sub": "r/ElectricScooters",
+     "year": 2022,
+     "score": 4
+    }
+   ]
+  },
+  "gas_scooter_moped_49cc_ruckus": {
+   "count": 6,
+   "ids": [
+    "10y11ow",
+    "16v4et6",
+    "1tydibj",
+    "dm5uhi",
+    "uwesb7",
+    "xmdxgz"
+   ],
+   "quotes": [
+    {
+     "quote": "Switched from bike to motor scooter 49cc. Not have one trip in  almost 2 weeks.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/16v4et6/from_bike_to_motor_scooter_los_angeles/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 1
+    },
+    {
+     "quote": "Got  a few on my bike but the scoot is the best for deliveries. Fast and efficient.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/16v4et6/from_bike_to_motor_scooter_los_angeles/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 1
+    },
+    {
+     "quote": "Guys im stuck between buying a e-bike or scooter (something like honda ruckus or Yamaha Zuma) The e bike can go on the curb but if i put my motorcycle on the curb for 10mins would i get a ticket?",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/xmdxgz/downtown_la_with_motorcycle/",
+     "sub": "r/doordash_drivers",
+     "year": 2022,
+     "score": 1
+    },
+    {
+     "quote": "I would be using a 49cc scooter to do deliveries.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/dm5uhi/ubereats_scooter_delivery_in_los_angeles_worth_it/",
+     "sub": "r/UberEATS",
+     "year": 2019,
+     "score": 0
+    },
+    {
+     "quote": "my scooter is freeway legal but will not reach the acceleration needed for the freeway.. I'm a bit concerned.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/uwesb7/mopedscooter_algorithm/",
+     "sub": "r/UberEATS",
+     "year": 2022,
+     "score": 3
+    }
+   ]
+  },
+  "motorcycle": {
+   "count": 8,
+   "ids": [
+    "10y11ow",
+    "1fmnd57",
+    "cmgyui",
+    "m9kmek",
+    "q0lu13",
+    "sft6h6",
+    "udhb8g",
+    "xmdxgz"
+   ],
+   "quotes": [
+    {
+     "quote": "Today it finally started giving motorcycle shifts (I'm in Los Angeles) And it looks like it's actually giving preference to the motorcycle.... It lets me grab a shift with the bike but not when I switch to car. Smart... The bike (motorcycle) is 20 times faster than the car in LA",
+     "url": "https://www.reddit.com/r/doordash/comments/cmgyui/finally_motorcycle/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 3
+    },
+    {
+     "quote": "I am planning on working for Door Dash using my Honda Monkey throughout Los Angeles City and its surrounding Suburbs.",
+     "url": "https://www.reddit.com/r/doordash/comments/10y11ow/any_tips_on_becoming_a_top_dasher_as_a_motorcycle/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 1
+    }
+   ]
+  },
+  "surron_talaria": {
+   "count": 0,
+   "ids": [],
+   "note": "Zero LA courier posts mention Sur-Ron or Talaria as a delivery vehicle. The only \"Talaria\" hit is an apartment building in Burbank, and every r/Surron post matching \"delivery LA\"/\"doordash los angeles\" is about Alibaba bikes arriving at the Port of LA or a SoCal reseller pricing Light Bees. Searched all posts including r/Surron, r/ebikes and r/ElectricScooters."
+  },
+  "pedal_bike": {
+   "count": 63,
+   "ids": [
+    "10k0vso",
+    "10wb6ye",
+    "11khbg4",
+    "12vic27",
+    "144jb34",
+    "15dae0o",
+    "15rop35",
+    "162vejl",
+    "16v4et6",
+    "18i6zgk",
+    "191gamv",
+    "1czczag",
+    "1d5qonh",
+    "1daqn0k",
+    "1dizbwm",
+    "1dmru9y",
+    "1dnmppt",
+    "1e612mu",
+    "1f9x83i",
+    "1gn3r1q",
+    "1iwx1s0",
+    "1ke5hch",
+    "1kyp7be",
+    "1lcn2d4",
+    "1nu0ot9",
+    "1qlhg3s",
+    "1tydibj",
+    "1v45xof",
+    "4pqv83",
+    "4ptffv",
+    "7sdaho",
+    "7t0m96",
+    "7u8jh1",
+    "avp2wa",
+    "brglc9",
+    "cmgyui",
+    "er4dw9",
+    "ex3goz",
+    "exguvj",
+    "f9p8t5",
+    "fj5pr9",
+    "hadavv",
+    "ift0z2",
+    "igu9bi",
+    "iowfiq",
+    "kz19g9",
+    "nqiyyx",
+    "obd8b4",
+    "piraz3",
+    "plw6fe",
+    "ps4sre",
+    "pvdxq6",
+    "pvyfqo",
+    "q0lu13",
+    "q0yp2w",
+    "rkx1qz",
+    "syz06v",
+    "tahh6s",
+    "udhb8g",
+    "ujwab7",
+    "wmx6he",
+    "xmdxgz",
+    "zoqc22"
+   ],
+   "quotes": [
+    {
+     "quote": "i asked uber support, if there are people who do it like me on a bike in LA, they said not in LA , we have in SF and NYC mainly but in LA it's rare.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/",
+     "sub": "r/LosAngeles",
+     "year": 2018,
+     "score": 46
+    },
+    {
+     "quote": "I tried delivering food in downtown LA on a regular bike but it was so damn tiring. Going up inclines was hell.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+     "sub": "r/doordash_drivers",
+     "year": 2022,
+     "score": 1
+    },
+    {
+     "quote": "For Uber Eats, on the bike a 3 mile, 40 minute delivery up the Hollywood Hills is too exhausting.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/pvdxq6/on_bicycle_are_shorter_trips_more/",
+     "sub": "r/UberEATS",
+     "year": 2021,
+     "score": 1
+    },
+    {
+     "quote": "Cheap ass people in Silver Lake and biking up some of those curvy hills is no joke",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/f9p8t5/cheap_ass_people_in_silver_lake_and_biking_up/",
+     "sub": "r/couriersofreddit",
+     "year": 2020,
+     "score": 37
+    },
+    {
+     "quote": "I saw three other food delivery bikers, and all of them had delivery backpacks and absolutely no rear rack.",
+     "url": "https://www.reddit.com/r/doordash/comments/igu9bi/bike_delivery_backpack_vs_rear_rack_basket/",
+     "sub": "r/doordash",
+     "year": 2020,
+     "score": 0
+    }
+   ]
+  },
+  "range_speed_battery": {
+   "evidence": [
+    {
+     "quote": "Ideally I’d like one that goes at least 20-25 mph and has a range of at least 40-50 miles.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+     "sub": "r/doordash_drivers",
+     "year": 2022,
+     "score": 1
+    },
+    {
+     "quote": "it can travel up to speeds of 40+ MPH, and has a range of about 40 miles on a full charge",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1lcn2d4/how_lucrative_is_delivering_by_ebike_in/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 0
+    },
+    {
+     "quote": "I see some around 300$ - 500$ on Amazon with 50-60 miles of range.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1gn3r1q/electric_bike/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 1
+    },
+    {
+     "quote": "To LA bike couriers: you think this is a good idea? Will ebikes going 20+mph suffice?",
+     "url": "https://www.reddit.com/r/doordash/comments/obd8b4/ebike_deliveries_in_south_bay_torrance_ca_to_la/",
+     "sub": "r/doordash",
+     "year": 2021,
+     "score": 1
+    },
+    {
+     "quote": "using just my Unagi electric scooter and the Metro Bus system to save battery (I can fold it and store it under the seats)",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "r/doordash",
+     "year": 2022,
+     "score": 2
+    }
+   ],
+   "battery_swapping_mentions": 0,
+   "note": "No LA courier post mentions battery swapping or carrying spare batteries; the only battery-management tactic described is folding a standing e-scooter onto Metro buses and charging at McDonald's. Stated wants: 20-25 mph minimum, 40-50 mi range, lockable, hill-capable."
+  },
+  "app_vehicle_mode_in_LA": {
+   "evidence": [
+    {
+     "quote": "not one delivery is bike friendly, only scooter mode gets orders, and they always go far away from downtown Core or inner ring road.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/",
+     "sub": "r/doordash_drivers",
+     "year": 2022,
+     "score": 2
+    },
+    {
+     "quote": "I had to use scooter mode to get anything and I had to cherry pick ones that I can deliver by bike.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/12vic27/doordash_bicycle_mode_anyone_gotten_any_orders/",
+     "sub": "r/doordash_drivers",
+     "year": 2023,
+     "score": 1
+    },
+    {
+     "quote": "I have my app marked as delivering by car to get more deliveries.  Prop 22 pays me 1.2 times minimum wage, plus 34 cents for every mile travelled",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1lcn2d4/how_lucrative_is_delivering_by_ebike_in/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 0
+    },
+    {
+     "quote": "I already tried downtown and I think they don't have it as an option . When I put my 1st application in there was no option for ebike only car or motorcycle.",
+     "url": "https://www.reddit.com/r/grubhubdrivers/comments/udhb8g/ebike_delivery_in_los_angeles/",
+     "sub": "r/grubhubdrivers",
+     "year": 2022,
+     "score": 2
+    },
+    {
+     "quote": "Why is there no bicycle option when applying in Los Angeles? Only car/motorcycle.",
+     "url": "https://www.reddit.com/r/grubhubdrivers/comments/q0lu13/why_is_there_no_bicycle_option_when_applying_in/",
+     "sub": "r/grubhubdrivers",
+     "year": 2021,
+     "score": 2
+    },
+    {
+     "quote": "I originally signed up with a motorcycle but they'd never let me do a shift. Switched to car and have been working ever since. Today it finally started giving motorcycle shifts (I'm in Los Angeles)",
+     "url": "https://www.reddit.com/r/doordash/comments/cmgyui/finally_motorcycle/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 3
+    },
+    {
+     "quote": "I've seen posts online saying that bike and e-bike modes across all delivery apps are dead as far as the volume of orders recevied",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ke5hch/anyone_still_delivering_in_west_la_on_a_regular/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 1
+    },
+    {
+     "quote": "Switched from bike to motor scooter 49cc. Not have one trip in  almost 2 weeks. Support said my account is all clear for deliveries but getting nothing.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/16v4et6/from_bike_to_motor_scooter_los_angeles/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 1
+    }
+   ],
+   "summary": "Consistent pattern 2019-2025: DoorDash 'bike'/'bicycle' mode in LA is described as nearly dead, 'scooter' mode (which DoorDash treats like a motor vehicle for dispatch radius) gets orders but sends riders far, Grubhub's LA sign-up offered only car/motorcycle (no bike/e-bike) in 2021-22, and fast e-bike/e-moped riders register as 'car' to get volume and Prop 22 mileage pay. Implication: an e-moped/Class-3 product that lets a rider legitimately run car or scooter mode is what the market rewards; a pure bicycle-mode rider is starved."
+  }
+ },
+ "observational_two_wheel_presence": [
+  {
+   "id": "dcno96",
+   "note": "Beverly Hills \"drivers\" use Bird scooters around busy areas",
+   "url": "https://www.reddit.com/r/doordash/comments/dcno96/all_los_angeles_drivers_need_answers_please/",
+   "year": 2019,
+   "score": 4
+  },
+  {
+   "id": "1hcdfx9",
+   "note": "one of ~9 dashers camping at an LA hotspot restaurant was \"laying down on his motorcycle\"",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcdfx9/waited_almost_70_minutes_for_order_then_store/",
+   "year": 2024,
+   "score": 112
+  },
+  {
+   "id": "igu9bi",
+   "note": "first-timer saw three other food-delivery bikers in Downtown LA, all with delivery backpacks",
+   "url": "https://www.reddit.com/r/doordash/comments/igu9bi/bike_delivery_backpack_vs_rear_rack_basket/",
+   "year": 2020,
+   "score": 0
+  },
+  {
+   "id": "c1xrog",
+   "note": "r/LosAngeles: scooter sidewalk riding \"5x more popular than street riding at least in K-town/DTLA\" (LAPD ticketing)",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/",
+   "year": 2019,
+   "score": 349
+  },
+  {
+   "id": "17074h9",
+   "note": "Phoenix customer: bicycle delivery \"works in places like NYC or Downtown LA\"",
+   "url": "https://www.reddit.com/r/UberEATS/comments/17074h9/they_should_not_allow_bicycle_delivery_of_food/",
+   "year": 2023,
+   "score": 16
+  },
+  {
+   "id": "1ra98ko",
+   "note": "Riverside e-scooter courier: \"in LA and NY people can do alright on electric scooters and bikes\"",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1ra98ko/does_anyone_do_deliverly_on_an_electric_scooter/",
+   "year": 2026,
+   "score": 2
+  },
+  {
+   "id": "1hpwtns",
+   "note": "r/LosAngeles: Figueroa & Expo restaurant row, Postmates drivers park in the median, new bike-lane bollards",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/1hpwtns/new_bike_infrastructure/",
+   "year": 2024,
+   "score": 528
+  },
+  {
+   "id": "j9vs4j",
+   "note": "Culver City courier hit by a sidewalk e-scooter rider while waiting outside a restaurant",
+   "url": "https://www.reddit.com/r/doordash/comments/j9vs4j/doordash_injury_compensation/",
+   "year": 2020,
+   "score": 2
+  },
+  {
+   "id": "buha32",
+   "note": "r/ucla 2019: a delivery service recruiting riders for \"Westwood rides into UCLA, but on electric scooters\"",
+   "url": "https://www.reddit.com/r/ucla/comments/buha32/delivery_service_need_westwood_rides_into_ucla/",
+   "year": 2019,
+   "score": 13
+  },
+  {
+   "id": "1isnll6",
+   "note": "r/ucla 2025 (42 upvotes): joke post confirming Duffl (student-run 10-minute delivery) runs on standing scooters in Westwood",
+   "url": "https://www.reddit.com/r/ucla/comments/1isnll6/im_the_duffl_scooter_from_the_delivery_and/",
+   "year": 2025,
+   "score": 42
+  },
+  {
+   "id": "yug8io",
+   "note": "r/ebikes: \"all the videos I watch online of bike delivery people has them in downtown cities like Chicago or LA\"",
+   "url": "https://www.reddit.com/r/ebikes/comments/yug8io/any_of_yall_do_food_delivery_in_suburban_areas/",
+   "year": 2022,
+   "score": 8
+  }
+ ],
+ "where_riders_live_or_commute_from": {
+  "rider_home_bases_stated": [
+   {
+    "area": "DTLA (lives downtown, delivers downtown)",
+    "ids": [
+     "1ce67b8",
+     "6qyzrg",
+     "hadavv"
+    ],
+    "quote": {
+     "quote": "I plan to use an electric scooter (that I own) and an insulated backpack to make deliveries within the downtown city part of Los Angeles, where I've lived for several years now.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ce67b8/thinking_about_starting_and_want_opinions_from/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 0
+    }
+   },
+   {
+    "area": "Koreatown (lives K-town)",
+    "ids": [
+     "162vejl",
+     "1hcs3ic"
+    ],
+    "quote": {
+     "quote": "I live in the Koreatown area of Los Angeles and I schedule myself to dash Mon-Friday from 11am-1pm",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 3
+    }
+   },
+   {
+    "area": "Hollywood / Thai Town / East Hollywood (lives and delivers)",
+    "ids": [
+     "1mottyz",
+     "piraz3",
+     "12i4jje"
+    ],
+    "quote": {
+     "quote": "I live and deliver in the Thai Town/East Hollywood area, sometimes ending up going as far as Santa Monica, Pico-Union, Pasadena, or Burbank.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/12i4jje/lack_of_deliveries_in_la_anyone_else/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 16
+    }
+   },
+   {
+    "area": "Silver Lake / Echo Park (moved there, car)",
+    "ids": [
+     "s2hmy6",
+     "pfchdn"
+    ],
+    "quote": {
+     "quote": "I’ll be living in the Silverlake/Echo Park area (I’m pretty sure this is relevant in regards to ‘zones’).",
+     "url": "https://www.reddit.com/r/doordash/comments/pfchdn/los_angeles_drivers_is_it_worth_it/",
+     "sub": "r/doordash",
+     "year": 2021,
+     "score": 2
+    }
+   },
+   {
+    "area": "San Fernando Valley / NoHo / Burbank edge - riders who commute INTO Hollywood/WeHo",
+    "ids": [
+     "1kyp7be",
+     "1f9x83i",
+     "rkx1qz",
+     "zoqc22",
+     "1iwx1s0"
+    ],
+    "quote": {
+     "quote": "I’m in the valley and sometimes venture out in WeHo/Hollywood area but feel like there’s got to be a better area to do bicycle deliveries",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1kyp7be/best_area_to_do_bicycle_deliveries_in_los_angeles/",
+     "sub": "r/UberEATS",
+     "year": 2025,
+     "score": 0
+    }
+   },
+   {
+    "area": "Glendale - 49cc scooter rider commuting into downtown",
+    "ids": [
+     "dm5uhi"
+    ],
+    "quote": {
+     "quote": "I live in Glendale (10 miles north of downtown LA) and wouldn't mind driving out into the city to do deliveries.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/dm5uhi/ubereats_scooter_delivery_in_los_angeles_worth_it/",
+     "sub": "r/UberEATS",
+     "year": 2019,
+     "score": 0
+    }
+   },
+   {
+    "area": "Pasadena - bicyclist riding to Santa Monica to dash",
+    "ids": [
+     "fj5pr9"
+    ],
+    "quote": {
+     "quote": "Im new to the LA door dash scene and am on a bicycle. I live in pasadena but have been going all the way to santa monica to dash.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/fj5pr9/help_pleaseeee/",
+     "sub": "r/doordash_drivers",
+     "year": 2020,
+     "score": 0
+    }
+   },
+   {
+    "area": "Riverside / Inland Empire - carless rider planning bus+bike into DTLA/Hollywood",
+    "ids": [
+     "1qlhg3s"
+    ],
+    "quote": {
+     "quote": "Hey I have no car and live in Riverside, I do have a bike, I plan on commuting to Anaheim and DTLA then testing for any notification",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1qlhg3s/hey_i_have_no_car_and_live_in_riverside_i_do_have/",
+     "sub": "r/UberEATS",
+     "year": 2026,
+     "score": 2
+    }
+   },
+   {
+    "area": "Culver City / Playa Vista - drivers living in vehicles overnight (car)",
+    "ids": [
+     "1m1mlfb"
+    ],
+    "quote": {
+     "quote": "He is known to drive for Uber Eats (unsure about DoorDash) and has covered areas such as **Venice, Santa Monica, Culver City, Pasadena, and Playa Vista.** He often parks/stays in those areas overnight.",
+     "url": "https://www.reddit.com/r/doordash/comments/1m1mlfb/missing_uber_eats_driver_in_west_los_angeles/",
+     "sub": "r/doordash",
+     "year": 2025,
+     "score": 34
+    }
+   },
+   {
+    "area": "East LA resident driving to Westwood/USC for orders (car)",
+    "ids": [
+     "1aw4ual"
+    ],
+    "quote": {
+     "quote": "I’m in the East LA area and I usually go around Westwood or USC and that’s where I get deliveries",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1aw4ual/where_in_la_is_the_best_place_to_do_ubereats_and/",
+     "sub": "r/UberEATS",
+     "year": 2024,
+     "score": 0
+    }
+   },
+   {
+    "area": "San Gabriel Valley / La Verne dashers weighing a 30-min drive into Beverly Hills/Hollywood (car)",
+    "ids": [
+     "1pxwvvo"
+    ],
+    "quote": {
+     "quote": "I’m wondering if it’d be worth it driving 30 min to Beverly Hills, Hollywood, etc.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1pxwvvo/los_angeles_discussion/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 2
+    }
+   }
+  ],
+  "students": [
+   {
+    "quote": "I am a graduate student at USC and want to make some money for living expenses.",
+    "url": "https://www.reddit.com/r/UberEATS/comments/15dae0o/what_is_it_like_doing_ubereats_in_los_angeles/",
+    "sub": "r/UberEATS",
+    "year": 2023,
+    "score": 0
+   },
+   {
+    "quote": "I’m suspecting because the college kids are dipping into doing delivery for summer vacation.",
+    "url": "https://www.reddit.com/r/doordash_drivers/comments/1mgovuq/summer_slowness/",
+    "sub": "r/doordash_drivers",
+    "year": 2025,
+    "score": 0
+   },
+   {
+    "quote": "USC area I at least get some orders, although the trade off is 1 dollar tips because I guess most of the deliveries are to college students...",
+    "url": "https://www.reddit.com/r/doordash_drivers/comments/1mgovuq/summer_slowness/",
+    "sub": "r/doordash_drivers",
+    "year": 2025,
+    "score": 0
+   },
+   {
+    "quote": "Couriers in Los Angeles: We're a team of MBA students from UCLA doing market research for interest in e-bikes for food delivery.",
+    "url": "https://www.reddit.com/r/couriersofreddit/comments/jfezl3/research_interviews_about_food_delivery_using/",
+    "sub": "r/couriersofreddit",
+    "year": 2020,
+    "score": 9
+   },
+   {
+    "quote": "I started DD in March 2019 when I was in my last semester at college.",
+    "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/",
+    "sub": "r/doordash",
+    "year": 2019,
+    "score": 22
+   },
+   {
+    "quote": "I thought nobody lives in downtown, it's only offices,  but I guess I was wrong, so many foreigners rent there. A lot of Asians and international students.",
+    "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+    "sub": "r/dtla",
+    "year": 2018,
+    "score": 1
+   },
+   {
+    "quote": "I’m in downtown LA and also an international student who needs to make ends meet.",
+    "url": "https://www.reddit.com/r/ebikes/comments/1dnmppt/best_ebike_for_delivery_in_downtown_la/",
+    "sub": "r/ebikes",
+    "year": 2024,
+    "score": 1
+   },
+   {
+    "quote": "If someone at the Lorenzo orders Uber Eats can you please let me know so i can go online & deliver it for you, tryna make some side money rn",
+    "url": "https://www.reddit.com/r/USC/comments/m2g94t/if_someone_at_the_lorenzo_orders_uber_eats_can/",
+    "sub": "r/USC",
+    "year": 2021,
+    "score": 27
+   },
+   {
+    "quote": "I work at a company called Duffl which has 3 hour delivery shifts.",
+    "url": "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+    "sub": "r/ElectricScooters",
+    "year": 2022,
+    "score": 4
+   },
+   {
+    "quote": "Does anybody drive for Doordash or Uber Eats around ucla? How bad is the LA driving, and how much does it make?",
+    "url": "https://www.reddit.com/r/ucla/comments/17exg6x/doordashing_for_money/",
+    "sub": "r/ucla",
+    "year": 2023,
+    "score": 3
+   }
+  ],
+  "students_note": "USC/UCLA students appear as couriers (bike, Duffl scooter, car) and as the dominant low-tipping customers; two Daily Bruin reporters (2023, 2024) solicited student couriers, and an r/dtla bicycle courier attributes DTLA order density to Asian/international student renters.",
+  "immigrant_or_spanish_speaking": {
+   "note": "Very thin in this English-language corpus. No post describes Spanish-speaking or immigrant two-wheel courier groups in LA. Indirect signals only: account-sharing/purchased accounts (one undocumented Armenian dasher running 3 phones ~40 mi from LA; West LA customers noting drivers never match the profile photo), an AxelHire courier complaining about \"immigrants working\" in the LA market, the missing-driver family checking the ICE database, a Chinese-language e-bike courier posting ~25 LA POV delivery videos (titles partly in Chinese) to r/ebikes, and an r/dtla bicycle courier who moved from New York and credits DTLA demand to \"foreigners\", \"Asians and international students\".",
+   "evidence": [
+    {
+     "quote": "I noticed a guy with THREE 😧 phones and all of them had the dasher app turned on. I started a conversation with him, and it turned out that he came from Armenia and doesn’t have legal documents, so he works from fake accounts.",
+     "url": "https://www.reddit.com/r/doordash/comments/188pvss/i_saw_a_guy_with_several_dasher_apps/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 47
+    },
+    {
+     "quote": "I’m in West Los Angeles area. I’ve only been here for a handful of months and I don’t even order DoorDash that often but I feel like I haven’t had a single delivery driver match the photo of the person who’s listed.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1q8stp9/is_it_common_to_share_doordash_driver_accounts/",
+     "sub": "r/AskLosAngeles",
+     "year": 2026,
+     "score": 36
+    },
+    {
+     "quote": "I work in the Los Angeles Market. 9. Allot of immigrants working. This causes routes to be very, very hard to get.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/10xidqd/axelhire_review_2023/",
+     "sub": "r/couriersofreddit",
+     "year": 2023,
+     "score": 8
+    },
+    {
+     "quote": "it seems like there’s vulture-like dashers everywhere you go. Now I’m not afraid of the competition as I am at platinum level so I have a good advantage, but I heard people out there have multiple phones to get more orders.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1pxwvvo/los_angeles_discussion/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 2
+    }
+   ]
+  },
+  "hangouts_and_staging": [
+   {
+    "place": "Ghost-kitchen hubs (drivers stage in the lot and get pinged immediately)",
+    "quotes": [
+     {
+      "quote": "Colony: 11419 Santa Monica Blvd, Los Angeles, CA 90025",
+      "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 138
+     },
+     {
+      "quote": "Washington Food Co: 1842 W Washington Blvd, Los Angeles, CA 90007",
+      "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 138
+     },
+     {
+      "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these. It’s the equivalent of an Uber X driver going to the airport and waiting for a passenger ride.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 138
+     },
+     {
+      "quote": "HOTSPOT for drivers to pickup orders is at 1842 W. Washington Blvd, LA, CA 90007.  It's CLOUDKITCHEN with about 30 restaurants.  I see mostly, Ubereats, postmates, grubhub, and doordash drivers there.",
+      "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+      "sub": "r/couriersofreddit",
+      "year": 2018,
+      "score": 1
+     },
+     {
+      "quote": "So here in Los Angeles, Sugarfish has a few ghost kitchen locations around the city to accommodate most of their Uber Eats/Postmates orders.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/10la8af/shadow_banned_from_certain_restaurants_in_los/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 4
+     },
+     {
+      "quote": "They closed the shops and boutiques during Covid, boarded up the building, and it’s become a food delivery ghost kitchen hub. And a constant eyesore. Doesn’t the city regulate landlords about these things? Can they just do this forever? (Mid-Wilshire on Pico)",
+      "url": "https://www.reddit.com/r/LosAngeles/comments/1nzxlk1/community_eyesore/",
+      "sub": "r/LosAngeles",
+      "year": 2025,
+      "score": 9
+     }
+    ]
+   },
+   {
+    "place": "McDonald's (Valley e-scooter courier's charging/wifi 'command center'; Crenshaw McDonald's restroom dispute; dashers chatting at McDonald's)",
+    "quotes": [
+     {
+      "quote": "While waiting for orders, I hang out at the McDonald’s closest to the mall and plug in what I like to call “the command center”",
+      "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+      "sub": "r/doordash",
+      "year": 2022,
+      "score": 2
+     },
+     {
+      "quote": "I’m doing a pickup at this McDonald’s on 4292 Crenshaw in Los Angeles told me I have to buy something just to use the restroom",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/tsmdog/wow_so_im_doing_a_pickup_at_this_mcdonalds_on/",
+      "sub": "r/doordash_drivers",
+      "year": 2022,
+      "score": 18
+     }
+    ]
+   },
+   {
+    "place": "Popular restaurants where 9-20 drivers camp (unnamed hip LA restaurant; Gardens of Taxco WeHo; Beverly Hills pickups)",
+    "quotes": [
+     {
+      "quote": "The restaurant is a hot spot high tip and a lot of dashers like to camp outside of it. It’s also one of those hip restaurants in Los Angeles that have a line of people waiting to sit down and eat.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcdfx9/waited_almost_70_minutes_for_order_then_store/",
+      "sub": "r/doordash_drivers",
+      "year": 2024,
+      "score": 112
+     },
+     {
+      "quote": "there were about 20 other drivers waiting for a pick up.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/139c1kf/cinco_de_mayo_madness_at_gardens_of_taxco_in_west/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 3
+     },
+     {
+      "quote": "There are 4, yes, FOUR other Door Dash drivers at this second spot.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/1aifudt/im_so_furious/",
+      "sub": "r/doordash_drivers",
+      "year": 2024,
+      "score": 0
+     }
+    ]
+   },
+   {
+    "place": "Named bicycle hotspots (2019)",
+    "quotes": [
+     {
+      "quote": "We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+      "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+      "sub": "r/doordash",
+      "year": 2019,
+      "score": 1
+     }
+    ]
+   },
+   {
+    "place": "Culver City zone roaming corridors (car)",
+    "quotes": [
+     {
+      "quote": "So lately I’ve been roaming east and west along Venice from Robertson to Sepulveda. Sometimes, I’ll crawl Palms from Overland to  National.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/1c10313/whats_your_ratio_of_how_long_youll_park_in_a/",
+      "sub": "r/doordash_drivers",
+      "year": 2024,
+      "score": 5
+     }
+    ]
+   },
+   {
+    "place": "Library / bus as waiting spots for carless riders",
+    "quotes": [
+     {
+      "quote": "wait an hour in a library or just ride around restaurants and tourist areas getting some exercise for like 3 days waiting for any order",
+      "url": "https://www.reddit.com/r/UberEATS/comments/1qlhg3s/hey_i_have_no_car_and_live_in_riverside_i_do_have/",
+      "sub": "r/UberEATS",
+      "year": 2026,
+      "score": 2
+     }
+    ]
+   },
+   {
+    "place": "Not found",
+    "quotes": [],
+    "note": "No LA post mentions Grand Central Market, Whole Foods, 7-Eleven, hotel lobbies or Koreatown plazas as courier gathering places. CB-radio and Reddit are the only rider-community channels mentioned; riders describe the job as solitary."
+   }
+  ]
+ },
+ "safety_theft": {
+  "summary": "Across ~1,950 LA-verified posts there are no first-person reports of a delivery bike, e-bike or scooter being stolen; the theft anxiety that appears is prospective (wanting a lockable e-bike) and about phones left in cars. Violence reports are car-based robberies/attempted robberies (DTLA-to-West Adams van ambush, Olympic & Cochran BevMo robbery, a warehouse-complex jumping near LA), sketchy Skid Row drop-offs, women declining night deliveries in Koreatown/Hollywood-Silverlake and South LA, police stops of a night bike messenger in Beverly Hills/WeHo, and traffic danger (sidewalk e-scooter collision in Culver City, cars in DTLA bike lanes).",
+  "by_area": [
+   {
+    "area": "DTLA / Skid Row",
+    "items": [
+     {
+      "quote": "It all felt a little weird, but my first priority was to just gtfo skid row without getting hassled, which I immediately did.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/uaf1v3/customer_claiming_they_didnt_get_the_order/",
+      "sub": "r/UberEATS",
+      "year": 2022,
+      "score": 7
+     },
+     {
+      "quote": "it is on skid row homeless everywhere how can if I leave it in front of them well at last finally he showed up after 10 minutes",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/1ooco56/door_dash_carless_and_lame_violation/",
+      "sub": "r/doordash_drivers",
+      "year": 2025,
+      "score": 1
+     },
+     {
+      "quote": "I work security in a homeless shelter in skid row , Los Angeles… genuinely have so much respect for my drivers that actually come thru . I always tip em ten bucks minimum.",
+      "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/",
+      "sub": "r/doordash",
+      "year": 2026,
+      "score": 12
+     },
+     {
+      "quote": "This particular order was from Popeyes, near dtla area. The drop off was in the west adams neighborhood, for those not familiar with deep LA neighborhoods, it’s near the 10 fwy.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/15qno06/most_weirdcreepy_encounter_while_delivering/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 17
+     },
+     {
+      "quote": "Immediately 6 men dressed in all black with some sort of leggings over their head trying to cover up their face jump out the van, and start running towards my car.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/15qno06/most_weirdcreepy_encounter_while_delivering/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 17
+     },
+     {
+      "quote": "If you park in the bike lane in DTLA You are a garbage human.  You are putting every delivery person on a bike at risk",
+      "url": "https://www.reddit.com/r/UberEATS/comments/ps4sre/if_you_park_in_the_bike_lane_in_dtla/",
+      "sub": "r/UberEATS",
+      "year": 2021,
+      "score": 11
+     },
+     {
+      "quote": "one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+      "sub": "r/doordash_drivers",
+      "year": 2022,
+      "score": 1
+     },
+     {
+      "quote": "Obviously downtown LA would be a big nightmare for someone who isn’t familiar with the area.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/luqhar/socal_dashing/",
+      "sub": "r/doordash_drivers",
+      "year": 2021,
+      "score": 0
+     },
+     {
+      "quote": "it looks like biking through Skid Row down 6th St. would be way quicker than the bus.",
+      "url": "https://www.reddit.com/r/AskLosAngeles/comments/bzt91s/biking_from_downtown_to_arts_district_via_skid_row/",
+      "sub": "r/AskLosAngeles",
+      "year": 2019,
+      "score": 19
+     }
+    ]
+   },
+   {
+    "area": "Westlake / MacArthur Park",
+    "items": [
+     {
+      "quote": "I'd like to get a bike as well so I have easier access to Wilshire/Ktown (~1.5 miles away) but I'm not sure of bike racks and safety from theft.",
+      "url": "https://www.reddit.com/r/AskLosAngeles/comments/5px3e9/first_time_living_in_la_hows_westlake_for_an/",
+      "sub": "r/AskLosAngeles",
+      "year": 2017,
+      "score": 7
+     }
+    ],
+    "note": "No courier incident reports; one prospective resident worries about bike theft near MacArthur Park (2017)."
+   },
+   {
+    "area": "Koreatown / Hollywood-Silverlake zone",
+    "items": [
+     {
+      "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+      "sub": "r/doordash_drivers",
+      "year": 2024,
+      "score": 3
+     },
+     {
+      "quote": "I started to grow really tired of the poor reception in Koreatown LA which caused my app to crash constantly",
+      "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/",
+      "sub": "r/doordash",
+      "year": 2019,
+      "score": 22
+     },
+     {
+      "quote": "Just moved from Florida and was issued a $200 ticket for riding a scooter on Wilshire.",
+      "url": "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/",
+      "sub": "r/LosAngeles",
+      "year": 2019,
+      "score": 349
+     }
+    ]
+   },
+   {
+    "area": "Hollywood / West Hollywood / Beverly Hills",
+    "items": [
+     {
+      "quote": "I’m a girl driving alone so I don’t like to continue dashing once it gets dark out. Too sketchy.  Too many fucking apartments with no parking in sketchy areas.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/qsv5ea/los_angeles_dashers/",
+      "sub": "r/doordash_drivers",
+      "year": 2021,
+      "score": 4
+     },
+     {
+      "quote": "I have the most stolen car in America, and I'm a blatantly white dude. I felt rather unsafe in Hollywood, I'll say",
+      "url": "https://www.reddit.com/r/UberEATS/comments/fhj1er/socal_drivers_help/",
+      "sub": "r/UberEATS",
+      "year": 2020,
+      "score": 0
+     },
+     {
+      "quote": "they stop and ask me what i am doing , or they block me with their car , and ask me questions like  , i am clean as a whistle , i am a 22yo  Caucasian dude , i just believe they suspect every young person ,  and they bother most in beverly hills and weho",
+      "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+      "sub": "r/LosAngeles",
+      "year": 2018,
+      "score": 0
+     },
+     {
+      "quote": "While taking a double-order in West Hollywood, I was waiting for the light and heard a car honk at people who were walking when it wasn’t their turn.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/10oy016/saw_someone_get_ran_over/",
+      "sub": "r/UberEATS",
+      "year": 2023,
+      "score": 10
+     },
+     {
+      "quote": "Scariest moment was when I got out of the car for a 7-11 pick up 5-10 minutes away from Dodger stadium. (Riots simmering) homeless off their shit.",
+      "url": "https://www.reddit.com/r/doordash/comments/r0k9xt/sketchy_moments_share_one/",
+      "sub": "r/doordash",
+      "year": 2021,
+      "score": 7
+     }
+    ]
+   },
+   {
+    "area": "Mid-City / West Adams",
+    "items": [
+     {
+      "quote": "They took the alcohol, and along with the staff, they went back inside of the home on the corner of Olympic and Cochran. I spent the next hour wasting my time and my breath. DoorDash nor the police did anything",
+      "url": "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/",
+      "sub": "r/doordash",
+      "year": 2026,
+      "score": 74
+     },
+     {
+      "quote": "I saw an LAPD officer at the front door, a huge ass gun strapped across his chest. He yelled at me \"COME OUT!\" Oh fuck.",
+      "url": "https://www.reddit.com/r/couriersofreddit/comments/awuuop/decent_delivery_night_ends_with_being_frisked/",
+      "sub": "r/couriersofreddit",
+      "year": 2019,
+      "score": 18
+     }
+    ]
+   },
+   {
+    "area": "South LA / Compton / Watts",
+    "items": [
+     {
+      "quote": "I am a female that delivers in the southern Los Angeles area and twice i have been sent to Compton after 10pm.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/spranu/decline_due_to_unsafe_neighborhoods/",
+      "sub": "r/doordash_drivers",
+      "year": 2022,
+      "score": 10
+     },
+     {
+      "quote": "Also throughout the day I notice the deliveries take me further and deeper in to south central Compton area. After delivering there I go offline until I get back to an area I’m familiar with.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/1bzlapj/new_to_uber_eats_just_wanted_some_insight_on_how/",
+      "sub": "r/UberEATS",
+      "year": 2024,
+      "score": 1
+     },
+     {
+      "quote": "the app seeming to constantly offer you orders going further south to rougher areas is a turn off.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/myuh4s/la_drivers_you_guys_are_beast/",
+      "sub": "r/UberEATS",
+      "year": 2021,
+      "score": 3
+     }
+    ]
+   },
+   {
+    "area": "Westside (Culver City / Santa Monica / Westwood)",
+    "items": [
+     {
+      "quote": "I was waiting outside a restaurant in Culver City and a man comes by on the sidewalk on an electric scooter at full speed and swerved to hit me.",
+      "url": "https://www.reddit.com/r/doordash/comments/j9vs4j/doordash_injury_compensation/",
+      "sub": "r/doordash",
+      "year": 2020,
+      "score": 2
+     },
+     {
+      "quote": "Just left a customer’s food at door, here in Santa Monica. As soon as I got in my car I seen a homeless guy just grab it and kept walking.",
+      "url": "https://www.reddit.com/r/UberEATS/comments/198c16x/lol_what_would_you_do/",
+      "sub": "r/UberEATS",
+      "year": 2024,
+      "score": 15
+     },
+     {
+      "quote": "I hate delivering at ucla campus specially the hospitals there. Many of these nurses know we can’t park in the emergency area and the valet doesn’t allow us to park our cars too.",
+      "url": "https://www.reddit.com/r/grubhubdrivers/comments/1t5n6cg/wish_we_can_report_customers_that_steal/",
+      "sub": "r/grubhubdrivers",
+      "year": 2026,
+      "score": 9
+     },
+     {
+      "quote": "She flashes a $100 bill and asks if I have change. I say nope, but I can check in the car. I walk away for like 15 seconds and she snatches the pizza and runs inside like she just pulled off a heist in GTA.",
+      "url": "https://www.reddit.com/r/ucla/comments/1l2s5lh/to_the_girl_who_scammed_me_out_of_a_pizza_at_10pm/",
+      "sub": "r/ucla",
+      "year": 2025,
+      "score": 449
+     },
+     {
+      "quote": "Just saw at the Veteran & Strathmore intersection a Parking Enforcement officer parking in the red zone, giving a ticket to someone else parking in the red zone. I think the other person was probably a food delivery driver",
+      "url": "https://www.reddit.com/r/ucla/comments/twbyrh/la_parking_enforcement_car_parked_in_red_zone/",
+      "sub": "r/ucla",
+      "year": 2022,
+      "score": 22
+     },
+     {
+      "quote": "especially when homeless people tell you,  don't take pictures haha  it's like the own downtown now,  DTLA aka the home of the homeless",
+      "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+      "sub": "r/dtla",
+      "year": 2018,
+      "score": 1
+     }
+    ]
+   },
+   {
+    "area": "Near LA (city redacted) - warehouse ambush",
+    "items": [
+     {
+      "quote": "Just want to share i was just jumped while dashing in (city redacted)* in California near Los Angeles by 2 guys.",
+      "url": "https://www.reddit.com/r/doordash_drivers/comments/ke3232/be_careful_when_accepting_gifted_orders/",
+      "sub": "r/doordash_drivers",
+      "year": 2020,
+      "score": 17
+     }
+    ]
+   }
+  ],
+  "bike_theft_incidents_reported_by_couriers": 0,
+  "night_riding": [
+   {
+    "quote": "at certain time of the night LA streets are empty , and me i take advantages and deliver , but the cops really bother me",
+    "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+    "sub": "r/LosAngeles",
+    "year": 2018,
+    "score": 0
+   },
+   {
+    "quote": "Los Angeles - WeHo & Silverlake areas. If I dash at these odd times I get multiple offers. After only a few hours, apparently it gets oversaturated cause I stop receiving orders.",
+    "url": "https://www.reddit.com/r/doordash_drivers/comments/1ljf3jq/i_only_get_orders_from_37am/",
+    "sub": "r/doordash_drivers",
+    "year": 2025,
+    "score": 2
+   },
+   {
+    "quote": "Stay consistent and dash when other dashers typically do not. (11pm-10am)",
+    "url": "https://www.reddit.com/r/doordash/comments/yn1trc/deleting_this_app_heres_my_dashing_advice/",
+    "sub": "r/doordash",
+    "year": 2022,
+    "score": 885
+   }
+  ]
+ },
+ "earnings_by_area": [
+  {
+   "area": "DTLA",
+   "vehicle": "bike/foot",
+   "year": 2021,
+   "figure": "UE ~$16-20/hr ($95-100 per 5-6 h); DD ~$10-12/hr ($62.75 per 5-6 h)",
+   "quote": "Downtown L.A. big market.  UE 5-6 hours on bike/foot. $95-100 on multiple days.  DD 5-6 hours on bike/foot $62.75",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/q0yp2w/do_you_earn_marginally_less_for_dd_compared_to_ue/",
+   "sub": "r/doordash_drivers",
+   "score": 1
+  },
+  {
+   "area": "DTLA + Hollywood",
+   "vehicle": "unspecified (car implied)",
+   "year": 2024,
+   "figure": "$8/hr on weekend peak hours",
+   "quote": "Making $8 an hour in Los Angeles Peak Hours & Days",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1dnuui4/making_8_an_hour_in_los_angeles_peak_hours_days/",
+   "sub": "r/UberEATS",
+   "score": 1
+  },
+  {
+   "area": "DTLA",
+   "vehicle": "car",
+   "year": 2021,
+   "figure": "$215 + $19 cash tips in one day (security guard side gig)",
+   "quote": "literally that day Before work i made $215+$19 in cash tips So I’m very well aware of how much you CAN make doing DD.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/lc22gg/top_dasher_attitudes/",
+   "sub": "r/doordash_drivers",
+   "score": 6
+  },
+  {
+   "area": "DTLA (e-scooter, planned)",
+   "vehicle": "e-scooter",
+   "year": 2024,
+   "figure": "needs >= $350/month to be worthwhile",
+   "quote": "Including all my bills, I'll have to clear a *bare minimum* of $350/month to make this work profitable.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1ce67b8/thinking_about_starting_and_want_opinions_from/",
+   "sub": "r/doordash_drivers",
+   "score": 0
+  },
+  {
+   "area": "Downtown, Hollywood, Santa Monica",
+   "vehicle": "car",
+   "year": 2019,
+   "figure": "$15-30/hr (2018-19, DD)",
+   "quote": "I was paid between 15 to 30$ an hour . Downtown, Hollywood Santa Monica , San Diego .",
+   "url": "https://www.reddit.com/r/doordash/comments/c3ltdn/dashers_furing_the_crash_please_go_everyone/",
+   "sub": "r/doordash",
+   "score": 1
+  },
+  {
+   "area": "Santa Monica",
+   "vehicle": "e-bike",
+   "year": 2024,
+   "figure": "Prop 22 floor ~$20-21/hr of active delivery time",
+   "quote": "Prop 22 in CA makes it that if you are working you are making at least $21 an hour during a delivery in Santa Monica, CA.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+   "sub": "r/doordash_drivers",
+   "score": 0
+  },
+  {
+   "area": "Santa Monica",
+   "vehicle": "car",
+   "year": 2023,
+   "figure": "$22-25/hr (~$100 per 4 h) fell to $60-70 per 8 h",
+   "quote": "I’ve went from making a decent $22-$25hr in the Santa Monica area. Literally would work a 4hr shift and come out with at least $100",
+   "url": "https://www.reddit.com/r/doordash/comments/1787jmo/los_angeles_santa_monica_dd_recently/",
+   "sub": "r/doordash",
+   "score": 4
+  },
+  {
+   "area": "Santa Monica zone",
+   "vehicle": "car",
+   "year": 2024,
+   "figure": "$15 in 5 h",
+   "quote": "I logged in the other day in Santa Monica zone and made only $15.00 (two orders) in 5 hours.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1hj9yaf/los_angeles_dd_drivers_are_you_making_at_least/",
+   "sub": "r/doordash_drivers",
+   "score": 1
+  },
+  {
+   "area": "Santa Monica zone",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "$14 in 7.5 h (Sunday)",
+   "quote": "I Dashed in Santa Monica zone and only made $14.00.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1ir8hmm/los_angeles_75hrs_dash_time_1400/",
+   "sub": "r/doordash_drivers",
+   "score": 3
+  },
+  {
+   "area": "West Hollywood",
+   "vehicle": "car",
+   "year": 2024,
+   "figure": "$18-30/hr usual",
+   "quote": "I usually make about $18-$30 an hour in West Hollywood.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1gmn1zo/has_doordash_been_really_slow_since_the_election/",
+   "sub": "r/doordash_drivers",
+   "score": 53
+  },
+  {
+   "area": "Hollywood / West Hollywood",
+   "vehicle": "car (Grubhub)",
+   "year": 2022,
+   "figure": "$200/day (8-9 h) in 2021 -> $120-150 -> $50-70",
+   "quote": "I use to make up to $200 a day, working eight to nine hours a day. Now, I’m lucky to make $120-150 a day",
+   "url": "https://www.reddit.com/r/grubhubdrivers/comments/wh3f3f/seems_very_dead_in_la/",
+   "sub": "r/grubhubdrivers",
+   "score": 9
+  },
+  {
+   "area": "Hollywood",
+   "vehicle": "car (Uber Eats)",
+   "year": 2023,
+   "figure": "$30/hr in 2021 pandemic, fraction by 2023",
+   "quote": "The orders I got at the height of the pandemic were flying in and I was able to make $30 an hour easily at least.",
+   "url": "https://www.reddit.com/r/UberEATS/comments/14zp36s/its_finally_over_goodbye_ubereats/",
+   "sub": "r/UberEATS",
+   "score": 35
+  },
+  {
+   "area": "Hollywood-Silverlake zone",
+   "vehicle": "car",
+   "year": 2024,
+   "figure": "$5.25 in 3 h (first day)",
+   "quote": "This one order earned me $5.25, no tip given despite delivering to a $4 million home",
+   "url": "https://www.reddit.com/r/doordash/comments/1ddwoir/are_earnings_really_this_low/",
+   "sub": "r/doordash",
+   "score": 9
+  },
+  {
+   "area": "WeHo & Silverlake (3-7am)",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "$15 for 2 deliveries 5-6:30am then nothing",
+   "quote": "I made $15 with 2 deliveries btwn 5-6:30am and then stopped receiving offers after that.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1ljf3jq/i_only_get_orders_from_37am/",
+   "sub": "r/doordash_drivers",
+   "score": 2
+  },
+  {
+   "area": "Beverly Hills / WeHo / Westwood",
+   "vehicle": "car",
+   "year": 2021,
+   "figure": "Postmates $25/hr min -> DD $61 in 4.5 h, $35 in 2.5 h",
+   "quote": "I used to consistently make a minimum of $25 an hour if not more on postmates, but I’ve been making very bad money on Doordash.",
+   "url": "https://www.reddit.com/r/doordash/comments/o28sec/im_making_almost_no_money_switching_to_doordash/",
+   "sub": "r/doordash",
+   "score": 5
+  },
+  {
+   "area": "Beverly Hills / Westwood",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "$5-7 per 2 h",
+   "quote": "I sometimes go two hours and make $5 to $7. Keep in mind that I'm in Beverly hills and Westwood.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1n4lqe8/not_bad_for_the_city_of_angels/",
+   "sub": "r/doordash_drivers",
+   "score": 2
+  },
+  {
+   "area": "Westwood",
+   "vehicle": "car",
+   "year": 2024,
+   "figure": "$50 in 4 h",
+   "quote": "yesterday I made 50 bucks in 4 hours which is horrible in my opinion I only had 3 orders this was in Westwood by UCLA.",
+   "url": "https://www.reddit.com/r/doordash/comments/19f1gt5/hey_quick_question/",
+   "sub": "r/doordash",
+   "score": 0
+  },
+  {
+   "area": "Westwood",
+   "vehicle": "car",
+   "year": 2018,
+   "figure": "$15/hr guarantee promo (pulled)",
+   "quote": "Did anybody else sign in at 11am for guaranteed $15 an hour, but now it's changed to $1.50 bonus per order?",
+   "url": "https://www.reddit.com/r/doordash/comments/8yn3td/westwood_la_did_anybody_else_sign_in_at_11am_for/",
+   "sub": "r/doordash",
+   "score": 7
+  },
+  {
+   "area": "Culver City / Santa Monica / Hollywood",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "~$25/hr gross before gas",
+   "quote": "I currently average \\~$25/hour before gas expenses and tax delivering in a car.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1ke5hch/anyone_still_delivering_in_west_la_on_a_regular/",
+   "sub": "r/doordash_drivers",
+   "score": 1
+  },
+  {
+   "area": "Culver / Venice / Marina / Santa Monica",
+   "vehicle": "car (Grubhub)",
+   "year": 2020,
+   "figure": "best night $78 in 6 h",
+   "quote": "My best night is $78 in a 6 hour shift, mainly around Culver/Venice/Marina and The People's Republic of Santa Monica.",
+   "url": "https://www.reddit.com/r/couriersofreddit/comments/eslp1f/any_thoughts_from_la_gh_drivers_on_the_west_side/",
+   "sub": "r/couriersofreddit",
+   "score": 3
+  },
+  {
+   "area": "Culver City, DTLA, East LA, Pasadena",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "$20-30 per 3-4 h session",
+   "quote": "after a 3-4 hour session I typically only make about $20-30.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1hrbc0u/i_am_averaging_less_than_one_delivery_an_hour/",
+   "sub": "r/doordash_drivers",
+   "score": 3
+  },
+  {
+   "area": "Culver City",
+   "vehicle": "car",
+   "year": 2023,
+   "figure": "friends $200/day vs poster $50",
+   "quote": "My friends tell me they make $200 daily average whereas I can barely make $50 if I’m lucky.",
+   "url": "https://www.reddit.com/r/doordash/comments/158yk5n/do_you_have_the_same_issue/",
+   "sub": "r/doordash",
+   "score": 1
+  },
+  {
+   "area": "Koreatown",
+   "vehicle": "car",
+   "year": 2019,
+   "figure": "~$10/hr net of gas (700 trips)",
+   "quote": "I averaged about $10 per hour accounting for gas and whatnot.",
+   "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/",
+   "sub": "r/doordash",
+   "score": 22
+  },
+  {
+   "area": "Mid-City",
+   "vehicle": "car (Uber Eats)",
+   "year": 2018,
+   "figure": "$492 / 52 trips / 25 h online (~$20/hr)",
+   "quote": "last week I made $492 on 52 trips, 25 hours online.",
+   "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+   "sub": "r/couriersofreddit",
+   "score": 1
+  },
+  {
+   "area": "Midtown / La Brea",
+   "vehicle": "car",
+   "year": 2024,
+   "figure": "$70 in 3 h (good night)",
+   "quote": "Funny cause last night I made $70 in 3 hours.",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1bujlqx/bad_night_in_la/",
+   "sub": "r/UberEATS",
+   "score": 6
+  },
+  {
+   "area": "Gardena/Hawthorne zone (South Bay)",
+   "vehicle": "car",
+   "year": 2026,
+   "figure": "$90 in 31 h",
+   "quote": "This was all in Los Angeles in the “Gardena/Hawthorne zone where I Dashed in El Segundo/South Bay/Hermosa/Manhattan Beach areas.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1v0bins/had_a_pretty_good_saturday_breakfastlunch_dash/",
+   "sub": "r/doordash_drivers",
+   "score": 6
+  },
+  {
+   "area": "Los Angeles market (Platinum vs Gold)",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "Platinum $20/hr baseline, up to $40/hr; Gold rarely $20",
+   "quote": "Once you hit Platinum here, $20/hr is the baseline and can even sometimes go all the way up to $40/hr.",
+   "url": "https://www.reddit.com/r/doordash/comments/1k0di81/market_dependent/",
+   "sub": "r/doordash",
+   "score": 1
+  },
+  {
+   "area": "Los Angeles (Platinum, accept-all)",
+   "vehicle": "car",
+   "year": 2026,
+   "figure": "$1,066 in 31 h (~$34/hr gross)",
+   "quote": "$1066 in 31 hours This is with platinum and accepting every single order in Los Angeles.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1w8eelv/1066_in_31_hours/",
+   "sub": "r/doordash_drivers",
+   "score": 357
+  },
+  {
+   "area": "Los Angeles county",
+   "vehicle": "car",
+   "year": 2022,
+   "figure": "~$1,000/wk for ~40 h (Top Dasher, early mornings)",
+   "quote": "Ive consistently made around $1,000 a week for about 40ish hours of work. Im located in Los angeles county.",
+   "url": "https://www.reddit.com/r/doordash/comments/yn1trc/deleting_this_app_heres_my_dashing_advice/",
+   "sub": "r/doordash",
+   "score": 885
+  },
+  {
+   "area": "East of LA (La Verne/Azusa/Glendora)",
+   "vehicle": "car",
+   "year": 2025,
+   "figure": "$20-25/hr at 85% AR",
+   "quote": "I make very average earning ($20-25hr) with accepting most orders AR 85%.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1pxwvvo/los_angeles_discussion/",
+   "sub": "r/doordash_drivers",
+   "score": 2
+  },
+  {
+   "area": "LA (e-bike marked as car)",
+   "vehicle": "40+ mph e-bike",
+   "year": 2025,
+   "figure": "Prop 22: 1.2x min wage + $0.34/mi",
+   "quote": "Prop 22 pays me 1.2 times minimum wage, plus 34 cents for every mile travelled (assuming it's meant for gas/car maintenance).",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1lcn2d4/how_lucrative_is_delivering_by_ebike_in/",
+   "sub": "r/doordash_drivers",
+   "score": 0
+  }
+ ],
+ "dtla_vs_koreatown_vs_westside": {
+  "DTLA": "Densest restaurant/apartment core and the only LA area where multiple riders describe two-wheel delivery as normal (bike couriers seen with backpacks, e-scooter switch post with 1,172 upvotes, named bike hotspot at 6th & Spring, an r/dtla bicycle courier getting more requests than in Beverly Hills or Hollywood thanks to downtown renters and international students). Downsides riders name: DoorDash bicycle mode gets no orders so riders run 'scooter' mode and get sent 'far away from downtown Core', inclines (Bunker Hill) exhaust pedal bikes, high-rise drop-offs with no parking, Skid Row drop-offs feel unsafe, and volume has been thin since 2020 ('slow as hell'). Grubhub's 'LA - Westside' region historically stretched from DTLA to Venice/Culver.",
+  "Koreatown": "Riders treat K-town as part of the DoorDash 'Hollywood-Silverlake' zone rather than a destination: dense, flat, short trips but bicycle mode 'depressing', poor cell reception, tip-baiters, closed Sweetgreen 'hotspot', and a 2026 newcomer says 'high order zones like downtown or koreatown haven't seemed worth it'. Only 3 two-wheel docs, all questions or complaints; no rider community described.",
+  "Hollywood": "Best documented two-wheel earnings sentiment (2019-2020 e-scooter 'unicorn' orders, $5 peak pay 'all done on scooter'); Silverlake side of the Hollywood-Silverlake zone 'flooded with orders' vs the Hollywood-Beverly Hills zone 'SOOOOO dead'. Parking is bad (a reason car drivers consider bikes), Hollywood Hills climbs punish pedal bikes, women avoid night work, 2024-25 posts report $8/hr peak and oversaturation.",
+  "Westside": "Santa Monica/Venice: flat, bike lanes, and the Prop 22 floor is pegged to Santa Monica's higher minimum wage (~$20-21/hr active) which two e-bike riders explicitly exploit; but 'LOTS of drivers', worst traffic/parking/cops for cars, 2024-25 car earnings of $14-15 for 5-7.5 h. Westwood: one named bicycle hotspot (Westwood Blvd & Ohio), otherwise UCLA dorm/hospital pain, hills, $3 incentives. Beverly Hills/WeHo: dead zone, valet-only restaurants, police stops of a night bike messenger, Bird-riding locals. Culver City: slow 'donut', ghost-kitchen pickups.",
+  "zones_riders_use": "DoorDash zone names used by LA riders: 'Hollywood-Silverlake' (includes Koreatown; sends to DTLA), 'Hollywood-Beverly Hills' / 'Beverly Hills-WeHo', 'Santa Monica zone', 'Culver City zone', 'West Los Angeles zone', 'Westwood', 'Glendale zone', 'Gardena/Hawthorne zone', 'DTLA' as 'my market'; 2019 'USC island' and 'Hawthorne island'. Grubhub regions: 'LA - Westside' (DTLA to Venice/Culver), later split (drivers lost BH/WeHo/Hollywood/K-town/downtown). Caviar bonus areas: WeHo, BH, Venice, Mid-Wilshire, Playa del Rey, West LA.",
+  "implication_for_hub": "Rider evidence points to a hub inside the DTLA-Koreatown-Hollywood triangle: DTLA has the most two-wheel riders and the named bike hotspot, Hollywood-Silverlake is the zone riders say has volume and where Koreatown riders live, and Valley/Glendale/Pasadena riders commute in. The Westside (Santa Monica) is the only other cluster with positive e-bike sentiment but riders there cite Prop 22 economics rather than rider density. Westlake/MacArthur Park and Pico-Union have essentially no rider voice in this corpus (they sit between the clusters and are transited, not discussed)."
+ },
+ "doordash_zone_names": [
+  {
+   "zone": "Hollywood-Silverlake (DoorDash zone)",
+   "count": 7,
+   "sample_urls": [
+    "https://www.reddit.com/r/AskLosAngeles/comments/1oz4l6s/east_hollywood_silverlake_where_the_biscuits_at/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+    "https://www.reddit.com/r/doordash/comments/d999hr/does_anyone_have_a_screenshot_of_the_4/"
+   ]
+  },
+  {
+   "zone": "Hollywood-Beverly Hills / Beverly Hills-WeHo (DoorDash zone)",
+   "count": 13,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/huqln4/whats_the_best_place_to_doordash_in_la/",
+    "https://www.reddit.com/r/doordash/comments/o28sec/im_making_almost_no_money_switching_to_doordash/",
+    "https://www.reddit.com/r/UberEATS/comments/pniemv/how_is_delivering_in_downtown_la_west_hollywood/"
+   ]
+  },
+  {
+   "zone": "Santa Monica zone/market",
+   "count": 3,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/1ir8hmm/los_angeles_75hrs_dash_time_1400/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1hj9yaf/los_angeles_dd_drivers_are_you_making_at_least/",
+    "https://www.reddit.com/r/UberEATS/comments/17v7kzu/new_market/"
+   ]
+  },
+  {
+   "zone": "Culver City zone",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/1c10313/whats_your_ratio_of_how_long_youll_park_in_a/"
+   ]
+  },
+  {
+   "zone": "West Los Angeles zone",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/f6pdev/scheduling/"
+   ]
+  },
+  {
+   "zone": "Westwood (zone/hotspot)",
+   "count": 61,
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/vv4in9/yesterday_i_asked_what_food_la_should_have_but/",
+    "https://www.reddit.com/r/LosAngeles/comments/1qwxhbl/car_crashes_into_westwood_99_ranch_2_dead/",
+    "https://www.reddit.com/r/LosAngeles/comments/rzvut4/something_strange_happened_last_night_had_a_car/"
+   ]
+  },
+  {
+   "zone": "DTLA / Downtown LA market",
+   "count": 192,
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/1ajxnmu/a_quick_scientific_readmetxt_for_all_you_east/",
+    "https://www.reddit.com/r/LosAngeles/comments/vv4in9/yesterday_i_asked_what_food_la_should_have_but/",
+    "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/"
+   ]
+  },
+  {
+   "zone": "Koreatown / K-town",
+   "count": 60,
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/vv4in9/yesterday_i_asked_what_food_la_should_have_but/",
+    "https://www.reddit.com/r/LosAngeles/comments/1vctzfi/fuck_drunk_drivers_ktown_outside_chichis_bar/",
+    "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/"
+   ]
+  },
+  {
+   "zone": "Glendale zone",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/1d8zkw9/slow_dashing_in_glendale_ca/"
+   ]
+  },
+  {
+   "zone": "Gardena/Hawthorne zone",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash_drivers/comments/1v0bins/had_a_pretty_good_saturday_breakfastlunch_dash/"
+   ]
+  },
+  {
+   "zone": "USC island / Hawthorne island (2019 DoorDash)",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/cnhtsa/well_cant_wait_to_dash_in_the_new_hawthorne/"
+   ]
+  },
+  {
+   "zone": "LA - Westside (Grubhub region)",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/grubhubdrivers/comments/wwulkb/need_help_for_la/"
+   ]
+  },
+  {
+   "zone": "Los Angeles Metro (Rapidus zone)",
+   "count": 1,
+   "sample_urls": [
+    "https://www.reddit.com/r/couriersofreddit/comments/yx8tm3/rapidus_driver_review_november_2022/"
+   ]
+  },
+  {
+   "zone": "West LA / Westside (generic)",
+   "count": 72,
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/pt94l2/what_has_happened_to_uber_in_la/",
+    "https://www.reddit.com/r/LosAngeles/comments/7hzgop/socal_wildfires_mega_thread/",
+    "https://www.reddit.com/r/LosAngeles/comments/1tfh62/i_was_walking_back_on_wilshire_from_santa_monica/"
+   ]
+  },
+  {
+   "zone": "Central LA",
+   "count": 5,
+   "sample_urls": [
+    "https://www.reddit.com/r/doordash/comments/1ddwoir/are_earnings_really_this_low/",
+    "https://www.reddit.com/r/couriersofreddit/comments/84n1ju/my_first_day_experience_driving_for_caviar/",
+    "https://www.reddit.com/r/UberEATS/comments/1s6yuxn/why_do_people_order_from_chain_restaurant/"
+   ]
+  },
+  {
+   "zone": "South Bay",
+   "count": 22,
+   "sample_urls": [
+    "https://www.reddit.com/r/ebikes/comments/1d3nsg9/young_ebike_riders_terrorize_south_bay_community/",
+    "https://www.reddit.com/r/LAlist/comments/xg8dxk/bbq_delivering_to_most_of_la_south_bay_and_oc/",
+    "https://www.reddit.com/r/LAlist/comments/uzbz22/ghost_kitchen_in_los_feliz_delivering_bbq_to_most/"
+   ]
+  },
+  {
+   "zone": "hotspot / hot spot (any)",
+   "count": 46,
+   "sample_urls": [
+    "https://www.reddit.com/r/LosAngeles/comments/x6yoaw/thanks_la_well_miss_you_brit_on_holiday/",
+    "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+    "https://www.reddit.com/r/doordash_drivers/comments/1hcdfx9/waited_almost_70_minutes_for_order_then_store/"
+   ]
+  }
+ ],
+ "data_limits": [
+  "Source is English-language Reddit only (r/doordash_drivers, r/UberEATS, r/doordash, r/grubhubdrivers, r/couriersofreddit, r/Sparkdriver plus r/LosAngeles and r/AskLosAngeles); Spanish-speaking and immigrant couriers who dominate LA's two-wheel delivery workforce on the street are almost entirely absent, and no post describes a Latino/immigrant rider community, hangout or WhatsApp group.",
+  "Car drivers are the overwhelming majority: ~3,095 LA-verified posts (all subs) vs 80 unique posts (112 docs incl. cross-posts and one rider's ~25 video posts) in which the poster uses or is choosing a two-wheel vehicle; 29 of those are DTLA. Most area-level counts for two-wheel riders are < 5 and should be read as anecdotes, not rates.",
+  "Zero mentions of Sur-Ron/Talaria as courier vehicles; only 1 Ruckus/Zuma mention and 2 gas-scooter (49cc) riders. E-moped/Class-3 riders are essentially invisible on these subreddits, so the corpus cannot size that segment.",
+  "Time skew: posts span 2016-2026; the most positive two-wheel posts (Hollywood e-scooter series, DTLA e-scooter switch, bike hotspots) are 2019-2021 and predate the 2023-2025 oversaturation and Platinum/AR tier changes. Earnings figures are self-reported, unaudited and often gross of expenses.",
+  "Place-name confounds were removed but not perfectly: 'Hollywood, Florida', 'Venice FL', 'Glendale AZ', 'Pasadena TX', 'Long Beach NY', 'Westlake TX' and 'Louisiana LA' posts were excluded by regex + manual review; three Hollywood e-scooter posts were kept as LA on the strength of companion posts by the same author saying 'Hollywood California'.",
+  "Sub-neighborhood granularity is poor: riders say 'DTLA' or 'downtown', almost never Arts District, Little Tokyo, Fashion District, Historic Core or South Park (0-2 mentions each); Westlake/MacArthur Park has 2 mentions and Pico-Union 3, so the ranking cannot distinguish candidate DTLA sites from each other.",
+  "Selection bias toward complaints and newcomers: many posts are 'is X worth it' questions from people who have not yet delivered; successful full-time riders rarely post. Upvote scores measure sub engagement, not truth.",
+  "Search-based scraping (not exhaustive): only the queries listed in done_queries.txt were run. r/Koreatown and r/LosAngelesBikes returned 0 posts for every delivery query; r/dtla returned 5 (one bicycle-courier post), r/ucla 108, r/USC 49, r/LAlist 97, r/ebikes 220, r/ElectricScooters 157, r/Surron 23 - almost all customer-side, marketplace or shipping posts; only ~8 of them are LA courier two-wheel posts.",
+  "Sentiment labels and 'own vehicle' classification are the analyst's manual reading of each post; cross-posts of the same text to 2-3 subreddits were merged into one post for two-wheel counts but appear as separate docs in raw mention counts."
+ ],
+ "top_25_quotes": [
+  {
+   "quote": "I used to dash with a car, now an electric scooter, Downtown LA",
+   "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/",
+   "sub": "r/doordash",
+   "year": 2021,
+   "score": 1172,
+   "why_it_matters": "Highest-scoring post in the corpus (1,172 upvotes): the car-to-e-scooter switch is a DTLA story, signalling DTLA as the one LA area where two-wheel delivery is culturally accepted."
+  },
+  {
+   "quote": "once I tried it not one delivery is bike friendly, only scooter mode gets orders, and they always go far away from downtown Core or inner ring road.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/",
+   "sub": "r/doordash_drivers",
+   "year": 2022,
+   "score": 2,
+   "why_it_matters": "DTLA dispatch reality: bike mode starves, scooter mode gets orders but long trips - argues for e-moped/Class-3 range (not pedal bikes) and a hub that supports 10-15 mi round trips."
+  },
+  {
+   "quote": "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+   "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+   "sub": "r/doordash",
+   "year": 2019,
+   "score": 1,
+   "why_it_matters": "Only explicitly named bicycle hotspots in LA: 6th & Spring (Historic Core) and Westwood Blvd & Ohio."
+  },
+  {
+   "quote": "I live in Hollywood and dash in both Hollywood-Beverly Hills as well as Hollywood-Silverlake zones. It’s crazy to me how Bev zone is SOOOOO dead every day and Silverlake be flooded with orders.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/",
+   "sub": "r/doordash_drivers",
+   "year": 2025,
+   "score": 1,
+   "why_it_matters": "Zone-level demand signal: Hollywood-Silverlake (which includes Koreatown) has volume; Beverly Hills does not."
+  },
+  {
+   "quote": "I also dash mainly in Hollywood/Silverlake, which already has bad parking, but that delivery zone also has Koreatown in it and sometimes sends you to customers in DTLA, so I think parking would be a lot easier.",
+   "url": "https://www.reddit.com/r/doordash/comments/11khbg4/dashing_on_a_bike_in_la_worth_it/",
+   "sub": "r/doordash",
+   "year": 2023,
+   "score": 1,
+   "why_it_matters": "Shows the DTLA-Koreatown-Hollywood triangle is one operating zone for riders and that parking pain pushes car drivers toward two wheels."
+  },
+  {
+   "quote": "Unicorns in Hollywood 🦄 - My acceptance rate is about 15%. I’m on an electric scooter and these are the jobs that I really make a killing on. Anything with a 10 to 1 $ to miles ratio is a unicorn to me",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/dm0jhp/unicorns_in_hollywood_my_acceptance_rate_is_about/",
+   "sub": "r/doordash_drivers",
+   "year": 2019,
+   "score": 71,
+   "why_it_matters": "71-upvote proof that a standing e-scooter courier cherry-picking short Hollywood orders made good money (2019)."
+  },
+  {
+   "quote": "Prop 22 in CA makes it that if you are working you are making at least $21 an hour during a delivery in Santa Monica, CA. (Downside is LOTS of drivers).",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+   "sub": "r/doordash_drivers",
+   "year": 2024,
+   "score": 0,
+   "why_it_matters": "Santa Monica e-bike economics: Prop 22 floor tied to SM minimum wage; the Westside case rests on wage law, not rider density."
+  },
+  {
+   "quote": "I deliver by my e-bike (which isn't your typical e-bike, it can travel up to speeds of 40+ MPH, and has a range of about 40 miles on a full charge), and I have my app marked as delivering by car to get more deliveries.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1lcn2d4/how_lucrative_is_delivering_by_ebike_in/",
+   "sub": "r/doordash_drivers",
+   "year": 2025,
+   "score": 0,
+   "why_it_matters": "Exactly the HMP FLASH/e-moped use case: fast two-wheeler registered as a car to get volume + Prop 22 mileage; 40 mi range is the working spec."
+  },
+  {
+   "quote": "Ideally I’d like one that goes at least 20-25 mph and has a range of at least 40-50 miles. Also, one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+   "sub": "r/doordash_drivers",
+   "year": 2022,
+   "score": 1,
+   "why_it_matters": "DTLA rider states the product spec (speed, range, lockability) after a pedal bike failed on downtown inclines."
+  },
+  {
+   "quote": "Downtown L.A. big market.  UE 5-6 hours on bike/foot. $95-100 on multiple days.  DD 5-6 hours on bike/foot $62.75",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/q0yp2w/do_you_earn_marginally_less_for_dd_compared_to_ue/",
+   "sub": "r/doordash_drivers",
+   "year": 2021,
+   "score": 1,
+   "why_it_matters": "Only per-hour two-wheel earnings datapoint for DTLA (~$16-20/hr UE vs ~$10-12/hr DD, 2021)."
+  },
+  {
+   "quote": "I’m a DoorDasher from the West San Fernando Valley part of Los Angeles, and I’m currently at over 5500 deliveries using just my Unagi electric scooter and the Metro Bus system to save battery (I can fold it and store it under the seats).",
+   "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+   "sub": "r/doordash",
+   "year": 2022,
+   "score": 2,
+   "why_it_matters": "Most experienced two-wheel courier in the corpus; battery range is managed via transit, and his base is a McDonald's - the kind of amenity a hub should replicate (charging, wifi, restroom, water)."
+  },
+  {
+   "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these. It’s the equivalent of an Uber X driver going to the airport and waiting for a passenger ride.",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+   "sub": "r/UberEATS",
+   "year": 2023,
+   "score": 138,
+   "why_it_matters": "Ghost-kitchen hubs (Colony on Santa Monica Blvd, Melrose Food Co on N Western, Washington Food Co on W Washington, Grand Food Depot on W 38th) are where LA couriers actually stage - candidate hub-adjacency targets."
+  },
+  {
+   "quote": "HOTSPOT for drivers to pickup orders is at 1842 W. Washington Blvd, LA, CA 90007.  It's CLOUDKITCHEN with about 30 restaurants.  I see mostly, Ubereats, postmates, grubhub, and doordash drivers there.",
+   "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+   "sub": "r/couriersofreddit",
+   "year": 2018,
+   "score": 1,
+   "why_it_matters": "Independent 2018 confirmation of the W Washington Blvd (Pico-Union/West Adams edge) courier cluster."
+  },
+  {
+   "quote": "i asked uber support, if there are people who do it like me on a bike in LA, they said not in LA , we have in SF and NYC mainly but in LA it's rare.",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/",
+   "sub": "r/LosAngeles",
+   "year": 2018,
+   "score": 46,
+   "why_it_matters": "Baseline: in 2018 Uber itself considered LA bike couriers rare - the two-wheel segment is small and must be built, not just served."
+  },
+  {
+   "quote": "I've been delivering in L.A. (Culver City, Santa Monica, Hollywood) for almost 6 months but am just getting tired of traffic. Currently considering buying an e-bike to start delivering on instead",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1ke5hch/anyone_still_delivering_in_west_la_on_a_regular/",
+   "sub": "r/doordash_drivers",
+   "year": 2025,
+   "score": 1,
+   "why_it_matters": "2025 car driver at ~$25/hr contemplating an e-bike: the conversion target persona (traffic-weary, fit, Westside/Hollywood)."
+  },
+  {
+   "quote": "I already tried downtown and I think they don't have it as an option . When I put my 1st application in there was no option for ebike only car or motorcycle.",
+   "url": "https://www.reddit.com/r/grubhubdrivers/comments/udhb8g/ebike_delivery_in_los_angeles/",
+   "sub": "r/grubhubdrivers",
+   "year": 2022,
+   "score": 2,
+   "why_it_matters": "Grubhub LA onboarding had no e-bike option (2022); riders need guidance on registering as motorcycle/car - a service a hub can provide."
+  },
+  {
+   "quote": "Today it finally started giving motorcycle shifts (I'm in Los Angeles) And it looks like it's actually giving preference to the motorcycle.... It lets me grab a shift with the bike but not when I switch to car. Smart... The bike (motorcycle) is 20 times faster than the car in LA",
+   "url": "https://www.reddit.com/r/doordash/comments/cmgyui/finally_motorcycle/",
+   "sub": "r/doordash",
+   "year": 2019,
+   "score": 3,
+   "why_it_matters": "DoorDash motorcycle mode in LA got shift priority (2019) - supports positioning e-mopeds as motorcycle-class."
+  },
+  {
+   "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+   "sub": "r/doordash_drivers",
+   "year": 2024,
+   "score": 3,
+   "why_it_matters": "Koreatown resident in the Hollywood-Silverlake zone: night safety limits hours; a staffed hub with lighting/parking addresses a stated pain."
+  },
+  {
+   "quote": "It all felt a little weird, but my first priority was to just gtfo skid row without getting hassled, which I immediately did.",
+   "url": "https://www.reddit.com/r/UberEATS/comments/uaf1v3/customer_claiming_they_didnt_get_the_order/",
+   "sub": "r/UberEATS",
+   "year": 2022,
+   "score": 7,
+   "why_it_matters": "Skid Row drop-offs are the DTLA safety complaint; relevant to a 768 Ceres Ave (Skid Row edge) site."
+  },
+  {
+   "quote": "They took the alcohol, and along with the staff, they went back inside of the home on the corner of Olympic and Cochran. I spent the next hour wasting my time and my breath. DoorDash nor the police did anything",
+   "url": "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/",
+   "sub": "r/doordash",
+   "year": 2026,
+   "score": 74,
+   "why_it_matters": "Most recent (2026) robbery report, Mid-City; couriers feel unsupported after incidents - an opening for a rider-community hub."
+  },
+  {
+   "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood. I thought nobody lives in downtown, it's only offices,  but I guess I was wrong, so many foreigners rent there. A lot of Asians and international students.",
+   "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+   "sub": "r/dtla",
+   "year": 2018,
+   "score": 1,
+   "why_it_matters": "Only direct DTLA-vs-Westside-vs-Hollywood comparison from a bicycle courier (r/dtla, 2018): DTLA wins on request volume, driven by downtown renters/students."
+  },
+  {
+   "quote": "Santa Monica seems like a nice spot, but high order zones like downtown or koreatown haven’t seemed worth it to me.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1swmlx1/anyone_else_in_the_la_area/",
+   "sub": "r/doordash_drivers",
+   "year": 2026,
+   "score": 1,
+   "why_it_matters": "2026 newcomer (car) ranks SM above DTLA/K-town on worth - the Westside counter-argument."
+  },
+  {
+   "quote": "1 Santa Monica   This is by far the worst place to dash. There is tons of traffic hard to find parking at some places and cops are everywhere.",
+   "url": "https://www.reddit.com/r/doordash/comments/e8om7y/what_are_some_of_the_worst_citys_you_have_dashed/",
+   "sub": "r/doordash",
+   "year": 2019,
+   "score": 0,
+   "why_it_matters": "Santa Monica is the worst area for cars - which is precisely why two wheels have an edge there."
+  },
+  {
+   "quote": "I noticed a guy with THREE 😧 phones and all of them had the dasher app turned on. I started a conversation with him, and it turned out that he came from Armenia and doesn’t have legal documents, so he works from fake accounts.",
+   "url": "https://www.reddit.com/r/doordash/comments/188pvss/i_saw_a_guy_with_several_dasher_apps/",
+   "sub": "r/doordash",
+   "year": 2023,
+   "score": 47,
+   "why_it_matters": "Only direct evidence of the undocumented / rented-account courier economy near LA; relevant to KYC and rental terms for a subscription fleet."
+  },
+  {
+   "quote": "sidewalk riding seems 5x more popular than street riding at least in K-town/DTLA. Apparently the bus lane is safer than the sidewalk?",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/",
+   "sub": "r/LosAngeles",
+   "year": 2019,
+   "score": 349,
+   "why_it_matters": "349-upvote r/LosAngeles post: K-town/DTLA is where scooters are ridden (and ticketed) - infrastructure and enforcement context for rider training."
+  }
+ ]
+}

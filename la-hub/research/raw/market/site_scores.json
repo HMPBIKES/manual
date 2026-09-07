@@ -1,0 +1,128 @@
+{
+ "criteria": [
+  "rider_reach",
+  "security",
+  "rent",
+  "convenience",
+  "ops"
+ ],
+ "scores": {
+  "South Park 18th St": [
+   7,
+   5,
+   9,
+   7,
+   8
+  ],
+  "Pico-Union 1738 Cordova": [
+   7,
+   7,
+   5,
+   6,
+   7
+  ],
+  "Koreatown 856 S Vermont": [
+   8,
+   5,
+   3,
+   8,
+   4
+  ],
+  "Boyle Heights 159 S Anderson": [
+   4,
+   8,
+   7,
+   5,
+   7
+  ],
+  "Historic Core 525 S LA St": [
+   8,
+   1,
+   5,
+   8,
+   2
+  ],
+  "Westlake 710 S Alvarado": [
+   8,
+   1,
+   3,
+   8,
+   4
+  ],
+  "768 Ceres": [
+   5,
+   3,
+   5,
+   4,
+   8
+  ]
+ },
+ "weights": {
+  "base": [
+   0.35,
+   0.2,
+   0.15,
+   0.15,
+   0.15
+  ],
+  "reach45_sec10": [
+   0.45,
+   0.1,
+   0.15,
+   0.15,
+   0.15
+  ],
+  "sec30_rent05": [
+   0.35,
+   0.3,
+   0.05,
+   0.15,
+   0.15
+  ],
+  "equal": [
+   0.2,
+   0.2,
+   0.2,
+   0.2,
+   0.2
+  ]
+ },
+ "results": {
+  "base": {
+   "South Park 18th St": 7.05,
+   "Pico-Union 1738 Cordova": 6.55,
+   "Koreatown 856 S Vermont": 6.05,
+   "Boyle Heights 159 S Anderson": 5.85,
+   "Historic Core 525 S LA St": 5.25,
+   "Westlake 710 S Alvarado": 5.25,
+   "768 Ceres": 4.9
+  },
+  "reach45_sec10": {
+   "South Park 18th St": 7.25,
+   "Pico-Union 1738 Cordova": 6.55,
+   "Koreatown 856 S Vermont": 6.35,
+   "Historic Core 525 S LA St": 5.95,
+   "Westlake 710 S Alvarado": 5.95,
+   "Boyle Heights 159 S Anderson": 5.45,
+   "768 Ceres": 5.1
+  },
+  "sec30_rent05": {
+   "Pico-Union 1738 Cordova": 6.75,
+   "South Park 18th St": 6.65,
+   "Koreatown 856 S Vermont": 6.25,
+   "Boyle Heights 159 S Anderson": 5.95,
+   "Westlake 710 S Alvarado": 5.05,
+   "Historic Core 525 S LA St": 4.85,
+   "768 Ceres": 4.7
+  },
+  "equal": {
+   "South Park 18th St": 7.2,
+   "Pico-Union 1738 Cordova": 6.4,
+   "Boyle Heights 159 S Anderson": 6.2,
+   "Koreatown 856 S Vermont": 5.6,
+   "768 Ceres": 5.0,
+   "Historic Core 525 S LA St": 4.8,
+   "Westlake 710 S Alvarado": 4.8
+  }
+ }
+}
