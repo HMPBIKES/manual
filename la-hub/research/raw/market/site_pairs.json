@@ -1,0 +1,282 @@
+[
+ {
+  "idx": 608.686743927876,
+  "rest2mi": 2450,
+  "rest1_5mi": 2015,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Koreatown East (6th/Vermont)"
+ },
+ {
+  "idx": 602.7739127452202,
+  "rest2mi": 2400,
+  "rest1_5mi": 1777,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 599.8932011156812,
+  "rest2mi": 2470,
+  "rest1_5mi": 1963,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Koreatown East (6th/Vermont)"
+ },
+ {
+  "idx": 599.1445451158239,
+  "rest2mi": 2467,
+  "rest1_5mi": 1995,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Koreatown Core (Wilshire/Western)"
+ },
+ {
+  "idx": 598.9685525188975,
+  "rest2mi": 2427,
+  "rest1_5mi": 1927,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Koreatown Core (Wilshire/Western)"
+ },
+ {
+  "idx": 585.6820661271341,
+  "rest2mi": 2357,
+  "rest1_5mi": 1990,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Koreatown South (Olympic/Normandie)"
+ },
+ {
+  "idx": 583.0621745405591,
+  "rest2mi": 2214,
+  "rest1_5mi": 1709,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 580.2631154065833,
+  "rest2mi": 2376,
+  "rest1_5mi": 1962,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Koreatown South (Olympic/Normandie)"
+ },
+ {
+  "idx": 577.3970748412992,
+  "rest2mi": 2517,
+  "rest1_5mi": 1971,
+  "a": "Koreatown East (6th/Vermont)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 570.8490159670279,
+  "rest2mi": 2473,
+  "rest1_5mi": 1975,
+  "a": "Fashion District (9th/Santee)",
+  "b": "Koreatown East (6th/Vermont)"
+ },
+ {
+  "idx": 558.467664144168,
+  "rest2mi": 2451,
+  "rest1_5mi": 1856,
+  "a": "Koreatown Core (Wilshire/Western)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 557.4306922548575,
+  "rest2mi": 2429,
+  "rest1_5mi": 1869,
+  "a": "Fashion District (9th/Santee)",
+  "b": "Koreatown Core (Wilshire/Western)"
+ },
+ {
+  "idx": 552.9807925323271,
+  "rest2mi": 2424,
+  "rest1_5mi": 1919,
+  "a": "Koreatown South (Olympic/Normandie)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 543.4786369928051,
+  "rest2mi": 2349,
+  "rest1_5mi": 1924,
+  "a": "Fashion District (9th/Santee)",
+  "b": "Koreatown South (Olympic/Normandie)"
+ },
+ {
+  "idx": 541.7436769941726,
+  "rest2mi": 2477,
+  "rest1_5mi": 1949,
+  "a": "768 Ceres Ave (baseline, Warehouse District)",
+  "b": "Koreatown East (6th/Vermont)"
+ },
+ {
+  "idx": 541.6449037141083,
+  "rest2mi": 2216,
+  "rest1_5mi": 1651,
+  "a": "Fashion District (9th/Santee)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 539.2237827230447,
+  "rest2mi": 2162,
+  "rest1_5mi": 1634,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Westlake / MacArthur Park (7th/Alvarado)"
+ },
+ {
+  "idx": 538.6453869860032,
+  "rest2mi": 2464,
+  "rest1_5mi": 1837,
+  "a": "DTLA South Park (Pico/Flower)",
+  "b": "Koreatown East (6th/Vermont)"
+ },
+ {
+  "idx": 538.1543799614425,
+  "rest2mi": 2277,
+  "rest1_5mi": 1630,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "East Hollywood (Sunset/Vermont)"
+ },
+ {
+  "idx": 535.7873477977396,
+  "rest2mi": 2605,
+  "rest1_5mi": 1655,
+  "a": "Westlake / MacArthur Park (7th/Alvarado)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 534.9948849793321,
+  "rest2mi": 2360,
+  "rest1_5mi": 1622,
+  "a": "DTLA South Park (Pico/Flower)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 532.9978797976237,
+  "rest2mi": 2442,
+  "rest1_5mi": 1840,
+  "a": "DTLA South Park (Pico/Flower)",
+  "b": "Koreatown Core (Wilshire/Western)"
+ },
+ {
+  "idx": 532.3182970502959,
+  "rest2mi": 2159,
+  "rest1_5mi": 1638,
+  "a": "Hollywood (Hollywood/Vine)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 519.8684852879314,
+  "rest2mi": 2143,
+  "rest1_5mi": 1552,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Westlake / MacArthur Park (7th/Alvarado)"
+ },
+ {
+  "idx": 518.656272545988,
+  "rest2mi": 2093,
+  "rest1_5mi": 1562,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "East Hollywood (Sunset/Vermont)"
+ },
+ {
+  "idx": 517.8085205706171,
+  "rest2mi": 2378,
+  "rest1_5mi": 1834,
+  "a": "768 Ceres Ave (baseline, Warehouse District)",
+  "b": "Koreatown Core (Wilshire/Western)"
+ },
+ {
+  "idx": 515.6933517326515,
+  "rest2mi": 2235,
+  "rest1_5mi": 1643,
+  "a": "Westlake / MacArthur Park (7th/Alvarado)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 514.2097793711938,
+  "rest2mi": 2363,
+  "rest1_5mi": 1897,
+  "a": "768 Ceres Ave (baseline, Warehouse District)",
+  "b": "Koreatown South (Olympic/Normandie)"
+ },
+ {
+  "idx": 510.19181476095,
+  "rest2mi": 2318,
+  "rest1_5mi": 1808,
+  "a": "DTLA South Park (Pico/Flower)",
+  "b": "Koreatown South (Olympic/Normandie)"
+ },
+ {
+  "idx": 507.89914865136336,
+  "rest2mi": 2091,
+  "rest1_5mi": 1530,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Pico-Union (Pico/Union)"
+ },
+ {
+  "idx": 502.6251901989227,
+  "rest2mi": 2182,
+  "rest1_5mi": 1595,
+  "a": "Fashion District (9th/Santee)",
+  "b": "Westlake / MacArthur Park (7th/Alvarado)"
+ },
+ {
+  "idx": 502.0835389750489,
+  "rest2mi": 2530,
+  "rest1_5mi": 1570,
+  "a": "Pico-Union (Pico/Union)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 492.9107501349338,
+  "rest2mi": 2085,
+  "rest1_5mi": 1473,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Pico-Union (Pico/Union)"
+ },
+ {
+  "idx": 492.2070967312115,
+  "rest2mi": 2082,
+  "rest1_5mi": 1554,
+  "a": "DTLA Financial (7th/Figueroa)",
+  "b": "Silver Lake (Sunset/Silver Lake Blvd)"
+ },
+ {
+  "idx": 491.6591534767455,
+  "rest2mi": 2086,
+  "rest1_5mi": 1616,
+  "a": "768 Ceres Ave (baseline, Warehouse District)",
+  "b": "Hollywood (Hollywood/Vine)"
+ },
+ {
+  "idx": 491.172948577845,
+  "rest2mi": 2194,
+  "rest1_5mi": 1565,
+  "a": "Pico-Union (Pico/Union)",
+  "b": "Little Tokyo (1st/Central)"
+ },
+ {
+  "idx": 483.39645379193325,
+  "rest2mi": 2208,
+  "rest1_5mi": 1610,
+  "a": "768 Ceres Ave (baseline, Warehouse District)",
+  "b": "Westlake / MacArthur Park (7th/Alvarado)"
+ },
+ {
+  "idx": 479.75975541028055,
+  "rest2mi": 1955,
+  "rest1_5mi": 1487,
+  "a": "DTLA Historic Core (6th/Spring)",
+  "b": "Silver Lake (Sunset/Silver Lake Blvd)"
+ },
+ {
+  "idx": 477.23900171953636,
+  "rest2mi": 2095,
+  "rest1_5mi": 1504,
+  "a": "Fashion District (9th/Santee)",
+  "b": "East Hollywood (Sunset/Vermont)"
+ },
+ {
+  "idx": 470.58898298476043,
+  "rest2mi": 2239,
+  "rest1_5mi": 1475,
+  "a": "DTLA South Park (Pico/Flower)",
+  "b": "East Hollywood (Sunset/Vermont)"
+ }
+]
