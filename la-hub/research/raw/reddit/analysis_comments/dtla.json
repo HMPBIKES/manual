@@ -1,0 +1,427 @@
+{
+  "scope": "DTLA (Downtown Los Angeles incl. Pico-Union/Koreatown/USC spillover as referenced from DTLA docs). Source: area_DTLA.jsonl, 938 docs. Docs about other cities' downtowns (Toronto, Honolulu, Vancouver, Dallas, Rochester, Milwaukee, San Diego, Surrey BC, Longview WA) and Louisiana were excluded from evidence.",
+  "docs_read": 388,
+  "two_wheel_docs_read": 179,
+  "findings": [
+    {
+      "claim": "A DTLA courier who names a staging area says he deliberately stays OUT of the freeway-ringed downtown core and works the Pico-Union side, staging at the Home Depot on Wilshire and the fast-food strip on 7th St; a second comment from the same thread names Home Depot Wilshire as the spot to wait during office-worker ordering hours. This is the only explicit named staging routine in the corpus and it sits on the SW edge of DTLA (Pico-Union / Westlake edge), i.e. within ~1 mile of the v1 main-hub candidates. Caveat: this dasher appears to be in a car (mentions driving Mulholland at 2am).",
+      "evidence_count": 2,
+      "quotes": [
+        {
+          "quote": "I prefer DTLA because I can get a 7.5 dollar order on a .9-1.5 total miles order. I just dont go under the freeways into that downtown area thst all thr interstates circle i stay in the pico union area",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+          "sub": "doordash_drivers",
+          "year": 2026,
+          "score": 2,
+          "kind": "comment"
+        },
+        {
+          "quote": "Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+          "sub": "doordash_drivers",
+          "year": 2026,
+          "score": 2,
+          "kind": "comment"
+        },
+        {
+          "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+          "sub": "doordash_drivers",
+          "year": 2026,
+          "score": 1,
+          "kind": "comment"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "Directly supports v1 (Pico/Olympic corridor at the Pico-Union edge). Short 0.9-1.5 mi orders at ~$7.50 are exactly the e-bike/e-moped sweet spot. A hub within a few blocks of Home Depot (Wilshire/Union) or the 7th St fast-food strip would sit where at least one courier already idles."
+    },
+    {
+      "claim": "The one courier who names the DoorDash bicycle \"hotspot\" in DTLA places it at Spring St x 6th St (Historic Core), not on the Pico/Olympic corridor. Bike-mode hotspots are app-defined, so the core is where the platform expects two-wheel couriers to wait.",
+      "evidence_count": 1,
+      "quotes": [
+        {
+          "quote": "We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+          "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+          "sub": "doordash",
+          "year": 2019,
+          "score": 1,
+          "kind": "post"
+        }
+      ],
+      "confidence": "low",
+      "relevance_to_hub_location": "Argues against writing off 6th & Spring entirely: it is the app-designated bike hotspot (2019). A hub 1-1.5 mi away (18th St or Cordova) is still reachable but riders may want to idle near 6th/Spring. Consider a satellite/locker or partner cafe nearer the core rather than a full hub."
+    },
+    {
+      "claim": "Bike mode is starved in DTLA; riders report having to switch to scooter mode (which sends long orders far outside the core) or to a car/motorcycle to receive orders at all. Grubhub had no e-bike vehicle option for downtown and rejected an applicant who selected \"no car or motorcycle\". Uber routinely sends bike couriers ~3 mi outside DTLA to Koreatown/Silver Lake.",
+      "evidence_count": 8,
+      "quotes": [
+        {
+          "quote": "once I tried it not one delivery is bike friendly, only scooter mode gets orders, and they always go far away from downtown Core or inner ring road.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/",
+          "sub": "doordash_drivers",
+          "year": 2022,
+          "score": 2,
+          "kind": "post"
+        },
+        {
+          "quote": "I had to use scooter mode to get anything and I had to cherry pick ones that I can deliver by bike.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/12vic27/doordash_bicycle_mode_anyone_gotten_any_orders/",
+          "sub": "doordash_drivers",
+          "year": 2023,
+          "score": 1,
+          "kind": "post"
+        },
+        {
+          "quote": "When I put my 1st application in there was no option for ebike only car or motorcycle. should I have selected motorcycle?",
+          "url": "https://www.reddit.com/r/grubhubdrivers/comments/udhb8g/ebike_delivery_in_los_angeles/",
+          "sub": "grubhubdrivers",
+          "year": 2022,
+          "score": 2,
+          "kind": "post"
+        }
+      ],
+      "confidence": "high",
+      "relevance_to_hub_location": "Riders on HMP e-mopeds will likely register as scooter/motorcycle and receive orders spanning DTLA-Koreatown-USC-Silver Lake. A hub between DTLA and Koreatown (v1 main + K-town satellite) matches the actual order geography better than a core-only location. Battery range and swap access matter because scooter-mode orders are long."
+    },
+    {
+      "claim": "Scooter/e-scooter delivery in DTLA is described as faster per hour than car because of short, dense orders and zero parking time; motorcycle riders echo \"park anywhere\". But oversaturation is a recurring complaint: multiple bike/scooter riders report an hour or more online in DTLA with zero pings (2021, 2022, 2023, 2024).",
+      "evidence_count": 9,
+      "quotes": [
+        {
+          "quote": "No need to waste time finding parking. Using a car can waste you an extra 20 minutes for every passing hour and that 20 minutes I can already complete an extra delivery using a scooter.",
+          "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0dfet3",
+          "sub": "doordash",
+          "year": 2021,
+          "score": 2,
+          "kind": "comment"
+        },
+        {
+          "quote": "Last few times i was there, there were too many dashers online, and i saw them myself. Didnt get any request for an hour, more or less. And it just kept happening day after day.",
+          "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h09vcrh",
+          "sub": "doordash",
+          "year": 2021,
+          "score": 1,
+          "kind": "comment"
+        }
+      ],
+      "confidence": "high",
+      "relevance_to_hub_location": "Demand exists but is contested; a hub should not assume DTLA-only volume. Position so riders can drift to K-town/Hollywood/USC when the core is dead (again favouring the SW edge over the Historic Core or Ceres)."
+    },
+    {
+      "claim": "First-person two-wheel theft in DTLA: a DoorDash bike courier had his tires stolen while dashing; an e-bike owner tracked his stolen bike to downtown; another recovered a stolen bike on Skid Row via AirTag (2026). Long-time LA cyclists report double-digit bike thefts and advise Metro Bike or cheap bikes only.",
+      "evidence_count": 7,
+      "quotes": [
+        {
+          "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+          "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/",
+          "sub": "AskLosAngeles",
+          "year": 2024,
+          "score": 100,
+          "kind": "post"
+        },
+        {
+          "quote": "I recovered my stolen bike on Skid Row thanks to an AirTag last week.",
+          "url": "https://www.reddit.com/r/ebikes/comments/1vm0eff/2_ebikes_stolen_in_4_weeks_unlucky_or_stupid/p3chftk",
+          "sub": "ebikes",
+          "year": 2026,
+          "score": 1,
+          "kind": "comment"
+        }
+      ],
+      "confidence": "high",
+      "relevance_to_hub_location": "Skid Row is the named fence/strip site, so a hub at 768 Ceres would put fleet vehicles next to where stolen bikes end up. Secure indoor parking, GPS/AirTag, and wheel/tire locks are core hub features regardless of site."
+    },
+    {
+      "claim": "The Warehouse District / Skid Row edge (east of Main St, 6th-7th & Central/San Pedro/Alameda) is consistently described as a \"bike desert\" full of trucks, a place couriers want to get out of fast, where gated complexes force long waits amid encampments, and where police do not respond. The only positive is a shelter security guard who tips $10+ because most drivers refuse the area.",
+      "evidence_count": 10,
+      "quotes": [
+        {
+          "quote": "A great big \"bike desert\" East of ~ Main Street, with the added \"bonus\" of streets packed with trucks, industrial vehicles and sketchy drivers.",
+          "url": "https://www.reddit.com/r/LosAngeles/comments/53zjuw/dtla_arts_district_by_bike/",
+          "sub": "LosAngeles",
+          "year": 2016,
+          "score": 0,
+          "kind": "post"
+        },
+        {
+          "quote": "I work security in a homeless shelter in skid row , Los Angeles… genuinely have so much respect for my drivers that actually come thru . I always tip em ten bucks minimum.",
+          "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/",
+          "sub": "doordash",
+          "year": 2026,
+          "score": 12,
+          "kind": "post"
+        }
+      ],
+      "confidence": "high",
+      "relevance_to_hub_location": "Strongly supports v1 rejection of 768 Ceres Ave. No two-wheel rider describes staging, parking or waiting there; the only traffic is deliveries INTO the area, which riders try to avoid."
+    },
+    {
+      "claim": "Arts District: couriers say its restaurants and customers were the rudest in DTLA; cyclists say getting there from the core means crossing the Skid Row bike desert (6th St); residents note it closes early at night. Positive mentions are tourist/brewery meetups (Angel City, Arts District Brewery), not courier activity.",
+      "evidence_count": 6,
+      "quotes": [
+        {
+          "quote": "The Arts District in LA is so far the worst as of my second day, a few of the restaurants I’d pick up from there have been this way too",
+          "url": "https://www.reddit.com/r/UberEATS/comments/ubcag9/dtla_customers/",
+          "sub": "UberEATS",
+          "year": 2022,
+          "score": 2,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "Weak case for an Arts District hub: isolated from the core by Skid Row for two-wheelers, early-closing demand, and no courier hangout named there."
+    },
+    {
+      "claim": "Police/enforcement contact for two-wheelers concentrates on sidewalk riding (a $200 LAPD ticket on Wilshire; sidewalk riding described as 5x more common than street riding in K-town/DTLA) while high-speed Surrons reportedly go unticketed. Delivery-specific hassles: a dasher trespassed by private security for sitting on a building's steps, and parking citations for car couriers.",
+      "evidence_count": 6,
+      "quotes": [
+        {
+          "quote": "Just thought I'd let you guys know as it seems sidewalk riding seems 5x more popular than street riding at least in K-town/DTLA.",
+          "url": "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/",
+          "sub": "LosAngeles",
+          "year": 2019,
+          "score": 349,
+          "kind": "post"
+        },
+        {
+          "quote": "Last week I had a Door Dash Driver sitting on the steps of our property underneath a camera and was asked by our client to remove him.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/lc22gg/top_dasher_attitudes/",
+          "sub": "doordash_drivers",
+          "year": 2021,
+          "score": 6,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "A hub gives riders a legitimate place to idle instead of private steps/lobbies. Rider onboarding should cover sidewalk/bike-lane rules; enforcement risk is not tied to a specific sub-area."
+    },
+    {
+      "claim": "Bike-lane blocking and route quality: couriers on bikes call out cars parked in DTLA bike lanes; food trucks sit in the bike path; a daily DTLA bike commuter says 11th St westbound is far safer than 7th St despite 7th's bollard-protected lane. Cyclists describe DTLA drivers as life-threatening and cite crashes on 7th St.",
+      "evidence_count": 8,
+      "quotes": [
+        {
+          "quote": "You are a garbage human.  You are putting every delivery person on a bike at risk just cause you think your more important then the rest of us.",
+          "url": "https://www.reddit.com/r/UberEATS/comments/ps4sre/if_you_park_in_the_bike_lane_in_dtla/",
+          "sub": "UberEATS",
+          "year": 2021,
+          "score": 11,
+          "kind": "post"
+        },
+        {
+          "quote": "heading west through DTLA 11th street is *vastly* safer than taking 7th street, even though 7th street in theory has bollard proteted bike lanes and more traffic lights",
+          "url": "https://www.reddit.com/r/LosAngeles/comments/yhw8zd/biking_in_la_terrifies_me/iuj4mwy",
+          "sub": "LosAngeles",
+          "year": 2022,
+          "score": 1,
+          "kind": "comment"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "Favours the southern (9th-12th St) east-west streets that lead to the Pico/Olympic corridor over the 7th St spine. Supports a hub reachable via 11th/12th/Pico rather than via 7th."
+    },
+    {
+      "claim": "DTLA has a resident courier pool: international students and foreign renters are named twice as the downtown customer/rider base, and several riders say they live downtown car-free using e-scooters, Lime/Bird or e-bikes. Others commute in from South LA, Pico-Union, Koreatown, Hollywood (Red Line + scooter), Long Beach, Glendale, Riverside (bus + bike).",
+      "evidence_count": 12,
+      "quotes": [
+        {
+          "quote": "I thought nobody lives in downtown, it's only offices,  but I guess I was wrong, so many foreigners rent there. A lot of Asians and international students.",
+          "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+          "sub": "dtla",
+          "year": 2018,
+          "score": 1,
+          "kind": "post"
+        },
+        {
+          "quote": "I’m in downtown LA and also an international student who needs to make ends meet.",
+          "url": "https://www.reddit.com/r/ebikes/comments/1dnmppt/best_ebike_for_delivery_in_downtown_la/",
+          "sub": "ebikes",
+          "year": 2024,
+          "score": 1,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "Riders arrive via Metro (7th/Metro, Pico station) and from the south/west; a hub near Pico/Olympic with Blue/Expo access at Pico station fits. International-student riders are a marketing segment (USC/FIDM area is adjacent to the corridor)."
+    },
+    {
+      "claim": "Existing rider services mentioned in DTLA: Wombi (e-bike leasing office with roadside assistance, 2024), an authorized Dualtron/Minimotors dealer downtown (2019), Metro Bike share (5 mentions as the anti-theft option), Lime/Bird/Lyft/JUMP rentals, bike kitchens (Bikerowave, Bike Oven, Bike Kitchen), and Dirwin e-bike financing. No mention of Whizz, Zoomo, battery swap, or charging spots. Sidewalk delivery robots are noted as heavy in DTLA (2026).",
+      "evidence_count": 9,
+      "quotes": [
+        {
+          "quote": "There's a company called [Wombi](https://wombi.us/) that just opened up an office here to lease e-bikes. They offer things like road-side assistance and help with maintenance.",
+          "url": "https://www.reddit.com/r/LosAngeles/comments/1avlwkp/i_ride_a_bicycle_in_la_ask_me_anything/krcpng2",
+          "sub": "LosAngeles",
+          "year": 2024,
+          "score": 2,
+          "kind": "comment"
+        },
+        {
+          "quote": "Authorized Dualtron/minimotor dealers in downtown Los Angeles. If you want to buy a big scooter or get yours fixed this is the only place to go.",
+          "url": "https://www.reddit.com/r/ElectricScooters/comments/e16ul1/authorized_dualtronminimotor_dealers_in_downtown/",
+          "sub": "ElectricScooters",
+          "year": 2019,
+          "score": 8,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "No incumbent battery-swap/charging service is visible on Reddit for DTLA; a hub offering swap + repair fills a gap. Wombi is the only named lease competitor."
+    },
+    {
+      "claim": "Earnings on two wheels in DTLA are thin and dated: 2021 UE bike/foot $95-100 per 5-6 h vs DD $62.75 (~$10/hr); 2019 Postmates ~$10/hr before expenses; 2019 bike courier quit after a week. Car dashers working downtown report far higher: $15-30/hr (2019), $215+tips/day (2021), $230/8.5h (2022), $27.68/hr full-time (2025), $7.50 for a ~1 mi order (2026).",
+      "evidence_count": 9,
+      "quotes": [
+        {
+          "quote": "UE 5-6 hours on bike/foot. $95-100 on multiple days.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/q0yp2w/do_you_earn_marginally_less_for_dd_compared_to_ue/",
+          "sub": "doordash_drivers",
+          "year": 2021,
+          "score": 1,
+          "kind": "post"
+        },
+        {
+          "quote": "I am now averaging $6,581 every month ($1,661 every week) 1661 /60 =27.68/hr.",
+          "url": "https://www.reddit.com/r/doordash_drivers/comments/1od3jps/how_much_ive_made_so_far_this_year_with_miles_and/",
+          "sub": "doordash_drivers",
+          "year": 2025,
+          "score": 15,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "The car-vs-bike gap is the business case for e-mopeds registered in scooter/motorcycle mode: car-level order access with bike-level parking. Hub location matters less than vehicle mode for earnings."
+    },
+    {
+      "claim": "Pico/Olympic corridor logistics: free all-day street parking exists west of the 110 in Pico-Union (and under the 110 at Pico, south side), while east of the 110 is metered/tow-away; South Park is expected to draw Crypto.com Arena and Olympic crowds; a delivery driver reports squeegee crews appearing at 9th & Francisco. No two-wheel courier describes a problem specific to the corridor itself.",
+      "evidence_count": 5,
+      "quotes": [
+        {
+          "quote": "There is 100% FREE parking on the south side of Pico under the 110 bridge if you get there super early. DO NOT PARK ON THE NORTH SIDE OF PICO UNDER THE 110.",
+          "url": "https://www.reddit.com/r/LosAngeles/comments/8w25e2/psa_parking_at_the_convention_center_for_anime/",
+          "sub": "LosAngeles",
+          "year": 2018,
+          "score": 32,
+          "kind": "post"
+        }
+      ],
+      "confidence": "medium",
+      "relevance_to_hub_location": "Supports v1: riders who drive to the hub can park free on the Pico-Union side; event demand (arena/convention center) is adjacent; no rider-reported hazards specific to 9th-18th St."
+    }
+  ],
+  "sub_area_ranking": [
+    {
+      "sub_area": "Koreatown (spillover from DTLA)",
+      "two_wheel_docs": 17,
+      "staging_docs": 4,
+      "safety_docs": 18,
+      "sentiment": "positive",
+      "notes": "Bike/scooter couriers are routinely pushed 3 mi to K-town; a bike dasher recommends K-town/Hollywood over saturated DTLA; $200 sidewalk scooter ticket on Wilshire. Supports the v1 K-town satellite."
+    },
+    {
+      "sub_area": "Chinatown / Union Station / Olvera",
+      "two_wheel_docs": 11,
+      "staging_docs": 4,
+      "safety_docs": 28,
+      "sentiment": "neutral",
+      "notes": "Tourist and transit mentions; Chinatown petty crime at night; Howlin Rays Postmates demand. No two-wheel courier activity described."
+    },
+    {
+      "sub_area": "Historic Core / Spring-Broadway / 6th & Spring / Grand Central Market",
+      "two_wheel_docs": 11,
+      "staging_docs": 3,
+      "safety_docs": 21,
+      "sentiment": "mixed",
+      "notes": "App-designated DoorDash bike hotspot at Spring x 6th (2019); Grand Central Market is tourist-heavy; 7th/Spring station called dangerous at rush hour; resident moved away from \"the craziness that is Spring Street\". Night-time warnings from residents."
+    },
+    {
+      "sub_area": "Financial District / 7th St / Fig / Bunker Hill / Whole Foods",
+      "two_wheel_docs": 11,
+      "staging_docs": 1,
+      "safety_docs": 14,
+      "sentiment": "mixed",
+      "notes": "7th St Metro named busiest transit node; Whole Foods DTLA is a resident/scooter destination (Vespa on sidewalk complaint); 7th St bike lane judged less safe than 11th St; 2012 bike crash on 7th past Hope. Office-lunch demand."
+    },
+    {
+      "sub_area": "South Park / LA Live / Crypto-Staples / Convention Center / Figueroa",
+      "two_wheel_docs": 10,
+      "staging_docs": 8,
+      "safety_docs": 20,
+      "sentiment": "positive",
+      "notes": "E-scooter meetup proposed at LA Live; South Park named for arena + Olympic crowds; dense new residential (Circa) on Figueroa; Pico station transit. Mostly tourist/event mentions; no courier hassle reported."
+    },
+    {
+      "sub_area": "Little Tokyo",
+      "two_wheel_docs": 9,
+      "staging_docs": 3,
+      "safety_docs": 26,
+      "sentiment": "neutral",
+      "notes": "Tourist/food destination; Dave's Hot Chicken (131 S Central) address bug; night walking to/from Union Station debated. No courier staging."
+    },
+    {
+      "sub_area": "Pico-Union / Pico-Olympic SW edge (Home Depot Wilshire, 7th St strip, Pico under 110)",
+      "two_wheel_docs": 6,
+      "staging_docs": 4,
+      "safety_docs": 8,
+      "sentiment": "positive",
+      "notes": "Only named courier staging routine in corpus (Home Depot Wilshire; hammys/Little Caesars on 7th); free parking west of 110; Pico-Union residents bike into DTLA; squeegee crews at 9th & Francisco (2023). No two-wheel rider reports a corridor-specific hazard."
+    },
+    {
+      "sub_area": "Skid Row / Warehouse District (Ceres, San Pedro, Central, Alameda)",
+      "two_wheel_docs": 6,
+      "staging_docs": 3,
+      "safety_docs": 21,
+      "sentiment": "negative",
+      "notes": "Bike desert east of Main; trucks; stolen bike recovered on Skid Row; couriers want to gtfo; gated complexes amid encampments; cops do not respond (shelter guard). No staging or parking by two-wheelers reported."
+    },
+    {
+      "sub_area": "Arts District",
+      "two_wheel_docs": 6,
+      "staging_docs": 3,
+      "safety_docs": 13,
+      "sentiment": "negative",
+      "notes": "Rudest customers/restaurants per new UE courier; reachable from core only via Skid Row for bikes; closes early; brewery meetups only."
+    },
+    {
+      "sub_area": "USC / Exposition (spillover)",
+      "two_wheel_docs": 6,
+      "staging_docs": 2,
+      "safety_docs": 11,
+      "sentiment": "positive",
+      "notes": "Car dashers rotate DTLA-USC; overnight USC is called good; international-student riders. Adjacent to the Pico/Olympic corridor via Figueroa."
+    },
+    {
+      "sub_area": "Fashion District / Santee",
+      "two_wheel_docs": 0,
+      "staging_docs": 0,
+      "safety_docs": 1,
+      "sentiment": "neutral",
+      "notes": "Essentially absent from the two-wheel/courier corpus (4 incidental mentions)."
+    }
+  ],
+  "surprises": [
+    "The only explicitly named courier staging routine in the entire DTLA corpus is on the Pico-Union side (Home Depot on Wilshire; Hammy's/Little Caesars on 7th) by a dasher who refuses to go inside the freeway ring - almost exactly the v1 main-hub geography, though he is likely in a car.",
+    "The DoorDash bike-mode hotspot named by a bike dasher (2019) is Spring St x 6th St in the Historic Core - the intersection v1 rules out.",
+    "Bike mode is effectively dead in DTLA; riders get orders only in scooter mode, and those orders leave the core. E-moped riders will be pulled toward Koreatown/Silver Lake/USC, which argues for a hub on the DTLA-Koreatown axis rather than deep in the core.",
+    "No Reddit mention of Whizz, Zoomo, battery swap, or public charging spots anywhere in the DTLA corpus; Wombi (e-bike lease with roadside assistance, 2024) is the only named lease competitor, plus one Dualtron/Minimotors dealer (2019).",
+    "A Skid Row shelter security guard tips $10 minimum because most drivers refuse the area - deliveries INTO Skid Row are lucrative per-order but nobody stages there.",
+    "Stolen bikes are recovered on Skid Row (AirTag, 2026) and tracked \"to an area downtown\" (2022): the Ceres/Warehouse area is the fence, not a place to keep a fleet.",
+    "Sidewalk delivery robots (Serve/Coco-style) are now dense enough in DTLA that residents complain about them (2026) and one customer prefers them over drivers for burritos - a competitive signal for short-hop DTLA orders.",
+    "Two-wheel earnings figures are all pre-2022 and ~$10/hr; every strong DTLA earnings report ($27.68/hr 2025, $215/day 2021) is from a car. The e-moped-in-scooter-mode pitch is the bridge."
+  ],
+  "contradicts_v1": [
+    "The app-designated DoorDash bicycle hotspot is Spring St x 6th St (Historic Core), where v1 refuses to site. Riders may idle there regardless; a locker/partner point near 6th & Spring may be needed even if the hub is on Pico.",
+    "A 2023 delivery driver reports squeegee crews newly appearing at 9th & Francisco and spreading to nearby intersections - inside the South Park end of the v1 corridor.",
+    "A daily DTLA bike commuter says 11th St is far safer than 7th St for westbound cycling; if the hub is at 18th St the last-mile access streets should be checked - Pico itself is not mentioned as a bike route by any rider.",
+    "Several riders say DTLA is oversaturated with dashers and dead for hours; the K-town satellite may need to be the primary rider-facing location if scooter-mode orders keep pulling riders west.",
+    "Evidence against Ceres is about Skid Row proper (5th-7th, San Pedro/Central); no doc names Ceres Ave, 7th/Central or 768 Ceres specifically, and the one shelter-guard post shows per-order tips are high there. The rejection rests on adjacency, not on a rider-reported incident at that address."
+  ],
+  "data_limits": [
+    "Read in full: all 179 two_wheel docs, all 140 other flagged (staging/theft/night/vehicle) docs except two duplicate COVID-19 megathreads, 68 gig-related unflagged docs, and 3 unflagged docs surfaced by keyword sweep (= 388 docs). The remaining ~550 unflagged docs (tourist itineraries, food lists, general LA chat) were skimmed only via regex sweeps for sub-area names, services, hangouts and police terms.",
+    "Six of the ten \"flags.earn\" docs and about half of the \"night\"/\"staging\" flagged docs are noise: COVID megathreads, tourist itineraries, out-of-town downtowns (Toronto, Honolulu, Dallas, Rochester, Vancouver, San Diego, Longview WA), or a Louisiana mover.",
+    "Only one doc names a courier staging spot in DTLA (om5mqx0/om5oxt3) and one names the bike hotspot (avp2wa); sub-area conclusions rest on very few first-person courier voices. Sub-area counts in sub_area_ranking are regex matches over all 938 docs, not hand-verified relevance.",
+    "No doc mentions Ceres Ave, 768 Ceres, 7th/Central, 1738 Cordova, 18th St, or 856 S Vermont by name; Fashion District appears only 4 times incidentally.",
+    "No mention of Whizz, Zoomo, battery swap, charging, McDonald's or hotel lobbies as courier hangouts in DTLA; 7-Eleven appears once (near Dodger Stadium). Absence on Reddit is not absence on the street.",
+    "Vehicle mode of many DTLA earners is inferred (car vs two-wheel) from context; om5mqx0 is treated as a car dasher because he describes driving Mulholland at 2am.",
+    "Corpus skews to r/AskLosAngeles and r/LosAngeles (660 of 938 docs) which are resident/tourist voices; courier subs contribute ~215 docs, most from 2020-2024."
+  ]
+}

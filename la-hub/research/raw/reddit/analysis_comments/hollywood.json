@@ -1,0 +1,490 @@
+{
+ "scope": "Hollywood, East Hollywood/Thai Town, West Hollywood, Silver Lake, Echo Park, Los Feliz — area_Hollywood.jsonl (740), area_West_Hollywood.jsonl (265), area_Silver_Lake_Echo_Park.jsonl (357); 1224 unique docs after de-dup across files. Florida check: 8 docs carried FL markers, only oggcli (r/UberEATS 2021, 'University Drive'/Davie) is Hollywood FL and was excluded.",
+ "docs_read": {
+  "unique_docs": 1224,
+  "flagged_read_in_full": 333,
+  "flagged_skipped_as_noise": "5 COVID-19 megathreads (g0typ1, fw53bq, fmic61, fnn5j9, fojx5t) — grepped, no courier/two-wheel content",
+  "unflagged_delivery_sub_docs_read_in_full": 215,
+  "unflagged_other_docs_keyword_skimmed": 115,
+  "external_thread_replies_pulled": 35
+ },
+ "two_wheel_docs_read": {
+  "flag_two_wheel_unique": 151,
+  "classified_two_wheel_self_delivery": 14,
+  "classified_two_wheel_prospective_delivery": 11,
+  "classified_two_wheel_self_personal": 54,
+  "classified_two_wheel_observed": 39
+ },
+ "per_area": [
+  {
+   "area": "Hollywood (incl. East Hollywood, Thai Town, Hollywood Hills)",
+   "docs": 740,
+   "two_wheel_self_docs": 49,
+   "two_wheel_observed_docs": 22,
+   "car_docs": 174,
+   "sentiment_for_two_wheel": "mixed-positive for e-scooter/e-bike (speed through traffic, Sunset lane to DTLA), strongly negative on theft and on Hollywood Blvd sidewalk/night safety",
+   "notes": "two_wheel_self = 10 delivery riders (7 of them 2018-2021; 5 are one e-scooter YouTuber's posts) + 39 personal commuters/riders; plus 7 prospective delivery riders asking whether to switch to bike/e-bike (2021-2026). car_docs = delivery-sub docs (UberEATS/doordash/grubhub/couriers) not identified as two-wheel; nearly all car dashers, many just 'is Hollywood dead today?'. 225 flagged docs read in full; 1 Florida doc (oggcli, University Dr/Davie) excluded."
+  },
+  {
+   "area": "West Hollywood (incl. Sunset Strip, Melrose/Fairfax edge)",
+   "docs": 265,
+   "two_wheel_self_docs": 13,
+   "two_wheel_observed_docs": 9,
+   "car_docs": 74,
+   "sentiment_for_two_wheel": "neutral: WeHo is flat and small ('one end to the other in minutes' on a bike), sidewalk riding legal where no bike lane, but couriers report the WeHo/BH zone as dead or over-saturated and LAPD stops on night bike messengers",
+   "notes": "two_wheel_self = 3 delivery (2018 bike messenger 7sdaho, 2018 bicycle dtam4b0, 2025 Valley bicycle 1kyp7be) + 10 personal; 4 prospective (NYC bike courier moving to WeHo 2023, e-bike+metro 2026). car_docs dominated by 'WeHo/BH slow today' posts 2021-2025; best staging tips are car-based (Toast Bakery AM, Terroni PM). Delivery robots (Serve/Coco) observed in WeHo 2022-2026."
+  },
+  {
+   "area": "Silver Lake / Echo Park / Los Feliz",
+   "docs": 357,
+   "two_wheel_self_docs": 18,
+   "two_wheel_observed_docs": 13,
+   "car_docs": 24,
+   "sentiment_for_two_wheel": "negative on pedal bikes (hills 'more than SF', lanes vanish on Hyperion/Silver Lake Blvd), positive on e-bike/e-scooter as the only sane way, Los Feliz singled out as flat + Red Line",
+   "notes": "two_wheel_self = 3 delivery (2020 courier on SL hills, 2018 DTLA bike couriers sent 3 mi into SL/Ktown) + 15 personal; 2 prospective. Only 27 delivery-sub docs — this area is mostly r/AskLosAngeles 'car-free living' threads. Demand signal: 'Silverlake be flooded with orders' (2025) and Echo Park hot zones, but customers on hilltops; Dodger game traffic shuts Echo Park (o23ir8)."
+  }
+ ],
+ "findings": [
+  {
+   "claim": "DoorDash's 'Hollywood-Silverlake' zone explicitly includes Koreatown and routinely sends couriers into DTLA; Koreatown residents dash in it. A hub in Koreatown or on the Pico/Olympic corridor therefore sits inside or on the edge of this zone's working area, not outside it.",
+   "evidence_count": 9,
+   "quotes": [
+    {
+     "quote": "I also dash mainly in Hollywood/Silverlake, which already has bad parking, but that delivery zone also has Koreatown in it and sometimes sends you to customers in DTLA, so I think parking would be a lot easier.",
+     "url": "https://www.reddit.com/r/doordash/comments/11khbg4/dashing_on_a_bike_in_la_worth_it/",
+     "sub": "doordash",
+     "year": 2023,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "11khbg4"
+    },
+    {
+     "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night. I read other people sometimes wait 10-70 minutes for an order but none at all? This doesn’t seem right. Does anyone else have this issue? Maybe it’s my area of Hollywood-Silverlake?",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 3,
+     "kind": "post",
+     "doc_id": "1hcs3ic"
+    },
+    {
+     "quote": "I just dont go under the freeways into that downtown area thst all thr interstates circle i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "uber can send you a 3 miles outside DTLA, to koreatown or silverlake etc",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dtc8eab",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "dtc8eab"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Directly supports v1: the Hollywood-Silverlake zone overlaps Koreatown and pushes riders toward DTLA/Pico-Union, so a Ktown satellite plus a Pico/Olympic main hub is reachable from where these riders already work. Also shows Pico-Union car dashers get pulled into the Hollywood zone. Other supporting docs: lzvqkn (2021, 'Hollywood-Silverlake area'), d999hr (2019 peak pay 'Hollywood/Silverlake' 7:30-10:30am), 11xwpuh (2023), 1ddwoir (2024 'Central LA/Downtown/Silver Lake/Hollywood'), 1arx505 (2024, orders 'from hollywood to east downtown'), 19bwxgz (2024, Joe's Pizza Hollywood to DTLA high-rise 8 mi)."
+  },
+  {
+   "claim": "Hollywood-Silverlake is reported as much busier than the 'Hollywood-Beverly Hills' / WeHo-BH zone; east-of-Highland Hollywood and Silver Lake get 'tons' of pings while the WeHo/Grove side is dead. Volume sits on the EAST side of the scope, closest to Koreatown.",
+   "evidence_count": 8,
+   "quotes": [
+    {
+     "quote": "I live in Hollywood and dash in both Hollywood-Beverly Hills as well as Hollywood-Silverlake zones. \n\nIt’s crazy to me how Bev zone is SOOOOO dead every day and Silverlake be flooded with orders.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1mottyz/some_zones_kill_all_momentum/",
+     "sub": "doordash_drivers",
+     "year": 2025,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "1mottyz"
+    },
+    {
+     "quote": "I noticed there is not one request once I enter West Hollywood side of the area or the grove but over near silver lake and the other side of the Chinese theater I get tons.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/nzb8ga/no_requests_in_beverly_hillswest_holly/",
+     "sub": "UberEATS",
+     "year": 2021,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "nzb8ga"
+    },
+    {
+     "quote": "I suggest goin to ktown/hollywood. They’re always poppin!\n\nBtw i am on a bicycle",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h09vcrh",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "h09vcrh"
+    }
+   ],
+   "confidence": "medium-high",
+   "relevance_to_hub_location": "Argues against a WeHo/west-Hollywood location and for an East Hollywood / Koreatown-adjacent one. Additional docs: dr5nfj (2019 UE driver 'usually stick to Hollywood or ktown', goes offline in Beverly Hills), vktvvd (2022 'Hollywood and ktown' treated as one working area), 1ljf3jq (2025 WeHo & Silverlake only 3-7am orders), 19biw59 (2024 BH/WeHo 'always shows very busy but always silent'), zt7c2l (2022 drove to WeHo, zero orders in 90 min), dbo7h8 (2019 'West Hollywood Beverly Hills zone')."
+  },
+  {
+   "claim": "Two-wheel food delivery in Hollywood is real but small and mostly 2019-2021 (e-scooter 'unicorn' era, bicycle dashers). In 2023-2026 the posts are prospective ('should I switch to bike/e-bike?') with no answers, and one bike courier in the Valley says WeHo/Hollywood is not a good bicycle area.",
+   "evidence_count": 24,
+   "quotes": [
+    {
+     "quote": "Unicorns in Hollywood 🦄 - My acceptance rate is about 15%. I’m on an electric scooter and these are the jobs that I really make a killing on. Anything with a 10 to 1 $ to miles ratio is a unicorn to me 🙏🏻",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/dm0jhp/unicorns_in_hollywood_my_acceptance_rate_is_about/",
+     "sub": "doordash_drivers",
+     "year": 2019,
+     "score": 71,
+     "kind": "post",
+     "doc_id": "dm0jhp"
+    },
+    {
+     "quote": "This is just a really good market with lots of wealthy people/high-end offices/entertainment industry places that order a lot of food and know how to tip properly. If you know where to hang out while dashing and keep your acceptance rate low, you’re set.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/dm0jhp/unicorns_in_hollywood_my_acceptance_rate_is_about/f56kzqq",
+     "sub": "doordash_drivers",
+     "year": 2019,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "f56kzqq"
+    },
+    {
+     "quote": "I don't understand why people go to dtown unless you have electric bike or scooter.\n\nJust go to white people areas nearby like los feliz, silver lake, echo park, at water village then you should be fine and will do better in tips.",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/hm4wch3",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "hm4wch3"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Hollywood two-wheel delivery self-reports: dm0jhp, djzc4p, e9pn3f, fah04r, ffvecm (all 2019-20 e-scooter, same YouTuber cluster), dtam4b0 (2018 bicycle WeHo/Hollywood/BH/SM), h09vcrh (2021 bicycle), 7u8jh1 (2018 bicycle; DTLA busier than BH/Hollywood), avp2wa (2019 bicycle), 1kyp7be (2025 bicycle from Valley). Prospective: piraz3 2021, 11khbg4 2023, 10k0vso/10k0wio 2023 (NYC bike courier moving to WeHo), 1f9x83i 2024, 1ke5hch/hv7/gt4 2025 (1500-delivery car dasher wants e-bike), 1qlhg3s 2026. The e-bike demand signal is there but the 'best earnings sentiment' in v1 rests on 5 posts by essentially one 2019-20 scooter rider; treat as dated."
+  },
+  {
+   "claim": "Best e-vehicle for this terrain, per riders: a ~28 mph e-bike or a high-power e-scooter that can climb Silver Lake/Echo Park/Hollywood Hills grades and cover Hollywood-to-DTLA (5-7 mi) in ~30 min; Silver Lake/Echo Park hills are repeatedly called un-bikeable on pedal bikes.",
+   "evidence_count": 12,
+   "quotes": [
+    {
+     "quote": "I think a 28mph ebike is the sweet spot for flattening the hills, keeping up with traffic on the side streets, and covering some of the larger distances between points of interest.  But it's going to be risky to leave locked up anywhere.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1iyt1ld/is_it_possible_to_get_around_la_with_bike/mexjk5r",
+     "sub": "AskLosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "mexjk5r"
+    },
+    {
+     "quote": "I love long rides on my Dualtron Ultra! Hollywood to downtown Los Angeles in about 30 minutes. Probably faster than a car with any sort of traffic.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/euq6x3/i_love_long_rides_on_my_dualtron_ultra_hollywood/",
+     "sub": "ElectricScooters",
+     "year": 2020,
+     "score": 79,
+     "kind": "post",
+     "doc_id": "euq6x3"
+    },
+    {
+     "quote": "Cheap ass people in Silver Lake and biking up some of those curvy hills is no joke",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/f9p8t5/cheap_ass_people_in_silver_lake_and_biking_up/",
+     "sub": "couriersofreddit",
+     "year": 2020,
+     "score": 37,
+     "kind": "post",
+     "doc_id": "f9p8t5"
+    },
+    {
+     "quote": "Silverlake and Echo Park are not good neighborhoods for biking because they're extremely hilly, even moreso than San Francisco!",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/13p6wco/how_doable_is_silver_lakelos_felizecho_et_al/jl9hxcj",
+     "sub": "AskLosAngeles",
+     "year": 2023,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "jl9hxcj"
+    },
+    {
+     "quote": "I feel especially bad knowing that my order is coming from DTLA when I live at the very top of a hill in Echo Park. I always tip that person, they show up exhausted.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dt93l45",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 10,
+     "kind": "comment",
+     "doc_id": "dt93l45"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Speed/range spec for the rental fleet: riders want 28 mph class-3 or moped-class, hill torque, and range for 5-7 mi cross-town drops (Hollywood<->DTLA; a Beverly Hills->Echo Park stack in 10csgoa was 13 mi). Also: om5mqx0 (2026 car dasher: 'having to bring even a 7 dollar order into the hollywood hills sucks at 2am'), 1440dwx (2023 Echo Park DIY e-bike, 750W/48V/18Ah for 10 mi uphill to Pasadena), v6onwu (2022 upgraded rotors for Griffith Park descents), lazf5g4 (2024 Los Feliz uphill harder to bike), d7n41wa (2016 hops off and walks SL hills), iqjjyw (2020 car dasher lost in dark curvy Hollywood Hills), 84n1ju (2018 WeHo->Griffith Park hills order). Flat corridor riders praise: Sunset bike lane to DTLA (mfbfwa6), Los Feliz 'flat enough to bike' (jl9hxcj)."
+  },
+  {
+   "claim": "Bike/e-bike/e-scooter theft in Hollywood is described as near-certain; riders keep bikes indoors and would not leave an e-bike locked in an apartment garage. This favors a staffed hub with secure parking/swap over street-locked personal e-bikes.",
+   "evidence_count": 10,
+   "quotes": [
+    {
+     "quote": "100% it will be stolen or vandalized.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1nd404t/tired_of_lugging_my_ebike_up_3_stairs_what_are/nde1659",
+     "sub": "ebikes",
+     "year": 2025,
+     "score": 36,
+     "kind": "comment",
+     "doc_id": "nde1659"
+    },
+    {
+     "quote": "Your bike will not be safe in an apt. parking area anywhere in Hollywood. Sorry, but it's true.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1nd404t/tired_of_lugging_my_ebike_up_3_stairs_what_are/ndeq5lm",
+     "sub": "ebikes",
+     "year": 2025,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "ndeq5lm"
+    },
+    {
+     "quote": "Sunset has a bikelane all the way to dtla and its a very nice ride, about 30 mins. Make sure you get the right tu es and tires to protect against flats and get the most expensive lock you can find. I had into the double digits bikes stolen over two decades. The theft is crazy bad.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1iyt1ld/is_it_possible_to_get_around_la_with_bike/mfbfwa6",
+     "sub": "AskLosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "mfbfwa6"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Strong product-fit argument for a secure hub (charging + storage) regardless of exact location. Other docs: 1nd404t (2025 Hollywood Lectric owner), ndge5na (2025 'it will absolutely get messed with'), nde9ban (2025 'Hollywood can be sketchy or lovely in a matter of blocks'; e-bikes impounded by police), sadu6h (2022 Kaabo Wolf Warrior stolen in Hollywood), d7ndy40 (2016 hoists bike to ceiling, almost stolen), laxxme3 (2024 Los Feliz catalytic converters stolen repeatedly), ifi3l32 (2022 Atwater food truck stolen)."
+  },
+  {
+   "claim": "Safety on the ground: night work in Hollywood is called dangerous by couriers (robbery/'crazy people', food snatched by strangers, threats at drop-off), LAPD repeatedly stopped a night bike messenger in Beverly Hills/WeHo, and DUI checkpoints appear on Sunset near Fairfax on Friday nights. Female dashers say they stop at dark.",
+   "evidence_count": 11,
+   "quotes": [
+    {
+     "quote": "I see a lot of y’all out here working the graveyard shift in La/Hollywood area in SLIDES. Don’t get me wrong I love me some slides and their comfort but it’s dangerous out here. Especially at late night ! You never know when you gotta run from some crazy people out here man.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/q94p9a/better_careful/",
+     "sub": "UberEATS",
+     "year": 2021,
+     "score": 11,
+     "kind": "post",
+     "doc_id": "q94p9a"
+    },
+    {
+     "quote": "on a week they pull me over more than 3 times , i am a bike messenger in LA ,  i deliver during dinner time , from 6 to 12am , and i have to cover myself with a hoodie and wear gloves , i have lights and everything",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "7sdaho"
+    },
+    {
+     "quote": "i just believe they suspect every young person ,  and they bother most in beverly hills and weho",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "7sdaho"
+    }
+   ],
+   "confidence": "medium-high",
+   "relevance_to_hub_location": "Night is when Hollywood pays (ibvl7ur, om5mqx0 'overnight east LA after club hours', 1l6l1g8 4am WeHo Pride), but it is also when riders feel exposed; a hub that is open late with lit, staffed swap matters more than the exact block. Other docs: t8ubde (2022 stranger took order on Hollywood stairs), 1vu8qsi (2026 threatened by 'meth'd out gangbangers' asking for PIN), qsv5ea (2021 female dasher won't dash after dark, 'sketchy apartments with no parking'), fhj1er (2020 felt unsafe in Hollywood), 14bh48o/14bgxo3 (2023 DUI checkpoint Sunset 1 block east of Fairfax), 8k1qnm (2018 robbed at gunpoint, bystanders refused help), 10oy016 (2023 pedestrian struck in WeHo). Police note: 7sdaho's stops were in BH/WeHo, not East Hollywood."
+  },
+  {
+   "claim": "Where these riders live/commute from: Koreatown, Thai Town/East Hollywood, the Sunset Strip, Silver Lake/Echo Park, and the San Fernando Valley (Sherman Oaks, NoHo, Woodland Hills). Valley-based couriers already drive/ride 8-10 miles over the hill to work Hollywood; Ktown/E. Hollywood residents are 2-4 miles from a Ktown or Pico/Olympic hub.",
+   "evidence_count": 14,
+   "quotes": [
+    {
+     "quote": "I live and deliver in the Thai Town/East Hollywood area, sometimes ending up going as far as Santa Monica, Pico-Union, Pasadena, or Burbank.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/12i4jje/lack_of_deliveries_in_la_anyone_else/",
+     "sub": "UberEATS",
+     "year": 2023,
+     "score": 16,
+     "kind": "post",
+     "doc_id": "12i4jje"
+    },
+    {
+     "quote": "As a full-time cyclist commuter living in Koreatown and working in Hollywood this would make my life beautiful.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1p9vwi/i_wonder_if_la_could_learn_from_the_netherlands/cd0d8h7",
+     "sub": "LosAngeles",
+     "year": 2013,
+     "score": 24,
+     "kind": "comment",
+     "doc_id": "cd0d8h7"
+    },
+    {
+     "quote": "I’m in the valley and sometimes venture out in WeHo/Hollywood area but feel like there’s got to be a better area to do bicycle deliveries",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1kyp7be/best_area_to_do_bicycle_deliveries_in_los_angeles/",
+     "sub": "UberEATS",
+     "year": 2025,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "1kyp7be"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "Riders who live in Ktown/E. Hollywood (1hcs3ic, 12i4jje, jl8jwdp, mfbfwa6, 1mottyz 'I live in Hollywood') are within 3-5 mi of either v1 site; Valley riders (w4tjn2, 12tqlzk, 1cmqapp, 14l56wu, ffrcopl, 1f9x83i, 1kyp7be, u6mu9u) treat Hollywood as their southern edge and would find a south-DTLA hub 12+ mi away — a Ktown/East Hollywood satellite is the realistic catchment for them. Nobody in the corpus states a willingness to ride X miles to a hub; that is inferred from commute patterns (Mar Vista->WeHo 9 mi daily d7ni13x; Sherman Oaks->Hollywood bike+transit d7ox9ww; Ktown->Hollywood cd0d8h7)."
+  },
+  {
+   "claim": "Earnings in scope, by year and vehicle (car unless stated): 2019 $15-30/hr DTLA/Hollywood/SM (c3ltdn); 2019 e-scooter 'unicorn' $18-30 orders Hollywood (dm0jhp/f56kzqq); 2020 $13/hr Hollywood covid (fq7m1m), $50-80 per 4 hr WeHo (k3e5yk); 2021 $61 per 4.5 hr BH/WeHo DD vs $25/hr Postmates (o28sec), GH $20/hr avg (kzna1w); 2022 GH Hollywood/WeHo fell from $200/day to $50-150/day (wh3f3f), UE 8.5 hr $230 (ibu84hp); 2023 $30/hr avg over 150 deliveries LA/Hollywood (13fandx), UE $18-23/hr WeHo/BH (152mtnt), $60/hr peaks WeHo (jr8jkr7); 2024 $18-30/hr WeHo (1gmn1zo), $8/hr peak Hollywood+DTLA (1dnuui4), $287/98 mi/25 runs Hollywood (l7k5hrl); 2025 $770/12 hr NoHo-Burbank incl Prop 22 (1jtukli), $20-25/hr east suburbs (1pxwvvo).",
+   "evidence_count": 16,
+   "quotes": [
+    {
+     "quote": "I recommend parking close to Toast Bakery and Cafe for the morning shift and near Terroni’s at night. Both are pretty order dense areas. The people who order from Terroni’s are usually pretty wealthy so the tips are good. Several times I made over $60 an hour.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/14ufhw8/lost_my_job_back_to_dashing_but/jr8jkr7",
+     "sub": "doordash_drivers",
+     "year": 2023,
+     "score": 5,
+     "kind": "comment",
+     "doc_id": "jr8jkr7"
+    },
+    {
+     "quote": "I usually make about $18-$30 an hour in West Hollywood.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1gmn1zo/has_doordash_been_really_slow_since_the_election/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 53,
+     "kind": "post",
+     "doc_id": "1gmn1zo"
+    },
+    {
+     "quote": "this is Los Angeles working Weekends PEAK HOURS in Hollywood and DTLA",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1dnuui4/making_8_an_hour_in_los_angeles_peak_hours_days/",
+     "sub": "UberEATS",
+     "year": 2024,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "1dnuui4"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "No two-wheel hourly figure exists for 2022-2026 in scope; all recent numbers are car. Trend is clearly down since 2021 with strong saturation complaints (mbr6khr 'insane amount of drivers in Hollywood', 1pxwvvo 'vulture-like dashers', 1ljf3jq only 3-7am orders, 19biw59 3 pings/day). Hollywood's edge is tip quality/celebrity orders ('Big Tip Energy' series 2023-25), not volume per rider."
+  },
+  {
+   "claim": "Traffic, not demand, is the recurring complaint about working Hollywood by car ('too much time in traffic unless late night', 'half an hour to go a mile'); this is the strongest pro-two-wheel argument in the corpus and it points at exactly the dense Hollywood-Ktown-DTLA spine.",
+   "evidence_count": 7,
+   "quotes": [
+    {
+     "quote": "I actually don't really recommend working downtown or Hollywood. You get many deliveries but spend too much time in traffic. Unless you work late night.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/v8slm4/i_can_officially_no_longer_afford_to_work/ibvl7ur",
+     "sub": "couriersofreddit",
+     "year": 2022,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "ibvl7ur"
+    },
+    {
+     "quote": "there’s an insane amount of drivers in Hollywood to not take that order for even $25",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1ikdt0t/i_declined_this_103_uber_eats_offer_in_los/mbr6khr",
+     "sub": "UberEATS",
+     "year": 2025,
+     "score": 10,
+     "kind": "comment",
+     "doc_id": "mbr6khr"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Supports an e-moped fleet positioned on the corridor between Hollywood and DTLA. Other docs: 14zp36s (2023 'won't miss driving in LA traffic (especially in Hollywood)'), u6mu9u (2022 'half an hour to go a mile' in Hollywood), qsv5ea (2021 '20-40 mins to go 3-8 miles'), bteuee (2019 concert traffic), trxb0x (2022 'I just hate the parking' in Hollywood), 1vu8qsi (2026 forced to double park, valet-only restaurants)."
+  },
+  {
+   "claim": "Case for an East Hollywood corridor (Vermont/Sunset to Western/Santa Monica) as the satellite instead of Koreatown-South/East: it is the geographic hinge of the Hollywood-Silverlake zone, on the Red Line (Vermont/Sunset, Hollywood/Western), has the Sunset bike lane straight to DTLA, the Hollywood Blvd protected lane east of Gower, cloud kitchens on Western, and riders already describe East Hollywood as the most car-free-livable part of the scope.",
+   "evidence_count": 10,
+   "quotes": [
+    {
+     "quote": "I think East Hollywood is better than Silverlake for carless living because the red line is closer.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/13p6wco/how_doable_is_silver_lakelos_felizecho_et_al/jlbx3s1",
+     "sub": "AskLosAngeles",
+     "year": 2023,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "jlbx3s1"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "This is the one argument that could shift v1's satellite north by ~1.5-2 mi (from Ktown South/East to Vermont/Sunset or Western/Santa Monica). Support: mfbfwa6 (Sunset bike lane to DTLA 30 min), m4qh6eu/oqhvgav (Hollywood Blvd bike lane by Thai Town toward the 101), f6dg7k (2020 Uber pickups at 'the cloud kitchen on Western in Hollywood'), nqdv5q (2021 cyclist on Western/Beverly/New Hampshire/Temple E. Hollywood/Rampart), ict3730 (Hollywood/Western walkable), jl89588 (2023 'Thai food, dispensaries, coffee, and the Metro' in E. Hollywood), o30dl41 (Thai Town->Western bus->Ktown as one trip), jl8jwdp (Ktown near Beverly/E. Hollywood/Virgil Village), h09vcrh ('ktown/hollywood' as one bicycle market). Counter-evidence: theft severity in Hollywood (finding 5), Hollywood Blvd 'dead zone from Los Feliz until Thai town' (jl8ypad), and Pico-Union dashers who 'won't go west of Vermont' (om5mqx0) — i.e., a Ktown/Pico site still reaches the south edge of the zone. Net: East Hollywood is a credible alternative satellite, not a replacement for the Pico/Olympic main hub."
+  }
+ ],
+ "staging_points": [
+  {
+   "spot": "West Hollywood: Toast Bakery & Cafe (morning) / Terroni (night)",
+   "source": "jr8jkr7 2023",
+   "note": "car dasher; 'order dense', wealthy tippers, $60/hr peaks"
+  },
+  {
+   "spot": "Sunset Strip (WeHo) 5-8pm $3-4.50 surge zone",
+   "source": "pcdhfh 2021",
+   "note": "UE rider living on the Strip gets throttled at home, pings resume a block away"
+  },
+  {
+   "spot": "Bossa Nova, Sunset near La Brea",
+   "source": "l7k5hrl 2024, 1dwiglh 2024",
+   "note": "repeat pickup, 'Bossa nova was hittin' Fri 9pm"
+  },
+  {
+   "spot": "Cloud kitchen on Western Ave, Hollywood",
+   "source": "f6dg7k 2020",
+   "note": "multiple Uber pickups per night from one ghost-kitchen address in East Hollywood"
+  },
+  {
+   "spot": "Gardens of Taxco, WeHo",
+   "source": "139c1kf 2023",
+   "note": "20 drivers waiting on Cinco de Mayo; normally favorite pickup"
+  },
+  {
+   "spot": "Hollywood & Highland / Hollywood/Vine luxury apartments (above Trader Joe's on Vine)",
+   "source": "111hq0m 2023, piraz3 2021",
+   "note": "high-rise drop-off friction; bicycle rider lives a block off Hollywood/Highland"
+  },
+  {
+   "spot": "Echo Park locker/ghost-kitchen pickup (multi-restaurant iPad locker)",
+   "source": "1bzlapj 2024",
+   "note": "orders routed Echo Park -> Arts District"
+  },
+  {
+   "spot": "Los Feliz ghost kitchen; Daisy Mint / Silver Lake Ramen share a DTLA ghost kitchen",
+   "source": "uzbz22 2022, mt3ru8 2021",
+   "note": "ghost kitchens sit on the SL/DTLA axis"
+  },
+  {
+   "spot": "Pico-Union: Home Depot and Hammy's/Little Caesars on 7th",
+   "source": "om5mqx0 2026",
+   "note": "car dasher's waiting spot that 'sometimes brings me to Hollywood zone' — evidence the zone touches Pico-Union"
+  },
+  {
+   "spot": "DTLA Spring St x 6th St; Westwood Blvd x Ohio",
+   "source": "avp2wa 2019",
+   "note": "DoorDash bicycle hotspots named by a bike dasher asking for one 'closer to Hollywood'"
+  },
+  {
+   "spot": "Hollywood Bowl / Greek Theatre / Dodger Stadium event nights",
+   "source": "cwerjw 2019, bteuee 2019, o23ir8 2021, i2blv8p 2022",
+   "note": "event traffic gridlock; bikes praised for Bowl exits (p837jsr)"
+  },
+  {
+   "spot": "DUI checkpoint Sunset Blvd 1 block east of Fairfax (Fri night)",
+   "source": "14bh48o/14bgxo3 2023",
+   "note": "recurring"
+  }
+ ],
+ "safety": {
+  "theft": "Extreme for bikes/e-bikes in Hollywood ('100% stolen or vandalized', 'double digits bikes stolen over two decades', Wolf Warrior scooter stolen); Los Feliz catalytic-converter theft; riders will not store e-bikes in apartment garages.",
+  "robbery_and_night": "Couriers describe Hollywood graveyard shift as 'dangerous… run from crazy people', food snatched on stairs, threats at PIN drop-offs; female dashers stop at dark; Hollywood Blvd 'sketchy at night' is near-universal in r/AskLosAngeles; Sunset one block south has encampments.",
+  "police": "2018 night bike messenger stopped 3+ times/week, mostly in Beverly Hills and WeHo, officers reaching for guns; 2025 note that e-bikes get impounded more than stolen near Hollywood Bowl; DUI checkpoints Sunset/Fairfax.",
+  "traffic_crashes": "Cyclists hit on Hollywood Blvd (Argyle, Bronson), Silver Lake Blvd (scooter rider killed 2020, hit-and-run 2022, cars/motorcycles 60+ mph), dooring death Hollywood 2013; Hollywood Blvd protected lane east of Gower has flattened bollards and cars parked in it.",
+  "wildfire": "Jan 2025 Hollywood Hills fire shut the Hollywood DoorDash zone for a night (1hx39go)."
+ },
+ "surprises": [
+  "The DoorDash 'Hollywood-Silverlake' zone is explicitly described as containing Koreatown and sending riders to DTLA — the v1 Ktown satellite is inside the zone, not adjacent to it.",
+  "Volume asymmetry: 'Hollywood-Beverly Hills' zone reported dead while 'Silverlake' floods (2025); WeHo/Grove side silent while east of the Chinese Theatre / Silver Lake gets 'tons' (2021). Demand skews east toward Ktown.",
+  "Hollywood's 'best earnings sentiment' traces to ~5 posts by a single 2019-20 e-scooter YouTuber plus one car dasher reply; 2023-26 posts are 'is it dead?' and $8/hr complaints.",
+  "A Pico-Union car dasher says his zone 'sometimes brings me to Hollywood zone' and he refuses to go 'west of Vermont' — Vermont Ave is the felt boundary between the DTLA/USC and Hollywood working areas.",
+  "Ghost/cloud kitchens (Western Ave Hollywood, Echo Park locker, Los Feliz, DTLA) are recurring pickup nodes — potential anchor tenants/partners for a hub.",
+  "Delivery robots (Postmates/Serve 2020, Coco/Serve 2022-26) are commonplace in Hollywood and WeHo; couriers treat them as a curiosity, not a threat.",
+  "No corpus doc gives a 2022-2026 hourly figure for two-wheel delivery in scope; every recent number is a car."
+ ],
+ "contradicts_v1": [
+  "Partial: v1 attributes the best earnings sentiment to the Hollywood zone; the underlying evidence is thin and dated (2019-20 e-scooter unicorn posts). Recent Hollywood earnings posts skew negative ($8/hr peak 2024; 'insane amount of drivers' 2025), and the strongest recent positive is car-based WeHo ($18-30/hr, $60/hr peaks).",
+  "Partial: v1 places the satellite in Koreatown South/East; riders' own geography points to the Vermont/Sunset–Western/Santa Monica hinge of East Hollywood (Red Line, Sunset bike lane to DTLA, cloud kitchen on Western) as at least as natural a satellite for Hollywood-Silverlake riders, ~1.5-2 mi north of the v1 spot. Not a contradiction of the Pico/Olympic main hub.",
+  "Nothing in scope contradicts rejecting 768 Ceres Ave; nothing in scope mentions it."
+ ],
+ "data_limits": [
+  "Two-wheel delivery self-reports in scope are few (14 docs, 7 pre-2022); most 'two_wheel' flagged docs are personal cyclists in r/LosAngeles or tourists renting beach bikes.",
+  "Vehicle is unstated in most delivery posts; car_docs counts are 'delivery-sub docs not identified as two-wheel' and include some customer/off-topic posts.",
+  "Zone statements come from ~8 posts (DoorDash zone naming); Uber/Grubhub geographies differ (Grubhub 2023 region changes lumped BH/WeHo/Hollywood/Ktown/DTLA together, then removed the west side).",
+  "No rider states a willingness to travel a given distance to a hub; commute inferences come from where they say they live vs work.",
+  "5 COVID megathreads and 1 Florida doc excluded; 676 unflagged non-delivery docs were only keyword-skimmed (115 hits read).",
+  "Scores are Reddit upvotes, not reliability; several key quotes have score 0-2."
+ ]
+}

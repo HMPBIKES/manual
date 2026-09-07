@@ -1,0 +1,450 @@
+{
+ "scope": "Koreatown, Westlake/MacArthur Park, Pico-Union, USC/Exposition — posts AND comments from area_KTOWN_WESTLAKE_PICOUNION_USC.jsonl (347 docs, 116 posts + 231 comments), read in full. Focus on whether comments add two-wheel courier voice to the near-zero found at post level.",
+ "docs_read": 347,
+ "per_area": [
+  {
+   "area": "Koreatown",
+   "docs": 208,
+   "raw_docs": 210,
+   "excluded": 2,
+   "comments": 147,
+   "two_wheel_self_docs": 25,
+   "two_wheel_self_courier_docs": 6,
+   "two_wheel_observed_docs": 10,
+   "car_docs": 8,
+   "courier_vehicle_unknown_docs": 8,
+   "sentiment_for_two_wheel": "mixed-positive: bike couriers say Ktown is 'always poppin' and apps push DTLA bike couriers 3 mi into Ktown; residents ride scooters/bikes because parking is impossible; but 'no bike lanes in ktown', sidewalk-riding tickets on Wilshire, bike theft, and drunk/aggressive drivers are recurring negatives",
+   "notes": "Excluded 'Koreatown, Manhattan' and a France-based bike-courier post. Of 25 two-wheel-self docs only 6 are couriers (32,68,228 comments; 42,162,181 posts) — all BICYCLE, 2018-2023, all score ≤7; no e-moped/gas-scooter courier voice. 19 non-courier riders (e-scooter commuters, a Surron e-moto owner, cyclists, a motorcycle commuter, Critical Mass from Wilshire/Western). 10 'observed' docs are about rental scooters on sidewalks, cyclist group rides, stolen-bike pyramid — none observes delivery riders specifically. 8 car-courier docs + 8 vehicle-unknown courier docs (dead nights, early-AM dashing, hotspot at closed Sweetgreen, ghost kitchen at 615 N Western). Comments add 3 bike-courier voices to the 3 posts, so the picture moves from 'almost none' to 'a thin but consistent bicycle-courier presence'."
+  },
+  {
+   "area": "Westlake/MacArthur Park",
+   "docs": 11,
+   "raw_docs": 21,
+   "excluded": 10,
+   "comments": 7,
+   "two_wheel_self_docs": 1,
+   "two_wheel_self_courier_docs": 0,
+   "two_wheel_observed_docs": 0,
+   "car_docs": 2,
+   "courier_vehicle_unknown_docs": 0,
+   "sentiment_for_two_wheel": "none from couriers; one prospective resident wants a bike to reach Wilshire/Ktown but worries about racks/theft",
+   "notes": "10 of 21 tagged docs are Westlake Village / Harvard-Westlake / Roanoke-Westlake TX false positives. Real Westlake content: a car dasher drove through 'Westlake MacArthur park' on a dead day (2020), an UberEats driver routes via Hoover/Alvarado to the 2 Fwy, a worker punched in Pico-Union who 'works mostly around DTLA, Westlake', bed bugs in MacArthur Park, fake IDs on Alvarado, hit-and-run at Alvarado/Sunset. Two car dashers (docs tagged DTLA/USC, not Westlake) name 'Home Depot Wilshire' (1675 Wilshire, Westlake) as their staging spot — the only positive courier signal for this area."
+  },
+  {
+   "area": "Pico-Union",
+   "docs": 10,
+   "raw_docs": 10,
+   "excluded": 0,
+   "comments": 4,
+   "two_wheel_self_docs": 0,
+   "two_wheel_self_courier_docs": 0,
+   "two_wheel_observed_docs": 0,
+   "car_docs": 2,
+   "courier_vehicle_unknown_docs": 0,
+   "sentiment_for_two_wheel": "indirectly positive: three housing ads for the same Pico-Union apartment (2017-2018) say parking is 'street only, very difficult — I recommend having a bike'; no rider voice",
+   "notes": "One 2026 car dasher explicitly bases himself in 'the pico union area', avoids the freeway-ringed core, 'won't go west of vermont', drifts between the Hollywood and USC zones and stages at Home Depot + Hammy's/Little Caesars on 7th. One East-Hollywood UberEats driver is 'sometimes' sent as far as Pico-Union. One assault report. No two-wheel courier or observed rider at all."
+  },
+  {
+   "area": "USC/Exposition",
+   "docs": 104,
+   "raw_docs": 118,
+   "excluded": 14,
+   "comments": 60,
+   "two_wheel_self_docs": 6,
+   "two_wheel_self_courier_docs": 2,
+   "two_wheel_observed_docs": 7,
+   "car_docs": 6,
+   "courier_vehicle_unknown_docs": 3,
+   "sentiment_for_two_wheel": "strong ambient two-wheel culture (bikes, standing scooters) but courier-specific voice is only 2 prospective grad-student bike couriers; car dashers like USC for overnight volume but complain of $1 student tips and oversaturation; residents complain car couriers double-park on Figueroa",
+   "notes": "Excluded USC-as-institution docs (covid surveys, Keck, LAC+USC, Pacific Asia Museum in Pasadena) and one 'USC in Columbia' (South Carolina) dasher. Observed two-wheel docs: 'one of the most bicycled parts of L.A. County', new Figueroa-side bike lane 'moves a lot of people at 5pm', scooter riders in USC Village, and a Lyft driver's rant about dozens of unlit scooters at night near Budlong/Figueroa. 6 car-courier docs: Panda Express Fig & 29th at 12:20am, 'overnight especially in usc', 'DDing in Beverly Hills and USC area' 12h/<$150, USC $1 tips, oversaturation ('2 hrs received one order'), East-LA driver going to USC/Westwood. DoorDash 'USC island' zone existed by 2019. Demand side: USC covid-isolation DoorDash credits, 'easy food delivery service' at student buildings, Fryft zone."
+  }
+ ],
+ "findings": [
+  {
+   "claim": "Bicycle couriers DO work Koreatown, and DTLA-based bike couriers are routinely sent 3 miles into Koreatown by the apps — but every such voice is a bicycle (no e-moped/scooter/motorcycle), low-karma, and 2018-2023.",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "I suggest goin to ktown/hollywood. They’re always poppin!\n\nBtw i am on a bicycle",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h09vcrh",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "LA/Koreatown Area Morning Bicycle Mode ! This is depressing lol",
+     "url": "https://www.reddit.com/r/UberEATS/comments/iowfiq/lakoreatown_area_morning_bicycle_mode_this_is/",
+     "sub": "UberEATS",
+     "year": 2020,
+     "score": 7,
+     "kind": "post"
+    },
+    {
+     "quote": "I live in la ktown just moved here. Does doordash provide with hot box and bike? Is it doable?",
+     "url": "https://www.reddit.com/r/doordash/comments/162vejl/bike_delivery_in_la_ktown/",
+     "sub": "doordash",
+     "year": 2023,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "they will send him to silverlake,echo park or even to koreatown, it happened to me, they can give you a 3miles delivery.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dtc8gan",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 2,
+     "kind": "comment"
+    },
+    {
+     "quote": "uber can send you a 3 miles outside DTLA, to koreatown or silverlake etc",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dtc8eab",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 2,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "Supports a hub within ~3 mi of Ktown that also serves DTLA — the DTLA-SW/Pico-Union main hub in v1 sits on that DTLA↔Ktown trip path. Volume of rider voice is too thin to justify a Ktown-first hub."
+  },
+  {
+   "claim": "Zone geometry pulls Koreatown couriers NORTH, not east: DoorDash's 'Hollywood-Silverlake' zone contains Koreatown, while car dashers use Koreatown↔Downtown as a fallback loop when their westside zones die.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "I also dash mainly in Hollywood/Silverlake, which already has bad parking, but that delivery zone also has Koreatown in it and sometimes sends you to customers in DTLA, so I think parking would be a lot easier.",
+     "url": "https://www.reddit.com/r/doordash/comments/11khbg4/dashing_on_a_bike_in_la_worth_it/",
+     "sub": "doordash",
+     "year": 2023,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "It's not as bad on the weekends so I'll usually do Koreatown to Downtown to stay busy",
+     "url": "https://www.reddit.com/r/UberEATS/comments/ybs11j/anyone_else_having_a_awful_weekend/itl9fbd",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "Well can’t wait to dash in the new Hawthorne island!! Also coming: USC island and many more!",
+     "url": "https://www.reddit.com/r/doordash/comments/cnhtsa/well_cant_wait_to_dash_in_the_new_hawthorne/",
+     "sub": "doordash",
+     "year": 2019,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able. Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "A satellite on S Vermont sits at the seam between the Hollywood-Silverlake zone (Ktown) and the DTLA/USC zones; one car dasher explicitly 'won't go west of vermont', so Vermont is a real behavioral boundary. A Vermont-corridor satellite catches riders from both sides only if it is at/near Olympic-8th where both zones' trips cross."
+  },
+  {
+   "claim": "Koreatown's two-wheel infrastructure is described as absent or hostile: 'no bike lanes', LAPD $200 sidewalk tickets on Wilshire, sidewalk riding '5x more popular than street riding', pedestrians demanding to hit scooter riders, and a stolen-bike 'pyramid'.",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "There aren't any bike lanes in ktown or hollywood so I don't know how you would do them there",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0akqwr",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "It's not normal to fear your bike being stolen, harvested for parts,",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/qnfd05/streets_for_all_announces_la_2525_challenge_to/hjhbuh4",
+     "sub": "LosAngeles",
+     "year": 2021,
+     "score": 11,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "A Ktown satellite must offer secure indoor parking/charging; open-air staging in Ktown invites theft and police attention. Wilshire is the corridor with bus-lane enforcement (motorcycle cops)."
+  },
+  {
+   "claim": "USC/Exposition has the densest ambient two-wheel culture in scope ('one of the most bicycled parts of L.A. County', unlit student scooters at night) and the only prospective two-wheel COURIER voices outside Ktown are USC grad students asking about bike delivery.",
+   "evidence_count": 9,
+   "quotes": [
+    {
+     "quote": "This photo is next to USC, one of the most bicycled parts of L.A. County.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1hpwtns/new_bike_infrastructure/m4wjj41",
+     "sub": "LosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "Dozens of you, no helmets, no lights, zipping around in the dark like you’re immortal.",
+     "url": "https://www.reddit.com/r/USC/comments/1of2lyw/dear_usc_scooter_riders_youre_not_special_youre/",
+     "sub": "USC",
+     "year": 2025,
+     "score": 309,
+     "kind": "post"
+    },
+    {
+     "quote": "I am an incoming graduate student at USC and am choosing between an on-campus job and doing delivery on a bicycle.",
+     "url": "https://www.reddit.com/r/USC/comments/15cydh0/usc_students_doing_uber_eatsdoordash/",
+     "sub": "USC",
+     "year": 2023,
+     "score": 5,
+     "kind": "post"
+    },
+    {
+     "quote": "2.How safe is it?( I plan on doing deliveries on a bike)",
+     "url": "https://www.reddit.com/r/UberEATS/comments/15dae0o/what_is_it_like_doing_ubereats_in_los_angeles/",
+     "sub": "UberEATS",
+     "year": 2023,
+     "score": 0,
+     "kind": "post"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "USC is a recruiting pool (students, incl. grad students on visas who can't work on-campus) and a two-wheel-friendly delivery island, ~1.5-2 mi south of the v1 main hub — reachable, but v1 does not name it."
+  },
+  {
+   "claim": "Car couriers describe exactly the pain two wheels remove: crowded restaurant lots and car dings in Ktown, ~$10/hr net, bad cell reception crashing the app, absurd stacked orders that end '5 minute walk from the first pickup', and double-parking in the Figueroa travel lane to pick up student orders.",
+   "evidence_count": 7,
+   "quotes": [
+    {
+     "quote": "My car also suffered a few dings from waiting at a crowded parking lot b/c of fucking restaurants like Wingstop that take forever to prepare the order. I averaged about $10 per hour accounting for gas and whatnot.",
+     "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/",
+     "sub": "doordash",
+     "year": 2019,
+     "score": 22,
+     "kind": "post"
+    },
+    {
+     "quote": "I started to grow really tired of the poor reception in Koreatown LA which caused my app to crash constantly and use up so much data to reinstall.",
+     "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/",
+     "sub": "doordash",
+     "year": 2019,
+     "score": 22,
+     "kind": "post"
+    },
+    {
+     "quote": "I get the order, then I get to see where the drop off is. It's back in ktown, a 5 minute walk from the first pickup.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1aifudt/im_so_furious/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "parking in the right or middle lane to pickup the USC kid’s Chick-fil-A, Chipotle, or Korean BBQ order…and make it a hazard trying to drive on Figueroa",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1hpwtns/new_bike_infrastructure/m4kxpol",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 13,
+     "kind": "comment"
+    },
+    {
+     "quote": "The Popeyes on Figueroa and Adams near USC seems like have a lot of employees working there and yet it’s still so slow lmao",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjvtlsb",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 2,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Short, dense, stacked trips in Ktown and along Figueroa near USC are the two-wheel sweet spot. Cell-reception complaint (2019) is a minor site-selection check for a Ktown satellite (indoor dead zones)."
+  },
+  {
+   "claim": "USC by car: cheap student tips ($1) and oversaturation by day, but 'overnight especially in usc' is enjoyed; drivers stage at Home Depot Wilshire for DTLA lunch orders rather than in Ktown.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "USC area I at least get some orders, although the trade off is 1 dollar tips because I guess most of the deliveries are to college students",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1mgovuq/summer_slowness/",
+     "sub": "doordash_drivers",
+     "year": 2025,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "Late-night USC volume favors a hub with 24h access south-west of DTLA (v1 main hub location fits). Home Depot Wilshire (Westlake, 1675 Wilshire) is a named car-dasher staging spot between DTLA and Ktown — a candidate for a satellite/charging point that v1 did not consider."
+  },
+  {
+   "claim": "Non-courier Koreatown residents already substitute e-scooters/e-bikes/e-motos for cars because parking is impossible — a latent pool of riders who understand the neighborhood on two wheels (home-visit nurse, Ktown↔DTLA e-scooter commuter, Surron owner 'for 100% street riding around downtown la and koreatown', scooter commuter in Little Bangladesh).",
+   "evidence_count": 19,
+   "quotes": [
+    {
+     "quote": "I live in Los Angeles in Koreatown/downtown area. Working as a part time home visit nurse, it is really hard to find parking so I'm thinking about an electric scooter for commute.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/c182ue/recommendations_for_commuting_electric_scooter/",
+     "sub": "ElectricScooters",
+     "year": 2019,
+     "score": 2,
+     "kind": "post"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Supports a Ktown satellite as a battery-swap/rental point for residents (B2C) even if courier volume there is thin; strongest resident e-mobility voice is central/eastern Ktown (Vermont–Western, Wilshire–Olympic)."
+  },
+  {
+   "claim": "Female couriers avoid night work in the Hollywood-Silverlake/Koreatown zone after 'bad experiences'; drunk/aggressive driving in Ktown at night is a recurring theme.",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 3,
+     "kind": "post"
+    },
+    {
+     "quote": "our Uber was hit by a drunk driver going 50mph down a small K-town street",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1vctzfi/fuck_drunk_drivers_ktown_outside_chichis_bar/",
+     "sub": "LosAngeles",
+     "year": 2026,
+     "score": 1772,
+     "kind": "post"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "A satellite should be a lit, staffed, indoor refuge if it expects evening riders; Ktown's late-night restaurant scene (24h Sun Nong Dan, BCD, Dan Sung Sa, Ten Ramen till 4am) means late orders exist but riders self-select out."
+  }
+ ],
+ "staging_points": [
+  {
+   "place": "Melrose Food Co ghost kitchen (CloudKitchens)",
+   "address_or_intersection": "615 N Western Ave (Western between Melrose & 101, north edge of Ktown)",
+   "evidence_count": 3,
+   "quote": "If you're a door dasher, I'm going to take a guess it's the ghost kitchen on western Ave north of ktown south of 101",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjsvaov",
+   "note": "Named as a go-to morning staging spot by an UberEats driver (2023) and guessed as the most-loathed pickup by an r/LosAngeles commenter (score 71, 2024); a delivery driver in 2020 says 'I avoid that place too many fucking kitchens'. It is ~1.5 mi north of Wilshire/Western — riders staging here are in the Hollywood zone, not the DTLA zone."
+  },
+  {
+   "place": "Washington Food Co (CloudKitchens) and Grand Food Depot ghost kitchens",
+   "address_or_intersection": "1842 W Washington Blvd (Pico-Union/West Adams edge) and 358 W 38th St (south of USC)",
+   "evidence_count": 1,
+   "quote": "Grand Food Depot: 358 W 38th St, Los Angeles, CA 90037\n\nWashington Food Co: 1842 W Washington Blvd, Los Angeles, CA 90007",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+   "note": "Same 2023 UberEats post (score 138): 'easy to quickly get an order as soon as you park by one of these'. 1842 W Washington is ~1 mi SW of the v1 Cordova St candidate; 358 W 38th is 0.5 mi south of USC."
+  },
+  {
+   "place": "Ghost-kitchen staging behaviour",
+   "address_or_intersection": "(all five listed kitchens)",
+   "evidence_count": 1,
+   "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these.",
+   "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+   "note": "Car drivers treat ghost kitchens like an airport queue."
+  },
+  {
+   "place": "Home Depot Wilshire",
+   "address_or_intersection": "1675 Wilshire Blvd at Union Ave (Westlake, between DTLA and Ktown)",
+   "evidence_count": 2,
+   "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+   "note": "Two different car dashers in the same 2026 thread name it; the second adds 'hammys/little caesars on 7th' (7th St, Westlake/Pico-Union) and says he stays in the Pico-Union area."
+  },
+  {
+   "place": "Hammy's / Little Caesars on 7th St",
+   "address_or_intersection": "W 7th St, Westlake/Pico-Union (near Union/Alvarado)",
+   "evidence_count": 1,
+   "quote": "i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able. Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+   "note": "Same dasher; explicit Pico-Union base."
+  },
+  {
+   "place": "Figueroa restaurant row by USC (Chick-fil-A, Chipotle, KBBQ)",
+   "address_or_intersection": "S Figueroa St between Exposition and Jefferson/USC Village",
+   "evidence_count": 2,
+   "quote": "parking in the right or middle lane to pickup the USC kid’s Chick-fil-A, Chipotle, or Korean BBQ order…and make it a hazard trying to drive on Figueroa",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/1hpwtns/new_bike_infrastructure/m4kxpol",
+   "note": "Residents see couriers double-parking in the travel lane; new bike lane on that stretch 'moves a lot of people at 5pm'. Popeyes at Figueroa & Adams is a slow pickup."
+  },
+  {
+   "place": "Popeyes Figueroa & Adams",
+   "address_or_intersection": "S Figueroa St & W Adams Blvd",
+   "evidence_count": 1,
+   "quote": "The Popeyes on Figueroa and Adams near USC seems like have a lot of employees working there and yet it’s still so slow lmao",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjvtlsb",
+   "note": "Slow pickup, courier complaint."
+  }
+ ],
+ "safety": [
+  {
+   "area": "Koreatown / Hollywood-Silverlake zone",
+   "time": "night",
+   "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/"
+  },
+  {
+   "area": "Koreatown (small side street near Chi-chi's bar)",
+   "time": "night",
+   "quote": "our Uber was hit by a drunk driver going 50mph down a small K-town street",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/1vctzfi/fuck_drunk_drivers_ktown_outside_chichis_bar/"
+  },
+  {
+   "area": "Koreatown (public street, stolen-bike 'pyramid')",
+   "time": "any",
+   "quote": "It's not normal to fear your bike being stolen, harvested for parts,",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/qnfd05/streets_for_all_announces_la_2525_challenge_to/hjhbuh4"
+  },
+  {
+   "area": "Pico-Union",
+   "time": "daytime work hours",
+   "quote": "Dude who threw a punch at me was in Pico-Union",
+   "url": "https://www.reddit.com/r/AskLosAngeles/comments/1asixaq/are_people_in_la_angrier_lately_or_am_i_just/kqr1iju"
+  },
+  {
+   "area": "Westlake (Grand View St near MacArthur Park)",
+   "time": "night (uber to metro at night); theft concern for bike",
+   "quote": "I'd like to get a bike as well so I have easier access to Wilshire/Ktown (~1.5 miles away) but I'm not sure of bike racks and safety from theft.",
+   "url": "https://www.reddit.com/r/AskLosAngeles/comments/5px3e9/first_time_living_in_la_hows_westlake_for_an/"
+  },
+  {
+   "area": "USC west side (Budlong Ave) and Figueroa frat row",
+   "time": "night, dark",
+   "quote": "Dozens of you, no helmets, no lights, zipping around in the dark like you’re immortal.",
+   "url": "https://www.reddit.com/r/USC/comments/1of2lyw/dear_usc_scooter_riders_youre_not_special_youre/"
+  }
+ ],
+ "surprises": [
+  "Home Depot Wilshire (Westlake, 1675 Wilshire) is a named car-dasher staging point cited by two drivers — no post-level analysis flagged Westlake as a staging area.",
+  "615 N Western ghost kitchen is polarizing: 'go-to' to start the day (2023) vs 'I avoid that place' (2020) vs most-loathed pickup guess (2024, score 71).",
+  "A car dasher bases himself in Pico-Union and treats Vermont Ave as a hard western boundary ('I won't go west of vermont'), bouncing between the Hollywood and USC zones — v1's satellite at 856 S Vermont sits exactly on that line.",
+  "Koreatown cell reception was bad enough in 2019 to crash the Dasher app repeatedly — worth checking indoor coverage at any Ktown satellite.",
+  "Delivery robots are already doing short Koreatown food runs (2026, three separate commenters) — direct competition for the shortest two-wheel trips.",
+  "USC grad students (two 2023 posts) are the only people in scope who say they intend to start delivering by bicycle; USC also has covid-era DoorDash-credit demand and 'easy food delivery service' student buildings.",
+  "Three Pico-Union housing ads (same landlord, 2017-2018) tell tenants to get a bike because street parking is hopeless — the neighborhood's own residents frame it as a bike-first place.",
+  "USC students are told to change their DoorDash name to a male name (2025, r/USC) — harassment risk from couriers is a customer-side concern near USC."
+ ],
+ "contradicts_v1": [
+  "Partially contradicts 'almost no two-wheel rider voice in Koreatown': comments add 3 bicycle-courier voices (2018, 2021, 2021) to the 3 posts, plus 19 non-courier Ktown residents who ride e-scooters/e-bikes/e-moto/motorcycle. Still thin (6 courier docs total, all bicycles, all low score), so it does not overturn the DTLA-first ranking.",
+  "v1 ignores Westlake entirely, but the only staging point named by more than one car courier in scope is Home Depot Wilshire (Westlake, ~1.6 mi N of 18th & Grand). If the goal is to intercept car dashers who stage between DTLA and Ktown, the Wilshire/Union–Alvarado corridor deserves consideration alongside Pico/Olympic.",
+  "v1's satellite at 856 S Vermont is not contradicted, but the evidence for Ktown rider gravity is in the Wilshire/Western–Wilshire/Vermont core (Critical Mass from Wilshire/Western, scooter commuters in Little Bangladesh, bus-lane chaos at Wilshire/Normandie), while a car dasher treats Vermont as the boundary he won't cross westward; Olympic/Vermont–8th/Vermont is the eastern edge of Ktown rider activity, not its centre.",
+  "Nothing in scope supports Koreatown Galleria/Plaza, H Mart, USC Village or MacArthur Park as courier staging points — the named spots are ghost kitchens (615 N Western, 1842 W Washington, 358 W 38th), Home Depot Wilshire, 7th St fast food, and Figueroa by USC."
+ ],
+ "data_limits": [
+  "Only ~40 of 347 docs are courier-authored; the rest are residents, tourists and students. Rider voice for these four areas is a handful of low-karma bicycle couriers (2018-2023); zero e-moped, gas-scooter or motorcycle couriers.",
+  "Westlake/MacArthur Park: 10 of 21 tagged docs are Westlake Village / Harvard-Westlake / Roanoke-Westlake TX; only 11 real docs, none from two-wheel riders.",
+  "Pico-Union: 10 docs, 4 comments; two car couriers, no riders.",
+  "USC: 14 of 118 docs excluded as USC-the-institution, Keck/LAC+USC hospitals, Pasadena museum, or University of South Carolina; many remaining r/USC docs are about dining plans, housing or covid isolation, not delivery.",
+  "No Spanish-language or self-identified immigrant courier voice; the only immigrant gig-worker mention is a USC student whose father drives Uber. Koreatown's immigrant density is described by residents, not couriers.",
+  "Zone names appear only 4 times (Hollywood/Silverlake incl. Koreatown; Hollywood zone; USC zone; USC island) and none explains routing rules between DTLA and Koreatown beyond 'apps send DTLA bike couriers ~3 mi to Koreatown'.",
+  "Vehicle type for 8 Koreatown and 3 USC courier docs could not be determined from text.",
+  "Score/karma is low for almost all courier docs (median ≈1), so counts reflect presence, not consensus."
+ ]
+}

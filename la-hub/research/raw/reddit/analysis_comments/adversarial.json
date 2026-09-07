@@ -1,0 +1,581 @@
+{
+ "claims": [
+  {
+   "id": "C1",
+   "claim": "Main hub on the Pico/Olympic corridor at the SW edge of DTLA / Pico-Union (18th St between Grand & Olive, 7,644 sf, $6,900; fallback 1738 Cordova St): within 2 mi of the DTLA core and Koreatown South, near the ghost kitchens (1842 W Washington, 358 W 38th), robbery/assault density about one-third of the DTLA core.",
+   "verdict": "weakened",
+   "strength_of_counter": "strong",
+   "counter_evidence": [
+    {
+     "point": "The draft says 1-1.5 mi is the e-bike walk-in radius, yet 18th St is the weakest central candidate at exactly that radius: 370 restaurants at 1 mi vs 768 Ceres 544, 856 S Vermont 572, 525 S Los Angeles St 824, 121 E 6th 831; 888 at 1.5 mi vs Ceres 974 and Historic Core 1,069-1,074. At 3 mi it is mid-pack (2,435 vs 710 S Alvarado 2,779, 856 Vermont 2,680, 2474 W Pico 2,591, 3651 Beverly 2,588, 1824 Magnolia 2,563). Only the 2-mi ring (1,410) is respectable, and even there Magnolia (1,521) and 2474 W Pico (1,435) beat it.",
+     "data_ref": "market/listing_coverage.json restaurants_1mi/1.5mi/2mi/3mi per listing"
+    },
+    {
+     "point": "The draft's own Pico-Union listings dominate 18th St on every metric it scores: 2474 W Pico Blvd (2 mi 1,435 vs 1,410; 3 mi 2,591 vs 2,435; robbery 78 vs 96; assault 119 vs 122; bike theft 4 vs 19) and 1824 S Magnolia Ave (2 mi 1,521; 3 mi 2,563; robbery 68; assault 104; bike theft 8). 18th St wins only on quoted rent, which comes from one anonymous ad.",
+     "data_ref": "market/listing_coverage.json; market/listings.json"
+    },
+    {
+     "point": "Bike theft, the crime that actually hits an e-bike hub, is ignored by the crime tiering. 18th St has 19 bike thefts in the 0.5-mi circle (about 1.7/sq mi/mo, 8x the citywide 0.21) - the worst of any candidate outside Historic Core/USC and roughly 10x Ceres (2), 785 E 14th (1), 2474 W Pico (4). Riders in the corpus describe bike/part theft, not robbery, as the DTLA crime they live with.",
+     "data_ref": "market/listing_coverage.json bike_stolen_0.5mi; market/site_crime.json city rate 0.21/sqmi/mo",
+     "quotes": [
+      {
+       "id": "1h27t3u",
+       "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+       "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/",
+       "sub": "r/AskLosAngeles",
+       "year": 2024,
+       "score": 100,
+       "kind": "post"
+      },
+      {
+       "id": "krcaz1s",
+       "quote": "The best way to not get your bike stolen in DTLA is to use a Metro bike.",
+       "url": "https://www.reddit.com/r/LosAngeles/comments/1avlwkp/i_ride_a_bicycle_in_la_ask_me_anything/krcaz1s",
+       "sub": "r/LosAngeles",
+       "year": 2024,
+       "score": 17,
+       "kind": "comment"
+      },
+      {
+       "id": "p3chftk",
+       "quote": "I recovered my stolen bike on Skid Row thanks to an AirTag last week.",
+       "url": "https://www.reddit.com/r/ebikes/comments/1vm0eff/2_ebikes_stolen_in_4_weeks_unlucky_or_stupid/p3chftk",
+       "sub": "r/ebikes",
+       "year": 2026,
+       "score": 1,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "\"One-third of the DTLA core\" compares 18th St only to the two worst points in the whole dataset (121 E 6th 418 robberies, 525 S LA St 403). Against the citywide baseline 18th St is still 5.6x robbery and 4.9x assault, which the draft's own scheme labels a \"medium\" tier, and it is 1.7x worse than 3651 Beverly (57) and 1.4x worse than 1824 Magnolia (68). The crime argument is overstated as a positive for this site.",
+     "data_ref": "market/site_crime.json (city 1.54 robbery, 2.23 assault per sqmi/mo); market/listing_coverage.json"
+    },
+    {
+     "point": "The only courier in the corpus who names Pico-Union as a working base is a 2026 car dasher whose rule is to stay OUTSIDE the freeway ring; 18th & Grand is inside that ring, 0.35 mi from the 10/110 interchange. The one first-person ambush story is on a DTLA-to-West Adams run \"near the 10 fwy\", i.e. the Washington Blvd ghost-kitchen corridor the draft counts as an asset, and a stolen e-bike was tracked to Union & 6th on the Pico-Union/Westlake seam.",
+     "quotes": [
+      {
+       "id": "om5mqx0",
+       "quote": "I just dont go under the freeways into that downtown area thst all thr interstates circle i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+       "sub": "r/doordash_drivers",
+       "year": 2026,
+       "score": 2,
+       "kind": "comment"
+      },
+      {
+       "id": "15qno06",
+       "quote": "This particular order was from Popeyes, near dtla area. The drop off was in the west adams neighborhood, for those not familiar with deep LA neighborhoods, it’s near the 10 fwy.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/15qno06/most_weirdcreepy_encounter_while_delivering/",
+       "sub": "r/UberEATS",
+       "year": 2023,
+       "score": 17,
+       "kind": "post"
+      },
+      {
+       "id": "15qno06",
+       "quote": "Immediately 6 men dressed in all black with some sort of leggings over their head trying to cover up their face jump out the van, and start running towards my car.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/15qno06/most_weirdcreepy_encounter_while_delivering/",
+       "sub": "r/UberEATS",
+       "year": 2023,
+       "score": 17,
+       "kind": "post"
+      },
+      {
+       "id": "hvdycta",
+       "quote": "I tracked it to union and 6th st downtown before the signal went dead.",
+       "url": "https://www.reddit.com/r/ebikes/comments/sj47n5/stolen_ebike_los_angeles_area/hvdycta",
+       "sub": "r/ebikes",
+       "year": 2022,
+       "score": 5,
+       "kind": "comment"
+      },
+      {
+       "id": "kqr1iju",
+       "quote": "Dude who threw a punch at me was in Pico-Union",
+       "url": "https://www.reddit.com/r/AskLosAngeles/comments/1asixaq/are_people_in_la_angrier_lately_or_am_i_just/kqr1iju",
+       "sub": "r/AskLosAngeles",
+       "year": 2024,
+       "score": 5,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "The recommendation rests on a single unverified Craigslist ad: header says 8,744 sf, body says 7,644 sf, address withheld, $0.90/sf against a $1.17-1.37 NNN industrial market. The fallback 1738 Cordova St has the weakest 1-mi count of any central candidate (214) and 1,206 at 2 mi, below Ceres.",
+     "data_ref": "market/listings.json (18th St Craigslist, 2026-08-12; 1738 Cordova $1.98 NNN); market/listing_coverage.json"
+    }
+   ],
+   "what_would_change_the_verdict": "A site visit confirming the 18th St unit exists at the quoted rent with a roll-up door; evidence that riders will ride 1.5-2 mi to a hub so the 1-mi deficit is irrelevant; LAPD bike-theft points near 18th St shown to be Fashion District/USC spillover rather than the block itself; or a computed 18th St + satellite union that beats the Ceres/Ktown East union (2,477)."
+  },
+  {
+   "id": "C2",
+   "claim": "Satellite counter in Koreatown South/East (856 S Vermont); two-node union of roughly 2,450 restaurants within 2 mi.",
+   "verdict": "weakened",
+   "strength_of_counter": "moderate",
+   "counter_evidence": [
+    {
+     "point": "The 2,450 union in site_pairs.json is for Historic Core + Koreatown East. 18th St does not appear in the pairs file at all, so the union for the recommended pair was never computed. 18th St and 856 S Vermont are 2.09 mi apart, so their 2-mi circles overlap heavily; the true union is well below 1,410 + 1,342 and is unproven. Ceres + Ktown East (2,477) is the better documented pair.",
+     "data_ref": "market/site_pairs.json (top pair: Historic Core + Ktown East, rest_2mi 2,450; Ceres + Ktown East 2,477); haversine 18th St to 856 S Vermont = 2.09 mi"
+    },
+    {
+     "point": "856 S Vermont is a worse building and a worse block than the draft implies: $2.75/sf NNN = $9,760/mo, more than the main hub, 3,549 sf retail with no roll-up stated, robbery 108 and assault 164 in 0.5 mi (both higher than 18th St, 6.3-6.6x city). 3651 Beverly Blvd (freestanding flex, robbery 57, assault 85, 3 mi 2,588) is a better Koreatown-side satellite on every crime metric and nearly identical on coverage.",
+     "data_ref": "market/listings.json; market/listing_coverage.json"
+    },
+    {
+     "point": "Rider text on Koreatown is mixed, not a clean \"volume\" signal. The one bicyclist who recommends K-town/Hollywood is answered that neither has bike lanes; a Koreatown resident dashing weekday lunch gets almost nothing; a 2026 driver says downtown/Koreatown are not worth it; a 2022 driver uses Koreatown-to-Downtown only as weekend fallback.",
+     "quotes": [
+      {
+       "id": "h09vcrh",
+       "quote": "I suggest goin to ktown/hollywood. They’re always poppin!",
+       "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h09vcrh",
+       "sub": "r/doordash",
+       "year": 2021,
+       "score": 1,
+       "kind": "comment"
+      },
+      {
+       "id": "h0akqwr",
+       "quote": "dang good luck on your bike! There aren't any bike lanes in ktown or hollywood so I don't know how you would do them there",
+       "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0akqwr",
+       "sub": "r/doordash",
+       "year": 2021,
+       "score": 1,
+       "kind": "comment"
+      },
+      {
+       "id": "1hcs3ic",
+       "quote": "I live in the Koreatown area of Los Angeles and I schedule myself to dash Mon-Friday from 11am-1pm",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+       "sub": "r/doordash_drivers",
+       "year": 2024,
+       "score": 3,
+       "kind": "post"
+      },
+      {
+       "id": "1hcs3ic",
+       "quote": "The problem is I almost never get orders at all",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+       "sub": "r/doordash_drivers",
+       "year": 2024,
+       "score": 3,
+       "kind": "post"
+      },
+      {
+       "id": "1swmlx1",
+       "quote": "high order zones like downtown or koreatown haven’t seemed worth it to me.",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1swmlx1/anyone_else_in_the_la_area/",
+       "sub": "r/doordash_drivers",
+       "year": 2026,
+       "score": 1,
+       "kind": "post"
+      },
+      {
+       "id": "itl9fbd",
+       "quote": "It's not as bad on the weekends so I'll usually do Koreatown to Downtown to stay busy",
+       "url": "https://www.reddit.com/r/UberEATS/comments/ybs11j/anyone_else_having_a_awful_weekend/itl9fbd",
+       "sub": "r/UberEATS",
+       "year": 2022,
+       "score": 1,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "The best-attested staging point on the Koreatown side is the ghost kitchen on Western north of Koreatown (Melrose Food Co area), named in a 71-upvote comment; 3651 Beverly is 1.27 mi from it, 856 S Vermont is farther and south of Wilshire. The satellite is placed by coverage arithmetic, not by where riders are seen.",
+     "quotes": [
+      {
+       "id": "kjsvaov",
+       "quote": "If you're a door dasher, I'm going to take a guess it's the ghost kitchen on western Ave north of ktown south of 101",
+       "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjsvaov",
+       "sub": "r/LosAngeles",
+       "year": 2024,
+       "score": 71,
+       "kind": "comment"
+      }
+     ]
+    }
+   ],
+   "what_would_change_the_verdict": "Compute the real 18th St + 856 Vermont union and show it is at least 2,300 unique restaurants; confirm cargo/roll-up access and a rent under the main hub at 856 Vermont; rider interviews showing two-wheel couriers treat Koreatown as a home base rather than a car-dasher order zone."
+  },
+  {
+   "id": "C3",
+   "claim": "768 Ceres Ave (Warehouse District, 0.6 mi from Skid Row) is inferior on every rider-reach criterion and must not be the sole rider-facing hub.",
+   "verdict": "weakened",
+   "strength_of_counter": "moderate",
+   "counter_evidence": [
+    {
+     "point": "\"Every criterion\" is false on the draft's own numbers. Ceres beats 18th St at 1 mi (544 vs 370, +47%), at 1.5 mi (974 vs 888) and on bike theft (2 vs 19), and is cheaper. It loses at 2 mi (1,217 vs 1,410) and 3 mi (2,022 vs 2,435). The ranking flips depending on which radius one believes matters, and the draft itself says 1-1.5 mi is the e-bike radius.",
+     "data_ref": "market/listing_coverage.json"
+    },
+    {
+     "point": "Ceres's robbery/assault counts (156/285) are an artifact of a 0.5-mi circle that clips Skid Row. 785 E 14th St, six blocks south in the same district, scores 106/102/1 - indistinguishable from 18th St (96/122/19) - with 1,260 restaurants at 2 mi and the cheapest rent in the set ($5,242). The gradient is block-by-block, not \"Warehouse District bad, Pico-Union good\".",
+     "data_ref": "market/listing_coverage.json; market/listings.json (785 E 14th)"
+    },
+    {
+     "point": "No rider in the corpus mentions Ceres, 18th St, the Warehouse District or the Pico/Olympic corridor. The Skid Row texts are car drivers delivering INTO Skid Row and a shelter guard who tips them; two-wheel riders in the DTLA core coexist with 50 mph Sur-Ron riders. The rider-reach scores that rank Ceres last are subjective weights on an ASSUMPTION-flagged two-wheel index, not rider evidence.",
+     "data_ref": "market/site_scores.json weights; market/site_coverage.json tw_index_3mi (ASSUMPTION)",
+     "quotes": [
+      {
+       "id": "uaf1v3",
+       "quote": "my first priority was to just gtfo skid row without getting hassled",
+       "url": "https://www.reddit.com/r/UberEATS/comments/uaf1v3/customer_claiming_they_didnt_get_the_order/",
+       "sub": "r/UberEATS",
+       "year": 2022,
+       "score": 7,
+       "kind": "post"
+      },
+      {
+       "id": "1r6o88g",
+       "quote": "I work security in a homeless shelter in skid row , Los Angeles… genuinely have so much respect for my drivers that actually come thru . I always tip em ten bucks minimum.",
+       "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/",
+       "sub": "r/doordash",
+       "year": 2026,
+       "score": 12,
+       "kind": "post"
+      },
+      {
+       "id": "k2lhr5c",
+       "quote": "In DTLA the Surron guys regularly drive 50mph+ go karts through the middle of the city no tickets.",
+       "url": "https://www.reddit.com/r/ElectricScooters/comments/16uj0hn/where_do_you_ride_your_high_performance_scooter/k2lhr5c",
+       "sub": "r/ElectricScooters",
+       "year": 2023,
+       "score": 10,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "Ceres as warehouse plus a Koreatown-side counter reaches 2,477 restaurants at 2 mi, more than the 2,450 the draft cites for its own two-node plan. The \"not sole rider-facing hub\" conclusion survives, but \"inferior on every criterion\" does not.",
+     "data_ref": "market/site_pairs.json (Ceres + Ktown East 2,477)"
+    }
+   ],
+   "what_would_change_the_verdict": "A rider survey showing couriers will not enter the Warehouse District east of San Pedro St at any price; LAPD points showing the Ceres block itself (not the Skid Row edge of the circle) carries the crime; a verified roll-up unit near 18th St at comparable rent."
+  },
+  {
+   "id": "C4",
+   "claim": "No main hub in the Historic Core (6th & Spring) or Westlake (7th & Alvarado) despite the bike hotspot and the widest coverage, because of LAPD 2023-24 robbery density and no roll-up-door inventory.",
+   "verdict": "survives",
+   "strength_of_counter": "weak",
+   "counter_evidence": [
+    {
+     "point": "The crime numbers are real and rider text corroborates bike theft in the core (Metro-bike advice, tires stolen while dashing, stolen bike recovered on Skid Row). But the draft undersells what it gives up: 121 E 6th has the best 1-mi density in the set (831, 2.2x 18th St) and 710 S Alvarado the best 2-3 mi (1,793 / 2,779, 27% more than 18th St at 2 mi). 6th & Spring is the only DTLA intersection a bicycle dasher names as a hotspot, and Home Depot Wilshire (Westlake) is the only DTLA-side staging spot a 2026 dasher names.",
+     "data_ref": "market/listing_coverage.json (121 E 6th 831/1,333/2,262, robbery 418; 710 S Alvarado 356/1,793/2,779, robbery 345)",
+     "quotes": [
+      {
+       "id": "avp2wa",
+       "quote": "We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+       "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+       "sub": "r/doordash",
+       "year": 2019,
+       "score": 1,
+       "kind": "post"
+      },
+      {
+       "id": "om5oxt3",
+       "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+       "sub": "r/doordash_drivers",
+       "year": 2026,
+       "score": 1,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "\"No roll-up inventory\" is a property of a 60-listing scrape with CoStar blocked and only 5 listings verified, not of the market. It should be stated as \"not found\", not \"does not exist\".",
+     "data_ref": "market/listings.json (60 listings, 5 verified)"
+    },
+    {
+     "point": "A resident-level counter for the north edge of the core: Chinatown is described as walkable and safer/cheaper than downtown or South Park; it is within 1 mi of the Historic Core and was not scored at all.",
+     "quotes": [
+      {
+       "id": "icw0w10",
+       "quote": "Chinatown is super walkable and doable without a car, and its safer and more affordable than downtown or south park.",
+       "url": "https://www.reddit.com/r/LosAngeles/comments/veuy1t/best_walkablelivable_neighborhoods_in_los_angeles/icw0w10",
+       "sub": "r/LosAngeles",
+       "year": 2022,
+       "score": 2,
+       "kind": "comment"
+      }
+     ]
+    }
+   ],
+   "what_would_change_the_verdict": "LAPD 2025-26 data showing Historic Core robbery has fallen toward the 18th St level; a verified roll-up or ground-floor loading unit on Spring/Main/7th under about $1.50/sf; a rider count showing two-wheel couriers already stage at 6th & Spring."
+  },
+  {
+   "id": "C5",
+   "claim": "DTLA is the only LA area where two-wheel delivery reads as \"normal\" (29 of 80 posts); the Hollywood-Silverlake zone (including Koreatown) has volume; Westside e-bike appeal rests on Prop 22 wage-floor economics.",
+   "verdict": "weakened",
+   "strength_of_counter": "strong",
+   "counter_evidence": [
+    {
+     "point": "Of the 29 DTLA two-wheel IDs most are prospective \"can I do this on a bike?\" questions, not experience. Of the roughly ten experiential accounts, the positive ones are 2018-2021; every post-2020 experiential account is negative (2020 Uber dried up, 2022 zero orders for hours on a scooter, 2022 no bike-friendly orders, 2023 \"dead\", 2024 not busy enough) and a 2019 courier quit after a week. \"Normal\" here means \"riders try DTLA and report starvation\", which is a warning, not a demand signal.",
+     "data_ref": "reddit/analysis_posts.json dtla two_wheel_ids by year: 2018:1 2019:3 2020:5 2021:6 2022:5 2023:3 2024:4 2026:2",
+     "quotes": [
+      {
+       "id": "hm4wch3",
+       "quote": "I don't understand why people go to dtown unless you have electric bike or scooter.",
+       "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/hm4wch3",
+       "sub": "r/doordash",
+       "year": 2021,
+       "score": 1,
+       "kind": "comment"
+      },
+      {
+       "id": "er4dw9",
+       "quote": "Did something happen with Uber in the DTLA area? I work via bicycle with a 95% if that matters.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/er4dw9/ubereats_in_los_angeles/",
+       "sub": "r/UberEATS",
+       "year": 2020,
+       "score": 0,
+       "kind": "post"
+      },
+      {
+       "id": "srp8mj",
+       "quote": "I'm using scooter delivery in one of the most populated, restaurant-active areas in Los Angeles. I go online during surge hours, slow hours and in between. Yet, I sit there... waiting and waiting... literally for over an hour and get zero orders.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/srp8mj/im_literally_not_getting_any_orders_for_hours_in/",
+       "sub": "r/UberEATS",
+       "year": 2022,
+       "score": 5,
+       "kind": "post"
+      },
+      {
+       "id": "12whkh2",
+       "quote": "Bikeable orders are mostly gone in DTLA, it’s dead except for a few that always go up the big hills miles away",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/12whkh2/bikeable_orders_are_mostly_gone_in_dtla_its_dead/",
+       "sub": "r/doordash_drivers",
+       "year": 2023,
+       "score": 1,
+       "kind": "post"
+      },
+      {
+       "id": "1dmru9y",
+       "quote": "I've mostly been working DTLA and it's not always busy enough. What is the best area in LA county to do UE? I'm on a bicycle (non electric).",
+       "url": "https://www.reddit.com/r/UberEATS/comments/1dmru9y/hello_everyone/",
+       "sub": "r/UberEATS",
+       "year": 2024,
+       "score": 3,
+       "kind": "post"
+      },
+      {
+       "id": "emt5f0e",
+       "quote": "I’m in la and did bike deliveries in downtown. It sucked and was scary with all the cars.",
+       "url": "https://www.reddit.com/r/couriersofreddit/comments/blzeky/gas_prices_in_los_angeles_please_tip_your_courier/emt5f0e",
+       "sub": "r/couriersofreddit",
+       "year": 2019,
+       "score": 7,
+       "kind": "comment"
+      },
+      {
+       "id": "emt5f0e",
+       "quote": "I gave up after a week",
+       "url": "https://www.reddit.com/r/couriersofreddit/comments/blzeky/gas_prices_in_los_angeles_please_tip_your_courier/emt5f0e",
+       "sub": "r/couriersofreddit",
+       "year": 2019,
+       "score": 7,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "The highest-scored DTLA two-wheel thread (1,172 upvotes) has no body text; the only bicyclist in it says DTLA is oversaturated and sends people to K-town/Hollywood. Upvotes on text-less or car-driver posts are being counted as two-wheel demand.",
+     "quotes": [
+      {
+       "id": "h09vcrh",
+       "quote": "Good luck in downtown. Last few times i was there, there were too many dashers online, and i saw them myself. Didnt get any request for an hour, more or less. And it just kept happening day after day.",
+       "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h09vcrh",
+       "sub": "r/doordash",
+       "year": 2021,
+       "score": 1,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "The Prop 22 argument is built on a rider's misreading. Prop 22 pays 120% of the local minimum wage where the ride starts; the \"pegged to Santa Monica $16.90\" post is one driver's question, while a 2025 post uses the correct LA City figure ($17.87 -> $21.44). The floor is not Westside-specific, and the 2024 e-bike poster cites no gas/parking/tickets, not the wage floor. A 2024 driver says the Valley and Westside out-perform Hollywood, contradicting the Hollywood-Silverlake \"volume\" claim.",
+     "quotes": [
+      {
+       "id": "1d5qonh",
+       "quote": "with prop 22 in Los Angeles I’m guaranteed 120% of the minutes wage of Santa Monica ($16.90).",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1d5qonh/prop_22_questions/",
+       "sub": "r/doordash_drivers",
+       "year": 2024,
+       "score": 1,
+       "kind": "post"
+      },
+      {
+       "id": "1mm5m58",
+       "quote": "so the minimum wage is $17.87/hour and 120% is $21.44, plus 35cents per mile.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/1mm5m58/prop_22_calculations_los_angeles_my_numbers_dont/",
+       "sub": "r/UberEATS",
+       "year": 2025,
+       "score": 0,
+       "kind": "post"
+      },
+      {
+       "id": "1e612mu",
+       "quote": "I do it on a E bike, so I don’t pay gas or expenses of a car. I never have to worry about repairs or parking or tickets.",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+       "sub": "r/doordash_drivers",
+       "year": 2024,
+       "score": 0,
+       "kind": "post"
+      },
+      {
+       "id": "l7g1meh",
+       "quote": "The valley low key is popping more than Hollywood. Same with westside.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/1d82nvm/how_is_it_possible_to_keep_your_acceptance_rate/l7g1meh",
+       "sub": "r/UberEATS",
+       "year": 2024,
+       "score": 2,
+       "kind": "comment"
+      }
+     ]
+    },
+    {
+     "point": "The corpus the counts come from is contaminated: a Surrey BC dasher, a 123-upvote \"Roanoke/Westlake\" (Texas) post tagged to Westlake, and a courier in Normandy, France tagged to Koreatown via \"Normandie\" all sit in corpus_la. Area counts of 2-5 docs (Silver Lake, Koreatown two-wheel) cannot survive that noise.",
+     "quotes": [
+      {
+       "id": "1qv9y0g",
+       "quote": "I currently live in Surrey, BC and do DoorDash",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/1qv9y0g/best_area_in_bc_to_do_door_dash/",
+       "sub": "r/doordash_drivers",
+       "year": 2026,
+       "score": 2,
+       "kind": "post"
+      },
+      {
+       "id": "wkb5w3",
+       "quote": "I moved north to Roanoke/Westlake area and I’m never going back.",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/wkb5w3/holy/",
+       "sub": "r/doordash_drivers",
+       "year": 2022,
+       "score": 123,
+       "kind": "post"
+      },
+      {
+       "id": "1c00k1q",
+       "quote": "Note that I'm planning to work on a bike (or e-bike) and I live in France, Normandie.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/1c00k1q/how_many_hours_max_per_week_can_you_work_on_uber/",
+       "sub": "r/UberEATS",
+       "year": 2024,
+       "score": 5,
+       "kind": "post"
+      }
+     ]
+    }
+   ],
+   "what_would_change_the_verdict": "Re-code the ~80 courier posts by era (pre/post 2021) and by prospective vs experiential with a second coder, drop non-LA docs, and show DTLA still leads on positive experiential accounts; add Spanish-language or Facebook/WhatsApp rider sources; a field count of two-wheel couriers at DTLA ghost kitchens."
+  },
+  {
+   "id": "C6",
+   "claim": "Riders' stated spec is e-moped class (20-25+ mph, 40+ mi); fast e-bikes are registered as \"car\"; DoorDash bike mode starves in DTLA; ghost kitchens are where riders stage.",
+   "verdict": "weakened",
+   "strength_of_counter": "moderate",
+   "counter_evidence": [
+    {
+     "point": "The e-moped \"spec\" is n=2 and one of the two cited IDs is not in the corpus. Revealed preference among riders who report real volume is standing e-scooters plus transit (5,500 deliveries on an Unagi and the Metro bus), and a 2024 LA e-bike-vs-moped poster lists parking, insurance, exams and registration as the reasons NOT to go moped class. The Sur-Ron behaviour in DTLA is a cautionary note, not a spec.",
+     "quotes": [
+      {
+       "id": "zoqc22",
+       "quote": "I’m currently at over 5500 deliveries using just my Unagi electric scooter and the Metro Bus system to save battery",
+       "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+       "sub": "r/doordash",
+       "year": 2022,
+       "score": 2,
+       "kind": "post"
+      },
+      {
+       "id": "1gn1qei",
+       "quote": "But then I have to deal with LA parking, insurance, exams, registration...",
+       "url": "https://www.reddit.com/r/ebikes/comments/1gn1qei/los_angeles_ebike_vs_moped/",
+       "sub": "r/ebikes",
+       "year": 2024,
+       "score": 0,
+       "kind": "post"
+      }
+     ]
+    },
+    {
+     "point": "Bike-mode starvation in DTLA survives (about five independent accounts), but the same accounts say the orders that do come \"always go far away from downtown Core\"; dispatch radius exceeds the 1-2 mi restaurant circle, which undermines the restaurant-count logic that puts the hub at 18th St and favours a site on the ring where the long orders actually go.",
+     "quotes": [
+      {
+       "id": "ujwab7",
+       "quote": "not one delivery is bike friendly, only scooter mode gets orders, and they always go far away from downtown Core or inner ring road.",
+       "url": "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/",
+       "sub": "r/doordash_drivers",
+       "year": 2022,
+       "score": 2,
+       "kind": "post"
+      }
+     ]
+    },
+    {
+     "point": "Every ghost-kitchen staging quote is from a car driver (\"as soon as you park\"; \"towards my car\"; a door dasher guessed from a car photo), and the 138-upvote post is about those kitchens closing. No two-wheel rider in 603 docs mentions a ghost kitchen. Ghost kitchens are where car dashers stage; whether e-bike couriers do is unobserved.",
+     "quotes": [
+      {
+       "id": "1245m4q",
+       "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these.",
+       "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+       "sub": "r/UberEATS",
+       "year": 2023,
+       "score": 138,
+       "kind": "post"
+      }
+     ]
+    }
+   ],
+   "what_would_change_the_verdict": "A lunch-hour field count of two-wheel riders at 1842 W Washington and 358 W 38th; a rider survey (n > 30) on preferred vehicle class; DoorDash/Uber bike-mode dispatch-radius data for DTLA."
+  }
+ ],
+ "better_alternatives": [
+  {
+   "location": "2474 W Pico Blvd (Pico Blvd & Vermont Ave, Pico-Union)",
+   "why": "Beats 18th St on 2 mi (1,435 vs 1,410), 3 mi (2,591 vs 2,435), robbery (78 vs 96), assault (119 vs 122) and bike theft (4 vs 19); 0.67 mi from the 1842 W Washington ghost kitchen; outside the freeway ring where the only Pico-Union-based dasher in the corpus stays; on the same Pico corridor the draft favours.",
+   "evidence": "market/listing_coverage.json; market/listings.json (price on request, so rent must be verified); quote om5mqx0."
+  },
+  {
+   "location": "1824 S Magnolia Ave (Pico-Union, 7,515 sf warehouse)",
+   "why": "Highest 2-mi count of the Pico-Union set (1,521), 3 mi 2,563, robbery 68 / assault 104 (about 4x city, lowest of the DTLA-adjacent sites), 0.72 mi from 1842 W Washington. Only weakness is the derived rent (~$14,429/mo, listing index x12), which needs verification.",
+   "evidence": "market/listing_coverage.json; market/listings.json"
+  },
+  {
+   "location": "3651 Beverly Blvd (Koreatown North / Vermont & Beverly)",
+   "why": "Lowest robbery (57) and assault (85) of every central candidate, 3 mi 2,588 (above 18th St), 1.27 mi from the Western Ave ghost kitchen named in a 71-upvote comment, on the Vermont/Beverly transit spine; freestanding flex building. A better Koreatown-side satellite than 856 S Vermont on cost and crime, and arguably a better main hub than 18th St for a rider-facing counter.",
+   "evidence": "market/listing_coverage.json; market/listings.json; quote kjsvaov."
+  },
+  {
+   "location": "768 Ceres Ave (warehouse) + 3651 Beverly Blvd or Ktown East (rider counter)",
+   "why": "Union with Ktown East is 2,477 at 2 mi, above the 2,450 the draft cites; Ceres has the best 1-mi density of the cheap sites (544), the lowest bike-theft count (2), and its robbery/assault figure is a Skid Row-clipping artifact (785 E 14th six blocks away scores like 18th St). Keeps the roll-up warehouse function where warehouses are and puts the rider-facing counter where crime is lowest.",
+   "evidence": "market/site_pairs.json; market/listing_coverage.json"
+  },
+  {
+   "location": "Historic Core: 121 E 6th St or 525 S Los Angeles St",
+   "why": "If SF-style walk-in density is the goal these are the only sites that deliver it: 831 / 824 restaurants at 1 mi (2.2x 18th St) and 6th & Spring is the one DTLA intersection a bicycle dasher names as a hotspot. Cost is 24x city robbery and the highest bike theft in the set; suitable only for a staffed daytime counter, never for overnight fleet storage.",
+   "evidence": "market/listing_coverage.json; quote avp2wa."
+  },
+  {
+   "location": "785 E 14th St (Warehouse District south, $5,242/mo)",
+   "why": "Cheapest listing in the set with a crime profile equal to 18th St (robbery 106, assault 102) and one bike theft; 1,260 restaurants at 2 mi and 953 at 1.5 mi (above 18th St). Shows that the Warehouse District is not uniformly worse than the Pico corridor.",
+   "evidence": "market/listing_coverage.json; market/listings.json"
+  }
+ ],
+ "method_holes": [
+  "corpus_la.jsonl contains non-LA documents that survived LA verification: Surrey BC (1qv9y0g), Toronto (w1rsi0, p364dqe), Phoenix (17074h9), Montreal (ht9rv7), Philadelphia (1dmdxe9), Venice FL (j87agc), a 123-upvote Roanoke/Westlake Texas post tagged to Westlake (wkb5w3), and a Normandy, France courier tagged to Koreatown via \"Normandie\" (1c00k1q). Area counts of 2-5 docs are inside this noise floor.",
+  "About 70% of the corpus is r/LosAngeles and r/AskLosAngeles resident chatter; only about 80 of 603 \"two-wheel\" docs are actual two-wheel courier posts, and the DTLA majority among them is mostly prospective questions, not experience.",
+  "DTLA is the default LA keyword (192 docs); loose \"downtown\" and \"DTLA\" usage means the 29/80 count conflates the Historic Core, South Park, Arts District, Chinatown and the freeway ring, none of which is the 18th St site.",
+  "Time skew: positive DTLA two-wheel accounts are 2018-2021 (pre-Prop 22, pandemic surge); every post-2020 experiential DTLA account is negative. The draft treats the pooled count as current demand.",
+  "Several IDs cited in analysis_posts.json (1lcn2d4, 1nu0ot9, 1dizbwm, 16v4et6, q0lu13, 1v45xof) are not in corpus_la.jsonl or any subset, so the e-moped spec and some staging claims cannot be verified.",
+  "Upvote scores are used as evidence weight on posts with no body text (the 1,172-upvote DTLA thread) and on car-driver posts (1245m4q, 138 upvotes) that are then read as two-wheel evidence.",
+  "Ghost-kitchen staging is entirely car-driver evidence; no two-wheel rider mentions a ghost kitchen, and the highest-scored post is about those kitchens closing.",
+  "The crime metric uses a 0.5-mi circle that clips Skid Row for Ceres but not for 785 E 14th six blocks away; it ignores bike-theft density, which is the crime an e-bike hub actually suffers and on which 18th St is one of the worst sites.",
+  "LAPD crime data ends in early 2024 (NIBRS transition); the \"2023-24\" density is 14.2 months of stale data and cannot show whether the Historic Core has changed since.",
+  "Listings: 60 scraped, 5 verified, CoStar blocked; index rents multiplied by 12 by assumption; the recommended site is one anonymous Craigslist ad with a square-footage mismatch, below-market rent and no address. \"No roll-up inventory in the Historic Core\" is therefore \"none found\", not \"none exists\".",
+  "The 2,450 two-node union is computed for Historic Core + Ktown East, not for the recommended 18th St + 856 Vermont pair; 18th St is absent from site_pairs.json.",
+  "The two-wheel index weights (tw_index_3mi) and the rider-reach scores in site_scores.json are flagged ASSUMPTION and set by the analyst; the Ceres-vs-18th St ranking flips if the 1-mi radius is weighted as the draft's own text says it should be.",
+  "The Prop 22 argument is built on one rider's misreading (wage pegged to Santa Monica); another 2025 post uses the correct LA City rate. Prop 22 is citywide and cannot explain a Westside-specific e-bike preference.",
+  "No Spanish-language, Facebook or WhatsApp sources; the immigrant e-bike courier segment the hub is meant to serve is inferred from English Reddit, where it is essentially absent."
+ ],
+ "overall": "The 18th St recommendation is not refuted but it is weaker than the draft presents. Its geodata case rests on the 2-mi ring only: at the 1-1.5 mi radius the draft itself calls the e-bike walk-in range, 18th St is the thinnest central site (370), and the draft's own Pico-Union listings (2474 W Pico, 1824 Magnolia) and 3651 Beverly beat it on coverage and on every crime count including bike theft, where 18th St (19) is among the worst outside the Historic Core. The Reddit evidence for the corridor is essentially zero: no rider mentions 18th St, Ceres or the Pico/Olympic corridor; the only Pico-Union-based dasher avoids the freeway ring the site sits inside; and the ghost-kitchen staging pattern is car-driver behaviour. C4 (avoid the Historic Core and Westlake for a main hub) survives. C5 is the most overstated claim: DTLA \"normal\" two-wheel demand is mostly 2018-21 optimism followed by post-2020 starvation reports, in a corpus with non-LA leakage. Single biggest weakness: the entire plan hinges on one anonymous, below-market, unverified Craigslist ad and an uncomputed two-node union, while cheaper-to-defend alternatives (Ceres + Beverly, 2,477) exist in the same files."
+}

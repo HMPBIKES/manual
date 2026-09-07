@@ -1,0 +1,770 @@
+{
+ "scope": "Vehicle types, specs, app registration modes, battery/charging/swap, rental demand, theft/lockup, repair access and vehicle-linked geography across all of LA. Sources: topic_vehicle_spec.jsonl (72 docs) + topic_two_wheel.jsonl (603 docs), 40 overlapping = 635 unique docs, all read in full. Non-LA docs (Toronto w1rsi0, Montreal ht9rv7, San Jose k2ojlsn, BC 1qv9y0g, France 1c00k1q, Phoenix 17074h9, Philly 1dmdxe9, Longview WA 1dkpsbh) excluded from counts; wildfire/COVID/tourism megathreads ignored.",
+ "docs_read": {
+  "unique_docs": 635,
+  "vehicle_spec_file": 72,
+  "two_wheel_file": 603,
+  "overlap": 40,
+  "delivery_specific_docs_approx": 75,
+  "excluded_non_LA": [
+   "w1rsi0",
+   "ht9rv7",
+   "k2ojlsn",
+   "1qv9y0g",
+   "1c00k1q",
+   "17074h9",
+   "1dmdxe9",
+   "1dkpsbh"
+  ]
+ },
+ "vehicle_census": [
+  {
+   "class": "pedal bike (non-electric)",
+   "self_use_docs": 22,
+   "self_use_ids": [
+    "1dmru9y",
+    "ift0z2",
+    "avp2wa",
+    "7u8jh1",
+    "h09vcrh",
+    "emt5f0e",
+    "1h27t3u",
+    "ps4sre",
+    "iowfiq",
+    "q0yp2w",
+    "12vic27",
+    "ujwab7",
+    "fj5pr9",
+    "1kyp7be",
+    "er4dw9",
+    "igu9bi",
+    "7sdaho",
+    "hadavv",
+    "dtc8eab",
+    "syz2gj",
+    "syz06v",
+    "syyzri"
+   ],
+   "discussed_docs": 25,
+   "discussed_ids": [
+    "4ptffv",
+    "exguvj",
+    "pvyfqo",
+    "1ke5hch",
+    "1ke5hv7",
+    "1ke5gt4",
+    "11khbg4",
+    "162vejl",
+    "wmx6he",
+    "1f9x83i",
+    "15dae0o",
+    "10k0vso",
+    "10k0wio",
+    "15cydh0",
+    "1qlhg3s",
+    "plw6fe",
+    "nqiyyx",
+    "brglc9",
+    "rkx2s2",
+    "rkx1qz",
+    "dt9baww",
+    "dt93l45",
+    "h47y74z",
+    "h0akqwr",
+    "hm4wch3"
+   ],
+   "areas": [
+    "DTLA (dominant)",
+    "Koreatown",
+    "Hollywood",
+    "Westwood",
+    "WeHo/Beverly Hills (night bike messenger)",
+    "Pasadena",
+    "Santa Monica",
+    "Valley (NoHo/Burbank, questions)"
+   ],
+   "note": "syz2gj/syz06v/syyzri and 1ke5* are the same text cross-posted; unique self-use authors ~20. Pedal-bike couriers cluster in DTLA and report it as tiring, over-saturated and sending long orders.",
+   "quotes": [
+    {
+     "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood.",
+     "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+     "sub": "dtla",
+     "year": 2018,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "I tried delivering food in downtown LA on a regular bike but it was so damn tiring. Going up inclines was hell.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/syz2gj/ebikescooter_for_delivery_in_dtla/",
+     "sub": "AskLosAngeles",
+     "year": 2022,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "class": "standing e-scooter (kick style)",
+   "self_use_docs": 11,
+   "self_use_ids": [
+    "nq3ho0",
+    "h0dfet3",
+    "dm0jhp",
+    "djzc4p",
+    "fah04r",
+    "ffvecm",
+    "zoqc22",
+    "84qfz0",
+    "srp8mj",
+    "14ah15y",
+    "ur25fd"
+   ],
+   "discussed_docs": 7,
+   "discussed_ids": [
+    "1ce67b8",
+    "f56kzqq",
+    "h08pup0",
+    "h08moy1",
+    "dcno96",
+    "j9vs4j",
+    "hm4wch3"
+   ],
+   "areas": [
+    "DTLA",
+    "Hollywood (3 posts)",
+    "West San Fernando Valley (Unagi + Metro bus)",
+    "Pasadena",
+    "Westwood (Duffl store fleet G30P)",
+    "Beverly Hills (Bird used by 'drivers')"
+   ],
+   "note": "The single most-upvoted delivery doc in the corpus (score 1172) is a DTLA dasher who switched from car to electric scooter.",
+   "quotes": [
+    {
+     "quote": "I used to dash with a car, now an electric scooter, Downtown LA",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 1172,
+     "kind": "post"
+    },
+    {
+     "quote": "No need to waste time finding parking. Using a car can waste you an extra 20 minutes for every passing hour and that 20 minutes I can already complete an extra delivery using a scooter.",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0dfet3",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 2,
+     "kind": "comment"
+    },
+    {
+     "quote": "I’m currently at over 5500 deliveries using just my Unagi electric scooter and the Metro Bus system to save battery (I can fold it and store it under the seats).",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "class": "e-bike <=28 mph (class A)",
+   "self_use_docs": 2,
+   "self_use_ids": [
+    "1e612mu",
+    "1d5qonh"
+   ],
+   "discussed_docs": 17,
+   "discussed_ids": [
+    "1gn3r1q",
+    "1dnmppt",
+    "191gamv",
+    "udhb8g",
+    "obd8b4",
+    "yug8io",
+    "1ke5hch",
+    "1ke5hv7",
+    "1ke5gt4",
+    "syz2gj",
+    "syz06v",
+    "syyzri",
+    "xmdxgz",
+    "hm4wch3",
+    "jfezl3",
+    "j45wg3",
+    "j3lp8g"
+   ],
+   "areas": [
+    "Santa Monica (both first-person users, Prop 22)",
+    "DTLA (most 'which e-bike for delivery' questions)",
+    "Torrance/South Bay (question)"
+   ],
+   "note": "Many intent posts (international student, financing, Amazon $300-500 bike) but only two first-person e-bike couriers, both in Santa Monica.",
+   "quotes": [
+    {
+     "quote": "I do it on a E bike, so I don’t pay gas or expenses of a car. I never have to worry about repairs or parking or tickets.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "Im renting car to work for DoorDash, grubhub and Roadie(cvs orders) but I was thinking that would be a nice way to avoid this f* traffic and car expenses to buy an e-bike. I see some around 300$ - 500$ on Amazon with 50-60 miles of range.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1gn3r1q/electric_bike/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 1,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "class": "fast e-bike / e-moped 28-40 mph (class B/C)",
+   "self_use_docs": 0,
+   "self_use_ids": [],
+   "discussed_docs": 8,
+   "discussed_ids": [
+    "1tydibj",
+    "xmdxgz",
+    "1gn1qei",
+    "mexjk5r",
+    "k2lhr5c",
+    "xtaxlp",
+    "vb0jok",
+    "1qyzcs4"
+   ],
+   "areas": [
+    "DTLA (72V scooter for local delivery; Surron/60mph ebike sightings; 72V dual-battery build)",
+    "Long Beach->DTLA/Torrance (45-50 mph want)",
+    "Westside (P100S 30 mph review)"
+   ],
+   "note": "No first-person delivery rider in this class. Demand is expressed as spec wishes: 'fast e bike', 45-50 mph, 28 mph 'sweet spot'.",
+   "quotes": [
+    {
+     "quote": "And i am open to ALL of your high end fast e bike suggestions.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/xmdxgz/downtown_la_with_motorcycle/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "I think a 28mph ebike is the sweet spot for flattening the hills, keeping up with traffic on the side streets, and covering some of the larger distances between points of interest.  But it's going to be risky to leave locked up anywhere.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1iyt1ld/is_it_possible_to_get_around_la_with_bike/mexjk5r",
+     "sub": "AskLosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment"
+    }
+   ]
+  },
+  {
+   "class": "gas scooter/moped 49-150cc (Ruckus/Zuma/PCX/Vespa)",
+   "self_use_docs": 1,
+   "self_use_ids": [
+    "uwesb7"
+   ],
+   "discussed_docs": 7,
+   "discussed_ids": [
+    "dm5uhi",
+    "xmdxgz",
+    "7srnre",
+    "dczrwjo",
+    "1gn1qei",
+    "2p869h",
+    "kvibcz2"
+   ],
+   "areas": [
+    "Glendale -> DTLA (49cc and 'freeway legal' scooter for Uber Eats)",
+    "DTLA (Ruckus/Zuma vs e-bike question; Vespa on sidewalk)",
+    "Long Beach (150cc Lance Cabo)",
+    "South LA (question)"
+   ],
+   "quotes": [
+    {
+     "quote": "So today I started delivering on my scooter for Uber eats here in Glendale California.. and I'm curious if there's an algorithm for scooters/mopeds... Because the directions that Uber gave me were freeway directions",
+     "url": "https://www.reddit.com/r/UberEATS/comments/uwesb7/mopedscooter_algorithm/",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "class": "motorcycle (class D)",
+   "self_use_docs": 1,
+   "self_use_ids": [
+    "h08moy1"
+   ],
+   "discussed_docs": 9,
+   "discussed_ids": [
+    "udhb8g",
+    "syzs38",
+    "1jyjgra",
+    "cw23ump",
+    "6snw6c",
+    "3zig16",
+    "p0x911p",
+    "1igy3u4",
+    "2p869h"
+   ],
+   "areas": [
+    "DTLA (motorcycle dasher recommends used Ninja 300; location of commenter unstated)",
+    "Valley<->Westside and Koreatown->Playa Vista motorcycle commuters (not delivery)",
+    "Eagle Rock (Zero DS electric motorcycle for sale $6800)"
+   ],
+   "quotes": [
+    {
+     "quote": "I dash on a motorcycle, and for 2 grand would probably invest in a used ninja 300 or something. These things get 65-70 mpg. Perfect for delivering in downtown,  can park anywhere,  cut traffic, obviously faster top speed, cheap insurance,  cheap parts, low maintenance,  etc.",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h08moy1",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 10,
+     "kind": "comment"
+    }
+   ]
+  },
+  {
+   "class": "Sur-Ron / Talaria / e-moto",
+   "self_use_docs": 0,
+   "self_use_ids": [],
+   "discussed_docs": 4,
+   "discussed_ids": [
+    "k2lhr5c",
+    "1pphv35",
+    "l69n8nr",
+    "kftlwvx"
+   ],
+   "areas": [
+    "DTLA (Surron riders 50mph+)",
+    "DTLA/Koreatown street use question",
+    "South Bay (kids on e-motorcycles)",
+    "SGV/Long Beach river paths (mini-bike gang)"
+   ],
+   "quotes": [
+    {
+     "quote": "In DTLA the Surron guys regularly drive 50mph+ go karts through the middle of the city no tickets.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/16uj0hn/where_do_you_ride_your_high_performance_scooter/k2lhr5c",
+     "sub": "ElectricScooters",
+     "year": 2023,
+     "score": 10,
+     "kind": "comment"
+    }
+   ]
+  }
+ ],
+ "specs_needed": [
+  {
+   "claim": "Stated target spec for a DTLA delivery e-bike/scooter: at least 20-25 mph, 40-50 mile range, easy to lock while picking up (same rider posted to 3 subs).",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "Ideally I’d like one that goes at least 20-25 mph and has a range of at least 40-50 miles. Also, one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/syz2gj/ebikescooter_for_delivery_in_dtla/",
+     "sub": "AskLosAngeles",
+     "year": 2022,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Hills are the recurring reason pedal bikes fail for delivery (DTLA inclines, Echo Park, Westwood, Silver Lake); riders want motor assist or a 28 mph e-bike to 'flatten the hills'.",
+   "evidence_count": 7,
+   "quotes": [
+    {
+     "quote": "I feel especially bad knowing that my order is coming from DTLA when I live at the very top of a hill in Echo Park. I always tip that person, they show up exhausted.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dt93l45",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 10,
+     "kind": "comment"
+    }
+   ]
+  },
+  {
+   "claim": "Range/speed numbers actually cited by LA riders: 30-mile range and 30+ mph for DTLA group rides; a 1086 Wh scooter used 66% battery on a 19-mile Westside ride at 25-30 mph; commuters need 20 mph / 25 miles (DTLA) or ~10 miles/day (Koreatown); a Long Beach multi-city commuter wants 45-50 mph.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "Speed wise I don't really need anything more than 20 mph.  And total mileage would be 25.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/p32bpv/advice_for_a_newbie_looking_to_make_their_first/",
+     "sub": "ElectricScooters",
+     "year": 2021,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Battery/charging behaviour: no battery-swap mentions anywhere; riders conserve battery by folding scooter onto Metro bus and charging at a McDonald's 'command center'; a removable battery is a purchase requirement; one DTLA builder runs 72V dual batteries; overnight-charge and 80-90% cap advice from scooter reviewer.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "While waiting for orders, I hang out at the McDonald’s closest to the mall and plug in what I like to call “the command center”; iPad, iPhone, Nintendo Switch, 2 portable power banks, and my scooter all charging at once.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Shift lengths stated: Duffl 3-hour shifts; 5-6 hours on bike/foot in DTLA; 4-6 hour evening runs; 4-8 hours multi-app; ~3 hrs/day wished; 15 hrs/week Fri-Sun on a 49cc.",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "I work at a company called Duffl which has 3 hour delivery shifts. Don’t need crazy range. max of 3 hours worth.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+     "sub": "ElectricScooters",
+     "year": 2022,
+     "score": 4,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Durability/road-surface need: LA potholes break scooters (G30P fleet 'break constantly', DTLA 'roads are shit'); solid vs pneumatic tires debated; tire liners a must in South Bay.",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "The roads here are shit.  Just shit.  Potholes all over.  Total shit.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/p32bpv/advice_for_a_newbie_looking_to_make_their_first/",
+     "sub": "ElectricScooters",
+     "year": 2021,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  }
+ ],
+ "app_modes": [
+  {
+   "claim": "DoorDash bicycle mode is described as effectively dead in DTLA; scooter mode is what gets offers, but those offers travel far outside the core.",
+   "evidence_count": 2,
+   "quotes": [
+    {
+     "quote": "once I tried it not one delivery is bike friendly, only scooter mode gets orders, and they always go far away from downtown Core or inner ring road.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/ujwab7/do_residentsworkers_in_downtown_los_angeles_still/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Uber Eats bicycle/scooter mode in LA: long trips (3 miles out of DTLA to Ktown/Silver Lake), hours with zero offers in DTLA scooter mode, 'bike and e-bike modes across all delivery apps are dead' (2025); Postmates historically better for bikes but Uber paid more.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "Ubereats give long distances sometimes, try postmates if you want short distances.  uber can send you a 3 miles outside DTLA, to koreatown or silverlake etc\nPOSTMATES has a better system for bicycle , but you make more with UBERBICYCLE",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dtc8eab",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 2,
+     "kind": "comment"
+    },
+    {
+     "quote": "I've seen posts online saying that bike and e-bike modes across all delivery apps are dead as far as the volume of orders recevied",
+     "url": "https://www.reddit.com/r/doordash/comments/1ke5gt4/anyone_still_delivering_in_west_la_on_a_regular/",
+     "sub": "doordash",
+     "year": 2025,
+     "score": 1,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Grubhub LA sign-up (2022) offered only car or motorcycle; selecting 'no car or motorcycle' got the applicant rejected -- a registration gap a 28-35 mph e-moped (motorcycle-class) could fill.",
+   "evidence_count": 1,
+   "quotes": [
+    {
+     "quote": "When I put my 1st application in there was no option for ebike only car or motorcycle. should I have selected motorcycle? I ended up clicking i dont have a car or motorcycle option,  and was rejected.",
+     "url": "https://www.reddit.com/r/grubhubdrivers/comments/udhb8g/ebike_delivery_in_los_angeles/",
+     "sub": "grubhubdrivers",
+     "year": 2022,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Uber navigation routes moped/scooter couriers onto freeways (Glendale rider on a freeway-legal scooter that cannot accelerate to freeway speed) -- riders switch to Google Maps.",
+   "evidence_count": 1,
+   "quotes": [
+    {
+     "quote": "my scooter is freeway legal but will not reach the acceleration needed for the freeway.. I'm a bit concerned.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/uwesb7/mopedscooter_algorithm/",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Prop 22 changes the economics for slow vehicles: e-bike dashers in Santa Monica cite a ~$21/hr floor (120% of local minimum wage) and an accept-everything strategy; speed matters less than active time.",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "But with prop 22 in Los Angeles I’m guaranteed 120% of the minutes wage of Santa Monica ($16.90). So if I’m trying to just make $20 an hour wouldn’t it be worth it to say yes to every delivery?",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1d5qonh/prop_22_questions/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 1,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Two-wheel couriers are told where the vehicle pays: scooter beats car only in dense, parking-starved DTLA; outside downtown a car wins; DTLA is over-saturated so bike couriers are pushed to Ktown/Hollywood (no bike lanes) or Los Feliz/Silver Lake/Echo Park.",
+   "evidence_count": 4,
+   "quotes": []
+  },
+  {
+   "claim": "Deactivation risk: no rider mentions app deactivation for vehicle-mode mismatch; the only enforcement themes are LAPD stops of a night bike messenger in Beverly Hills/WeHo and a $200 sidewalk-riding ticket on Wilshire.",
+   "evidence_count": 2,
+   "quotes": []
+  }
+ ],
+ "rental_demand": [
+  {
+   "claim": "E-bike leasing already exists in LA: Wombi opened an office leasing e-bikes with roadside assistance and maintenance (2024).",
+   "evidence_count": 1,
+   "quotes": [
+    {
+     "quote": "There's a company called [Wombi](https://wombi.us/) that just opened up an office here to lease e-bikes. They offer things like road-side assistance and help with maintenance.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1avlwkp/i_ride_a_bicycle_in_la_ask_me_anything/krcpng2",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 2,
+     "kind": "comment"
+    }
+   ]
+  },
+  {
+   "claim": "Financing demand: a would-be DTLA dasher wants to finance a Dirwin e-bike; a Long Beach commuter prefers an e-bike over a moped partly because of 'low payment plans' vs ~$1K upfront; Bike Attack (Santa Monica) financing recommended to a theft victim who cannot afford a replacement.",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "I’m thinking about getting a Dirwin e-bike financed to do door dash deliveries around downtown Los Ángeles.",
+     "url": "https://www.reddit.com/r/doordash/comments/191gamv/finance_a_dirwin_ebike_to_work_in_dtla/",
+     "sub": "doordash",
+     "year": 2024,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Couriers currently rent CARS to deliver (DoorDash/Grubhub/Roadie) and are looking for a cheaper two-wheel alternative; one Glendale courier sought a cheap car rental to start Postmates/DoorDash.",
+   "evidence_count": 2,
+   "quotes": []
+  },
+  {
+   "claim": "UCLA MBA teams ran market research (2020) on courier interest in e-bikes for food delivery -- a prior signal of demand-testing for exactly this product.",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "We're a team of MBA students from UCLA doing market research for interest in e-bikes for food delivery. If you are using an e-bike or are interested in using one, we would love to talk to you.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/jfezl3/research_interviews_about_food_delivery_using/",
+     "sub": "couriersofreddit",
+     "year": 2020,
+     "score": 9,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Shared-scooter heavy users convert to ownership because per-ride costs add up (Lyft/Bird/Lime daily in DTLA); 'NO RENTAL WILL WORK' for fast group rides.",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "Looking to get an electric scooter as I use the ones by Lyft almost every day for work and errands.  The money spent on this adds up quickly.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/p32bpv/advice_for_a_newbie_looking_to_make_their_first/",
+     "sub": "ElectricScooters",
+     "year": 2021,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Price points riders state for purchase (no weekly/monthly rental price stated by anyone): $300-500 Amazon e-bike; $315 new-in-box e-bike; $700 budget class-2 e-bike (DTLA); $700 used 72V scooter from a friend; $1,100 used Aventon (Burbank); $1,100 max scooter (DTLA); $1,500-2,500 (Valley student); $2K used Ninja 300; $600 new 50cc moped.",
+   "evidence_count": 9,
+   "quotes": []
+  },
+  {
+   "claim": "Named rental/subscription brands: Wombi (lease), Metro Bike/Bird/Lime/Lyft/Veo (shared), Boneshaker & Perry's (beach rentals). Zero mentions of Whizz, Zoomo, Joco, Revel, 415 eBikes or HMP in 635 docs.",
+   "evidence_count": 0,
+   "quotes": []
+  },
+  {
+   "claim": "Public e-bike vouchers noted for LA County, Pasadena, Santa Monica and a $2,000 SGV e-cargo voucher -- potential subsidy channel.",
+   "evidence_count": 1,
+   "quotes": []
+  }
+ ],
+ "theft_lockup": [
+  {
+   "claim": "First-person theft while delivering: tires stolen off a dasher's bike in DTLA; an LA e-bike frame cut through and tracked to downtown; another recovered on Skid Row via AirTag.",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/",
+     "sub": "AskLosAngeles",
+     "year": 2024,
+     "score": 100,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Lock-up practice: strip battery and pedals, double 10 mm chains plus U-lock and alarm (Hollywood); one U-lock plus Kryptonite chain (Long Beach); leave a heavy 'boat anchor' lock at the pole and carry a light U-lock; use bike lockers not racks at stations because wheels get stolen; 'don't buy high end bikes'.",
+   "evidence_count": 5,
+   "quotes": [
+    {
+     "quote": "If I leave my e-bike there, I would strip off the pedals and battery, then use two ABUS 10-foot manganese steel chains (10 mm thick), one through the frame and front wheel and the other through the frame and rear wheel.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1nd404t/tired_of_lugging_my_ebike_up_3_stairs_what_are/",
+     "sub": "ebikes",
+     "year": 2025,
+     "score": 13,
+     "kind": "post"
+    },
+    {
+     "quote": "get the most expensive lock you can find. I had into the double digits bikes stolen over two decades. The theft is crazy bad. Don't buy high end bikes and don't get too attached because they will get stolen.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1iyt1ld/is_it_possible_to_get_around_la_with_bike/mfbfwa6",
+     "sub": "AskLosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment"
+    }
+   ]
+  },
+  {
+   "claim": "What riders do with the vehicle during pickup/errands: bring it inside (coffee shops, apartments, fold under bus seat); portability is a stated reason to choose a kick-scooter over a bike; a Ruckus/Zuma buyer worries a motorcycle on the curb for 10 minutes gets ticketed.",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "I don't know how easy/convenient it would be to bring the bike inside to eat if I wanted to go out to lunch. Seems like it would be an issue. I also like that I can ride a scooter on the sidewalk, which feels much safer to me than being on the street.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7fr882/adult_kickscooter_for_last_mile_commuting/",
+     "sub": "LosAngeles",
+     "year": 2017,
+     "score": 3,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Neighborhood theft reputation from riders: Hollywood apartment parking 'not safe', Venice outside = 'guaranteed theft', Santa Monica staircase bike stripped part by part, Marina del Rey rack emptied in 30 minutes under a dead camera, Koreatown 'pyramid of stolen bikes'; DTLA advice: ride a Metro bike so it isn't yours that gets stolen.",
+   "evidence_count": 6,
+   "quotes": []
+  }
+ ],
+ "geography_by_class": [
+  {
+   "class": "pedal bike / e-scooter",
+   "area": "DTLA",
+   "statement": "Dense, parking-starved core is where two-wheel beats car; also the busiest bicycle Uber Eats zone -- but over-saturated and orders get sent far.",
+   "quote": "In dense areas it's a lot faster for bike deliveries, like downtown I imagine. Not having to look for scarce parking and not being stuck in traffic",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/7t0m96/ubereats_on_bicycle_in_la_i_maybe_the_only_one/dt9baww"
+  },
+  {
+   "class": "e-scooter",
+   "area": "DTLA vs outside",
+   "statement": "Scooter only pays in traffic-jammed high-density areas; car wins elsewhere.",
+   "quote": "So I suggest delivering with a scooter only in a traffic jammed, high density area like downtown or anywhere you can find.",
+   "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0dfet3"
+  },
+  {
+   "class": "e-bike (class A)",
+   "area": "Santa Monica / Venice / Culver (Westside)",
+   "statement": "Flat, bike-laned, Prop-22 floor; both first-person e-bike couriers are here; car-free living repeatedly said to work only on the Westside or DTLA.",
+   "quote": "Get a reliable LIGHTWEIGHT E-Bike or if you want to exercise all the time get a regular bike with a rack or basket attachment.",
+   "url": "https://www.reddit.com/r/AskLosAngeles/comments/1psajhg/do_i_need_a_car/nvaq6ik"
+  },
+  {
+   "class": "e-scooter",
+   "area": "West San Fernando Valley",
+   "statement": "Scooter + Metro bus hybrid works in the spread-out Valley (5,500 deliveries).",
+   "quote": "anyone Dash using the bus and an electric scooter (or bicycle) like myself in order to avoid the physical and financial responsibilities of a motor vehicle?",
+   "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/"
+  },
+  {
+   "class": "motorcycle / fast e-moped",
+   "area": "Spread-out LA (Long Beach, Valley<->Westside, Koreatown->Playa Vista)",
+   "statement": "Long cross-basin trips push riders to 45-50 mph two-wheelers or motorcycles.",
+   "quote": "There is no good link between the valley and the Westside so I continue to drive and ride my moto.",
+   "url": "https://www.reddit.com/r/LosAngeles/comments/3oxgq0/la_is_building_a_cool_new_transit_system_so_why/cw23ump"
+  }
+ ],
+ "repair_access": [
+  {
+   "claim": "Named LA repair/retail points: a full-service e-bike shop in the Valley hiring a motor/electrical mechanic; the only authorized Dualtron/Minimotors dealer downtown for big scooters; Demonns Bike Shop on Santa Monica Blvd ($25 tire/tube, bring your own parts, tires and brakes only); Bike Attack Santa Monica; Pedal Electric showroom in Venice; bike kitchens (Bikerowave, Bike Oven, Bike Kitchen).",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "We’re a full service ebike shop that is looking for an experienced bike mechanic that understands motors, electrical, suspension etc. and how to service them. Full time with great compensation. Located in the Valley.",
+     "url": "https://www.reddit.com/r/ebikes/comments/ktkgdq/ebike_mechanic_wanted_in_los_angeles/",
+     "sub": "ebikes",
+     "year": 2021,
+     "score": 30,
+     "kind": "post"
+    },
+    {
+     "quote": "He charges only $25 for replacement of tire and/or inner tube and these M365 clones are NOTORIOUS for having very tight bolts",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/iq3b5t/tire_replacement_in_los_angeles/",
+     "sub": "ElectricScooters",
+     "year": 2020,
+     "score": 2,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Downtime/warranty pain: a KBO buyer with a dead battery got 20+ emails, paid a $99 deposit and the replacement shipped from China not the El Monte warehouse; the Segway reviewer explicitly weighs 'where does the manufacturer have service centers'.",
+   "evidence_count": 2,
+   "quotes": [
+    {
+     "quote": "FYI they are shipping it from China and not their warehouse in El Monte that is about an hour away from me.",
+     "url": "https://www.reddit.com/r/ebikes/comments/tyxsaf/kbo_breeze_step_through_terrible_company/",
+     "sub": "ebikes",
+     "year": 2022,
+     "score": 11,
+     "kind": "post"
+    }
+   ]
+  },
+  {
+   "claim": "Fleet-level maintenance signals: Duffl's G30P fleet breaks constantly on Westwood roads; Wombi's lease bundles maintenance/roadside; South Bay riders need tire liners; novices hire TaskRabbit to assemble.",
+   "evidence_count": 4,
+   "quotes": []
+  }
+ ],
+ "fleet_mix_implication": "Evidence supports a core of Class B (28-35 mph e-moped) with Class A (20-25 mph e-bike) as the second SKU; little support for C/D. Reasoning: (1) The observed courier fleet in LA is pedal bikes (22 self-use docs) and standing e-scooters (11), concentrated in DTLA/Hollywood/Ktown, and both groups describe the same pain: hills, potholes, exhaustion, and apps sending them 3+ miles out of the core. (2) Riders' stated wish-list is 20-25+ mph with 40-50 mile range and easy lock-up (syz2gj), '28mph ebike is the sweet spot' (mexjk5r), and 'high end fast e bike' or Ruckus/Zuma (xmdxgz); one long-haul commuter wants 45-50 mph. (3) App mechanics favour B: DoorDash bicycle mode is 'crickets' while scooter mode gets (far) orders; Grubhub only offered car/motorcycle; Uber routes mopeds onto freeways -- a 28-35 mph vehicle that legally registers as motorcycle/scooter mode captures those offers without freeway exposure. (4) Prop 22 ($21/hr floor in Santa Monica) rewards active time over speed, which keeps Class A viable on the flat Westside where both first-person e-bike couriers operate. (5) Class C/D: only one motorcycle dasher (location unstated) plus Sur-Ron sightings; riders cite insurance/registration/parking friction and ticket risk for motorcycles on curbs. Caveats: zero first-person delivery use of any 28-40 mph vehicle was found; portability (bringing the vehicle indoors, folding onto a bus) is valued by e-scooter users and is lost with an e-moped, so theft-proof lockup/battery removal matters; no battery-swap or spare-battery behaviour exists yet in LA courier talk.",
+ "surprises": [
+  "The highest-scoring delivery vehicle story in the corpus (1,172 upvotes) is a DTLA dasher who moved from car to a standing electric scooter, and a West Valley dasher has 5,500 deliveries on an Unagi scooter + Metro bus -- kick-scooters, not e-bikes, are the visible electric courier vehicle in LA.",
+  "DoorDash 'bicycle mode' is repeatedly described as producing no offers in DTLA; couriers register as scooter to get anything, then cherry-pick short trips -- vehicle mode, not vehicle, is the gating factor.",
+  "Grubhub's LA application (2022) had no e-bike option at all -- car or motorcycle only -- and rejected a courier who selected neither.",
+  "Prop 22 makes slow e-bike dashing in Santa Monica pay ~$21/hr, so riders adopt 'accept everything' rather than chase speed.",
+  "E-bike leasing with roadside/maintenance (Wombi) already launched in LA; nobody mentions Whizz, Zoomo, Joco, Revel, 415 eBikes or HMP.",
+  "A DTLA dasher had bike tires stolen mid-shift; Hollywood riders strip the battery and pedals before locking; 'use a Metro bike so it isn't yours that gets stolen' is the DTLA joke.",
+  "Uber's navigation sends moped couriers onto freeways (Glendale) -- a real hazard for 28-35 mph vehicles that are 'freeway legal' on paper.",
+  "A night bike messenger reports LAPD stops 3+ times a week in Beverly Hills/WeHo -- enforcement friction for two-wheel couriers there.",
+  "Portability is a stated purchase driver: riders bring scooters into coffee shops, upstairs, and under bus seats -- an e-moped forfeits this and must win on lockability instead."
+ ],
+ "data_limits": [
+  "Only ~75 of 635 docs are delivery-specific; the rest are commuters, tourists, crash threads and megathreads (COVID, wildfire) that carry the two_wheel/vehicle flags.",
+  "No first-person LA courier on a 28-40 mph e-moped, 40-50 mph vehicle, or Sur-Ron; class B/C/D 'demand' is inferred from stated wishes and app-mode friction, not usage.",
+  "The one motorcycle dasher (h08moy1) does not state his city; counted with caveat.",
+  "Cross-posted duplicates inflate raw doc counts: syz2gj/syz06v/syyzri (x3), 1ke5hch/1ke5hv7/1ke5gt4 (x3), 10k0vso/10k0wio (x2), UCLA survey jfezl3/j45wg3/j3lp8g (x3).",
+  "Nobody states a weekly/monthly rental price they would pay; price points are purchase budgets only.",
+  "No mentions of battery swapping, spare batteries carried on shift, or range anxiety in LA courier docs (the only 'multiple batteries' remark is a Toronto post, excluded); no miles-per-shift figures, only hours.",
+  "No deactivation mentions; app-mode evidence is 2020-2025 and platform rules change.",
+  "Many question posts have low scores and their answer comments are not in this subset, so outcomes are unknown.",
+  "Non-LA docs excluded: w1rsi0 (Toronto), ht9rv7 (Montreal), k2ojlsn (San Jose), 1qv9y0g (BC), 1c00k1q (France), 17074h9 (Phoenix), 1dmdxe9 (Philly), 1dkpsbh (Longview WA)."
+ ]
+}

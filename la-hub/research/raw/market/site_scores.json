@@ -7,19 +7,40 @@
   "ops"
  ],
  "scores": {
-  "South Park 18th St": [
+  "South Park 18th St (Grand-Olive)": [
    7,
    5,
    9,
    7,
    8
   ],
+  "Pico-Union 2474 W Pico (Pico/Vermont)": [
+   7,
+   6,
+   5,
+   6,
+   5
+  ],
+  "Pico-Union 1824 S Magnolia": [
+   7,
+   7,
+   3,
+   5,
+   8
+  ],
   "Pico-Union 1738 Cordova": [
-   7,
-   7,
+   6,
+   8,
    5,
    6,
    7
+  ],
+  "Koreatown N 3651 Beverly Blvd": [
+   7,
+   7,
+   5,
+   7,
+   6
   ],
   "Koreatown 856 S Vermont": [
    8,
@@ -28,6 +49,13 @@
    8,
    4
   ],
+  "Warehouse District 785 E 14th": [
+   5,
+   5,
+   8,
+   4,
+   6
+  ],
   "Boyle Heights 159 S Anderson": [
    4,
    8,
@@ -35,7 +63,7 @@
    5,
    7
   ],
-  "Historic Core 525 S LA St": [
+  "Historic Core 121 E 6th / 525 S LA St": [
    8,
    1,
    5,
@@ -51,11 +79,24 @@
   ],
   "768 Ceres": [
    5,
-   3,
+   4,
    5,
    4,
    8
   ]
+ },
+ "reach_1mi_variant": {
+  "South Park 18th St (Grand-Olive)": 5,
+  "Pico-Union 2474 W Pico (Pico/Vermont)": 5,
+  "Pico-Union 1824 S Magnolia": 4,
+  "Pico-Union 1738 Cordova": 4,
+  "Koreatown N 3651 Beverly Blvd": 5,
+  "Koreatown 856 S Vermont": 8,
+  "Warehouse District 785 E 14th": 5,
+  "Boyle Heights 159 S Anderson": 4,
+  "Historic Core 121 E 6th / 525 S LA St": 10,
+  "Westlake 710 S Alvarado": 6,
+  "768 Ceres": 7
  },
  "weights": {
   "base": [
@@ -85,44 +126,80 @@
    0.2,
    0.2,
    0.2
+  ],
+  "walkin_1mi": [
+   0.35,
+   0.2,
+   0.15,
+   0.15,
+   0.15
   ]
  },
  "results": {
   "base": {
-   "South Park 18th St": 7.05,
-   "Pico-Union 1738 Cordova": 6.55,
+   "South Park 18th St (Grand-Olive)": 7.05,
+   "Koreatown N 3651 Beverly Blvd": 6.55,
+   "Pico-Union 1738 Cordova": 6.4,
+   "Pico-Union 1824 S Magnolia": 6.25,
+   "Pico-Union 2474 W Pico (Pico/Vermont)": 6.05,
    "Koreatown 856 S Vermont": 6.05,
    "Boyle Heights 159 S Anderson": 5.85,
-   "Historic Core 525 S LA St": 5.25,
+   "Warehouse District 785 E 14th": 5.45,
+   "Historic Core 121 E 6th / 525 S LA St": 5.25,
    "Westlake 710 S Alvarado": 5.25,
-   "768 Ceres": 4.9
-  },
-  "reach45_sec10": {
-   "South Park 18th St": 7.25,
-   "Pico-Union 1738 Cordova": 6.55,
-   "Koreatown 856 S Vermont": 6.35,
-   "Historic Core 525 S LA St": 5.95,
-   "Westlake 710 S Alvarado": 5.95,
-   "Boyle Heights 159 S Anderson": 5.45,
    "768 Ceres": 5.1
   },
+  "reach45_sec10": {
+   "South Park 18th St (Grand-Olive)": 7.25,
+   "Koreatown N 3651 Beverly Blvd": 6.55,
+   "Koreatown 856 S Vermont": 6.35,
+   "Pico-Union 1824 S Magnolia": 6.25,
+   "Pico-Union 1738 Cordova": 6.2,
+   "Pico-Union 2474 W Pico (Pico/Vermont)": 6.15,
+   "Historic Core 121 E 6th / 525 S LA St": 5.95,
+   "Westlake 710 S Alvarado": 5.95,
+   "Warehouse District 785 E 14th": 5.45,
+   "Boyle Heights 159 S Anderson": 5.45,
+   "768 Ceres": 5.2
+  },
   "sec30_rent05": {
-   "Pico-Union 1738 Cordova": 6.75,
-   "South Park 18th St": 6.65,
+   "Koreatown N 3651 Beverly Blvd": 6.75,
+   "Pico-Union 1738 Cordova": 6.7,
+   "South Park 18th St (Grand-Olive)": 6.65,
+   "Pico-Union 1824 S Magnolia": 6.65,
    "Koreatown 856 S Vermont": 6.25,
+   "Pico-Union 2474 W Pico (Pico/Vermont)": 6.15,
    "Boyle Heights 159 S Anderson": 5.95,
+   "Warehouse District 785 E 14th": 5.15,
    "Westlake 710 S Alvarado": 5.05,
-   "Historic Core 525 S LA St": 4.85,
-   "768 Ceres": 4.7
+   "768 Ceres": 5.0,
+   "Historic Core 121 E 6th / 525 S LA St": 4.85
   },
   "equal": {
-   "South Park 18th St": 7.2,
+   "South Park 18th St (Grand-Olive)": 7.2,
    "Pico-Union 1738 Cordova": 6.4,
+   "Koreatown N 3651 Beverly Blvd": 6.4,
    "Boyle Heights 159 S Anderson": 6.2,
+   "Pico-Union 1824 S Magnolia": 6.0,
+   "Pico-Union 2474 W Pico (Pico/Vermont)": 5.8,
    "Koreatown 856 S Vermont": 5.6,
-   "768 Ceres": 5.0,
-   "Historic Core 525 S LA St": 4.8,
+   "Warehouse District 785 E 14th": 5.6,
+   "768 Ceres": 5.2,
+   "Historic Core 121 E 6th / 525 S LA St": 4.8,
    "Westlake 710 S Alvarado": 4.8
+  },
+  "walkin_1mi": {
+   "South Park 18th St (Grand-Olive)": 6.35,
+   "Koreatown 856 S Vermont": 6.05,
+   "Historic Core 121 E 6th / 525 S LA St": 5.95,
+   "Koreatown N 3651 Beverly Blvd": 5.85,
+   "Boyle Heights 159 S Anderson": 5.85,
+   "768 Ceres": 5.8,
+   "Pico-Union 1738 Cordova": 5.7,
+   "Warehouse District 785 E 14th": 5.45,
+   "Pico-Union 2474 W Pico (Pico/Vermont)": 5.35,
+   "Pico-Union 1824 S Magnolia": 5.2,
+   "Westlake 710 S Alvarado": 4.55
   }
  }
 }

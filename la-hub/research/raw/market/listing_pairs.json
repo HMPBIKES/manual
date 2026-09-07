@@ -1,0 +1,198 @@
+[
+ {
+  "union_2mi": 2641,
+  "union_1_5mi": 1728,
+  "main": "18th St btwn Grand & Olive (South Park) [approx: 1800 S Grand Ave]",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 3.15
+ },
+ {
+  "union_2mi": 2628,
+  "union_1_5mi": 1793,
+  "main": "785 E 14th St (Warehouse District)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 3.7
+ },
+ {
+  "union_2mi": 2597,
+  "union_1_5mi": 1814,
+  "main": "768 Ceres Ave (baseline)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 3.72
+ },
+ {
+  "union_2mi": 2592,
+  "union_1_5mi": 1909,
+  "main": "121 E 6th St (Historic Core)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 3.08
+ },
+ {
+  "union_2mi": 2486,
+  "union_1_5mi": 1927,
+  "main": "785 E 14th St (Warehouse District)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 3.12
+ },
+ {
+  "union_2mi": 2477,
+  "union_1_5mi": 1948,
+  "main": "768 Ceres Ave (baseline)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 3.27
+ },
+ {
+  "union_2mi": 2452,
+  "union_1_5mi": 2018,
+  "main": "121 E 6th St (Historic Core)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 2.71
+ },
+ {
+  "union_2mi": 2443,
+  "union_1_5mi": 1806,
+  "main": "18th St btwn Grand & Olive (South Park) [approx: 1800 S Grand Ave]",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 2.45
+ },
+ {
+  "union_2mi": 2355,
+  "union_1_5mi": 1957,
+  "main": "768 Ceres Ave (baseline)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 3.03
+ },
+ {
+  "union_2mi": 2352,
+  "union_1_5mi": 1932,
+  "main": "785 E 14th St (Warehouse District)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 2.81
+ },
+ {
+  "union_2mi": 2331,
+  "union_1_5mi": 2011,
+  "main": "121 E 6th St (Historic Core)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 2.53
+ },
+ {
+  "union_2mi": 2281,
+  "union_1_5mi": 1769,
+  "main": "18th St btwn Grand & Olive (South Park) [approx: 1800 S Grand Ave]",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 2.09
+ },
+ {
+  "union_2mi": 2276,
+  "union_1_5mi": 1417,
+  "main": "1824 S Magnolia Ave (Pico-Union)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 2.44
+ },
+ {
+  "union_2mi": 2259,
+  "union_1_5mi": 1204,
+  "main": "1824 S Magnolia Ave (Pico-Union)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 3.94
+ },
+ {
+  "union_2mi": 2158,
+  "union_1_5mi": 1382,
+  "main": "18th St btwn Grand & Olive (South Park) [approx: 1800 S Grand Ave]",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 4.63
+ },
+ {
+  "union_2mi": 2147,
+  "union_1_5mi": 1360,
+  "main": "2474 W Pico Blvd (Pico-Union)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 3.51
+ },
+ {
+  "union_2mi": 2081,
+  "union_1_5mi": 1563,
+  "main": "121 E 6th St (Historic Core)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 4.37
+ },
+ {
+  "union_2mi": 2029,
+  "union_1_5mi": 1376,
+  "main": "2474 W Pico Blvd (Pico-Union)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 2.02
+ },
+ {
+  "union_2mi": 2008,
+  "union_1_5mi": 1447,
+  "main": "785 E 14th St (Warehouse District)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 5.1
+ },
+ {
+  "union_2mi": 1999,
+  "union_1_5mi": 1303,
+  "main": "1824 S Magnolia Ave (Pico-Union)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 1.56
+ },
+ {
+  "union_2mi": 1970,
+  "union_1_5mi": 1332,
+  "main": "1738 Cordova St (Pico-Union)",
+  "satellite": "3651 Beverly Blvd (Koreatown N / East Hollywood)",
+  "dist_mi": 2.61
+ },
+ {
+  "union_2mi": 1965,
+  "union_1_5mi": 1468,
+  "main": "768 Ceres Ave (baseline)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 5.04
+ },
+ {
+  "union_2mi": 1954,
+  "union_1_5mi": 1075,
+  "main": "1738 Cordova St (Pico-Union)",
+  "satellite": "Vermont/Sunset (East Hollywood site pt)",
+  "dist_mi": 4.08
+ },
+ {
+  "union_2mi": 1832,
+  "union_1_5mi": 1236,
+  "main": "1824 S Magnolia Ave (Pico-Union)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 1.11
+ },
+ {
+  "union_2mi": 1731,
+  "union_1_5mi": 1158,
+  "main": "2474 W Pico Blvd (Pico-Union)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 1.11
+ },
+ {
+  "union_2mi": 1686,
+  "union_1_5mi": 1211,
+  "main": "1738 Cordova St (Pico-Union)",
+  "satellite": "Wilshire/Vermont (site pt, = Ktown East 6th/Vermont)",
+  "dist_mi": 1.68
+ },
+ {
+  "union_2mi": 1578,
+  "union_1_5mi": 1154,
+  "main": "1738 Cordova St (Pico-Union)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 1.23
+ },
+ {
+  "union_2mi": 1555,
+  "union_1_5mi": 1091,
+  "main": "2474 W Pico Blvd (Pico-Union)",
+  "satellite": "856 S Vermont Ave (Koreatown)",
+  "dist_mi": 0.65
+ }
+]

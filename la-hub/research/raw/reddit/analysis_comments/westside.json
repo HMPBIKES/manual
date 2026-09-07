@@ -1,0 +1,537 @@
+{
+ "scope": "Westside: Santa Monica, Venice, Marina del Rey, Playa, Westwood/UCLA, Culver City, Beverly Hills/Century City, Mid-City/Fairfax, West LA/Sawtelle/Brentwood. Files: area_Santa_Monica_Venice (886), area_Westwood_UCLA (285), area_Culver_City (183), area_Beverly_Hills_Century_City (249), area_Mid-City_Fairfax (165) = 1,768 rows, 1,540 unique docs (192 appear in more than one file).",
+ "docs_read": {
+  "rows": 1768,
+  "unique_docs": 1540,
+  "flagged_read_in_full_rows": 546,
+  "flagged_read_in_full_unique": 446,
+  "unflagged_keyword_hit_rows_skimmed": 293,
+  "unflagged_remaining_rows_skimmed_by_title_flags_places": 929
+ },
+ "two_wheel_docs_read": {
+  "two_wheel_flag_rows": 340,
+  "two_wheel_flag_unique": 279,
+  "courier_two_wheel_self_unique": 10,
+  "courier_two_wheel_prospective_unique": 5,
+  "courier_two_wheel_observed_unique": 8,
+  "resident_two_wheel_self_unique": 104,
+  "resident_two_wheel_observed_unique": 72,
+  "delivery_robot_unique": 9,
+  "car_courier_unique": 156
+ },
+ "per_area": [
+  {
+   "area": "Santa Monica/Venice/MdR/Playa",
+   "docs": 886,
+   "two_wheel_flagged_docs": 211,
+   "two_wheel_self_docs": 78,
+   "two_wheel_self_courier_docs": 5,
+   "two_wheel_self_courier_prospective_docs": 4,
+   "two_wheel_self_resident_docs": 73,
+   "two_wheel_observed_docs": 46,
+   "two_wheel_observed_courier_docs": 1,
+   "delivery_robot_docs": 6,
+   "car_docs": 70,
+   "sentiment_for_two_wheel": "positive for residents/commuters (flat, lanes, car-free viable); neutral-to-negative for couriers (order volume dead, theft, SMPD tickets); Prop 22 floor is the only stated upside",
+   "notes": "Largest file, but the two_wheel flag is dominated by tourist bike rentals, beach-path and bike-lane debate. Courier two-wheel self: 1e612mu, 1d5qonh (e-bike, Prop 22, 2024), fj5pr9 (bicycle from Pasadena, 2020), exguvj (fixie, 2020), dtb6zm7 (bicycle UE, 2018). Prospective: 1ke5hch x3 crosspost, 1gn3r1q. Car couriers describe SM as the worst zone (traffic/parking/cops) and dead 2023-2026. 6 delivery-robot docs."
+  },
+  {
+   "area": "Westwood/UCLA",
+   "docs": 285,
+   "two_wheel_flagged_docs": 50,
+   "two_wheel_self_docs": 24,
+   "two_wheel_self_courier_docs": 2,
+   "two_wheel_self_courier_prospective_docs": 1,
+   "two_wheel_self_resident_docs": 22,
+   "two_wheel_observed_docs": 26,
+   "two_wheel_observed_courier_docs": 5,
+   "delivery_robot_docs": 3,
+   "car_docs": 15,
+   "sentiment_for_two_wheel": "mixed: dense student/grad two-wheel population and a named bicycle hotspot, but hills, broken pavement, unprotected Westwood Blvd, scooter crashes; couriers report Westwood dead except early morning in term",
+   "notes": "Bicycle dasher hotspot Westwood Blvd x Ohio (2019); Duffl campus delivery on Ninebot G30P scooters (2022); UCLA MBA e-bike-delivery research (2020); 2026 Westwood Blvd crash thread (bike lanes, grad-housing bikers). Car dashers: Westwood 'busy' map but no orders (2023), $50/4h (2024), $5-7/2h BH/Westwood (2025), good 5am-lunch in term (2026). 3 robot docs."
+  },
+  {
+   "area": "Culver City",
+   "docs": 183,
+   "two_wheel_flagged_docs": 34,
+   "two_wheel_self_docs": 19,
+   "two_wheel_self_courier_docs": 1,
+   "two_wheel_self_courier_prospective_docs": 3,
+   "two_wheel_self_resident_docs": 18,
+   "two_wheel_observed_docs": 8,
+   "two_wheel_observed_courier_docs": 1,
+   "delivery_robot_docs": 0,
+   "car_docs": 28,
+   "sentiment_for_two_wheel": "positive for residents (Ballona Creek, lanes); couriers call CC slow/worst; roam by car on Venice Blvd",
+   "notes": "One bicycle dasher asking about CC (2020); car dasher roams Venice Blvd Robertson-Sepulveda and Palms (2024); Culver City Cuisine ghost kitchen; GH Venice/MdR/CC 3 orders per 8.5h (2026); Segway of Los Angeles service shop; Ballona Creek path and pedal-assist e-bike residents."
+  },
+  {
+   "area": "Beverly Hills/Century City",
+   "docs": 249,
+   "two_wheel_flagged_docs": 26,
+   "two_wheel_self_docs": 10,
+   "two_wheel_self_courier_docs": 3,
+   "two_wheel_self_courier_prospective_docs": 0,
+   "two_wheel_self_resident_docs": 7,
+   "two_wheel_observed_docs": 4,
+   "two_wheel_observed_courier_docs": 1,
+   "delivery_robot_docs": 0,
+   "car_docs": 60,
+   "sentiment_for_two_wheel": "negative: worst tippers, police stops of bike messenger, sidewalk riding illegal; alleys are the one cycling positive",
+   "notes": "Two bicycle UberEATS couriers (2018) - one gets more orders in DTLA than BH, one stopped by cops 3x/week at night; BH couriers on Bird scooters observed (2019). Otherwise car-courier tip complaints ($0-$2 on mansions) and dead zone 2021-2025. Alleys praised for cycling."
+  },
+  {
+   "area": "Mid-City/Fairfax",
+   "docs": 165,
+   "two_wheel_flagged_docs": 19,
+   "two_wheel_self_docs": 7,
+   "two_wheel_self_courier_docs": 0,
+   "two_wheel_self_courier_prospective_docs": 0,
+   "two_wheel_self_resident_docs": 7,
+   "two_wheel_observed_docs": 2,
+   "two_wheel_observed_courier_docs": 0,
+   "delivery_robot_docs": 0,
+   "car_docs": 11,
+   "sentiment_for_two_wheel": "neutral: no courier two-wheel signal; some resident cyclists; car couriers only",
+   "notes": "No two-wheel courier docs. Car couriers: UE $492/52 trips/25h (2018), $70/3h one night then <$1/mi (2024); Pico ghost-kitchen hub at Mid-Wilshire (2025); Park La Brea delivery nightmare (2026); LAPD frisk at Sunset/La Brea (2019). Segway LA shop in Mid City."
+  }
+ ],
+ "findings": [
+  {
+   "claim": "Two-wheel COURIER activity on the Westside is real but thin: across 1,540 unique docs only 10 are couriers who ride two wheels there themselves (2018-2024), 5 more are car couriers musing about switching, 8 observe others (e.g. 2019: 'Beverly hill drivers use Bird - around busy areas no car no bike'). Half of the 10 are pedal bicycles; the only e-bike couriers are two 2024 Santa Monica posts. Car couriers dominate (~156 docs).",
+   "evidence_count": 23,
+   "quotes": [
+    {
+     "quote": "Im new to the LA door dash scene and am on a bicycle. I live in pasadena but have been going all the way to santa monica to dash.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/fj5pr9/help_pleaseeee/",
+     "sub": "r/doordash_drivers",
+     "year": 2020,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+     "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood.",
+     "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+     "sub": "r/dtla",
+     "year": 2018,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "Our store scooters are G30P’s but they break constantly because of the shit roads.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/ur25fd/best_scooter_for_deliveries/",
+     "sub": "r/ElectricScooters",
+     "year": 2022,
+     "score": 4,
+     "kind": "post"
+    }
+   ],
+   "confidence": "high (counts are from a full read of all flagged docs; classification is analyst judgment)",
+   "relevance_to_hub_location": "The 211 two_wheel-flagged Santa Monica/Venice docs are ~95% residents, commuters, tourists and bike-lane debate, not couriers. Raw doc count does not translate into courier rider density; the Westside courier signal is smaller than the DTLA/Pico-Union bicycle-courier signal that the same posters compare it to."
+  },
+  {
+   "claim": "Where Westside e-bike delivery is praised, the stated reason is Prop 22 / the Santa Monica minimum-wage floor plus having no car - explicitly NOT order density; both e-bike posters flag oversupply ('Downside is LOTS of drivers'; 'it's so slow').",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "I do it on a E bike, so I don’t pay gas or expenses of a car. I never have to worry about repairs or parking or tickets.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "Prop 22 in CA makes it that if you are working you are making at least $21 an hour during a delivery in Santa Monica, CA.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1e612mu/why_doordash_is_fun_for_me_anyone_else_truly_find/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "with prop 22 in Los Angeles I’m guaranteed 120% of the minutes wage of Santa Monica ($16.90).",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1d5qonh/prop_22_questions/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 1,
+     "kind": "post"
+    }
+   ],
+   "confidence": "medium (n=2 e-bike posters, both 2024, both score 0-1, plus two car posters asking whether the Prop 22 pay adjustment matters)",
+   "relevance_to_hub_location": "Confirms v1's read: the Westside e-bike case is a wage-floor arbitrage for part-timers accepting every low-value order, not a dense courier cluster. A hub pitched on Prop-22-per-active-hour economics could work as a satellite pitch but does not justify primary placement."
+  },
+  {
+   "claim": "The Westside conversion pool is car couriers fed up with traffic, parking and police who are actively considering e-bikes (2024-2025; one cites 'bike lanes everywhere'), but they are deterred by reports that bike/e-bike app modes get few orders.",
+   "evidence_count": 6,
+   "quotes": [
+    {
+     "quote": "I've seen posts online saying that bike and e-bike modes across all delivery apps are dead as far as the volume of orders recevied",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ke5hch/anyone_still_delivering_in_west_la_on_a_regular/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "Im renting car to work for DoorDash, grubhub and Roadie(cvs orders) but I was thinking that would be a nice way to avoid this f* traffic and car expenses to buy an e-bike.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1gn3r1q/electric_bike/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 1,
+     "kind": "post"
+    },
+    {
+     "quote": "This is by far the worst place to dash. There is tons of traffic hard to find parking at some places and cops are everywhere. It once took me an hour to go 6 miles cause the traffic was so bad and I only got paid 11 dollars",
+     "url": "https://www.reddit.com/r/doordash/comments/e8om7y/what_are_some_of_the_worst_citys_you_have_dashed/",
+     "sub": "r/doordash",
+     "year": 2019,
+     "score": 0,
+     "kind": "post"
+    }
+   ],
+   "confidence": "medium-high",
+   "relevance_to_hub_location": "Parking pain and bike lanes are the Westside-specific pull toward two wheels; the poster renting a car for DD/GH/Roadie in Santa Monica is exactly the HMP rental/subscription customer profile. But the 2025 poster (1,500+ deliveries, Culver/SM/Hollywood, ~$25/hr gross by car) explicitly hesitates because app bike modes are reported dead."
+  },
+  {
+   "claim": "Saturation and earnings collapse on the Westside are severe and consistent 2023-2026 in every sub-area. Figures (car unless noted): 2018 SM $180-200/night 8-10h -> $100; 2019 SM $11 for 6 mi in 1h, $15-30/hr DTLA/Hollywood/SM; 2020 GH Westside best night $78/6h, Venice 1-3 pings/hr after a +$5 promo flooded it; 2021 DD BH/WeHo/Westwood $61/4.5h, UE SM $45/4h; 2023 SM $22-25/hr -> $60-70 per 8h; 2024 SM zone $15/5h, Westwood $50/4h, SM 'dead' Saturday night, e-bike SM >= $21 per active hr (Prop 22 floor); 2025 SM zone $14/7.5h, BH/Westwood $5-7/2h, car CC/SM/Hollywood ~$25/hr gross; 2026 GH Venice/MdR/CC 3 orders per 8.5h shift, UCLA/Westwood 'good money 5am-after lunch' in term.",
+   "evidence_count": 24,
+   "quotes": [
+    {
+     "quote": "But lately I’ll work a 8hr day and walk away with $60-$70?",
+     "url": "https://www.reddit.com/r/doordash/comments/1787jmo/los_angeles_santa_monica_dd_recently/",
+     "sub": "r/doordash",
+     "year": 2023,
+     "score": 4,
+     "kind": "post"
+    },
+    {
+     "quote": "I Dashed in Santa Monica zone and only made $14.00.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ir8hmm/los_angeles_75hrs_dash_time_1400/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 3,
+     "kind": "post"
+    },
+    {
+     "quote": "I sometimes go two hours and make $5 to $7. Keep in mind that I'm in Beverly hills and Westwood.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1n4lqe8/not_bad_for_the_city_of_angels/",
+     "sub": "r/doordash_drivers",
+     "year": 2025,
+     "score": 2,
+     "kind": "post"
+    },
+    {
+     "quote": "got 3 orders max for 8.5hr shifts. entire week.",
+     "url": "https://www.reddit.com/r/grubhubdrivers/comments/1udunxf/anyone_near_la/",
+     "sub": "r/grubhubdrivers",
+     "year": 2026,
+     "score": 3,
+     "kind": "post"
+    },
+    {
+     "quote": "The gig economy is for fools unless you have 4 phones like all the foreigners I see gathered at hot spots.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1mtaq56/ubereats_is_dead/",
+     "sub": "r/UberEATS",
+     "year": 2025,
+     "score": 72,
+     "kind": "post"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "A hub whose customers cannot earn will churn. Westside zones are described as the worst in LA for order volume 2023-2026; the only bright spots named are Westwood Village early morning during term and DTLA/Pico-Union short orders (posters actively prefer DTLA: '$7.5 dollar order on a .9-1.5 total miles')."
+  },
+  {
+   "claim": "Named Westside staging/hotspots are car-oriented ghost kitchens ('as soon as you park by one of these') and roam corridors, concentrated in West LA/Sawtelle, Culver/Palms and Westwood - not Santa Monica proper. The single most-cited cloud-kitchen hotspot in the corpus (1842 W Washington Blvd, ~30 restaurants) sits on the v1 Pico-Union corridor.",
+   "evidence_count": 9,
+   "quotes": [
+    {
+     "quote": "Colony: 11419 Santa Monica Blvd, Los Angeles, CA 90025",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+     "sub": "r/UberEATS",
+     "year": 2023,
+     "score": 138,
+     "kind": "post"
+    },
+    {
+     "quote": "So lately I’ve been roaming east and west along Venice from Robertson to Sepulveda.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1c10313/whats_your_ratio_of_how_long_youll_park_in_a/",
+     "sub": "r/doordash_drivers",
+     "year": 2024,
+     "score": 5,
+     "kind": "post"
+    },
+    {
+     "quote": "Ucla /westwood is good money from 5am- after lunch but traffic around lunch can suck if you stick it out that long. Right in westwood village early morning when school is in session is pretty good.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "r/doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "HOTSPOT for drivers to pickup orders is at 1842 W. Washington Blvd, LA, CA 90007.  It's CLOUDKITCHEN with about 30 restaurants.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+     "sub": "r/couriersofreddit",
+     "year": 2018,
+     "score": 1,
+     "kind": "post"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "If a Westside satellite is placed, the corpus points to the Sawtelle / Santa Monica Blvd-Pico-Sepulveda triangle (Colony at 11419 Santa Monica Blvd, Westwood Blvd x Ohio bicycle hotspot, UCLA, E Line Expo/Sepulveda-Bundy) rather than downtown Santa Monica, which dashers call the worst zone for traffic, parking and police."
+  },
+  {
+   "claim": "Bike lanes and flat terrain genuinely favour Santa Monica/Venice/Mar Vista/Culver (east-west lanes; Main St, 11th/14th/17th; beach path; Ballona Creek path; Beverly Hills alleys), which is why the Westside has the corpus's largest population of RESIDENTS riding two wheels for utility (104 docs). But it is contested: Westwood Blvd is a hilly, broken-pavement High Injury Network stroad; MdR-to-SM commuters report daily close calls.",
+   "evidence_count": 30,
+   "quotes": [
+    {
+     "quote": "Venice, SaMo, MV, CC... is the most bike friendly part of LA.  There are lots of east-west bike lanes but only a few N-S.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1psajhg/do_i_need_a_car/nv8vej6",
+     "sub": "r/AskLosAngeles",
+     "year": 2025,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "Bike lanes don’t exist and the roads here in the west side are narrow(but still packed with traffic) - each day on the bicycle is at least one close call with a car.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/16f0jea/how_to_save_money_if_i_need_a_car_only_few_days_a/k00hloa",
+     "sub": "r/LosAngeles",
+     "year": 2023,
+     "score": 1,
+     "kind": "comment"
+    },
+    {
+     "quote": "UCLA has so much grad housing south of campus w people on tight budgets who rely on biking to a campus that we make completely inaccessible by bike.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1qwxhbl/car_crashes_into_westwood_99_ranch_2_dead/o3smdbq",
+     "sub": "r/LosAngeles",
+     "year": 2026,
+     "score": 24,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Infrastructure is a real Westside advantage for two-wheel operations, but the riders using it are residents commuting, not couriers. UCLA grad housing south of campus (Weyburn/Palo Verde) is the densest budget-constrained two-wheel population named and is where a student-courier pitch would land."
+  },
+  {
+   "claim": "Westside two-wheel riders live on the Westside (Venice, Santa Monica, MdR, Mar Vista, Culver, Palms, Sawtelle, Westwood); they treat anything east of Venice/SM as far and use the E Line for eastside trips. Car couriers, by contrast, drive in from 30-90 minutes away (La Verne, Woodland Hills, East LA, Chino, 'an hour and a half away'). No Westside doc mentions travelling to DTLA/Koreatown for a shop or service; bike/scooter service is sourced locally (Bike Attack SM, Segway of LA in Culver City/Mid City, Demonns on Santa Monica Blvd, Pedal Electric Venice).",
+   "evidence_count": 16,
+   "quotes": [
+    {
+     "quote": "But anything outside of Venice/SM is challenging.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1psajhg/do_i_need_a_car/nv81kcv",
+     "sub": "r/AskLosAngeles",
+     "year": 2025,
+     "score": 2,
+     "kind": "comment"
+    },
+    {
+     "quote": "The east side, however, is still a little far, and traffic in Culver is a freakin' logjam nightmare on afternoons and weeknights",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1vbfq6m/worth_leaving_the_west_side/p0tl1y9",
+     "sub": "r/AskLosAngeles",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium (distance tolerance to a hub is inferred from residence and commute posts; no direct statement exists)",
+   "relevance_to_hub_location": "A DTLA/Pico-Union hub will not capture Westside-resident riders (5-10 mi east, described as 'far'); conversely a Westside hub will not capture the DTLA bicycle couriers. The two clusters are separate, as v1 assumed. The one bicycle courier who commutes in comes from Pasadena to Santa Monica, i.e. an outlier."
+  },
+  {
+   "claim": "Vehicle types/specs on the Westside: e-bikes (Aventon Level 3 from Bike Attack SM with financing; $300-500 Amazon e-bikes advertising 50-60 mi; Super73/RadRunner/Pedal Electric Venice showroom; a $470 Amazon e-bike resold in Pico-Robertson because the battery is not removable), standing e-scooters (Segway P100S 1086 Wh ~34 mi real at 25 mph; Ninebot G30P fleet at Duffl breaking on Westwood roads; 3-hour shifts need little range; typical trips 'within 5 miles'), a 50cc moped considered for hills, and shared Bird/Lime used by BH couriers in 2019. Theft is the dominant ownership fear.",
+   "evidence_count": 14,
+   "quotes": [
+    {
+     "quote": "Don't need that much range, as most trips will be within 5 miles.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/vur8ae/recommend_me_a_scooter/",
+     "sub": "r/ElectricScooters",
+     "year": 2022,
+     "score": 2,
+     "kind": "post"
+    },
+    {
+     "quote": "Locked it up at the bike rack with other bikes right underneath a security camera. All it took was 30 minutes, because when I got back my bike and all the bikes were gone.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1nd404t/tired_of_lugging_my_ebike_up_3_stairs_what_are/nde9g8j",
+     "sub": "r/ebikes",
+     "year": 2025,
+     "score": 2,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium-high",
+   "relevance_to_hub_location": "Short-range, short-shift use (3 h, <5 mi) suits swappable-battery scooters/e-bikes; removable battery is a stated purchase criterion. Secure indoor parking/lockers at a hub would address the single most repeated Westside complaint (theft), which matters more than range."
+  },
+  {
+   "claim": "Safety/police: Santa Monica, Beverly Hills and UCPD enforcement on two-wheelers is a recurring cost ($490 SM crosswalk ticket, $200 earbud ticket, beach-path e-scooter sweeps, a bike messenger stopped 3+ times a week at night in BH/WeHo who says 'they scare me when they reach to their guns'); Westwood after 9pm is a 'ghost town' with unhoused; an SM resident who biked everywhere was mugged and went back to a car; multiple bike-lane hit-and-runs (Venice Blvd, California Ave SM, Culver City) and 2026 fatalities (Westwood Blvd, Playa del Rey).",
+   "evidence_count": 18,
+   "quotes": [
+    {
+     "quote": "i am a bike messenger in LA ,  i deliver during dinner time , from 6 to 12am",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "r/LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "they bother most in beverly hills and weho",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "r/LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post"
+    },
+    {
+     "quote": "And in Santa Monica, rolling through a crosswalk (at least a scramble, not sure if it's different for a normal crosswalk) on a bike or a scooter is fucking **$490**.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/c1xrog/psa_lapd_cracking_down_on_scooters_riding_on/erit6i5",
+     "sub": "r/LosAngeles",
+     "year": 2019,
+     "score": 1,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "high",
+   "relevance_to_hub_location": "Rich Westside municipalities (SM, BH, Culver) ban sidewalk riding and enforce heavily; night riding is thin and lonely. A Westside hub must budget for rider ticket/stop friction that DTLA/Pico-Union posters do not describe."
+  },
+  {
+   "claim": "Delivery robots (Coco in Santa Monica, Kiwi/Coco at UCLA, Serve/Uber bots in SM and WeHo) already occupy the sub-2-mile Westside niche that a two-wheel courier fleet would target.",
+   "evidence_count": 9,
+   "quotes": [
+    {
+     "quote": "The Uber bots are mostly in Hollywood and the coco are in Santa Monica.",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/17ty81w/found_the_missing_uber_driver_causing_your_order/k90k220",
+     "sub": "r/LosAngeles",
+     "year": 2023,
+     "score": 1,
+     "kind": "comment"
+    }
+   ],
+   "confidence": "medium",
+   "relevance_to_hub_location": "Structural headwind unique to the Westside: the densest short-hop demand (downtown SM, Westwood Village, UCLA dorms) is being automated, unlike Pico-Union/Koreatown."
+  }
+ ],
+ "staging_points": [
+  {
+   "name": "Colony ghost kitchen",
+   "location": "11419 Santa Monica Blvd, West LA/Sawtelle (LA 90025)",
+   "mode": "car (drivers park and wait)",
+   "year": 2023,
+   "source": "1245m4q r/UberEATS score 138"
+  },
+  {
+   "name": "Culver City Cuisine ghost kitchen",
+   "location": "5660-5668 Selmaraine Dr, Culver City",
+   "mode": "car",
+   "year": 2023,
+   "source": "1245m4q"
+  },
+  {
+   "name": "Washington Food Co / CloudKitchens",
+   "location": "1842 W Washington Blvd, LA 90007 (Pico-Union/West Adams; ~30 restaurants)",
+   "mode": "car; cited as THE driver hotspot in 2018 and again in 2023",
+   "year": 2018,
+   "source": "8n99nv r/couriersofreddit; 1245m4q"
+  },
+  {
+   "name": "Westwood Blvd x Ohio Ave",
+   "location": "West LA, south of Wilshire",
+   "mode": "bicycle dasher hotspot (DoorDash)",
+   "year": 2019,
+   "source": "avp2wa r/doordash"
+  },
+  {
+   "name": "Westwood Village / UCLA",
+   "location": "Westwood Blvd, Broxton, Gayley; Whole Foods lot used to park for In-N-Out; Weyburn Terrace & dorms hard to deliver to",
+   "mode": "car; good 5am-after lunch in term (2026); Duffl scooter shifts (2022); delivery robots",
+   "year": 2026,
+   "source": "om5oxt3, ur25fd, 12p3urc, hry5ah2"
+  },
+  {
+   "name": "Venice Blvd roam corridor",
+   "location": "Venice Blvd from Robertson to Sepulveda; Palms Blvd Overland to National",
+   "mode": "car roaming in Culver City zone",
+   "year": 2024,
+   "source": "1c10313 r/doordash_drivers"
+  },
+  {
+   "name": "Santa Monica Pier / downtown SM",
+   "location": "SM Pier; Bay Cities Deli (long waits); Third St area",
+   "mode": "Caviar courier waiting at pier (2019); car dashers call SM the worst zone; Coco robots",
+   "year": 2019,
+   "source": "aitu0c, d06l7t, e8om7y, k90k220"
+  },
+  {
+   "name": "Mid-Wilshire ghost kitchen hub",
+   "location": "Pico Blvd, Mid-Wilshire (boarded-up former shops)",
+   "mode": "car",
+   "year": 2025,
+   "source": "1nzxlk1 r/LosAngeles"
+  },
+  {
+   "name": "Beverly Hills / Sherman Oaks ghost kitchen building",
+   "location": "near Beverly Hills (11 kitchens)",
+   "mode": "car, '30-40 bucks an hour' normally",
+   "year": 2022,
+   "source": "itjen3q r/UberEATS"
+  },
+  {
+   "name": "Two-wheel service/retail on the Westside",
+   "location": "Bike Attack (Santa Monica; Aventon; financing); Segway of Los Angeles (Culver City / Mid City); Demonns Bike Shop (Santa Monica Blvd, $25 tube swap); Pedal Electric showroom (Venice)",
+   "mode": "e-bike/scooter",
+   "year": 2026,
+   "source": "p39xprk, ir4vvfy, 1gq03mx, iq3b5t, n3n6kn"
+  }
+ ],
+ "safety": {
+  "theft": "Constant theme: e-bike parts stripped from a locked SM apartment staircase (nde8d60, 2025); every bike on an MdR rack gone in 30 min under a dead camera (nde9g8j, 2025); Venice outdoor storage 'guaranteed theft' (d7ndc4a, 2016); 2 e-bikes stolen in 4 weeks despite two U-locks (p39xprk, 2026); Playa Vista student bike stolen (f9190, 2011); UCLA housing 'people here steal mail, bikes' (1w750ia, 2026); advice to use train-station bike lockers not racks (nv8rgsu) and keep a 'beater bike' plus a heavy lock left at work (nv8vej6).",
+  "robbery_assault": "SM resident who biked everywhere for years got mugged and now drives (nvdp4me, 2025); cyclist beaten by Uber driver at SM pier (16xd9ex, 2023); women advised a car is needed at night (nvhjce9, 2025); a Culver City dasher waiting outside a restaurant was hit by an e-scooter rider and thrown into the road (j9vs4j, 2020).",
+  "police": "LAPD stopped a 22-year-old bike messenger 3+ times a week while delivering 6pm-12am, worst in Beverly Hills and WeHo (7sdaho, 2018); SM fines: $490 for rolling a crosswalk on bike/scooter (erit6i5, 2019), $200 earbud ticket for a scooter rider with court in SM (erhebsf, 2019), SMPD beach-path e-scooter enforcement campaign (e2t2hp4, 2018); car dashers say SM 'cops are everywhere' (e8om7y, 2019); UCPD officer intervening in scooter crash (1r8kj2v, 2026); sidewalk riding illegal in SM, BH, Culver City and WeHo business districts (iujg2ju, cmfj05w); LAPD frisked a car courier at Sunset/La Brea at 1am (awuuop, 2019).",
+  "crashes": "Bike-lane hit-and-runs on Venice Blvd (surgery, mex7bb6 2025), California Ave SM (cm2drwp 2014), SM bike lane (e94q810 2018); bought a bike in SM and was hit within 5 minutes (g7c203d 2020); Culver City pothole = 6 screws and a plate (iugd4np 2022); Culver City right-hook broken-leg hit-and-run (1jyjgra 2025); 2026 Westwood Blvd crash killed 3 after a driver hit a cyclist (1qxyu2w); pregnant cyclist killed in Playa del Rey (o3t8cl3 2026); UCLA study: e-scooter injury rate in one LA section above motorcycle rates (ty5ut1 2022).",
+  "night": "Westwood 'ghost town' after 9pm with unhoused issues (oogxqyr 2026); Venice boardwalk 'shuts down and gets sketchier as the sun goes down' (i2e16qs 2022); many Westside bus lines end ~8pm (nv8p47f 2025); a Culver-raised resident bikes home 12-1am (nv8vej6 2025); the bike messenger worked 6pm-midnight (7sdaho 2018); UE driver living in his car overnight in Culver City/Playa Vista went missing (1m14rym 2025)."
+ },
+ "verdict": {
+  "option": "(b) conditional - Westside only as a small second/satellite hub after DTLA/Koreatown, and only in West LA (Sawtelle / Pico-Sepulveda / Westwood Blvd x Ohio, near Colony, UCLA and the E Line), not Santa Monica proper; on current evidence it sits closer to (c) than to (a).",
+  "reasoning": "The Westside's 211 two_wheel docs are overwhelmingly residents, commuters, tourists and infrastructure debate; only 10 unique docs show a courier riding two wheels there, half on pedal bikes and most pre-2021, versus ~156 Westside car-courier docs. The two 2024 e-bike couriers justify it purely on Prop 22 / the Santa Monica wage floor and no-car costs, and both say the zone is oversupplied. Earnings across every Westside sub-zone collapsed 2023-2026 ($14/7.5h SM 2025, $5-7/2h BH-Westwood 2025, 3 orders/8.5h Venice-MdR-Culver 2026), posters actively prefer DTLA/Pico-Union short orders, and the most-cited cloud-kitchen hotspot in the corpus (1842 W Washington) is on the v1 Pico corridor. Westside two-wheel riders live on the Westside and describe the eastside as far, so a DTLA hub will not reach them - which supports a separate satellite, not relocation. The strongest Westside assets (flat, east-west lanes, UCLA's budget grad-housing bikers, the Sawtelle ghost kitchen, car dashers wanting to escape parking/traffic) argue for a lean satellite pitched on Prop-22-per-active-hour economics and secure parking, opened only after the primary hub proves the model.",
+  "strongest_for": [
+   "I do it on a E bike, so I don’t pay gas or expenses of a car. I never have to worry about repairs or parking or tickets. (1e612mu, 2024)",
+   "Prop 22 in CA makes it that if you are working you are making at least $21 an hour during a delivery in Santa Monica, CA. (1e612mu, 2024)",
+   "Im renting car to work for DoorDash, grubhub and Roadie(cvs orders) but I was thinking that would be a nice way to avoid this f* traffic and car expenses to buy an e-bike. (1gn3r1q, 2024)",
+   "Venice, SaMo, MV, CC... is the most bike friendly part of LA. (nv8vej6, 2025)",
+   "UCLA has so much grad housing south of campus w people on tight budgets who rely on biking (o3smdbq, 2026)",
+   "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. (avp2wa, 2019)"
+  ],
+  "strongest_against": [
+   "(Downside is LOTS of drivers) (1e612mu, 2024 - the e-bike Prop 22 poster himself)",
+   "I've seen posts online saying that bike and e-bike modes across all delivery apps are dead as far as the volume of orders recevied (1ke5hch, 2025)",
+   "I Dashed in Santa Monica zone and only made $14.00. (1ir8hmm, 2025, 7.5 hours)",
+   "got 3 orders max for 8.5hr shifts. entire week. Venice - Marina del rey - Culver city (1udunxf, 2026)",
+   "This is by far the worst place to dash. There is tons of traffic hard to find parking at some places and cops are everywhere. (e8om7y, 2019, Santa Monica)",
+   "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood. (7u8jh1, 2018, DTLA)",
+   "The Uber bots are mostly in Hollywood and the coco are in Santa Monica. (k90k220, 2023)"
+  ]
+ },
+ "contradicts_v1": [
+  "v1 treats 'Santa Monica/Venice' as the Westside candidate; the corpus's Westside courier staging is in West LA/Sawtelle (Colony 11419 Santa Monica Blvd), Westwood (Westwood Blvd x Ohio, Village early morning) and Culver/Palms (Venice Blvd roam). Downtown Santa Monica itself is described by dashers as the worst zone in LA for traffic, parking and police, and dead 2023-2026. Any satellite should be West LA, not SM.",
+  "v1's 'Westside = Prop 22 economics, not rider density' is CONFIRMED, but the corpus adds a second driver v1 omits: car couriers on the Westside want out of parking/traffic/ticket pain and cite 'bike lanes everywhere' - a conversion pool for rentals that DTLA posters do not describe.",
+  "v1 implies Koreatown is the natural satellite; the corpus shows the Westside holds the largest concentration of actual two-wheel utility riders in LA (104 resident docs; UCLA described as having the highest bike-commute share of any employer), separate from and unreachable by a DTLA/Koreatown hub ('anything outside of Venice/SM is challenging'). Koreatown vs West LA as second site should be decided on courier data, not two-wheel-doc counts, because Westside two-wheel docs are residents, not couriers.",
+  "The Colony ghost kitchen at 11419 Santa Monica Blvd is a CAR staging point ('as soon as you park by one of these'), not evidence of two-wheel couriers; it should not be read as a rider cluster.",
+  "Corpus evidence strengthens v1's primary choice: the most-cited cloud kitchen hotspot (1842 W Washington Blvd, Pico-Union/West Adams, ~30 restaurants) and bicycle couriers' preference for DTLA ('$7.5 dollar order on a .9-1.5 total miles') both sit on or next to the proposed Pico/Olympic corridor."
+ ],
+ "data_limits": [
+  "The two_wheel flag is very noisy for the Westside: of 211 flagged Santa Monica/Venice docs, ~5 are couriers riding two wheels; most are tourist bike rentals, beach-path complaints, bike-lane/NIMBY debate and car-free-living advice. All per-area splits above are analyst judgment from reading, not the flag.",
+  "Courier two-wheel evidence is tiny (10 self docs, 2018-2024; only 2 e-bike; scores 0-9) so Prop 22 and earnings-by-vehicle claims rest on single posters. One post (1ke5hch) is triple cross-posted and is counted once per file it appears in.",
+  "No doc states willingness to travel a given distance to a hub, shop or battery swap; residence/commute tolerance is inferred from car-free-living threads and courier 'where do you dash' posts. Most couriers' home neighbourhoods are unknown.",
+  "Earnings figures are self-reported, unverified, mix apps (DD/UE/GH/Postmates/Caviar), hours online vs active, and gross vs net; none is from an e-bike except the two Prop 22 posts, which give the floor rather than realised pay.",
+  "Corpus spans 2011-2026 with heavy 2025-2026 weighting from r/AskLosAngeles and r/LosAngeles (residents), while delivery-sub posts are mostly low-score 2018-2025; Duffl/UCLA campus delivery and delivery-robot posts indicate demand served outside the gig-app data we can see.",
+  "Excluded per instructions: Venice FL/Italy (none found), 'Santa Monica Blvd' used for WeHo/Hollywood stretches (several docs are Hollywood-side, e.g. 14cxk7t, 18u7zk3, iugxwko), and generic Bird/Lime tourist chatter unless courier-related."
+ ],
+ "quote_count": 30
+}

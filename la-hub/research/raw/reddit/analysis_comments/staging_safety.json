@@ -1,0 +1,1253 @@
+{
+ "scope": "Reader agent 'staging_safety': (a) where LA food-delivery couriers wait/gather/park/charge/eat/use restrooms between orders; (b) safety and theft by area and time; (c) night work; (d) police/enforcement on two-wheel couriers. Sources: topic_staging (136), topic_night (68), topic_theft_safety (73) subsets read in full (253 unique docs), plus a regex sweep of the full corpus_la.jsonl (4,604 docs) for the extra terms (hotspot, ghost kitchen, cloudkitchen, food hall, parking lot, garage, restroom, stolen, robbed, jumped, gun, unsafe, sketchy, skid row, macarthur, alvarado, homeless, police, cops, ticket, impound, sidewalk, etc.) restricted to courier-related docs, and full-thread pulls for the key two-wheel courier posts. Non-LA docs (Honolulu, Chicago/Hyde Park, Longview WA, Glendale AZ, Toronto, Phoenix, Orange County, Las Vegas, snow) were excluded.",
+ "docs_read": {
+  "subset_docs_read_in_full": 253,
+  "additional_corpus_docs_read_full_or_as_scan_snippet": 164,
+  "total": 417,
+  "corpus_size": 4604,
+  "note": "The 253 subset docs were read end to end (COVID megathread boilerplate skimmed). Of the additional docs, roughly 60 key courier/two-wheel docs and their full threads were read in full; the rest were reviewed as 500-char regex-hit snippets from the corpus sweep.",
+  "additional_doc_ids": [
+   "7u8jh1",
+   "xmdxgz",
+   "spranu",
+   "qsv5ea",
+   "1922gow",
+   "r0k9xt",
+   "1ooco56",
+   "1r6o88g",
+   "1am3dab",
+   "k2lhr5c",
+   "111hq0m",
+   "1us2257",
+   "toiqb2",
+   "1ek5e97",
+   "tsmdog",
+   "1jxxk57",
+   "1mtaq56",
+   "i8qwp1",
+   "1d61l8l",
+   "1ci1e7t",
+   "iz425u",
+   "rpeuqe",
+   "1pxwvvo",
+   "9dogjj",
+   "ofn43s",
+   "1mhnwno",
+   "13m9a0u",
+   "g5xv03",
+   "om5mqx0",
+   "1i3pg11",
+   "12i4jje",
+   "p1rkaq2",
+   "p13za3v",
+   "cn2rat",
+   "1odayrj",
+   "mh5sgp8",
+   "uwesb7",
+   "123b3b4",
+   "1gn1qei",
+   "w1rsi0",
+   "l6bt5ss",
+   "1gn3r1q",
+   "h0akqwr",
+   "h47y74z",
+   "p3lfzgk",
+   "dcfbla",
+   "yffhmm",
+   "1hcs3ic",
+   "12dlxc4",
+   "1426897",
+   "nyeb23",
+   "1lf350o",
+   "ram0nv",
+   "om35zkm",
+   "1sllbb2",
+   "bzt91s",
+   "1g82fn6",
+   "15cydh0",
+   "buha32",
+   "wmx6he",
+   "kjvxvo1",
+   "kjvtlsb",
+   "lzh8yxt",
+   "lzhb8e3",
+   "lzhbknb",
+   "lzhnddd",
+   "lzhi98e",
+   "nq3ho0",
+   "h08moy1",
+   "h08zkcu",
+   "h08pup0",
+   "h0jr1aq",
+   "h08w3hb",
+   "h0aa0ix",
+   "h0dfet3",
+   "h0f00hs",
+   "h09vcrh",
+   "h0a6mtv",
+   "hm4wch3",
+   "p3lb03x",
+   "p3lfli1",
+   "p3ogf8m",
+   "p3rroll",
+   "p4lgojv",
+   "p3ryc0w",
+   "lxieslr",
+   "lxnbawa",
+   "dt9baww",
+   "dtc8eab",
+   "dtc8gan",
+   "jguk27",
+   "1d82nvm",
+   "198c16x",
+   "1ddwoir",
+   "hl7octj",
+   "19b3r4e",
+   "x8u0gc",
+   "fsrcp3",
+   "1rsborl",
+   "946rf9",
+   "idfk4r",
+   "1f22s7f",
+   "hq3c1nt",
+   "1164voq",
+   "iz43n5",
+   "1v1a0ti",
+   "c4isga",
+   "rpeg06",
+   "gsnnwf",
+   "1kask33",
+   "lu0tqhh",
+   "ht9rv7",
+   "amyv42",
+   "dbp20x",
+   "1axnm32",
+   "1eyr44e",
+   "o3moil3",
+   "1biwkum",
+   "1hcyzvz",
+   "ux5wju",
+   "wbhxw2",
+   "r7jwj3",
+   "1s6equv",
+   "1mziv5j",
+   "ofmwml",
+   "rkki3d",
+   "1d7izxa",
+   "o23ir8",
+   "ltyqn58",
+   "s8fnij",
+   "shdhej",
+   "shdajq",
+   "9yid43",
+   "h0pul6j",
+   "1dmdxe9",
+   "qqy7ug",
+   "tyxsaf",
+   "1ajohon",
+   "1w42dhw",
+   "rt4fpu",
+   "ncsm0oi",
+   "kxbo71t",
+   "1m1mlfb",
+   "f1wafn",
+   "l69n8nr",
+   "1m14rym",
+   "dl31yb2",
+   "rm2288",
+   "1vnrx8s",
+   "evsgby",
+   "a3txzq",
+   "besyl4",
+   "a46dii",
+   "1dw5vdv",
+   "1kw8ur2",
+   "1igy3u4",
+   "kmx52o",
+   "cd0eeta",
+   "jl8csyv",
+   "oqk2wbd",
+   "4gwu1h",
+   "c92duzl",
+   "c8z7v7x",
+   "czco6oq"
+  ]
+ },
+ "staging_points": [
+  {
+   "place": "CloudKitchens \"Washington Food Co\"",
+   "address_or_intersection": "1842 W Washington Blvd, LA 90007 (Pico-Union / West Adams edge, ~1 mi SW of the proposed 18th St hub)",
+   "type": "pickup_cluster",
+   "evidence_count": 2,
+   "vehicles_seen": "cars (UberEats, Postmates, Grubhub, DoorDash drivers); no two-wheel mention",
+   "time_of_day": "\"start of my day\" (morning/lunch); unspecified",
+   "quotes": [
+    {
+     "quote": "HOTSPOT for drivers to pickup orders is at 1842 W. Washington Blvd, LA, CA 90007.  It's CLOUDKITCHEN with about 30 restaurants.  I see mostly, Ubereats, postmates, grubhub, and doordash drivers there.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+     "sub": "couriersofreddit",
+     "year": 2018,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "8n99nv"
+    },
+    {
+     "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these. It’s the equivalent of an Uber X driver going to the airport and waiting for a passenger ride.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+     "sub": "UberEATS",
+     "year": 2023,
+     "score": 138,
+     "kind": "post",
+     "doc_id": "1245m4q"
+    }
+   ]
+  },
+  {
+   "place": "\"Melrose Food Co\" ghost kitchen / cloud kitchen on Western",
+   "address_or_intersection": "615 N Western Ave, LA 90004 (East Hollywood, north of Koreatown, south of the 101)",
+   "type": "pickup_cluster",
+   "evidence_count": 3,
+   "vehicles_seen": "cars implied; one 2020 night pickup report (f6dg7k) of order-number confusion at the Western cloud kitchen",
+   "time_of_day": "start of day (2023); night (2020)",
+   "quotes": [
+    {
+     "quote": "If you're a door dasher, I'm going to take a guess it's the ghost kitchen on western Ave north of ktown south of 101",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjsvaov",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 71,
+     "kind": "comment",
+     "doc_id": "kjsvaov"
+    }
+   ]
+  },
+  {
+   "place": "Ghost kitchen (\"DoorDash kitchen\") on Lankershim at Burbank Blvd",
+   "address_or_intersection": "Lankershim Blvd & Burbank Blvd, North Hollywood",
+   "type": "pickup_cluster",
+   "evidence_count": 4,
+   "vehicles_seen": "cars stack-parked in the right lane / on the painted median with hazards; bollards installed; \"zero dedicated parking\" (lxieslr)",
+   "time_of_day": "unspecified (residents complain daily)",
+   "quotes": [
+    {
+     "quote": "There’s a ghost kitchen in NoHo and for ages the delivery drivers would fill the painted median with hazards on during pickups. Eventually they put bollards there to deter that behavior, so now they just stack park in the right-most lane in front of the ghost kitchen…",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1gsyt6q/drivers_parking_with_their_hazards_on_in_the/lxi8ktq",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 61,
+     "kind": "comment",
+     "doc_id": "lxi8ktq"
+    }
+   ]
+  },
+  {
+   "place": "Other named ghost-kitchen hotspots from the 2023 UberEATS list",
+   "address_or_intersection": "Colony 11419 Santa Monica Blvd 90025 (Sawtelle/West LA); Grand Food Depot 358 W 38th St 90037 (South LA near USC/Expo); Culver City Cuisine 5660-5668 Selmaraine Dr, Culver City 90230",
+   "type": "pickup_cluster",
+   "evidence_count": 1,
+   "vehicles_seen": "cars (\"as soon as you park by one of these\")",
+   "time_of_day": "start of day (2023 post also asks whether these hotspots will disappear as ghost kitchens close)",
+   "quotes": []
+  },
+  {
+   "place": "Ghost-kitchen building with 11 kitchens \"near Beverly Hills / Sherman Oaks\"",
+   "address_or_intersection": "unnamed; poster says near Beverly Hills–Sherman Oaks",
+   "type": "pickup_cluster",
+   "evidence_count": 1,
+   "vehicles_seen": "car implied",
+   "time_of_day": "weekend (post is about a dead weekend)",
+   "quotes": [
+    {
+     "quote": "I work near Beverly Hills Sherman oaks and I hang out near these ghost kitchen building that has 11 ghosts kitchens that guarantee me 30-40 bucks and hour.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/ybs11j/anyone_else_having_a_awful_weekend/itjen3q",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "itjen3q"
+    }
+   ]
+  },
+  {
+   "place": "Pico-Union staging loop: Home Depot Wilshire + \"Hammys\"/Little Caesars on 7th St",
+   "address_or_intersection": "Home Depot 1675 Wilshire Blvd (Wilshire & Union, Westlake/Pico-Union border) and 7th St (Pico-Union); dasher explicitly stays west of the freeway ring and east of Vermont",
+   "type": "hotspot_zone",
+   "evidence_count": 2,
+   "vehicles_seen": "car (same DoorDash driver, two comments, 2026)",
+   "time_of_day": "weekday work hours when downtown offices order; also overnight USC and East LA after club hours",
+   "quotes": [
+    {
+     "quote": "i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able. Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "I just dont go under the freeways into that downtown area thst all thr interstates circle",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "om5oxt3"
+    }
+   ]
+  },
+  {
+   "place": "DTLA core (Historic Core / Spring & 6th) as the two-wheel dispatch and demand center",
+   "address_or_intersection": "Spring St x 6th St (DoorDash bike-dasher zone 2019); downtown generally",
+   "type": "hotspot_zone",
+   "evidence_count": 6,
+   "vehicles_seen": "bicycle (avp2wa 2019, 7u8jh1 2018, h09vcrh 2021, 1h27t3u 2024), electric scooter (nq3ho0 2021, 1,172 upvotes), car (om5oxt3, i8qwp1)",
+   "time_of_day": "lunch/office hours (om5oxt3: dead 2:30-5:30pm and 4:30-11:30am); over-saturated with dashers (h09vcrh)",
+   "quotes": [
+    {
+     "quote": "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+     "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+     "sub": "doordash",
+     "year": 2019,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "avp2wa"
+    },
+    {
+     "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood.",
+     "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/",
+     "sub": "dtla",
+     "year": 2018,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "7u8jh1"
+    },
+    {
+     "quote": "No need to waste time finding parking. Using a car can waste you an extra 20 minutes for every passing hour and that 20 minutes I can already complete an extra delivery using a scooter.",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0dfet3",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "h0dfet3"
+    }
+   ]
+  },
+  {
+   "place": "Westwood Village / UCLA",
+   "address_or_intersection": "Westwood Blvd x Ohio Ave (DoorDash bike zone 2019); Westwood Village; In-N-Out on Gayley (car chaos)",
+   "type": "hotspot_zone",
+   "evidence_count": 4,
+   "vehicles_seen": "bicycle (avp2wa, wmx6he asks about Citi Bike dashing), car",
+   "time_of_day": "5am to after lunch when school is in session (om5oxt3)",
+   "quotes": [
+    {
+     "quote": "I honestly really enjoy overnight especially in usc. Ucla /westwood is good money from 5am- after lunch",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "om5oxt3"
+    }
+   ]
+  },
+  {
+   "place": "Koreatown / Hollywood zones",
+   "address_or_intersection": "Koreatown (Wilshire/Western area) and Hollywood (Sunset/Hollywood Blvd corridor)",
+   "type": "hotspot_zone",
+   "evidence_count": 5,
+   "vehicles_seen": "bicycle (h09vcrh), car (mbr6khr, f56kzqq, 1hcs3ic); note h0akqwr: \"There aren't any bike lanes in ktown or hollywood\"",
+   "time_of_day": "lunch (1hcs3ic gets nothing 11am-1pm in Ktown 2024); evening/night for Hollywood. Bicycle dasher h09vcrh (2021) says downtown had too many dashers and recommends Ktown/Hollywood as always busy; mbr6khr (2025) says Hollywood has an insane number of drivers",
+   "quotes": []
+  },
+  {
+   "place": "Beverly Hills restaurants (Ocean Prime, Cheesecake Factory)",
+   "address_or_intersection": "Beverly Hills business triangle",
+   "type": "hotspot_zone",
+   "evidence_count": 3,
+   "vehicles_seen": "car (parking problem near Cheesecake Factory, x8u0gc; ticket risk idfk4r)",
+   "time_of_day": "every night (1jxxk57 has worked Beverly Hills every night for three years)",
+   "quotes": []
+  },
+  {
+   "place": "Gardens of Taxco",
+   "address_or_intersection": "1113 N Harper Ave, West Hollywood",
+   "type": "pickup_cluster",
+   "evidence_count": 1,
+   "vehicles_seen": "cars (20 drivers waiting)",
+   "time_of_day": "night (Cinco de Mayo 2023)",
+   "quotes": [
+    {
+     "quote": "Gardens of Taxco is insanely busy tonight, cinco de Mayo. I got a really good offer, $14 for less than 2 miles away, but when I arrived, there were about 20 other drivers waiting for a pick up.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/139c1kf/cinco_de_mayo_madness_at_gardens_of_taxco_in_west/",
+     "sub": "UberEATS",
+     "year": 2023,
+     "score": 3,
+     "kind": "post",
+     "doc_id": "139c1kf"
+    }
+   ]
+  },
+  {
+   "place": "McDonald's closest to the mall (West San Fernando Valley) used as a rest/charge hub by an e-scooter dasher",
+   "address_or_intersection": "West SFV, McDonald's nearest the mall (likely Westfield Topanga area); exact store not named",
+   "type": "rest_charge",
+   "evidence_count": 1,
+   "vehicles_seen": "Unagi electric scooter + Metro bus (5,500 deliveries)",
+   "time_of_day": "between orders, all day",
+   "quotes": [
+    {
+     "quote": "While waiting for orders, I hang out at the McDonald’s closest to the mall and plug in what I like to call “the command center”; iPad, iPhone, Nintendo Switch, 2 portable power banks, and my scooter all charging at once.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post",
+     "doc_id": "zoqc22"
+    },
+    {
+     "quote": "go to refill my water bottle wherever I run out, and of course there’s also a restroom conveniently there. Along with offering affordable snacks, it’s the ideal hub.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post",
+     "doc_id": "zoqc22"
+    }
+   ]
+  },
+  {
+   "place": "Restroom access points / refusals",
+   "address_or_intersection": "McDonald's 4292 Crenshaw Blvd (must buy something, 2022); a WeHo sushi restaurant and Chicken Dijon Torrance (refused, 2024); Santa Monica during 2020 closures (fsrcp3); a Santa Monica server offering seats/restroom to drivers (1rsborl 2026)",
+   "type": "rest_charge",
+   "evidence_count": 5,
+   "vehicles_seen": "car (unspecified)",
+   "time_of_day": "unspecified",
+   "quotes": [
+    {
+     "quote": "We’re not considered customers? Had too shops tell me this recently. A sushi place where orders are usually 30 dollars a pop in West Hollywood, and now. Chicken Dijon place in Torrance CA.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ek5e97/restrooms_are_for_customers_only/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 27,
+     "kind": "post",
+     "doc_id": "1ek5e97"
+    }
+   ]
+  },
+  {
+   "place": "Shopping-center parking lots as wait spots",
+   "address_or_intersection": "generic: \"park in the middle of a shopping center parking lot and just wait\" (toiqb2 2022); Vons parking lot near Pasadena (946rf9 2018); Northridge mall the only place to hang out at night (e8om7y 2019); Culver City zone roaming Venice Blvd Robertson-Sepulveda and Palms Overland-National (1c10313 2024)",
+   "type": "rest_charge",
+   "evidence_count": 4,
+   "vehicles_seen": "cars",
+   "time_of_day": "between orders; night (Northridge)",
+   "quotes": []
+  },
+  {
+   "place": "Chain pickup queues that eat rider time",
+   "address_or_intersection": "Krispy Kreme Burbank (jm7328 2020, 20-30 min lines); Chick-fil-A Colorado Blvd Pasadena drive-thru only (x5bh96 2022); Popeyes Figueroa & Adams near USC slow (kjvtlsb 2024); East Pasadena McDonald's praised as fast (12lg7jt 2023)",
+   "type": "pickup_cluster",
+   "evidence_count": 4,
+   "vehicles_seen": "cars",
+   "time_of_day": "evening (Halloween, 6pm)",
+   "quotes": []
+  }
+ ],
+ "safety_by_area": [
+  {
+   "area": "DTLA core (Historic Core / Financial / Bunker Hill / Little Tokyo)",
+   "incidents": [
+    {
+     "what": "DoorDash courier had bike tires stolen while dashing (first person)",
+     "vehicle": "bicycle",
+     "year": 2024,
+     "time": "unspecified (Thanksgiving week)",
+     "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/"
+    },
+    {
+     "what": "Driver's Honda Accord stolen while picking up a pizza order downtown",
+     "vehicle": "car",
+     "year": 2022,
+     "time": "11:30pm, New Year's Eve",
+     "quote": "My accord was stolen on New Year eve in LA downtown, when I was picking up Papa Jones pizza.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/sem4uf/helpcar_stolen_on_new_year_eve_and_getting_ripped/"
+    },
+    {
+     "what": "LA native warns DTLA parked cars get broken into (reply to the DTLA e-scooter dasher, thread score 1,172)",
+     "vehicle": "car",
+     "year": 2021,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h08zkcu"
+    },
+    {
+     "what": "Two parking tickets in under 2 minutes in a loading zone; \"cops are assholes\"",
+     "vehicle": "car",
+     "year": 2020,
+     "time": "unspecified",
+     "quote": "No parking and cops are assholes. Got 2 tickets already for less than 2 mins in the “loading” zone.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/i8qwp1/bringing_my_girl_along_for_the_ride/"
+    },
+    {
+     "what": "Bicycle UberEATS courier finds DTLA busier than BH/Hollywood but calls it \"the home of the homeless\" after bad stories",
+     "vehicle": "bicycle",
+     "year": 2018,
+     "time": "unspecified",
+     "quote": "i worked this with UberEATS on my bicycle, I am surprised with the number of requests, it's more than what I get in Beverly Hills or Hollywood.",
+     "url": "https://www.reddit.com/r/dtla/comments/7u8jh1/ubereats_bicycle_very_busy_in_dtla/"
+    },
+    {
+     "what": "Resident: stolen e-bike tracker traced to \"an area downtown\" (hvclqbj 2022); \"best way to not get your bike stolen in DTLA is to use a Metro bike\" (krcaz1s 2024); Little Tokyo to LA State Historic Park at night \"uncomfortable and unsafe\" at times (iocuiga 2022)",
+     "vehicle": "bicycle / on foot",
+     "year": 2022,
+     "time": "night (iocuiga)",
+     "quote": "",
+     "url": "https://www.reddit.com/r/ebikes/comments/sj47n5/stolen_ebike_los_angeles_area/hvclqbj"
+    }
+   ]
+  },
+  {
+   "area": "Skid Row / Warehouse District (Ceres, San Pedro, 4th-8th & Central/Alameda)",
+   "incidents": [
+    {
+     "what": "UberEats driver delivering to a \"really sketchy complex\" on Skid Row; girlfriend waited in the car; first priority was to leave without being hassled; later accused of non-delivery",
+     "vehicle": "car",
+     "year": 2022,
+     "time": "around noon",
+     "quote": "It all felt a little weird, but my first priority was to just gtfo skid row without getting hassled, which I immediately did.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/uaf1v3/customer_claiming_they_didnt_get_the_order/"
+    },
+    {
+     "what": "Carless dasher delivering to a gated complex on Skid Row, \"homeless everywhere\", could not leave food at door; got a contract violation",
+     "vehicle": "no car (walking/bike/scooter unspecified)",
+     "year": 2025,
+     "time": "unspecified",
+     "quote": "and it is on skid row homeless everywhere how can if I leave it in front of them",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ooco56/door_dash_carless_and_lame_violation/"
+    },
+    {
+     "what": "Skid Row shelter security guard is a repeat DoorDash customer who tips $10+ and escorts drivers with his patrol because police do not respond",
+     "vehicle": "n/a (customer)",
+     "year": 2026,
+     "time": "14-hour shifts, incl. night",
+     "quote": "I work security in a homeless shelter in skid row , Los Angeles… genuinely have so much respect for my drivers that actually come thru . I always tip em ten bucks minimum. ... cus the cops don’t even respond here",
+     "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/"
+    },
+    {
+     "what": "Stolen bicycle recovered on Skid Row via AirTag",
+     "vehicle": "bicycle",
+     "year": 2026,
+     "time": "unspecified",
+     "quote": "I recovered my stolen bike on Skid Row thanks to an AirTag last week.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1vm0eff/2_ebikes_stolen_in_4_weeks_unlucky_or_stupid/p3chftk"
+    },
+    {
+     "what": "Commenter directing a hungry DTLA bike dasher to free plates at San Pedro & 4th/5th warns to be careful",
+     "vehicle": "bicycle (OP)",
+     "year": 2024,
+     "time": "afternoon/evening",
+     "quote": "",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/lzhi98e"
+    },
+    {
+     "what": "Spark driver in a suburb keeps getting sub-$10 offers to Compton, Watts and Skid Row (1am3dab 2024); \"if you live directly in downtown or Skid Row, God help you\" (k80013f 2023); volunteer sees \"bikes & bike parts that look stolen\" at encampments (mn7apd 2021); cyclist asks whether biking 6th St through Skid Row to the Arts District is safe (bzt91s 2019). Zero mentions of Ceres Ave or San Pedro St by couriers.",
+     "vehicle": "car / bicycle",
+     "year": 2024,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/Sparkdriver/comments/1am3dab/new_driver_why_am_i_only_getting_offers_30/"
+    }
+   ]
+  },
+  {
+   "area": "Westlake / MacArthur Park (7th & Alvarado, Wilshire & Union)",
+   "incidents": [
+    {
+     "what": "Newcomer moving to Grand View near MacArthur Park (no car) worries about bike racks and theft; no incident",
+     "vehicle": "bicycle (planned)",
+     "year": 2017,
+     "time": "night concern (\"later parts of night\")",
+     "quote": "I'd like to get a bike as well so I have easier access to Wilshire/Ktown (~1.5 miles away) but I'm not sure of bike racks and safety from theft.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/5px3e9/first_time_living_in_la_hows_westlake_for_an/"
+    },
+    {
+     "what": "Positive: a 2026 DoorDash driver stages around the Home Depot on Wilshire (Wilshire & Union) and 7th St, avoiding the freeway-ringed downtown core; no safety complaint",
+     "vehicle": "car",
+     "year": 2026,
+     "time": "office hours",
+     "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3"
+    },
+    {
+     "what": "No first-person courier robbery/assault at MacArthur Park or Alvarado found; Alvarado appears once as a routing suggestion (kxbo71t 2024) and MacArthur Park once as a drive-through with no orders (g5xv03 2020)",
+     "vehicle": "car",
+     "year": 2024,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1brlmy0/would_you_take_this_delivery/kxbo71t"
+    }
+   ]
+  },
+  {
+   "area": "Pico-Union / Pico-Olympic corridor west of the 110",
+   "incidents": [
+    {
+     "what": "Dasher prefers Pico-Union as base, stays out of the interstate-ringed core and east of Vermont",
+     "vehicle": "car",
+     "year": 2026,
+     "time": "day + overnight",
+     "quote": "i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able. Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0"
+    },
+    {
+     "what": "Resident guide: free unlimited street parking west of the 110 in Pico-Union; east of the 110 is meters/anti-gridlock tow zones (8w25e2 2018). East Hollywood UberEats driver lists Pico-Union among areas he ends up in (12i4jje 2023). No theft/robbery report for couriers in this corridor.",
+     "vehicle": "car",
+     "year": 2018,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/8w25e2/psa_parking_at_the_convention_center_for_anime/"
+    }
+   ]
+  },
+  {
+   "area": "Mid-City / Mid-Wilshire (Olympic & La Brea)",
+   "incidents": [
+    {
+     "what": "DoorDash driver assaulted and robbed at a detox facility near Olympic & La Brea; DoorDash \"did nothing\" (post body not in corpus; two OP comments are)",
+     "vehicle": "unspecified (likely car)",
+     "year": 2026,
+     "time": "unspecified",
+     "quote": "And I was not in a trap neighborhood, at best you could say I was in mid Wilshire",
+     "url": "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/p13za3v"
+    }
+   ]
+  },
+  {
+   "area": "Koreatown",
+   "incidents": [
+    {
+     "what": "Female dasher living in Koreatown stopped night deliveries after bad experiences; gets almost no lunch orders",
+     "vehicle": "car",
+     "year": 2024,
+     "time": "night (avoided); 11am-1pm dead",
+     "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/"
+    },
+    {
+     "what": "\"Wall of bicycles\" of stolen/harvested bikes on a Koreatown street cited as why public space feels unsafe",
+     "vehicle": "bicycle",
+     "year": 2021,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/qnfd05/streets_for_all_announces_la_2525_challenge_to/hjhbuh4"
+    },
+    {
+     "what": "Dasher quit partly over dead cell reception in Koreatown and car dings in crowded restaurant lots (cbpi9m 2019); no bike lanes in Ktown/Hollywood (h0akqwr 2021)",
+     "vehicle": "car",
+     "year": 2019,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/doordash/comments/cbpi9m/got_a_new_job_offer_and_i_want_to_say_goodbye/"
+    }
+   ]
+  },
+  {
+   "area": "Hollywood / West Hollywood / Beverly Hills",
+   "incidents": [
+    {
+     "what": "Out-of-town UberEats driver felt unsafe in Hollywood on first night",
+     "vehicle": "car",
+     "year": 2020,
+     "time": "night",
+     "quote": "",
+     "url": "https://www.reddit.com/r/UberEATS/comments/fhj1er/socal_drivers_help/"
+    },
+    {
+     "what": "Long-time Hollywood cyclist: double-digit bikes stolen over two decades; \"100% it will be stolen or vandalized\" (nde1659 2025); Wolf Warrior scooter stolen (sadu6h 2022)",
+     "vehicle": "bicycle / e-scooter",
+     "year": 2025,
+     "time": "unspecified",
+     "quote": "I had into the double digits bikes stolen over two decades. The theft is crazy bad.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1iyt1ld/is_it_possible_to_get_around_la_with_bike/mfbfwa6"
+    },
+    {
+     "what": "Bike messenger (6pm-midnight) stopped by LAPD 3+ times a week, mostly in Beverly Hills and WeHo; officers reach for guns",
+     "vehicle": "bicycle",
+     "year": 2018,
+     "time": "6pm-12am",
+     "quote": "they bother most in beverly hills and weho",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/"
+    },
+    {
+     "what": "Postmates/UberEats driver detained and frisked by 7 LAPD SUVs at Sunset & La Brea after a robbery call (awuuop 2019, 1am); UberEats driver locked out of a Vine St luxury building elevator at midnight (111hq0m 2023); 20 drivers waiting at Gardens of Taxco (139c1kf 2023)",
+     "vehicle": "car",
+     "year": 2019,
+     "time": "1am / midnight",
+     "quote": "",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/awuuop/decent_delivery_night_ends_with_being_frisked/"
+    }
+   ]
+  },
+  {
+   "area": "South LA / USC / Compton / East LA",
+   "incidents": [
+    {
+     "what": "Female dasher sent to Compton after 10pm twice; no street lights; ended Friday/Saturday dashes early",
+     "vehicle": "car",
+     "year": 2022,
+     "time": "after 10pm",
+     "quote": "I am a female that delivers in the southern Los Angeles area and twice i have been sent to Compton after 10pm. During daylight/dusk hours I have no problem delivering to any neighborhood and hate that I feel this way but late at night with no street lights in many of these areas it really is",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/spranu/decline_due_to_unsafe_neighborhoods/"
+    },
+    {
+     "what": "App keeps pushing a driver to South Central on a slow night (yffhmm 2022); \"avoid South Central, South LA\" (h0aa0ix 2021); McDonald's 4292 Crenshaw refuses restroom (tsmdog 2022); Lyft driver near USC/Budlong at night nearly hits unlit scooters (1of2lyw 2025); 7-Eleven pickup near Dodger Stadium, homeless man ran up (r0k9xt 2021). Counter: overnight USC and East LA after club hours described as good money (om5oxt3/om5mqx0 2026).",
+     "vehicle": "car / scooter",
+     "year": 2022,
+     "time": "night",
+     "quote": "If you like overnight east LA after club hours especially. Friday and saturday is good money.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0"
+    }
+   ]
+  },
+  {
+   "area": "Westside (Santa Monica, Venice, Marina del Rey, Culver City, Westwood)",
+   "incidents": [
+    {
+     "what": "Dasher waiting outside a Culver City restaurant deliberately hit by a sidewalk e-scooter rider, thrown into the road",
+     "vehicle": "on foot (car dasher)",
+     "year": 2020,
+     "time": "unspecified",
+     "quote": "I was waiting outside a restaurant in Culver City and a man comes by on the sidewalk on an electric scooter at full speed and swerved to hit me.",
+     "url": "https://www.reddit.com/r/doordash/comments/j9vs4j/doordash_injury_compensation/"
+    },
+    {
+     "what": "Bike locked at a Marina del Rey rack under a (non-working) camera gone in 30 minutes (nde9g8j 2025); Venice: keeping a bike outside is \"a guaranteed theft\" (d7ndc4a 2016); wheels stolen from station bike racks, use lockers (nv8rgsu 2025); Santa Monica has \"cops everywhere\", worst place to dash (e8om7y 2019); homeless man took a Santa Monica drop-off (198c16x 2024); UCLA hospital valet forbids courier parking (1t5n6cg 2026)",
+     "vehicle": "bicycle / car",
+     "year": 2025,
+     "time": "unspecified",
+     "quote": "",
+     "url": "https://www.reddit.com/r/ebikes/comments/1nd404t/tired_of_lugging_my_ebike_up_3_stairs_what_are/nde9g8j"
+    }
+   ]
+  },
+  {
+   "area": "Valley / Burbank / Glendale / Pasadena",
+   "incidents": [
+    {
+     "what": "Northridge/Calabasas \"kinda sketchy being in this area at night not many good places to hang out besides the Northridge mall\" (e8om7y 2019); four dashers converge on a dark \"sketchy\" NoHo house full of Walgreens stamp orders (19b3r4e 2024); Pasadena and Glendale are the most patrolled areas for parking/traffic, $140 ticket for running into Chick-fil-A (1ci1e7t 2024); Burbank ticketing blitz on Orange Grove & San Fernando (iz425u 2020); Old Pasadena bike cops (n4sv0g 2021)",
+     "vehicle": "car",
+     "year": 2024,
+     "time": "night (Northridge, NoHo)",
+     "quote": "",
+     "url": "https://www.reddit.com/r/grubhubdrivers/comments/n4sv0g/i_missed_at_least_a_dozen_orders_last_saturday/"
+    }
+   ]
+  }
+ ],
+ "two_wheel_theft_firsthand": [
+  {
+   "what": "DoorDash courier working DTLA had bike tires stolen (the only first-person theft of a delivery two-wheeler found in the corpus)",
+   "area": "DTLA",
+   "vehicle": "bicycle",
+   "year": 2024,
+   "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/",
+   "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+   "score": 100,
+   "note": "Follow-up comment by OP: lives in South LA, dashes in DTLA (lzhnddd). Corrects the post-level finding of \"no first-person two-wheel theft reports\"."
+  },
+  {
+   "what": "DTLA bicycle dasher asking for an e-bike/scooter that is easy to lock during pickups and drop-offs (theft anticipated, not reported)",
+   "area": "DTLA",
+   "vehicle": "bicycle -> e-bike",
+   "year": 2022,
+   "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+   "quote": "Also, one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+   "score": 1,
+   "note": "Cross-posted to r/doordash (syyzri) and r/AskLosAngeles (syz2gj)."
+  },
+  {
+   "what": "Non-courier two-wheel thefts in LA for context: e-bike frame cut in a parking area, tracker led downtown (hvclqbj 2022); Kaabo Wolf Warrior stolen, Hollywood (sadu6h 2022); mountain bike + every bike on a Marina del Rey rack gone in 30 min (nde9g8j 2025); Trek stolen in Playa Vista (f9190 2011); double-digit bikes stolen over 20 years in Hollywood (mfbfwa6 2025); bike recovered on Skid Row (p3chftk 2026); wheel/seat/handlebar stripping in Santa Monica (nde8d60 2025)",
+   "area": "various",
+   "vehicle": "e-bike / e-scooter / bicycle",
+   "year": 2022,
+   "url": "https://www.reddit.com/r/ebikes/comments/sj47n5/stolen_ebike_los_angeles_area/hvclqbj",
+   "quote": "",
+   "score": 32,
+   "note": "None of these were delivery vehicles."
+  }
+ ],
+ "night_work": [
+  {
+   "claim": "Night/overnight couriers exist and describe specific LA night markets: USC overnight, East LA after club hours (Fri/Sat), Beverly Hills every night for 3 years, Hollywood Hills mansion drops at 2am, a bike messenger working 6pm-midnight in BH/WeHo, 11pm-4am 1.8x boosts near the SFV with few drivers (as94v5 2019), \"darkness is better than sunshine\" after 8pm (toiqb2 2022)",
+   "evidence_count": 7,
+   "quotes": [
+    {
+     "quote": "I honestly really enjoy overnight especially in usc. Ucla /westwood is good money from 5am- after lunch",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "om5oxt3"
+    },
+    {
+     "quote": "If you like overnight east LA after club hours especially. Friday and saturday is good money.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "on a week they pull me over more than 3 times , i am a bike messenger in LA ,  i deliver during dinner time , from 6 to 12am",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "7sdaho"
+    }
+   ]
+  },
+  {
+   "claim": "What stops night work is mostly personal safety for women and dark, unlit destinations, not lack of demand: three first-person women couriers (South LA/Compton, WeHo-BH-Hollywood, Koreatown) stop at dark; a resident says women need a car to be safe at night (nvhjce9 2025)",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "I am a female that delivers in the southern Los Angeles area and twice i have been sent to Compton after 10pm. During daylight/dusk hours I have no problem delivering to any neighborhood and hate that I feel this way but late at night with no street lights in many of these areas it really is",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/spranu/decline_due_to_unsafe_neighborhoods/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 10,
+     "kind": "post",
+     "doc_id": "spranu"
+    },
+    {
+     "quote": "I’m a girl driving alone so I don’t like to continue dashing once it gets dark out. Too sketchy.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/qsv5ea/los_angeles_dashers/",
+     "sub": "doordash_drivers",
+     "year": 2021,
+     "score": 4,
+     "kind": "post",
+     "doc_id": "qsv5ea"
+    },
+    {
+     "quote": "I am a female and after a couple of bad experiences I will no longer risk doing deliveries at night.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1hcs3ic/does_anyone_else_not_get_orders_almost_at_all/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 3,
+     "kind": "post",
+     "doc_id": "1hcs3ic"
+    }
+   ]
+  },
+  {
+   "claim": "Robbery/assault of couriers is rare in the corpus but present: assaulted and robbed near Olympic & La Brea (2026, vehicle unspecified); frisked at gunpoint-adjacent LAPD stop at Sunset & La Brea 1am (2019, car); car stolen at 11:30pm DTLA pickup (2022)",
+   "evidence_count": 3,
+   "quotes": [
+    {
+     "quote": "And I was not in a trap neighborhood, at best you could say I was in mid Wilshire",
+     "url": "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/p13za3v",
+     "sub": "doordash",
+     "year": 2026,
+     "score": 5,
+     "kind": "comment",
+     "doc_id": "p13za3v"
+    },
+    {
+     "quote": "My accord was stolen on New Year eve in LA downtown, when I was picking up Papa Jones pizza.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/sem4uf/helpcar_stolen_on_new_year_eve_and_getting_ripped/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "sem4uf"
+    }
+   ]
+  },
+  {
+   "claim": "Homeless encounters are a recurring night friction (7-Eleven near Dodger Stadium run-up r0k9xt 2021; Skid Row drop-offs 1ooco56 2025; \"DTLA aka the home of the homeless\" 7u8jh1 2018; Santa Monica drop-off taken 198c16x 2024) but no injury reported",
+   "evidence_count": 4,
+   "quotes": [
+    {
+     "quote": "and it is on skid row homeless everywhere how can if I leave it in front of them",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ooco56/door_dash_carless_and_lame_violation/",
+     "sub": "doordash_drivers",
+     "year": 2025,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "1ooco56"
+    }
+   ]
+  },
+  {
+   "claim": "No-orders / over-saturation is the other night killer: Long Beach late nights 1-3 dashes in 6 hours (1tweeay 2026), DTLA/Los Feliz 3 days no orders (1kyphjr 2025), too many dashers downtown (h09vcrh 2021), DTLA dead 2:30-5:30pm and 4:30-11:30am (om5oxt3 2026)",
+   "evidence_count": 4,
+   "quotes": []
+  },
+  {
+   "claim": "Explicit wishes that a lit, staffed hub could satisfy: secure lock-up during pickups (syz06v), charging outlets + wifi + restroom + water + cheap snacks = \"the ideal hub\" (e-scooter dasher, zoqc22), restrooms refused by merchants (1ek5e97, tsmdog, fsrcp3), \"I wish you all parking lots\" (1ci1e7t), 24-hour secured parking valued in DTLA (1uddgha), heavy lock left at a pole + beater bike (nv8vej6), bike lockers (2p869h), parked cars broken into downtown (h08zkcu)",
+   "evidence_count": 8,
+   "quotes": [
+    {
+     "quote": "Also, one that is easy to lock up to prevent theft while picking up orders and dropping them off.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/syz06v/ebikescooter_for_delivery_in_dtla/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "syz06v"
+    },
+    {
+     "quote": "While waiting for orders, I hang out at the McDonald’s closest to the mall and plug in what I like to call “the command center”; iPad, iPhone, Nintendo Switch, 2 portable power banks, and my scooter all charging at once.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post",
+     "doc_id": "zoqc22"
+    },
+    {
+     "quote": "go to refill my water bottle wherever I run out, and of course there’s also a restroom conveniently there. Along with offering affordable snacks, it’s the ideal hub.",
+     "url": "https://www.reddit.com/r/doordash/comments/zoqc22/anyone_else_here_deliver_using_an_electric_scooter/",
+     "sub": "doordash",
+     "year": 2022,
+     "score": 2,
+     "kind": "post",
+     "doc_id": "zoqc22"
+    },
+    {
+     "quote": "We’re not considered customers? Had too shops tell me this recently. A sushi place where orders are usually 30 dollars a pop in West Hollywood, and now. Chicken Dijon place in Torrance CA.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ek5e97/restrooms_are_for_customers_only/",
+     "sub": "doordash_drivers",
+     "year": 2024,
+     "score": 27,
+     "kind": "post",
+     "doc_id": "1ek5e97"
+    }
+   ]
+  }
+ ],
+ "enforcement": [
+  {
+   "area": "Beverly Hills / West Hollywood",
+   "what": "LAPD stops a 22-year-old bike messenger 3+ times a week during 6pm-midnight deliveries, blocks him with cars, hands on guns; hoodie/gloves at night",
+   "vehicle": "bicycle",
+   "year": 2018,
+   "quotes": [
+    {
+     "quote": "on a week they pull me over more than 3 times , i am a bike messenger in LA ,  i deliver during dinner time , from 6 to 12am",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "7sdaho"
+    },
+    {
+     "quote": "they bother most in beverly hills and weho",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/7sdaho/cops_keep_on_stopping_for_doing_ubereats_and/",
+     "sub": "LosAngeles",
+     "year": 2018,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "7sdaho"
+    }
+   ]
+  },
+  {
+   "area": "DTLA",
+   "what": "Little enforcement on two-wheelers: Surron riders 50mph+ with no tickets; resident complaint that DTLA sidewalks are overrun with unenforced e-bikes, motor scooters and delivery bikes going the wrong way in bike lanes; e-bike can park on the curb while a moped on the curb risks a ticket (xmdxgz); LAPD parked in the LA Cafe bike lane at 6th/Spring threatening a $350 ticket (1ayqf3 2013). Car couriers, by contrast, get loading-zone and citation-officer tickets (i8qwp1 2020, 1d61l8l 2024)",
+   "vehicle": "e-bike / Surron / moped / car",
+   "year": 2023,
+   "quotes": [
+    {
+     "quote": "In DTLA the Surron guys regularly drive 50mph+ go karts through the middle of the city no tickets.",
+     "url": "https://www.reddit.com/r/ElectricScooters/comments/16uj0hn/where_do_you_ride_your_high_performance_scooter/k2lhr5c",
+     "sub": "ElectricScooters",
+     "year": 2023,
+     "score": 10,
+     "kind": "comment",
+     "doc_id": "k2lhr5c"
+    },
+    {
+     "quote": "The DTLA sidewalks are a congested mess and over-run with: e-bikes, motor scooters, skateboards, pedal bikes, delivery bikes, you name it.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1g82fn6/can_we_enforce_sidewalk_and_crosswalk_safety/",
+     "sub": "AskLosAngeles",
+     "year": 2024,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "1g82fn6"
+    },
+    {
+     "quote": "The e bike can go on the curb but if i put my motorcycle on the curb for 10mins would i get a ticket?",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/xmdxgz/downtown_la_with_motorcycle/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "xmdxgz"
+    },
+    {
+     "quote": "No parking and cops are assholes. Got 2 tickets already for less than 2 mins in the “loading” zone.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/i8qwp1/bringing_my_girl_along_for_the_ride/",
+     "sub": "doordash_drivers",
+     "year": 2020,
+     "score": 3,
+     "kind": "post",
+     "doc_id": "i8qwp1"
+    }
+   ]
+  },
+  {
+   "area": "Pasadena / Glendale / Burbank",
+   "what": "Pasadena and Glendale are \"the most patrolled areas for parking and traffic violations\" ($140 ticket running into Chick-fil-A, 1ci1e7t 2024); Old Town Pasadena bike cops pounce on cars stopping on Colorado (n4sv0g 2021); Burbank parking-enforcement blitz on Orange Grove & San Fernando (iz425u 2020)",
+   "vehicle": "car",
+   "year": 2024,
+   "quotes": []
+  },
+  {
+   "area": "Santa Monica",
+   "what": "\"cops are everywhere\", hard to park, worst place to dash (e8om7y 2019); e-bike dasher in Santa Monica says he never worries about parking or tickets (1e612mu 2024)",
+   "vehicle": "car vs e-bike",
+   "year": 2024,
+   "quotes": []
+  },
+  {
+   "area": "Hollywood Bowl area (Hollywood Hills)",
+   "what": "Kids' e-bikes \"impounded by the police more often than they're stolen\" (nde9ban 2025, downvoted comment); Sunset & La Brea LAPD detention of a courier after a robbery call (awuuop 2019)",
+   "vehicle": "e-bike / car",
+   "year": 2025,
+   "quotes": []
+  },
+  {
+   "area": "General",
+   "what": "No e-bike classification stops or moped licence checks on couriers were found anywhere in the corpus; the only licence mentions are a UCLA commuter noting a moped needs a licence (2p869h 2014) and a Glendale moped courier worrying about freeway routing (uwesb7 2022). A car dasher says LA parking enforcement is \"pretty chill\" with blinkers and a delivery sign (1f22s7f 2024).",
+   "vehicle": "moped / e-bike",
+   "year": 2024,
+   "quotes": []
+  }
+ ],
+ "v1_checks": {
+  "ceres_skid_row": {
+   "verdict": "SUPPORTED for rider/asset safety, with a nuance. No courier mentions Ceres Ave, San Pedro St or the Warehouse District by name; every Skid Row mention frames it as a place to leave quickly, where police do not respond, where stolen bikes turn up, and where a carless dasher could not safely leave food. But Skid Row generates orders (a shelter guard tips $10+ every shift), so a hub 0.6 mi away would be near demand yet would ask riders to lock e-bikes/batteries in the one district Reddit associates with bike-part harvesting.",
+   "quotes": [
+    {
+     "quote": "It all felt a little weird, but my first priority was to just gtfo skid row without getting hassled, which I immediately did.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/uaf1v3/customer_claiming_they_didnt_get_the_order/",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 7,
+     "kind": "post",
+     "doc_id": "uaf1v3"
+    },
+    {
+     "quote": "cus the cops don’t even respond here",
+     "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/",
+     "sub": "doordash",
+     "year": 2026,
+     "score": 12,
+     "kind": "post",
+     "doc_id": "1r6o88g"
+    },
+    {
+     "quote": "I recovered my stolen bike on Skid Row thanks to an AirTag last week.",
+     "url": "https://www.reddit.com/r/ebikes/comments/1vm0eff/2_ebikes_stolen_in_4_weeks_unlucky_or_stupid/p3chftk",
+     "sub": "ebikes",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "p3chftk"
+    },
+    {
+     "quote": "I work security in a homeless shelter in skid row , Los Angeles… genuinely have so much respect for my drivers that actually come thru . I always tip em ten bucks minimum.",
+     "url": "https://www.reddit.com/r/doordash/comments/1r6o88g/i_just_wanna_say_i_appreciate_you_drivers_as_a/",
+     "sub": "doordash",
+     "year": 2026,
+     "score": 12,
+     "kind": "post",
+     "doc_id": "1r6o88g"
+    },
+    {
+     "quote": "and it is on skid row homeless everywhere how can if I leave it in front of them",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1ooco56/door_dash_carless_and_lame_violation/",
+     "sub": "doordash_drivers",
+     "year": 2025,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "1ooco56"
+    }
+   ]
+  },
+  "historic_core_macarthur_vs_pico_olympic": {
+   "verdict": "PARTIALLY SUPPORTED. Pico-Union side: the single most on-point data point is a 2026 DoorDash driver who deliberately stays in Pico-Union, hangs around the Home Depot on Wilshire and Little Caesars on 7th, and refuses to go \"under the freeways\" into the interstate-ringed core; Pico-Union has free unlimited parking west of the 110 (8w25e2) and hosts the 1842 W Washington CloudKitchens hotspot. Historic Core: it is where two-wheel demand and dispatch actually sit (DoorDash bike zone at Spring & 6th in 2019; 1,172-upvote e-scooter dasher who lives downtown; bicycle couriers find DTLA busier than BH/Hollywood), and the only first-person courier two-wheel theft (tires) and a courier car theft (NYE, 11:30pm) are in DTLA; cars get broken into. MacArthur Park/Westlake: Reddit offers no courier robbery at 7th & Alvarado, only a 2017 bike-theft worry and a 2026 driver who stages at Wilshire & Union without complaint. So the corpus supports keeping the hub on the west/south edge of the core but does NOT show riders avoiding the Historic Core; they work it and need a place to lock up there. Note the one courier assault-and-robbery is on the Olympic corridor further west (Olympic & La Brea, 2026, at a detox facility).",
+   "quotes": [
+    {
+     "quote": "i stay in the pico union area which sometimes brings me to Hollywood zone. I won't go west of vermont and ill head towards the usc zone out of hollywood if im able. Hanging around the homedepot and hammys/little caesars on 7th does me good.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "I just dont go under the freeways into that downtown area thst all thr interstates circle",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5mqx0",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "om5mqx0"
+    },
+    {
+     "quote": "Hang out around homedepot Wilshire during the hours people that work downtown are ordering and youll get orders before you finish delivering youre last.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/1tecgu8/i_wasted_2_months_chasing_platinum_for_nothing/om5oxt3",
+     "sub": "doordash_drivers",
+     "year": 2026,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "om5oxt3"
+    },
+    {
+     "quote": "I'm a dasher that has the insane privilege to ride a bike-- We get Westwood-Westwood blvd. x Ohio Ave. & DTLA- Spring St. x 6th St.",
+     "url": "https://www.reddit.com/r/doordash/comments/avp2wa/from_a_dasher_on_bicycle/",
+     "sub": "doordash",
+     "year": 2019,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "avp2wa"
+    },
+    {
+     "quote": "I’m doordashing to feed myself and someone stole my bike tires in dtla?",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/1h27t3u/anyplace_giving_out_a_free_thanksgiving_meal/",
+     "sub": "AskLosAngeles",
+     "year": 2024,
+     "score": 100,
+     "kind": "post",
+     "doc_id": "1h27t3u"
+    },
+    {
+     "quote": "My accord was stolen on New Year eve in LA downtown, when I was picking up Papa Jones pizza.",
+     "url": "https://www.reddit.com/r/doordash_drivers/comments/sem4uf/helpcar_stolen_on_new_year_eve_and_getting_ripped/",
+     "sub": "doordash_drivers",
+     "year": 2022,
+     "score": 0,
+     "kind": "post",
+     "doc_id": "sem4uf"
+    },
+    {
+     "quote": "I'd like to get a bike as well so I have easier access to Wilshire/Ktown (~1.5 miles away) but I'm not sure of bike racks and safety from theft.",
+     "url": "https://www.reddit.com/r/AskLosAngeles/comments/5px3e9/first_time_living_in_la_hows_westlake_for_an/",
+     "sub": "AskLosAngeles",
+     "year": 2017,
+     "score": 7,
+     "kind": "post",
+     "doc_id": "5px3e9"
+    },
+    {
+     "quote": "And I was not in a trap neighborhood, at best you could say I was in mid Wilshire",
+     "url": "https://www.reddit.com/r/doordash/comments/1vcgl9x/assaulted_and_robbed_doordash_did_nothing/p13za3v",
+     "sub": "doordash",
+     "year": 2026,
+     "score": 5,
+     "kind": "comment",
+     "doc_id": "p13za3v"
+    }
+   ]
+  },
+  "ghost_kitchen_partner": {
+   "verdict": "SUPPORTED as pickup magnets, but the evidence is car-centric and dispersed. Drivers call the CloudKitchens/ghost kitchens their \"go-to\" morning start points, the 1842 W Washington Blvd site is explicitly a driver HOTSPOT with ~30 restaurants, the Western Ave kitchen is the guessed answer to \"where do dashers always pick up from\", and a BH/Sherman Oaks kitchen \"guarantees\" $30-40/hr. Caveats: every description involves parking a car (stack parking, hazards, bollards, \"zero dedicated parking\" at the NoHo site), drivers feared the kitchens would close in 2023, a 2020 order-number mix-up at the Western kitchen, and no two-wheel rider mentions staging at one. For e-bike riders the stronger pull is DTLA short-trip density (no parking needed). Best partner candidate for the v1 hub is 1842 W Washington Blvd (Pico-Union/West Adams), with 615 N Western Ave for the Koreatown satellite.",
+   "quotes": [
+    {
+     "quote": "These spots are my go-to spots when I start my day delivering for Uber Eats. It’s easy to quickly get an order as soon as you park by one of these. It’s the equivalent of an Uber X driver going to the airport and waiting for a passenger ride.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/1245m4q/i_guess_its_time_to_start_looking_for_another_job/",
+     "sub": "UberEATS",
+     "year": 2023,
+     "score": 138,
+     "kind": "post",
+     "doc_id": "1245m4q"
+    },
+    {
+     "quote": "HOTSPOT for drivers to pickup orders is at 1842 W. Washington Blvd, LA, CA 90007.  It's CLOUDKITCHEN with about 30 restaurants.  I see mostly, Ubereats, postmates, grubhub, and doordash drivers there.",
+     "url": "https://www.reddit.com/r/couriersofreddit/comments/8n99nv/drive_for_ubereats_postmates_or_both/",
+     "sub": "couriersofreddit",
+     "year": 2018,
+     "score": 1,
+     "kind": "post",
+     "doc_id": "8n99nv"
+    },
+    {
+     "quote": "If you're a door dasher, I'm going to take a guess it's the ghost kitchen on western Ave north of ktown south of 101",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1acaajc/doordashers_of_la_are_there_place_you_always_love/kjsvaov",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 71,
+     "kind": "comment",
+     "doc_id": "kjsvaov"
+    },
+    {
+     "quote": "I work near Beverly Hills Sherman oaks and I hang out near these ghost kitchen building that has 11 ghosts kitchens that guarantee me 30-40 bucks and hour.",
+     "url": "https://www.reddit.com/r/UberEATS/comments/ybs11j/anyone_else_having_a_awful_weekend/itjen3q",
+     "sub": "UberEATS",
+     "year": 2022,
+     "score": 1,
+     "kind": "comment",
+     "doc_id": "itjen3q"
+    },
+    {
+     "quote": "There’s a ghost kitchen in NoHo and for ages the delivery drivers would fill the painted median with hazards on during pickups. Eventually they put bollards there to deter that behavior, so now they just stack park in the right-most lane in front of the ghost kitchen…",
+     "url": "https://www.reddit.com/r/LosAngeles/comments/1gsyt6q/drivers_parking_with_their_hazards_on_in_the/lxi8ktq",
+     "sub": "LosAngeles",
+     "year": 2024,
+     "score": 61,
+     "kind": "comment",
+     "doc_id": "lxi8ktq"
+    },
+    {
+     "quote": "No need to waste time finding parking. Using a car can waste you an extra 20 minutes for every passing hour and that 20 minutes I can already complete an extra delivery using a scooter.",
+     "url": "https://www.reddit.com/r/doordash/comments/nq3ho0/i_used_to_dash_with_a_car_now_an_electric_scooter/h0dfet3",
+     "sub": "doordash",
+     "year": 2021,
+     "score": 2,
+     "kind": "comment",
+     "doc_id": "h0dfet3"
+    }
+   ]
+  }
+ },
+ "surprises": [
+  "DoorDash's own bicycle-dasher zones in 2019 were centered at Spring St & 6th St (Historic Core) and Westwood Blvd & Ohio Ave, i.e. the platform dispatches bike couriers into exactly the block v1 rejects; a hub must give those riders somewhere to lock up near 6th & Spring even if it is based on Pico.",
+  "A 2026 dasher independently describes the v1 corridor as his strategy: stay in Pico-Union, hang around Home Depot on Wilshire (Wilshire & Union) and Little Caesars on 7th, do not go \"under the freeways\" into the core, do not go west of Vermont.",
+  "There IS a first-person theft of a delivery two-wheeler: bike tires stolen from a DoorDash courier working DTLA (Nov 2024, 100 upvotes). The post-level \"no first-person two-wheel theft\" finding should be corrected.",
+  "Restroom refusal is a documented courier grievance (WeHo sushi, Torrance, McDonald's 4292 Crenshaw), and the one e-scooter dasher who describes a rest point calls a McDonald's with outlets, wifi, water and a restroom \"the ideal hub\" - a ready-made spec for the HMP hub.",
+  "Police pressure on two-wheel couriers shows up in Beverly Hills/WeHo (bike messenger stopped 3+ times a week at night, 2018), not in DTLA, where Surrons run 50mph unticketed and sidewalk delivery bikes go unenforced. Car couriers are the ones ticketed downtown.",
+  "Women couriers are the clearest night-work drop-outs (three first-person accounts); lighting and a staffed base are what they describe missing, not orders.",
+  "The 1,172-upvote \"car to electric scooter, Downtown LA\" thread gives the two-wheel economics: 20 min/hour saved on parking, many short trips, but too many dashers; replies say to go to Ktown/Hollywood, where there are no bike lanes.",
+  "Skid Row is a demand source (shelter guard tipping $10 minimum, Spark and DoorDash orders) rather than a staging area; couriers go in and out fast.",
+  "Ghost-kitchen staging is almost entirely a car phenomenon in the corpus (stack parking, hazards, bollards); no two-wheel rider says they wait at one."
+ ],
+ "data_limits": [
+  "Reddit-only, courier subs are car-dominated; the LA two-wheel courier voice is about 15 docs (7u8jh1, nq3ho0 thread, avp2wa, zoqc22, syz06v, 1h27t3u, 7sdaho, h09vcrh, xmdxgz, 1gn3r1q, 1e612mu, 15cydh0, wmx6he, dt9baww/dtc8eab), most with scores under 20.",
+  "Time of day is stated in a minority of posts; years skew 2018-2026 and several 2020-2021 posts reflect pandemic conditions.",
+  "Zero courier mentions of Ceres Ave, San Pedro St or Central/Alameda; \"Skid Row\" is used loosely for the whole east side of downtown, so the Ceres verdict rests on the district reputation, not on incidents at that address.",
+  "The subset tagging is noisy: many topic_staging/night docs are COVID megathreads, meetup posts, tourist itineraries and roommate ads; several are not LA at all (Honolulu 1t161cs, Chicago 1mc1wyk/1mc1xc8, Longview WA 1dkpsbh, Glendale AZ 1922gow, Toronto 1ktwoeg/w1rsi0/p364dqe, Phoenix 1kask33, snow 18otc6y) and were excluded.",
+  "The \"Assaulted and robbed\" post body (1vcgl9x) is not in the corpus; only two OP comments are, so vehicle and time are unknown.",
+  "\"Hotspot\" in DoorDash/Uber posts usually means the app's algorithmic zone, not a named intersection; most LA hotspot posts name neighborhoods (Hollywood, Ktown, BH, Culver City, Pasadena, Long Beach) rather than addresses.",
+  "Full-corpus sweep required a courier/two-wheel co-mention for general LA subs, so purely resident-perspective safety posts about MacArthur Park or Skid Row without a delivery angle were not counted."
+ ]
+}
