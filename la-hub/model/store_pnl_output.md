@@ -19,8 +19,8 @@ Rental fleet unit cost (blended) 1,643; blended list rental 69/week; base tariff
 | Conservative | Pico/Olympic corridor unit, ~6,300 sf, $7,500/mo avg | 1,889k | 403k | 2,036k | -1,633k | -1,941k | -2,157k | 2,157k (M36) | none in 36 | none in 36 | 66k | -54k | 21 | 12 | 220 / 230 / 63 |
 | Base | 768 Ceres Ave, 8,443 sf, $8,000/mo | 4,557k | 1,632k | 1,660k | -28k | -193k | -462k | 560k (M23) | 22 | 19 | 161k | 3k | 25 | 29 | 443 / 416 / 314 |
 | Base | Pico/Olympic corridor unit, ~6,300 sf, $7,500/mo avg | 4,557k | 1,632k | 1,626k | 5k | -160k | -427k | 538k (M22) | 22 | 18 | 161k | 4k | 25 | 29 | 443 / 416 / 314 |
-| Aggressive | 768 Ceres Ave, 8,443 sf, $8,000/mo | 9,317k | 4,926k | 1,542k | 3,383k | 3,275k | 2,977k | 106k (M2) | 3 | 3 | 330k | 124k | 43 | 79 | 747 / 692 / 754 |
-| Aggressive | Pico/Olympic corridor unit, ~6,300 sf, $7,500/mo avg | 9,317k | 4,926k | 1,522k | 3,404k | 3,295k | 2,998k | 105k (M2) | 3 | 3 | 330k | 124k | 43 | 79 | 747 / 692 / 754 |
+| Aggressive | 768 Ceres Ave, 8,443 sf, $8,000/mo | 9,317k | 4,926k | 1,434k | 3,491k | 3,383k | 3,085k | 100k (M2) | 3 | 3 | 330k | 127k | 43 | 79 | 747 / 692 / 754 |
+| Aggressive | Pico/Olympic corridor unit, ~6,300 sf, $7,500/mo avg | 9,317k | 4,926k | 1,414k | 3,512k | 3,403k | 3,106k | 99k (M2) | 3 | 2 | 330k | 127k | 43 | 79 | 747 / 692 / 754 |
 | SF-equivalent (what-if) | 768 Ceres Ave, 8,443 sf, $8,000/mo | 7,565k | 3,351k | 2,165k | 1,186k | 766k | 184k | 442k (M12) | 6 | 5 | 263k | 36k | 100 | 300 | 645 / 753 / 314 |
 
 ## 3. Base / 768 Ceres @ $8,000 - monthly P&L (selected months; all 36 in store_pnl_output.csv)

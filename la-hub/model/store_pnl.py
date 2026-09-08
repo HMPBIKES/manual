@@ -260,7 +260,10 @@ def run(V: Values, cfg: dict) -> dict:
         floor_ebike = max(g("min_floor_units_ebike"), (units_ebike + b2b_ebike) * g("inventory_days") / 30)
         inv_value = floor_moto * landed_m + floor_ebike * landed_e
         inv_carry = inv_value * g("inventory_carrying_rate_annual") / 12
-        opex_total = staff + occupancy + insurance + security + marketing + fleet_var + payments + gna + van + inv_carry
+        # logistics credit: drayage saved company-wide by receiving containers at the LA warehouse instead of trucking
+        # them from Long Beach to SF (founder: ~$4,000 vs ~$1,000 per container). Booked as a negative opex line.
+        opex_total = (staff + occupancy + insurance + security + marketing + fleet_var + payments + gna + van + inv_carry
+                      - g("logistics_saving_monthly"))
         ebitda = gross_profit - opex_total
 
         # ---- depreciation and operating profit
