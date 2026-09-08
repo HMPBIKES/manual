@@ -81,7 +81,35 @@ Units of FLASH/MK.II per month (at the base blended ASP and landed cost) that ma
 | 768 Ceres @ $10,000 (original ask) | SOM-base (72 riders @ M24) | 25 / 29 | 36,133 | 28.6 | 15.4 | 70,949 |
 | 768 Ceres @ $10,000 (original ask) | SOM-high (144 riders @ M24) | 50 / 58 | 29,234 | 23.2 | 10.0 | 46,172 |
 
-Contribution per FLASH/MK.II unit used: 1,262. Base plan sells 15.6 FLASH/MK.II per month at M24 (retail + rider).
+Contribution per FLASH/MK.II unit used: 1,262. Base plan sells 15.6 FLASH/MK.II per month at M24 (retail + rider). In the SOM rows the riders' own vehicle purchases (~4/month at SOM-base, mostly e-bike/moped) are included with rental, subscription and rider service.
+
+Month-24 fixed cost stack behind the first row (768 Ceres @ $8,000, no rider lines, no FLASH sales):
+
+| Item | USD / month |
+|---|---|
+| Staff 3.5 FTE loaded (manager, 1.5 mechanic, sales/ops) | 20,594 |
+| Rent (escalated once) + NNN + utilities | 10,406 |
+| Insurance (garage liability, property, product) | 1,800 |
+| Security monitoring | 500 |
+| Marketing (fixed) | 2,000 |
+| Software, G&A, permits | 1,450 |
+| Van running | 700 |
+| Carrying cost of minimum floor stock | 341 |
+| Depreciation of buildout + van | 3,194 |
+| Total | 40,986 |
+
+Where the Base / 768 Ceres peak cash need of 559,919 at month 23 comes from:
+
+| Component (cumulative to peak month) | USD |
+|---|---|
+| Buildout, fire-code/charging, DMV, fixtures, swap station | 85,000 |
+| Regional service van | 30,000 |
+| Rental fleet purchases (initial + growth + theft replacement) | 59,488 |
+| Battery float | 25,400 |
+| Floor inventory (working capital) | 142,248 |
+| Landlord deposit | 16,000 |
+| Cumulative operating losses (EBITDA plus theft write-off add-back) | 201,783 |
+| Total (= -cumulative cash at peak) | 559,919 |
 
 ## 5. Tariff cases (Base, 768 Ceres @ $8,000; both families at the same rate)
 

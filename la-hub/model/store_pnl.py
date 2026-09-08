@@ -272,9 +272,11 @@ def run(V: Values, cfg: dict) -> dict:
         op_profit = ebitda - depreciation
 
         # ---- cash
-        capex = ((buildout if m == 1 else 0.0) + (g("van_capex_onetime") if m == van_start else 0.0)
-                 + (purchases + theft_units) * unit_cost_r + eol_capex
-                 + (pack_purch + pack_replace) * g("battery_cost"))
+        capex_build = buildout if m == 1 else 0.0
+        capex_van = g("van_capex_onetime") if m == van_start else 0.0
+        capex_fleet = (purchases + theft_units) * unit_cost_r + eol_capex
+        capex_batt = (pack_purch + pack_replace) * g("battery_cost")
+        capex = capex_build + capex_van + capex_fleet + capex_batt
         deposit = g("security_deposit_months") * rent0 if m == 1 else 0.0
         d_wc = inv_value - inv_prev
         net_cash = ebitda + theft_writeoff - capex - d_wc - deposit
@@ -300,6 +302,8 @@ def run(V: Values, cfg: dict) -> dict:
             "opex_payment_fees": payments, "opex_gna_permits": gna, "opex_van": van,
             "opex_inventory_carry": inv_carry, "opex_total": opex_total, "ebitda": ebitda,
             "depreciation": depreciation, "operating_profit": op_profit, "capex": capex,
+            "capex_buildout": capex_build, "capex_van": capex_van, "capex_fleet": capex_fleet,
+            "capex_battery": capex_batt, "deposit": deposit,
             "working_capital_change": d_wc + deposit, "net_cash": net_cash, "cum_cash": cum_cash,
             "units_moto": units_moto, "units_ebike": units_ebike, "units_b2b": b2b_units,
             "rider_customers": riders, "rentals_active": active_rentals, "rental_fleet": fleet,
@@ -379,7 +383,11 @@ def breakeven_table(params, configs, extra_over=None):
                               "m24_fixed_and_uncovered_cost": gap, "m24_rentals": r24["rentals_active"],
                               "m24_battery_subs": r24["battery_subs"],
                               "contribution_per_moto_unit": uc, "moto_units_per_month_needed": units,
-                              "moto_revenue_per_month_needed": units * res["unit_econ"]["asp_moto"]})
+                              "moto_revenue_per_month_needed": units * res["unit_econ"]["asp_moto"],
+                              "m24_cost_stack": {k: r24[k] for k in (
+                                  "opex_staff", "opex_occupancy", "opex_insurance", "opex_security", "opex_marketing",
+                                  "opex_gna_permits", "opex_van", "opex_inventory_carry", "opex_fleet_variable",
+                                  "opex_payment_fees", "depreciation")}})
     return table
 
 
@@ -548,7 +556,38 @@ def build_report(params, configs, grid, be, tt, torn_base, torn):
     L.append(md_table(hdr, rows))
     L.append(f"\nContribution per FLASH/MK.II unit used: {money(be[0]['contribution_per_moto_unit'])}. Base plan sells "
              f"{grid[('base', 'ceres_8000')]['rows'][23]['units_moto']:.1f} FLASH/MK.II per month at M24 "
-             "(retail + rider).\n")
+             "(retail + rider). In the SOM rows the riders' own vehicle purchases (~4/month at SOM-base, mostly "
+             "e-bike/moped) are included with rental, subscription and rider service.\n")
+    cs = be[0]["m24_cost_stack"]
+    L.append("Month-24 fixed cost stack behind the first row (768 Ceres @ $8,000, no rider lines, no FLASH sales):\n")
+    L.append(md_table(["Item", "USD / month"],
+                      [["Staff 3.5 FTE loaded (manager, 1.5 mechanic, sales/ops)", money(cs["opex_staff"])],
+                       ["Rent (escalated once) + NNN + utilities", money(cs["opex_occupancy"])],
+                       ["Insurance (garage liability, property, product)", money(cs["opex_insurance"])],
+                       ["Security monitoring", money(cs["opex_security"])],
+                       ["Marketing (fixed)", money(cs["opex_marketing"])],
+                       ["Software, G&A, permits", money(cs["opex_gna_permits"])],
+                       ["Van running", money(cs["opex_van"])],
+                       ["Carrying cost of minimum floor stock", money(cs["opex_inventory_carry"])],
+                       ["Depreciation of buildout + van", money(cs["depreciation"])],
+                       ["Total", money(sum(cs.values()))]]))
+    L.append("")
+    pk = grid[("base", "ceres_8000")]
+    pm = pk["summary"]["peak_cash_month"]
+    pr = pk["rows"][:pm]
+    L.append(f"Where the Base / 768 Ceres peak cash need of {money(pk['summary']['peak_cash_need'])} at month {pm} comes from:\n")
+    L.append(md_table(["Component (cumulative to peak month)", "USD"],
+                      [["Buildout, fire-code/charging, DMV, fixtures, swap station", money(sum(r["capex_buildout"] for r in pr))],
+                       ["Regional service van", money(sum(r["capex_van"] for r in pr))],
+                       ["Rental fleet purchases (initial + growth + theft replacement)", money(sum(r["capex_fleet"] for r in pr))],
+                       ["Battery float", money(sum(r["capex_battery"] for r in pr))],
+                       ["Floor inventory (working capital)", money(pr[-1]["inventory_value"])],
+                       ["Landlord deposit", money(sum(r["deposit"] for r in pr))],
+                       ["Cumulative operating losses (EBITDA plus theft write-off add-back)",
+                        money(-(sum(r["net_cash"] for r in pr) + sum(r["capex"] for r in pr)
+                                + pr[-1]["inventory_value"] + sum(r["deposit"] for r in pr)))],
+                       ["Total (= -cumulative cash at peak)", money(-pr[-1]["cum_cash"])]]))
+    L.append("")
 
     L.append("## 5. Tariff cases (Base, 768 Ceres @ $8,000; both families at the same rate)\n")
     L.append("Base = 37.5%: HTS 8711.60.0090 is MFN-free but carries Section 301 List 2 (9903.88.02) +25% (CBP ruling "

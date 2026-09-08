@@ -55,4 +55,46 @@ hmpbikes.com 当日价格：FLASH 单电池 $4,999（原价 $5,499）、双电�
 
 发布报道一致正面（Electrek "fills a fairly significant gap"，TechTimes "no real rival"），但质疑集中在信任而不是价格：The Autopian 指出 OEM 是路源（Luyuan）而营销暗示本土，用 AI 生成图；New Atlas 评论"LinkedIn 只有一个员工，不敢为一台从中国直发的车掏钱"；Endless Sphere 上唯一的 Lightning 车主帖列了七个缺陷（电池 55% 断电、无说明书、定速巡航不可关、脚撑传感器、车牌孔位不匹配），同时也表扬 SF 店当天换电池。**一家有试骑、有维修、有零件的实体店恰恰是对"信任"这个最大异议的正面回答——这是支持开店的最强论据。** 另一个 FACT：加州 SB 586（2026-01-01 起）把 Sur-Ron / Talaria 一类无踏板电摩定为越野车，LA 是全美这类骑手最多的地方之一，一台 DOT / CARB 合规的 75 mph 车是他们唯一的合法升级路径，没有大品牌在这个价位追这群人。
 
-（第 2–4 节待五路研究其余结果到齐后填写。）
+## 2. 南加是不是更好的销售市场（层 B，`raw/store/socal_demand.json`）
+
+### 2.1 摩托车保有量：南加大在体量，不在密度（FACT，DMV 2025 年按县登记）
+
+| 县 | 登记摩托车 | 每千居民 | 同比 |
+|---|---|---|---|
+| Los Angeles | **133,368** | 13.5（样本里最低） | −4.1% |
+| San Diego | 80,389 | 24.1 | −2.4% |
+| Orange | 53,959 | 17.0 | −2.9% |
+| Riverside / San Bernardino | 47,515 / 40,528 | — | — |
+| Ventura / Santa Barbara | 22,042 / 11,141 | 26.4 / 24.9 | — |
+| 南加七县合计 | 约 389,000 | 约 17.4 | |
+| San Francisco | 15,872 | 18.9 | |
+| Alameda / Sacramento / Yolo | 26,080 / 29,838 / 3,921 | | |
+| 北加四县合计 | 约 76,000 | 约 17.4 | |
+| 加州 | 763,800 | 19.3 | −3.0% |
+
+读法：南加的摩托车总量是北加对照组的 5 倍，LA County 一县是 SF 的 8.4 倍，**任何固定转化率下南加的 FLASH 买家都更多**。但 LA County 的人均拥有率是整个样本里最低的（13.5 / 千人，SF 18.9），且自 2016 年下降 19%；人均最高的是 Ventura、Santa Barbara、San Diego。"LA 摩托文化"是体量故事，不是密度故事；Class M 驾照按县的数据 DMV 不公布。
+
+### 2.2 支持"南加更适合 FLASH"的事实
+
+- **通勤结构**：LA County 64.8% 的上班族独自开车，SF 28.6%（ACS 2024）；lane splitting（CVC 21658.1）和摩托车单人走 HOV 道（CVC 21655.5）在高速通勤里价值更大；2025-09-30 起单人电动汽车失去 HOV 贴纸，上牌的 FLASH 仍可走。
+- **天气**：DTLA 年雨日 34 天，SF 71 天；LA ≥ 90°F 的天数 26 天（内陆更多），需要电池防热管理。
+- **人口结构**：LA County 48% 拉丁裔、54% 租房，与"可拆电池、公寓充电、替代汽车"的卖点匹配（JUDGMENT）。
+- **法规窗口**：SB 586 之后 LA 大量 Sur-Ron / Talaria 骑手失去上路资格，FLASH / MK.II 是合法升级路径。
+
+### 2.3 反对或削弱的事实
+
+- **三个直觉假设不成立**：DTLA 停车比 SF 市中心便宜约一半（$160–200 / 月）；LA 油价比 SF 便宜约 10 美分（AAA 2026-09-07）；湾区有电动摩托的购车补贴（BAAQMD Clean Cars for All 把零排放摩托列为合格替换车），LA 没有任何 2026 年可用的补贴（CVRP 2023 年关闭；South Coast AQMD 和 LADWP 不含摩托车）。"油价 / 停车之痛"在 LA 最多与 SF 持平。
+- **风险更高**：LA County 是全美摩托车盗窃第一的县（NICB 2018 年 1,423 起，约占登记量 1% / 年）；LAPD 2024 年电动代步工具盗窃 +22%，最多的地方是 USC / University Park；2023 年 LA County 摩托车死亡 125 人；全险保费 LA 约 $62 / 月，SF $56。一台 299–335 lb、13–14 寸轮、75 mph 的踏板车在 70–80 mph 的 LA 高速车流里，是与 SF 街道完全不同的风险和责任敞口。
+- **续航 vs 城市尺度**：DTLA–Irvine 单程 42 英里、DTLA–Riverside 54、DTLA–Ventura 68，都超出高速速度下安全的往返续航；跨县通勤要靠单位充电（2 kW 车载充电是卖点）。盆地内 ≤ 20 英里单程没有问题。
+- **存量证据反向**：SF 湾区 Craigslist 上二手 Zero / NIU / Surron 挂牌是 LA 的 3–4 倍（Zero 24 vs 7，Surron 33 vs ≥10，NIU 11 vs 3），说明电动两轮的**现有**保有量湾区更大；LA 是更大的潜在市场，不是更大的现实市场。
+- **零售先例**：LA 两家只卖电动的展厅（Hollywood Electrics，EBC Newport）2024 年后关闭；南加现有 9 家以上卖中国电摩的经销商（NIU Melrose 旗舰店、Kollter West / Sierra Electric Costa Mesa、Luna Cycle El Segundo、Segway LA Culver City、Del Amo 集团等），HMP 在南加没有一家经销商，最近的第三方经销商是 Santa Clara 的 ELV Motors。
+
+### 2.4 "一个点覆盖 SB 到 SD"在物理上是什么
+
+从 768 Ceres 出发：Irvine 42 英里 / 约 45 分钟，Riverside 54 / 1 小时，Ventura 68 / 1 小时 10 分，Santa Barbara 95 / 1 小时 40 分，San Diego 120 / 2 小时（都是无堵车时间，高峰 1.5–2 倍）。这是一个**送车、上门保修、周末巡回试骑**的半径，不是客户上门的半径：SD 的车主不会为保修骑 2 小时来 DTLA，而从 DTLA 穿过市中心派车是全区最差的起点（Irvine 或 Commerce 更好）。FLASH 的保修工作大多是换电池包 / 换轮毂电机模块，一辆服务车加零件库存就能覆盖；8,443 sf、26 ft 净高、480V 电力的仓库能放 100+ 台整箱车和 4 个维修位，这是 Ceres 作为**仓库**的真实价值。
+
+### 2.5 谁会买（JUDGMENT，综合 2.1–2.3）
+
+最可能的 FLASH 买家：25–45 岁、租房、住在平坦密集且靠近高速的核心区（Koreatown、Mid-City、Hollywood、Silver Lake / Echo Park、DTLA、Culver City / Palms）、单程通勤 10–20 英里；其次是有单位充电的 Westside 科技 / 创意从业者，以及已经骑踏板车、人均拥有率最高的 OC / San Diego 骑手。Valley 和 Inland Empire 通勤更长更热，超出舒适的高速续航。South LA / 东南 LA County 是 MK.II + 换电的外卖骑手市场，不是 FLASH 市场。**这些买家没有一群住在 768 Ceres 步行范围内。**
+
+（第 3–4 节待法规与财务模型结果到齐后填写。）

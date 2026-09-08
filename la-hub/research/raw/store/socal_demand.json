@@ -1,0 +1,841 @@
+{
+ "meta": {
+  "generated": "2026-09-08",
+  "prepared_for": "HMP Bikes - LA store feasibility (768 Ceres Ave, DTLA Warehouse District)",
+  "method": "WebSearch + WebFetch; PDF tables extracted locally with pypdf/PyMuPDF. Every number carries a URL and a date. Sites that blocked fetching (LoopNet, Census QuickFacts/API, NICB.org, Yelp, Cycle Trader, LADOT, SCAQMD, LADWP, TechTimes, Reddit and all Reddit mirrors) are flagged and their figures come from search-result snippets where used.",
+  "known_gaps": [
+   "Reddit quotes (item 5) could not be retrieved: reddit.com, old.reddit.com, api.reddit.com, three redlib mirrors, and Bing/DuckDuckGo/Brave site:reddit.com queries were all blocked, captcha'd, or rate-limited (429). Section 5 says so explicitly rather than inventing quotes.",
+   "Google Trends is not fetchable (JS app); no keyword-volume tool was reachable. Proxies used instead: press coverage, Craigslist listing counts (LA vs SF Bay), MIC/MotorcyclesData unit sales.",
+   "DMV does not publish Class M license holders by county (or statewide) in either the county driver-license report or 'Statistics for Publication'.",
+   "CEC ZEV dashboard covers light-duty vehicles only; no public CA electric-motorcycle registration series was found.",
+   "768 Ceres zoning not shown on the listing mirrors that loaded; check ZIMAS before assuming retail sales are permitted."
+  ]
+ },
+ "registrations": {
+  "source_note": "CA DMV 'Estimated Vehicles Registered by County' is the DMV's county table (fee-paid registrations, calendar 2025). Statewide 2025: 763,800 fee-paid motorcycles (776,882 incl. fee-exempt), -3.0% vs 2024 (801,065). DMV 'Statistics for Publication' 2025 confirms 763,800 motorcycles = 2.3% of all vehicles.",
+  "statewide": {
+   "motorcycles_fee_paid_2025": 763800,
+   "motorcycles_grand_total_2025": 776882,
+   "motorcycles_2024": 801065,
+   "change_pct": -3.0,
+   "population_jan_2025": 39529101,
+   "mc_per_1000": 19.32,
+   "sources": [
+    "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf",
+    "https://www.dmv.ca.gov/portal/file/california-dmv-statistics-pdf (period Jan 1-Dec 31, 2025)",
+    "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf"
+   ]
+  },
+  "by_county_2025": {
+   "Los Angeles": {
+    "mc": 133368,
+    "mc_2024": 139137,
+    "autos": 6232742,
+    "total": 7767206,
+    "pop": 9876811,
+    "dl": 6772857,
+    "mc_per_1000_residents": 13.5,
+    "mc_per_1000_licensed_drivers": 19.69,
+    "mc_share_of_registered_vehicles_pct": 1.72,
+    "mc_change_2024_to_2025_pct": -4.1,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Orange": {
+    "mc": 53959,
+    "mc_2024": 55570,
+    "autos": 2374544,
+    "total": 2983348,
+    "pop": 3175427,
+    "dl": 2413906,
+    "mc_per_1000_residents": 16.99,
+    "mc_per_1000_licensed_drivers": 22.35,
+    "mc_share_of_registered_vehicles_pct": 1.81,
+    "mc_change_2024_to_2025_pct": -2.9,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "San Diego": {
+    "mc": 80389,
+    "mc_2024": 82352,
+    "autos": 2268932,
+    "total": 3040112,
+    "pop": 3330139,
+    "dl": 2475208,
+    "mc_per_1000_residents": 24.14,
+    "mc_per_1000_licensed_drivers": 32.48,
+    "mc_share_of_registered_vehicles_pct": 2.64,
+    "mc_change_2024_to_2025_pct": -2.4,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Santa Barbara": {
+    "mc": 11141,
+    "mc_2024": null,
+    "autos": 282980,
+    "total": 417004,
+    "pop": 447132,
+    "dl": 302710,
+    "mc_per_1000_residents": 24.92,
+    "mc_per_1000_licensed_drivers": 36.8,
+    "mc_share_of_registered_vehicles_pct": 2.67,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Ventura": {
+    "mc": 22042,
+    "mc_2024": null,
+    "autos": 600735,
+    "total": 826162,
+    "pop": 835427,
+    "dl": 634142,
+    "pop_note": "ACS 2024 1-yr (Census Reporter) - DOF E-1 press-release attachment carried only the housing row for Ventura",
+    "mc_per_1000_residents": 26.38,
+    "mc_per_1000_licensed_drivers": 34.76,
+    "mc_share_of_registered_vehicles_pct": 2.67,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://censusreporter.org/profiles/05000US06111-ventura-county-ca/ (ACS 2024 1-yr)"
+    }
+   },
+   "Riverside": {
+    "mc": 47515,
+    "mc_2024": 48503,
+    "autos": 1577307,
+    "total": 2254375,
+    "pop": 2495640,
+    "dl": 1788019,
+    "mc_per_1000_residents": 19.04,
+    "mc_per_1000_licensed_drivers": 26.57,
+    "mc_share_of_registered_vehicles_pct": 2.11,
+    "mc_change_2024_to_2025_pct": -2.0,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "San Bernardino": {
+    "mc": 40528,
+    "mc_2024": 41840,
+    "autos": 1378743,
+    "total": 1995106,
+    "pop": 2207424,
+    "dl": 1536952,
+    "mc_per_1000_residents": 18.36,
+    "mc_per_1000_licensed_drivers": 26.37,
+    "mc_share_of_registered_vehicles_pct": 2.03,
+    "mc_change_2024_to_2025_pct": -3.1,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "San Francisco": {
+    "mc": 15872,
+    "mc_2024": null,
+    "autos": 392152,
+    "total": 458579,
+    "pop": 842027,
+    "dl": 566732,
+    "mc_per_1000_residents": 18.85,
+    "mc_per_1000_licensed_drivers": 28.01,
+    "mc_share_of_registered_vehicles_pct": 3.46,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Alameda": {
+    "mc": 26080,
+    "mc_2024": 26917,
+    "autos": 1052313,
+    "total": 1301745,
+    "pop": 1662482,
+    "dl": 1168607,
+    "mc_per_1000_residents": 15.69,
+    "mc_per_1000_licensed_drivers": 22.32,
+    "mc_share_of_registered_vehicles_pct": 2.0,
+    "mc_change_2024_to_2025_pct": -3.1,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Sacramento": {
+    "mc": 29838,
+    "mc_2024": 30663,
+    "autos": 1012233,
+    "total": 1379792,
+    "pop": 1604745,
+    "dl": 1140150,
+    "mc_per_1000_residents": 18.59,
+    "mc_per_1000_licensed_drivers": 26.17,
+    "mc_share_of_registered_vehicles_pct": 2.16,
+    "mc_change_2024_to_2025_pct": -2.7,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   },
+   "Yolo": {
+    "mc": 3921,
+    "mc_2024": null,
+    "autos": 126067,
+    "total": 203588,
+    "pop": 225434,
+    "dl": 149083,
+    "mc_per_1000_residents": 17.39,
+    "mc_per_1000_licensed_drivers": 26.3,
+    "mc_share_of_registered_vehicles_pct": 1.93,
+    "sources": {
+     "motorcycles_and_vehicles": "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf (period Jan 1-Dec 31, 2025; accessed 2026-09-08)",
+     "licensed_drivers": "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf (as of Dec 31, 2025; report created 2026-01-20)",
+     "population": "https://dof.ca.gov/media/docs/forecasting/Demographics/estimates/E-1_2025_Press_Release.pdf (Jan 1, 2025; released 2025-05-01)"
+    }
+   }
+  },
+  "aggregates": {
+   "socal_7_counties": {
+    "motorcycles": 388942,
+    "population": 22368000,
+    "mc_per_1000": 17.39
+   },
+   "norcal_4_counties": {
+    "motorcycles": 75711,
+    "population": 4334688,
+    "mc_per_1000": 17.47
+   }
+  },
+  "la_county_trend": {
+   "note": "LA County motorcycle registrations have fallen every year since 2016 (165,275) to 133,368 in 2025 (-19%); 2024=139,137, 2023=144,037, 2022=150,464, 2021=155,065, 2020=155,438, 2019=157,850.",
+   "source": "http://www.laalmanac.com/transport/tr02.php (DMV data; accessed 2026-09-08)"
+  },
+  "la_county_most_motorcycles_of_any_us_county": {
+   "status": "UNVERIFIED - plausible, not provable from public data found",
+   "evidence": "LA County = 133,368 (DMV 2025) / 139,137 (2024). IIHS (Polk VIN data, Jan 1 2023) state totals: CA 936,809; FL 668,046; OH 407,952; PA 403,039; TX 394,351; NY 370,101; IL 280,058; AZ 228,749. No cross-state county table was found. Maricopa County AZ (~62% of AZ pop) could hold ~140k if proportional, so LA is not certainly #1.",
+   "sources": [
+    "https://www.iihs.org/api/datastoredocument/bibliography/2288 (IIHS, June 2023)",
+    "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf"
+   ]
+  },
+  "class_m_licenses": {
+   "status": "NOT PUBLISHED BY COUNTY",
+   "detail": "DMV county driver-license report gives only total licenses outstanding (LA 6,772,857; SF 566,732; SD 2,475,208; Orange 2,413,906 as of Dec 31 2025). DMV Statistics for Publication breaks out only Commercial (Class A/B: 701,412) and Real ID, not Class M.",
+   "sources": [
+    "https://www.dmv.ca.gov/portal/file/driver-licenses-outstanding-by-county-report-pdf",
+    "https://www.dmv.ca.gov/portal/file/california-dmv-statistics-pdf"
+   ]
+  },
+  "electric_motorcycle_registrations_ca": {
+   "status": "NO PUBLIC SERIES FOUND",
+   "detail": "CEC ZEV & Infrastructure Statistics track light-duty ZEVs only (BEV/PHEV/FCEV); motorcycles are not in the dashboard. CARB requires DMV verification for online/out-of-state ZEM purchases but publishes no counts. National proxy: MotorcyclesData reports US electric motorcycle sales YTD-2026 of 12,188 units (+24.8% y/y) vs +0.9% for the whole market.",
+   "sources": [
+    "https://www.energy.ca.gov/data-reports/energy-almanac/zero-emission-vehicle-and-infrastructure-statistics-collection",
+    "https://ww2.arb.ca.gov/zero-emission-motorcycle-and-highway-recreational-vehicle-registration-requirements",
+    "https://www.motorcyclesdata.com/2026/08/18/united-states-motorcycles-market/ (2026-08-18; via search snippet, page blocked)"
+   ]
+  },
+  "key_observation": "LA County has the largest absolute pool (133k) but the LOWEST per-capita rate of the 11 counties (13.5 per 1,000 residents) - below SF (18.9), Sacramento (18.6), Alameda (15.7). Ventura (26.4), Santa Barbara (24.9) and San Diego (24.1) are the highest per-capita counties; the 7 SoCal counties together (17.4/1,000) are essentially identical to the 4 NorCal counties (17.5/1,000)."
+ },
+ "why_socal_could_be_better": {
+  "car_dependence_and_commute": {
+   "la_county_2024_acs": {
+    "drove_alone_pct": 64.8,
+    "carpool_pct": 9.3,
+    "transit_pct": 3.9,
+    "wfh_pct": 17.1,
+    "motorcycle_taxi_other_pct": 1.9,
+    "motorcycle_taxi_other_workers": 91257,
+    "mean_travel_min": 30.4,
+    "source": "http://www.laalmanac.com/employment/em22.php (ACS 2024; accessed 2026-09-08)"
+   },
+   "sf_county_2024_acs": {
+    "drove_alone_pct": 28.6,
+    "transit_pct": 18.7,
+    "wfh_pct": 31.0,
+    "mean_travel_min": 30.4,
+    "source": "https://datausa.io/profile/geo/san-francisco-county-ca (ACS 2024)"
+   },
+   "la_mean_travel_time_acs_2024_1yr": 31.8,
+   "sf_mean_travel_time_acs_2024_1yr": 32.2,
+   "source_censusreporter": [
+    "https://censusreporter.org/profiles/05000US06037-los-angeles-county-ca/",
+    "https://censusreporter.org/profiles/05000US06075-san-francisco-county-ca/"
+   ],
+   "usc_2024_survey": "45% of LA County residents rely solely on a car (up from 33% in 2019); 23.8% used transit at least once in the past year (35.1% in 2019). https://schaeffer.usc.edu/research/energy-efficient-car-dependent-the-state-of-mobility-and-sustainability-in-los-angeles/ (2024-08-16)",
+   "freeway_share_of_commutes": "NOT FOUND as a published statistic; proxy is the 2.3x higher drove-alone share in LA (64.8%) vs SF (28.6%). Average commute distance figure ('just under 9 miles', la.myneighborhooddata.org) appeared only in a search snippet and could not be verified on the page - treat as ESTIMATE."
+  },
+  "lane_splitting": {
+   "fact": "Legal statewide since Jan 1, 2017 (AB 51, CVC 21658.1); California is the only US state that expressly permits it. CHP guidance: <=10 mph faster than traffic, discouraged above 30 mph.",
+   "sources": [
+    "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201520160AB51",
+    "https://callcefali.com/california-lane-splitting-law/"
+   ],
+   "note": "Applies equally in SF and LA - it is a California advantage, not a SoCal-only one; LA simply has far more freeway-miles and freeway commuters to exploit it."
+  },
+  "hov_access": {
+   "fact": "Motorcycles are exempt from HOV occupancy requirements under CVC 21655.5 (Caltrans). Clean Air Vehicle decal solo access for EVs ended Sept 30, 2025 when federal 23 USC 166 authority expired - so a solo EV car driver lost HOV access but a solo FLASH rider keeps it.",
+   "sources": [
+    "https://dot.ca.gov/programs/traffic-operations/hov",
+    "https://dklaw.com/the-fine-print/who-can-use-the-carpool-lanes-in-california/"
+   ]
+  },
+  "weather": {
+   "downtown_la": {
+    "rain_days_per_year": 34,
+    "precip_in": 14.3,
+    "days_90F_plus": 26,
+    "days_100F_plus": 2
+   },
+   "downtown_sf": {
+    "rain_days_per_year": 71,
+    "precip_in": 22.9,
+    "days_90F_plus": 3
+   },
+   "normals": "NOAA 1991-2020",
+   "sources": [
+    "https://www.currentresults.com/Weather/California/Places/los-angeles-weather-averages.php",
+    "https://www.currentresults.com/Weather/California/Places/san-francisco-weather-averages.php"
+   ],
+   "note": "LA has half the rain days of SF; SF also has no real heat penalty (3 days >=90F)."
+  },
+  "motorcycle_culture": {
+   "fact": "LA County has the most registered motorcycles of any CA county (133,368, 2025) and the most motorcyclist fatalities (125 in 2023) and serious injuries (754).",
+   "caveat": "Per-capita ownership in LA (13.5/1,000) is BELOW SF (18.9/1,000) - see registrations.key_observation.",
+   "sources": [
+    "https://www.dmv.ca.gov/portal/file/estimated-fee-paid-vehicle-registration-by-county-report-pdf",
+    "https://safetrec.berkeley.edu/2025-safetrec-traffic-safety-facts-motorcycle-safety"
+   ]
+  },
+  "parking": {
+   "dtla_monthly": "$160-$200/mo featured garages (site-wide $25-$528)",
+   "sf_downtown_monthly": "$375-$450/mo featured garages (site-wide $65-$650)",
+   "sources": [
+    "https://www.spotangels.com/los-angeles/downtown-monthly-parking (Sept 2026)",
+    "https://www.spotangels.com/san-francisco/downtown-san-francisco-monthly-parking (Sept 2026)"
+   ],
+   "note": "Car parking is roughly 2x MORE expensive in SF than DTLA - this cuts AGAINST the founder's thesis on parking pain; LA's pain is congestion, not parking price."
+  },
+  "gas_prices_aaa_2026_09_07": {
+   "los_angeles_long_beach": 5.9067,
+   "san_francisco": 6.0044,
+   "san_diego": 5.951,
+   "orange_county": 5.8826,
+   "riverside": 5.7827,
+   "sacramento": 5.7908,
+   "santa_barbara": 5.8786,
+   "ventura": 5.8094,
+   "california": 5.8602,
+   "national_sept_4": 4.14,
+   "sources": [
+    "https://gasprices.aaa.com/?state=CA (2026-09-07)",
+    "https://contracosta.news/2026/09/04/aaa-labor-day-on-track-to-set-record-at-the-pump/ (2026-09-04)"
+   ],
+   "note": "Record-high Labor Day prices statewide; SF ~10c higher than LA, so fuel savings argument is equal-or-slightly-stronger in SF."
+  },
+  "scooter_maxi_scooter_market": {
+   "us_scooter_retail_units": {
+    "2024": 15720,
+    "2025": 11104,
+    "change_pct": -29.4
+   },
+   "context": "MIC: scooters were the hardest-hit segment in 2025 as urban buyers moved to e-bikes; total new units 486,468 (-7.6%). Honda PCX 2026 MSRP $4,349; ADV160 $4,499. No state-level PCX/XMAX sales data is published.",
+   "sources": [
+    "https://www.revzilla.com/common-tread/us-motorcycle-sales-dropped-76-in-2025 (2026-02-03)",
+    "https://powersportsbusiness.com/top-stories/2026/02/05/mic-reports-2025-motorcycle-atv-retail-sales-decline-as-buyers-shift-to-smaller-models/ (2026-02-05)",
+    "https://powersports.honda.com/motorcycle/scooter/pcx/2026/pcx",
+    "https://powersports.honda.com/motorcycle/scooter/adv160"
+   ],
+   "note": "Whole-US gas maxi-scooter market is only ~11k units/yr; the FLASH's addressable 'PCX/XMAX buyer' pool in CA is likely low thousands per year."
+  },
+  "latino_working_class_market": {
+   "la_county_hispanic_pct": 48.4,
+   "la_county_hispanic_pop": 4750000,
+   "sf_county_hispanic_pct": 16.2,
+   "la_median_hh_income": 90112,
+   "sf_median_hh_income": 140970,
+   "sources": [
+    "https://datausa.io/profile/geo/los-angeles-county-ca (2024)",
+    "https://datausa.io/profile/geo/san-francisco-county-ca (2024)"
+   ],
+   "note": "3x the Latino share and 35x the absolute Latino population of SF; lower incomes make a $4,799 vehicle a bigger share of income (financing matters)."
+  },
+  "apartment_dwellers_removable_battery": {
+   "la_county_renter_pct": 54.1,
+   "la_county_owner_pct": 45.9,
+   "sf_owner_pct": 38.2,
+   "la_renters_earning_under_50k_households": 734000,
+   "la_rent_burdened_pct": 58,
+   "sources": [
+    "https://datausa.io/profile/geo/los-angeles-county-ca (2024)",
+    "https://datausa.io/profile/geo/san-francisco-county-ca (2024)",
+    "https://la.myneighborhooddata.org/solachan-2025-renters/ (2023 data)"
+   ],
+   "note": "SF is actually MORE renter-heavy (61.8%) than LA (54.1%); the removable-battery advantage exists in both. No ACS 'no garage' variable found."
+  },
+  "regulatory_tailwind": {
+   "fact": "LA City Council on 2026-08-25 unanimously ordered a 90-day report on regulating e-bikes/e-mopeds/e-motos, explicitly distinguishing illegal unregistered devices from street-legal, M1-licensed vehicles; SB 1167 (introduced Feb 2026, passed Senate Transportation 2026-04-07) bars selling mopeds/motorcycles labeled as e-bikes.",
+   "sources": [
+    "https://mynewsla.com/government/2026/08/25/la-council-seeks-report-to-regulate-e-bikes-mopeds-motos-2/",
+    "https://hoodline.com/2026/05/sacramento-targets-speed-demon-e-motos-flooding-school-bike-racks/"
+   ],
+   "note": "A DOT-certified, plated FLASH/Lightning is on the right side of this crackdown; grey-market Surron-class sellers are on the wrong side."
+  }
+ },
+ "why_socal_could_be_worse": {
+  "theft": {
+   "nicb_2022": {
+    "us_thefts": 54736,
+    "california": 9838,
+    "ca_share_pct": 30,
+    "florida": 4563,
+    "texas": 4145,
+    "peak_month": "July (6,394)",
+    "recovery_rate_pct": "40+",
+    "source": "https://insurance-edge.net/2023/08/07/us-news-ncib-notes-motorcycle-theft-problem-in-california/ (2023-08-07; NICB.org itself returned 403)"
+   },
+   "nicb_county_2018": {
+    "los_angeles_county": 1423,
+    "rank": "#1 US county",
+    "source": "https://www.statista.com/statistics/519543/us-motorcycle-theft-top-25-counties/ (Statista, 2020-08-31)"
+   },
+   "nicb_city_2017": {
+    "new_york": 980,
+    "san_diego": 846,
+    "los_angeles": 833,
+    "source": "https://www.revzilla.com/common-tread/nicb-report-motorcycle-thefts-down-but-hotspots-remain (2018-06-07)"
+   },
+   "riders_share_index_2022": "Southern California rated 'Very High Risk' (highest state volume, year-round riding, port access); LA 600+/yr. https://www.riders-share.com/blog/article/motorcycle-theft-risk-index-usa",
+   "lapd_motorized_device_thefts_2024": {
+    "reports": 1046,
+    "change_pct": 22.3,
+    "vs_2021": "4x",
+    "top_areas": "University Park/USC 206, Venice 95",
+    "where": "61% streets, 24% lots/garages/sidewalks",
+    "source": "https://xtown.la/2025/02/27/electric-scooter-thefts-continue-to-climn-in-los-angeles-in-2024/ (2025-02-27)"
+   },
+   "rate_estimate": "ESTIMATE: ~1,400 thefts / ~140k registered = ~1% of LA County motorcycles stolen per year; SF county-level count not found. Removable 3.3 kWh packs are themselves a theft target - store recommends indoor pack storage."
+  },
+  "fatality_context": {
+   "california": {
+    "2019": 491,
+    "2022": 649,
+    "2023": 583,
+    "2024": 522
+   },
+   "la_county_2023": {
+    "fatalities": 125,
+    "serious_injuries": 754,
+    "share_of_state_deaths_pct": 21.4
+   },
+   "other_counties_2023": {
+    "san_diego": 52,
+    "riverside": 50,
+    "san_bernardino": 48,
+    "orange": 42
+   },
+   "per_registered_estimate": "ESTIMATE: LA 125 deaths / 139,137 regs (2024) = 0.90 per 1,000 registered; CA 583 / ~800k = 0.73 per 1,000.",
+   "sources": [
+    "https://safetrec.berkeley.edu/2025-safetrec-traffic-safety-facts-motorcycle-safety (FARS 2023)",
+    "https://www.gjel.com/california-motorcycle-accident-statistics-you-need-to-be-aware-of (updated 2026-09-01; 2024 FARS)"
+   ],
+   "judgment": "A 299-lb, 75-mph hub-motor scooter with 13-14 in wheels riding in 70-80 mph LA freeway traffic is a different risk profile from SF surface streets; liability exposure and helmet/gear upsell should be planned."
+  },
+  "sprawl_vs_range": {
+   "flash_range": "70 mi tested (Electrek) / up to 106 mi claimed; dual 3.3 kWh packs",
+   "typical_socal_regional_trips": "DTLA-Irvine 42 mi one-way (84 round trip), DTLA-Riverside 54 mi, DTLA-Ventura 68 mi - all beyond a safe freeway-speed round trip without a mid-day charge",
+   "sources": [
+    "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/ (2026-07-18)",
+    "https://drivedistance.com/from-los-angeles-ca-to-irvine-ca",
+    "https://distancecalc.com/how-far-from-los-angeles-ca-to-riverside-ca",
+    "https://drivedistance.com/from-los-angeles-ca-to-ventura-ca"
+   ],
+   "judgment": "Intra-basin commutes (<=20 mi each way) are fine; cross-county commutes need workplace charging (2 kW J1772 onboard charger is the selling point)."
+  },
+  "heat": {
+   "la_days_90F_plus": 26,
+   "la_days_100F_plus": 2,
+   "sf_days_90F_plus": 3,
+   "inland_note": "Valley/Inland Empire far hotter than downtown (no normals fetched).",
+   "battery_effects": "Vendor guidance: 5-10% temporary range loss above ~90-95F; sustained storage/charging above 95F accelerates irreversible capacity loss. Geotab fleet data (22,700 EVs): hot-climate vehicles degrade ~0.4 pct-points/yr faster; charging power matters more than climate.",
+   "sources": [
+    "https://www.currentresults.com/Weather/California/Places/los-angeles-weather-averages.php",
+    "https://apolloscooters.co/blogs/news/how-weather-affects-e-scooter-performance",
+    "https://www.geotab.com/blog/ev-battery-health/"
+   ]
+  },
+  "insurance": {
+   "valuepenguin_full_coverage_monthly_2026": {
+    "los_angeles": 62,
+    "san_francisco": 56,
+    "long_beach": 56,
+    "oakland": 58,
+    "san_diego": 50,
+    "sacramento": 48,
+    "santa_ana": 47,
+    "riverside": 44,
+    "california_avg": 46,
+    "profile": "45-yo male, 2018 Honda Rebel 500, 50/100/25 + comp/coll $500 ded",
+    "source": "https://www.valuepenguin.com/best-cheap-motorcycle-insurance-california (2026-06-26)"
+   },
+   "moneygeek_ca_annual": {
+    "minimum": 169,
+    "full": 638,
+    "source": "https://www.moneygeek.com/insurance/motorcycle/best-cheap-motorcycle-insurance-in-california/ (2026-05-25)"
+   },
+   "riders_share_ca_range_annual": "$600-$1,300 (2026-03-16) https://www.riders-share.com/blog/article/motorcycle-insurance-cost-guide-2026",
+   "electric_specific": "Fewer carriers quote EVs; battery-damage total-loss risk raises comp/collision (Roamly). No 90021-specific quote obtainable without a VIN; ESTIMATE for a $5-6k FLASH in 90021: ~$250-450/yr liability-only, ~$700-1,100/yr full coverage (LA runs ~35% above CA avg).",
+   "source_electric": "https://www.roamly.com/learning-center/electric-motorcycles-insurance-considerations-and-rates"
+  },
+  "site_768_ceres": {
+   "listing": {
+    "size_sf": 8443,
+    "office_sf": 3467,
+    "clear_height_ft": 26,
+    "loading": "1 grade-level door",
+    "parking_spaces": 10,
+    "power": "250A/480V/3P/4W",
+    "built": 2015,
+    "asking_commercialsearch": "$1.20/SF/mo (updated 2026-06-03)",
+    "asking_loopnet_snippet": "$1.10/SF/mo = $9,287/mo, FSG, 3-5 yr",
+    "founder_offer": "$8,000/mo (~$0.95/SF/mo) = ~14-21% below list",
+    "walk_score": 88,
+    "transit_score": 86,
+    "zoning": "NOT SHOWN on mirrors - verify on ZIMAS (Warehouse District parcels are typically M2/M3; M2 generally permits retail but confirm)"
+   },
+   "sources": [
+    "https://www.commercialsearch.com/commercial-property/us/ca/los-angeles/768-ceres-ave/",
+    "https://www.loopnet.com/Listing/768-Ceres-Ave-Los-Angeles-CA/18987164/ (403; from search snippet)",
+    "https://www.propertyshark.com/cre/commercial-property/us/ca/los-angeles/768-ceres-ave/"
+   ],
+   "judgment": "Marketed as industrial 'Arts District & Downtown adjacent' near the 10 at Central Ave; the block is produce/wholesale warehouse and Skid Row-adjacent - no walk-in retail street. Treat it as a service/rental/battery-swap depot + destination showroom reached by appointment and paid demand generation, not a showroom that captures foot traffic. No foot-traffic data source found."
+  },
+  "competition_dealers_socal": [
+   {
+    "name": "CSC Motorcycles",
+    "city": "Azusa",
+    "addr": "1331 W Foothill Blvd",
+    "brands": "CSC (Zongshen-built) incl. RX1E electric; DTC + showroom",
+    "url": "https://cscmotorcycles.com/ (Yelp updated Jun 2026)"
+   },
+   {
+    "name": "Sierra Electric Motorcycles / Kollter West",
+    "city": "Costa Mesa",
+    "addr": "1281 Logan Ave",
+    "brands": "Kollter ES1 (Chinese, ~$6,995)",
+    "url": "https://www.facebook.com/kollterusa/ (kollterus.com DNS failed 2026-09-08)"
+   },
+   {
+    "name": "NIU Mobility West Coast flagship",
+    "city": "Los Angeles",
+    "addr": "8012 Melrose Ave",
+    "brands": "NIU",
+    "url": "https://niustore.com/pages/contact"
+   },
+   {
+    "name": "Ken & Joe's",
+    "city": "Santa Clarita",
+    "addr": "21618 Golden Triangle Rd",
+    "brands": "NIU (7 units listed) + Honda/Kawasaki",
+    "url": "https://motohunt.com/motorcycle-dealers/NIU?loc=Los+Angeles,+CA"
+   },
+   {
+    "name": "Orange County KTM",
+    "city": "Orange",
+    "addr": "1319 W Katella Ave",
+    "brands": "NIU (4 units) + KTM",
+    "url": "https://motohunt.com/motorcycle-dealers/NIU?loc=Los+Angeles,+CA"
+   },
+   {
+    "name": "Segway Los Angeles",
+    "city": "Culver City",
+    "addr": "2637 Fairfax Ave",
+    "brands": "Segway eMoped C80/E110A",
+    "url": "https://www.segway.la/"
+   },
+   {
+    "name": "Luna Cycle",
+    "city": "El Segundo",
+    "addr": "1475 E El Segundo Blvd",
+    "brands": "Surron (former exclusive US distributor through 2023)",
+    "url": "https://lunacycle.com/"
+   },
+   {
+    "name": "DPS Racing Motorsports",
+    "city": "Victorville",
+    "addr": "12555 Mariposa Rd",
+    "brands": "Surron",
+    "url": "https://us-surron.com/surron-dealers-near-me/"
+   },
+   {
+    "name": "New Century Motorcycles",
+    "city": "Alhambra",
+    "addr": "3001 W Main St",
+    "brands": "Zero + BMW + KTM",
+    "url": "https://www.newcenturymoto.com/inventory/new/Zero/"
+   },
+   {
+    "name": "Bert's Mega Mall",
+    "city": "Covina",
+    "addr": "1151 N Azusa Ave",
+    "brands": "LiveWire, Zero + ~20 gas brands",
+    "url": "https://www.bertsmegamall.com/"
+   },
+   {
+    "name": "Fulgora (fka Zero Motorcycles of Orange County)",
+    "city": "Orange",
+    "addr": "704 W Katella Ave",
+    "brands": "Zero (EV-only)",
+    "url": "https://zeromotorcyclesoc.com/ (503 on 2026-09-08; Yelp listing updated Aug 2025)"
+   },
+   {
+    "name": "Harley-Davidson of Glendale",
+    "city": "Glendale",
+    "addr": "3717 San Fernando Rd",
+    "brands": "LiveWire ONE / S2",
+    "url": "https://glendaleharley.com/livewire"
+   },
+   {
+    "name": "Bartels' Harley-Davidson",
+    "city": "Marina del Rey",
+    "brands": "LiveWire",
+    "url": "https://www.bartelsharley.com/--electric-family-motorcycles-harley-davidson"
+   },
+   {
+    "name": "Orange County Harley-Davidson",
+    "city": "Irvine",
+    "brands": "LiveWire",
+    "url": "https://www.orangecountyhd.com/inventory/New-Harley--Davidson-Livewire/"
+   },
+   {
+    "name": "Ryvid",
+    "city": "Irvine (HQ 2323 Main St)",
+    "brands": "Ryvid Anthem/Outset - DTC, no public showroom found",
+    "url": "https://ryvid.com/pages/company"
+   },
+   {
+    "name": "Hollywood Electrics",
+    "city": "West Hollywood",
+    "addr": "901 N Fairfax Ave",
+    "brands": "was world #1 Zero dealer",
+    "status": "CLOSED per Yelp (updated Jun 2026)",
+    "url": "https://www.yelp.com/biz/hollywood-electrics-west-hollywood"
+   },
+   {
+    "name": "Electric Bike Company showroom",
+    "city": "Newport Beach",
+    "status": "CLOSED per Yelp (Jun 2026)",
+    "url": "https://www.yelp.com/biz/electric-bike-company-showroom-newport-beach-2"
+   }
+  ],
+  "competition_note": "Two marquee EV-only LA showrooms (Hollywood Electrics, EBC Newport) have closed since 2024 - evidence that a standalone e-moto showroom in LA is hard to sustain on sales alone; survivors are multi-brand gas dealers or DTC brands. No SoCal dealer currently sells a 75-mph scooter under $6k (TechTimes 2026-07-20: 'no real rival').",
+  "battery_swap_competition": "None found operating in LA for delivery riders (PopWheels/Whizz = NYC; DC pilot funded by LACI). White space, but also no proof of LA demand. https://www.getwhizz.com/blog/battery/e-bike-battery-swaps ; https://wtop.com/dc/2026/04/why-dc-is-offering-e-bikes-to-help-workers-make-faster-environmentally-friendly-deliveries/"
+ },
+ "regional_base": {
+  "drive_from_768_ceres": {
+   "santa_barbara": {
+    "miles": 95,
+    "hours_no_traffic": "~1:40",
+    "source": "https://www.travelmath.com/drive-distance/from/Los+Angeles,+CA/to/Santa+Barbara,+CA"
+   },
+   "san_diego": {
+    "miles": 120,
+    "hours_no_traffic": "~2:00",
+    "source": "https://www.trippy.com/distance/Los-Angeles-to-San-Diego"
+   },
+   "irvine_orange_county": {
+    "miles": 42,
+    "hours_no_traffic": "~0:45",
+    "source": "https://drivedistance.com/from-los-angeles-ca-to-irvine-ca"
+   },
+   "riverside": {
+    "miles": 54,
+    "hours_no_traffic": "~1:00",
+    "source": "https://distancecalc.com/how-far-from-los-angeles-ca-to-riverside-ca"
+   },
+   "ventura": {
+    "miles": 68,
+    "hours_no_traffic": "~1:10",
+    "source": "https://drivedistance.com/from-los-angeles-ca-to-ventura-ca"
+   },
+   "note": "City-center figures; 768 Ceres is ~1 mi from the 10/101/5 interchange area (listing: '10 Freeway @ Central Ave'). Peak-hour times are 1.5-2x."
+  },
+  "existing_hmp_dealers": {
+   "socal": "NONE found. HMP's own store page lists only 261 6th St, San Francisco (plus Davis pickup and partner 415 eBikes). The only third-party dealer found is ELV Motors, 2332 El Camino Real, Santa Clara (NorCal). Electrek/New Atlas coverage mentions no SoCal outlet.",
+   "sources": [
+    "https://www.hmpbikes.com/pages/store-information",
+    "https://elvmotors.com/collections/hmp-bikes",
+    "https://www.415ebike.com/collections/hmp-bikes",
+    "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/"
+   ]
+  },
+  "what_a_dealer_service_base_means": {
+   "warranty_service": "Field-swappable battery packs + hub motor mean most warranty work is module replacement; an 8,443-sf building with 26-ft clear and a grade door can hold 100+ crated units plus a 4-bay service area (JUDGMENT).",
+   "demo_events": "Within a 2-hour van radius you can run weekend demo days in OC, IE, Ventura and (with an overnight) SB/SD; needs a trailer and 4-6 demo units (JUDGMENT).",
+   "freight": "Crated e-moto LTL within SoCal is a 1-day lane from DTLA; no rate source fetched - ESTIMATE $150-300/unit LA->SD or LA->SB by LTL, far less than shipping from SF/Davis (~400 mi)."
+  },
+  "socal_dealers_carrying_chinese_e_motos_count": {
+   "count_named": 9,
+   "names": [
+    "CSC (Azusa)",
+    "Sierra Electric/Kollter West (Costa Mesa)",
+    "NIU flagship (Melrose)",
+    "Ken & Joe's (Santa Clarita)",
+    "Orange County KTM (Orange)",
+    "Segway LA (Culver City)",
+    "Luna Cycle (El Segundo)",
+    "DPS Racing (Victorville)",
+    "Del Amo Motorsports group (Redondo/Long Beach/OC - electric via Levy)"
+   ],
+   "source_del_amo": "https://www.delamomotorsports.com/"
+  }
+ },
+ "demand_proxies": {
+  "google_trends": {
+   "status": "NOT ACCESSIBLE (JS app; no keyword-volume tool reachable)."
+  },
+  "press_coverage_hmp_flash_2026": [
+   {
+    "outlet": "Electrek",
+    "date": "2026-07-18",
+    "url": "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/"
+   },
+   {
+    "outlet": "New Atlas",
+    "url": "https://newatlas.com/motorcycles/hmp-flash/"
+   },
+   {
+    "outlet": "TechTimes",
+    "date": "2026-07-20",
+    "url": "https://www.techtimes.com/articles/321055/20260720/hmp-flash-fills-us-gap-highway-electric-scooter-below-6k-no-real-rival.htm"
+   },
+   {
+    "outlet": "Electrek (Lightning MK.II)",
+    "date": "2026-07-31",
+    "url": "https://electrek.co/2026/07/31/hmps-new-3999-electric-scooter-is-the-affordable-street-legal-commuter-the-us-needs/"
+   }
+  ],
+  "craigslist_used_listings_2026_09_08": {
+   "los_angeles": {
+    "niu_motorcycles_cat": 1,
+    "niu_all_for_sale": 3,
+    "zero_motorcycles_cat": "7 results, only 1 real Zero (2020 SR $4,995 Chatsworth) + 1 LiveWire S2 ($7,995)",
+    "surron_all_for_sale": ">=10 shown (count not displayed; mix of bikes and parts)",
+    "urls": [
+     "https://www.craigslist.org/search/area/losangeles?cat=mca&query=niu",
+     "https://www.craigslist.org/search/area/losangeles?cat=sss&query=niu+scooter",
+     "https://www.craigslist.org/search/area/losangeles?cat=mca&query=zero+motorcycles",
+     "https://www.craigslist.org/search/area/losangeles?cat=sss&query=surron"
+    ]
+   },
+   "sf_bay": {
+    "niu_all_for_sale": 11,
+    "zero_motorcycles_cat": "24 results, 7 of top 8 real Zeros ($6,000-$12,999)",
+    "surron_all_for_sale": 33,
+    "urls": [
+     "https://www.craigslist.org/search/area/sfbay?cat=sss&query=niu+scooter",
+     "https://www.craigslist.org/search/area/sfbay?cat=mca&query=zero+motorcycles",
+     "https://www.craigslist.org/search/area/sfbay?cat=sss&query=surron"
+    ]
+   },
+   "reading": "Used-market depth for premium e-motos (Zero) and NIU is 3-4x DEEPER in the SF Bay Craigslist region than in LA's - the installed base of electric two-wheelers is currently larger in the Bay Area despite LA's larger population. Caveat: sfbay covers 9 counties (~7.7M) vs losangeles (~10M); OfferUp/Cycle Trader blocked."
+  },
+  "unit_sales_context": {
+   "us_electric_motorcycles_ytd_2026": 12188,
+   "yoy_pct": 24.8,
+   "us_scooters_2025": 11104,
+   "source": [
+    "https://www.motorcyclesdata.com/2026/08/18/united-states-motorcycles-market/",
+    "https://www.revzilla.com/common-tread/us-motorcycle-sales-dropped-76-in-2025"
+   ]
+  },
+  "reddit_quotes": {
+   "status": "NOT RETRIEVED",
+   "detail": "reddit.com, old.reddit.com, api.reddit.com, redlib.catsarch.com, safereddit.com, redlib.perennialte.ch all blocked/429; Bing, DuckDuckGo and Brave site:reddit.com queries returned captcha/429/irrelevant results. Recommend the founder pull 5-10 posts manually from r/LosAngeles, r/ElectricMotorcycles, r/scooters (search: 'commute', 'lane split', 'NIU', 'Zero', 'freeway').",
+   "substitute_community_signal": [
+    {
+     "quote": "I just registered our new electric mini moto, the LightningSpark and was hit with a $118 charge, and a recurring charge at that.",
+     "where": "Bay Area Riders Forum, 2025-03-20",
+     "url": "https://www.bayarearidersforum.com/forums/threads/electric-vehicle-surcharge-the-rif.563688/",
+     "relevance": "CA Road Improvement Fee hits e-motos at renewal"
+    },
+    {
+     "quote": "nearly all reported crashes are from illegal devices, not legal e-bikes",
+     "where": "LA City Council motion (Hutt/Lee/Park), 2026-08-25",
+     "url": "https://mynewsla.com/government/2026/08/25/la-council-seeks-report-to-regulate-e-bikes-mopeds-motos-2/"
+    },
+    {
+     "quote": "September, October and November produced the three highest monthly counts ever of motorized device theft - well more than 100 each month",
+     "where": "Crosstown LA, 2025-02-27",
+     "url": "https://xtown.la/2025/02/27/electric-scooter-thefts-continue-to-climn-in-los-angeles-in-2024/"
+    }
+   ]
+  }
+ },
+ "incentives_and_costs": {
+  "state_incentives_2026": {
+   "cvrp": "CLOSED to new applications since 2023-11-08 (historically $750 for ZEV motorcycles). https://cleanvehiclerebate.org/en/cvrp-info",
+   "clean_cars_4_all_bay_area": "BAAQMD Clean Cars for All DOES list Zero-Emission Motorcycles as eligible replacements (scrap-and-replace, income-qualified; other BAAQMD page cites up to $12,000 through spring 2026) - i.e., the Bay Area has an e-moto incentive that LA lacks. https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all/resources/eligible-replacement-vehicles ; https://www.baaqmd.gov/funding-and-incentives/residents/clean-cars-for-all/resources/other-clean-car-grants-and-rebates",
+   "south_coast_aqmd_replace_your_ride": "Up to $12,000 for BEV cars (income tiers); motorcycles NOT listed as eligible replacements (program site 503 on 2026-09-08; Nov 2023 summary lists cars, e-bikes, transit passes only). https://xappprod.aqmd.gov/RYR/Home ; https://cityhallscoop.com/2023/11/08/south-coast-aqmd-replace-your-ride-vehicle-trade-in-program/",
+   "ladwp": "$1,500 used-EV rebate ($4,000 EZ-SAVE/Lifeline); motorcycles not mentioned (page 403; search snippet). https://www.ladwp.com/residential-services/programs-and-rebates-residential/electric-vehicles",
+   "driveclean_search": "https://driveclean.ca.gov/search-incentives",
+   "net": "FACT: no 2026 CA/LA purchase incentive applies to a FLASH bought in LA; the one CA program that does cover e-motos (BAAQMD CC4A) is Bay Area-only."
+  },
+  "registration_fees_new_motorcycle_ca": {
+   "registration": 76,
+   "chp": 34,
+   "vlf_rate_pct": 0.65,
+   "vlf_on_4799": 31,
+   "vlf_on_5999": 39,
+   "motorcycle_safety": 2,
+   "tif": "$33-$231 by value tier ($4,799 lowest tier; $5,999 next tier)",
+   "road_improvement_fee_zev": "$121/yr at RENEWAL for MY2020+ ZEVs incl. electric motorcycles (not charged at initial dealer registration)",
+   "dmv_avg_total_motorcycle_fee_2026": 189,
+   "sales_use_tax": "ESTIMATE 9.5-10.25% depending on city in LA County (~$456-$492 on $4,799; ~$570-$615 on $5,999)",
+   "sources": [
+    "https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees/",
+    "https://www.dmv.ca.gov/portal/file/california-dmv-statistics-pdf (avg fee table as of 2026-01-01)",
+    "https://lcregistration.com/electric-vehicle-registration-california/",
+    "https://www.bayarearidersforum.com/forums/threads/electric-vehicle-surcharge-the-rif.563688/",
+    "https://carinterior.alibaba.com/buyingguides/ca-motorcycle-registration-fees-hidden-costs-explained"
+   ]
+  },
+  "insurance_90021": "See why_socal_could_be_worse.insurance - LA full coverage benchmark $62/mo (ValuePenguin 2026-06-26); ESTIMATE $250-450/yr liability-only or $700-1,100/yr full for a $5-6k electric in 90021.",
+  "parking_rules_la_city": {
+   "meters": "NO free meter parking: LAMC 88.07/88.13 require immediate payment by any vehicle parked in a meter space; motorcycles are not exempt. https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-171368",
+   "sidewalks": "Prohibited statewide (CVC 22500). https://www.napolinlaw.com/how-to-legally-park-your-motorcycle-in-california/",
+   "sharing": "LA City does not formally allow multiple motorcycles per paid metered space; some other CA cities do. https://www.infinitylawca.com/blog/moped-parking-laws-in-california",
+   "dtla_car_parking_benchmark": "$160-200/mo (SpotAngels Sept 2026) vs SF $375-450 - the parking-cost argument is weaker in LA than in SF."
+  }
+ },
+ "verdict": [
+  "FACT - Absolute pool: SoCal's 7 counties hold 389k registered motorcycles vs 76k in SF/Alameda/Sacramento/Yolo (DMV 2025); LA County alone (133k) is 8.4x SF County (15.9k). Any fixed conversion rate yields far more FLASH buyers in SoCal.",
+  "FACT - But per-capita, LA is the WEAKEST motorcycle county in the set (13.5/1,000 residents vs SF 18.9, San Diego 24.1, Santa Barbara 24.9, Ventura 26.4), SoCal-7 and NorCal-4 aggregates are identical (~17.4/1,000), and LA registrations have fallen 19% since 2016. 'Motorcycle culture' is a volume story, not an intensity story.",
+  "FACT - Commuting structure favors SoCal: 64.8% of LA County workers drive alone vs 28.6% in SF (ACS 2024); lane splitting (CVC 21658.1) and solo HOV access (CVC 21655.5) are worth far more where the commute is a freeway. Solo-EV HOV decals died 2025-09-30; a plated FLASH keeps HOV access.",
+  "FACT - Weather: downtown LA has 34 rain days/yr vs 71 in SF and 26 days >=90F vs 3 - more riding days, but real heat-management needs for 3.3 kWh packs (store indoors, avoid charging hot).",
+  "FACT - Three founder assumptions do NOT hold: (a) car parking is ~2x cheaper in DTLA than downtown SF; (b) gas is ~10c/gal cheaper in LA; (c) the Bay Area has an e-moto purchase incentive (BAAQMD CC4A) and LA has none. Fuel/parking-pain arguments are at best equal to SF.",
+  "FACT - Risk is higher in LA: #1 US county for motorcycle theft (1,423 in 2018), 30% of US motorcycle thefts are in CA, LAPD motorized-device thefts +22% in 2024, 125 motorcyclist deaths in LA County in 2023, and full-coverage insurance ~$62/mo in LA vs $56 in SF.",
+  "ESTIMATE - Used-market proxy runs against the thesis: SF Bay Craigslist shows ~3-4x more used Zero/NIU/Surron listings than LA, implying a larger current installed base of electric two-wheelers in the Bay Area. LA is a bigger latent market, not yet a bigger actual one.",
+  "ESTIMATE - Sales potential: if the LA store matched 415 eBikes' ~40 vehicles/month and the SoCal motorcycle pool is 5x the NorCal pool, a mature LA store could plausibly run 60-120 vehicles/month, but the first 12 months are more likely 20-50/month because there is no HMP brand awareness or dealer in SoCal today, and two LA EV-only showrooms (Hollywood Electrics, EBC Newport) closed since 2024.",
+  "JUDGMENT - 768 Ceres is a good regional DEPOT (26-ft clear, 250A/480V for charging/swap, 1-2 hrs to OC/IE/Ventura, 2 hrs to SB/SD, $8k/mo is ~20% under list) but a poor SALES site: no walk-in retail, Skid Row-adjacent, produce-district traffic. Plan on appointment showroom + delivery + rentals + battery swap for DTLA couriers, and generate sales demand digitally and via demo days, not from the storefront.",
+  "JUDGMENT - Who buys a $5k 75-mph electric maxi-scooter: most likely a 25-45-year-old renter in the flat, dense, freeway-adjacent core (Koreatown / Mid-City / Hollywood / Silver Lake-Echo Park / DTLA / Culver City-Palms) with a 10-20 mi one-way commute, plus Westside tech/creative workers with workplace charging and OC/San Diego riders who already own scooters (highest per-capita). The Valley and Inland Empire skew to longer, hotter commutes that exceed comfortable freeway range; South LA/SE LA County is the delivery-rider Lightning MK.II + swap market. Sequence: (1) DTLA depot + rentals + swap, (2) digital sales + OC/Westside demo days, (3) SD/SB dealer support once the depot has parts and a service tech."
+ ]
+}
