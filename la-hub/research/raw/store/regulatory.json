@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "subject": "HMP Bikes (Mandala Global LLC) proposed LA store at 768 Ceres Ave, Los Angeles, CA 90021 — sell DOT electric motorcycles (HMP FLASH 75 mph, Lightning MK.II 56 mph), Class 2 e-bikes and mopeds; rent/lease e-bikes and e-mopeds to delivery riders; battery-swap subscription; SoCal warranty/service base",
+    "researched": "2026-09-08",
+    "method": "WebSearch + WebFetch/curl of primary sources. ZIMAS UI (zimas.lacity.org) and codelibrary.amlegal.com returned 403 to the fetcher; zoning was instead pulled directly from the City's ArcGIS REST services that ZIMAS itself uses (zimas.lacity.org/arcgis and maps.lacity.org/lahub). ecfr.gov and codes.iccsafe.org blocked; substituted law.cornell.edu and up.codes. Web-search budget was exhausted near the end; items marked 'unverified' could not be closed.",
+    "confidence_legend": "verified = read on a primary source on 2026-09-08; secondary = trade/industry source; unverified = could not be confirmed, treat as a question for counsel/agency"
+  },
+
+  "dealer_license": {
+    "summary": "To sell HMP FLASH / Lightning MK.II (DOT motorcycles) at retail in LA, the selling entity needs a California DMV Vehicle Dealer occupational license for the Ceres Ave location. Because HMP is selling NEW vehicles of its own brand, DMV treats it as a NEW-vehicle dealer application (OL 248N packet), which requires a Certificate of Proposed Franchise (OL 124) for each make issued by a DMV-licensed manufacturer or distributor — so the HMP importing/brand entity must ALSO hold a DMV Distributor (or Manufacturer) license. A dealer that sells only motorcycles/ATVs posts a $10,000 bond instead of $50,000 and is exempt from the Dealer Education Program/exam.",
+    "license_type": {
+      "value": "Vehicle Dealer license (general distinguishing number) — new-vehicle dealer, motorcycle category. Selling only motorcycles keeps it in the 'deals exclusively in motorcycles or ATVs' class for bond purposes (VC 11710). Note that Class 1–3 e-bikes are not vehicles subject to registration and do not require a dealer license; mopeds (VC 406) ARE registered (one-time) and are covered by the dealer license.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08", "note": "lists new/used/wholesale/motorcycle/trailer dealer types; new dealers use OL 248N packet"},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=11710", "seen": "2026-09-08"}
+      ]
+    },
+    "distributor_license_required_for_hmp_import_entity": {
+      "value": "DMV: 'A vehicle distributor license is required if you sell or distribute new vehicles to California dealers or maintain representatives who contact dealers ... and you're not a vehicle manufacturer.' HMP's plan to supply SoCal dealers and to franchise its own LA store makes this unavoidable. Fees: $100 application + $1 family support + $50 per branch; distributor plates $104 auto / $106 motorcycle; no bond listed on the DMV page. Application is online (DMV occupational licensing portal); requires manufacturer appointment letters, VIN documentation, product brochures, authorized dealer list, Live Scan.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-distributor-license/", "seen": "2026-09-08"},
+        {"url": "https://law.justia.com/codes/california/code-veh/division-5/chapter-4/article-1/section-11701/", "seen": "2026-09-08", "note": "VC 11701 — manufacturer, distributor, dealer of vehicles subject to registration must be licensed"}
+      ]
+    },
+    "application_forms": {
+      "value": [
+        "OL 12 Application for Original Occupational License, Part C",
+        "OL 21A Original Application for Occupational License, Part A",
+        "OL 25B Surety Bond of Motorcycle Dealer ($10,000) — or OL 25 ($50,000) if any non-motorcycle vehicles are sold — or OL 25E deposit in lieu",
+        "OL 53 Authorization to Release Financial Information",
+        "OL 124 Certificate of Proposed Franchise — one per make (HMP, and any other brands stocked)",
+        "OL 29B Personal History Questionnaire — each owner on OL 12",
+        "ADM 9050 Appointment of Director as Agent for Service — each owner",
+        "DMV 8016 Live Scan request (copy) — each person filing OL 29B; ADM 1316 fingerprint card ($42) for out-of-state owners",
+        "Attachments: SOS Statement of Information (LLC), Fictitious Business Name statement, CDTFA seller's permit copy, photographs of the business location per DMV photo procedure"
+      ],
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08", "note": "OL 248A New Dealer Application Checklist (rev 4/2020), extracted from PDF"}
+      ]
+    },
+    "fees": {
+      "value": {
+        "application": "$175 non-refundable + $1 Family Support Program fee",
+        "dealer_plates": "$92 per auto dealer plate / $94 per motorcycle dealer plate + county fees (optional; OL 248A rev 4/2020 still shows $90/$92)",
+        "new_motor_vehicle_board": "$425 per location per current DMV web page (OL 248A rev 4/2020 shows $300 — the web page is newer; confirm at filing)",
+        "branch_location": "$70 per branch (+ NMVB fee per branch for new dealers)",
+        "exam": "$16 (not applicable — motorcycle-only/new dealers exempt from exam)",
+        "autobroker_endorsement": "$100 (not needed)",
+        "renewal": "every 2 years: $125 + $1 + plates/NMVB"
+      },
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08"}
+      ]
+    },
+    "surety_bond": {
+      "value": "VC 11710(a): $50,000 bond for dealers generally; VC 11710(b): $10,000 for a dealer 'who deals exclusively in motorcycles or all-terrain vehicles'. DMV form OL 25B (rev 11/2015) is the $10,000 bond for motorcycle dealers, motorcycle lessor-retailers, ATV dealers, and wholesale-only dealers (<25 vehicles/yr), citing VC 11612, 11710, 11710.1. VERIFIED: the $10k vs $50k split is correct. Consequence: if the LA store also sells any non-motorcycle registered vehicle (e.g., a 3-wheeled cargo vehicle registered as something other than a motorcycle, or used cars taken in trade), the $50,000 bond applies. Bond premium is typically 1–3% of face value per year for good credit (secondary; get quotes).",
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=11710", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/04/ol25b.pdf", "seen": "2026-09-08", "note": "OL 25B text extracted: 'penal sum of TEN THOUSAND DOLLARS ($10,000)'"},
+        {"url": "https://blog.bossbonds.com/boss-bonds-blog/a-guide-to-california-auto-dealer-surety-bond-requirements?hs_amp=true", "seen": "2026-09-08", "note": "secondary; confirms $10k motorcycle-only"}
+      ]
+    },
+    "dealer_education_and_exam": {
+      "value": "VC 11704.5 requires the pre-licensing 4-hour education program + written exam only for USED vehicle dealer applicants (retail or wholesale). It expressly does not apply to new vehicle dealers, motorcycle-only dealers, trailer-only dealers, ATV-only dealers, or dismantlers. HMP as a new-vehicle and/or motorcycle-only dealer is exempt. (If the LA store later adds a used-car line, the requirement attaches.)",
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=11704.5", "seen": "2026-09-08"}
+      ]
+    },
+    "background_fingerprints": {
+      "value": "Live Scan fingerprinting for every owner/officer listed on OL 12 (DMV 8016); out-of-state residents use ADM 1316 card ($42/person) + BCII 9004 exemption request. DMV reviews character/honesty/financial info (OL 29B, OL 53).",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08"}
+      ]
+    },
+    "established_place_of_business": {
+      "value": [
+        "VC 320 / 13 CCR 270: the office must be 'established to the extent that its construction is not temporary, transitory, or mobile in nature' and 'actually occupied either continuously or at regular periods by the dealer'.",
+        "Retail dealers must have an office AND a display area on the same property; the display area must be 'of sufficient size to physically accommodate vehicles' of the licensed type and be 'clearly for the exclusive use of the dealer for display purposes only'; additional display areas allowed within a 1,000-ft radius.",
+        "Sign: permanent, exterior, weatherproof, readable (VC 11709); a temporary sign is acceptable while a permanent sign is on order.",
+        "Books and records (Report of Sale books, deal jackets) kept at the location and open to DMV inspection during posted business hours; a telephone listed to the business and posted hours are checked at inspection (posted-hours/phone items are from DMV-certified training material — secondary).",
+        "Residential addresses, mobile units, virtual offices and shared spaces without clear separation are not acceptable (secondary).",
+        "An industrial warehouse with a walled office and a demarcated indoor display area meets these tests; DMV does not require street-front glazing. Photographs of the exterior (with sign) and interior office/display area are submitted with the application."
+      ],
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://motorsportsmarket.com/online_book/section-4-main-branch-location-requirements-off-site-displays-temporary-branches/", "seen": "2026-09-08", "note": "DMV-certified dealer school; secondary"},
+        {"url": "https://buysuretybonds.com/auto-dealer-bonds/california/how-to-get-licensed/", "seen": "2026-09-08", "note": "secondary — 'residential addresses, mobile units, virtual offices ... not acceptable'"}
+      ]
+    },
+    "site_inspection": {
+      "value": "After DMV processes the application, the applicant is emailed to create a DMV account and self-schedule an inspection slot with the Occupational Licensing Inspector. The inspector reviews the main office, books and records, display area, signage/branding. On approval the inspector issues a temporary operating permit (needed to enroll in BPA); the permanent license is mailed after final review (industry guides: 2–6 weeks after inspection).",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://www.californiadealeracademy.com/playbook/dmv-application/", "seen": "2026-09-08", "note": "secondary timeline"}
+      ]
+    },
+    "dealer_plates": {
+      "value": "Optional. $92 auto / $94 motorcycle each + county fees. Useful for demo/test rides of unregistered inventory.",
+      "sources": [{"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"}]
+    },
+    "dmv_registration_duties_evr_bpa": {
+      "value": [
+        "Business Partner Automation (BPA) is MANDATORY for new-vehicle dealers ('All new motor vehicle dealers must participate in the BPA program'). Dealer becomes a second-line business partner through a first-line service provider (ADR/caevrreg.com, AVRS, Dealertrack, MVSC/DMVdesk; Fairfax Imaging is the state vendor). DMV fees: $305 application, $232 per additional branch, $7 DMV transaction fee per transaction, Live Scan; permit valid 36 months; site must meet security/floor-plan requirements (REG 4025).",
+        "VC 4456: dealer must submit the application and all fees to DMV within 20 days of sale for NEW vehicles (30 days used); attach the report-of-sale copy and, where plates are required, the temporary license plate (TLP) printed from the eROS/TLP system (AB 516); vehicle may operate on the TLP up to 90 days. Late = penalties that cannot be passed to the buyer.",
+        "New vehicle sold by a licensed CA dealer is registered on REG 397 (Application for Registration of New Vehicle) rather than MCO+REG 343 (VIRPM 7.065).",
+        "Motorcycles get one plate, so one TLP."
+      ],
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/business-partner-automation-program/", "seen": "2026-09-08"},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/temporary-license-plates/", "seen": "2026-09-08", "note": "DMV AB 516 TLP dealer FAQ PDF (rev 06/2019) — lists authorized eROS/TLP providers"},
+        {"url": "https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/miscellaneous-originals/manufacturers-certificate-statement-of-origin/", "seen": "2026-09-08"}
+      ]
+    },
+    "cdtfa_sellers_permit": {
+      "value": "Required (CDTFA Pub 34: 'As a motor vehicle dealer or wholesaler, you must obtain a seller's permit, and report and pay tax to us on your vehicle sales'). A copy of the permit is an attachment to the DMV dealer application. Register online at cdtfa.ca.gov; no fee (a security deposit can be demanded). A separate sub-permit/location is added for the LA store.",
+      "sources": [
+        {"url": "https://cdtfa.ca.gov/formspubs/pub34.pdf", "seen": "2026-09-08", "note": "Publication 34 Motor Vehicle Dealers, Oct 2025 edition"},
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08"}
+      ]
+    },
+    "city_business_tax": {
+      "value": "City of LA Business Tax Registration Certificate (BTRC) from the Office of Finance before opening. Gross-receipts rates (Tax Information Booklet): Retail Sales (LAMC 21.44) $1.27 per $1,000; Wholesale $1.01 per $1,000; Rental of tangible personal property $2.55 per $1,000 (receipts for use wholly outside CA excluded). Businesses with both retail and wholesale sales must segregate and pay under both classes. Renewal due each Feb 28/29.",
+      "sources": [
+        {"url": "https://finance.lacity.gov/tax-information-booklet", "seen": "2026-09-08", "note": "fetched via curl (403 to WebFetch)"},
+        {"url": "https://finance.lacity.gov/tax-education/new-business-registration/how-register-btrc", "seen": "2026-09-08"}
+      ]
+    },
+    "timeline_weeks": {
+      "value": "VC 11704(b): DMV 'shall, within 120 days, make a thorough investigation' of a complete application. Industry guides report 6–12 weeks from a clean filing to license (inspection typically 3–6 weeks after filing; 2–6 weeks after inspection to final). Add 2–4 weeks up front for bond, Live Scan, seller's permit, BTRC, signage and photos; and 2–6 weeks after the temporary permit for BPA/eROS enrollment (DMV allows up to 12 months). Realistic: 10–16 weeks from lease signing to first registrable retail sale, assuming the Distributor license is filed in parallel (unverified processing time for Distributor).",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08", "note": "cites VC 11704(b) 120-day investigation"},
+        {"url": "https://www.californiadealeracademy.com/playbook/dmv-application/", "seen": "2026-09-08", "note": "secondary: 6–10 weeks"},
+        {"url": "https://www.bryantsuretybonds.com/blog/car-wholesale-dealer-license-in-california", "seen": "2026-09-08", "note": "secondary: 8–9 weeks after DMV receives application"}
+      ]
+    },
+    "startup_cost_estimate_usd": {
+      "value": {
+        "dmv_dealer_application_fees": "≈ $175 + $1 + $425 NMVB + 2 motorcycle plates ≈ $190 + county ≈ $800–$900",
+        "surety_bond_premium": "$100–$300/yr for $10,000 bond (1–3%); $500–$1,500/yr if $50,000 needed (secondary)",
+        "live_scan": "$50–$100 per owner (DOJ/FBI + rolling fee; secondary)",
+        "distributor_license": "$100 + $1 + plates ≈ $300",
+        "bpa_enrollment": "$305 + Live Scan + first-line provider setup/monthly (providers charge $100–$300/mo + per-transaction; secondary)",
+        "signage_office_display_buildout": "$3,000–$15,000 (permanent exterior sign, walled office, display area striping) — estimate",
+        "cdtfa_permit": "$0 (security deposit possible)",
+        "la_btrc": "$0 to register; tax on gross receipts (min tax ≈ $25–$50 first year; verify)",
+        "total_regulatory_only": "≈ $5,000–$20,000 excluding building change-of-use permits, fire-code work for battery storage, and insurance"
+      },
+      "sources": [{"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"}]
+    },
+    "does_hmp_already_hold_a_ca_dealer_license": {
+      "value": "UNVERIFIED. DMV's Occupational License Lookup (OLL, formerly OLSIS) is a Salesforce app at drive.dmvonline.ca.gov/s/oll that did not render for the fetcher; the legacy wasapp/olinq2 URL returns 404. Circumstantial evidence: (1) 415 eBikes (261 6th St, SF) is described as HMP's SoMa dealership, but its bread-and-butter 'Inno' e-moped is sold as a Class 2 e-bike — 'drivers don't need a license, registration, or insurance' — which needs no DMV dealer license. (2) FLASH launched in the US in July 2026 (electrek) and its product page says 'California temporary-tag support planned for August 2026', which only makes sense if HMP was obtaining (or already has) a CA dealer license with BPA/eROS/TLP. (3) Lightning MK.II page: 'ships with the MCO and complete registration documentation', 'requires ... an M1 in California' — i.e., HMP currently expects customers to register on REG 343 + MCO themselves, the path used when a new vehicle is 'sold by other than a California dealer' (VIRPM 7.065). Ask HMP for the OL number(s) for Mandala Global LLC / HMP Bikes / 415 eBikes and the entity that will sign the LA lease.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-license-lookup/", "seen": "2026-09-08"},
+        {"url": "https://drive.dmvonline.ca.gov/s/oll", "seen": "2026-09-08", "note": "did not load ('CSS Error')"},
+        {"url": "https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets", "seen": "2026-09-08"},
+        {"url": "https://www.hmpbikes.com/products/flash-electric-motorcycle", "seen": "2026-09-08"},
+        {"url": "https://www.hmpbikes.com/products.json?limit=250", "seen": "2026-09-08", "note": "Lightning MK.II body text"},
+        {"url": "https://www.hmpbikes.com/pages/store-information", "seen": "2026-09-08", "note": "SF address 261 6th St; entity MANDALA GLOBAL LLC"},
+        {"url": "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/", "seen": "2026-09-08"}
+      ]
+    },
+    "second_location_branch": {
+      "value": "If the same licensed entity opens LA, it files a branch modification ($70 + NMVB fee per branch for new dealers; BPA adds $232 per branch). Each branch must independently satisfy the established-place-of-business, office, display and sign requirements and gets its own inspection; the OL 124 franchise certificate must name the branch. If a different legal entity will run LA, it is an original application (full fees, own bond, own Live Scans). A separate CDTFA sub-location and a separate LA BTRC are needed in either case.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/business-partner-automation-program/", "seen": "2026-09-08"}
+      ]
+    },
+    "salesperson_license_note": {
+      "value": "Anyone who sells registered vehicles for the dealer must hold a DMV Vehicle Salesperson license (OL 16, Live Scan) — VC 11800 et seq. (statute not fetched; verify).",
+      "sources": [{"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/", "seen": "2026-09-08"}]
+    }
+  },
+
+  "zoning_768_ceres": {
+    "parcel": {
+      "apn": "5146-003-059",
+      "pin": "124-5A213 150",
+      "situs": "768 S Ceres Ave, Los Angeles CA 90021",
+      "coordinates": "34.03631, -118.24440 (LA County Assessor parcel centroid)",
+      "lot_sf": 9043,
+      "building_sf": "8,340 (Assessor) — listing says 8,443",
+      "year_built": 2015,
+      "assessor_use": "3300 Industrial — Warehousing, Distribution, under 10,000 SF, one story; Assessor legacy zoning field 'LAM2' (the pre-DTLA-2040 M2 zone — now superseded)",
+      "council_district": "14",
+      "sources": [
+        {"url": "https://portal.assessor.lacounty.gov/api/parceldetail?ain=5146003059", "seen": "2026-09-08"},
+        {"url": "https://zimas.lacity.org/arcgis/rest/services/zma/zimas/MapServer/105/query", "seen": "2026-09-08", "note": "ZIMAS Landbase layer, point query → PIN 124-5A213 150, APN 5146003059, Lot 18 E.M. Funk's Sub of the Valenzuela Tract, CD 14"},
+        {"url": "https://www.loopnet.com/property/768-ceres-ave-los-angeles-ca-90021/06037-5146003059/", "seen": "2026-09-08", "note": "listing (blocked to fetcher; data from search snippet)"}
+      ]
+    },
+    "zone": {
+      "value": "[LB1-WH1-5][IX2-FA] — Chapter 1A (new Zoning Code) zone string. Decoded: Form District LB1 'Low-Rise Broad 1'; Frontage District WH1 'Warehouse 1' (Warehouse frontages 'are intended for areas where pedestrian-friendly environments are not a priority' — no build-to line, no facade transparency requirement, 5 ft parking setback, 30% frontage planting); Development Standards District 5; Use District IX2 'Industrial-Mixed 2'; Density District FA. Legend: 'Industrial-Mixed (Chapter 1A)'. This is NOT M2-2D/M3 any more: the Downtown Community Plan (DTLA 2040) and its new zoning were adopted by Council 4 Dec 2024 and took effect Feb 2025, and downtown is the first area regulated by Chapter 1A (adopted Oct 2024).",
+      "verification": "verified — same string returned by two independent City services (ZIMAS layer 1101 'Zoning (Chapter 1A)' and LA GeoHub City_Planning_Department layer 8 'Generalized Zoning') on a point query at the parcel centroid. Zoning form/frontage decode from zoning.lacity.gov Articles 2 and 3.",
+      "sources": [
+        {"url": "https://zimas.lacity.org/arcgis/rest/services/zma/zimas/MapServer/1101/query", "seen": "2026-09-08", "note": "ZONE_CMPLT '[LB1-WH1-5][IX2-FA]', ZONE_CODE 7502, ZONELEGEND 'Industrial-Mixed'"},
+        {"url": "https://maps.lacity.org/lahub/rest/services/City_Planning_Department/MapServer/8/query", "seen": "2026-09-08", "note": "ZONE_CMPLT '[LB1-WH1-5][IX2-FA]', ZONING_DESCRIPTION 'Industrial-Mixed (Chapter 1A)'"},
+        {"url": "https://zoning.lacity.gov/browse/2", "seen": "2026-09-08", "note": "Sec. 2B.10.1 Low-Rise Broad 1 (LB1)"},
+        {"url": "https://zoning.lacity.gov/browse/3", "seen": "2026-09-08", "note": "Sec. 3B.7.1 Warehouse 1 (WH1)"},
+        {"url": "https://www.ladowntownnews.com/news/new-beginnings-dtla-community-plan-zoning-code-finalized/article_e024fb1a-b656-11ef-9cfc-2333c897f456.html", "seen": "2026-09-08", "note": "DTLA 2040 finalized Dec 2024, effective Feb 2025"},
+        {"url": "https://planning.lacity.gov/zoning/new-code", "seen": "2026-09-08"}
+      ]
+    },
+    "community_plan_and_overlays": {
+      "value": [
+        "Community Plan Area: Downtown (CPA 1120) — DTLA 2040.",
+        "General Plan Land Use (Chapter 1A layer): 'Markets'.",
+        "Inside the Downtown Industrial District BID (property-based BID, Ord. 183156).",
+        "Inside the Downtown Adaptive Reuse Incentive Area, the Greater Downtown Housing Incentive Area and a Transit Priority Area (informational; none restrict vehicle sales).",
+        "No Specific Plan, no HPOZ, no Community Design Overlay returned on the point query. No 'Skid Row' zoning overlay exists as such; the Skid Row/Central City East residential-hotel area lies north of 7th St — relevant only because Light vehicle services in IX2 require 200 ft separation from a Residential or Residential-Mixed Use District (see below). Coastal, TOC and AB 2097 layers did not accept the query (400) — TPA status suggests AB 2097 (no parking minimums) applies; verify."
+      ],
+      "sources": [
+        {"url": "https://zimas.lacity.org/arcgis/rest/services/zma/zimas/MapServer/103/query", "seen": "2026-09-08", "note": "Community Plan Areas → 'Downtown'"},
+        {"url": "https://zimas.lacity.org/arcgis/rest/services/zma/zimas/MapServer/1201/query", "seen": "2026-09-08", "note": "GP Land Use (Chapter 1A) → 'Markets'"},
+        {"url": "https://maps.lacity.org/lahub/rest/services/City_Planning_Department/MapServer/0/query", "seen": "2026-09-08", "note": "BID: DOWNTOWN INDUSTRIAL DISTRICT"},
+        {"url": "https://maps.lacity.org/lahub/rest/services/City_Planning_Department/MapServer/6/query", "seen": "2026-09-08", "note": "Downtown Adaptive Reuse Program area"},
+        {"url": "https://maps.lacity.org/lahub/rest/services/City_Planning_Department/MapServer/12/query", "seen": "2026-09-08", "note": "Greater Downtown Housing Incentive Area; Transit Priority Area"}
+      ]
+    },
+    "use_permissions_in_IX2": {
+      "value": {
+        "Motor Vehicle Sales & Rental: Standard Vehicle": "P* — permitted by right with use standards: Frontage screen F-Screen 3, Transition screen T-Screen 1, supplemental standards Sec. 5C.2.5.D.1. (Large Vehicle sales/rental: not permitted.) Household moving truck rental only incidental to self-storage.",
+        "Motor Vehicle Services: Light (repair/service)": "P* — permitted with: minimum 200 ft separation from a 'sensitive use' and from any Residential, Residential-Mixed or Agricultural Use District (relief via Conditional Use CU2); work enclosed indoors; hours of operation 7 AM–7 PM; screening F-Screen 3 / T-Screen 1; supplemental standards Sec. 5C.2.5.A.1. Heavy services: P* with 500 ft separation.",
+        "Retail: General": "P — permitted by right (an e-bike/accessory showroom is plain retail).",
+        "Storage, Indoor: General": "P; Self-Service Facility P.",
+        "Storage, Outdoor: Standard Vehicle": "P* in conjunction with Motor Vehicle Sales & Rental (screened, S-Screen 2).",
+        "Wholesale Trade & Warehousing": "P* (Light Industrial category standards) — supports the regional parts/warranty depot.",
+        "CUP required?": "No conditional use permit is required for motorcycle sales, rental, retail, or light repair by right in IX2, provided the 200-ft separation for the repair function is met (if not, a CU2 conditional use is the relief path). Compare: in CX1/CX2/CX5 and IX1/IX6 'Motor Vehicle Sales & Rental' is NOT permitted at all, so this parcel's IX2 designation is favorable."
+      },
+      "caveats": [
+        "The Chapter 1A definitions (Sec. 5D.7.3 'Motor Vehicle Sales & Rental', 5D.7.1 'Motor Vehicle Services') were not retrievable from the browse page; confirm with City Planning (Zoning Administrator / Development Services Center) that motorcycles and mopeds are 'Standard Vehicle' and that short-term rental to riders is within 'Sales & Rental'. Battery-swap kiosks are likely accessory to retail/rental; e-bike-only sales is 'Retail: General'.",
+        "Confirm the nearest Residential/Residential-Mixed Use District boundary is >200 ft from the service bay (Skid Row residential hotels and RX-zoned parcels are north of 7th St; the 700 block of Ceres is between 7th and 8th)."
+      ],
+      "sources": [
+        {"url": "https://zoning.lacity.gov/browse/5", "seen": "2026-09-08", "note": "Article 5 Use — Part 5B Use District tables; extracted IX2 (Sec. 5B.6.2 Industrial-Mixed 2) rows programmatically from the page text"},
+        {"url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lapz/0-0-0-56449", "seen": "2026-09-08", "note": "Chapter 1A official codification (403 to fetcher; cite only)"}
+      ]
+    },
+    "old_lamc_12_19_12_20_note": {
+      "value": "LAMC 12.19 (M2) / 12.20 (M3) no longer govern this parcel; the Assessor's 'LAM2' field is a stale legacy value. Under the old M2 zone, automobile/motorcycle sales and repair were permitted by right, so nothing is lost — but the Chapter 1A use standards (screening, 7 AM–7 PM service hours, 200-ft separation) now apply instead.",
+      "sources": [{"url": "https://portal.assessor.lacounty.gov/api/parceldetail?ain=5146003059", "seen": "2026-09-08"}]
+    },
+    "dmv_established_place_of_business_fit": {
+      "value": "Yes with modest work: an 8,340 sf one-story 2015 warehouse can host a walled office (records, phone, posted hours), an indoor display area striped and signed 'for the exclusive use of the dealer', and a permanent exterior sign on Ceres Ave. DMV inspectors accept industrial buildings routinely (many LA motorcycle/powersports dealers are in M/IX buildings). DMV's OL 21A asks the applicant to confirm the location complies with local zoning (unverified wording) — the IX2 'P*' designation supports that. Ground-floor display: the building IS ground floor; the WH1 frontage imposes no glazing, so 'display' will be interior with a roll-up door — acceptable to DMV, less visible to walk-in traffic.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-dealer-license/", "seen": "2026-09-08"},
+        {"url": "https://zoning.lacity.gov/browse/3", "seen": "2026-09-08"}
+      ]
+    },
+    "building_change_of_use_ladbs": {
+      "value": "Converting part of a Group S (storage) warehouse to a showroom (Group M) and office (B) is a change of occupancy that requires an LADBS building permit and a NEW Certificate of Occupancy; LAFD does the commercial final inspection. Expect ADA/CBC 11B path-of-travel upgrades (accessible entrance, parking space, restroom). A local permit-expediter guide puts change-of-use C of O at 4–10 weeks after construction. Group M sprinkler trigger is >12,000 sf (not tripped by area alone) but a 2015 industrial building is very likely already sprinklered — verify the design density because battery storage may require an upgrade (see battery section). Parking: TPA/AB 2097 likely removes minimums (verify).",
+      "sources": [
+        {"url": "https://www.oceanpermits.com/blog/certificate-of-occupancy-los-angeles", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://ladbs.org/", "seen": "2026-09-08", "note": "LADBS ePlanLA is the filing portal"}
+      ]
+    }
+  },
+
+  "vehicle_compliance": {
+    "summary": "For an imported battery-electric on-road motorcycle to be sold and registered in California: (1) fabricating manufacturer registered with NHTSA (49 CFR 566) with a US agent (49 CFR 551.45), a 17-character VIN with SAE-assigned WMI (49 CFR 565), and a permanently affixed FMVSS certification label near the steering head (49 CFR 567.4); (2) a US EPA Certificate of Conformity for the highway-motorcycle 'engine family' plus the EPA emission control label on the frame — CARB says ZEM on-road motorcycles 'must have a US EPA Certificate of Conformity' to be legal for sale in CA; (3) NO CARB Executive Order — CARB 'does not require or offer certification or Executive Orders for zero-emission on-road motorcycles' and has told DMV to register them once verified battery-electric; (4) an MCO endorsed to the buyer and, when sold by a CA dealer, REG 397 through BPA. The 7,500-mile/CA-emissions-certification rule (H&SC 43150–43156) targets emissions-noncertified vehicles and is moot for a ZEV, but a mis-decoded VIN can push the vehicle into DMV's 'direct import' path where clerks demand CBP entry forms, FMVSS/EPA letters, and where motorcycles cannot be 'converted'.",
+    "federal_nhtsa": {
+      "value": [
+        "49 CFR 566.5: 'Each manufacturer of a motor vehicle ... shall furnish' name, address, state of incorporation and a description of each vehicle type to NHTSA (vPIC manufacturer portal) — not later than 30 days after manufacturing begins (secondary). The fabricating factory (not HMP as brand owner) is the 'manufacturer' unless HMP is the final-stage/assembler; if HMP wants 'Manufactured by HMP' on the label it must be the actual assembler or arrange a compliant labeling structure — get counsel.",
+        "49 CFR 565: 17-character VIN; WMI assigned via SAE International under NHTSA contract; small manufacturers (<1,000/yr) use a 6-character identifier (positions 1–3 and 12–14). DMV's VINA decoder and NMVTIS rely on the WMI being on file — an unregistered WMI is the most common cause of DMV registration refusals for boutique EV importers.",
+        "49 CFR 567.4: certification label on a permanent member 'as close as is practicable to the intersection of the steering post with the handle bars', showing manufacturer name, month/year of manufacture, GVWR, GAWR, the FMVSS conformity statement, VIN and vehicle type ('MOTORCYCLE').",
+        "49 CFR 551.45: foreign manufacturers/assemblers/importers must designate a US agent for service of process before offering vehicles for import.",
+        "Entry: DOT HS-7 box 2A (conforming vehicle bearing a certification label) — no Registered Importer needed for conforming vehicles; EPA Form 3520-1 code B ('U.S. certified — unmodified vehicle bearing a U.S. EPA emission control label ... on motorcycle frame'); CBP 7501. Keep copies: DMV VIRPM 12.050 says HS-7/3520-1 acceptance at the border 'does not establish California eligibility'."
+      ],
+      "sources": [
+        {"url": "https://www.law.cornell.edu/cfr/text/49/566.5", "seen": "2026-09-08"},
+        {"url": "https://www.law.cornell.edu/cfr/text/49/567.4", "seen": "2026-09-08"},
+        {"url": "https://www.law.cornell.edu/cfr/text/49/551.45", "seen": "2026-09-08"},
+        {"url": "https://vpic.nhtsa.dot.gov/ManufacturerHandbook.pdf?d=251025", "seen": "2026-09-08", "note": "NHTSA New Manufacturers Handbook (from search)"},
+        {"url": "https://www.epa.gov/system/files/documents/2024-08/form3520-1-2024-08-secured-enabled.pdf", "seen": "2026-09-08", "note": "EPA 3520-1 (Aug 2024) text extracted: code B definition; form not required when imported by original manufacturer, new, certified and labeled"},
+        {"url": "https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/nonresident-vehicles/direct-import-vehicles/", "seen": "2026-09-08"}
+      ]
+    },
+    "epa": {
+      "value": "Highway motorcycles are regulated under 40 CFR Part 86 Subpart E (86.407-78 'Certificate of conformity required'). Electric motorcycles are not exempt from certification in the way off-road ZEVs are; CARB's registration guidance states flatly that ZEM on-road motorcycles 'are subject to federal emissions requirements and must have a US EPA Certificate of Conformity'. HMP's site says FLASH ships with an 'EPA label' — ask for the Certificate of Conformity number/engine-family name and the certificate holder (the factory or HMP). Without a certificate the 3520-1 code B declaration is false (penalties up to $44,539 per vehicle).",
+      "sources": [
+        {"url": "https://ww2.arb.ca.gov/zero-emission-motorcycle-and-highway-recreational-vehicle-registration-requirements", "seen": "2026-09-08", "note": "fetched via curl"},
+        {"url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-86/subpart-E/section-86.407-78", "seen": "2026-09-08", "note": "eCFR blocked to fetcher; cite from search"},
+        {"url": "https://www.epa.gov/system/files/documents/2024-08/form3520-1-2024-08-secured-enabled.pdf", "seen": "2026-09-08"}
+      ]
+    },
+    "carb": {
+      "value": [
+        "CARB, 'Zero Emission Motorcycle and Off-Highway Recreational Vehicle Registration Requirements': 'CARB does not require or offer certification or Executive Orders for zero-emission on-road motorcycles' ... 'CARB has advised DMV ... and recommends that the DMV proceed with registration of zero-emission on-road motorcycles ... once it has been verified that they are powered by battery electricity only ... regardless of whether or not a VECI label is present.' Contact given for registration problems: Scott Bacon, CARB ECCD, scott.bacon@arb.ca.gov, (279) 842-9122. Table: ZEM on-road — CARB certification 'Not Required, Not Available'; EPA CoC 'Required'; VECI label 'Not Required, Not Available'.",
+        "CARB ZEM sales requirement: CARB staff proposed 10% ZEM sales by 2028 rising to 50% by 2035 as part of the on-road motorcycle rule (Board hearing Nov 7, 2024, per press). Adoption/OAL status not verified on arb.ca.gov (the ZEM page still says 'proposing a target of 50% ZEM by 2035'). If adopted, it binds manufacturers (credits/reporting) — a ZEM-only brand like HMP would earn credits, not owe them; confirm whether small-volume manufacturers must report.",
+        "H&SC 43150–43156 / DMV VIRPM 12.025: vehicles under 7,500 miles must be California-certified — applies to emissions-certified vehicles; not applicable to ZEVs, but DMV field staff sometimes apply it reflexively. Carry CARB's page and, if needed, a CARB letter."
+      ],
+      "sources": [
+        {"url": "https://ww2.arb.ca.gov/zero-emission-motorcycle-and-highway-recreational-vehicle-registration-requirements", "seen": "2026-09-08"},
+        {"url": "https://ww2.arb.ca.gov/zero-emission-motorcycles", "seen": "2026-09-08"},
+        {"url": "https://santamariatimes.com/news/local/state-and-regional/zero-emission-motorcycles-get-lift-in-california-john-lindt/article_b2ce4a9c-9bd3-11ef-a7f1-eba83e744b66.html", "seen": "2026-09-08", "note": "secondary — 10% by 2028 / 50% by 2035, CARB vote Nov 7 (2024)"},
+        {"url": "https://ww2.arb.ca.gov/new-vehicle-and-engine-certification-executive-orders-my2026-highway-motorcycles", "seen": "2026-09-08", "note": "EO lists exist for ICE highway motorcycles only"},
+        {"url": "https://dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/nonresident-vehicles/california-noncertified-direct-import-vehicle-registration-refusals/", "seen": "2026-09-08", "note": "VIRPM 12.025 H&SC 43150–43156 refusals"}
+      ]
+    },
+    "dmv_new_vehicle_registration_for_imported_motorcycles": {
+      "value": [
+        "VIRPM 7.065 (VC 4150(d)): every original registration of a new vehicle/motorcycle requires the MCO/MSO — unless sold by a licensed CA dealer with REG 397. MCO must show manufacturer name/address, make, VIN, body type, year model, series, date and transferee, agent signature; security paper features described. When sold by other than a CA dealer: REG 343, MCO endorsed to purchaser (bill of sale acceptable in lieu of endorsements), vehicle verification (REG 31 by DMV/CHP/licensed verifier) unless excepted, fees from date of first use; REG 256 Statement of Facts is used for e.g. unladen weight or to explain anomalies (e.g., 'battery-electric, no engine, not subject to CARB').",
+        "VIRPM 12.050 'Direct Import Vehicles': applies to vehicles 'originally manufactured for use in other countries' as determined by VINA (VIN analysis); requires CBP-stamped 7501/3461/etc., FMVSS labels or manufacturer letter, EPA label or letter, and — if less than two years old — 'a certificate of conformance from a CARB authorized laboratory'; states 'There are no CARB programs to convert new vehicles ..., motorcycles ... to California emission standards'. A properly WMI-registered, FMVSS-labeled, EPA-certified FLASH should NOT decode as a direct import; if it does, the fix is the NHTSA/EPA paperwork plus CARB's ZEM letter, not conversion.",
+        "Dealer path (recommended): once the LA store is licensed and on BPA, each sale is reported electronically (eROS), TLP printed, fees remitted within 20 days, title issued — the buyer never touches REG 343."
+      ],
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/miscellaneous-originals/manufacturers-certificate-statement-of-origin/", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/handbook/vehicle-industry-registration-procedures-manual-2/nonresident-vehicles/direct-import-vehicles/", "seen": "2026-09-08"},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456", "seen": "2026-09-08"}
+      ]
+    },
+    "risk_and_what_to_ask": {
+      "value": "If SF/Davis customers have already obtained CA titles and plates for FLASH and Lightning MK.II via REG 343 + MCO, the VIN decode, NHTSA registration and EPA questions are effectively answered — obtain 2–3 redacted CA registration cards/titles as proof, plus any DMV 'Notice of Incomplete Application' letters. If none exist yet (FLASH only launched July 2026), budget for a first-registration test case in LA County before opening: bring MCO, HS-7/3520-1/7501 copies, the EPA CoC, the CARB ZEM page, and a REG 256. HMP's 'California temporary-tag support planned for August 2026' implies they expect dealer/BPA status — confirm.",
+      "sources": [
+        {"url": "https://www.hmpbikes.com/products/flash-electric-motorcycle", "seen": "2026-09-08"},
+        {"url": "https://www.hmpbikes.com/products.json?limit=250", "seen": "2026-09-08"}
+      ]
+    }
+  },
+
+  "rental_of_motor_vehicles": {
+    "vehicle_classification": {
+      "value": "FLASH (75 mph) and Lightning MK.II (56 mph, 7,000 W) exceed the moped ceiling of VC 406(a) (max 30 mph on level ground, <4 gross bhp) and are 'motorcycles' (VC 400; DMV registers electric two-wheelers by performance). Consequences: motorcycle registration, M1 license (16+), helmet, and financial responsibility/insurance. HMP's 'Lightning 3000' 'electric moped' and the Class 2 'INNO'/'LIVA 7' are different: Class 2 e-bikes (≤20 mph, ≤750 W, VC 312.5) need no license, registration or insurance; a true VC 406 moped needs M1/M2, a one-time $23 registration/plate, but not insurance (DMV page). VC 406 also requires manufacturers to hand buyers a 14-pt bold insurance disclosure.",
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=406", "seen": "2026-09-08"},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=400", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/motorcycles-mopeds-and-scooters/", "seen": "2026-09-08"},
+        {"url": "https://www.hmpbikes.com/products.json?limit=250", "seen": "2026-09-08", "note": "MK.II: 'requires a motorcycle license ... an M1 in California'"}
+      ]
+    },
+    "cvc_14608_14609": {
+      "value": [
+        "VC 14608(a): 'A person shall not rent a motor vehicle to another person unless' the renter 'is licensed under this code or is a nonresident who is licensed' in their home jurisdiction, AND the rental agent has inspected the driver's license and compared the signature or photograph with the person. 14608(b) exception only for blind/disabled non-drivers with a licensed driver present.",
+        "VC 14609(a): every person renting a motor vehicle 'shall keep a record of the registration number of the motor vehicle rented, the name and address of the person to whom the vehicle is rented, his or her driver's license number, the jurisdiction that issued the driver's license, and the expiration date'. No retention period is stated in 14609; keep records for the statute-of-limitations period (recommend ≥4 years) and make them available to peace officers.",
+        "Practical: for FLASH/MK.II rentals the license must show class M1 (or M2 for mopeds ≤30 mph). Most gig delivery riders hold only Class C or no CA license — this is the single biggest business-model constraint on renting motorcycles to delivery riders. VC 14604 (owner knowingly allowing an unlicensed driver) is deemed satisfied for rental companies that comply with 14608/14609.",
+        "AB 875 (VC 22651.08, effective Jan 1 2026) lets police impound for 48 hours any electric vehicle with fewer than four wheels that is not an 'electric bicycle' and can exceed 20 mph when operated by a rider 'without a current license to operate the vehicle' — the fleet owner eats the tow/storage unless the rental contract shifts it."
+      ],
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=14608", "seen": "2026-09-08"},
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=14609", "seen": "2026-09-08"},
+        {"url": "https://law.justia.com/codes/california/2011/veh/division-6/14600-14611/14604", "seen": "2026-09-08"},
+        {"url": "https://spsf.senate.ca.gov/system/files/2025-06/ab-875-analysis.pdf", "seen": "2026-09-08", "note": "AB 875 Senate analysis; signed Oct 1 2025"},
+        {"url": "https://fox5sandiego.com/news/california-news/california-public-safety-laws-2026/", "seen": "2026-09-08", "note": "secondary — VC 22651.08 effective 1/1/2026"}
+      ]
+    },
+    "dmv_occupational_licensing_for_rental": {
+      "value": "Renting/leasing vehicles you own does not itself require a DMV occupational license. A Lessor-Retailer license (OL 25B bond $10,000 for motorcycle lessor-retailers) is required if you 'sell previously leased or rented vehicles to the public' — except sales to the long-term (≥1 yr) lessee, commercial buyers or government. HMP's rent-to-own model (~$380/mo in SF) converts rentals into sales: a licensed dealer may sell ex-rental units as used vehicles (NMVTIS report required for each used vehicle offered), or sell to the lessee after a 1-year lease without a report of sale. CDTFA Pub 34: a lessor-retailer selling to the lessee files no report of sale and the lessee pays use tax at DMV; selling to anyone else = report of sale + sales tax.",
+      "sources": [
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/occupational-licensing/occupational-licenses/vehicle-lessor-retailer-license/", "seen": "2026-09-08"},
+        {"url": "https://cdtfa.ca.gov/formspubs/pub34.pdf", "seen": "2026-09-08"},
+        {"url": "https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets", "seen": "2026-09-08", "note": "rent-to-own ~$380/mo"}
+      ]
+    },
+    "insurance_for_rental_fleet": {
+      "value": [
+        "SB 1107 raised CA minimum liability to $30,000/$60,000 bodily injury and $15,000 property damage for policies issued/renewed on or after Jan 1 2025 — applies to motorcycles as motor vehicles (financial responsibility, VC 16020 et seq.).",
+        "The fleet owner needs a commercial auto/motorcycle fleet policy covering permissive renters (most rental-fleet forms are 'garage' or 'commercial auto — rental' forms), plus hired & non-owned auto for staff, garagekeepers for customer bikes in the shop, and GL. Renters' personal auto/motorcycle policies almost universally exclude delivery/commercial use; DoorDash's $1M third-party coverage applies only 'while on an active delivery' and requires the Dasher to 'maintain your own insurance ... including but not limited to an auto insurance policy'.",
+        "Practical ask of brokers: per-unit annual rate for a 50–150 unit e-motorcycle rental fleet in LA (no public benchmarks found; e-bike fleet benchmarks below are not comparable)."
+      ],
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202120220SB1107", "seen": "2026-09-08"},
+        {"url": "https://www.aisinsurance.com/resources/ca-new-auto-liability-limits-2025.aspx", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://help.doordash.com/dashers/s/article/Requirements-for-Dashing?language=en_US", "seen": "2026-09-08"}
+      ]
+    },
+    "la_business_tax_rental": {
+      "value": "Rental/leasing of tangible personal property is a separate LA business-tax classification at $2.55 per $1,000 of gross receipts (vs $1.27 retail). Register the rental activity on the same BTRC.",
+      "sources": [{"url": "https://finance.lacity.gov/tax-information-booklet", "seen": "2026-09-08"}]
+    },
+    "cdtfa_sales_tax_on_rentals": {
+      "value": "Leases/rentals of tangible personal property are 'continuing sales' — the lessor either (a) pays tax on the purchase price and leases tax-free, or (b) buys for resale and collects use tax on rental receipts; the election is generally irrevocable per item. Motorcycles and passenger vehicles are NOT 'mobile transportation equipment' (Pub 34 lists motorcycles among vehicles that are not MTE), so option (b) is available and typical. District (local) tax on lease receipts is based on 'the district where the equipment is being used by the lessee' (LA city rate applies for LA riders). Required add-on charges (late fees, damage waivers tied to the rental) are taxable; optional separately stated items are not.",
+      "sources": [
+        {"url": "https://cdtfa.ca.gov/industry/rental-companies/industry-topics.htm", "seen": "2026-09-08"},
+        {"url": "https://cdtfa.ca.gov/formspubs/pub44/leases.htm", "seen": "2026-09-08"},
+        {"url": "https://cdtfa.ca.gov/lawguides/vol1/sutr/1661.html", "seen": "2026-09-08", "note": "Reg 1661 leases of MTE"},
+        {"url": "https://cdtfa.ca.gov/formspubs/pub34.pdf", "seen": "2026-09-08", "note": "Vehicle Leases and Rentals section p.16 ff"}
+      ]
+    },
+    "e_bike_rentals_and_sb_1271": {
+      "value": [
+        "Class 1–3 e-bikes are not motor vehicles: no VC 14608/14609 duties, no DMV license, no registration, renters need no license (Class 3: 16+, helmet). Rental to delivery riders is unrestricted apart from ordinary GL/product exposure.",
+        "SB 1271 (Stats. 2024; H&SC 26300–26305; VC 312.5 amended): from Jan 1 2026, an electric bicycle, e-bike battery or charging system may not be sold, leased or distributed in CA unless certified by an accredited lab to ANSI/CAN/UL 2849 or EN 15194 (batteries: UL 2271); 'powered mobility devices' (which is where non-e-bike scooters/mopeds fall) to UL 2272; the lab name/logo and standard must be displayed; second-hand sales/leases exempt from the labeling duty; rental/shared fleets must comply from Jan 1 2028. Because it covers LEASE and DISTRIBUTION, every rental e-bike HMP puts into service after Jan 1 2026 and every unit it wholesales to SoCal dealers must carry the certification mark — and the battery-swap packs and chargers must too.",
+        "AB 875: any 'moped-style' unit exceeding 20 mph under motor power alone that is not a true e-bike exposes an unlicensed renter to impound."
+      ],
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1271", "seen": "2026-09-08"},
+        {"url": "https://law.justia.com/codes/california/code-hsc/division-20/chapter-23/section-26303", "seen": "2026-09-08"},
+        {"url": "https://www.bikelegalfirm.com/california-e-bike-battery-safety-sb1271", "seen": "2026-09-08", "note": "secondary — rentals by 1/1/2028"}
+      ]
+    },
+    "delivery_platform_requirements": {
+      "value": "DoorDash: 'Depending on your location, you may be able to use motorcycles, scooters, or bikes (including e-bikes)'; a valid driver's license is required when using a car; Dashers must 'maintain your own insurance, in the amounts and types required by law'; DoorDash provides up to $1M third-party liability during active deliveries. For a motorcycle/moped in LA the rider must have an M1/M2 and state-minimum insurance; a rental fleet policy that names permissive renters satisfies the 'own insurance' requirement in practice (confirm with DoorDash/Uber Eats — Uber Eats' page was not fetched; unverified). Platforms do not verify M1 endorsements — HMP's rental desk must (VC 14608).",
+      "sources": [
+        {"url": "https://help.doordash.com/dashers/s/article/Requirements-for-Dashing?language=en_US", "seen": "2026-09-08"},
+        {"url": "https://www.ridesharingdriver.com/deliver-in-your-car-vehicle-requirements-for-ubereats-postmates-doordash/", "seen": "2026-09-08", "note": "secondary"}
+      ]
+    }
+  },
+
+  "battery_swap_and_storage": {
+    "quantities": {
+      "value": "FLASH pack: 74 V 45 Ah = 3.33 kWh, ~40 lb, removable. 100 packs ≈ 333 kWh / 4,000 lb; 300 packs ≈ 1,000 kWh / 12,000 lb. Even at a compact ~0.5 cu ft per pack, 100 packs ≈ 50 cu ft — more than 3× the 15 cu ft threshold at which the 2025 California Fire Code §320 requires a permit and treats the room as a 'battery storage area'.",
+      "sources": [{"url": "https://www.hmpbikes.com/products/flash-electric-motorcycle", "seen": "2026-09-08"}]
+    },
+    "code_framework": {
+      "value": [
+        "Los Angeles enforces the LA Fire Code (LAMC Ch. 5 Art. 7) = California Fire Code + LA amendments. The 2023 LA Fire Code (based on the 2022 CFC/2021 IFC) took effect Oct 4 2023 (Ord. 187994). LAMC 57.1207 adopts CFC Section 1207 (Electrical Energy Storage Systems) in its entirety.",
+        "The 2025 California Fire Code (Title 24 Part 9, based on the 2024 IFC) took effect statewide Jan 1 2026 and adds: §320 Battery Storage (lithium-ion/lithium-metal) and §322 Powered Micromobility Devices. LA's ordinance adopting the 2025 CFC with local amendments was NOT located (UpCodes still lists the 2022-based edition) — UNVERIFIED; ask LAFD Fire Prevention Bureau which text they are enforcing for plan check in 2026. State minimums apply regardless.",
+        "LAFD Requirement No. 96 is a solar-photovoltaic-systems requirement, not a battery rule; there is no LAFD 'Requirement' specific to micromobility batteries as of the LAFD policies page. LAFD's lithium-ion page is consumer guidance (charge on non-flammable surfaces, no extension cords/power strips, away from exits). LAFD has been lobbying City Council for e-bike battery regulations (2025 press) — watch for a local ordinance."
+      ],
+      "sources": [
+        {"url": "https://lafd.org/fire-prevention/fire-code", "seen": "2026-09-08", "note": "'2023 Los Angeles Fire Code' in effect"},
+        {"url": "https://up.codes/codes/los_angeles", "seen": "2026-09-08", "note": "LA Fire Code based on 2022 CFC, Ord. 187994 eff. 10/4/2023; no 2026 edition listed"},
+        {"url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-348227", "seen": "2026-09-08", "note": "LAMC 57.1207 (403 to fetcher; from search snippet: 'Section 1207 of the CFC is adopted in its entirety')"},
+        {"url": "https://www.dgs.ca.gov/BSC/Resources/2025-Title-24-California-Code-Changes", "seen": "2026-09-08", "note": "2025 Title 24 effective 1/1/2026"},
+        {"url": "https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/LAFD-Requirement-NO-96.pdf", "seen": "2026-09-08", "note": "Req. 96 = Solar PV"},
+        {"url": "https://lafd.org/lithiumion-battery-safety", "seen": "2026-09-08"},
+        {"url": "https://www.aol.com/articles/lafd-lobbies-city-leaders-regulations-025920326.html", "seen": "2026-09-08", "note": "secondary"}
+      ]
+    },
+    "cfc_2025_section_320_battery_storage": {
+      "value": [
+        "Scope: storage of Li-ion and Li-metal batteries, with exceptions for batteries installed in devices/vehicles, in original retail packaging ≤300 Wh per unit, and temporary storage for manufacturing/repair. A 3.33 kWh swap pack is 11× the 300 Wh packaging exception — so loose swap packs are squarely in scope.",
+        "Permit required for an accumulation of more than 15 cu ft of batteries (outside the exceptions); a fire safety plan with emergency response actions for a battery fire is required.",
+        "Limited indoor storage (no dedicated room): max 15 cu ft total in open-top noncombustible containers ≤7.5 cu ft each, containers separated 3 ft (10 ft from combustibles), ≥5 ft from exits — i.e., useless for a 100–300-pack operation.",
+        "Indoor battery storage area (what 768 Ceres would need): a technical report (hazard/fire-explosion evaluation and sprinkler design basis) approved by the fire code official; separation from other uses by 2-hour fire barriers/horizontal assemblies; automatic sprinklers (or approved alternative suppression); air-aspirating smoke or radiant-energy fire detection; explosion control if the report recommends; reduced requirements if batteries are held at ≤30% state of charge.",
+        "Outdoor storage alternative: ≤900 sf per area, ≤10 ft high, ≥20 ft from buildings/lot lines (3 ft with fire-rated barrier), areas 10 ft apart, radiant-energy detection — attractive for a fenced yard, but the 9,043 sf lot is almost fully built (8,340 sf building).",
+        "Source text is the model 2024 IFC §320 as adopted by Colorado on UpCodes; California's 2025 CFC §320 is 'amended to address all battery storage regardless of the battery type' (ICC page title 'Section 320 — Battery Storage'). Obtain the CA text from the ICC free viewer (blocked to the fetcher) before design."
+      ],
+      "sources": [
+        {"url": "https://up.codes/s/lithium-ion-and-lithium-metal-battery-storage", "seen": "2026-09-08"},
+        {"url": "https://codes.iccsafe.org/s/CAFC2025P1/chapter-3-general-requirements/CAFC2025P1-Pt02-Ch03-Sec320", "seen": "2026-09-08", "note": "403 to fetcher; title confirms CA 2025 §320 'Battery Storage'"}
+      ]
+    },
+    "cfc_2025_section_322_powered_micromobility": {
+      "value": [
+        "§322.4 Battery charging areas (verified text, IFC 2024 via UpCodes): where approved, devices may be charged in a room/area where only LISTED devices using LISTED charging equipment are charged; chargers plugged directly into receptacles — 'Extension cords and relocatable power taps shall not be used'; no combustible/hazardous storage in the area; may not obstruct egress; removable batteries stored in approved cabinets or spaced ≥18 in. apart unless separated by fire-resistant material; devices spaced ≥18 in. while charging; fire detection by air-aspirating smoke or radiant-energy detectors.",
+        "§322.1–322.3 (scope threshold, storage rules) could not be retrieved — the applicability threshold (number of devices per fire area) is UNVERIFIED; assume a 100+ vehicle rental/service depot is in scope.",
+        "SB 1271 dovetails: only UL 2849/2271/2272-listed devices, packs and chargers may be charged in a §322 charging area, and only listed products may be sold/leased after 1/1/2026 — so HMP's certification status determines whether the swap wall is even permit-able."
+      ],
+      "sources": [
+        {"url": "https://up.codes/s/battery-charging-areas", "seen": "2026-09-08"},
+        {"url": "https://codes.iccsafe.org/s/IFC2024P1/chapter-3-general-requirements/IFC2024P1-Pt02-Ch03-Sec322", "seen": "2026-09-08", "note": "403 to fetcher; from search snippet"}
+      ]
+    },
+    "ess_section_1207_and_ul_9540": {
+      "value": "CFC §1207 governs stationary electrical energy storage systems; the Li-ion threshold is 20 kWh, above which permits, UL 9540 listing, UL 9540A test data, size/separation limits (e.g., 600 kWh per unit group, 3 ft spacing), sprinklers, ventilation/explosion control and a hazard mitigation analysis apply; ESS may not be in dwelling/sleeping units. A battery-swap cabinet that charges 10–30 packs (33–100 kWh) simultaneously is arguably 'stationary ESS' and LAFD may review it under §1207/UL 9540 rather than §322 — obtain the cabinet manufacturer's UL 9540 (system) or UL 2271 (pack) listings and ask LAFD which section they will apply. New for 2026: owners of EXISTING Li-ion ESS >20 kWh must submit a hazard mitigation analysis (HMA).",
+      "sources": [
+        {"url": "https://up.codes/s/lithium-ion-technology-energy-storage-systems", "seen": "2026-09-08"},
+        {"url": "https://coderedconsultants.com/insights/new-ca-fire-code-requirements-for-existing-lithium-ion-ess/", "seen": "2026-09-08", "note": "secondary — HMA for existing >20 kWh ESS from 1/1/2026"},
+        {"url": "https://fire.lacounty.gov/wp-content/uploads/2023/09/LACoFD-Guide-for-ESS-PV-and-Disconnects-Rev-3-2023-09-01-w-Appendices-SECURED.pdf", "seen": "2026-09-08", "note": "LA County FD ESS guide (County, not City) — useful template"}
+      ]
+    },
+    "permits_and_process_at_768_ceres": {
+      "value": [
+        "LAFD Fire Prevention plan check for: §320 battery storage permit (>15 cu ft), §322/§1207 charging installation, high-piled combustible storage permit if racks exceed 12 ft, and the LAFD final for the new Certificate of Occupancy.",
+        "LADBS electrical permit for dedicated circuits (no power strips), likely a service upgrade (100 packs × ~0.5–1 kW charge = 50–100 kW continuous), plus fire-rated partitions for a 2-hour battery room.",
+        "Design choices that shrink the problem: keep loose-pack inventory ≤15 cu ft in noncombustible containers (≈25 packs) and hold the rest INSIDE vehicles (excluded from §320 scope), store spares at ≤30% SOC, or use outdoor rated cabinets in the yard/loading area."
+      ],
+      "sources": [
+        {"url": "https://up.codes/s/lithium-ion-and-lithium-metal-battery-storage", "seen": "2026-09-08"},
+        {"url": "https://lafd.org/policies-and-requirements", "seen": "2026-09-08"}
+      ]
+    },
+    "insurance_implications": {
+      "value": "Property underwriters classify bulk Li-ion storage/charging as high hazard: expect requirements for sprinklers with a documented design basis, 2-hr separation, detection, no charging near egress, SOC limits and written battery-handling SOPs, and higher property/GL premiums; product-recall coverage is recommended for an importer whose name is on the pack. Battery-swap subscription adds bailee/garagekeepers exposure for customer packs.",
+      "sources": [
+        {"url": "https://ecom.insure/lithium-battery-insurance/", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://www.risk-strategies.com/blog/e-bike-courier-insurance", "seen": "2026-09-08", "note": "secondary"}
+      ]
+    }
+  },
+
+  "insurance": {
+    "coverage_stack": {
+      "value": [
+        "Garage liability (dealer premises + operations, test rides) and Dealers Open Lot (inventory physical damage) — standard powersports-dealer package.",
+        "Garagekeepers — customer motorcycles/e-bikes in the shop and warranty vehicles from SoCal dealers.",
+        "Products/completed-operations liability naming HMP as importer/brand ('If your name is on the product, or the product passes through your warehouse, you carry liability') + product recall.",
+        "Commercial auto — rental fleet form covering permissive renters (motorcycles/mopeds) + hired & non-owned auto for staff pickups.",
+        "General liability $1M/$2M (city/property-manager standard), umbrella $5M (Founder Shield: 'standard requirement' for micromobility), workers' comp, property (with Li-ion endorsement), cyber (rider PII), surety: DMV dealer bond $10k (motorcycle-only) and, if the swap program runs on city right-of-way, a performance bond."
+      ],
+      "sources": [
+        {"url": "https://foundershield.com/industry/micro-mobility/", "seen": "2026-09-08"},
+        {"url": "https://ecom.insure/lithium-battery-insurance/", "seen": "2026-09-08"},
+        {"url": "https://www.motorcyclepowersportsnews.com/protecting-your-powersports-business-sentry/", "seen": "2026-09-08"}
+      ]
+    },
+    "carriers_and_brokers": {
+      "value": [
+        "Powersports/motorcycle dealer programs: Utica National (Motorcycle & Powersports Dealers program), Sentry Insurance (powersports garage), K2 Specialty Dealer Insurance, Ellie Insurance Group, Inszone Insurance, AutoRisk (powersport dealers), MyNewMarkets listings for 'powersport dealer'.",
+        "Micromobility/shared fleets: Founder Shield (broker), Atom Mobility partners, BikeInsure (business bike fleets), Velosurance (individual e-bike policies riders can be required to carry), Risk Strategies (e-bike courier programs).",
+        "Lithium battery importer product liability: Ashlin Hadden Agency (ecom.insure) and E&S markets — expect the underwriter to ask for UL 2849/2271 certificates, recall plan and QC documentation."
+      ],
+      "sources": [
+        {"url": "https://marketing.uticanational.com/motorcycle-and-powersports-dealers-program", "seen": "2026-09-08"},
+        {"url": "https://www.k2dealerins.com/motorcycles/", "seen": "2026-09-08"},
+        {"url": "https://ellieinsurancegroup.com/dealerliability-garage-and-dealer-solutions/powersports-dealership/", "seen": "2026-09-08"},
+        {"url": "https://inszoneinsurance.com/business-insurance/industry/garage-and-dealers-insurance/power-sports-dealer-insurance", "seen": "2026-09-08"},
+        {"url": "https://www.mynewmarkets.com/search/powersport+dealer", "seen": "2026-09-08"},
+        {"url": "https://autorisk.org/powersport-dealers/", "seen": "2026-09-08"},
+        {"url": "https://foundershield.com/industry/micro-mobility/", "seen": "2026-09-08"},
+        {"url": "https://www.bikeinsure.com/fleet", "seen": "2026-09-08"},
+        {"url": "https://velosurance.com/electric-bike-insurance/", "seen": "2026-09-08"},
+        {"url": "https://www.risk-strategies.com/blog/e-bike-courier-insurance", "seen": "2026-09-08"},
+        {"url": "https://ecom.insure/lithium-battery-insurance/", "seen": "2026-09-08"}
+      ]
+    },
+    "premium_ranges": {
+      "value": [
+        "Small single-location motorcycle dealership with limited service: 'several thousand dollars annually'; multi-location with full service and high-value inventory: 'tens of thousands' (copcap journal, secondary). Drivers: sales volume, inventory value, service receipts, employees, indoor locked storage vs open lot.",
+        "E-bike rental fleets (NOT motorcycles): 15–25 bike fleet $1,200–$3,100/yr full coverage (LendControl); 20-bike fleet $1,200–$2,000 (no employees) / $1,500–$2,700 (with staff); small micromobility operators budget $500–$3,000/yr for GL + equipment (Levy Fleets). Theft loss runs 5–8% of fleet value/yr.",
+        "Motorcycle rental fleet commercial-auto and importer product liability: NO public benchmarks found — quotes required. Working assumption for modeling: $600–$1,500 per registered e-motorcycle per year for fleet liability/physical damage in LA (assumption, unverified), plus $10k–$30k/yr for importer products liability at $1M/$2M with Li-ion exposure (assumption, unverified)."
+      ],
+      "sources": [
+        {"url": "https://campaignmanagement.copcap.com/journal/motorcycle-dealership-insurance-coverage-costs-and-what-you-v6hq", "seen": "2026-09-08", "note": "secondary; page later rate-limited (429)"},
+        {"url": "https://lendcontrol.com/blog/bike-rental-insurance/", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://fleets.levyelectric.com/blog/scooter-rental-insurance-guide", "seen": "2026-09-08", "note": "secondary"}
+      ]
+    }
+  },
+
+  "employment_and_licensing_misc": {
+    "bar_registration_for_repairs": {
+      "value": "YES, BAR registration is required. BPC 9880.1(h): 'Motor vehicle' means a passenger vehicle required to be registered ... 'and all motorcycles whether or not required to be registered by the Department of Motor Vehicles'. BPC 9880.1(a): an 'automotive repair dealer' is anyone who 'for compensation, engages in the business of repairing or diagnosing malfunctions of motor vehicles'. BPC 9884.6(a): no repair activity until the Automotive Repair Dealer (ARD) registration is issued for that location. The common belief that BAR 'excludes motorcycles' is wrong — the exclusion is the other way (motorcycles are in even if unregistered). Warranty work paid by the manufacturer/distributor is 'for compensation'. Consequences: ARD registration per location ($200 initial/annual — verify current fee), Write-It-Right rules (written estimates, authorization, itemized invoices, return of parts), BAR sign. E-bikes are not 'motor vehicles' under BAR's definition (they are bicycles under VC 312.5), so e-bike-only repair is outside BAR.",
+      "sources": [
+        {"url": "https://codes.findlaw.com/ca/business-and-professions-code/bpc-sect-9880-1/", "seen": "2026-09-08"},
+        {"url": "https://law.justia.com/codes/california/code-bpc/division-3/chapter-20-3/article-1/section-9880-1", "seen": "2026-09-08"},
+        {"url": "https://www.bar.ca.gov/pdf/ard-reg-app-frm.pdf", "seen": "2026-09-08", "note": "ARD application instructions"},
+        {"url": "https://www.bar.ca.gov/wir", "seen": "2026-09-08", "note": "Write It Right"}
+      ]
+    },
+    "sales_tax_on_vehicle_sales": {
+      "value": [
+        "District tax follows the vehicle, not the store: CDTFA Pub 34 — 'Whether or not you are liable for a special district tax rate will depend on where the vehicle is registered'; 'If you sell or lease a vehicle to a customer who registers the vehicle in a special tax district, you are considered engaged in business in the district' and must collect that district's rate. An LA store selling to an Orange County or Riverside buyer charges that buyer's registration-address rate (use CDTFA's address lookup).",
+        "License/registration fees collected for DMV are not taxable unless over-collected; documentation fees ARE taxable; separately stated optional insurance/financing charges are not; vehicles sold and delivered outside California for use outside CA are exempt with documentation.",
+        "Sales to SoCal dealers for resale: nontaxable with a valid resale certificate; report on the Wholesale Report of Sale where applicable.",
+        "Motorcycles are excluded from the Car Buyer's Bill of Rights contract-cancellation option rules."
+      ],
+      "sources": [
+        {"url": "https://cdtfa.ca.gov/formspubs/pub34.pdf", "seen": "2026-09-08", "note": "Oct 2025 edition, pp. 1–15, 34–36"},
+        {"url": "https://cdtfa.ca.gov/industry/motor-vehicle-dealers/industry-topics.htm", "seen": "2026-09-08"},
+        {"url": "https://cdtfa.ca.gov/formspubs/pub44/", "seen": "2026-09-08"}
+      ]
+    },
+    "dmv_fees_collected_at_sale": {
+      "value": "The dealer collects registration, vehicle license fee, CHP, county/district and plate fees and the $7 BPA transaction fee at delivery, prints the TLP/report of sale, and remits through the BPA provider within 20 days (new) — VC 4456; penalties for late filing cannot be charged to the buyer (VC 4456.1). Dealer document processing fee is capped by VC 4456.5 (currently ~$85 for BPA dealers — verify amount) and is taxable.",
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=4456", "seen": "2026-09-08"},
+        {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/business-partner-automation-program/", "seen": "2026-09-08"}
+      ]
+    },
+    "song_beverly_lemon_law": {
+      "value": [
+        "Civil Code 1793.22(e)(2): 'new motor vehicle' for the Tanner presumption (18 months/18,000 miles; 2 attempts for safety defects, 4 attempts, or 30 days out of service) 'does not include a motorcycle'. So the Tanner presumption and its vehicle-specific procedures do not apply to FLASH/MK.II.",
+        "BUT motorcycles remain 'consumer goods' under Song-Beverly (CC 1790 et seq.): with an express warranty (HMP: 1 yr/10,000 mi vehicle and battery, 70% capacity floor) the manufacturer must, after a reasonable number of repair attempts, replace or refund (CC 1793.2(d)), must complete repairs within 30 days (CC 1793.2(b)), and — critically for an importer — must 'maintain in this state sufficient service and repair facilities reasonably close to all areas in which its consumer goods are sold' or designate independent repair facilities (CC 1793.2(a)(1)). A Davis/SF/LA footprint plus designated SoCal dealers is exactly how a small manufacturer satisfies this. Attorney's fees are recoverable by prevailing consumers.",
+        "E-bikes and mopeds are consumer goods too — same rules."
+      ],
+      "sources": [
+        {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1793.22", "seen": "2026-09-08"},
+        {"url": "https://mcmillanlawgroup.com/california-lemon-law/vehicle-types/motorcycles/", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://www.hmpbikes.com/products/flash-electric-motorcycle", "seen": "2026-09-08", "note": "warranty terms"}
+      ]
+    },
+    "prop_65": {
+      "value": "Prop 65 warnings are required for consumer-product exposures to listed chemicals (lead/brass in fittings, phthalates in grips/cables, etc.). OEHHA adopted tailored safe-harbor warnings for 'passenger or off-highway motor vehicle parts' (27 CCR 25607.50–25607.53, effective Jan 1 2025) and revised short-form warnings (effective Jan 1 2025, two-year transition). Vehicle-level safe-harbor warnings (owner's-manual + label method, 27 CCR 25607.28–.29) exist for passenger/off-highway motor vehicles — whether a motorcycle qualifies under that definition was NOT verified (OEHHA page did not render). Practical: put the vehicle warning in the owner's manual and on a label, put the parts warning on packaging/website for accessories and batteries; e-bikes use the general consumer-product warning.",
+      "sources": [
+        {"url": "https://www.crowell.com/en/insights/client-alerts/changes-to-prop-65-warning-requirements-on-the-horizon", "seen": "2026-09-08", "note": "secondary — 25607.50–.53"},
+        {"url": "https://oehha.ca.gov/sites/default/files/media/2025-01/fsor112624approval_0.pdf", "seen": "2026-09-08", "note": "OEHHA FSOR, approved 11/26/2024"},
+        {"url": "https://www.morganlewis.com/pubs/2024/12/california-updates-proposition-65s-short-form-safe-harbor-warnings", "seen": "2026-09-08", "note": "secondary"},
+        {"url": "https://www.p65warnings.ca.gov/fact-sheets/passenger-or-highway-motor-vehicles", "seen": "2026-09-08", "note": "page did not render — unverified"}
+      ]
+    },
+    "employment_notes": {
+      "value": "Vehicle salespersons need a DMV salesperson license (see dealer_license); mechanics need no individual license but the shop needs ARD registration; delivery-rider rental agents must be trained on VC 14608 license checks; standard CA employer items (EDD, workers' comp, LA minimum wage) not researched here.",
+      "sources": []
+    }
+  },
+
+  "timeline_and_cost": {
+    "sequenced_checklist": [
+      {"week": "0", "step": "Sign lease with a zoning/permit contingency; order Phase-0 items in parallel: DMV Distributor license (importing entity), CDTFA seller's permit sub-location, LA BTRC, $10k motorcycle-dealer bond (OL 25B), Live Scans for all owners, FBN if needed.", "cost_usd": "Bond premium $100–$300; Live Scan ~$75/person; BTRC $0; seller's permit $0; Distributor $101 + plates"},
+      {"week": "0–2", "step": "Pre-application meeting with LA City Planning (confirm IX2 'Motor Vehicle Sales & Rental: Standard Vehicle P*' covers motorcycles/mopeds and short-term rental; confirm 200-ft separation for Light vehicle services; confirm Chapter 1A screening standards) and with LAFD Fire Prevention (which CFC text applies; §320/§322/§1207 path for the swap wall).", "cost_usd": "$0–$2,000 (expediter)"},
+      {"week": "1–4", "step": "Architect/engineer: change-of-occupancy set (S → M/B for showroom/office, keep S-1 for parts/warehouse), ADA path of travel, electrical load for chargers, battery storage room (2-hr barriers, sprinkler design basis, detection) or outdoor cabinets; file with LADBS via ePlanLA and LAFD.", "cost_usd": "$15,000–$60,000 design + $10,000–$40,000 permit/plan-check fees (estimate)"},
+      {"week": "2–4", "step": "Install permanent exterior sign, wall off the DMV office, stripe/sign the exclusive display area, get a business phone line, photograph per DMV procedure; file the DMV dealer application (OL 248N packet incl. OL 124 from the HMP distributor entity) at the LA Occupational Licensing Inspections office.", "cost_usd": "DMV $175 + $1 + $425 NMVB + plates ≈ $800–$900; sign/office $3,000–$15,000"},
+      {"week": "3–8", "step": "File BAR Automotive Repair Dealer registration for the location; bind insurance (garage/DOL/garagekeepers/products/fleet auto/GL/umbrella/property with Li-ion endorsement).", "cost_usd": "BAR ~$200; insurance deposits typically 25% of annual premium"},
+      {"week": "5–10", "step": "DMV inspector site inspection → temporary operating permit. Immediately enroll in BPA through a first-line provider (ADR/AVRS/Dealertrack/MVSC) and order TLP paper.", "cost_usd": "BPA $305 + provider setup ~$500–$1,500 + $100–$300/mo (secondary)"},
+      {"week": "8–14", "step": "Building permit issued; construction of office/showroom/battery room and electrical; LAFD inspections; new Certificate of Occupancy.", "cost_usd": "$40,000–$200,000 depending on battery-room scope (estimate)"},
+      {"week": "10–16", "step": "Permanent DMV dealer license mailed (2–6 weeks after inspection); BPA live. FIRST LEGAL MOTORCYCLE SALE with eROS/TLP: earliest ≈ week 10 on the temporary permit if BPA is live, realistically week 12–16.", "cost_usd": "—"},
+      {"week": "6–12", "step": "FIRST LEGAL MOPED/MOTORCYCLE RENTAL: does not need the dealer license — needs registered units (title in the fleet entity; dealer plates cannot be used for rentals), the fleet commercial-auto policy, a VC 14608/14609-compliant rental agreement and license-check SOP, BTRC rental class, and SB 1271-certified batteries/chargers (e-bikes and swap packs). Earliest ≈ week 6–8 for e-bikes (no registration needed), week 8–12 for motorcycles (registration of the fleet, which itself tests the VIN/EPA/CARB path).", "cost_usd": "Registration ≈ $300–$400 per motorcycle first year (VLF on ~$5k value + fees; estimate); moped $23 one-time"},
+      {"week": "12–20", "step": "Battery-swap wall commissioning under the LAFD permit (UL 9540/2271 listings, detection, SOC procedures, fire safety plan); staff training; open to SoCal dealers as warranty base (Song-Beverly CC 1793.2(a)(1)).", "cost_usd": "$20,000–$100,000 for cabinets/electrical (estimate)"}
+    ],
+    "total_startup_estimate_usd": "Regulatory/licensing only: $5,000–$20,000. With tenant improvements, fire-code battery room/charging infrastructure, and first-year insurance: $100,000–$400,000 (wide range driven by battery-storage design and electrical service). Rent $8,000/mo is outside this.",
+    "top_5_things_that_could_delay_by_months": [
+      "1. VIN/WMI or EPA Certificate of Conformity gaps: if the factory is not on NHTSA's Part 566 list with an SAE WMI, or there is no EPA CoC for the ZEM 'engine family', DMV's VINA will route FLASH/MK.II into the 'direct import' path, where motorcycles cannot be converted — every sale is stuck until NHTSA/EPA paperwork is fixed (months).",
+      "2. Missing Distributor license / OL 124: a new-vehicle dealer application without a Certificate of Proposed Franchise from a DMV-licensed distributor/manufacturer is incomplete and returned; the Distributor license must be obtained first (parallel-file on day 0).",
+      "3. Battery storage/charging fire-code design: 100–300 loose 3.33 kWh packs trigger a §320 permit with a technical report, 2-hour separation, sprinkler design basis and detection (and possibly §1207/UL 9540 review for swap cabinets); LAFD plan check plus construction can run 3–6 months. Mitigate by keeping packs in vehicles/≤15 cu ft loose or in outdoor rated cabinets at opening.",
+      "4. Change-of-occupancy Certificate of Occupancy at LADBS (S → M) with ADA path-of-travel, restroom and accessible-parking upgrades in a 2015 warehouse: 4–10 weeks after construction, longer if plan-check corrections cycle.",
+      "5. SB 1271 certification: if the e-bikes, e-moped batteries, swap packs or chargers lack UL 2849/2271/2272 (or EN 15194) accredited-lab certification and labels, they cannot be sold, leased or distributed in CA after 1/1/2026 — recertification through an accredited lab takes months; also the fire code only allows LISTED devices/chargers in a §322 charging area."
+    ],
+    "sources": [
+      {"url": "https://www.dmv.ca.gov/portal/uploads/2020/06/ol248a.pdf", "seen": "2026-09-08"},
+      {"url": "https://www.dmv.ca.gov/portal/vehicle-industry-services/business-partner-automation-program/", "seen": "2026-09-08"},
+      {"url": "https://www.oceanpermits.com/blog/certificate-of-occupancy-los-angeles", "seen": "2026-09-08"},
+      {"url": "https://up.codes/s/lithium-ion-and-lithium-metal-battery-storage", "seen": "2026-09-08"},
+      {"url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240SB1271", "seen": "2026-09-08"}
+    ]
+  },
+
+  "must_ask_hmp": [
+    "1. Which legal entity holds (or has applied for) a California DMV Vehicle Dealer license and/or Distributor license — Mandala Global LLC, HMP Bikes, 415 eBikes? Give OL numbers. Has any HMP FLASH or Lightning MK.II been titled/registered by the CA DMV yet (send 2–3 redacted registration cards and any DMV incomplete-application letters)? What did 'California temporary-tag support planned for August 2026' mean operationally?",
+    "2. Who is the NHTSA Part 566 'manufacturer' of record for FLASH and MK.II (factory name, WMI, US agent), and who holds the EPA Certificate of Conformity (certificate number, engine-family name)? Whose name is on the FMVSS certification label — the factory or HMP?",
+    "3. Will the LA store sell ONLY motorcycles (and mopeds/e-bikes), or also used trade-ins/other vehicles? (Determines $10,000 vs $50,000 bond and whether the Dealer Education Program applies.) Will it be a branch of the existing licensee or a new entity?",
+    "4. Which rental products are intended for delivery riders: Class 2 INNO/LIVA (no license), the Lightning 3000 'electric moped' (what is its governed top speed and rated power — is it a VC 406 moped ≤30 mph/<4 hp, or a motorcycle?), or MK.II/FLASH (M1 required)? What share of target riders hold an M1?",
+    "5. For SB 1271: do the INNO/LIVA e-bikes, Lightning 3000, FLASH/MK.II packs (74 V 45 Ah), swap packs and chargers carry accredited-lab UL 2849 / UL 2271 / UL 2272 (or EN 15194) certificates and labels? Send the certificates.",
+    "6. Battery-swap design: how many loose packs on site at once (target 100 vs 300), what cabinet/charger hardware (UL 9540 / UL 2271 listings), charge power per cabinet, and will packs be stored inside vehicles, in cabinets, or on shelves? Is there a yard/loading area at 768 Ceres for outdoor rated cabinets?",
+    "7. Does the 2015 building have an automatic sprinkler system, and what is its design density/hazard classification? What is the electrical service size (amps/phase)? Is there an existing Certificate of Occupancy and for what use group?",
+    "8. Rent-to-own mechanics: are rentals month-to-month or ≥1-year leases, and are ex-rental units resold to the lessee or to the public? (Drives lessor-retailer vs dealer path, report-of-sale and sales-tax treatment, NMVTIS reports.)",
+    "9. Warranty program for SoCal dealers: who pays for warranty labor (HMP as distributor?), which entity signs dealer agreements (VC franchise/New Motor Vehicle Board implications), and will LA perform repairs for compensation (BAR ARD registration)?",
+    "10. Insurance in force today in SF/Davis (carrier, forms: garage/DOL/products/fleet auto, limits, Li-ion exclusions) and any loss history — needed to get LA quotes and to know whether products liability names HMP as importer.",
+    "11. Does HMP want the LA store to be a New Motor Vehicle Board-registered franchised dealership of the HMP distributor (OL 124), or an outlet owned by the distributor itself (VC 11713.3 restrictions on manufacturer/distributor-owned dealerships may apply — not researched; ask counsel)?"
+  ]
+}
