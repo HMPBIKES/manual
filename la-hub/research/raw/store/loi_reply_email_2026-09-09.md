@@ -13,7 +13,7 @@ Thank you for the proposal dated September 8. Mandala Global LLC is prepared to 
 
 **6 / 11. Abatement and Monies Due.** Abatement shall run from the actual Delivery Date. The month's Base Rent paid at execution shall be applied to Month 4 (the first non-abated month). Tenant may access the Premises during the abatement period to construct its improvements.
 
-**9. Expenses.** Tenant's share of Operating Expenses over the 2026 Base Year shall exclude capital expenditures and any increase in real property taxes resulting from a sale or transfer of the Premises; controllable expenses shall not increase by more than 5% per year on a cumulative basis. Please send the "Master Lease" form referenced in Item 9 so that we can review it before execution.
+**9. Expenses.** Base Rent shall be Full Service Gross with no operating expense pass-throughs. Alternatively, if Landlord requires a Base Year structure, Tenant's share of Operating Expenses over the 2026 Base Year shall exclude the cost of any repair or replacement that is Landlord's obligation under Item 14, capital expenditures and capital repairs, roof and structural work, any cost reimbursed by insurance or warranty, and any increase in real property taxes resulting from a sale or transfer of the Premises; controllable expenses shall not increase by more than 5% per year on a cumulative basis. Please send the "Master Lease" form referenced in Item 9 so that we can review it before execution.
 
 **12. Use.** Warehousing, distribution, retail sales and display, rental and leasing, and service and repair of electric motorcycles, mopeds, scooters, bicycles and related accessories; storage, charging and swapping of lithium-ion batteries; and general office and other related lawful uses. Landlord acknowledges that the Permitted Use includes lithium-ion batteries and agrees that such use shall not constitute a breach of any hazardous-materials provision of the Lease.
 
@@ -61,7 +61,7 @@ Jake、David：
 
 **6 / 11. 免租与签约付款。** 免租期自实际交房日起算。签约时支付的一个月基础租金冲抵第 4 个月（第一个非免租月）。免租期内承租方可进场施工。
 
-**9. 费用。** 承租方分摊的、超出 2026 基准年的运营费用，不包括资本性支出，也不包括因物业出售或转让导致的房产税增加；可控费用的年涨幅累计不超过 5%。请提供第 9 条所指的 "Master Lease" 范本，以便签约前审阅。
+**9. 费用。** 基础租金为全包毛租（Full Service Gross），不另行分摊任何运营费用。如业主坚持采用基准年结构，则承租方分摊的、超出 2026 基准年的运营费用，不得包括：业主按第 14 条应自行承担的维修或更换费用、资本性支出和资本性维修、屋顶和结构工程、已由保险或质保赔付的费用、以及因物业出售或转让导致的房产税增加；可控费用的年涨幅累计不超过 5%。请提供第 9 条所指的 "Master Lease" 范本，以便签约前审阅。
 
 **12. 用途。** 电动摩托车、轻便摩托、滑板车、自行车及相关配件的仓储、配送、零售销售与展示、租赁、维修保养；锂离子电池的储存、充电与更换；以及一般办公和其他相关合法用途。业主确认允许用途包含锂离子电池，并同意该用途不构成对租约中任何危险品条款的违反。
 
