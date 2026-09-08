@@ -9,6 +9,8 @@ Jake, David,
 
 Thank you for the proposal dated September 8. Mandala Global LLC is prepared to move forward on 768 Ceres Avenue on the economic terms proposed (Base Rent of $8,020.85 per month Industrial Gross, 3% annual adjustments, three months of abated rent, two months' security deposit and the option to extend), subject to the revisions below. Item numbers follow your proposal. Please treat this as our counter-proposal; on agreement we are ready to proceed directly to lease documentation.
 
+A word on the length of this list. Our approach is to address the worst cases up front and leave nothing blank, which can make a first read feel heavier than it needs to be. In our experience the best long-term business relationships come from clear boundaries set at the start: taking care of every cause now is far easier for both sides than arguing over effects later. None of the items below changes the economics you proposed; they define how the two sides work together.
+
 **4. Lease Term.** Thirty-six (36) months commencing on the Delivery Date (which shall be no earlier than five (5) business days after mutual execution of the Lease), with Months 1–3 fully abated. Tenant shall have a one-time right to terminate the Lease effective at the end of Month 24 upon ninety (90) days' prior written notice and repayment of the unamortized abated rent and brokerage commission.
 
 **6 / 11. Abatement and Monies Due.** Abatement shall run from the actual Delivery Date. The month's Base Rent paid at execution shall be applied to Month 4 (the first non-abated month). Tenant may access the Premises during the abatement period to construct its improvements.
@@ -62,6 +64,8 @@ Best regards,
 Jake、David：
 
 感谢 9 月 8 日的提案。Mandala Global LLC 愿意按提案中的经济条件推进 768 Ceres Avenue（月基础租金 $8,020.85，工业毛租；每年递增 3%；三个月免租；两个月押金；一次续约选择权），但以下列修改为前提。条款编号沿用你们的提案。请将本邮件视为我方的反提案；双方达成一致后，我们可以直接进入正式租约文本。
+
+关于这份清单的长度，说明一句。我们的做法是把最坏的情况在一开始就讲清楚，不留空白，第一眼看上去会显得比实际更重。但按我们的经验，最好的长期合作都来自一开始就划清的边界：现在照顾好每一个"因"，远比日后为每一个"果"争执要容易，对双方都是如此。下面各项都不改变你们提出的经济条件，它们只是定义双方如何合作。
 
 **4. 租期。** 三十六（36）个月，自交房日起算（交房日不早于租约双方签署后第 5 个工作日），第 1–3 个月全额免租。承租方有一次性终止权：提前九十（90）天书面通知，可于第 24 个月末终止租约，代价为退还尚未摊销的免租金额和经纪佣金。
 
