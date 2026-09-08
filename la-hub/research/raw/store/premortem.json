@@ -1,0 +1,467 @@
+{
+  "meta": {
+    "title": "Pre-mortem: HMP Los Angeles store at 768 Ceres Ave (sales-led thesis)",
+    "date": "2026-09-08",
+    "role": "designated skeptic",
+    "thesis_under_test": "Rental is only part of it. The store is also to SELL FLASH and Lightning MK.II; one LA location can cover Santa Barbara, San Diego and surrounding areas as a dealer/service base; FLASH is one of very few $6,000-class 75 mph products in the US; it will sell better in Southern California.",
+    "site": "768 Ceres Ave, Los Angeles 90021 (Warehouse District, 1-2 blocks south of the Skid Row boundary at 7th St); 8,443 sf built 2015, of which roughly 3,000-3,600 sf is built-out HVAC office; lot 9,091 sf (about 650 sf outdoors); now quoted at $8,000/mo (down from $10,000 listing; LA industrial asking rents fell 32% over 36 months per CBRE Q2 2026).",
+    "inputs_reused_not_redone": [
+      "la-hub/00-research-plan.md (kill criteria, regulatory matrix, 8 pre-lease tests)",
+      "la-hub/research/03-market-size.md (five-district two-wheel couriers ~740 daily active; SOM 40 at M12, 70-105 at M24)",
+      "la-hub/research/04-location-coverage.md (768 Ceres scores 5.1/10, last of 11 scored sites; 1-mile coverage good, falls off beyond 1.5 mi; robbery density 9x citywide within 0.5 mi; Reddit voice on Skid Row uniformly negative)",
+      "la-hub/research/raw/critics/*.json and raw/scouts/*.json (SF transferability, regulation, site safety, unit economics, HMP footprint, competitors, theft/insurance, 768 Ceres listing)"
+    ],
+    "web_checks_run": 10,
+    "key_external_facts": [
+      "SF success mechanism (Gazetteer SF 2026-04): 600+ Class 2 INNO e-mopeds by April 2026 sold as a $2,500 delivery package or ~$380/mo rent-to-own to a dense immigrant courier community (Nepali riders quoted; 500-member Bay Area WeChat group), no license/registration/insurance needed, shop inside the delivery zone, founder Peter Chu personally present; swap stations only launched June 2026. https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets",
+      "Hollywood Electrics (901 N Fairfax, West Hollywood), founded 2009 and once the #1 Zero dealership in the world, is now CLOSED (Yelp listing updated June 2026). It is the closest comparable to 'an LA specialty electric-motorcycle store'. https://www.yelp.com/biz/hollywood-electrics-west-hollywood ; https://laincubator.org/hollywood-electrics-1-in-the-world/ ; https://www.electricmotorcycleforum.com/boards/index.php?topic=12821.0",
+      "E-moto market contraction is real but segmented: Energica liquidated (2025), Cake bankrupt (Feb 2024), Sondors in receivership (late 2023, Metacycle never street-legal), LiveWire reported ~33 units in Q1 2025 (-72% YoY), European e-moto sales -29.7% (2023), -6.8% (2024), -12.4% (2025). Yet Zero grew retail sales in 2025, added 40% more North American dealers (250+ global points) on the strength of cheaper models and unveiled the LS1 scooter for MY2026. Premium collapsed; the cheap end is where the survivors are moving. https://www.revzilla.com/common-tread/riding-the-current-electric-motorcycle-brands-sink-and-soar ; https://evrider.tv/ev-motorcycle-brand-energica-annouces-bankruptcy/ ; https://www.notebookcheck.net/End-of-road-for-CAKE-as-Swedish-electric-motorcycle-startup-files-for-bankruptcy.800170.0.html ; https://electrek.co/2024/05/12/failed-sondors-metacycle-motorcycle-was-never-street-legal-reveals-employee/ ; https://powersportsbusiness.com/news/electric/2026/02/05/zero-caps-2025-with-impressive-sales-surge-and-dealer-expansion/ ; https://thepack.news/zero-motorcycles-unveils-the-all-new-ls1-scooter-lompico-concept-and-a-refreshed-model-year-2026/",
+      "FLASH price/spec peer set: Ryvid Outset $5,995 (75 mph, 4.3 kWh, Irvine CA, sold online, through Sam's Club and dealers), Ryvid Anthem $6,495, CSC RX1E $8,495 (80 mph, CSC is in Azusa, LA County, DTC), Naxeon I AM ~$7,500-8,500. FLASH at $4,799-5,999 with 6.6 kWh is the cheapest per kWh and the only maxi-scooter format. https://www.themanual.com/auto/ryvid-outset-electric-motorcycle/ ; https://ryvid.com/ ; https://electrek.co/2023/07/26/csc-rx1e-electric-motorcycle-complete-review-the-first-low-cost-80-mph-e-moto/ ; https://www.theautopian.com/this-new-affordable-electric-scooter-is-sold-in-america-goes-75-mph-and-costs-less-than-6000/",
+      "SoCal e-moto dealer channel exists but is thin and churning: Zero dealers in San Diego County (Onyx Moto; Moto Forza Escondido); Triumph San Diego stopped selling Zero but still services it. No Ryvid or CSC dealer found in Santa Barbara or San Diego in this pass. https://onyxmoto.com/zero-motorcycles-dealer/ ; https://triumphsandiego.com/bikes/zero.php",
+      "Tariffs: Section 301 25% on motorcycles (List 2) and e-bikes; IEEPA fentanyl 10% + reciprocal 10% on China until 2026-11-10 (e-bikes total ~45%); Section 301 on lithium-ion EV batteries 25% from 2026; a new Section 301 round hit dozens of countries from 2026-07-24. Landed-cost volatility is a live risk with a November 2026 cliff. https://www.peopleforbikes.org/news/2026-bike-industry-tariff-updates ; https://tariffwise.co/news/section-301-tariffs-2026/ ; https://oerus.com/oerus-blog/2026/7/24/new-us-tariffs-just-hit-the-bike-industry-heres-a-quick-breakdown",
+      "CA DMV dealer licensing: OL 12 application, 6-hour pre-licensing course, exam, Live Scan, place-of-business inspection, $10,000 bond for motorcycle-only dealers; realistic 60-120 days from complete application (CVC 11704 allows DMV 120 days). https://www.bryantsuretybonds.com/blog/motorcycle-dealer-license-in-california ; https://leasingstack.com/blog/how-to-get-a-dealer-license-2026",
+      "Theft: LA-Long Beach-Anaheim led all metros with 53,911 vehicle thefts in 2025 (8% of US total); 44,564 motorcycles stolen nationally in 2025 with 41% recovered; LA 'motorized device' (e-bike/e-scooter) thefts 1,046 in 2024 (+22%). https://www.nicb.org/news/news-releases/recreational-vehicle-thefts-declined-2025-most-remain-unrecovered ; https://www.valuepenguin.com/motor-vehicle-theft-statistics ; https://xtown.la/2025/02/27/electric-scooter-thefts-continue-to-climn-in-los-angeles-in-2024/",
+      "HMP product/support reputation: press launch coverage is strong (Electrek, Autopian, New Atlas, TechTimes, Transport Evolved) but there is no independent long-term reliability data; the Lightning is a rebadged Yuyuan MKK per forum users; warranty is 1 yr/10,000 mi vs the 2-yr vehicle / 5-yr battery incumbents offer; support model is video-call + shipped part + technician travel. https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/ ; https://www.transportevolved.com/2026/08/25/nikkis-got-another-lightning-meet-the-hmp-electric-motorcycle/ ; https://endless-sphere.com/sphere/threads/hmp-lightning-yuyuan-mkk.128978/"
+    ],
+    "fixed_cost_frame_used": "Rent $8,000 (if full service; add $1.7-3.4k if NNN) + 2-4 staff at LA wages with burden $12-22k + insurance, security, utilities, card fees $3-6k = $23-36k/month. At a FLASH gross margin of roughly $1,000-1,700/unit after ~45-50% duty on a China-origin unit (ESTIMATE; HMP has the real landed cost), the store must generate 15-30 INCREMENTAL motorcycle sales per month (not web orders redirected to the store) to cover fixed cost. LiveWire sold ~33 units nationally in Q1 2025; the world's #1 Zero dealer in LA closed."
+  },
+
+  "failure_premortem": {
+    "framing": "It is September 2028. The 768 Ceres store closed after 18-24 months. Listed in order of judged probability. 'Breaks' names the founder assumption each cause falsifies.",
+    "causes": [
+      {
+        "rank": 1,
+        "cause": "The store never produced enough incremental motorcycle sales to cover $25-35k/month of fixed cost; it mostly re-routed web orders that would have shipped for $350 anyway.",
+        "mechanism": "hmpbikes.com already sells to all of California with $350 freight and $0 dealer prep. A store adds test rides, walk-ins and pickup, but the buyer who found HMP through Electrek or TikTok buys online. LA-County 'store' sales are counted as store success while web sales to LA ZIPs fall by the same amount. Net new units run 5-12/month, not the 15-30 needed; the P&L shows the store as a $15-25k/month marketing expense with no measurable lift in SoCal share.",
+        "early_warning_indicator_90d": "Cannibalization ratio: (store-attributed SoCal units) vs (hmpbikes.com units shipped to SoCal ZIPs in the same 90 days) compared with the 6 months before opening. Fail if total SoCal units per month rise by less than 10 units over the pre-opening baseline while store units exceed 10 (i.e. the store is moving the channel, not the market). Also: walk-ins per week < 15 and test rides per week < 8.",
+        "probability": "high",
+        "breaks": "'The store is to SELL FLASH and MK.II' (a DTC brand does not need a showroom to sell; it needs one only if the showroom creates buyers who would not otherwise buy)."
+      },
+      {
+        "rank": 2,
+        "cause": "Wrong customer, wrong address: the 75 mph M1-licensed commuter does not drive to a produce-district warehouse next to Skid Row to test ride, and the test ride itself was bad.",
+        "mechanism": "SF's 1,000 buyers were couriers who walked in because the shop was inside their work zone and needed no license. The FLASH buyer is a licensed motorcyclist or scooter commuter who lives in the Valley, Westside, OC or South Bay, shops on weekends, compares against a Honda PCX/ADV at a Honda dealer, and expects a clean showroom with parking. Ceres Ave has no transit, ~650 sf of outdoor space, produce trucks until noon, empty dark streets after 6pm, and a demo route that runs through or beside Skid Row. Every rider forum and Reddit thread describes the area as a place to leave quickly. Weekend traffic is 2-5 visitors/day; conversion on a test ride that starts at 8th & Ceres is lower than one that starts at a partner dealer in Irvine.",
+        "early_warning_indicator_90d": "Weekend footfall and origin: count visitors Sat/Sun and log home ZIP and license class. Fail if < 10 visitors per weekend day by week 8, if < 40% hold an M1, or if > 30% of test-ride feedback forms mention the area/route. Also: Google Business Profile 'requests for directions' < 100/month.",
+        "probability": "high",
+        "breaks": "'FLASH will sell better in SoCal, which is why I want a store there' (the SoCal buyer may exist; 768 Ceres is where couriers are, not where that buyer is)."
+      },
+      {
+        "rank": 3,
+        "cause": "Cash burn plus founder attention split: LA lost $20-30k/month for 12+ months, the founder commuted Davis-SF-LA, and SF growth stalled in the same window.",
+        "mechanism": "SF's ramp was built on the founder being physically present (Gazetteer profile; rider quotes; WeChat community). LA opens 380 miles away with 2-4 hired staff and no community. The founder splits weeks; SF's new-customer rate (already sensitive to 2025-26 immigration enforcement and falling app pay per the transferability critique) slips 20-30%; LA is not yet self-sustaining; the company is funding two sub-scale locations from one balance sheet. Cumulative LA loss of $300-500k arrives before any evidence that a store sells motorcycles, and the lease (even at 24 months) is still $100-190k of remaining obligation when the decision to close is made.",
+        "early_warning_indicator_90d": "Monthly LA burn vs plan and SF new-customer count vs trailing-6-month average. Fail if LA burn > $30k/month at day 90 with < 10 incremental units, OR SF new customers fall > 15% below trailing average in the first quarter after opening. Also: founder days on-site in SF < 3/week.",
+        "probability": "high",
+        "breaks": "'Rental is only part of it' (implicitly: the sales line will carry the fixed cost fast enough that the second location does not starve the first)."
+      },
+      {
+        "rank": 4,
+        "cause": "The 'dealer/service base for SB and SD' never materialized: no dealers signed and the service radius was unworkable from DTLA.",
+        "mechanism": "'Dealer base' requires dealers. With hmpbikes.com at $4,999 and $0 dealer prep, no powersports dealer can add its 15-20% margin without being undercut by the manufacturer's own site, so dealers decline or demand exclusivity and MAP pricing HMP has not built. Santa Barbara is ~95 miles and San Diego ~120 miles from 768 Ceres; a FLASH owner in SD will not ride 2.5 hours for warranty work and a DTLA warehouse is the wrong place to dispatch a service van from (I-5/US-101 traffic through downtown). The store therefore serves LA County only, and the regional argument used to justify 8,443 sf evaporates.",
+        "early_warning_indicator_90d": "Signed dealer agreements and out-of-county service tickets. Fail if 0 dealer LOIs by day 90 (target 3 across OC/SD/SB), if < 10% of service tickets originate outside LA County, or if the mean drive time to warranty jobs exceeds 90 minutes.",
+        "probability": "high",
+        "breaks": "'One location in LA can also cover Santa Barbara, San Diego and surrounding areas as a dealer/service base.'"
+      },
+      {
+        "rank": 5,
+        "cause": "A product-quality or support failure on a new Chinese-built brand went viral and froze SoCal sales for two quarters.",
+        "mechanism": "FLASH shipped in July 2026; there is no 12-month field history, no independent long-term test, a 1-yr/10,000-mile warranty against 2-yr/5-yr incumbents, and parts continuity that depends on an OEM (Lightning is a rebadged Yuyuan MKK). SoCal duty cycles (freeway at 70+ mph, 100 F heat, 6.6 kWh packs cycled daily) surface controller, BMS, connector and ABS faults faster than SF's 20 mph courier fleet did. The LA store becomes the physical place where unhappy owners show up; a backlog of 20-40 open tickets and 6-8 week parts waits produce Yelp/Reddit/YouTube posts ('Sondors 2.0'), and press that launched the product turns. Buyers who were comparing to a Honda PCX stop.",
+        "early_warning_indicator_90d": "Warranty claims per 100 units delivered in SoCal, median days-to-close, and parts backorder count. Fail if > 15 claims per 100 units in the first 90 days, median close > 14 days, or any single safety-related fault (brakes/ABS, battery thermal, throttle) appears twice. Also: Google/Yelp rating < 4.3 by day 90.",
+        "probability": "medium",
+        "breaks": "'Sell FLASH and MK.II is what we want to focus on' (focus on a product with no field record makes the store hostage to that record)."
+      },
+      {
+        "rank": 6,
+        "cause": "Tariff and landed-cost shock erased the per-unit margin the store was supposed to live on.",
+        "mechanism": "China-origin motorcycles already carry Section 301 (25%) plus IEEPA/reciprocal layers, with a scheduled 2026-11-10 expiry of the current 10%+10% China arrangement and a 25% Section 301 rate on lithium-ion EV batteries from 2026. A 10-20 point move raises landed cost $300-600 on a FLASH and $150-300 on a pack; HMP's price ladder ($4,799-5,999) is anchored publicly by press coverage and cannot be lifted without killing the '$6k class' story. Per-unit gross margin falls from ~$1,000-1,700 to $500-1,000, which doubles the break-even unit count of a fixed-cost store.",
+        "early_warning_indicator_90d": "Landed cost per FLASH/MK.II/pack on each inbound container vs the cost used in the store plan; effective duty rate. Fail if landed cost rises > 8% within the first two containers or if gross margin per unit sold at the store falls below $900.",
+        "probability": "medium",
+        "breaks": "'FLASH is one of very few $6,000-class products' (the price class is a tariff-dependent fact, not a product fact)."
+      },
+      {
+        "rank": 7,
+        "cause": "Security incident at the site: overnight burglary of batteries/vehicles, or a customer's motorcycle stolen or a customer accosted at the curb, and insurance did not make it whole.",
+        "mechanism": "Inventory is 40-lb packs worth $500-1,000 each with no registry and no GPS, plus $5k motorcycles, in a building whose neighbors operate 1am-noon and go dark from 6pm. LA is the #1 metro for vehicle theft (53,911 in 2025); Skid Row homelessness rose 23% in 2026 and Central Division aggravated assaults rose 25%. One box-truck break-in removes $50-100k of packs in ten minutes; one customer bike stolen from the curb while its owner is inside becomes the review that defines the store. Insurers respond with protective-condition requirements (guard service $3-10k/month) or exclusions, so 'insured' is mostly self-insured.",
+        "early_warning_indicator_90d": "Incidents logged within 300 ft of the door (any category), attempted break-ins, and the insurer's written protective requirements. Fail if > 2 incidents in 90 days, any customer-vehicle theft at the curb, or if the carrier requires guard service costing > $3k/month to keep the inventory policy in force.",
+        "probability": "medium",
+        "breaks": "The implicit assumption that a 2015 sprinklered building with a yard gate is a normal retail/showroom site (the lease is priced as showroom/industrial; the block is not)."
+      },
+      {
+        "rank": 8,
+        "cause": "Licensing, permitting and insurance took 4-8 months, so rent was paid on a building that could not legally sell, test-ride or charge.",
+        "mechanism": "A new LA sales location needs its own DMV dealer license or branch (OL 12, place-of-business inspection, 60-120 days), a dealer bond, and DMV-recognized MCO/VIN handling for a make that DMV clerks and insurers (Progressive/Geico VIN databases) may not yet recognize. Test rides need garagekeepers and demo-rider coverage that specialty carriers price case by case for a new brand. A battery room above ~20 loose packs triggers CFC 320/322 (operational permit, listed chargers only, 18-inch spacing, dedicated circuits, aspirating/radiant detection), $40-150k and 3-9 months, and the landlord's carrier may prohibit charging outright. Meanwhile the store 'opens' as a place that can show but not sell, register, or demo, and burns $25-35k/month.",
+        "early_warning_indicator_90d": "Dates: DMV license issued, insurance binder for demo rides and inventory in hand, LAFD permit or written exemption, landlord written consent to charging. Fail if any of the four is missing at day 60 after lease start, or if the first customer registration takes > 30 days to complete at DMV.",
+        "probability": "medium",
+        "breaks": "The assumption that opening is a fit-out problem rather than a licensing problem (the SF dealership was already licensed; LA starts from zero)."
+      },
+      {
+        "rank": 9,
+        "cause": "The rental 'part' went to zero: LA couriers did not come to Ceres, and the Class 2 rent-to-own funnel that built SF did not exist in LA, so the store was 100% dependent on motorcycle sales from day one.",
+        "mechanism": "Prior research already sized this: five-district two-wheel couriers ~740 daily active, SOM 40 paying riders at M12 and 70-105 at M24, with Koreatown 4-6 miles away and riders describing the Skid Row edge as a place they avoid. Whizz/Zoomo-style all-in pricing ($139-179/month) caps rental ARPU, and the couriers who would rent are the ones who cannot get an M1 for FLASH/MK.II. So the 'part' of the thesis that had a proven SF playbook contributes $3-6k/month of gross margin at best, while the 8,443 sf and staff were sized for a rider hub.",
+        "early_warning_indicator_90d": "Active rental contracts and battery subscribers at day 90. Fail if < 15 active rentals or < 20 battery subscribers by day 90 (SF's own first-quarter pace scaled to LA's 1/3 catchment), or if > 60% of rental inquiries come from riders more than 3 miles away who then do not sign.",
+        "probability": "high",
+        "breaks": "'Rental is only part of it' (it is a much smaller part than the space and staffing imply; if it is near zero the store must be justified on sales alone, which is cause #1)."
+      },
+      {
+        "rank": 10,
+        "cause": "Could not hire and keep the two people the store depended on: a competent EV motorcycle technician and a bilingual (Spanish/English) salesperson willing to work evenings in the Warehouse District.",
+        "mechanism": "The sales thesis needs an EV-literate tech (controller/BMS diagnostics, ABS, CarPlay dash) who is rare in LA and commands $35-45/hour; the rental line needs Spanish-language, evening-hour staff. Neither wants to close a warehouse at 9pm on Ceres Ave. Turnover every 4-6 months means each new hire relearns a product with no service manual history; warranty tickets pile up (cause #5) and the founder ends up doing LA service by phone from Davis. The SF store worked partly because the founder was the technician of record.",
+        "early_warning_indicator_90d": "Time-to-fill and retention: tech role filled within 45 days of lease start and still employed at day 90; evening shifts staffed 2-deep on Fri/Sat. Fail if the tech role is open > 45 days, if any staff member quits in the first 90 days, or if the founder logs > 4 LA trips in the quarter.",
+        "probability": "medium",
+        "breaks": "The assumption that SF's operating model can be transplanted with hired staff (SF's model is founder-operated and community-referred)."
+      }
+    ]
+  },
+
+  "success_premortem": {
+    "framing": "It is September 2028 and 768 Ceres is HMP's best location. Six plausible paths, each with what it required. Note that none of the six depends on 8,443 sf in the Warehouse District specifically; four of them would work better from a smaller or different site.",
+    "paths": [
+      {
+        "path": "Fleet / B2B sales became the anchor: 200-400 units/year to delivery operators, security patrols, campus and property-management fleets, film-studio lots and municipal pilots, with the store as PDI, telematics and service depot.",
+        "what_it_required": [
+          "A fleet product: telematics/immobilizer, fleet pricing 12-18% below retail at 10+ units, 24-hour loaner SLA, and a financing partner (Mitsubishi HC Capital / Sheffield-type) so buyers lease rather than buy.",
+          "Two anchor accounts signed before or within 6 months of opening (e.g., a last-mile operator running 30+ Lightning MK.II for parcel/pharmacy, and a campus or BID security fleet), each with a documented 12-month cost-per-mile advantage over a Honda PCX or a car.",
+          "A product-liability and fleet insurance program that covers commercial use of a new make; a written CPUC/CVC review confirming which platforms allow declared 'scooter/motorcycle' mode for MK.II riders.",
+          "The 8,443 sf is finally justified: PDI line, 30-60 units staged, parts room, and a charging room permitted under CFC 320/322 ($40-100k, 3-6 months)."
+        ],
+        "why_ceres_helps": "Industrial zoning, loading access, cheap sf, and proximity to Vernon/Commerce logistics tenants; fleet buyers do not care about Skid Row adjacency.",
+        "leading_indicator": "By month 6: 2 signed fleet accounts totaling >= 40 units, pipeline of >= 200 units with named buyers."
+      },
+      {
+        "path": "University and young-commuter market: MK.II at $3,999 (and FLASH for freeway commuters) sold to USC/Cal State LA/FIDM/UCLA/CSULB students and staff and to 22-32 year-old renters who cannot afford a car, financed at $80-120/month.",
+        "what_it_required": [
+          "BNPL/lender integration that approves thin-file borrowers (Affirm/Katapult/Synchrony) with monthly payments under $120; the sale is the payment, not the price.",
+          "An M1 pipeline: partnership with a CMSP training provider (discounted course bundled with purchase) because most 20-somethings hold no M1.",
+          "Campus demo days each September and January (USC is 3 miles from Ceres; the store is not the point of sale, the demo is), parking/charging deals with student housing operators, and a used/certified-pre-owned program that gives resale confidence.",
+          "Spanish and Korean language marketing; the buyer's parents often co-sign."
+        ],
+        "why_ceres_helps": "Marginally: near USC and the Arts District; but the demo happens on campus. Would work equally from a 1,500 sf Pico corridor storefront.",
+        "leading_indicator": "Financed share of store sales >= 60%; cost per financed sale <= $350; CMSP completions tracked >= 15/month."
+      },
+      {
+        "path": "Latino commuter and small-business market: FLASH/MK.II as a second-vehicle and work-vehicle replacement for gardeners, handymen, restaurant workers and street vendors across Pico-Union, Boyle Heights, South LA and Huntington Park, sold in Spanish with ITIN-friendly financing.",
+        "what_it_required": [
+          "Spanish-first sales and service staff, Spanish-language radio/TikTok/WhatsApp marketing, and pricing communicated as weekly cost vs gas ($/week not MSRP).",
+          "ITIN or no-SSN financing (credit unions such as those serving immigrant communities; in-house rent-to-own with GPS), plus registration and insurance help at the counter, because the buyer's friction is paperwork, not desire.",
+          "A moped-class product that fits CVC 406 and does not require M1 for the largest share of this market (Lightning 3000 at 30 mph) alongside MK.II for M1 holders; an honest M1 pathway for the rest.",
+          "Referral economics like SF's ($100-200 per referred sale) to replicate the word-of-mouth loop in Spanish-speaking networks."
+        ],
+        "why_ceres_helps": "It is 1-2 miles from Boyle Heights and the Fashion District garment workforce; South LA is directly south. This is the one consumer segment for whom the Warehouse District is not off-route.",
+        "leading_indicator": "By month 6, >= 40% of buyers self-report Spanish as primary language and >= 30% of sales are referrals."
+      },
+      {
+        "path": "Regional dealer and parts hub: HMP built a 10-20 dealer SoCal network (OC, Inland Empire, SD, SB/Ventura) and 768 Ceres became the PDI, parts, warranty-labor and training depot that made those dealers profitable; retail at Ceres was secondary.",
+        "what_it_required": [
+          "Abandoning DTC price parity: MAP pricing that includes a 15-20% dealer margin, dealer-exclusive configurations, or a $300-500 'delivery and setup' fee on web orders so dealers are not undercut by hmpbikes.com.",
+          "A written dealer program: floorplan or consignment for the first 3 units, parts stocking list, warranty labor reimbursement at $85-110/hr, technician training, demo-unit support, and a 48-hour parts SLA from Ceres.",
+          "Recruiting dealers who lost brands (former Zero, Cake, Sondors, Super Soco points) and scooter shops in SB/Ventura/SD where Honda/Yamaha scooter demand already exists.",
+          "A 2-year vehicle / 3-year battery warranty so dealers can sell against Zero/Honda without apologizing."
+        ],
+        "why_ceres_helps": "Genuinely: a depot needs loading, storage and cheap sf, and dealers do not care about the block. This is the path where 8,443 sf is the right size and the Warehouse District is the right place.",
+        "leading_indicator": "3 signed dealers by month 4, 8 by month 12; >= 50% of SoCal units flowing through dealers by month 18."
+      },
+      {
+        "path": "Service-led moat: the store became SoCal's electric-two-wheeler service center, taking in orphaned Sondors, Cake, Energica, Super Soco, NIU and Sur-Ron owners, then converting that trust and traffic into HMP sales and battery subscriptions.",
+        "what_it_required": [
+          "Two EV-literate technicians and a parts-sourcing capability for dead brands (there are thousands of orphaned units in SoCal from the 2023-2025 failures); labor at $140-180/hr with 60-70% gross margin.",
+          "A liability posture and insurance that permits work on other makes' high-voltage systems; a written scope excluding pack rebuilds unless certified.",
+          "A trade-in program: orphaned-brand trade-ins credited against FLASH/MK.II (recovers used batteries for HMP's own pack program).",
+          "Reputation built on speed and honesty (Yelp/Reddit) rather than on the HMP badge; service revenue of $25-40k/month covers the fixed cost on its own by month 12."
+        ],
+        "why_ceres_helps": "Industrial space, loading, lift bays; owners of $8-20k orphaned motorcycles will drive to a warehouse for competent service the way they drive to any specialist.",
+        "leading_indicator": "Service tickets >= 120/month by month 9 with >= 40% non-HMP makes; service gross margin >= $18k/month."
+      },
+      {
+        "path": "Rental-to-own funnel, extended upward: FLASH and MK.II rented by the day/week to commuters and visitors (Turo/Riders Share-style and direct), with 25-35% of renters converting to purchase; plus the SF-style Class 2 courier rent-to-own on a smaller scale.",
+        "what_it_required": [
+          "A motorcycle rental insurance program (specialty carrier) that covers M1-verified renters on a new make; strict CVC 14608/14609 license verification at signup.",
+          "A 20-40 unit demo/rental fleet ($100-200k capital) with GPS/immobilizers, and a 'rent for a week, credit it to purchase' offer that turns the rental into the test ride the Skid Row-adjacent showroom cannot provide.",
+          "Listing on Riders Share/Turo for discovery (LA has 50+ scooters on Riders Share already) so the store is not the funnel entry.",
+          "Courier Class 2 rent-to-own kept small (20-40 units) and served from a Koreatown/Pico satellite or a van, not from Ceres."
+        ],
+        "why_ceres_helps": "Storage and prep for a rental fleet; otherwise neutral. The discovery happens on apps, not on Ceres Ave.",
+        "leading_indicator": "Rental utilization >= 55% on the FLASH/MK.II fleet by month 4 and rent-to-buy conversion >= 20% by month 9."
+      }
+    ]
+  },
+
+  "thesis_audit": [
+    {
+      "claim": "1. Rental is only part of it.",
+      "evidence_for": [
+        "Prior research (03-market-size, 04-location-coverage) shows rental alone cannot carry 768 Ceres: SOM 40 paying riders at M12, 70-105 at M24, vs SF's 1,000+ in 25 months; the founder's pivot toward sales is the correct reading of that evidence.",
+        "SF's own economics are sales-led: 1,000+ sold vs ~100 on rent and 300+ battery subscribers; the recurring lines are attached to sales."
+      ],
+      "evidence_against": [
+        "In SF, 'sales' meant $2,500 Class 2 packages to couriers who needed no license, sold through community referral; that is not the sales line being proposed for LA (M1 motorcycles to commuters).",
+        "If rental is 'only part', the space and staffing are still sized for a rider hub (8,443 sf, charging room, evening hours); a sales showroom for 15-30 units/month needs 1,500-3,000 sf in a visible location.",
+        "The rental part that exists in LA is small and price-capped (Whizz/Zoomo all-in $139-179/month; couriers cannot rent FLASH/MK.II without M1)."
+      ],
+      "data_that_would_settle_it": "SF contribution P&L by line (sales, whole-vehicle rental, battery, service) for the last 12 months; the share of SF gross margin from rental. If rental+battery is < 25% of SF gross margin, the claim is right and the LA space should be sized for sales, not rental.",
+      "verdict": "supported (as a diagnosis); the consequence, that the store should be sized and sited for sales, has not been applied to 768 Ceres."
+    },
+    {
+      "claim": "2. Selling FLASH and Lightning MK.II is what we want to focus on, and the store is for that.",
+      "evidence_for": [
+        "Strong launch coverage (Electrek 7/18 and 7/31, Autopian, New Atlas, TechTimes, Transport Evolved) and a genuinely differentiated price/spec point; a physical presence can convert press interest into test rides.",
+        "Zero's 2025 growth came from cheaper models and 40% more dealers, which says the sub-$8k segment is where demand is.",
+        "The buyer comparing against a Honda PCX ($4,249) or ADV160 expects to sit on the vehicle before paying $5k."
+      ],
+      "evidence_against": [
+        "HMP's 1,000+ SF units were Class 2 couriers' vehicles; there is no public evidence HMP has sold M1 motorcycles in volume anywhere, so 'focus on FLASH/MK.II' is a new business, not an extension.",
+        "DTC already reaches the buyer: $350 CA freight, $0 dealer prep, ready-to-ride delivery. A store does not create a new channel; it adds fixed cost to an existing one.",
+        "The world's #1 Zero dealer (Hollywood Electrics, West Hollywood, 2009-2026) closed; LiveWire sold ~33 units in a quarter nationally; Energica, Cake, Sondors failed. The retail e-moto showroom is a model with a poor record even for established brands.",
+        "The customer for a 75 mph M1 vehicle is not the customer who walks into a Warehouse District building next to Skid Row."
+      ],
+      "data_that_would_settle_it": "hmpbikes.com FLASH and MK.II orders by ZIP for the last 90 days (how many SoCal units already sell without a store), test-ride-to-sale conversion from a 4-weekend SoCal demo tour, and a per-unit landed-cost margin after tariff. If SoCal is already 15+ units/month online and a demo tour converts >= 8% of test rides, a small showroom in the right place is defensible; if SoCal is < 5/month, a store is a bet on creating demand, not serving it.",
+      "verdict": "plausible-untested"
+    },
+    {
+      "claim": "3. One location in LA can cover Santa Barbara, San Diego and surrounding areas as a dealer/service base.",
+      "evidence_for": [
+        "A regional parts/PDI/warranty depot for SoCal is a real need if HMP wants dealers; DTLA is roughly central to LA/OC/IE by freeway.",
+        "Zero dealers exist in San Diego County (Onyx Moto, Moto Forza) and could in principle carry a second electric line; Triumph SD still services Zero after dropping sales, showing service demand outlives sales points.",
+        "A mobile service van can cover a 100-mile radius for warranty work at far lower cost than a second location."
+      ],
+      "evidence_against": [
+        "'Dealer base' presupposes dealers; HMP has none in SoCal, and its DTC pricing ($0 prep, $350 freight) leaves no margin for a dealer, so the channel conflict must be resolved before any dealer signs.",
+        "Santa Barbara is ~95 miles and San Diego ~120 miles from 768 Ceres: 2-2.5 hours each way; an owner will not ride in for service, and dispatching a van from DTLA through downtown traffic is the worst starting point in the region (Irvine or Commerce would be better).",
+        "The claim does not require an 8,443 sf Warehouse District lease; it requires a dealer program document, a parts inventory and a van."
+      ],
+      "data_that_would_settle_it": "Three dealer conversations with a written program (margin, floorplan, warranty labor rate): do any sign? Count of existing SoCal HMP owners by ZIP outside LA County (the service base's actual customers today). Cost model of a van-based service plan vs a second point.",
+      "verdict": "weak (as a reason for this store); plausible as a depot/van/dealer-program plan that does not depend on 768 Ceres."
+    },
+    {
+      "claim": "4. FLASH is one of very few $6,000-class products in the US that can do 75 mph.",
+      "evidence_for": [
+        "Peer set today: Ryvid Outset $5,995 (75 mph, 4.3 kWh), Ryvid Anthem $6,495, CSC RX1E $8,495 (80 mph), Naxeon I AM ~$7,500-8,500; nothing else street-legal at 75 mph under $6k with a 6.6 kWh removable pack. FLASH at $4,799-5,999 is the cheapest per kWh and the only maxi-scooter format with ABS/TCS/CarPlay.",
+        "Independent press converged on the same framing ('no real rival', 'fills US gap')."
+      ],
+      "evidence_against": [
+        "The window is closing: Zero unveiled the LS1 scooter for MY2026 with a 250-point dealer network and a 2-yr/5-yr warranty; Chinese and Taiwanese brands (NIU, Yadea/VMoto, Segway, Kollter) can enter the same tariff regime at similar cost; Ryvid is 40 miles away in Irvine with Sam's Club distribution.",
+        "'$6,000-class' is partly a tariff artifact; a 10-20 point duty change moves FLASH toward $5,500-6,500 and Ryvid (US-assembled) gains relative advantage.",
+        "Being one of few does not mean demand is large: LiveWire, Energica and Cake were each 'one of few' in their class."
+      ],
+      "data_that_would_settle_it": "Track the peer table quarterly (price, speed, kWh, warranty, dealer count). Monitor Zero LS1 pricing and Ryvid Outset volumes (Cycle Trader listings, Sam's Club availability). Compute FLASH landed cost under the post-November-2026 tariff scenario.",
+      "verdict": "supported today, with an estimated 12-24 month shelf life; it is a product fact, not a store fact."
+    },
+    {
+      "claim": "5. FLASH will sell better in Southern California than in SF.",
+      "evidence_for": [
+        "Scale: LA County 9.8M people vs SF 0.84M; SoCal has the largest US motorcycle and scooter registration base, freeway commuting that needs 65-75 mph, warm dry weather year-round, and an existing gas-scooter culture (PCX/ADV/Ruckus) that the FLASH is priced against.",
+        "DoorDash two-wheel miles in LA are 1.8x SF (03-market-size), so two-wheel demand is large in aggregate, just dispersed.",
+        "Ryvid and CSC both chose SoCal as home base, which says the buyer density is there."
+      ],
+      "evidence_against": [
+        "HMP's own data is silent: no public evidence of SoCal FLASH/MK.II sales volume; the SF base was couriers on Class 2, a segment that is smaller in LA and cannot ride FLASH legally without M1.",
+        "Hollywood Electrics closed in LA; the LA e-moto retail record is not encouraging.",
+        "LA leads US metros in vehicle theft; a $5k motorcycle with a removable $1,000 pack has higher ownership friction (insurance, secure parking) in LA than in SF's apartment-with-garage core.",
+        "'Sells better in SoCal' does not imply 'needs a store in SoCal'; hmpbikes.com already serves SoCal at $350 freight."
+      ],
+      "data_that_would_settle_it": "Shopify/Stripe: FLASH and MK.II units and inquiries by region (SF Bay vs SoCal) since July 2026; conversion rate of SoCal web traffic; a 4-weekend SoCal demo tour with deposits taken; geo-targeted ad test (cost per booked test ride in SoCal vs Bay Area).",
+      "verdict": "plausible-untested (likely true for the product; unproven that a store, and this store, is the way to capture it)."
+    }
+  ],
+
+  "what_to_watch": [
+    {
+      "area": "financial",
+      "item": "Cannibalization: whether store sales are new SoCal demand or web orders re-routed to pickup.",
+      "metric": "Total SoCal units/month (web + store) vs pre-opening 6-month baseline; alarm if total rises < 10 units/month while store units exceed 10."
+    },
+    {
+      "area": "financial",
+      "item": "Fully loaded monthly burn against a pre-agreed stop-loss, counted from lease signature not from opening day.",
+      "metric": "Cash burn <= $30k/month at day 90 and cumulative loss <= $150k by day 180; breach triggers the exit clause."
+    },
+    {
+      "area": "financial",
+      "item": "Per-unit gross margin after duty, freight, warranty reserve, card/BNPL fees and free-service promises, on every container.",
+      "metric": "Gross margin per FLASH >= $1,200 and per MK.II >= $900; effective duty rate tracked per shipment with the 2026-11-10 tariff date flagged."
+    },
+    {
+      "area": "operational",
+      "item": "Test-ride funnel from the store versus from off-site demo events.",
+      "metric": "Test rides/week (target >= 12 by week 8), test-ride-to-deposit conversion (>= 8%), and the share of test rides that originate at Ceres vs at events."
+    },
+    {
+      "area": "operational",
+      "item": "Visitor profile: license class and home ZIP of every walk-in and test rider.",
+      "metric": ">= 50% of test riders hold an M1 (or book CMSP); < 30% of visitors from ZIPs within 3 miles means the site is a destination, which is fine only if conversion is high."
+    },
+    {
+      "area": "product",
+      "item": "Warranty and support load on the first 200 SoCal units, especially freeway/heat-related faults.",
+      "metric": "Claims per 100 units delivered (< 15 in first 90 days), median days-to-close (< 14), parts backorders (< 10 open), and zero repeated safety-related faults."
+    },
+    {
+      "area": "product",
+      "item": "Registration and insurance friction for a new make at DMV and with consumer insurers.",
+      "metric": "Median days from sale to plate (< 21) and share of buyers who report a carrier refusing to quote HMP (< 10%)."
+    },
+    {
+      "area": "legal",
+      "item": "Licensing and permitting critical path: DMV dealer license, LAFD battery-room permit, landlord consent to charging, garagekeepers/demo insurance binder.",
+      "metric": "All four documents in hand by day 60 after lease start; each day of rent before the DMV license is a dated line item in the P&L."
+    },
+    {
+      "area": "legal",
+      "item": "Dealer channel conflict once any SoCal dealer signs.",
+      "metric": "Number of signed dealers (>= 3 by month 4) and the price gap between hmpbikes.com and dealer floor price (must be <= $0 after a documented delivery/setup fee, or dealers churn)."
+    },
+    {
+      "area": "operational",
+      "item": "Site security and neighborhood incidents, logged daily, not remembered later.",
+      "metric": "Incidents within 300 ft (target 0 customer-vehicle thefts; <= 2 total in 90 days), attempted break-ins (0), and the insurer's protective-condition cost (<= $3k/month)."
+    },
+    {
+      "area": "people",
+      "item": "Founder time allocation and SF health during the LA ramp.",
+      "metric": "Founder days on-site in SF >= 3/week; SF new customers within 15% of trailing-6-month average; LA tech role filled within 45 days and retained at day 90."
+    },
+    {
+      "area": "operational",
+      "item": "Out-of-county service and sales, the only evidence for the SB/SD 'base' claim.",
+      "metric": "Share of service tickets and sales from outside LA County (>= 15% by month 6) and mean drive time to warranty jobs (<= 90 minutes) or van-based service cost per ticket (<= $150)."
+    }
+  ],
+
+  "what_to_avoid": [
+    {
+      "mistake": "Signing a 3-5 year lease with no kick-out before any SoCal sales test has been run.",
+      "why": "The lease is the only irreversible decision. Prior research put true fixed cost at 3.5-5x headline rent and the 'Month 3 NO-GO' as a stop-loss event rather than a decision. In a market where LA industrial rents fell 32% in 36 months (CBRE Q2 2026) the landlord's alternatives are weak; a 12-24 month term or a 12-month kick-out is obtainable. Sondors and Cake both died with fixed commitments outrunning demand. https://www.cbre.com/insights/figures/los-angeles-industrial-figures-q2-2026 ; https://electrek.co/2023/10/25/sondors-metacycle-bikes-abandoned-in-china-bills-go-unpaid/"
+    },
+    {
+      "mistake": "Treating 'store sales' as proof the store works without netting out web orders that moved to pickup.",
+      "why": "DTC brands routinely misread channel shift as growth. The test is total SoCal units vs baseline, not store units. If the store's job is to sell what the website already sells, it is a $25-35k/month marketing line."
+    },
+    {
+      "mistake": "Opening a 75 mph M1-motorcycle showroom on a block that motorcyclists and commuters avoid, and running demo rides from it.",
+      "why": "04-location-coverage: every rider description of the Skid Row edge is negative ('bike desert east of Main', 'police don't come', 'get out fast'); the block goes dark after 6pm when produce tenants leave; the demo route is the sales pitch. Hollywood Electrics sat on Fairfax in West Hollywood with the best brand in the category and still closed. https://www.yelp.com/biz/hollywood-electrics-west-hollywood"
+    },
+    {
+      "mistake": "Announcing a 'SoCal dealer network' while keeping DTC price parity ($0 prep, $350 freight, MSRP online).",
+      "why": "Dealers will not stock a product their customers can buy cheaper from the manufacturer; the channel conflict must be resolved (MAP with dealer margin, setup fee, dealer-exclusive configs) before the first dealer call. NIU chose Best Buy and dealers with a clear channel structure; Sondors sold direct and left dealers and buyers stranded. https://en.wikipedia.org/wiki/Niu_Technologies ; https://www.advrider.com/electric-motorcycle-maker-sondors-in-receivership-what-about-the-bikes/"
+    },
+    {
+      "mistake": "Selling FLASH/MK.II with a 1-year warranty into a market where the buyer's comparison set carries 2-year vehicle and 5-year battery cover.",
+      "why": "Post-Sondors/Cake/Energica, SoCal e-moto buyers are warranty- and orphan-risk-aware; the store's biggest job is to remove that fear, and a short warranty confirms it. Zero's 2025 growth came from accessible models plus dealer support, not from price alone. https://powersportsbusiness.com/news/electric/2026/02/05/zero-caps-2025-with-impressive-sales-surge-and-dealer-expansion/ ; https://www.revzilla.com/common-tread/riding-the-current-electric-motorcycle-brands-sink-and-soar"
+    },
+    {
+      "mistake": "Building a 100-300 pack charging/swap room at Ceres before LAFD and the landlord's insurer have signed off.",
+      "why": "CFC 320/322 triggers at ~20 loose packs: permit, listed chargers only, 18-inch spacing, dedicated circuits, aspirating detection; $40-150k and 3-9 months, or an outright denial that leaves an $8k/month box that can only store and repair (site_operations_safety critic; SB 1271 rental certification phase 2 on 2028-01-01). https://wpinsure.com/blog/california-e-bike-insurance/"
+    },
+    {
+      "mistake": "Renting or demo-riding M1 motorcycles without verifying and recording license class (CVC 14608/14609).",
+      "why": "Negligent entrustment is not shielded by the Graves Amendment; commercial policies exclude unlicensed operators; one serious injury at 45-75 mph settles above $1M in LA, roughly 10 years of Ceres rent (regulation_and_fleet_mix critic)."
+    },
+    {
+      "mistake": "Holding unregistered, non-GPS battery inventory and customer vehicles overnight on Ceres without a written security plan the insurer has accepted.",
+      "why": "LA is the #1 US metro for vehicle theft (53,911 in 2025); packs are the most fungible item in the building; insurers will impose guard-service conditions ($3-10k/month) after the first claim if not before. A CBS Sacramento case shows 100 e-bikes taken from one California business over 10 days. https://www.nicb.org/news/news-releases/recreational-vehicle-thefts-declined-2025-most-remain-unrecovered ; https://www.cbsnews.com/sacramento/news/burglars-steal-100-electric-bikes-from-north-highlands-business-over-10-days"
+    },
+    {
+      "mistake": "Pricing the store plan on today's landed cost with no tariff scenario.",
+      "why": "The current 10%+10% China arrangement expires 2026-11-10; Section 301 on lithium-ion EV batteries is 25% from 2026; a new Section 301 round started 2026-07-24. A 10-20 point move halves per-unit margin, and FLASH's public $4,799-5,999 ladder cannot be raised without breaking the '$6k class' story. https://www.peopleforbikes.org/news/2026-bike-industry-tariff-updates ; https://tariffwise.co/news/section-301-tariffs-2026/"
+    },
+    {
+      "mistake": "Assuming the SF playbook (founder-present, community-referred, no-license Class 2) transplants with hired staff and a different product.",
+      "why": "Gazetteer's profile makes clear SF ran on the founder, a Nepali/Chinese-speaking courier network, and a $2,500 no-license package; LA's couriers are Spanish-speaking, car-first, and 4-6 miles from Ceres, and the LA product needs an M1. Zoomo, a funded operator, retreated from LA to a single NYC store; Whizz lists no LA shop. https://sf.gazetteer.co/meet-the-moped-flocking-sf-streets ; https://www.ridezoomo.com/cities/los-angeles ; https://www.getwhizz.com/locations"
+    },
+    {
+      "mistake": "Paying rent before the DMV dealer license, demo-ride insurance and DMV/insurer make-recognition are in place.",
+      "why": "60-120 days is the normal DMV window (CVC 11704), the place-of-business inspection requires the lease first, and a new make can add DMV/insurer friction on each sale; three to four months of $8k rent and $12-22k payroll on a store that cannot legally sell or demo is $60-120k of avoidable burn. https://www.bryantsuretybonds.com/blog/motorcycle-dealer-license-in-california ; https://leasingstack.com/blog/how-to-get-a-dealer-license-2026"
+    },
+    {
+      "mistake": "Letting LA absorb the founder and the cash that SF's still-young business (25 months; swap stations live only since June 2026) needs.",
+      "why": "The transferability critic flagged that SF's 2025-26 new-customer rate may already be below its 2023-24 peak (immigration enforcement, falling app pay); two sub-scale locations funded from one balance sheet is how Cake and Sondors ended. Protect the profitable core first. https://www.notebookcheck.net/End-of-road-for-CAKE-as-Swedish-electric-motorcycle-startup-files-for-bankruptcy.800170.0.html"
+    }
+  ],
+
+  "conditions_for_go": {
+    "principle": "No lease until the sales thesis has produced numbers outside the founder's head. Every test below costs less than one month of the store's fixed cost.",
+    "pre_lease_tests": [
+      {
+        "test": "Existing SoCal demand pull (1 day, $0): Shopify/Stripe export of FLASH and MK.II units, deposits and inquiries by ZIP since 2026-07-01, split SF Bay / LA-OC / SD / SB-Ventura / rest.",
+        "pass": ">= 15 FLASH+MK.II units/month already shipping to SoCal ZIPs, or >= 100 qualified SoCal inquiries/month.",
+        "fail": "< 5 units/month to SoCal; a store would be creating demand, not serving it."
+      },
+      {
+        "test": "SoCal demo tour (4 weekends, $10-20k incl. 6 demo units, van, 2 staff): Petersen Breakfast Club (Wilshire), Bike Shed Moto Co (Arts District, ~1 mile from Ceres), South OC Cars and Coffee, a USC/UCLA campus day, an SD or SB scooter-shop parking lot. Take $200 refundable deposits.",
+        "pass": ">= 150 test rides, >= 8% test-to-deposit (>= 12 deposits), >= 50% of test riders hold an M1, cost per deposit <= $1,200.",
+        "fail": "< 4 deposits or < 30% M1 holders; the buyer is not who the thesis assumes."
+      },
+      {
+        "test": "Dealer channel reality (3 weeks, $0): a one-page dealer program (15-20% margin, MAP, floorplan/consignment, warranty labor $85-110/hr, parts SLA) pitched to 8 SoCal powersports/scooter dealers incl. Onyx Moto and Moto Forza (SD) and two SB/Ventura shops.",
+        "pass": ">= 3 signed LOIs; at least one in SD or SB.",
+        "fail": "0 LOIs; drop 'dealer base' from the rationale."
+      },
+      {
+        "test": "Unit margin under tariff scenarios (1 day, $0): landed cost per FLASH/MK.II/pack today and under +10 and +20 duty points; gross margin after warranty reserve (3-5%), card/BNPL fees (4-6%), freight.",
+        "pass": "Gross margin >= $1,200/FLASH and >= $900/MK.II in the base case and >= $800/$600 at +20 points.",
+        "fail": "Base-case margin < $900/FLASH; a fixed-cost store cannot be carried by the product."
+      },
+      {
+        "test": "Insurance and licensing clearance (2-3 weeks, $0-500): two written quotes for garagekeepers + demo-rider + inventory + product liability at the address; DMV OL 12 pre-check; LAFD pre-application for the intended pack count; landlord written consent to charging and repair.",
+        "pass": "Binder available <= $2,500/month with test rides covered; DMV path <= 90 days; LAFD says <= $25k TI at the planned pack count; landlord consents in writing.",
+        "fail": "Any carrier declines demo rides for a new make, LAFD requires ESS-room work > $75k, or landlord/insurer prohibits charging."
+      },
+      {
+        "test": "Lease terms (1 week, $0): written proposal from Lee & Associates.",
+        "pass": "<= 24-month term or 12-month kick-out; <= $8,000 full service (or <= $1.10/sf NNN with itemized opex); >= 2 months free; sublease right; no personal guarantee beyond 6 months' rent.",
+        "fail": "5-year term with no exit, NNN pushing all-in above $1.35/sf, or a full personal guarantee."
+      },
+      {
+        "test": "Runway and SF protection (1 day, $0): SF contribution P&L by line for the last 12 months; cash available to fund 18 months of LA losses without cutting SF inventory or staff.",
+        "pass": "SF contribution positive after all fixed cost; >= $450k of cash or committed capital earmarked for LA beyond SF's needs.",
+        "fail": "SF not yet covering its own fixed cost, or LA runway < 12 months."
+      },
+      {
+        "test": "Site reality (1 week, $0-150): four visits to 768 Ceres at 06:00, 14:00, 21:00, 23:30 on a weekday and Saturday; interview 5 neighbors; 3 written guard quotes; floor plan with office sf measured.",
+        "pass": "<= 1 of 5 neighbors reports a break-in in 12 months; evening block passable for a customer on a $5k motorcycle; usable open floor >= 5,000 sf; guard service not required by the insurer.",
+        "fail": ">= 3 of 5 neighbors report break-ins, insurer requires guard service > $3k/month, or open floor < 4,000 sf."
+      }
+    ],
+    "numbers_that_make_it_a_reasonable_bet": [
+      "SoCal already >= 15 FLASH+MK.II units/month online AND demo-tour test-to-deposit >= 8% AND >= 3 dealer LOIs AND gross margin >= $1,200/FLASH AND lease <= 24 months with exit AND insurer covers demo rides at <= $2,500/month AND 18 months of runway ring-fenced from SF.",
+      "Under those conditions a store is a reasonable bet only if it is sized for sales (1,500-3,000 sf showroom + service bay) in a location commuters visit, or if the 8,443 sf is justified by a fleet/dealer-depot use with signed volume."
+    ],
+    "numbers_that_make_it_a_bad_one": [
+      "SoCal online < 5 units/month; demo tour < 4 deposits or < 30% M1 holders; 0 dealer LOIs; gross margin < $900/FLASH; any carrier declining demo rides; LAFD > $75k or a charging prohibition; lease > 24 months without kick-out; SF not covering its own fixed cost; founder unable to commit a named LA GM.",
+      "Break-even arithmetic: at $25-35k/month fixed cost and $1,000-1,700 gross margin per unit the store needs 15-30 incremental units/month; if the demo tour implies fewer than 10/month at the observed conversion, the store loses $10-25k/month indefinitely."
+    ]
+  },
+
+  "alternatives_to_a_store": [
+    {
+      "option": "Consignment / shop-in-shop with 2-3 existing SoCal dealers (one in OC, one in San Diego such as Onyx Moto or Moto Forza, one scooter shop in SB/Ventura).",
+      "rough_cost": "$15-30k in demo/consigned units (recoverable) + 15% dealer margin + a dealer program document; no lease.",
+      "what_it_proves": "Whether a dealer channel sells FLASH/MK.II at all, at what conversion and margin, and whether SB/SD demand exists; directly tests claim 3 and the channel-conflict problem. Timeline 90 days.",
+      "kill_metric": "< 2 units/month/dealer after 60 days with stock on the floor."
+    },
+    {
+      "option": "90-day SoCal demo tour + geo-targeted 'book a test ride' campaign (Petersen Breakfast Club, Bike Shed Moto Co in the Arts District, South OC Cars and Coffee, campus days, IMS-type shows).",
+      "rough_cost": "$10-20k (van, 6 demo units, 2 staff, event fees) + $5k ads.",
+      "what_it_proves": "Test-ride volume, test-to-deposit conversion, M1 share, buyer ZIPs, cost per booked test ride; tests claims 2 and 5 without a lease and reveals where in SoCal the buyers actually are (Westside/OC/Valley vs DTLA).",
+      "kill_metric": "< 8% test-to-deposit or cost per deposit > $1,500."
+    },
+    {
+      "option": "Turo / Riders Share fleet of 6-10 FLASH and MK.II in LA at $60-90/day with a 'rental credit toward purchase' offer.",
+      "rough_cost": "$40-60k inventory (recoverable at resale) + specialty rental insurance + GPS/immobilizers; no lease (units stored at a $300-600/month storage bay).",
+      "what_it_proves": "Real-world demand and reliability under SoCal freeway/heat use, theft and damage rates, renter demographics, and rent-to-buy conversion; produces the field-reliability data the brand lacks. Tests the rental-to-own path and claim 5.",
+      "kill_metric": "Utilization < 40% after 60 days or > 1 total loss per 10 units in 6 months."
+    },
+    {
+      "option": "500-800 sf service point (Pico/Olympic corridor, Arts District or Koreatown north, month-to-month or 12-month) + one mobile service van covering LA/OC/SB/SD.",
+      "rough_cost": "$2.5-4k/month rent + $40-60k van and tooling + 1 technician ($6-8k/month).",
+      "what_it_proves": "Whether the 'service base' claim has customers (tickets by ZIP, drive times, warranty load per 100 units) and builds the trust a new brand needs; covers the SB/SD promise at 1/5 the fixed cost of 768 Ceres; can later add a small showroom if demo-tour data justify it.",
+      "kill_metric": "< 40 service tickets/month by month 6 or warranty load > 15 per 100 units."
+    },
+    {
+      "option": "Partner 'HMP SoCal Experience Center' inside an existing OC or Westside powersports dealer (shop-in-shop with an HMP-paid brand rep 3 days/week).",
+      "rough_cost": "$3-5k/month floor fee/rep + 4 display units; 6-month agreement.",
+      "what_it_proves": "Whether a showroom in a place commuters already visit converts (walk-ins, test rides, sales per week) versus DTC alone; the cleanest A/B against the Ceres thesis at 1/8 the cost.",
+      "kill_metric": "< 6 sales/month attributable to the location after 90 days."
+    }
+  ],
+
+  "bottom_line": "The founder has correctly diagnosed that rental cannot carry 768 Ceres, but the replacement thesis (a sales showroom for M1 motorcycles in a Skid Row-adjacent warehouse, doubling as a dealer/service base for cities 95-120 miles away) has no evidence behind it yet and contradicts how DTC e-moto brands actually sell, how the LA e-moto retail comparable (Hollywood Electrics) ended, and where the FLASH buyer lives. FLASH's price/spec position is real and worth pursuing in SoCal; the way to find out whether a store helps is a $30-60k, 90-day set of tests (demo tour, consignment dealers, rental fleet, service van), not an $8,000/month lease on 8,443 sf."
+}

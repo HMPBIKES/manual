@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "prepared_for": "HMP Bikes (Davis, CA / 415 eBikes SF) - LA sales-led store + rider hub feasibility",
+    "prepared_on": "2026-09-08",
+    "claim_under_test": "HMP FLASH is one of very few ~$6,000-class products in the US that can do 75 mph, so it should sell better in Southern California.",
+    "method": "WebSearch (200-call budget fully used) + WebFetch of primary/reputable pages. Several primary pages blocked (403/404/502): Honda Powersports, JD Power, BMW Motorrad US, TechTimes, Transport Evolved article page, RideApart Sondors piece, Ryvid product pages. Where a figure could only be taken from a search snippet or an aggregator (fasterwheeler, motowheeler, bike-ev, 1000ps, e-scooter.co) it is flagged 'unverified'. No figures are invented; anything from memory is labelled 'unverified (memory)'.",
+    "hmp_price_discrepancy_note": "The brief lists FLASH at $4,799 single / $5,799 dual and 299 lb. hmpbikes.com/products/flash-electric-motorcycle as fetched 2026-09-08 shows launch-sale $4,999 (reg $5,499) single, $5,999 (reg $6,999) dual, $6,499 (reg $7,499) 'Plus' dual with 3.3 kW charger; CA freight $400 / non-CA $600; curb weight 335 lb with batteries, 253 lb dry. Electrek (2026-07-18) quoted $4,799 base and $5,999 fully-equipped. Treat $4,799/$5,799 as the July launch pricing and the site figures as current. This matters for the claim: at the REGULAR dual price ($6,999) FLASH is no longer a sub-$6,500 product.",
+    "field_legend": {
+      "price_usd": "MSRP or listed price in USD at seen_date; 'sale/regular' where both shown",
+      "removable_battery": "true/false/unknown",
+      "license_class": "CA license needed: M1 (motorcycle) / M2 (moped) / none",
+      "dealer_model": "direct / dealers / both",
+      "socal_presence": "HQ, showroom or dealers in Los Angeles/Orange/San Diego/Inland Empire",
+      "status_2026": "shipping / paused / bankrupt / closed / not_sold_in_us / announced / clearance"
+    }
+  },
+
+  "competitor_table": [
+    {
+      "brand": "HMP", "model": "FLASH (single battery)", "price_usd": "4,999 sale / 5,499 regular (site 2026-09-08); brief: 4,799", "top_speed_mph": 60,
+      "battery_kwh": 3.33, "range_mi_claimed": "56 @37 mph; ~40 real-world (SF)", "weight_lb": "335 curb w/ battery (site); brief says 299", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Davis, CA (HQ) / San Francisco store (415 eBikes)", "dealer_model": "direct (online + own store)", "socal_presence": "none yet",
+      "status_2026": "shipping", "source_url": "https://www.hmpbikes.com/products/flash-electric-motorcycle", "seen_date": "2026-09-08",
+      "notes": "DOT approved, ships assembled, $0 dealer prep, 1 yr/10k mi warranty. Autopian (2026-07-31) reports OEM is Zhejiang Luyuan; HMP site does not state manufacturer."
+    },
+    {
+      "brand": "HMP", "model": "FLASH (dual battery)", "price_usd": "5,999 sale / 6,999 regular (site 2026-09-08); brief: 5,799; 'Plus' w/ 3.3 kW charger 6,499 sale / 7,499 regular", "top_speed_mph": 75,
+      "battery_kwh": 6.66, "range_mi_claimed": "106 @37 mph; 70-85 real-world", "weight_lb": "335 curb (site); brief 299", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Davis, CA / San Francisco", "dealer_model": "direct", "socal_presence": "none yet",
+      "status_2026": "shipping", "source_url": "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/", "seen_date": "2026-09-08",
+      "notes": "15 kW peak / 6 kW rated; ABS+TCS+TPMS+dashcam+7in TFT CarPlay; 2 kW onboard charger (+$200) charges 20-80% in ~2 h."
+    },
+    {
+      "brand": "HMP", "model": "Lightning MK.II", "price_usd": 3999, "top_speed_mph": 56,
+      "battery_kwh": 3.33, "range_mi_claimed": "62 @30 mph; 40-48 real", "weight_lb": 260, "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Davis, CA / San Francisco", "dealer_model": "direct", "socal_presence": "none yet",
+      "status_2026": "shipping", "source_url": "https://electrek.co/2026/07/31/hmps-new-3999-electric-scooter-is-the-affordable-street-legal-commuter-the-us-needs/", "seen_date": "2026-09-08",
+      "notes": "7 kW peak / 4 kW rated; 4.5 h 120V charge. Endless Sphere owner thread identifies base platform as Luyuan MKK."
+    },
+
+    {
+      "brand": "Ryvid", "model": "Anthem", "price_usd": "7,995 (2025 MY); launched at 6,495 in May 2024", "top_speed_mph": "75+",
+      "battery_kwh": 4.3, "range_mi_claimed": "75 city / 46 hwy @55", "weight_lb": "~313 (unverified; 'a little over 300' per Rider Guide)", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Irvine, CA (HQ); San Bernardino, CA assembly", "dealer_model": "both (direct + dealers e.g. REV Rides)", "socal_presence": "HQ + assembly in SoCal",
+      "status_2026": "shipping", "source_url": "https://www.cyclenews.com/2024/05/article/new-2024-ryvid-outset-ryvid-anthem-specs-and-prices/", "seen_date": "2026-09-08",
+      "verification": "Launch price verified (Cycle News 2024-05-10). 2025 price $7,995 seen on powersportstv.com and quoted by The Autopian 2026-07-31; ryvid.com product pages returned 404 on fetch.",
+      "notes": "Integrated 3.3 kW charger (1.25 h to 80% on 220V), electrically adjustable seat 30-34 in. Price rose ~$1,500 between 2024 and 2025 (reason not confirmed)."
+    },
+    {
+      "brand": "Ryvid", "model": "Outset", "price_usd": "7,495 (2025 MY, REV Rides listing + motorcycle.com); launched at 5,995 in May 2024", "top_speed_mph": "75+ (60 mph in off-road mode per REV Rides)",
+      "battery_kwh": 4.3, "range_mi_claimed": "up to 70", "weight_lb": 315, "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Irvine / San Bernardino, CA", "dealer_model": "both", "socal_presence": "yes",
+      "status_2026": "shipping", "source_url": "https://revrides.com/products/ryvid-outset-electric-motorcycle", "seen_date": "2026-09-08",
+      "notes": "Was the only sub-$6k 75 mph street-legal e-moto in 2024; its 2025 price increase is what opens the gap HMP is claiming."
+    },
+
+    {
+      "brand": "CSC Motorcycles", "model": "RX1E", "price_usd": "8,495 (2023 MSRP; 8,500 in Electrek review)", "top_speed_mph": 80,
+      "battery_kwh": 6.144, "range_mi_claimed": "112 city; 50-60 real @50 mph avg", "weight_lb": "469 w/ accessories; ~436 bare", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Azusa, CA (1200 Mountain View Cir)", "dealer_model": "direct (one Azusa showroom)", "socal_presence": "was HQ in LA County",
+      "status_2026": "closed - company shutting down (announced ~2026-07-27); no new motorcycle sales, parts sell-off only", "source_url": "https://www.revzilla.com/common-tread/csc-motorcycles-shutting-down", "seen_date": "2026-09-08",
+      "notes": "Owners cited 'stringent and costly EPA requirements' and 'substantially higher tariffs imposed on products from overseas suppliers' (Zongshen OEM). ~6,000 units shipped 2015-2026. cscmotorcycles.com banner: 'closing for good... no longer accepting online orders'. Removes the closest SoCal-based rival."
+    },
+    {
+      "brand": "CSC Motorcycles", "model": "ES5", "price_usd": "5,295 MSRP (2023; 4,995 sale)", "top_speed_mph": "50+",
+      "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": "unknown",
+      "license_class": "M1", "hq_or_us_base": "Azusa, CA", "dealer_model": "direct", "socal_presence": "was",
+      "status_2026": "closed (see RX1E)", "source_url": "https://electrek.co/2023/12/15/csc-es5-begins-shipping-as-americas-latest-50-mph-electric-scooter-option/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "CSC Motorcycles", "model": "City Slicker", "price_usd": "2,495 (2019); later ~1,995 clearance", "top_speed_mph": "~46 (unverified)",
+      "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": "unknown",
+      "license_class": "M1", "hq_or_us_base": "Azusa, CA", "dealer_model": "direct", "socal_presence": "was",
+      "status_2026": "discontinued; company closed", "source_url": "https://electrek.co/2019/04/04/review-csc-city-slicker-electric-motorcycle/", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Kollter (Tinbot)", "model": "ES1-S Pro / ES1-X Pro", "price_usd": "5,995 MSRP; 2,995 clearance (+995 for 2nd battery) on kollterelectricmotorcycles.com", "top_speed_mph": "60 single / 72 dual battery",
+      "battery_kwh": "2.3 per pack (4.6 dual)", "range_mi_claimed": "80 city / 56 hwy (dual)", "weight_lb": "unverified (each pack ~30 lb)", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Kollter USA, Costa Mesa, CA 92626", "dealer_model": "both (distributor + small dealers: SmartWheel, eMotoZone, Sierra Electric)", "socal_presence": "distributor in Orange County",
+      "status_2026": "clearance / inventory-limited (0 listings on Cycle Trader; RS1 shown with '2027 MSRP $9,995')", "source_url": "https://www.kollterelectricmotorcycles.com/current-models", "seen_date": "2026-09-08",
+      "notes": "Only other ≥70 mph street-legal EV currently obtainable for <$6,500 in the US, and only as clearance stock. Specs from Electrek 2021 review."
+    },
+    {
+      "brand": "Kollter", "model": "CS1 Classic", "price_usd": "6,995 MSRP; 3,995 clearance", "top_speed_mph": "unverified", "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": "unknown",
+      "license_class": "M1", "hq_or_us_base": "Costa Mesa, CA", "dealer_model": "both", "socal_presence": "yes", "status_2026": "clearance",
+      "source_url": "https://www.kollterelectricmotorcycles.com/current-models", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "NIU", "model": "MQi GT EVO", "price_usd": "unverified - US MSRP not found on niustore.com/genuinescooters.com; aggregators show ~$4,999-5,499 (unverified)", "top_speed_mph": 63,
+      "battery_kwh": "unverified (dual 72V packs)", "range_mi_claimed": "47 (motorcycle.com 2025 spec)", "weight_lb": "282 dry", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "China; US via Genuine Scooter Co. (Chicago) + NIU Mobility stores", "dealer_model": "dealers", "socal_presence": "NIU Mobility LA (8012 Melrose Ave) and San Diego (3645 30th St)",
+      "status_2026": "shipping", "source_url": "https://www.motorcycle.com/specs/niu/scooter/2025/mqi-series/gt-evo/detail.html", "seen_date": "2026-09-08",
+      "notes": "Closest scooter-format rival to the single-battery FLASH; NIU has scooter dealer coverage in LA that HMP lacks."
+    },
+    {
+      "brand": "NIU", "model": "NQi GTS / GTS Sport", "price_usd": "~4,199 (bike-ev aggregator, unverified)", "top_speed_mph": "50 (Sport)",
+      "battery_kwh": "unverified", "range_mi_claimed": "60 (motorcycle.com 2025)", "weight_lb": "249 dry", "removable_battery": true,
+      "license_class": "M1/M2 depending on trim (unverified)", "hq_or_us_base": "China; US via Genuine Scooter Co.", "dealer_model": "dealers", "socal_presence": "yes (NIU Mobility LA/SD, Genuine dealers)",
+      "status_2026": "shipping", "source_url": "https://www.genuinescooters.com/products/nqi-gts-sport", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "NIU", "model": "NQi GT Pro", "price_usd": 5599, "top_speed_mph": "44-50", "battery_kwh": "60V 35Ah x2 (~4.2 kWh, computed)", "range_mi_claimed": "71-87", "weight_lb": 218, "removable_battery": true,
+      "license_class": "M1/M2", "hq_or_us_base": "China; NIU Mobility West Coast", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://niustore.com/products/nqigtpro", "seen_date": "2026-09-08", "notes": "Below the 50 mph screen; listed for completeness."
+    },
+    {
+      "brand": "NIU", "model": "RQi (Sport)", "price_usd": "not confirmed on sale in US; EU from EUR 6,990; a 2024 US listing of $7,299 exists (motoplanete aggregator, unverified)", "top_speed_mph": "62 (100 km/h, EU spec)",
+      "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "China", "dealer_model": "dealers", "socal_presence": "no confirmed US retail", "status_2026": "not_sold_in_us (unconfirmed)",
+      "source_url": "https://www.1000ps.com/en-us/article/3012595/niu-rqi-2025-review-electric-a1-naked-bike", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Maeving", "model": "RM1S", "price_usd": "9,995 (Blackout 11,495); $195 CA delivery", "top_speed_mph": 70,
+      "battery_kwh": "unverified (two removable packs)", "range_mi_claimed": "up to 80", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Coventry, UK; Maeving USA HQ/showroom 3939 S Sepulveda Blvd, Culver City, CA", "dealer_model": "direct (showroom + test-ride/service partners)", "socal_presence": "US HQ and showroom in LA",
+      "status_2026": "shipping", "source_url": "https://maeving.com/en-us/products/maeving-rm1s-electric-motorbike", "seen_date": "2026-09-08",
+      "notes": "Above the $9,000 screen but the most direct 'D2C brand with LA showroom' precedent for HMP's plan; RM2 two-up previewed at $10,995."
+    },
+
+    {
+      "brand": "Sur-Ron", "model": "Storm Bee (road-legal L3e version exists only for EU)", "price_usd": "7,199-7,899 US dealer pricing (electricdirtbikesusa.com, unverified)", "top_speed_mph": "~68 (110 km/h, unverified)",
+      "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "cannot be registered for road in CA", "hq_or_us_base": "China; US importers/dealers", "dealer_model": "dealers", "socal_presence": "many e-moto dealers in LA",
+      "status_2026": "shipping as off-road only; not NHTSA-certified; sold with 'Off-Road Use Only' MCO in US", "source_url": "https://electrifynews.com/news/bike-board/are-electric-dirt-bikes-like-surron-light-bee-street-legal/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Sur-Ron", "model": "Ultra Bee (legal status)", "price_usd": "n/a (off-road)", "top_speed_mph": "n/a", "battery_kwh": "n/a", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": true,
+      "license_class": "OHV only - CA SB 586 (signed 2025-10-10, effective 2026-01-01) classifies pedal-less e-motos as 'off-highway electric motorcycles' eligible for Green Sticker; illegal on public roads, bike lanes, sidewalks; aftermarket 'street legal kits' do not change this",
+      "hq_or_us_base": "China", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping (off-road only)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB586", "seen_date": "2026-09-08",
+      "notes": "Large LA rider base that cannot legally street-ride; a DOT/CARB-certified 75 mph bike is a legal alternative - marketing angle."
+    },
+    {
+      "brand": "Talaria", "model": "Sting 'L3E road legal' / X3 Pro", "price_usd": "7,000-8,500 'road legal' (talariausa.us.com - reseller-style site, legitimacy unverified); X3 Pro ~3,149 off-road", "top_speed_mph": "unverified",
+      "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "not CA street-registrable (same SB 586 treatment)", "hq_or_us_base": "China", "dealer_model": "dealers", "socal_presence": "yes",
+      "status_2026": "shipping (off-road)", "source_url": "https://talariausa.us.com/faq-items/are-talaria-e-bikes-street-legal-in-usa-and-other-countries/", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Stark Future", "model": "Varg EX (60 hp / 80 hp Alpha)", "price_usd": "12,990 / 13,990", "top_speed_mph": "unverified (not published)",
+      "battery_kwh": 7.2, "range_mi_claimed": "1.3-7 h riding (no mileage claim)", "weight_lb": 264, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Barcelona, Spain; US direct sales, distribution center planned", "dealer_model": "direct (+ some dealers e.g. Lithium Powersports FL)", "socal_presence": "no confirmed SoCal dealer",
+      "status_2026": "shipping", "source_url": "https://electrek.co/2025/06/26/stark-varg-ex-review-our-first-look-at-the-80-hp-street-legal-dirt-bike/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Stark Future", "model": "Varg SM (supermoto)", "price_usd": "12,900 Standard / 13,900 Alpha", "top_speed_mph": "unverified",
+      "battery_kwh": 7.2, "range_mi_claimed": "~50 'real-world'", "weight_lb": 274.5, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Barcelona, Spain", "dealer_model": "direct", "socal_presence": "no confirmed", "status_2026": "shipping ('available now')",
+      "source_url": "https://www.revzilla.com/common-tread/2026-stark-varg-sm-first-look-taking-it-to-the-streets", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Sondors", "model": "Metacycle (status)", "price_usd": "n/a (was ~6,500)", "top_speed_mph": "n/a", "battery_kwh": "4 (historic)", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": false,
+      "license_class": "n/a", "hq_or_us_base": "Malibu, CA (historic)", "dealer_model": "direct", "socal_presence": "was",
+      "status_2026": "bankrupt/receivership (late 2023); ~2,000 Metacycles delivered; ex-employee says it was never street-legal (Electrek 2024-05-12); founder pre-selling a 'Meta AT' since mid-2025 with legitimacy questioned (RideApart, Aug 2026)",
+      "source_url": "https://electrek.co/2025/06/04/back-from-the-dead-bankrupted-e-bike-company-sondors-now-pre-selling-bikes-again/", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Aventura-X", "model": "EV30 (High Speed)", "price_usd": 4995, "top_speed_mph": 50,
+      "battery_kwh": "unverified (72V removable)", "range_mi_claimed": "up to 70", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Carson, CA (1129 E Dominguez St)", "dealer_model": "both (direct + dealers e.g. Epic Wheelz)", "socal_presence": "HQ in LA County",
+      "status_2026": "shipping", "source_url": "https://aventura-x.com/product-category/mopeds/", "seen_date": "2026-09-08",
+      "notes": "Vespa-style; borderline on the 50 mph screen. EV29 (30 mph) $3,295."
+    },
+
+    {
+      "brand": "Energica", "model": "Ego+/Eva Ribelle+/Experia (status)", "price_usd": ">20,000 (historic; current US pricing unverified)", "top_speed_mph": "100+ (historic)", "battery_kwh": "21.5 (historic)", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Modena, Italy", "dealer_model": "dealers", "socal_presence": "unknown post-bankruptcy",
+      "status_2026": "bankrupt Oct 2024; acquired by Singapore-based investors; 2026 relaunch announced; US dealer status unclear",
+      "source_url": "https://electrek.co/2025/07/19/its-true-high-performance-electric-motorcycle-brand-energica-is-back/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Verge", "model": "TS Pro (2026, solid-state)", "price_usd": "29,900 / 34,900 extended", "top_speed_mph": "unverified (~124 historic)", "battery_kwh": "20.2 / 33.3", "range_mi_claimed": "217 / 370", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Finland; US showrooms", "dealer_model": "direct/showrooms", "socal_presence": "unverified", "status_2026": "deliveries Q4 2026",
+      "source_url": "https://hiconsumption.com/motors/2026-verge-motorcycles-ts-pro-solid-state-production/", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Zero", "model": "FXE", "price_usd": "12,495 (2024/2025 MY, motorcycle.com + Cycle World)", "top_speed_mph": 85,
+      "battery_kwh": 7.2, "range_mi_claimed": "105 city / 59 hwy @70", "weight_lb": 309, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "R&D Scotts Valley, CA; global HQ moved to Netherlands Oct 2025", "dealer_model": "dealers", "socal_presence": "multiple dealers",
+      "status_2026": "shipping", "source_url": "https://www.motorcycle.com/specs/zero/on-off-road/2025/fxe/z-force-7-2/detail.html", "seen_date": "2026-09-08",
+      "notes": "Top speed 85 mph per Electrek/ADV Pulse reviews. Closest 'established-brand' product above FLASH."
+    },
+    {
+      "brand": "Zero", "model": "S", "price_usd": "14,995 (2025 MY)", "top_speed_mph": "~98 (unverified, memory)", "battery_kwh": 14.4, "range_mi_claimed": "154 city", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Scotts Valley, CA / Netherlands", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.motorcycle.com/specs/zero/standard/2025/s/z-force-14-4-/detail.html", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Zero", "model": "DSR/X", "price_usd": "22,995 (2025 MY)", "top_speed_mph": "~112 (unverified, memory)", "battery_kwh": 17.3, "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Scotts Valley, CA / Netherlands", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.motorcycle.com/specs/zero/sport/2025/dsr-x/z-force-17-3/detail.html", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Zero", "model": "XE (note: off-road only)", "price_usd": 6495, "top_speed_mph": "n/a (not street legal)", "battery_kwh": "unverified", "range_mi_claimed": "n/a", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "OHV", "hq_or_us_base": "Scotts Valley / Netherlands", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.motorcycle.com/specs/zero/off-road/2026/xe/base/detail.html", "seen_date": "2026-09-08",
+      "notes": "Shoppers will see a 'Zero for $6,495' - it is not a street bike. XB $4,399."
+    },
+
+    {
+      "brand": "LiveWire", "model": "S2 Del Mar", "price_usd": "11,999 (livewire.com, 2026-09-08)", "top_speed_mph": 103, "battery_kwh": 10.5, "range_mi_claimed": "113 city / 86 combined @55", "weight_lb": 436, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Milwaukee, WI", "dealer_model": "dealers (H-D/LiveWire retail)", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.livewire.com/s2-del-mar-electric-motorcycle", "seen_date": "2026-09-08",
+      "notes": "Price cut from $15,499 (2025) - LiveWire is discounting aggressively; revenue -28% in 2025 on +7% units."
+    },
+    {
+      "brand": "LiveWire", "model": "S2 Mulholland", "price_usd": 11999, "top_speed_mph": 99, "battery_kwh": 10.5, "range_mi_claimed": "91 combined @55", "weight_lb": 432, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Milwaukee, WI", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.livewire.com/bike-comparison/s2-mulholland", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "LiveWire", "model": "S2 Alpinista", "price_usd": 12999, "top_speed_mph": 99, "battery_kwh": 10.5, "range_mi_claimed": "89 combined @55", "weight_lb": 434, "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Milwaukee, WI", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.livewire.com/bike-comparison/s2-mulholland", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "LiveWire", "model": "S4 Honcho Street / Trail (NEW)", "price_usd": "5,499 Street / 4,999 Trail", "top_speed_mph": 59, "battery_kwh": 3.48, "range_mi_claimed": "53 (WMTC)", "weight_lb": "~250", "removable_battery": true,
+      "license_class": "M1 (Street)", "hq_or_us_base": "Milwaukee, WI", "dealer_model": "dealers", "socal_presence": "yes (H-D/LiveWire dealers)",
+      "status_2026": "shipping - production began late May 2026, first units at dealers summer 2026", "source_url": "https://powersportsbusiness.com/news/electric/2026/06/10/livewire-bets-on-entry-level-ev-growth-with-s4-honcho-launch/", "seen_date": "2026-09-08",
+      "notes": "Direct price-point competitor to Lightning MK.II and single-battery FLASH, from a brand with a national dealer/service network. Slower (59 mph) and shorter range than FLASH dual."
+    },
+
+    {
+      "brand": "Honda", "model": "EM1 e:", "price_usd": "not sold in US (Japan ~$2,167 at 2023 launch)", "top_speed_mph": "~28 (moped class)", "battery_kwh": "1.5 (Mobile Power Pack e:)", "range_mi_claimed": "~33", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "n/a", "hq_or_us_base": "Japan", "dealer_model": "dealers", "socal_presence": "n/a", "status_2026": "not_sold_in_us",
+      "source_url": "https://www.1000ps.com/en-us/model/11394/honda-em1-e", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "BMW", "model": "CE 02", "price_usd": "7,999 (2026 MSRP per dealer price guide, unverified on BMW site - blocked)", "top_speed_mph": 59, "battery_kwh": "3.92 (unverified, memory)", "range_mi_claimed": "~56 (unverified)", "weight_lb": "~291 (unverified)", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Germany; BMW Motorrad USA", "dealer_model": "dealers", "socal_presence": "yes (several BMW Motorrad dealers)", "status_2026": "shipping",
+      "source_url": "https://www.warhorsecamphill.com/blog/2026-bmw-motorcycle-price-guide--105915", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "BMW", "model": "CE 04", "price_usd": "12,199 (2026 dealer price guide); Autopian quotes 12,195", "top_speed_mph": 75, "battery_kwh": "8.9 (unverified, memory)", "range_mi_claimed": "~80 (unverified)", "weight_lb": "~509 (unverified)", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "Germany", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping",
+      "source_url": "https://www.theautopian.com/this-new-affordable-electric-scooter-is-sold-in-america-goes-75-mph-and-costs-less-than-6000/", "seen_date": "2026-09-08",
+      "notes": "The only other 75 mph maxi-scooter sold in the US; every FLASH review benchmarks against it."
+    },
+    {
+      "brand": "Vespa", "model": "Elettrica 45 mph", "price_usd": "7,999 (storeusa.vespa.com)", "top_speed_mph": 45, "battery_kwh": "4.2 (unverified, memory)", "range_mi_claimed": "~60 (unverified)", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "M1/M2", "hq_or_us_base": "Italy; Piaggio Group Americas", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping (low volume)",
+      "source_url": "https://storeusa.vespa.com/elettrica/vespa-elettrica-45-mph.aspx", "seen_date": "2026-09-08", "notes": "Below the 50 mph screen; included per brief."
+    },
+    {
+      "brand": "Gogoro", "model": "(US status)", "price_usd": "n/a", "top_speed_mph": "n/a", "battery_kwh": "n/a", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": true,
+      "license_class": "n/a", "hq_or_us_base": "Taiwan", "dealer_model": "n/a", "socal_presence": "none", "status_2026": "not_sold_in_us; 99% of sales in Taiwan, international expansion abandoned, 2025 revenue -9.4%, net loss $80.8M",
+      "source_url": "https://cleantechnica.com/2026/01/25/gogoros-reset-from-electric-scooter-brand-to-energy-infrastructure-company/", "seen_date": "2026-09-08"
+    },
+
+    {
+      "brand": "Kawasaki", "model": "Ninja e-1 / Z e-1", "price_usd": "7,599 (2026 Ninja e-1 ABS); 7,899 for 2027 (Carscoops 2026-08-23)", "top_speed_mph": "65 with 15-second e-boost; 59 in Road mode", "battery_kwh": "3.0 (2 x 1.5 removable)", "range_mi_claimed": "41 (Road mode)", "weight_lb": "~309 (unverified)", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Japan; Kawasaki Motors Corp USA", "dealer_model": "dealers", "socal_presence": "yes (dense dealer network)", "status_2026": "shipping",
+      "source_url": "https://www.carscoops.com/2026/08/kawasaki-ninja-e1-pricing/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "LAND Moto", "model": "District (Street Moto / Scrambler)", "price_usd": "from 6,995 (base); pre-built Street Moto 9,295, Scrambler 8,995; District ADV 11,200", "top_speed_mph": 75, "battery_kwh": "up to 4.8 (CORE, removable)", "range_mi_claimed": "up to 110 city", "weight_lb": "200-250", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Cleveland, OH (US-made)", "dealer_model": "direct", "socal_presence": "none", "status_2026": "shipping",
+      "source_url": "https://landmoto.io/pages/district", "seen_date": "2026-09-08",
+      "notes": "US-built 75 mph rival just above the $6,500 line at base; pre-built pricing ~$9k."
+    },
+    {
+      "brand": "Evoke", "model": "Nrgy 6 / Nrgy 8 (2027)", "price_usd": "target 4,995 / 6,495 (not final)", "top_speed_mph": 75, "battery_kwh": "6.4 / 8.4 (LFP)", "range_mi_claimed": "not announced", "weight_lb": "unverified", "removable_battery": "unknown",
+      "license_class": "M1", "hq_or_us_base": "Beijing, China", "dealer_model": "unknown", "socal_presence": "none", "status_2026": "announced 2026-09-07; US homologation, pricing, preorder timing TBA",
+      "source_url": "https://electrek.co/2026/09/07/evokes-new-5000-electric-motorcycle-can-hit-highway-speeds-coming-to-us-eu/", "seen_date": "2026-09-08",
+      "notes": "The first announced product aimed squarely at FLASH's price/speed slot; Evoke has sold Urban S/Classic in the US before at ~$8k-10k."
+    },
+    {
+      "brand": "Horwin", "model": "CR6 / CR6 Pro", "price_usd": "~7,500-8,500 / 8,500-9,800 (bike-ev aggregator, unverified; Missile EV page blocked)", "top_speed_mph": "59 (95 km/h)", "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "Austria/China; US via Missile EV Electric Powersports", "dealer_model": "dealers", "socal_presence": "unverified", "status_2026": "shipping (low volume)",
+      "source_url": "https://missileev.square.site/artisan-horwin-cr6", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Vmoto / Super Soco", "model": "TC Max", "price_usd": "no verified US retail; Canada clearance CAD 3,995 (was CAD 7,500) at Joule Motorcycles, Burnaby BC", "top_speed_mph": "59 (95 km/h)", "battery_kwh": 3.2, "range_mi_claimed": "50-60", "weight_lb": "155 w/o battery + 40 lb pack", "removable_battery": true,
+      "license_class": "M1", "hq_or_us_base": "China/Australia; 2021 plan to enter US under 'Vmoto' brand not evidenced by any current US dealer", "dealer_model": "dealers", "socal_presence": "none found", "status_2026": "not_sold_in_us (unconfirmed)",
+      "source_url": "https://joulemotorcycles.com/product/super-soco-tc-max/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Felo", "model": "FW-06", "price_usd": "no US dealer found; EU ~EUR 7,300; China CNY 26,800", "top_speed_mph": "68-78 (sources vary)", "battery_kwh": "unverified", "range_mi_claimed": "68-87", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "M1", "hq_or_us_base": "China", "dealer_model": "dealers (EU)", "socal_presence": "none", "status_2026": "not_sold_in_us",
+      "source_url": "https://www.rideapart.com/news/658199/felo-fw06-electric-scooter-launch-france/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Silence", "model": "S01", "price_usd": "not sold in US", "top_speed_mph": "n/a", "battery_kwh": "n/a", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": true,
+      "license_class": "n/a", "hq_or_us_base": "Spain", "dealer_model": "n/a", "socal_presence": "none", "status_2026": "not_sold_in_us (no US listing surfaced)", "source_url": "https://en.wikipedia.org/wiki/Silence_S04", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Segway", "model": "(no street-legal e-moto) - Xaber 300 is off-road", "price_usd": "5,299.99 (Xaber 300, off-road)", "top_speed_mph": "n/a", "battery_kwh": "unverified", "range_mi_claimed": "n/a", "weight_lb": "unverified", "removable_battery": true,
+      "license_class": "OHV", "hq_or_us_base": "Segway Powersports USA", "dealer_model": "dealers", "socal_presence": "yes", "status_2026": "shipping (off-road only)",
+      "source_url": "https://www.cyclenews.com/2026/05/article/2026-segway-xaber-300-electric-dirt-bike/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Yadea", "model": "Kemper", "price_usd": "not sold in US (aggregator '$7,590 US' is unverified and not on any Yadea US channel)", "top_speed_mph": 99, "battery_kwh": "unverified", "range_mi_claimed": "unverified", "weight_lb": "unverified", "removable_battery": false,
+      "license_class": "n/a", "hq_or_us_base": "China", "dealer_model": "n/a", "socal_presence": "none", "status_2026": "not_sold_in_us", "source_url": "https://newatlas.com/motorcycles/yadea-kemper-electric-motorcycle/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Ola Electric / Ather", "model": "(US entry)", "price_usd": "n/a", "top_speed_mph": "n/a", "battery_kwh": "n/a", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": "n/a",
+      "license_class": "n/a", "hq_or_us_base": "India", "dealer_model": "n/a", "socal_presence": "none", "status_2026": "no US entry found; Ola volumes collapsed to ~4,000/mo by Feb 2026", "source_url": "https://www.motorcyclesdata.com/2026/08/21/ola-electric/", "seen_date": "2026-09-08"
+    },
+    {
+      "brand": "Cake / UBCO", "model": "(status)", "price_usd": "n/a", "top_speed_mph": "n/a", "battery_kwh": "n/a", "range_mi_claimed": "n/a", "weight_lb": "n/a", "removable_battery": true,
+      "license_class": "n/a", "hq_or_us_base": "Sweden / New Zealand", "dealer_model": "n/a", "socal_presence": "n/a", "status_2026": "Cake: bankruptcy Feb 2024, revived under new owners; UBCO: receivership Jan 2025, rescued", "source_url": "https://electrek.co/2025/01/20/troubled-off-road-electric-motorbike-maker-enters-receivership/", "seen_date": "2026-09-08"
+    }
+  ],
+
+  "claim_check": {
+    "screen": "Street-legal (DOT-certified, CA-registrable) two-wheelers sold new in the US and shipping as of Sep 2026, price <= $6,500, top speed >= 70 mph",
+    "products_meeting_screen": [
+      {"product": "HMP FLASH dual-battery", "price": "$5,999 launch-sale; $6,999 regular (fails screen at regular price)", "top_speed": "75 mph GPS", "status": "shipping", "caveat": "New brand, one store, OEM Luyuan"},
+      {"product": "Kollter ES1-S/X Pro + 2nd battery", "price": "$2,995 + $995 = $3,990 clearance (MSRP $5,995 + $995 = $6,990 fails screen)", "top_speed": "72 mph dual", "status": "clearance, inventory-limited", "caveat": "Costa Mesa distributor; 2.3 kWh packs; 2021-era design"}
+    ],
+    "near_misses": [
+      {"product": "Ryvid Outset", "why": "75+ mph but $7,495 (was $5,995 in 2024) - could re-enter the class with a promotion"},
+      {"product": "LAND District", "why": "75 mph but $6,995 base / ~$9k pre-built"},
+      {"product": "Evoke Nrgy 6", "why": "$4,995 target, 75 mph, 6.4 kWh - announced 2026-09-07, not shipping until 2027"},
+      {"product": "Kawasaki Ninja e-1 / Z e-1", "why": "$7,599, 65 mph only with 15-s boost"},
+      {"product": "LiveWire S4 Honcho", "why": "$4,999-5,499 but 59 mph, 3.48 kWh, 53 mi"},
+      {"product": "NIU MQi GT EVO", "why": "63 mph"},
+      {"product": "BMW CE 04", "why": "75 mph but $12,199"},
+      {"product": "CSC RX1E", "why": "80 mph, $8,495 - company closed July 2026"},
+      {"product": "Honda PCX160 (gas)", "why": "$4,349, ~70-73 mph, dense dealer network - the real cross-shop"}
+    ],
+    "verdict": "TRUE as of Sep 2026, with three qualifiers: (1) it is 'one of very few' only at the launch-sale price; at $6,999 regular the dual FLASH sits with Ryvid/LAND rather than under them; (2) the gap exists partly because competitors left or repriced (CSC closed, Ryvid +$1,500, Kollter on clearance) rather than because the segment is proven; (3) the slot is now being targeted (Evoke Nrgy 2027, LiveWire S4 Honcho at 59 mph, Kawasaki e-1) and the 50+hp electric segment sold only ~930 units nationally in 2025.",
+    "flash_ranking": {
+      "price": "1st among shipping >=70 mph street-legal EVs (excluding Kollter clearance). Order: FLASH dual $5,999 < Kollter dual MSRP $6,990 < LAND $6,995 < Outset $7,495 < Anthem $7,995 < CSC RX1E $8,495 (gone) < Maeving $9,995 < LiveWire S2 $11,999 < BMW CE 04 $12,199 < Zero FXE $12,495 < Stark $12,900+",
+      "top_speed": "Mid-pack: 75 = BMW CE 04 = LAND; Ryvid 75+; Kollter 72; Maeving 70; below CSC RX1E 80, Zero FXE 85, LiveWire 99-103",
+      "range": "Competitive on paper (106 mi @37 mph; 70-85 real): Ryvid 70-75 city, LAND 110 city, Zero FXE 105 city, BMW CE 04 ~80, LiveWire Del Mar 113 city; Kollter 80 city; Kawasaki e-1 41",
+      "battery_kwh": "6.66 kWh dual is the largest removable pack in the sub-$7k set (Ryvid 4.3, Kollter 4.6, LAND 4.8, Honcho 3.48, e-1 3.0) but below Zero FXE 7.2, BMW CE 04 ~8.9, LiveWire 10.5",
+      "features": "Best-in-class spec sheet under $7k: ABS + traction control + TPMS + dashcam + 7in TFT CarPlay/Android Auto + reverse + keyless; step-through, weather protection, 2-up. Ryvid: adjustable seat, integrated 3.3 kW charger; LiveWire/Zero: Level 2/optional fast charging, apps, dealer service."
+    },
+    "flash_wins_on": [
+      "Price per kWh and price per mph in the street-legal class",
+      "Removable, parallel dual packs (apartment charging) - Zero, BMW, LiveWire S2 packs are fixed",
+      "Feature bundle (ABS/TCS/TPMS/dashcam/CarPlay) unusual below $10k",
+      "Scooter ergonomics (step-through, weather protection, storage) that no e-moto rival offers at 75 mph",
+      "Ships assembled, $0 prep; CA freight $400",
+      "Legal alternative for the large LA Sur-Ron/Talaria rider base that can no longer street-ride (SB 586)"
+    ],
+    "flash_loses_on": [
+      "Brand recognition and trust: reviews and comments flag 'Chinese rebrand' (Luyuan), one LinkedIn employee, AI-generated marketing images, 'drop-ship from China' skepticism (New Atlas comment)",
+      "Dealer/service network: one SF store vs Zero/LiveWire/BMW/Kawasaki/NIU dealer coverage across LA; Maeving and Kollter already have LA/OC bases",
+      "Resale value: no track record; sub-$10k Chinese-OEM EVs (CSC, Sondors, Kollter clearance at 50% off MSRP) have depreciated sharply",
+      "Charging speed: 2 kW standard (3.3 kW 'Plus') vs Ryvid 3.3 kW integrated, Zero 6 kW option, LiveWire L2 (and L3 on S2/One); no J1772 fast option beyond 3.3 kW",
+      "Battery size vs Zero/BMW/LiveWire for sustained 65-75 mph freeway use; real range at highway speed unpublished",
+      "Weight: site lists 335 lb curb (not the 299 lb in marketing) - heavier than Ryvid Outset 315, LAND 200-250, Zero FXE 309",
+      "Hub motor (unsprung weight) vs mid-drive/belt on Zero, LiveWire, Ryvid",
+      "Early-owner quality issues on the Lightning platform (battery cut-out at 55%, missing manual, bad cruise control, kickstand sensor, plate bracket mismatch) documented on Endless Sphere Oct 2025 - unknown whether FLASH shares them",
+      "Requires M1 license; scooter-format buyers in the US often lack one (JUDGMENT)"
+    ]
+  },
+
+  "gas_alternatives": [
+    {"brand": "Honda", "model": "PCX160 (2026)", "price_usd": "4,349 + ~$300-600 destination (Honda site blocked; MSRP consistent across HMP blog, bikesknowledge, motonewsworld)", "top_speed_mph": "~70-73 (unverified)", "source_url": "https://www.hmpbikes.com/blogs/learn-more/honda-pcx-160-top-speed-cost", "seen_date": "2026-09-08", "note": "Autopian: out-the-door ~$6,500, 'twice the fuel range' of FLASH"},
+    {"brand": "Honda", "model": "ADV160 (2026)", "price_usd": "4,499 + $600 destination (motorcycle.com)", "top_speed_mph": "~70 (unverified)", "source_url": "https://www.motorcycle.com/specs/honda/scooter/2026/adv/160/detail.html", "seen_date": "2026-09-08"},
+    {"brand": "Yamaha", "model": "XMAX (2026, 292cc)", "price_usd": "6,399 (yamahamotorsports.com)", "top_speed_mph": "~84-90 GPS (unverified)", "source_url": "https://yamahamotorsports.com/models/xmax/specs", "seen_date": "2026-09-08"},
+    {"brand": "Yamaha", "model": "Zuma 125 (2026)", "price_usd": "3,799 (yamahamotorsports.com per search)", "top_speed_mph": "~60 (unverified)", "source_url": "https://yamahamotorsports.com/models/zuma-125/specs", "seen_date": "2026-09-08"},
+    {"brand": "Kymco", "model": "People S 150i ABS (2026)", "price_usd": "3,799 (motorcycle.com)", "top_speed_mph": "~68 (unverified)", "source_url": "https://www.motorcycle.com/specs/kymco/scooter/2026/people-s/150i-abs/detail.html", "seen_date": "2026-09-08"},
+    {"brand": "Genuine", "model": "Buddy Kick 125i / Buddy 170i", "price_usd": "3,499 / 3,499 (genuinescooters.com)", "top_speed_mph": "~55 / ~65 (unverified)", "source_url": "https://www.genuinescooters.com/products/buddy-170i", "seen_date": "2026-09-08", "note": "Genuine (Chicago) also distributes NIU in the US"},
+    {"brand": "Kawasaki", "model": "Ninja 500 (2026)", "price_usd": "5,399 non-ABS / 5,799 ABS + $650 destination (kawasaki.com spec sheet)", "top_speed_mph": "~105 (unverified)", "source_url": "https://www.kawasaki.com/en-us/products/ProductSpecSheetPDF/2026-ninja-500", "seen_date": "2026-09-08"},
+    {"brand": "Honda", "model": "Grom (2026)", "price_usd": "3,599 (+$300 dest); SP 3,699; ABS 3,799", "top_speed_mph": "55-73 (Wikipedia range)", "source_url": "https://powersports.honda.com/motorcycle/minimoto/grom/2026/grom", "seen_date": "2026-09-08"},
+    {"brand": "Royal Enfield", "model": "Hunter 350 (2026)", "price_usd": "4,299 (Cycle World / Motorcyclist buyer's guides)", "top_speed_mph": "~75 (120 km/h)", "source_url": "https://www.cycleworld.com/royal-enfield/hunter-350/", "seen_date": "2026-09-08"},
+    {"brand": "CFMoto", "model": "300NK (2026)", "price_usd": "4,199 (dealer listings)", "top_speed_mph": "~86 (139 km/h, unverified)", "source_url": "https://www.cfmotousa.com/inventory/unit/300nk", "seen_date": "2026-09-08"},
+    {"dealer_density_note": "ESTIMATE - no official count found. LA County has dozens of franchised powersports stores: Del Amo Motorsports alone runs 8 SoCal locations (largest CA group), plus Bert's Mega Mall (Covina), SoCal Honda Powersports (Carson), Wheels in Motion (Chatsworth), etc. Honda/Yamaha/Kawasaki each have on the order of 15-30 franchised dealers within LA/Orange counties (JUDGMENT from dealer-locator familiarity, unverified). A $5-6k buyer can test-ride a PCX160 or Ninja 500 within ~15 minutes of almost anywhere in the basin; HMP would have one location."}
+  ],
+
+  "market_size_signals": [
+    {"signal": "US 50+hp on-road electric motorcycle segment ~930 units in 2025", "detail": "LiveWire sold 653 units in 2025 (+7% vs 612) and claims ~70% share of the segment => ~930 units total. Electrek calls it 'a niche within a niche'. LiveWire motorcycle revenue fell 28% to $6.1M (heavy incentives); segment operating loss $73.8M.", "trend": "flat-to-slightly-up units, sharply down revenue", "source_url": "https://electrek.co/2026/02/11/the-one-company-that-sells-nearly-three-quarters-of-all-electric-motorcycles/", "seen_date": "2026-09-08"},
+    {"signal": "LiveWire Q2 2026: 267 units vs 55 in Q2 2025; motorcycle revenue $3.6M; net loss $18.2M; S4 Honcho ($4,999-5,499) launched; acquired Dust Motorcycles May 2026", "trend": "growing from a tiny base, driven by price cuts and cheaper models", "source_url": "https://www.businesswire.com/news/home/20260723076647/en/LiveWire-Group-Inc.-Reports-2026-Second-Quarter-Financial-Results", "seen_date": "2026-09-08"},
+    {"signal": "MIC: US new motorcycle+scooter sales -7.6% in 2025; sport bikes +13% (all sub-750cc); adventure sub-600cc +52% since 2019; 'customers are moving toward smaller, affordable, versatile' models. No electric breakout published.", "trend": "overall market declining; small/cheap segments growing", "source_url": "https://powersportsbusiness.com/top-stories/2026/02/05/mic-reports-2025-motorcycle-atv-retail-sales-decline-as-buyers-shift-to-smaller-models/", "seen_date": "2026-09-08"},
+    {"signal": "California registered motorcycles: 763,800 as of Jan 1, 2026 (DMV Statistics PDF) vs 787,973 as of Jan 1, 2025 (Statista, unverified) => ~-3%", "trend": "declining", "source_url": "https://qr.dmv.ca.gov/portal/file/california-dmv-statistics-pdf", "seen_date": "2026-09-08"},
+    {"signal": "Los Angeles County registered motorcycles: 150,464 (2022) -> 144,037 (2023) -> 139,137 (2024); total vehicles 7.74M (2024) => motorcycles ~1.8% of registrations", "trend": "declining ~4%/yr", "source_url": "http://www.laalmanac.com/transport/tr02.php", "seen_date": "2026-09-08"},
+    {"signal": "Share of California drivers holding Class M endorsement", "detail": "NOT FOUND in DMV public statistics or search; do not cite a figure. (Memory: national M-endorsement share is often quoted around 8-10% of licensed drivers - unverified.)", "source_url": null, "seen_date": "2026-09-08"},
+    {"signal": "Zero Motorcycles: ~10% global layoffs incl. entire assembly line (Feb 2023, EV Rider); Philippines assembly partnership 2023; global HQ moved from Scotts Valley CA to Netherlands (announced 2025-10-07; R&D stays in CA; 'Europe is the growth engine'); long-time CEO Sam Paschel out late 2025, ex-Kia exec Pierre-Martin Bos in, with further layoffs reported; Level 3 DC fast charging planned for 2027", "trend": "retrenching in US", "source_url": "https://www.electrive.com/2025/10/07/zero-motorcycles-is-heading-to-the-netherlands/", "secondary_url": "https://www.rideapart.com/news/777617/zero-motorcycles-sam-paschel-ceo-out-new-ceo-layoffs/", "seen_date": "2026-09-08"},
+    {"signal": "Harley-Davidson confirmed headcount reductions as part of a $150M run-rate cut under CEO Artie Starrs (from Oct 2025); LiveWire Q1 2025 units -72%", "source_url": "https://www.rideapart.com/news/787052/harley-davidson-headcount-reductions-layoffs/", "seen_date": "2026-09-08"},
+    {"signal": "Energica bankruptcy Oct 2024; sold to Singapore-based investors; relaunch positioned for 2026", "source_url": "https://electrek.co/2025/07/19/its-true-high-performance-electric-motorcycle-brand-energica-is-back/", "seen_date": "2026-09-08"},
+    {"signal": "Sondors: receivership late 2023 after ~2,000 Metacycles delivered; ex-employee says Metacycle was never street-legal; founder pre-selling 'Meta AT' since June 2025", "source_url": "https://electrek.co/2024/05/12/failed-sondors-metacycle-motorcycle-was-never-street-legal-reveals-employee/", "seen_date": "2026-09-08"},
+    {"signal": "CSC Motorcycles (Azusa, CA) shut down July 2026 citing EPA costs and tariffs; ~6,000 units in 11 years", "source_url": "https://www.revzilla.com/common-tread/csc-motorcycles-shutting-down", "seen_date": "2026-09-08"},
+    {"signal": "Cake bankruptcy (Feb 2024) and UBCO receivership (Jan 2025) - both later rescued at reduced scale", "source_url": "https://electrek.co/2024/02/02/breaking-electric-motorcycle-company-cake-quietly-files-for-bankruptcy/", "seen_date": "2026-09-08"},
+    {"signal": "Gogoro: international expansion abandoned, 2025 revenue -9.4%, net loss $80.8M; no US presence", "source_url": "https://cleantechnica.com/2026/01/25/gogoros-reset-from-electric-scooter-brand-to-energy-infrastructure-company/", "seen_date": "2026-09-08"},
+    {"signal": "Where growth is: Electrek notes the small-format segment (Sur-Ron/Talaria style) is the actual growing market; Powersports Business calls S4 Honcho a bet on 'entry-level EV growth'. California SB 586 (eff. 2026-01-01) pushes those bikes off-road only.", "source_url": "https://powersportsbusiness.com/news/electric/2026/06/10/livewire-bets-on-entry-level-ev-growth-with-s4-honcho-launch/", "seen_date": "2026-09-08"},
+    {"signal": "No national registration data for electric motorcycles (S&P Global Mobility / MIC) was found in public sources; ICCT and market-research figures are global or forecasts, not US unit counts.", "source_url": "https://theicct.org/sneak-peek-at-the-2025-global-electric-two-wheeler-market-dec25/", "seen_date": "2026-09-08"}
+  ],
+
+  "tariffs_and_supply": {
+    "hts_classification": "Electric motorcycles/mopeds: HTSUS 8711.60.00 (8711.60.0050 e-bikes <= 750 W-ish / 8711.60.0090 other). General (MFN) duty: Free. Source: CBP ruling NY N344662 (2024-12-20).",
+    "section_301_base": "China-origin 8711.60.0090 carries the Section 301 List 2 additional duty of 25% (Chapter 99 9903.88.02) per NY N344662. FACT.",
+    "section_301_ev_100_percent": "The Sept 2024 four-year-review increase to 100% applied to 'electric vehicles' under heading 8703 (passenger cars); our reading is that 8711.60 electric motorcycles were NOT moved to 100% and remain at 25%. UNCERTAIN - we could not open the Federal Register annex; confirm the exact Chapter 99 line with a licensed customs broker before pricing.",
+    "ieepa_tariffs": "The 20% 'fentanyl' IEEPA tariff (Mar 2025, later cut to 10% after the Nov 1, 2025 Trump-Xi deal) and the IEEPA 'reciprocal' tariffs were struck down by the Supreme Court on 2026-02-20 (6-3) and terminated; refund mechanics are still being worked out (Penn Wharton, White & Case). FACT.",
+    "section_122_and_replacement": "A 10% Section 122 balance-of-payments surcharge ran from Feb 2026 and expired 2026-07-24. It was replaced the same minute by new Section 301 'forced-labor' tariffs of 10-12.5% on 60 economies; China is in the 12.5% tier, stacking on top of existing 301 duties (Holland & Knight, Wiley, Akerman, July 2026). FACT.",
+    "section_232_steel_aluminum_derivatives": "8711.60 was added to the steel/aluminum derivative list effective 2025-08-19 (50% on the steel/aluminum content value, not the whole bike). A revised proclamation effective 2026-04-06 removed 'certain finished motorcycles' from the derivative list (Powersports Business 2026-04-09) but did not publish which lines; aftermarket parts still captured at 25%. UNCERTAIN whether 8711.60 finished e-motos are now out.",
+    "batteries_shipped_separately": "Section 301 on China-origin non-EV lithium-ion batteries (8507.60) rose from 7.5% to 25% on 2026-01-01 (plus 3.4% MFN). Spare/replacement 74V packs imported separately face ~28% + 12.5% forced-labor. FACT.",
+    "estimated_current_stack_china_built_emoto": "ESTIMATE (Sep 2026): 0% MFN + 25% (301 List 2) + 12.5% (301 forced-labor) = ~37.5% of customs value, plus any residual 232 content duty; this matches the ~37.5% 'effective China rate' quoted by trade-tool sites for most machinery. Down from ~55-57.5% in mid-2025 (when 20% IEEPA + 10% reciprocal applied) but still ~3x the 2024 level. Exclusions extended to 2026-11-10 under the Nov 2025 US-China deal do not cover 8711.60 as far as we could see.",
+    "how_small_importers_are_coping": [
+      "CSC Motorcycles (Zongshen OEM, Azusa) closed July 2026 explicitly citing tariffs + EPA (RevZilla).",
+      "Ryvid (US-assembled, imported components) raised Outset $5,995 -> $7,495 and Anthem $6,495 -> $7,995 for 2025 (cause not stated).",
+      "Kollter USA (Costa Mesa) is clearing ES1 stock at 50% off MSRP while listing a 2027 RS1 at $9,995.",
+      "Kawasaki raised Ninja e-1 from $7,599 (2026) to $7,899 (2027).",
+      "REV Rides published guidance to customers on the 20% tariff wave (Mar 2025) and warned of price hikes on Surron/Talaria/Segway/etc.",
+      "HMP's own launch-sale vs regular pricing ($5,999 vs $6,999) may reflect tariff headroom (JUDGMENT)."
+    ],
+    "uncertainty_statement": "Tariff rules changed at least five times between Mar 2025 and Jul 2026 (IEEPA fentanyl, reciprocal, Nov 2025 deal, SCOTUS Feb 2026, Section 122, forced-labor 301) and USTR/Commerce retain rolling authority to add products with 90-day reviews. Any LA-store pro forma should model landed cost at 25%, 37.5% and 60% tariff scenarios and confirm HTS treatment in writing with a broker.",
+    "sources": [
+      "https://www.customsmobile.com/rulings/docview?doc_id=NY+N344662&highlight=8711.60.00*",
+      "https://www.federalregister.gov/documents/2024/09/18/2024-21217/notice-of-modification-chinas-acts-policies-and-practices-related-to-technology-transfer",
+      "https://www.whitecase.com/insight-alert/united-states-terminates-ieepa-based-tariffs-following-supreme-court-decision",
+      "https://www.hklaw.com/en/insights/publications/2026/07/and-the-tariff-beat-goes-on",
+      "https://www.wiley.law/alert-New-Forced-Labor-Tariffs-Imposed-on-60-US-Trading-Partners",
+      "https://powersportsbusiness.com/news/2026/04/09/tariff-update-revisions-offer-partial-relief-for-motorcycle-industry-uncertainty-remains/",
+      "https://www.bicycleretailer.com/industry-news/2025/08/18/new-ruling-could-add-steel-tariff-costs-imported-e-bikesn-and-trainers",
+      "https://www.hklaw.com/en/insights/publications/2024/09/ustr-finalizes-action-on-new-and-increased-section-301-tariffs",
+      "https://revrides.com/blogs/news/new-20-tariffs-on-chinese-imports-what-this-means-for-e-motos-e-scooters-and-e-bikes-in-the-u-s",
+      "https://www.revzilla.com/common-tread/csc-motorcycles-shutting-down"
+    ]
+  },
+
+  "press_and_reviews": [
+    {"outlet": "Electrek (Micah Toll)", "date": "2026-07-18", "product": "FLASH", "type": "launch coverage (not a ride review)", "praise": "'fills a fairly significant gap' between e-bikes and motorcycles; delivery-rider focus; weather protection, step-through; ~1/3 the price of BMW CE 04", "doubts": "American skepticism toward scooters; whether mainstream adoption occurs; M1 + DOT helmet required", "comments": "Top comment: pricing 'would be very compelling' vs CE 04", "url": "https://electrek.co/2026/07/18/new-hmp-flash-brings-affordable-75-mph-electric-scooters-to-the-us/"},
+    {"outlet": "Electrek", "date": "2026-07-31", "product": "Lightning MK.II", "type": "launch coverage", "praise": "'can absolutely replace a car for many urban households'; ships assembled; removable battery; lane-splitting legal in CA", "doubts": "56 mph 'modest'", "comments": "'speed and range work for most suburban purposes'", "url": "https://electrek.co/2026/07/31/hmps-new-3999-electric-scooter-is-the-affordable-street-legal-commuter-the-us-needs/"},
+    {"outlet": "The Autopian", "date": "2026-07-31", "product": "FLASH", "type": "analysis", "praise": "specs 'more than usable'; 100+ delivery riders tested it; affordability effort", "doubts": "manufacturing origin obscured - built by Chinese company Luyuan while marketing implies domestic; startup with SF-only presence; AI-generated marketing images; 20 L storage; hub motor unsprung weight; 4.5-9 h charging on standard charger; Honda PCX out-the-door ~$6,500 with twice the range", "comparisons": "BMW CE 04 $12,195; CSC E-RT3 $7,295 (discontinued); Ryvid Anthem $7,995", "comments": "readers cite disappointing real-world experiences with Ryvid and BMW discounting", "url": "https://www.theautopian.com/this-new-affordable-electric-scooter-is-sold-in-america-goes-75-mph-and-costs-less-than-6000/"},
+    {"outlet": "New Atlas", "date": "2026-07-28", "product": "FLASH", "type": "launch coverage", "praise": "'well below many electric motorcycles'; standard ABS/TCS/dashcam", "doubts": "'tough to say if Americans will feel the same way'", "comments": "'LinkedIn search shows one company employee, the founder. Not ready to lay out cash for a drop ship from China.'", "url": "https://newatlas.com/motorcycles/hmp-flash/"},
+    {"outlet": "TechTimes", "date": "2026-07-20", "product": "FLASH", "type": "launch coverage (page blocked; headline/snippet only)", "praise": "'Fills US gap: highway electric scooter below $6K with no real rival'", "doubts": "n/a", "url": "https://www.techtimes.com/articles/321055/20260720/hmp-flash-fills-us-gap-highway-electric-scooter-below-6k-no-real-rival.htm"},
+    {"outlet": "Buck City Biker (UK)", "date": "2026-07-20", "product": "FLASH", "type": "coverage", "praise": "'could have found a gap that plenty have been waiting to see filled'", "doubts": "highway-speed range will drop; 'delivery on real-world performance claims remains the deciding factor'", "url": "https://www.buckcitybiker.co.uk/news/hmp-flash-electric-scooter"},
+    {"outlet": "Transport Evolved (Nikki Gordon-Bloomfield)", "date": "2026-08-25", "product": "Lightning MK.II", "type": "long-term staff-vehicle review series; bike supplied free by HMP, no editorial control (disclosed)", "praise": "chosen as a practical town runabout", "doubts": "series just started - watch for follow-ups", "url": "https://www.transportevolved.com/2026/08/25/nikkis-got-another-lightning-meet-the-hmp-electric-motorcycle/"},
+    {"outlet": "YouTube - 'This Electric Scooter is a GAME CHANGER!'", "date": "2026 (Jul/Aug)", "product": "FLASH", "type": "invited test by a delivery rider with 25,000+ deliveries (HMP-invited; treat as friendly)", "url": "https://www.youtube.com/watch?v=h8W_HoPvTwY"},
+    {"outlet": "YouTube - 'It's a scooter... but hear me out - HMP Lightning'; Area 13 eBikes (dealer page)", "product": "Lightning", "type": "enthusiast/dealer content", "url": "https://www.youtube.com/watch?v=ZPbDSGX4sZU"},
+    {"outlet": "Endless Sphere forum - 'HMP Lightning (Yuyuan MKK)'", "date": "2025-10-18 to 2025-10-28", "product": "Lightning (pre-MK.II)", "type": "owner thread (SF buyer)", "praise": "same-day delivery/assembly from SF shop; HMP swapped a bad battery same day; storage, passenger comfort, responsive support", "complaints": "battery died at 55%; no manual; no hazard switch; disconnected 3-way switch; kickstand sensor faults; cruise control 'baaaaad' and cannot be disabled; CA plate holes mismatch (3D-printed adapter); extra DMV/insurance paperwork; identified OEM as Luyuan MKK; others question battery chemistry on similar 'Zoom' units", "url": "https://endless-sphere.com/sphere/threads/hmp-lightning-yuyuan-mkk.128978/"},
+    {"outlet": "Reddit r/ElectricMotorcycles, r/scooters, r/ElectricScooters", "date": "2026-09-08", "product": "FLASH / Lightning", "type": "search result", "finding": "No indexed Reddit threads about HMP FLASH or Lightning surfaced in four targeted searches (site:reddit.com and subreddit queries). Absence of organic community discussion two months after launch is itself a signal (JUDGMENT): awareness is press-driven, not owner-driven yet.", "url": null},
+    {"outlet": "RideApart / Cycle World / Motorcycle.com", "date": "2026-09-08", "product": "FLASH", "finding": "No coverage found - the mainstream motorcycle press has not tested or written about HMP.", "url": null}
+  ],
+
+  "implications": [
+    {"tag": "FACT", "text": "As of Sep 2026 the FLASH dual is the cheapest street-legal, shipping 70+ mph electric two-wheeler in the US at its $5,999 sale price; the only other one under $6,500 is Kollter's clearance stock in Costa Mesa. At the $6,999 regular price the claim weakens to 'cheapest among Ryvid/LAND/Kollter-MSRP'."},
+    {"tag": "FACT", "text": "The addressable pool is tiny and shrinking: ~930 units nationally in the 50+hp on-road EV segment in 2025; LA County motorcycle registrations fell from 150k (2022) to 139k (2024); CA registrations fell ~3% in 2025; new-unit motorcycle sales -7.6% in 2025. 'Should sell better in SoCal' is plausible on climate, lane-splitting and delivery density, but not on market growth."},
+    {"tag": "FACT", "text": "The nearest SoCal-based rivals have exited or retreated (CSC closed Jul 2026; Kollter on clearance; Ryvid +$1,500; Zero HQ to Netherlands; LiveWire cutting prices 25%). A vacuum exists, but it was created by economics (tariffs, EPA, weak demand) that apply to HMP too."},
+    {"tag": "FACT", "text": "New entrants are aiming at the same slot: LiveWire S4 Honcho ($4,999-5,499, 59 mph) is arriving at H-D dealers this summer, Kawasaki e-1 sits at $7,599-7,899 with a dense dealer network, and Evoke Nrgy 6 ($4,995 target, 75 mph, 6.4 kWh) is announced for 2027. The window of 'no real rival' is likely 12-18 months (ESTIMATE)."},
+    {"tag": "FACT", "text": "Every press piece benchmarks FLASH against the BMW CE 04 ($12,199) and Honda PCX160 ($4,349, ~$6,500 out the door). In LA the PCX/ADV160/XMAX are the real cross-shop and are available at dozens of dealers with financing and service; the store's sales pitch must be TCO and legality (no smog, no gas, lane splitting, removable batteries for apartments), not just '75 mph for $6k'."},
+    {"tag": "FACT", "text": "Trust, not price, is the identified objection: reviewers flag Luyuan OEM origin, a one-person LinkedIn footprint, AI marketing images and drop-ship fears; the only owner thread lists seven defects on a Lightning. A physical LA store with test rides, on-site service and visible parts stock directly answers the objection and is the strongest argument FOR a sales-led store."},
+    {"tag": "FACT", "text": "California SB 586 (effective 2026-01-01) makes Sur-Ron/Talaria-class e-motos off-highway only; LA has one of the largest such rider populations. A DOT/CARB-certified 75 mph bike is the legal upgrade path - a marketing segment none of the established brands is chasing at this price."},
+    {"tag": "ESTIMATE", "text": "Landed-cost exposure: a China-built e-moto currently faces ~37.5% stacked duties (25% 301 + 12.5% forced-labor), down from ~55%+ in mid-2025 but subject to rolling changes; spare packs face ~40%. Model the LA store at 25/37.5/60% tariff scenarios; a swing of 20 points on a ~$3k FOB bike is ~$600/unit, roughly the whole launch discount."},
+    {"tag": "ESTIMATE", "text": "Realistic LA volume: if HMP captured 10-15% of a SoCal share of the ~930-unit national premium segment plus a larger slice of the sub-$7k commuter/delivery segment, first-year LA sales of 150-400 units is a defensible planning range; 1,000+ would require the delivery-fleet channel to work. (Derived from LiveWire's 653 national units with ~70% share and CSC's ~550 units/yr average across all models.)"},
+    {"tag": "JUDGMENT", "text": "Precedents for a D2C brand opening an LA showroom exist (Maeving Culver City, NIU Melrose, Aventura-X Carson, Kollter Costa Mesa) - all are low-volume. The store should be sized as a service-and-test-ride hub with fleet/delivery sales, not a high-traffic retail showroom; rent and staffing should assume <2 units/day."},
+    {"tag": "JUDGMENT", "text": "Prioritize what FLASH loses on: publish highway-speed range, curb weight (site says 335 lb, marketing says 299), OEM/QC story, parts availability, a 3.3 kW charging default, and a resale/buy-back program. Otherwise the 75 mph headline invites the exact 'Chinese rebrand' skepticism already in comments."},
+    {"tag": "JUDGMENT", "text": "Secure the 'only 75 mph under $6k' position while it lasts: lock the $5,999 dual price through 2027 if margin allows, get one mainstream test (RideApart/Cycle World/Motorcycle.com currently silent), and seed Reddit/owner content - organic discussion is absent two months after launch."}
+  ]
+}
