@@ -195,3 +195,32 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 ---
 
 来源：`raw/fleet/courier-side.json`（16 次检索）、`raw/fleet/motorcycle-side.json`（14 次）、`raw/fleet/public-grant-funded-fleets.json`（18 次）、`raw/fleet/fleet-enablers-economics.json`（24 次）、`raw/fleet/la28_procurement.txt`；给研究代理的上下文见 `raw/fleet/00-context-given-to-researchers.md`。
+
+## 8. UL 2849 + UL 2271 到手后的优势，以及竞争者的认证状态（2026-09-10）
+
+两个标准的分工：**UL 2849** 是整车电气系统认证（电池、充电器、电机、控制器、线束、充电口作为一个系统测试）；**UL 2271** 是电池包认证（过充、短路、高低温、冲击、挤压）。证书按型号和配置发，换电池供应商、换充电器或改控制器都要重新认证，所以证书上的型号和电池 SKU 必须和在售车一致。
+
+### 8.1 它带来什么
+
+| 维度 | 没有认证 | 有认证 | 来源 |
+|---|---|---|---|
+| 加州合法销售 | SB 1271：2026-01-01 起禁止销售、分销、出租未经认可实验室按 UL 2849 / UL 2271 / EN 15194 测试的新电动自行车和电池；自营租赁车队的宽限到 2028-01-01 | INNO 在加州零售、租购、批发给企业全部合法；大量未认证的踏板造型进口车被清出市场 | bikelegalfirm.com SB 1271 解读；SB 1271 立法分析 2024-06-24 |
+| 纽约 | Local Law 39（2023-09）禁售未认证车；**Local Law 95（2026-01-26 起）** 把要求从"卖"扩展到"用"：外卖平台的骑手所骑车辆必须 UL 2849 + UL 2271，责任落在 DoorDash / Uber Eats / Grubhub 等平台 | 若做纽约或任何平台合作，这是准入门票；平台为骑手车辆合规负责的趋势会向其他城市扩散 | council.nyc.gov 2025-08-14；getwhizz.com NYC 2026 指南 |
+| 联邦 | CPSC 2026-06-24 发布拟议规则（16 CFR 1265），把 UL 2849-20 / UL 2271-23 / UL 2272-24 加修改项设为全国强制；评论期至 2026-08-24；最终规则公布后 180 天生效 | 已认证的车最接近合规；但拟议规则加了防拆电池外壳、反接测试、标签和说明书要求，**现有证书大概率要补测或改标签** | federalregister.gov 2026-12749 |
+| 电商平台 | Amazon 要求 UL 2849 测试报告由授权实验室直接提交（DV 验证），Walmart 类似 | INNO 可以上 Amazon / Walmart，多一条全国零售渠道 | goatconsulting.com；gdestl.com Amazon DV 指南 |
+| 政府补贴 | 加州 E-Bike Incentive Project（$1,750–2,000 / 张，要求 UL 2849 或 EN 15194、≤750W、可用脚踏、集成车灯、电气件 1 年保修、经批准零售商）、GoSGV $2,000（UL 2849 / EN 15194 + 330 lb 载重）、CARB 子项目全部关门 | 全部可申请；INNO $2,300 的价位让州补贴覆盖 75–85% 车价，是对低收入骑手最强的购车理由 | ww2.arb.ca.gov；sgvcog.org/gosgv |
+| 外卖平台挂牌 | DoorDash 现有三家车辆伙伴 Whizz（Storm-2 UL 2849 + TÜV）、Dirwin（UL 2849 / 2271）、Swobbee 都有认证 | 达到进入 Dasher Deals 的事实门槛 | getwhizz.com；dirwinbike.com/pages/faqs |
+| 保险与消防 | 车队保险和产品责任险按认证状态定价；768 Ceres 的锂电池储存 / 充电（2025 CFC §320）要过 LAFD 和业主 | 报价更容易拿到、更便宜；对业主和 LAFD 的说明材料有据可依；出事时的责任抗辩基础 | lendcontrol.com 保险指南（经纪按存储、锁具、追踪器和认证定价） |
+| 骑手居住 | 纽约公房和越来越多公寓禁止非 UL 车进楼充电；LA 的物业跟进中 | 骑手能在家充电，是租购转化的隐性条件 | ulse.org NYC 火灾死亡下降报告 |
+
+一句话：**UL 认证在加州是准入门槛（没有就不能卖），在补贴、平台、电商、保险四条线上是加速器。** 它把 INNO 和"自己从中国运来的九号踏板车"、未认证的踏板造型进口车区分开；但它不能把 INNO 和已认证的主流品牌区分开（见 8.2）。
+
+### 8.2 Infinite Machine Olto 有没有 UL 认证
+
+**有。** Olto 的官方技术规格页写明 "UL 2849 (vehicle) & UL 2271 (battery) Certified"（FACT，2026-09-10 抓取 infinitemachine.com/olto/tech-spec）。其他参数：Class 2 电动自行车、限速 20 mph、1.2 kWh（25 Ah）可拆电池、整车约 176 lb（电池 20 lb）、售价 $3,495（RoostMode 2026 评测标题）。
+
+含义：Olto 是 INNO 在"踏板造型 Class 2"这个品类里的高价对手，认证上已经和 HMP 打平。HMP 拿到 UL 之后与 Olto 的差异不在认证，而在：价格（$2,300 对 $3,495）、面向骑手的配置（货架、外卖箱、备用电池、换电订阅）、本地服务网点（Ceres Ave 维修 + 借用车）、以及 FLASH / MK.II 的高速产品线（Olto 没有摩托车级产品）。营销上不要把 UL 当卖点打 Olto，要打价格和服务；UL 用来打未认证的低价进口车和平台 / 补贴门槛。
+
+### 8.3 到手后 48 小时的合规包（重复第 4 节第 1 条，便于执行）
+
+证书 PDF（核对标准号 UL 2849 + UL 2271、发证实验室、型号、电池 SKU、充电器型号）；330 lb 载重书面标定；SB 1271 合规声明；电池储存与充电说明（给业主、LAFD、保险经纪）；Amazon DV 验证由实验室直接提交；加州 E-Bike Incentive 批准零售商申请（ebikeincentives.org/retailers 页面 2026-09-10 返回 404，需从主站重新定位入口）。
