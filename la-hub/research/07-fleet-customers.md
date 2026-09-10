@@ -10,6 +10,8 @@
 
 第一年车队线的现实规模：**基数约 30 台（INNO 为主）、高情景约 120 台，贡献 $2 万–$15 万**。它撑不起 $8,000 / 月的租约，更到不了 $50 万。车队在 LA 第一年是"渠道 + 关系"生意，值得做，但要按第 5 节的 90 天清单去做，不要为它配专职销售。
 
+**2026-09-10 更新（创始人）**：INNO 的 UL 认证（整车系统与电池一起）预计 **9 月底到手**。这是本文最大的门槛（第 4 节第 1 条），10 月起 2.1（平台挂牌）和 2.10（政府 / 代金券项目）两类从"关着"变成"可以申请"；GoSGV 的秋季评审窗口正好赶得上。它不改变基数（没有开放的整批采购），但把高情景从"取决于认证"变成"取决于执行"。到手后先核对证书写的是 **UL 2849（系统）+ UL 2271（电池）**、型号和电池 SKU 与在售车一致，因为项目方按型号名核对。
+
 ## 1. 先看数字：一台车卖给车队能赚多少
 
 （`fleet_econ.py` v2 输出，参数表见 `la-hub/model/fleet_econ_output.md`）
@@ -59,7 +61,7 @@ SF 的自营租赁靠 $390 / 月才赚钱。Whizz 2026 年 4 月随 DoorDash 合
 | 2.7 | 影视道具车行 | 存在（Malibu Autobahn、Cinema Vehicles、Angel City、Galpin） | FLASH 1–3 台或按日租 | 0 / 2 / 5 | 发一页规格单 + 日租价 |
 | 2.8 | 驾校（CMSP、Harley Riding Academy） | 存在，但只用 125–250cc 汽油手动挡 | 无 | 0 | 不投入 |
 | 2.9 | 警用 / 市政车队 | 存在（LAPD 有 Zero），需警用套件 + 合作采购合同 | 无 | 0 | 不投入 |
-| 2.10 | 政府 / 基金资助车队（LACI、GoSGV、Mobility Wallet、LA28） | 存在，但 2026–27 无开放采购；全部要 UL 2849 | INNO（若有认证） | 0 / 0 / 40 | 注册 RAMP LA + SupplierOne；和 LACI 建立关系；查 INNO 的 UL 2849 |
+| 2.10 | 政府 / 基金资助车队（LACI、GoSGV、Mobility Wallet、LA28） | 存在，但 2026–27 无开放采购；全部要 UL 2849（INNO 认证 9 月底到手，创始人 2026-09-10） | INNO | 0 / 0 / 40 | 注册 RAMP LA + SupplierOne；10 月带证书申请 GoSGV 指定店、回访 LACI |
 | 2.11 | 南加其他城市小运营商 / "车队主" | 未能完成核实（研究被中断；Craigslist 不可抓取；4,604 条 LA 骑手 Reddit 语料无一提及） | INNO 批发 | 未知 | 用 `hmp-develop-b2b-market` 技能按 SD / OC 单独跑一批 |
 | | **合计** | | | **8 / 28 / 120** | |
 
@@ -126,7 +128,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 - Mobility Wallet 第三期 2026 年启动（Caltrans + 联邦 ATTAIN）：$150 / 月预付卡可在自行车店消费。HMP 只能做**商户**，不能做车队供应商（FACT）。
 - LA28（2026 年 3 月采购计划，全文见 `raw/fleet/la28_procurement.txt`）：75% 本地 / 25% 小企业目标；HMP 在 768 Ceres 属于 Hyper-Local + Micro；**没有两轮 / 微出行类别**，最近的是 Fleet Management Services（2026 Q2–Q3）、Vehicle Rental or Leasing（2027 Q2、2028 Q2）。注册 La28.SupplierOne.co 和 RAMP LA 免费，之后只能作为车队总包的两轮分包（FACT）。
 
-这一类的门槛不是关系，是**UL 2849 系统认证**（SB 1271 之后加州零售同样要求）。没有证书，所有项目都关着门。
+这一类的门槛不是关系，是**UL 2849 系统认证**（SB 1271 之后加州零售同样要求）。没有证书，所有项目都关着门。**更新 2026-09-10**：创始人确认 INNO 的 UL 认证（系统 + 电池）9 月底到手。到手后的顺序：(1) 10 月第一周向 GoSGV 提交零售商表单，或把 INNO 放进 Montebello Bicycles 等指定店，赶 2026 年秋季评审；(2) 带证书拜访 LACI 问 Power Up 更新窗口；(3) 用同一份合规包去 DoorDash 挂牌。基数仍是 0（没有开放的整批采购），但高情景 40 台从"不可能"变成"看执行"。
 
 ### 2.11 南加其他城市小运营商与"车队主"：未完成
 
@@ -144,7 +146,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 
 ## 4. 要做车队生意，先要有的东西（按重要性）
 
-1. **INNO / LIVA 的 UL 2849 系统证书（或 EN 15194）和书面 330 lb 载重标定。** 没有它：DoorDash 挂牌大概率不过、GoSGV 不能兑换、任何 CARB 子项目不能评分；SB 1271 之后加州零售也要。请创始人今天确认现状。
+1. **INNO / LIVA 的 UL 2849 系统证书（或 EN 15194）和书面 330 lb 载重标定。** 没有它：DoorDash 挂牌大概率不过、GoSGV 不能兑换、任何 CARB 子项目不能评分；SB 1271 之后加州零售也要。**状态（2026-09-10，创始人）：INNO 的 UL 认证（系统 + 电池）预计 9 月底到手。** 到手 48 小时内做一页合规包：证书 PDF（核对 UL 2849 + UL 2271、型号与电池 SKU）、330 lb 载重标定、SB 1271 合规声明、电池储存与充电说明；LIVA 是否同批认证需确认。
 2. **DMV 经销商执照**（卖 FLASH / MK.II 给任何加州企业都需要），以及一家能做商业电摩车队（surplus lines，XInsurance 类）的保险经纪，报价拿到手再对外报车队价。
 3. **车队报价单**（详见 `raw/fleet/fleet-enablers-economics.json` 的 offer_sheet）：INNO $2,070 / 1,955 / 1,840（10 / 25 / 50 台）、MK.II $3,599 / 3,399 / 3,199、FLASH $5,400 / 5,100 / 4,800；24 个月保修（电池 24 个月至 70%，明确覆盖配送工况）；带断电的 4G 模块（25 台以上含在价内，$6 / 月连接费另计）；48 小时借用车 SLA（Ceres Ave 15 英里内）；30% 定金、放车前付清；Clicklease 作为小客户的分期入口并**如实披露成本**。
 4. **零件延续承诺信 + 托管备件**：每个车队买家都会问 Cake（2024 年破产，两次召回）和 Ubco（2025 年接管，拿到澳洲邮政 175 台订单五个月后）——你怎么证明两年后还有零件。
@@ -158,7 +160,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 
 | 周 | 动作 | 对象与联系方式 | 90 天验收 |
 |---|---|---|---|
-| 1 | 确认 UL 2849 证书状态；注册 RAMP LA / SupplierOne / Cal eProcure | 内部；la28.supplierone.co；rampla.org | 证书在手或送检排期；四处注册完成 |
+| 1 | 注册 RAMP LA / SupplierOne / Cal eProcure；准备合规包模板，等 9 月底 UL 证书一到就填入（核对 UL 2849 + UL 2271、型号、电池 SKU；330 lb 载重标定；SB 1271 声明） | 内部；la28.supplierone.co；rampla.org | 四处注册完成；10 月第一周合规包成稿 |
 | 1–2 | 在 hmpbikes.com 上做 Dasher 验证表 + LA 折扣页（照 Dirwin 模板），发一页 LA 方案 | eco-doordash@doordash.com | 60 天内进入 Dasher Deals 或收到明确拒绝 |
 | 1–2 | 中英文邮件提 LA 骑手福利合作（INNO 折扣租购 + Ceres Ave 换电） | business@hungrypanda.co；饭团 LA 城市经理（@la_fantuan，创始人中文直谈） | 两家之一给出 LA 骑手数与车辆构成；一家签合作 |
 | 2–4 | 5–8 台展示 FLASH / MK.II 上架 Riders Share（Standard 75%）和 Twisted Road，$60–120 / 天，租金 $300 抵购车 | riders-share.com/pages/new-owners；twistedroad.com | 月租金 ≥ $2k；试骑转定金 ≥ 2 单 |
@@ -166,7 +168,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 | 3–6 | 一页规格单 + 日租价发影视道具车行；登 ProductionHub / LA 411 | Malibu Autobahn 310-776-5163 / contactus@malibuautobahn.com；Cinema Vehicles；Angel City；Galpin | 一次剧组租用或 1 台成交 |
 | 4–8 | 向 EagleRider 总部提 3–5 台 FLASH Plus 寄售（HMP 保留所有权，对方收租，HMP 拿试骑漏斗） | eaglerider.com/franchise 合作入口；LA 店前台 | 一次会面 |
 | 4–12 | 拜访 LACI（La Kretz，步行 20 分钟），问 Power Up 更新时间表和现供应商；申请孵化器 | laincubator.org；213-358-6500 | 知道供应商是谁、更新窗口何时 |
-| 8–12 | 若 UL 2849 到手：申请 GoSGV 指定店或让 Montebello Bicycles 上架 INNO；对接 Mobility Wallet 商户 | sgvcog.org/gosgv 零售商表单；mobilitywallet@metro.net | 秋季评审前进入名单 |
+| 4–6（10 月上旬，证书到手后） | 申请 GoSGV 指定店或让 Montebello Bicycles 上架 INNO；对接 Mobility Wallet 商户；带证书回访 LACI | sgvcog.org/gosgv 零售商表单；mobilitywallet@metro.net；laincubator.org | 2026 年秋季评审前进入 GoSGV 名单 |
 | 任意 | 用 `hmp-develop-b2b-market` 按 SD / OC 各跑一批经销商 + 租赁运营商 | 需销售主工作簿 | 两批各 ≥ 10 条 pursue 线索 |
 
 **不做的**：驾校、警用、BID 巡逻、末端物流。这四类在产品和合同结构上对 HMP 关着门，销售时间投进去是浪费。
@@ -175,7 +177,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 
 ## 6. 没查到、需要创始人核实的
 
-1. **INNO / LIVA 是否已有 UL 2849 系统认证**（不是电芯的 UL 2271）。这决定 2.1 和 2.10 两类是否存在。
+1. ~~INNO / LIVA 是否已有 UL 2849 系统认证~~ **已答（2026-09-10）**：创始人确认 INNO 的 UL 认证（系统 + 电池）9 月底到手。剩余核对：证书标准号（UL 2849 系统 + UL 2271 电池）、型号与电池 SKU 是否与在售一致、LIVA 是否同批。
 2. 饭团是否真的在 LA 给骑手租车（前一批说有、第二批证不了）。创始人一个中文电话就能定。
 3. Power Up 250 辆车的供应商是谁（LACI / LADOT 页面未署名；可查 LADOT 议会档案采购单）。
 4. JQS Delivery 和 LA Joy Quick Service 的车辆构成与司机数。
@@ -188,7 +190,7 @@ LAPD 2014 年起用 6 辆 Zero MMX 越野电摩，2020 年新增全电摩托（F
 - 你问的"车队客户在哪"，答案是：**在 LA，一次买 10–50 台的客户今天不存在**。存在的是三种小东西：平台挂牌带来的个人骑手、影视和租赁的零星台数、以及一年后可能开放的政府项目更新。
 - 车队线第一年最好的结果是 $10–15 万贡献，基数只有 $3–4 万。它不能作为签 768 Ceres 的理由；如果租约的逻辑需要车队来撑，那个逻辑不成立。
 - 真正有车队级利润的只有 FLASH（每台 $1,700–2,000）。但 FLASH 的买家是有 M1 驾照的个人和零星企业，不是车队。车队生意在 HMP 现在的产品线里，本质上是 **FLASH 零售的试骑漏斗**（P2P 展示车、EagleRider 寄售）加 **INNO 的渠道引流**。按这个定位做，它值得每周两小时；按"$50 万靠车队"做，会重复 Ubco 的故事。
-- 最值钱的一件事不是找客户，是 UL 2849。它同时打开 DoorDash 挂牌、GoSGV、CARB 子项目，也是加州零售的合规底线。
+- 最值钱的一件事不是找客户，是 UL 2849。它同时打开 DoorDash 挂牌、GoSGV、CARB 子项目，也是加州零售的合规底线。**创始人确认 9 月底到手**：那么 10 月的头两周就是这条线的窗口期（合规包、DoorDash 邮件、GoSGV 表单、LACI 回访四件事一起做），错过秋季评审要再等一轮。
 
 ---
 
