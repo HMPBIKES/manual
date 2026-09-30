@@ -128,6 +128,30 @@ n = int(3.0 * SR); t = np.arange(n) / SR
 pad = sum(saw(note(m), n, 0.005) for m in prog[0][1] + [69]) / 4
 both(lowpass(pad, 1800) * np.minimum(1, t / 0.05) * np.exp(-t / 2.5), 12.0, 0.35)
 
+
+# ---- extra punch for the animated cut: 16th hats, impacts synced to on-screen hits ----
+def hit(dur=0.35, f0=70, f1=40, noise=0.6):
+    n = int(dur * SR); t = np.arange(n) / SR
+    body = np.sin(2 * np.pi * np.cumsum(f1 + (f0 * 3) * np.exp(-t / 0.03)) / SR) * env_exp(n, dur / 3)
+    nz = rng.standard_normal(n) * env_exp(n, 0.04) * noise
+    return np.tanh((body + nz) * 2)
+def zap(dur=0.18):
+    n = int(dur * SR); t = np.arange(n) / SR
+    f = 2400 * np.exp(-t / 0.05) + 180
+    return np.sign(np.sin(2 * np.pi * np.cumsum(f) / SR)) * env_exp(n, 0.06) * 0.5
+def whoosh(dur, up=True):
+    n = int(dur * SR); t = np.arange(n) / SR; x = t / dur
+    cut = 400 + 7000 * (x if up else 1 - x) ** 2
+    return lowpass(rng.standard_normal(n), cut) * np.sin(np.pi * x) ** 1.5
+for tt in (0.5, 0.625, 0.75, 0.875, 1.0): both(hit(0.3, 60, 45, 0.8), tt, 0.55)
+both(whoosh(0.6), 1.5, 0.5); both(whoosh(0.7, False), 2.0, 0.6)
+for tt in (5, 5.5, 6, 6.5, 7, 7.5): both(zap(), tt, 0.35, pan=0.2 if int(tt * 2) % 2 else -0.2); both(hit(0.25, 90, 55, 0.4), tt, 0.35)
+for tt in (8, 8.5, 9, 9.5, 10, 10.5): both(hit(0.3, 80, 45, 0.9), tt, 0.4)
+both(whoosh(0.9), 11.0, 0.7); both(hit(0.6, 50, 32, 1.0), 11.75, 0.7)
+for b in range(int(2.6 / (BEAT / 4)), int(12.0 / (BEAT / 4))):
+    tb = b * BEAT / 4
+    if b % 2: both(hat(), tb, 0.10, pan=0.4 if b % 4 == 1 else -0.4)
+
 # sidechain pump: duck everything except kicks around each kick
 duck = np.ones(N)
 for kt in kick_times:
