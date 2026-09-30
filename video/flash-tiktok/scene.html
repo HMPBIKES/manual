@@ -4,13 +4,17 @@
 @font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
 @font-face{font-family:Inter;font-weight:600;src:url(node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2)}
 @font-face{font-family:Inter;font-weight:800;src:url(node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2)}
-:root{--bg:#0b0b0d;--fg:#f5f5f2;--accent:#ffd21f;--muted:#9a9aa0}
+:root{--studio:#ffffff;--ink:#111114;--bg:#0b0b0d;--fg:#f5f5f2;--accent:#ffd21f;--muted:#9a9aa0}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:var(--fg);font-family:Inter,sans-serif}
 .layer{position:absolute;inset:0}
 #stage{position:absolute;inset:0;overflow:hidden}
 .shot{position:absolute;inset:0;overflow:hidden;opacity:0}
-.shot img,.shot .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shot{background:var(--studio)}
+/* studio photos sit on ~#f5-#fb white; lift them so the backdrop clips to pure white and the photo edge disappears */
+.shot img,.strip img,#endHero img{filter:brightness(1.055)}
+.shot .media{position:absolute;left:0;top:560px;width:1080px;height:1080px}
+.shot img,.shot .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 .ph{display:flex;align-items:center;justify-content:center;text-align:center;font:800 44px Inter;color:#fff8;letter-spacing:2px;
     background:radial-gradient(ellipse at 50% 55%,var(--tone,#555) 0%,#111 70%)}
 .ph span{border:3px dashed #fff5;padding:28px 40px;border-radius:16px}
@@ -23,18 +27,20 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 #hookSub{font:800 42px Inter;letter-spacing:6px;margin-top:30px}
 #bolt{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .speed{position:absolute;height:6px;background:linear-gradient(90deg,#0000,var(--accent));border-radius:3px}
-#kicker{position:absolute;left:0;right:0;top:230px;text-align:center;font:800 40px Inter;letter-spacing:10px}
-#tag{position:absolute;left:80px;top:1250px}
-#tagNum{font:800 36px Inter;color:var(--accent);letter-spacing:6px}
-#tagName{font-size:210px}
-#tagSw{display:inline-block;width:64px;height:64px;border-radius:50%;border:5px solid #fff;margin-left:26px;vertical-align:40px}
-.strip{position:absolute;top:0;height:1920px;width:360px;overflow:hidden;border-right:6px solid var(--bg)}
-.strip img,.strip .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-#pick{position:absolute;left:0;right:0;top:760px;text-align:center}
-#pick .big{font-size:170px;text-shadow:0 8px 40px #000c}
+#kicker{position:absolute;left:0;right:0;top:190px;text-align:center;font:800 36px Inter;letter-spacing:10px;color:var(--ink)}
+#tag{position:absolute;left:80px;top:280px;color:var(--ink)}
+#tagNum{display:inline-block;font:800 34px Inter;background:var(--accent);color:var(--ink);letter-spacing:6px;padding:8px 18px;border-radius:8px;margin-bottom:12px}
+#tagName{font-size:200px}
+#tagSw{display:inline-block;width:64px;height:64px;border-radius:50%;border:5px solid var(--ink);margin-left:26px;vertical-align:40px}
+.strip{position:absolute;left:0;width:1080px;height:640px;overflow:hidden;background:var(--studio);border-bottom:6px solid var(--bg)}
+.strip img,.strip .ph{position:absolute;left:190px;top:-30px;width:700px;height:700px;object-fit:contain}
+#pick{position:absolute;left:0;right:0;top:770px;text-align:center}
+#pick>div{display:inline-block;background:var(--bg);padding:26px 60px 34px;border-radius:24px}
+#pick .big{font-size:150px}
 #end{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 40%,#23230f 0%,var(--bg) 65%)}
 #endHero{position:absolute;left:60px;right:60px;top:260px;height:600px;border-radius:28px;overflow:hidden}
-#endHero img,#endHero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#endHero{background:var(--studio)}
+#endHero img,#endHero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
 #endBrand{position:absolute;left:0;right:0;top:920px;text-align:center}
 #endWord{font-size:240px}
 #endSpec{font:800 34px Inter;letter-spacing:6px;color:var(--muted);margin-top:10px}
@@ -50,8 +56,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:
 <script>
 // ---- Shot list. Swap `src` once real product images are available. ----
 const IMG = {
-  gray1:{src:'img/Flashgray_01.webp',label:'GRAY · FRONT 3/4',tone:'#8a8d91'},
-  gray3:{src:'img/Flashgray_03.webp',label:'GRAY · SIDE',tone:'#8a8d91'},
+    gray3:{src:'img/Flashgray_03.webp',label:'GRAY · SIDE',tone:'#8a8d91'},
   gray2:{src:'img/Flashgray_02.webp',label:'GRAY · LED HEADLIGHT',tone:'#8a8d91'},
   gray5:{src:'img/Flashgray_05.webp',label:'GRAY · REAR',tone:'#8a8d91'},
   black2:{src:'img/Flashblack_02.webp',label:'BLACK · SIDE',tone:'#2b2b30'},
@@ -71,9 +76,9 @@ function media(key){
 }
 // Cuts land on beats (120 BPM -> 0.5s). [start, end, image, motion]
 const SHOTS = [
-  [2.0,3.0,'gray1','zoomIn'],[3.0,4.0,'gray3','panL'],[4.0,4.5,'gray2','punch'],[4.5,5.0,'gray5','punch'],
-  [5.0,6.0,'black2','panR'],[6.0,7.0,'black3','zoomIn'],[7.0,7.5,'black4','punch'],[7.5,8.0,'black1','punch'],
-  [8.0,9.0,'white1','zoomIn'],[9.0,10.0,'white2','panL'],[10.0,10.5,'white3','punch'],[10.5,11.0,'white4','punch'],
+  [2.0,3.0,'gray2','zoomIn'],[3.0,4.0,'gray3','panL'],[4.0,4.5,'gray5','punch'],[4.5,5.0,'gray2','punchWide'],
+  [5.0,6.0,'black4','panR'],[6.0,7.0,'black2','zoomIn'],[7.0,7.5,'black3','punch'],[7.5,8.0,'black1','punch'],
+  [8.0,9.0,'white2','zoomIn'],[9.0,10.0,'white3','panL'],[10.0,10.5,'white1','punch'],[10.5,11.0,'white4','punch'],
 ];
 const COLORS = [[2,5,'01','GRAY','#8a8d91'],[5,8,'02','BLACK','#1a1a1d'],[8,11,'03','WHITE','#f2f2ee']];
 const stage = document.getElementById('stage');
@@ -83,13 +88,13 @@ stage.innerHTML = `
   <div id="speeds"></div>
   <div id="hook"><div id="hookMeet">MEET</div><div id="hookWord" class="big">FLASH</div>
     <div id="hookSub">75 MPH · STREET-LEGAL · ELECTRIC</div></div>
-  ${SHOTS.map((s,i)=>`<div class="shot" id="shot${i}">${media(s[2])}<div class="shade"></div></div>`).join('')}
+  ${SHOTS.map((s,i)=>`<div class="shot" id="shot${i}"><div class="media">${media(s[2])}</div></div>`).join('')}
   <div id="kicker">DESIGNED TO TURN HEADS</div>
   <div id="tag"><div id="tagNum"></div><div class="big" id="tagName"></div></div>
-  <div id="strips">${['gray1','black2','white1'].map((k,i)=>`<div class="strip" id="strip${i}" style="left:${i*360}px">${media(k)}<div class="shade"></div></div>`).join('')}</div>
-  <div id="pick"><div class="big">PICK YOUR</div><div class="big" style="color:var(--accent)">COLOR</div></div>
+  <div id="strips">${['gray3','black2','white3'].map((k,i)=>`<div class="strip" id="strip${i}" style="top:${i*640}px">${media(k)}</div>`).join('')}</div>
+  <div id="pick"><div><div class="big">PICK YOUR</div><div class="big" style="color:var(--accent)">COLOR</div></div></div>
   <div id="end">
-    <div id="endHero">${media('gray1')}</div>
+    <div id="endHero">${media('gray2')}</div>
     <div id="endBrand">
       <div id="endWord" class="big">FLASH</div>
       <div id="endSpec">75 MPH · STREET-LEGAL · ELECTRIC</div>
@@ -134,6 +139,7 @@ window.render = function(t){
     if (mo==='panL') tf = `scale(1.15) translateX(${40-80*p}px)`;
     if (mo==='panR') tf = `scale(1.15) translateX(${-40+80*p}px)`;
     if (mo==='punch') tf = `scale(${1.25-0.13*ease(prog(t,a,a+0.25))})`;
+    if (mo==='punchWide') tf = `scale(${1.55-0.2*ease(prog(t,a,a+0.3))}) translate(-60px,40px)`;
     set(el,{opacity: on?1:0}); set(el.firstElementChild,{transform:tf});
   });
   const inColors = t>=2 && t<11;
@@ -148,7 +154,7 @@ window.render = function(t){
   // --- Pick your color 11-12s
   [0,1,2].forEach(i=>{
     const a = 11 + i*0.12, p = ease(prog(t,a,a+0.25));
-    set($('strip'+i),{opacity: t>=a && t<12 ? 1:0, transform:`translateY(${(i%2?-1:1)*1920*(1-p)}px)`});
+    set($('strip'+i),{opacity: t>=a && t<12 ? 1:0, transform:`translateX(${(i%2?-1:1)*1080*(1-p)}px)`});
   });
   set($('pick'),{opacity: t>=11.35 && t<12 ? 1:0, transform:`scale(${1.3-0.3*easeBack(prog(t,11.35,11.6))})`});
 
