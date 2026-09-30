@@ -1,0 +1,171 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Anton;src:url(node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2)}
+@font-face{font-family:Inter;font-weight:600;src:url(node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2)}
+@font-face{font-family:Inter;font-weight:800;src:url(node_modules/@fontsource/inter/files/inter-latin-800-normal.woff2)}
+:root{--bg:#0b0b0d;--fg:#f5f5f2;--accent:#ffd21f;--muted:#9a9aa0}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--bg);color:var(--fg);font-family:Inter,sans-serif}
+.layer{position:absolute;inset:0}
+#stage{position:absolute;inset:0;overflow:hidden}
+.shot{position:absolute;inset:0;overflow:hidden;opacity:0}
+.shot img,.shot .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;font:800 44px Inter;color:#fff8;letter-spacing:2px;
+    background:radial-gradient(ellipse at 50% 55%,var(--tone,#555) 0%,#111 70%)}
+.ph span{border:3px dashed #fff5;padding:28px 40px;border-radius:16px}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,#000a 0%,#0000 22%,#0000 60%,#000c 88%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+.big{font-family:Anton;line-height:.9;text-transform:uppercase}
+#hook{position:absolute;left:0;right:0;top:620px;text-align:center}
+#hookMeet{font:800 64px Inter;letter-spacing:18px;color:var(--accent)}
+#hookWord{font-size:330px;letter-spacing:6px}
+#hookSub{font:800 42px Inter;letter-spacing:6px;margin-top:30px}
+#bolt{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.speed{position:absolute;height:6px;background:linear-gradient(90deg,#0000,var(--accent));border-radius:3px}
+#kicker{position:absolute;left:0;right:0;top:230px;text-align:center;font:800 40px Inter;letter-spacing:10px}
+#tag{position:absolute;left:80px;top:1250px}
+#tagNum{font:800 36px Inter;color:var(--accent);letter-spacing:6px}
+#tagName{font-size:210px}
+#tagSw{display:inline-block;width:64px;height:64px;border-radius:50%;border:5px solid #fff;margin-left:26px;vertical-align:40px}
+.strip{position:absolute;top:0;height:1920px;width:360px;overflow:hidden;border-right:6px solid var(--bg)}
+.strip img,.strip .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#pick{position:absolute;left:0;right:0;top:760px;text-align:center}
+#pick .big{font-size:170px;text-shadow:0 8px 40px #000c}
+#end{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 40%,#23230f 0%,var(--bg) 65%)}
+#endHero{position:absolute;left:60px;right:60px;top:260px;height:600px;border-radius:28px;overflow:hidden}
+#endHero img,#endHero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#endBrand{position:absolute;left:0;right:0;top:920px;text-align:center}
+#endWord{font-size:240px}
+#endSpec{font:800 34px Inter;letter-spacing:6px;color:var(--muted);margin-top:10px}
+#endPrice{font:600 54px Inter;margin-top:34px}
+#endPrice b{font-weight:800;color:var(--accent)}
+#endBtn{display:inline-block;margin-top:34px;background:var(--accent);color:#111;font:800 50px Inter;letter-spacing:3px;padding:30px 60px;border-radius:999px}
+#endDep{font:600 36px Inter;color:var(--fg);margin-top:22px}
+#endUrl{font:800 46px Inter;letter-spacing:3px;margin-top:26px;color:var(--accent)}
+</style></head>
+<body>
+<div id="stage"></div>
+<div id="flash"></div>
+<script>
+// ---- Shot list. Swap `src` once real product images are available. ----
+const IMG = {
+  gray1:{src:'img/Flashgray_01.webp',label:'GRAY · FRONT 3/4',tone:'#8a8d91'},
+  gray3:{src:'img/Flashgray_03.webp',label:'GRAY · SIDE',tone:'#8a8d91'},
+  gray2:{src:'img/Flashgray_02.webp',label:'GRAY · LED HEADLIGHT',tone:'#8a8d91'},
+  gray5:{src:'img/Flashgray_05.webp',label:'GRAY · REAR',tone:'#8a8d91'},
+  black2:{src:'img/Flashblack_02.webp',label:'BLACK · SIDE',tone:'#2b2b30'},
+  black3:{src:'img/Flashblack_03.webp',label:'BLACK · FRONT',tone:'#2b2b30'},
+  black4:{src:'img/Flashblack_04.webp',label:'BLACK · REAR 3/4',tone:'#2b2b30'},
+  black1:{src:'img/Flashblack01.webp',label:'BLACK · REAR',tone:'#2b2b30'},
+  white1:{src:'img/0E4B5552_5ce51173-6f95-456e-bedd-fd29fbeec615.webp',label:'WHITE · VIEW 1',tone:'#d8d8d4'},
+  white2:{src:'img/0E4B5553_e00cba72-d0e8-4dbf-96f8-71074120d149.webp',label:'WHITE · VIEW 2',tone:'#d8d8d4'},
+  white3:{src:'img/0E4B5555_ef34294a-7ff7-4a92-baf4-bbc19a21b280.webp',label:'WHITE · VIEW 3',tone:'#d8d8d4'},
+  white4:{src:'img/0E4B5557_e89c15e6-0474-4571-a56b-51c49ae6a0ae.webp',label:'WHITE · VIEW 4',tone:'#d8d8d4'},
+};
+const AVAILABLE = window.AVAILABLE || {};   // injected by render.py
+function media(key){
+  const m = IMG[key];
+  if (AVAILABLE[key]) return `<img src="${m.src}">`;
+  return `<div class="ph" style="--tone:${m.tone}"><span>${m.label}<br><small style="font-size:30px;opacity:.7">product photo</small></span></div>`;
+}
+// Cuts land on beats (120 BPM -> 0.5s). [start, end, image, motion]
+const SHOTS = [
+  [2.0,3.0,'gray1','zoomIn'],[3.0,4.0,'gray3','panL'],[4.0,4.5,'gray2','punch'],[4.5,5.0,'gray5','punch'],
+  [5.0,6.0,'black2','panR'],[6.0,7.0,'black3','zoomIn'],[7.0,7.5,'black4','punch'],[7.5,8.0,'black1','punch'],
+  [8.0,9.0,'white1','zoomIn'],[9.0,10.0,'white2','panL'],[10.0,10.5,'white3','punch'],[10.5,11.0,'white4','punch'],
+];
+const COLORS = [[2,5,'01','GRAY','#8a8d91'],[5,8,'02','BLACK','#1a1a1d'],[8,11,'03','WHITE','#f2f2ee']];
+const stage = document.getElementById('stage');
+stage.innerHTML = `
+  <svg id="bolt" viewBox="0 0 1080 1920"><polygon id="boltPoly" fill="#ffd21f"
+    points="620,180 330,1010 540,1010 400,1740 790,820 570,820 720,180"/></svg>
+  <div id="speeds"></div>
+  <div id="hook"><div id="hookMeet">MEET</div><div id="hookWord" class="big">FLASH</div>
+    <div id="hookSub">75 MPH · STREET-LEGAL · ELECTRIC</div></div>
+  ${SHOTS.map((s,i)=>`<div class="shot" id="shot${i}">${media(s[2])}<div class="shade"></div></div>`).join('')}
+  <div id="kicker">DESIGNED TO TURN HEADS</div>
+  <div id="tag"><div id="tagNum"></div><div class="big" id="tagName"></div></div>
+  <div id="strips">${['gray1','black2','white1'].map((k,i)=>`<div class="strip" id="strip${i}" style="left:${i*360}px">${media(k)}<div class="shade"></div></div>`).join('')}</div>
+  <div id="pick"><div class="big">PICK YOUR</div><div class="big" style="color:var(--accent)">COLOR</div></div>
+  <div id="end">
+    <div id="endHero">${media('gray1')}</div>
+    <div id="endBrand">
+      <div id="endWord" class="big">FLASH</div>
+      <div id="endSpec">75 MPH · STREET-LEGAL · ELECTRIC</div>
+      <div id="endPrice">From <b>$4,999</b></div>
+      <div id="endBtn">RESERVE YOURS</div>
+      <div id="endDep">$200 refundable deposit</div>
+      <div id="endUrl">hmpbikes.com</div>
+    </div>
+  </div>`;
+const speeds = document.getElementById('speeds');
+const LINES = Array.from({length:14},(_,i)=>({y:120+i*128+((i*37)%60),w:180+((i*71)%260),v:2600+((i*113)%1400),o:(i*0.137)%1}));
+speeds.innerHTML = LINES.map((l,i)=>`<div class="speed" id="sp${i}"></div>`).join('');
+
+const $ = id => document.getElementById(id);
+const clamp = (x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease = x => 1-Math.pow(1-clamp(x),3);            // easeOutCubic
+const easeBack = x => {x=clamp(x);const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2);};
+const prog = (t,a,b)=>clamp((t-a)/(b-a));
+const set = (el,css)=>Object.assign(el.style,css);
+const HITS = [0,2,3,4,4.5,5,6,7,7.5,8,9,10,10.5,11,12];   // white-flash accents on cuts
+
+window.render = function(t){
+  // --- Hook 0-2s
+  const hookOn = t < 2.0;
+  set($('hook'),{opacity: hookOn ? 1 - prog(t,1.85,2.0) : 0});
+  set($('hookWord'),{transform:`scale(${1.5-0.5*easeBack(prog(t,0.05,0.35))}) translateX(${t<0.5?Math.sin(t*120)*10*(1-prog(t,0.1,0.5)):0}px)`,
+                      opacity: prog(t,0.05,0.12)});
+  set($('hookMeet'),{opacity: prog(t,0.0,0.1), letterSpacing:`${18+30*(1-ease(prog(t,0,0.6)))}px`});
+  set($('hookSub'),{opacity: prog(t,1.0,1.15), transform:`translateY(${30*(1-ease(prog(t,1.0,1.3)))}px)`});
+  const boltVis = (t<0.25) || (t>=1.0 && t<1.12) || (t>=1.5 && t<1.58);
+  set($('bolt'),{opacity: hookOn && boltVis ? (t<0.25?0.9-3*t:0.35) : 0});
+  LINES.forEach((l,i)=>{
+    const x = ((t*l.v/1080 + l.o) % 1.4)*1080*1.4 - 600;
+    set($('sp'+i),{left:`${x}px`,top:`${l.y}px`,width:`${l.w}px`,opacity: hookOn ? 0.55*prog(t,0.3,0.6) : 0});
+  });
+
+  // --- Product shots 2-11s
+  SHOTS.forEach((s,i)=>{
+    const [a,b,,mo] = s, el = $('shot'+i), on = t>=a && t<b, p = prog(t,a,b);
+    let tf = '';
+    if (mo==='zoomIn') tf = `scale(${1.18-0.12*ease(p)})`;
+    if (mo==='panL') tf = `scale(1.15) translateX(${40-80*p}px)`;
+    if (mo==='panR') tf = `scale(1.15) translateX(${-40+80*p}px)`;
+    if (mo==='punch') tf = `scale(${1.25-0.13*ease(prog(t,a,a+0.25))})`;
+    set(el,{opacity: on?1:0}); set(el.firstElementChild,{transform:tf});
+  });
+  const inColors = t>=2 && t<11;
+  set($('kicker'),{opacity: inColors ? prog(t,2.1,2.3) : 0, letterSpacing:`${10+14*(1-ease(prog(t,2.1,2.6)))}px`});
+  const c = COLORS.find(c=>t>=c[0] && t<c[1]);
+  if (c){
+    const p = prog(t,c[0],c[0]+0.3);
+    $('tagNum').textContent = `${c[2]} / 03`; $('tagName').innerHTML = `${c[3]}<span id="tagSw" style="background:${c[4]}"></span>`;
+    set($('tag'),{opacity:ease(p), transform:`translateX(${-120*(1-ease(p))}px)`});
+  } else set($('tag'),{opacity:0});
+
+  // --- Pick your color 11-12s
+  [0,1,2].forEach(i=>{
+    const a = 11 + i*0.12, p = ease(prog(t,a,a+0.25));
+    set($('strip'+i),{opacity: t>=a && t<12 ? 1:0, transform:`translateY(${(i%2?-1:1)*1920*(1-p)}px)`});
+  });
+  set($('pick'),{opacity: t>=11.35 && t<12 ? 1:0, transform:`scale(${1.3-0.3*easeBack(prog(t,11.35,11.6))})`});
+
+  // --- End card 12-15s
+  set($('end'),{opacity: t>=12 ? 1:0});
+  set($('endHero'),{transform:`scale(${1.12-0.12*ease(prog(t,12,13.5))})`, opacity:prog(t,12,12.15)});
+  set($('endWord'),{transform:`scale(${1.4-0.4*easeBack(prog(t,12.05,12.35))})`, opacity:prog(t,12.05,12.12)});
+  [['endSpec',12.4],['endPrice',12.7],['endBtn',13.0],['endDep',13.2],['endUrl',13.4]].forEach(([id,a])=>{
+    set($(id),{opacity:prog(t,a,a+0.15), transform:`translateY(${40*(1-ease(prog(t,a,a+0.3)))}px)`});
+  });
+  const pulse = t>13.5 ? 1+0.04*Math.max(0,Math.sin((t-13.5)*Math.PI*2)) : 1;   // pulse on the beat
+  $('endBtn').style.transform += ` scale(${pulse})`;
+
+  // --- white flash on cuts
+  let f = 0; HITS.forEach(h=>{ if (t>=h && t<h+0.12) f = Math.max(f,(h===0||h===12?0.9:0.45)*(1-(t-h)/0.12)); });
+  set($('flash'),{opacity:f});
+};
+render(0);
+</script>
+</body></html>
