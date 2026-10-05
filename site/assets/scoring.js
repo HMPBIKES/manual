@@ -16,8 +16,10 @@
 
   /* ================= 可调常量 ================= */
   // 心性"突出"判定：与最高分相差不超过 GAP，且自身不低于 FLOOR，即视为突出
-  var GAP = 8;
-  var FLOOR = 40;
+  // （模拟测试：GAP 8 时两毒并重者约四成因作答误差被判成单一型；GAP 12 时约八成判对，
+  //   而一毒明显偏高者仍约 95% 判为单一型。FLOOR 45 使随机乱答者不至于集中到第 7 种。）
+  var GAP = 12;
+  var FLOOR = 45;
   // likert 中点（值 − LIKERT_MID 再乘权重）
   var LIKERT_MID = 3;
   // 分享编码版本号（改动维度或编码方式时递增）
@@ -128,57 +130,94 @@
 
   function val(x) { return typeof x === 'number' && isFinite(x) ? x : -1; }
 
-  // 取最高项（并列时按 keys 顺序取前者）
-  function argmax(scores, keys) {
+  /*
+   * 取最高项。分数是 0–100 的整数，并列并不罕见（"压力下"题目少，尤其常见）。
+   * 并列时先比另一情境（alt：平时↔压力下）同一维度的分数，仍并列才按 keys 顺序取前者，
+   * 避免固定偏向排在前面的维度（婬 / 口柔）。alt 也来自分享编码，结果仍可复现。
+   */
+  function argmax(scores, keys, alt) {
     var best = null;
     keys.forEach(function (k) {
-      if (best === null || val(scores[k]) > val(scores[best])) best = k;
+      if (best === null) { best = k; return; }
+      var d = val(scores[k]) - val(scores[best]);
+      if (d > 0 || (d === 0 && alt && val(alt[k]) > val(alt[best]))) best = k;
     });
     return best;
   }
 
-  // 突出集合 E
-  function elevatedSet(H) {
+  // 最高项是否只能靠 keys 顺序决出（两种情境的分数都完全并列）
+  function tiedByOrder(scores, keys, alt) {
+    var best = argmax(scores, keys, alt);
+    return keys.some(function (k) {
+      return k !== best && val(scores[k]) === val(scores[best]) && (!alt || val(alt[k]) === val(alt[best]));
+    });
+  }
+
+  // 突出集合 E：与最高分相差不超过 GAP、且不低于 FLOOR；都不到门槛时取最高的一项
+  function elevatedSet(H, alt) {
     var top = Math.max.apply(null, HEART.map(function (k) { return val(H[k]); }));
     var E = HEART.filter(function (k) {
       return val(H[k]) >= top - GAP && val(H[k]) >= FLOOR;
     });
-    if (!E.length) E = [argmax(H, HEART)];
+    if (!E.length) E = [argmax(H, HEART, alt)];
     return E;
   }
 
-  function heartTypeOf(H) {
-    if (!H || HEART.every(function (k) { return H[k] === null || H[k] === undefined; })) return null;
-    var E = elevatedSet(H);
+  function hasAny(o, keys) {
+    return !!o && keys.some(function (k) { return typeof o[k] === 'number' && isFinite(o[k]); });
+  }
+
+  function heartTypeOf(H, alt) {
+    if (!hasAny(H, HEART)) return null;
+    var E = elevatedSet(H, alt);
     if (E.length === 1) return HEART_SINGLE[E[0]];
     if (E.length === 2) return HEART_PAIR[E.slice().sort().join('|')];
     return 7;
   }
 
-  function mouthHeartTypeOf(H, M) {
-    if (!H || !M) return null;
-    if (MOUTH.every(function (k) { return M[k] === null || M[k] === undefined; })) return null;
-    if (HEART.every(function (k) { return H[k] === null || H[k] === undefined; })) return null;
-    var E = elevatedSet(H);
-    var heartKey = E.length === 3 ? 'san' : argmax(H, HEART);
-    var mouthKey = argmax(M, MOUTH);
+  // 口心类型：口业最高项 × 心性（三毒俱突出→三毒；否则取突出集合中最高的一毒）
+  function mouthHeartTypeOf(H, M, altH, altM) {
+    if (!hasAny(H, HEART) || !hasAny(M, MOUTH)) return null;
+    var E = elevatedSet(H, altH);
+    var heartKey = E.length === 3 ? 'san' : argmax(H, E, altH);
+    var mouthKey = argmax(M, MOUTH, altM);
     return MOUTH_HEART[mouthKey][heartKey];
+  }
+
+  /*
+   * 心性 / 口心类型是否有一部分是按固定顺序硬选出来的（例如全选"说不准"、情境题全选中性项，
+   * 三毒分数完全相同）。这时结果没有区分度，页面可据此提示"答案缺乏区分度，类型仅按默认顺序给出"。
+   */
+  function tieInfo(H, M, altH, altM) {
+    if (!hasAny(H, HEART)) return { heart: false, mouth: false };
+    var E = elevatedSet(H, altH);
+    var heartTie = E.length === 1 && tiedByOrder(H, HEART, altH);
+    var pairTie = E.length === 2 && tiedByOrder(H, E, altH);
+    return {
+      heart: heartTie,
+      mouth: hasAny(M, MOUTH) ? (heartTie || pairTie || tiedByOrder(M, MOUTH, altM)) : false
+    };
   }
 
   // 由分数（0–100）推出全部类型；分享链接解码后也走这里，保证结果可复现
   function fromScores(s) {
     var stress = s.stress || {};
+    var heartType = heartTypeOf(s.heart, stress.heart);
+    var stressHeartType = heartTypeOf(stress.heart, s.heart);
     return {
       heart: s.heart,
       mouth: s.mouth,
       virtues: s.virtues,
       stress: { heart: stress.heart, mouth: stress.mouth },
-      heartType: heartTypeOf(s.heart),
-      mouthHeartType: mouthHeartTypeOf(s.heart, s.mouth),
-      stressHeartType: heartTypeOf(stress.heart),
-      stressMouthHeartType: mouthHeartTypeOf(stress.heart, stress.mouth),
-      elevated: s.heart && heartTypeOf(s.heart) ? elevatedSet(s.heart) : [],
-      stressElevated: stress.heart && heartTypeOf(stress.heart) ? elevatedSet(stress.heart) : []
+      heartType: heartType,
+      mouthHeartType: mouthHeartTypeOf(s.heart, s.mouth, stress.heart, stress.mouth),
+      stressHeartType: stressHeartType,
+      stressMouthHeartType: mouthHeartTypeOf(stress.heart, stress.mouth, s.heart, s.mouth),
+      elevated: heartType ? elevatedSet(s.heart, stress.heart) : [],
+      stressElevated: stressHeartType ? elevatedSet(stress.heart, s.heart) : [],
+      // 类型因分数完全并列而按固定顺序决出（true 时结果缺乏区分度）
+      tie: tieInfo(s.heart, s.mouth, stress.heart, stress.mouth),
+      stressTie: tieInfo(stress.heart, stress.mouth, s.heart, s.mouth)
     };
   }
 

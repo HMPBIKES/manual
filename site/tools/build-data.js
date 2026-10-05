@@ -62,11 +62,27 @@ virtues.forEach(function (v) {
   });
 });
 const seen = new Set();
+const DIMS = new Set(['h_tan', 'h_chen', 'h_chi', 'm_rou', 'm_cu', 'm_chi',
+  'v_xin', 'v_jin', 'v_hui', 'v_zhi', 'v_yi']);
+function checkWeights(id, w) {
+  Object.keys(w || {}).forEach(function (d) {
+    if (!DIMS.has(d)) problems.push(id + ' 使用了未知维度 ' + d);
+    if (typeof w[d] !== 'number') problems.push(id + ' 的权重 ' + d + ' 不是数字');
+  });
+}
 (questions.questions || []).forEach(function (q) {
   if (seen.has(q.id)) problems.push('题号重复 ' + q.id);
   seen.add(q.id);
-  if (q.format === 'likert' && !q.weights) problems.push(q.id + ' 缺少 weights');
-  if (q.format === 'choice' && !(q.options && q.options.length)) problems.push(q.id + ' 缺少 options');
+  if (q.context !== 'normal' && q.context !== 'stress') problems.push(q.id + ' 的 context 应为 normal 或 stress');
+  if (q.format === 'likert') {
+    if (!q.weights) problems.push(q.id + ' 缺少 weights');
+    checkWeights(q.id, q.weights);
+  } else if (q.format === 'choice') {
+    if (!(q.options && q.options.length)) problems.push(q.id + ' 缺少 options');
+    (q.options || []).forEach(function (o, i) { checkWeights(q.id + ' 选项' + (i + 1), o.weights); });
+  } else {
+    problems.push(q.id + ' 的 format 应为 likert 或 choice');
+  }
 });
 if (problems.length) {
   console.error('数据检查发现问题：\n  ' + problems.join('\n  '));
