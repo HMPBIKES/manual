@@ -415,7 +415,7 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 | 末法 | the Dharma-Ending Age |
 | 正法 | the Proper Dharma |
 | 正知正見 | proper knowledge and views |
-| 慈悲喜捨 | kindness, compassion, joy, and giving (the Four Unlimited Minds; "giving" = equanimity) |
+| 慈悲喜捨 / 喜捨 | kindness, compassion, joy, and equanimity (the Four Unlimited Minds) / joy and equanimity (but 喜捨院, a building name, = Joyous Giving House) |
 | 假名 | provisional designation |
 | 入室弟子 | close disciple |
 | 龍象 | dragons and elephants (outstanding monastics) |

@@ -88,7 +88,7 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 | 第 03 节后记三：“少奶奶”不宜译 mistress | P0054 | 已改：had married into a wealthy family |
 | 第 24 节：与天主教并列的“基督教”指新教 | P0324 | 已改：Catholics or Protestants；Protestant and Catholic churches |
 | 第 70 节后记二：“鎮殿之寶” | P1117 | 已改：the hall's most prized treasure |
-| 第 49 节：“慈悲喜捨” | P0495、P0774、P1229 | 保留法总/BTTS 译法 kindness, compassion, joy, and giving，按审校的备选方案，在首次出现处加注：此处 giving 指“舍心”（equanimity），不是财物布施。术语表也补上了这一条。 |
+| 第 49 节：“慈悲喜捨” | P0495、P0774、P1229 | 第二轮暂保留 giving 加注；第三轮后按您的决定全书改为 equanimity（见第七节） |
 | 第二个 64 节：“護七” | P1001 | 已改：look after him during the retreat, boiling water... bringing him his meals |
 | 第 100 节：佛七时长 | P1690 | 已改：led a seven-day Buddha Recitation session。全书其他“佛七”处，上下文已写明七天，或本来就是 21 天等较长的期间，不另加 seven-day。 |
 | 第 01 节后记一：“海單接眾” | P0016 | 已改：giving lodging to every monastic who came |
@@ -174,9 +174,9 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 
 **版式**：#64 已在第二轮完成（目录带页码，标题中的书名改为斜体，附录内部备注已清除）。
 
-**本轮刻意保留的两处**
+**本轮的两处特别说明**
 
-- **#28 慈悲喜舍**：沿用法总译法 giving，首次出现处已加注说明“舍”指 equanimity。这是审校意见里给出的备选方案。
+- **#28 慈悲喜舍**：按您的决定，全书改为 kindness, compassion, joy, and equanimity，共 5 处：P0495（两处，含“大喜捨心”）、P0774、P1229、P1334（“喜捨”）。原来解释 giving 的译注已删去，只保留“四无量心”的简注。P0824 的“喜捨院”是建筑名，意思是乐于布施，仍译 Joyous Giving House。
 - **#27 第 49 节**：上一轮的改法与本轮建议意思相同，不再改动。
 
 ---
@@ -1533,3 +1533,8 @@ Validator: structure OK before and after the edits. No paragraphs were flagged L
 - P1709 | editor | must not put tall hats on themselves, 'sell' their cultivation, or advertise their own virtue. -> must not praise themselves, show off their cultivation, or boast of their own virtue. | review2 #61: 戴高帽子/賣修行 idioms
 - P1711 | editor | 'People can propagate the Dharma; it is not the Dharma that propagates people.' -> 'People can make the Dharma great; it is not the Dharma that makes people great.' | review2 #62
 - P1712 | editor | In 1978 the Golden Dragon Massacre took place in San Francisco, -> In 1978 the Golden Dragon Massacre took place in San Francisco [Tr.: the shooting took place on September 4, 1977], | review2 #63
+- P0495 | editor | kindness, compassion, joy, and giving [Tr.: the Four Unlimited Minds; here "giving" means equanimity, the impartial letting go of all attachment, not giving material things]. -> kindness, compassion, joy, and equanimity [Tr.: the Four Unlimited Minds]. | client decision: 慈悲喜捨 捨 = equanimity throughout
+- P0495 | editor | a mind of great joy and giving -> a mind of great joy and equanimity | client decision: 喜捨 = joy and equanimity
+- P0774 | editor | Kindness, compassion, joy, and giving have sagely conditions. -> Kindness, compassion, joy, and equanimity have sagely conditions. | client decision: equanimity
+- P1229 | editor | a heart of kindness, compassion, joy, and giving. -> a heart of kindness, compassion, joy, and equanimity. | client decision: equanimity
+- P1334 | editor | joy and relinquishment, -> joy and equanimity, | client decision: 喜捨 = joy and equanimity (布施 remains 'giving')
