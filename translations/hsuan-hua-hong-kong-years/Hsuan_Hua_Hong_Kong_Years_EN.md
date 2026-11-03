@@ -1,4 +1,4 @@
-# A Ship of Compassion on the Sea of Awakening: Ferrying Beings Across in Hong Kong — Records of the Life of the Venerable Master Hsuan Hua
+# Crossing Hong Kong on the Ship of Compassion in the Sea of Awakening — Records of the Life of the Venerable Master Hsuan Hua
 
 ## The Hong Kong Years
 
@@ -46,7 +46,7 @@ I met the Master in Shenyang when I was still a student, but it was not until I 
 
 ## 02. Journey to Thailand
 
-In early 1950, the Venerable Master joined a delegation of study-abroad monks organized by the Chinese Buddhist Vinaya Academy and went to Thailand to observe Theravada Buddhism. He stayed at Wat Mangkon Kamalawat (Longlian Monastery) [Tr.: The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4.] in Thailand for about four months, studying firsthand the differences between Mahayana and Small Vehicle Buddhism and taking the strengths of each, and he resolved to reform the bad customs of Chinese Buddhism...
+In early 1950, the Venerable Master joined a delegation of study-abroad monks organized by the Chinese Buddhist Vinaya Academy and went to Thailand to observe Theravada Buddhism. He stayed at Wat Mangkon Kamalawat (Longlian Monastery) [Tr.: The Chinese text reads Longhua Monastery here; Addenda 3 and 4, and the version serialized in Vajra Bodhi Sea, read Longlian Monastery.] in Thailand for about four months, studying firsthand the differences between Mahayana and Small Vehicle Buddhism and taking the strengths of each, and he resolved to reform the bad customs of Chinese Buddhism...
 
 In the Venerable Master's own words:
 
@@ -66,7 +66,7 @@ On the last day of 1949, I arrived in Hong Kong. At the Hong Kong Buddhist Assoc
 
 **[Addendum 2]** Upasika Tan Guo Zheng met the Venerable Master when she was 16 and has been his refuge disciple for more than 50 years now. Upasika Tan Guo Zheng recounted:
 
-The Master went to Thailand with a delegation of monks to study Small Vehicle Buddhism, and Dharma Master Heng Ding went along too. The Master stayed in Thailand for several months and closely observed the traditional system of Small Vehicle Buddhism, and he resolved that in the future he would reform the bad customs of Chinese Buddhism. That is why later, at the City of Ten Thousand Buddhas in America, he established for the Sangha such family traditions as "eating one meal a day, at midday" [Tr.: the Buddha's own practice of taking a single meal before noon] and "never lying down to sleep" [Tr.: sitting up in meditation all night instead of lying down].
+The Master went to Thailand with a delegation of monks to study Small Vehicle Buddhism, and Dharma Master Heng Ding went along too. The Master stayed in Thailand for several months and closely observed the traditional system of Small Vehicle Buddhism, and he resolved that in the future he would reform the bad customs of Chinese Buddhism. That is why later, at the City of Ten Thousand Buddhas in America, he established for the Sangha such family traditions as "eating one meal a day, at midday" [Tr.: the Buddha's own practice of taking a single meal before noon] and "never lying down to sleep" [Tr.: never lying down, remaining seated even when asleep].
 
 **[Addendum 3]** Bhikshu Dharma Master Heng Ding's oral account:
 
@@ -106,7 +106,7 @@ Guanyin Cave was not a natural cave but a man-made one, so it was very damp. The
 
 **[Addendum 3]** Bhikshuni Dharma Master Jin Ci, a native of Taishan, Guangdong, was one of the Venerable Master's early refuge disciples from his time at Guanyin Cave in Hong Kong; the Dharma name she received when she took refuge was Guo Sen.
 
-In 1950, Guo Sen, then in her early forties, had married into a wealthy family, and she had revered Guanyin since she was small. One day her friend Mrs. Huang (Luo Guo Ming) asked her, "Would you like to take refuge and bow to a teacher?" At that time she didn't even know what "bowing to a teacher" (taking refuge) was. Mrs. Huang told her about the benefits of taking refuge and about this Dharma Master's compassion and so on, so she met the Master at Wang Guo Hai's home and formally took refuge. When she first met the Master, he was only about 30 and very thin. Later Guo Sen's family business ran into trouble, and the family's fortunes declined. When the Venerable Master learned of her situation, he told her to bear adversity with patience. Guo Sen took tonsure in 1998 and received full ordination in 2000, with the Dharma name Qin Ren and the style name Jin Ci. She passed away peacefully in the eighth lunar month of 2008, at the age of 100.
+In 1950, Guo Sen, then in her early forties, had married into a wealthy family, and she had revered Guanyin since she was small. One day her friend Mrs. Huang (Luo Guo Ming) asked her, "Would you like to take refuge and become the Master's disciple?" At that time she didn't even know what "becoming a Master's disciple" (taking refuge) was. Mrs. Huang told her about the benefits of taking refuge and about this Dharma Master's compassion and so on, so she met the Master at Wang Guo Hai's home and formally took refuge. When she first met the Master, he was only about 30 and very thin. Later Guo Sen's family business ran into trouble, and the family's fortunes declined. When the Venerable Master learned of her situation, he told her to bear adversity with patience. Guo Sen took tonsure in 1998 and received full ordination in 2000, with the Dharma name Qin Ren and the style name Jin Ci. She passed away peacefully in the eighth lunar month of 2008, at the age of 100.
 
 **[Addendum 4]** Upasaka Huang Guo Jun took refuge with the Venerable Master at the age of 11, more than 50 years ago now. Upasaka Huang Guo Jun recounted:
 
@@ -334,7 +334,7 @@ You all know that I am always lecturing on the sutras, because if I don't lectur
 
 My handwriting isn't good either. Although some people see that the Master's handwriting isn't good, they still want to keep it to sell as an antique in the future. I'll tell you very frankly and clearly: I don't like to write letters, because, first, I'm busy, and second, I think my handwriting isn't good, and I don't want my handwriting to become antiques in the future. During the more than ten years I lived in Hong Kong, many monastics said I couldn't read, and I admitted that I couldn't read; I can't read, but I'm willing to learn. Although this prajna of written words [Tr.: wisdom conveyed through language and texts, as distinct from the wisdom of direct realization] isn't the real thing, you still need to know a little of it.
 
-Don't think that whatever I say is right; there may be mistakes in what I say. Why? Because before I lecture on a sutra, I haven't even read it through once. Now in America I'm lecturing on the *Avatamsaka Sutra* for you, and this is the first time I've held the *Avatamsaka Sutra* in my hands to read it. Although I held an "Avatamsaka session" [Tr.: a session devoted to reciting the *Avatamsaka Sutra*] at the Buddhist Lecture Hall in Hong Kong, where everyone recited the *Avatamsaka Sutra* for 21 days, at the time I was busy managing affairs, and in those 21 days I didn't read a single word. So I have never read the *Avatamsaka Sutra*, nor have I recited it. Generally speaking, before lecturing on a sutra, a Dharma Master reads the commentaries, and after reading the commentaries he reads the sutra text, studying it back and forth many times. I haven't read it once, haven't recited it once, and haven't studied the commentaries either, so the principles I explain may be wrong or mistaken in places. Why? Simply because I'm very foolish, and I don't necessarily understand all the principles the Buddha spoke.
+Don't think that whatever I say is right; there may be mistakes in what I say. Why? Because before I began lecturing on this sutra, I had never read it all the way through. Now in America I'm lecturing on the *Avatamsaka Sutra* for you, and this is the first time I've held the *Avatamsaka Sutra* in my hands to read it. Although I held an "Avatamsaka session" [Tr.: a session devoted to reciting the *Avatamsaka Sutra*] at the Buddhist Lecture Hall in Hong Kong, where everyone recited the *Avatamsaka Sutra* for 21 days, at the time I was busy managing affairs, and in those 21 days I didn't read a single word. So I have never read the *Avatamsaka Sutra*, nor have I recited it. Generally speaking, before lecturing on a sutra, a Dharma Master reads the commentaries, and after reading the commentaries he reads the sutra text, studying it back and forth many times. I haven't read it once, haven't recited it once, and haven't studied the commentaries either, so the principles I explain may be wrong or mistaken in places. Why? Simply because I'm very foolish, and I don't necessarily understand all the principles the Buddha spoke.
 
 All of you are wise people, especially the young wise ones, whose wisdom is who knows how many tens of millions of feet higher than mine. Even if what I say isn't right, I have at least cleared this wasteland for you, so that you can plant it and till it yourselves. Where what I say is right, put it into practice; where it isn't right, you can correct it with your own true wisdom.
 
@@ -386,7 +386,7 @@ The Master once hoped I would write an account of how my father came to take ref
 
 My Dharma name is Guo Shi, but the Master always called me Mujie. I was able to meet the Master because of my father. Tung Sin Tan invited some businessmen to join, and my father was one of its members. This group often donated money to help the poor, giving out food, medicine, and other daily necessities in relief. My father had read many classical books and works on Chinese medicine. When he heard the Master lecture on the *Earth Store Sutra* at Tung Sin Tan, he found that the Master was so young and yet so learned. The faithful of Tung Sin Tan all revered the Master, something that had never happened before. At the time the Master was only just over 30, and about 10 to 15 Taoist believers took refuge with the Master; my father, then in his seventies, was one of them.
 
-My father, Tan Pucai, was a man of letters who delighted in doing good and giving generously. During the Second World War, he sold off family property and bought rice to give out as porridge, saving the lives of the whole village. He also built a school in the village and ran education there. Perhaps because the villagers respected my father, during the Cultural Revolution both the school and our family house remained completely intact. My father had a certain reputation in the business world; that he could take as his teacher someone younger than his own son, humbly accepting instruction, was very rare. After taking refuge, his Dharma name was Guo Pu, and his name can often be seen at the DRBA Way-places in Hong Kong. In the early records of the Master's life, he wrote a preface, expressing how fortunate he felt that, at nearly 80, he had been able to meet such a great and noble teacher.
+My father, Tan Pucai, was a man of letters who delighted in doing good and giving generously. During the Second World War, he sold off family property and gave out rice porridge, saving the lives of the whole village. He also built a school in the village and ran education there. Perhaps because the villagers respected my father, during the Cultural Revolution both the school and our family house remained completely intact. My father had a certain reputation in the business world; that he could take as his teacher someone younger than his own son, humbly accepting instruction, was very rare. After taking refuge, his Dharma name was Guo Pu, and his name can often be seen at the DRBA Way-places in Hong Kong. In the early records of the Master's life, he wrote a preface, expressing how fortunate he felt that, at nearly 80, he had been able to meet such a great and noble teacher.
 
 I remember that I was in primary school then. He came back from Tung Sin Tan and told my mother in high spirits, "Do you know? I have a teacher now." My mother said, "You're so old, so your teacher must be even older." "No, my teacher is very young. He's even younger than our eldest son!" "Really?" "Yes, I think he's 30-something at most." "How could you take such a young person as your teacher? What could he know?" My father said, "You're wrong! If you had heard him lecture on the sutras, you would know that he's a monk of vast learning and dignified bearing. At my age I've never met anyone so young and so learned, so I took him as my teacher. In a couple of days I'll take you to pay your respects to him, and you'll see that what I've told you is right!"
 
@@ -426,7 +426,7 @@ At the end of 1993, my mother, then in her eighties, suddenly fell ill. Both her
 
 In 1951, during the time that Tung Sin Tan in Hong Kong had invited the Venerable Master to lecture on the *Earth Store Sutra*, no fewer than a hundred people came every day to hear the sutra. After the lectures concluded in the first ten days of the twelfth lunar month, several lay Buddhists proposed building a vihara for the Venerable Master...
 
-The causes and conditions for choosing land and building the vihara came together very quickly. Before long, someone reported that on the ridge above Ma Shan Village at Sai Wan Ho in Shau Kei Wan, Hong Kong, there was a piece of wasteland (Editor's note: after the Japanese surrender, much government-owned public land was left unmanaged; at the time such land was called "overlord land," and private persons could borrow it temporarily) measuring some several dozen square feet. The drawback, however, was that there was no water source on the mountain. One had to rely on the public "street hydrant" beside the road at the foot of the mountain, that is, draw water from the public tap-water pipe on the street, and then carry the water on shoulder poles up several hundred stone steps to the top. The mountain path was steep and rugged, so one can imagine how hard it was!
+The causes and conditions for choosing land and building the vihara came together very quickly. Before long, someone reported that on the ridge above Ma Shan Village at Sai Wan Ho in Shau Kei Wan, Hong Kong, there was a piece of wasteland (Editor's note: after the Japanese surrender, much government-owned public land was left unmanaged; at the time such land was called "overlord land," and private persons could borrow it temporarily) measuring some several dozen square feet. The drawback, however, was that there was no water source on the mountain. One had to rely on the public "street standpipe" beside the road at the foot of the mountain, that is, draw water from the public tap-water pipe on the street, and then carry the water on shoulder poles up several hundred stone steps to the top. The mountain path was steep and rugged, so one can imagine how hard it was!
 
 In the Venerable Master's own words: Not long after, my neighbor at Guanyin Cave, the Dharma Master, didn't welcome my living in the thatched hut and persuaded the people of Fu Yung Shan to move me out, so I moved to Ma Shan Village in Shau Kei Wan and built a small Buddha hall on the mountain. Western Bliss Gardens used to be a piece of mountain land; to get up there you had to climb more than 300 stone steps, and there was no water on the mountain either. Although there was no water, I felt that a small Way-place could be built there.
 
@@ -546,7 +546,7 @@ There was once a monastic who had Way-places in both Hong Kong and Taiwan. He ha
 
 To my surprise, on the evening of the first day of the first lunar month, the two of them knelt down together in front of me and, acting like a pair of scoundrels, said that if I didn't give them the Buddha image, they would kneel in front of me until they died. Back then I was also very foolish and went to pull them up. If it were me today: if you want to kneel till you die, then kneel till you die; I couldn't care less what you do. Both of them were fat monks. I'd pull this one up, and that one would kneel down again; I'd struggle to pull that one up, and this one would kneel down again. I dragged them outside: no sooner had I dragged one out and come back to drag the second one out than the first one would run back in and kneel there; I'd drag the second one out and come back to chase out the first, and the second one would run back in and kneel. They took turns wearing me down like that and kept it up for five hours.
 
-By this time I was really unhappy. I lost my temper and smashed the teapot and teacups, but they paid no attention and just kept up their shameless act, until I had no way out. I said, "All right, I surrender to you! It's not as if I can't become a Buddha without this image; I'll give it to you." Only when they heard me say I was willing to give it to them did they get up. I saw them out the door and said to them, "From now on, no matter where I am, you are forever forbidden to come through my door again!" With that, I shut the door. For several years after that, we had nothing to do with each other, until a monastic said, "Let me mediate between you!" I said, "What's there to mediate? I'll go and see them." I went there, and we were on good terms again.
+By this time I was really unhappy. I lost my temper and smashed the teapot and teacups, but they paid no attention and just kept up their shameless act, until I had no way out. I said, "All right, I surrender to you! I can't become a Buddha without this image, but I'll give it to you." Only when they heard me say I was willing to give it to them did they get up. I saw them out the door and said to them, "From now on, no matter where I am, you are forever forbidden to come through my door again!" With that, I shut the door. For several years after that, we had nothing to do with each other, until a monastic said, "Let me mediate between you!" I said, "What's there to mediate? I'll go and see them." I went there, and we were on good terms again.
 
 **[Addendum]** The very next day the Venerable Master fell ill, with a high fever that would not go down; he was gravely ill. Fortunately, Dharma Master Heng Yue, who was living with those two Dharma Masters, learned that the two had made an unreasonable scene on the first day of the New Year and that the Venerable Master had fallen ill because of it, and he immediately took that image of Amitabha Buddha back and returned it to the Venerable Master. Once the image came back, the Venerable Master gradually recovered, and the construction of the monastery went ahead smoothly.
 
@@ -628,7 +628,7 @@ The Master once said, "Once I said, 'I can know all the paths that others cultiv
 
 **[Addendum 3]** From the diary of Upasika Tan Guo Zheng:
 
-The Master said, "Cultivators must cut off desire and get rid of love! Cultivators who have not yet found their footing must be especially careful!" Looking back on our time in Hong Kong, the Master was very strict in disciplining his disciples, and following the Master meant observing many rules. For example, girls were not allowed to meet male Dharma Masters face to face; if they happened to pass each other, the girls had to lower their heads as they went by. The Master's instruction was, "Don't disturb others as they apply effort!" After coming to America, I once wrote to tell the Master that some young Dharma Masters from Honolulu had visited the San Francisco Buddhist Lecture Hall and that we had received them warmly. The Master wrote back reprimanding us: "Don't get close to them!" Although at the time I didn't dare go against the Master's wishes, in my heart I never understood what the Master meant. Only many years later did I learn that quite a few of these young Dharma Masters who came to America in the 1950s had been unable to withstand temptation and had returned to lay life and married.
+The Master said, "Cultivators must cut off desire and cast off attachment! Cultivators who have not yet found their footing must be especially careful!" Looking back on our time in Hong Kong, the Master was very strict in disciplining his disciples, and following the Master meant observing many rules. For example, girls were not allowed to meet male Dharma Masters face to face; if they happened to pass each other, the girls had to lower their heads as they went by. The Master's instruction was, "Don't disturb others as they apply effort!" After coming to America, I once wrote to tell the Master that some young Dharma Masters from Honolulu had visited the San Francisco Buddhist Lecture Hall and that we had received them warmly. The Master wrote back reprimanding us: "Don't get close to them!" Although at the time I didn't dare go against the Master's wishes, in my heart I never understood what the Master meant. Only many years later did I learn that quite a few of these young Dharma Masters who came to America in the 1950s had been unable to withstand temptation and had returned to lay life and married.
 
 ## 23. Cultivation Is Not Easy
 
@@ -694,7 +694,7 @@ There was also a child who still couldn't walk at the age of 5. I don't know whe
 
 **[Addendum]** Upasika Tan Guo Shi recounted:
 
-One night I was woken up. Bleary-eyed, I got up and saw my mother kneeling before the Buddha, murmuring something; I didn't know what she was reciting. Only the next morning did I learn that my mother hadn't slept the whole night, because my elder brother's old illness had flared up again; he was coughing up blood and couldn't stop, and the doctor was at a loss. The doctor said that if my brother kept on coughing up blood, last night might be his last. When my mother learned this, never mind that it was nighttime, she grabbed a servant and ran to Western Bliss Gardens to beg the Master for help.
+One night I was woken up. Bleary-eyed, I got up and saw my mother kneeling before the Buddha, murmuring something; I didn't know what she was reciting. Only the next morning did I learn that my mother hadn't slept the whole night, because my elder brother's old illness had flared up again; he was coughing up blood and couldn't stop, and the doctor was at a loss. The doctor said that if my brother kept on coughing up blood, he might not survive the night. When my mother learned this, never mind that it was nighttime, she grabbed a servant and ran to Western Bliss Gardens to beg the Master for help.
 
 After seeing the Master, my mother went back home and continued kneeling before the Buddha, sincerely reciting the Great Compassion Mantra and asking for Great Compassion water for my brother to drink. After my brother had drunk it two or three times, the bleeding lessened. My mother kept on reciting the Great Compassion Mantra without stopping, and my brother finally stopped coughing up blood and slowly fell asleep. The next day the doctor came to see my brother and was astonished to find that he had come through the critical period and had actually survived. My mother loved her son so much that, besides sincerely praying for Guanyin Bodhisattva's aid, she also vowed to eat less. Hong Kong people take eating very seriously; eating less is regarded as a very serious matter. A mother's love is truly great!
 
@@ -784,7 +784,7 @@ Upasika Xu Xiangjun recounted:
 
 My parents both came to Hong Kong from the mainland, and they came to know the Master through Tan Guo Shi's mother. My father was a disciple of Elder Master Hsu Yun, so the Master said he didn't need to take refuge again. When my mother took refuge with the Master, the Master struck her with the incense board and asked her, "Do you know why I struck you with the incense board?" My mother shook her head and looked at the Master. The Master said, "You are my disciple now. I struck you with the incense board to eliminate disasters for you." My mother still looked at the Master with puzzled eyes. The Master went on, "When your father passed away, you didn't go to his funeral, so I struck you with the incense board." That was during the War of Resistance against Japan, and my mother was pregnant, so she had not gone back for the funeral. My mother was astonished that the Master knew even this.
 
-Because our family was poor, the children had to share the housework, so when we wanted to go to Western Bliss Gardens to take part in the group cultivation, we could only take turns going each week. Our family lived in an illegal squatter structure, shabby and run-down. The Master came to our home, and he didn't look down on us because we were poor.
+Because our family was poor, the children had to share the housework, so when we wanted to go to Western Bliss Gardens to take part in the group cultivation, we could only take turns going each week. Our family lived in a shabby, run-down unauthorized building. The Master came to our home, and he didn't look down on us because we were poor.
 
 Once my mother was very seriously ill, and the family all thought she would not recover. But the next day she said to the family, "I'm going to get better! Nothing will happen to me. Yesterday I dreamed that the Master came to see me. I'm definitely going to get better, really!" Afterward she really did get better day by day. Sometimes we would have a meal up on the mountain; the Master ate very simply, sometimes just chili peppers with steamed buns.
 
@@ -842,7 +842,7 @@ The Master went on, "I knew him when I was at Nanhua Monastery, and I never expe
 
 I remember that one day 20 or 30 laypeople came to class. Some were 60 or 70 years old and some were 40 or 50, and I counted as the youngest. At the beginning, everyone thought it would be great fun and very easy: imagine standing before the Buddhas, holding the Dharma instruments and striking away; how impressive! Who would have known that Dharma Master Xu Lang would be so serious about teaching, and especially meticulous in teaching how to play the Dharma instruments? Within a few days, fewer and fewer people came to class, until only the four or five of us young ones were left.
 
-He said that what he had learned was the Shanghai "Sea Tide Sound" style of chanting. He wanted us to sing using the breath from the dantian [Tr.: the energy center in the lower abdomen]; every note had to be drawn out very long, rising and falling like waves, and every word had to be enunciated correctly with a full, round tone. He had us follow the beat, striking the table hard with our hands to keep time. He said the more it hurt to beat, the faster we would remember, and only after we had learned it thoroughly by heart and wouldn't make mistakes could we play the Dharma instruments. Dharma Master Xu Lang taught us to chant praises and to play the large Dharma instruments, and he also taught us the repentance ceremonies, reading out the memorials (shu), the Mengshan Food Bestowal, and all the ceremonial procedures for bowing to the Buddhas. He said, "Chanting praises, reciting sutras, and playing the Dharma instruments must all be dignified, because we are making offerings of sound to all the Buddhas and Bodhisattvas. If the chanting is not in accord with the Dharma and the Dharma instruments are played in a chaotic jumble, not only will it give the devotees afflictions, it is also disrespectful to the Buddhas and Bodhisattvas. What would originally have brought limitless merit and virtue ends up bringing no merit and virtue at all."
+He said that what he had learned was the Shanghai "Sea Tide Sound" style of chanting. He wanted us to sing using the breath from the dantian [Tr.: the energy center in the lower abdomen]; every note had to be drawn out very long, rising and falling like waves, and every word had to be enunciated correctly with a full, round tone. He had us follow the beat, striking the table hard with our hands to keep time. He said the more it hurt to beat, the faster we would remember, and only after we had learned it thoroughly by heart and wouldn't make mistakes could we play the Dharma instruments. Dharma Master Xu Lang taught us to chant praises and to play the Dharma instruments, and he also taught us the repentance ceremonies, reading out the memorials (shu), the Mengshan Food Bestowal, and all the ceremonial procedures for bowing to the Buddhas. He said, "Chanting praises, reciting sutras, and playing the Dharma instruments must all be dignified, because we are making offerings of sound to all the Buddhas and Bodhisattvas. If the chanting is not in accord with the Dharma and the Dharma instruments are played in a chaotic jumble, not only will it give the devotees afflictions, it is also disrespectful to the Buddhas and Bodhisattvas. What would originally have brought limitless merit and virtue ends up bringing no merit and virtue at all."
 
 I remember the first time Dharma Master Xu Lang taught us to chant the *Medicine Master Repentance*. I don't know whether it had something to do with my past lives, but as soon as I looked at the text, I knew how it should be chanted. Sometimes the Dharma assemblies were led by Dharma Master Xu Lang, and sometimes by Dharma Master Heng Yue and Dharma Master Heng Zhi, with Guo Song, Guo Su, and me helping. Later on, I served as cantor for most of the Dharma ceremonies. In Hong Kong we bowed the *Great Compassion Repentance* and the *Medicine Master Repentance*. Most of the people who took refuge with the Master in Hong Kong spoke Cantonese, so apart from the texts of praise, which were chanted in Mandarin (Putonghua), the sutra texts and the repentance texts were all recited in Cantonese. Nowadays repentance ceremonies in Hong Kong are all chanted in Cantonese; that was something we started in the early days.
 
@@ -888,9 +888,9 @@ In the sixth lunar month of 1953, Western Bliss Gardens held a Guanyin session. 
 
 "The people of Hong Kong are too hard to teach and transform. They're so stubborn, they won't listen to teaching, and I don't know how to teach them anymore. I'm thinking of leaving," the Master said.
 
-"Shifu, I remember when you were speaking the Dharma, you said you wanted to save everyone. You want to cross over living beings!"
+"Shifu, I remember when you were speaking the Dharma, you said you wanted to save everyone. You want to help living beings cross over!"
 
-"Cross over what living beings? They're so obstinate, there's no way I can cross them over."
+"Help what living beings cross over? They're so obstinate, there's no way I can take them across."
 
 "Didn't you teach me that no matter what difficulties I meet, it doesn't matter, I must find a way to overcome them? Why are you giving up?"
 
@@ -1054,7 +1054,7 @@ Even so, this person had some affinity with the Buddha and some affinity with gh
 
 The Venerable Master was ordinarily frugal in providing for himself and was never willing to spend a cent on himself; yet for Bhikshus who truly cultivated, he would come to the rescue in times of danger and never begrudged his help. On the other hand, toward Bhikshus who did not truly cultivate and came begging, he was not the least bit polite...
 
-In the spring of 1952 (the renchen year), Dharma Master Qin Jue bought a house at Diamond Hill in Kowloon. He had lived there only a little over a year when the landowner suddenly forced the house to be demolished and the land returned. Meeting with this heavy loss, Dharma Master Qin Jue was quite distressed, and his spirits sank unusually low. One night at 11 o'clock, the Dharma Master happened to be reading the "Contemplation of the Four Noble Truths" chapter of the *Treatise on the Middle Way*: "All dharmas produced by causes and conditions, I say, are empty; they are also false names, and they are also the meaning of the Middle Way. There has never been a single dharma that did not arise from causes and conditions; therefore, of all dharmas, there is none that is not empty." He contemplated its meaning and silently recited this passage over and over to relieve the afflictions he was mired in, and without realizing it he fell asleep and had a dream. In the dream he strolled into a mountain forest. While he was wandering about there, a violent storm of wind and rain suddenly descended, and thunder cracked across the sky, deafeningly loud. As he stood frightened and at a loss, a monk whose whole body emitted purple-burnished golden light descended from the sky, and the wind and rain instantly vanished; everything became still all at once. Dharma Master Qin Jue thought it was a manifestation of Guanyin and hurriedly knelt and bowed. Only when the monk came closer did he recognize him as one of the honored certifying Acharyas [Tr.: Sanskrit for "teacher"; at an ordination, one of the senior monks who confer or certify the precepts] from his ordination: Dharma Master To Lun. In the dream, the Venerable Master told him, "Don't worry. I'll help you resolve all your difficulties!" At that point in the dream, he woke up.
+In the spring of 1952 (the renchen year), Dharma Master Qin Jue bought a house at Diamond Hill in Kowloon. He had lived there only a little over a year when the landowner suddenly forced the house to be demolished and the land returned. Meeting with this heavy loss, Dharma Master Qin Jue was quite distressed, and his spirits sank unusually low. One night at 11 o'clock, the Dharma Master happened to be reading the "Contemplation of the Four Noble Truths" chapter of the *Treatise on the Middle Way*: "All dharmas produced by causes and conditions, I say, are empty; they are also provisional designations, and they are also the meaning of the Middle Way. There has never been a single dharma that did not arise from causes and conditions; therefore, of all dharmas, there is none that is not empty." He contemplated its meaning and silently recited this passage over and over to relieve the afflictions he was mired in, and without realizing it he fell asleep and had a dream. In the dream he strolled into a mountain forest. While he was wandering about there, a violent storm of wind and rain suddenly descended, and thunder cracked across the sky, deafeningly loud. As he stood frightened and at a loss, a monk whose whole body emitted purple-burnished golden light descended from the sky, and the wind and rain instantly vanished; everything became still all at once. Dharma Master Qin Jue thought it was a manifestation of Guanyin and hurriedly knelt and bowed. Only when the monk came closer did he recognize him as one of the honored certifying Acharyas [Tr.: Sanskrit for "teacher"; at an ordination, one of the senior monks who confer or certify the precepts] from his ordination: Dharma Master To Lun. In the dream, the Venerable Master told him, "Don't worry. I'll help you resolve all your difficulties!" At that point in the dream, he woke up.
 
 Not long afterward, Dharma Master Qin Jue found a plot of land and was preparing to build another house, but he was short of money. At that time the Venerable Master was lecturing on the *Earth Store Sutra* at Chi Lin Nunnery. When he heard about this, he immediately took out 1,500 dollars to help him acquire a new house, so that he had a place to live.
 
@@ -1126,7 +1126,7 @@ Facing the hardship of the monks from the north migrating south, the Buddhist co
 
 ## 43. The Remarkable Story of Guo Mi (1)
 
-Wen Guo Mi's father died early. He was the only boy in the family, and the sole male heir for nine generations. He had had a heart condition since childhood, and it was especially serious in the two years when he was 12 and 13; on doctor's orders, he had to rest at home...
+Wen Guo Mi's father died early. He was the only boy in the family, the ninth in a line of only sons. He had had a heart condition since childhood, and it was especially serious in the two years when he was 12 and 13; on doctor's orders, he had to rest at home...
 
 One day, Wen Guo Mi discovered a secret of his sister, who was four years older than he was: keeping it from their elder sisters, who were Christians, she had taken refuge in Buddhism, and she had also brought home a copy of *Records of Chan Master To Lun*. In his heart he deeply admired this Dharma Master and asked his sister to take him to see her teacher, but his sister put him off, saying, "You have to climb more than 300 stone steps to get to Western Bliss Gardens. If you had a heart attack, I couldn't bear the responsibility!" From that day on, he secretly bowed and made prostrations to the Venerable Master's Dharma image in the *Records*. One day three months later, as he was bowing in his room, the person in the Dharma image actually walked out and rubbed the crown of his head.
 
@@ -1226,7 +1226,7 @@ Now I'll tell you again: I have a big temper. Sometimes when I scold people it r
 
 **[Addendum 1]** From the diary of Upasika Tan Guo Zheng:
 
-The Master said, "Guo Mi often recites 'Namo Dharma Master To Lun.' He truly has faith in me, and that moves me. The Patriarchs of the past would put their disciples through torments to see whether they really had faith, and I too have deliberately tested him several times. Once he went hiking in the mountains with Guo Jun, and as punishment I made him kneel for four hours; he knelt until he could hardly stand up. Guo Shu saw it but didn't dare make a sound; she only wept in secret. Another time, at Cixing Monastery, over some small matter, I deliberately drove him down the mountain. I told him, 'Tonight you go sleep in the guest hall!' Having no choice, he took his pillow from my room and went to the guest hall. Someone asked him why he had come to sleep there, and he just sighed and said, 'I'm going down the mountain tomorrow!' Only after half an hour had passed did I call him back to my room."
+The Master said, "Guo Mi often recites 'Namo Dharma Master To Lun.' He truly has faith in me, and that moves me. The Patriarchs of the past would put their disciples through torments to see whether they really had faith, and I too have deliberately tested him several times. Once he went hiking in the mountains with Guo Jun, and as punishment I made him kneel for four hours; he knelt until he could hardly stand up. Guo Shu saw it but didn't dare make a sound; she only wept in secret. Another time, at Cixing Monastery, over some small matter, I deliberately ordered him to leave the mountain. I told him, 'Tonight you go sleep in the guest hall!' Having no choice, he took his pillow from my room and went to the guest hall. Someone asked him why he had come to sleep there, and he just sighed and said, 'I'm going down the mountain tomorrow!' Only after half an hour had passed did I call him back to my room."
 
 On the seventeenth day of the eleventh lunar month of 1991, the Master said, "My vow is to undergo suffering on behalf of living beings. Especially in these last few years, I want to undergo suffering for living beings. I had a great many offenses, but now they are all gone. Even offenses as vast as the heavens vanish with a single repentance." Bewildered, I asked, "Shifu, why do you say you have so many offenses?" The Master said, "I often scold people, and I take the offenses of living beings upon myself. The ones I scold are good people, not bad people."
 
@@ -1558,7 +1558,7 @@ This dragon was built on the hillside at Cixing Monastery on Lantau Island. Afte
 
 ## 48. Miraculous Foresight for a Hundred Tables
 
-In the spring of 1954 (the jiawu year), the restoration of the villa of the Left Courtyard and of the guest hall at Cixing Chan Monastery was completed, and preparations were made to hold the Opening-the-Light ceremony for the Three Sages of the West on the sixteenth day of the third lunar month (April 14 in the Gregorian calendar), the birthday of Cundi Bodhisattva...
+In the spring of 1954 (the jiawu year), the restoration of the villa of the Left Courtyard and of the guest hall at Cixing Chan Monastery was completed, and preparations were made to hold the Opening-the-Light ceremony for the Three Sages of the West on the sixteenth day of the third lunar month (April 14 in the Gregorian calendar) [Tr.: By the calendar, the sixteenth day of the third lunar month of 1954 fell on April 18, and April 14 was the twelfth; both dates are kept as written.], the birthday of Cundi Bodhisattva...
 
 Starting on the thirteenth day of the third month, the *Great Compassion Jeweled Repentance* was bowed for three days in a row, and on the evening of the fifteenth the *Three Great Masters' Flaming Mouth* ceremony was performed. It was just at the turn of spring and summer, and it had been drizzling for days on end; the land seemed shrouded in a layer of white gauze, and beyond ten paces people were just blurry shapes. Dark clouds had blanketed the sky for many days in a row, and it looked as though the rain would go on for a good while yet. Everyone was worried that the great ceremony would be spoiled by the rain. Who would have thought that on the evening of the fifteenth the clouds would suddenly scatter and the rain stop? On the day of the Opening-the-Light ceremony there was neither sun nor rain; the breeze was fresh and the air crisp, and it was very comfortable.
 
@@ -1708,7 +1708,7 @@ Sending Off and Encouraging the American Bhikshu, the Chan Cultivator Heng Shou,
 
 Composed by Hsuan Hua on November 3, 1972
 
-People can propagate the Dharma; it is not the Dharma that propagates people. The Dharma has no Proper or Ending Age; it is people who are good or bad. Habituated to things, people no longer notice them, and one after another they follow along until it becomes the prevailing custom: they treat the Buddhadharma as idle theorizing and do not put it into practice themselves, regard cultivation as empty talk, and even go so far as to put on a hypocritical show of solemnity. This truly deserves attention. The worthy should strive to turn back this decadent custom, reform the standards of the Sangha, and handle affairs with care. By no means let down the earnest intent behind my years of teaching and guidance. Be determined that Buddhism shall flourish and spread, and that the Proper Dharma shall abide in the world. Remember this well! I also present you with a verse:
+People can make the Dharma great; it is not the Dharma that makes people great. The Dharma has no Proper or Ending Age; it is people who are good or bad. Habituated to things, people no longer notice them, and one after another they follow along until it becomes the prevailing custom: they treat the Buddhadharma as idle theorizing and do not put it into practice themselves, regard cultivation as empty talk, and even go so far as to put on a hypocritical show of solemnity. This truly deserves attention. The worthy should strive to turn back this decadent custom, reform the standards of the Sangha, and handle affairs with care. By no means let down the earnest intent behind my years of teaching and guidance. Be determined that Buddhism shall flourish and spread, and that the Proper Dharma shall abide in the world. Remember this well! I also present you with a verse:
 
 > Cultivate blessings, cultivate wisdom, cultivate Chan contemplation;  
 > Plant many good causes and form few enmities.  
@@ -1780,7 +1780,7 @@ If any of you don't believe this account of causes and conditions, you're welcom
 
 In 1956, Upasika Yu Guo Man broke a bone in her hand. The bonesetter wrote a prescription that used dragon bone [Tr.: fossilized animal bone used in Chinese medicine] as medicine. Guo Man said, "I can't use this medicine. I'm a vegetarian!" The lay Buddhist Yao Guo Bai, who was standing nearby, heard this and asked, "Who is your teacher?"...
 
-"I haven't taken refuge yet, but at Guanyin Cave on Fu Yung Shan I once met a Dharma Master who had real cultivation, and now I have no way to find him," Yu Guo Man replied. "Who is he?" "He burned a string of recitation beads and a swastika onto his body with incense." "Ah! He's my teacher!"
+"I haven't taken refuge yet, but at Guanyin Cave on Fu Yung Shan I once met a Dharma Master who had real cultivation, and now I have no way to find him," Yu Guo Man replied. "Who is he?" "With incense he had burned marks in the shape of a string of recitation beads and a Buddhist swastika onto his body." "Ah! He's my teacher!"
 
 When Yu Guo Man heard this she was overjoyed. Although she was stout, she wasn't daunted by the more than 300 stone steps, and she hurried to Western Bliss Gardens to pay her respects to the Venerable Master and ask to take refuge.
 
@@ -2058,7 +2058,7 @@ When I heard this at the time, I asked, "Shifu, why did she get this illness?" T
 
 The lay disciples Tan Guo Zheng, Guo Jue, and others felt that the Venerable Master's *Records* had a profound and far-reaching influence, that readers were deeply moved by them, and that they helped the propagation of the Buddhadharma. So that more of the faithful could benefit, they joined forces to re-edit the Venerable Master's *Records*...
 
-"Though freezing to death, stand facing the wind; though starving to death, walk with your belly thrust out. Be the sturdy grass in the gale, the true gold in the blazing fire." The white mountains and black waters of Heilongjiang forged the Venerable Master's tenacious and resolute character. The Venerable Master was born into turbulent times of social upheaval, the Japanese invasion of China, and the war between the Nationalists and the Communists, and he went through all kinds of suffering, including poverty, hunger, and the loss of his mother. When Manchuria was occupied by the Japanese army, the Venerable Master was in his youth. Although he could not fulfill his dream of joining the army to serve his country, he realized the true meaning of life in another way: awakening people from their deluded dreams, then pointing directly to the mind-ground, and even to seeing the nature and becoming a Buddha.
+"Though freezing to death, stand facing the wind; though starving to death, walk with your belly thrust out. Be a candle whose flame holds steady in the gale, the true gold in the blazing fire." The white mountains and black waters of Heilongjiang forged the Venerable Master's tenacious and resolute character. The Venerable Master was born into turbulent times of social upheaval, the Japanese invasion of China, and the war between the Nationalists and the Communists, and he went through all kinds of suffering, including poverty, hunger, and the loss of his mother. When Manchuria was occupied by the Japanese army, the Venerable Master was in his youth. Although he could not fulfill his dream of joining the army to serve his country, he realized the true meaning of life in another way: awakening people from their deluded dreams, then pointing directly to the mind-ground, and even to seeing the nature and becoming a Buddha.
 
 When the Venerable Master was in Hong Kong, he was only a little over 30, yet everything he did moved people to the depths of their hearts and earned the reverence of humans and gods. Whether in favorable or adverse circumstances, the Venerable Master was always consistently vigorous, setting an example of cultivation for his disciples. The Venerable Master's deeds, teaching by word and by example and transforming people through virtue, have a wondrous power to rescue those in peril and save the world.
 
@@ -2074,7 +2074,7 @@ One day the Master gave me a biography of himself. It was printed in the style o
 
 Much of the Master's first *Records* was compiled by my elder sister on the basis of the original biography, with what she had seen and heard in Hong Kong added in; some parts were also written with the help of the Master's disciple Upasaka Pei Guo Jian.
 
-## 64. Founding *Mind Dharma*
+## 64. Founding *Hsin Fa* (*Mind Dharma*)
 
 In March 1956, the Venerable Master founded *Mind Dharma* magazine. Running a magazine could propagate the Dharma and benefit living beings, and it could also encourage the disciples to publish articles and turn their reflection back upon themselves. The Venerable Master encouraged his disciples to write down the principles they had heard in the form of articles, poems, or songs, so that more people could understand Buddhism...
 
@@ -2162,7 +2162,7 @@ Over on Lantau Island there is a retreat room, which was built when Dharma Maste
 
 The Master was very respectful toward genuine cultivators and toward the older generation in the Sangha, but if someone in the Sangha did not behave properly, the Master would also criticize them sternly. I remember that the Master scolded Dharma Master Heng Yue more than anyone. Dharma Master Heng Yue and Dharma Master Heng Zhi were two of the Master's Dharma nephews. When they first came to Hong Kong, they stayed at Western Bliss Gardens most of the time. Western Bliss Gardens was originally a small house; when they came, it was enlarged with an extra room for them.
 
-At the monastery, the Master didn't allow us to talk much, and this was even more so for the Sangha. The monastics did not talk casually with laypeople, and above all could not talk with women, except when giving instruction. Dharma Master Heng Zhi always sat in full lotus, fingering his recitation beads as he recited the Buddha's name, whereas Dharma Master Heng Yue would talk with us, and sometimes with other people too. In 1993, when the Master came to Hong Kong, Dharma Master Heng Zhi paid the Master a visit.
+At the monastery, the Master didn't allow us to talk much, and this was even more so for the Sangha. The monastics did not talk casually with laypeople, and above all could not talk with women, except when giving instruction. Dharma Master Heng Zhi always sat in full lotus, fingering his recitation beads as he recited the Buddha's name, whereas Dharma Master Heng Yue would talk with us, and sometimes with other people too. In 1993, when the Master came to Hong Kong, Dharma Master Heng Zhi paid the Master a visit. [Tr.: Chapter 100 gives 1988 as the Master's last return to Hong Kong; both years are kept as written.]
 
 ## 66. Receiving Dharma Transmission in the Weiyang Lineage
 
@@ -2238,7 +2238,7 @@ Preface written by the Monk of Changbai Mountain at the City of Ten Thousand Bud
 
 **[Addendum 6]** *Vernacular Commentary on the Images and Biographies of the Buddhas and Patriarchs*
 
-The *Images and Biographies of the Buddhas and Patriarchs*, as its name suggests, records the practice of the Way and the Dharma images of the successive patriarchs of the Western Heaven and the Eastern Land, so that they may be handed down in China and abroad as a standard for later cultivators. It serves the purpose of "seeing the worthy and striving to equal them."
+The *Images and Biographies of the Buddhas and Patriarchs*, as its name suggests, records the practice of the Way and the images of the successive patriarchs of India and China, so that they may be handed down in China and abroad as a standard for later cultivators. It serves the purpose of "seeing the worthy and striving to equal them."
 
 To continue the mind-lamp of the Buddha, the Venerable Master also added seven patriarchs of the Pure Land School, naming the work the *Images and Biographies of the Buddhas and Patriarchs (Further Expanded Edition)*. In 1986 the original text was published first, as a thread-bound set of four volumes, which is of great value for research into the history of the Chan School.
 
@@ -2312,7 +2312,7 @@ I remember that in Hong Kong the Venerable Master often spoke the Buddhadharma t
 
 ---
 
-# Part Four: The Lecture Hall and Crossing Over Living Beings
+# Part Four: The Lecture Hall and Helping Living Beings Cross Over
 
 *Ages 39 to 45*
 
@@ -2380,7 +2380,7 @@ The Venerable Master required his disciples, male and female, old and young, all
 
 Buddhist Lecture Hall Teaches the Mahayana Dharma
 
-(Special report) The Hong Kong Buddhist Lecture Hall, on the top floor of 1A Shing Woo Road, Happy Valley, in this territory, held a Dharma-propagation lecture assembly yesterday (Sunday), presided over by the eminent monk Dharma Master To Lun, and the audience turned out enthusiastically. Dharma Master To Lun formerly served as dean of academic affairs at the Nanhua Buddhist Academy. Since coming to Hong Kong, he has founded three Way-places in succession: Western Bliss Gardens in Shau Kei Wan, Cixing Chan Monastery on Lantau Island, and now the Buddhist Lecture Hall in Happy Valley. His refuge disciples are found throughout Hong Kong, Kowloon, and the New Territories. From now on, every Sunday from 2:00 to 5:00 p.m., Dharma Master To Lun will lecture on the Mahayana sutras to save the people of the world. Good men and faithful women are welcome to come and hear the Dharma.
+(Special report) The Hong Kong Buddhist Lecture Hall, on the top floor of 1A Sing Woo Road, Happy Valley, in this territory, held a Dharma-propagation lecture assembly yesterday (Sunday), presided over by the eminent monk Dharma Master To Lun, and the audience turned out enthusiastically. Dharma Master To Lun formerly served as dean of academic affairs at the Nanhua Buddhist Academy. Since coming to Hong Kong, he has founded three Way-places in succession: Western Bliss Gardens in Shau Kei Wan, Cixing Chan Monastery on Lantau Island, and now the Buddhist Lecture Hall in Happy Valley. His refuge disciples are found throughout Hong Kong, Kowloon, and the New Territories. From now on, every Sunday from 2:00 to 5:00 p.m., Dharma Master To Lun will lecture on the Mahayana sutras to save the people of the world. Good men and faithful women are welcome to come and hear the Dharma.
 
 ## 70. Pilgrimage to Burma
 
@@ -2430,7 +2430,7 @@ In July 1957, the Master went to Rangoon, Burma, at the invitation of the Chief 
 
 We stayed in Rangoon for about two weeks; our next stop was Penang in Malaysia. Shortly after takeoff, the twin-engine plane we were on ran into a storm. The plane shook violently and dropped sharply, things on board rattled, and everyone was terrified. The Master began to sit in meditation and pray to the gods, dragons, and the rest of the eightfold division to steady the plane, and I did the same. A few minutes later the plane stabilized, and the rest of the flight was smooth.
 
-In Penang the Master stayed at the renowned Kek Lok Si Monastery, where he was warmly welcomed by the monastery's abbot and the local Dharma Masters. The Master met with local Buddhist devotees, many of whom were students. The Master stayed in Penang for a week and then continued his journey. Singapore was the last stop before returning to Hong Kong, and our host there was Ms. Bi Junhui, president of the Singapore Buddhist Association. She was a devout Buddhist and very respectful toward the Master. While in Singapore, the Master held several meetings with people from the Buddhist association and gave an instructional talk to the students of the Bodhi Primary School.
+In Penang the Master stayed at the renowned Kek Lok Si Monastery, where he was warmly welcomed by the monastery's abbot and the local Dharma Masters. The Master met with local Buddhist devotees, many of whom were students. The Master stayed in Penang for a week and then continued his journey. Singapore was the last stop before returning to Hong Kong, and our host there was Ms. Pitt Chin Hui, president of the Singapore Buddhist Association. She was a devout Buddhist and very respectful toward the Master. While in Singapore, the Master held several meetings with people from the Buddhist association and gave an instructional talk to the students of the Maha Bodhi School.
 
 **[Addendum 6]** From the diary of Upasika Tan Guo Zheng:
 
@@ -2488,7 +2488,7 @@ The Elder wrote asking me to do meritorious deeds, so I vowed to donate a dozen 
 
 Once, a dhuta with long hair down to his shoulders, who had burned off a finger, came to the Buddhist Lecture Hall to visit the Venerable Master. The Venerable Master said to him, "Dharma Master, I have the first line of a couplet. If you can match it, I'll call you a seasoned cultivator."...
 
-The Venerable Master went on, "If you can't match it, I'll call you an old demon king. Listen! 'White and water make a spring; within, one and great make heaven.'" For half an hour the old dhuta scratched his head and ears but couldn't match it, so the Venerable Master spoke a verse to admonish him. (Editor's note: The original text has been lost; it is translated here freely from the English rendering.)
+The Venerable Master went on, "If you can't match it, I'll call you an old demon king. Listen! 'White and water make a spring; within, one and great make heaven.'" For half an hour the old dhuta scratched his head and ears but couldn't match it, so the Venerable Master spoke a verse to admonish him. (Editor's note: The original Chinese verse has been lost; the Chinese given here is a free translation from an English rendering.) [Tr.: The English verse below is translated from that Chinese reconstruction.]
 
 > Old demon king with tangled hair and grimy face,  
 > Everywhere you go, you set people gossiping.  
@@ -2504,7 +2504,7 @@ A man came to Hong Kong with long hair and a long beard, looking very scruffy. W
 
 **[Addendum 1]** Coming up with a good matching line for a couplet is certainly not easy, but composing a good first line is even harder. Take this first line, "White and water make a spring; within, one and great make heaven": it is a character-splitting puzzle, and it also subtly contains a Chan meaning. The first two characters, "white" and "water," must combine to form the third character, "spring"; and the fifth and sixth characters, "one" and "great," combine again to form the last character, "heaven."
 
-**[Addendum 2]** Professor Yang Fusen recounted on August 14, 1995:
+**[Addendum 2]** Professor Richard Fu-sen Yang recounted on August 14, 1995:
 
 Once, in a class on couplets, the Master said, "I'll give you a first line, and we'll see whether you can match it with a second line." I nodded in agreement. The Master said that the first line was: "White and water make a spring; within, one and great make heaven."
 
@@ -2712,7 +2712,7 @@ Today everyone is so happy and so enthusiastic, but such a grand gathering doesn
 
 Amitabha Buddha's Birthday: Dharma Master To Lun Lectures on a Sutra
 
-(Special report) The seventeenth day of the eleventh lunar month is the anniversary of Amitabha Buddha's birthday. To bring salvation to people everywhere, Dharma Master To Lun, a native of Jilin Province, will hold a Buddha-recitation assembly for a full week, from the eleventh to the seventeenth, at the Buddha hall of Western Bliss Gardens at the hilltop of Ma Shan Village, Shau Kei Wan, and will lecture on the Mahayana *Amitabha Sutra*. Devotees are welcome to come and hear the sutra.
+(Special report) The tenth day of the eleventh lunar month is the anniversary of Amitabha Buddha's birthday [Tr.: so the newspaper; the narrative of this chapter and tradition give the seventeenth]. To bring salvation to people everywhere, Dharma Master To Lun, a native of Jilin Province, will hold a Buddha-recitation assembly for a full week, from the eleventh to the seventeenth, at the Buddha hall of Western Bliss Gardens at the hilltop of Ma Shan Village, Shau Kei Wan, and will lecture on the Mahayana *Amitabha Sutra*. Devotees are welcome to come and hear the sutra.
 
 **[Addendum 2]** *Wah Kiu Yat Po*, Sunday, December 21, 1958 (the eleventh day of the eleventh month of the wuxu year):
 
@@ -2734,7 +2734,7 @@ One disciple took refuge with the Venerable Master when she was about 14 or 15. 
 > <small>夙興夜寐為誰忙？眾生難度頗堪傷。</small>
 
 > Lost in the wearisome dust, their natures turned upside down;  
-> I take them by the ear and earnestly exhort them, yet find no way to transform them.
+> I counsel them earnestly, time and again, yet find no way to transform them.
 >
 > <small>迷諸塵勞性顛倒，耳提諄諄化無方。</small>
 
@@ -2905,7 +2905,7 @@ Before the pictorial biography was published, in the seventh lunar month of that
 
 In the Venerable Master's own words:
 
-There was a Chinese man to whom I gave the name "Hu Nao" [Tr.: hunao means "acting foolishly, making mischief"; Hu is also a surname], because like a little child he did nothing but make mischief. He didn't understand the Buddhadharma at all. He said that Elder Hsu wasn't 120 years old, and some ignorant people followed him; foreigners who considered themselves scholars also chimed in, saying, "So-and-so said so." Actually, the hardships and difficulties of Elder Hsu's whole life are truly more than words can tell! I believe that no one else could have withstood such torment. In the course of this century, the Elder crossed over himself and crossed over others, benefited himself and benefited others, and the auspicious events of his life, sublime and miraculous and beyond what others could attain, are too many to list.
+There was a Chinese man to whom I gave the name "Hu Nao" [Tr.: hunao means "acting foolishly, making mischief"; Hu is also a surname], because like a little child he did nothing but make mischief. He didn't understand the Buddhadharma at all. He said that Elder Hsu wasn't 120 years old, and some ignorant people followed him; foreigners who considered themselves scholars also chimed in, saying, "So-and-so said so." Actually, the hardships and difficulties of Elder Hsu's whole life are truly more than words can tell! I believe that no one else could have withstood such torment. In the course of this century, the Elder crossed over himself and helped others cross over, benefited himself and benefited others, and the auspicious events of his life, sublime and miraculous and beyond what others could attain, are too many to list.
 
 Whenever anyone bowed to Elder Hsu, even the youngest person, he would always join his palms and return the bow, and it was the same whether they were monastics or laypeople. Therefore, at no time may monastics put on airs toward monastics or laypeople. Even more must Bhikshus not put on airs toward shramaneras, shramanerikas, or Bhikshunis. The more you put on airs, the more you stink. A monastic should not be the first to make a half-bow to a layperson, but neither should a monastic stand there like a block of wood or a lump of clay, putting on airs: "I'm a monastic!" without even a word of greeting. When a layperson bows, the monastic should sincerely recite the Buddha's name and dedicate the merit to that person, wishing that he or she will soon realize the Buddha Way.
 
@@ -3007,26 +3007,26 @@ Starting in 1958, the Elder often had minor illnesses, so he handed over his aff
 
 On the afternoon of the tenth day of the ninth (lunar) month of 1959, the Elder Master gave the assembly his final instructional talk and his last testament. The Elder Master said, "My last words are just these: 'Diligently cultivate precepts, samadhi, and wisdom; extinguish greed, anger, and delusion.'" After a while he said further, "With proper mindfulness and a proper mind, cultivate a spirit of great fearlessness, and save people and save the world." The Elder admonished us to transmit the precepts and cultivate well.
 
-At twelve noon on the twelfth day of the ninth (lunar) month, the Elder Master said to his attendant, "Just now, in my sleep, I dreamed that I saw an ox step on and break the stone slab of the Foyin Bridge, and I also saw that the water of the Bixi stream had stopped flowing." Then he closed his eyes and said nothing. At 12:30 the Elder Master called his attendants to come in together and said to them, "You have served me for many years, and you have all worked hard. I won't say much about all these matters. For nearly ten years now I have endured every bitterness and hardship, living every day amid danger, suspicion, and upheaval, suffering every slander and injustice, and I have been willing to bear it all, wishing only to preserve the Way-places of the Buddhas and Patriarchs within this country, to uphold the virtuous pure rules of the Patriarchs for the monasteries, and to preserve this one great robe for monastics in general [Tr.: the formal robe (sanghati), standing for the monastic tradition itself]. I fought with my life to win back this one great robe. You are all disciples who have entered my room; you know what happened. From now on, whether you have a bundle of thatch to cover your heads or go out in all directions in response to conditions to teach, you must likewise firmly uphold and preserve this one great robe. But how can it be preserved forever? There is only one word for it: precepts." When the Elder Master had finished speaking, he joined his palms and bade everyone take good care. Everyone withdrew in tears and kept watch under the eaves outside the room.
+At twelve noon on the twelfth day of the ninth (lunar) month, the Elder Master said to his attendant, "Just now, in my sleep, I dreamed that I saw an ox step on and break the stone slab of the Foyin Bridge, and I also saw that the water of the Bixi stream had stopped flowing." Then he closed his eyes and said nothing. At 12:30 the Elder Master called his attendants to come in together and said to them, "You have served me for many years, and you have all worked hard. I won't say much about all these matters. For nearly ten years now I have endured every bitterness and hardship, living every day amid danger, suspicion, and upheaval, suffering every slander and injustice, and I have been willing to bear it all, wishing only to preserve the Way-places of the Buddhas and Patriarchs within this country, to uphold the virtuous pure rules of the Patriarchs for the monasteries, and to preserve this one great robe for monastics in general [Tr.: the formal robe (sanghati), standing for the monastic tradition itself]. I fought with my life to win back this one great robe. You are all my close disciples; you know what happened. From now on, whether you have a bundle of thatch to cover your heads or go out in all directions in response to conditions to teach, you must likewise firmly uphold and preserve this one great robe. But how can it be preserved forever? There is only one word for it: precepts." When the Elder Master had finished speaking, he joined his palms and bade everyone take good care. Everyone withdrew in tears and kept watch under the eaves outside the room.
 
 At 1:45 p.m., in his thatched hut on Mount Yunju, the Elder lay on his right side in the auspicious reclining posture and peacefully entered perfect stillness. During the month and more before he entered perfect stillness, many of the monks had seen a patch of light come out of the thatched hut and go toward the Buddha Hall. They saw only a bright ring of light and no figure of any kind; once it entered the Buddha Hall, the ring of light gradually faded away. After a month and more, the Elder Master had arranged everything properly and written a will in his own hand; then he told his two attendants to leave, and he stayed behind in the thatched hut and quietly departed! (This piece is excerpted from *Silicon Valley Brahma Sound*, Gold Sage Monastery, December 2011.)
 
 **[Addendum 7]** Elder Hsu's final verse at the end of his life:
 
-> Of old, pitying the lives of ants, one did not cast [remains] into the water;  
+> Out of pity for the ants, the shrimp would not leap back into the water;  
 > I, to comfort the water creatures, cast my body into the river.
 >
 > <small>蝦恤蟻命不投水  吾慰水族身擲江</small>
 
 > I pray that all who receive my body, gladly offered,  
-> Will together realize Bodhi and cross over living beings.
+> Will together realize Bodhi and help living beings cross over.
 >
 > <small>祈諸受我身願供   同證菩提度眾生</small>
 
 > All you Dharma companions,  
 > There is no need to worry.  
 > Birth and death follow karma,  
-> Like insects bound in a net.
+> Like insects bound in a net. [Tr.: Another published text reads "like a silkworm bound in its own cocoon."]
 >
 > <small>諸各法侶  不必憂慮  生死循業  如蟲縛網</small>
 
@@ -3068,11 +3068,11 @@ With this spirit he struggled on the mainland and fought his way through. One co
 
 ## 82. Respectfully Bringing Back the Sharira
 
-On November 4 (the fourth day of the tenth lunar month), the Venerable Master sent two disciples, Xue Guo Su and Ma Guo Xian, to Mount Yunju to respectfully bring back Elder Master Hsu Yun's sharira. On the 18th they arrived back in Hong Kong, having respectfully obtained more than ten sharira of dazzling five colors, which they brought back to be enshrined for offerings...
+On November 4 (the fourth day of the tenth lunar month), the Venerable Master sent two disciples, Xue Guo Feng [Tr.: the Chinese text here reads Xue Guo Su; Chapter 83 and the Master's own published account name Xue Guo Feng] and Ma Guo Xian, to Mount Yunju to respectfully bring back Elder Master Hsu Yun's sharira. On the 18th they arrived back in Hong Kong, having respectfully obtained more than ten sharira of dazzling five colors, which they brought back to be enshrined for offerings...
 
 The Venerable Master wrote a verse in praise of the sharira:
 
-> Firm seeds of dazzling five colors,  
+> Relics gleam in dazzling five colors,  
 > Smelted from ten thousand virtues, round as the full moon;
 >
 > <small>五色缤紛堅固子   萬德煅煉滿月圓</small>
@@ -3106,7 +3106,7 @@ When I completed this Dharma assembly, I ran into a lot of jealousy and obstruct
 
 Impressions on Reverently Beholding the Sharira Buddha-Jewels of Elder Master Hsu Yun
 
-On the twenty-sixth day of the tenth month by the old calendar, I reverently went to the Buddhist Lecture Hall to pay homage to the sharira produced by the cremation of the Venerable Elder Master Yun, guided in my homage by Dharma Master To Lun, the Venerable Yun's direct Dharma heir. According to Master To, he had sent two disciples who braved ten thousand dangers to bring the sharira respectfully from Mount Yunju in Jiangxi. I observed that the sharira, large and small, numbered about ten in all. The one in the center, white in color, was the largest; crystal-clear and dazzling, it was like a pearl that shines in the night. Those arrayed around it were also of dazzling five colors, resplendent beyond compare. Now, such night-shining pearls are none other than mani pearls, the Buddha-jewels of seeing the nature and becoming a Buddha. Looking into the matter, the Venerable Yun had very great affinities with the people of Hong Kong. Besides coming here in person several times to propagate the Dharma and cross over living beings, he was, for example, invited to preside at the altar when the Tung Wah Group of Hospitals held an Assembly of Myriad Affinities some years ago. In recent years, when the assembly was held again, they again invited him to preside over the Dharma from within samadhi. Because of this, calamities and invasions quietly dissolved, and the whole territory benefited and relied on him. Now that the Master has entered perfect stillness, his sharira too were the first to be respectfully brought here, ahead of all other ports; this too is a matter of affinity. Master To now plans to build a stupa to enshrine them for offerings, and preparations are under way. That the people of Hong Kong will in future gain blessings and lasting protection is a certainty. Master To's resolve to repay his teacher's kindness is great indeed. Zhuangzi said, "It is as though something causes it." This is probably the guidance and transformation of the Buddhas and Bodhisattvas.
+On the twenty-sixth day of the tenth month by the old calendar, I reverently went to the Buddhist Lecture Hall to pay homage to the sharira produced by the cremation of the Venerable Elder Master Yun, guided in my homage by Dharma Master To Lun, the Venerable Yun's direct Dharma heir. According to Master To, he had sent two disciples who braved ten thousand dangers to bring the sharira respectfully from Mount Yunju in Jiangxi. I observed that the sharira, large and small, numbered about ten in all. The one in the center, white in color, was the largest; crystal-clear and dazzling, it was like a pearl that shines in the night. Those arrayed around it were also of dazzling five colors, resplendent beyond compare. Now, such night-shining pearls are none other than mani pearls, the Buddha-jewels of seeing the nature and becoming a Buddha. Looking into the matter, the Venerable Yun had very great affinities with the people of Hong Kong. Besides coming here in person several times to propagate the Dharma and help living beings cross over, he was, for example, invited to preside at the altar when the Tung Wah Group of Hospitals held an Assembly of Myriad Affinities some years ago. In recent years, when the assembly was held again, they again invited him to preside over the Dharma from within samadhi. Because of this, calamities and invasions quietly dissolved, and the whole territory benefited and relied on him. Now that the Master has entered perfect stillness, his sharira too were the first to be respectfully brought here, ahead of all other ports; this too is a matter of affinity. Master To now plans to build a stupa to enshrine them for offerings, and preparations are under way. That the people of Hong Kong will in future gain blessings and lasting protection is a certainty. Master To's resolve to repay his teacher's kindness is great indeed. Zhuangzi said, "It is as though something causes it." This is probably the guidance and transformation of the Buddhas and Bodhisattvas.
 
 Respectfully recorded in Hong Kong by the lay Buddhist Shi Xing in the first month of winter of the jihai year
 
@@ -3150,7 +3150,7 @@ In the seventh month of the jihai year, I heard that the Venerable Yun was grave
 
 I then devoted myself wholeheartedly to having people design and paint the Elder's pictorial biography: over 200 exquisite Chinese-style paintings, with text running to tens of thousands of words, setting forth the Elder's lifelong superhuman virtue and his unique spirit of austerity, diligence, and toil in practice and vows, to stand as an everlasting model, to enlighten later worthies, and to provide a pattern for all ages to come. Then, unfortunately, the sad news came: on October 16 (that is, the fifteenth day of the ninth lunar month), a special telegram arrived, announcing: "The Elder passed away peacefully, entering perfect stillness, at 1:45 p.m. on the twelfth of this month at Zhenru Chan Monastery on Mount Yunju. He instructed those who come after him to diligently cultivate precepts, samadhi, and wisdom, extinguish greed, anger, and delusion, forget themselves for the sake of the Dharma, and respect and love one another," and so on.
 
-To hear the news so suddenly was for me nothing less than as if the mountains had crumbled and the earth had quaked, as if the human world had been destroyed and the fire at the end of the kalpa were blazing through everything. I could not tell whether I was dreaming or awake, whether it was real or unreal; I was like a dull, senseless wooden puppet, like a clay image without consciousness. Only after a long while did my awareness return, and I was overwhelmed with grief! The next day, on the morning of the 17th, I called together the patrons of this Hall to discuss the memorial arrangements. It was decided then and there to hold a 21-day Buddha Recitation session, followed by a 120-day Great Prajna session, to show our remembrance and to repay the kindness of his milk of the Dharma. We immediately sent telegrams to our Dharma companions and fellow cultivators overseas: to the San Francisco Buddhist Lecture Hall, the Honolulu Buddhist Association, the Singapore Buddhist Association, Upasaka Lee Choon Seng, Upasika Bi Junhui, and others; to Upasaka Zhan Liwu in Canada; to the countries of Southeast Asia, Taiwan, Burma, Thailand, India, Ceylon, and other places; and to Upasaka Yu Zhendong, chairman of the World Fellowship of Buddhists, and others. More than a hundred telegrams were sent in all, and so everywhere people rose up in great numbers, like winds rising and clouds surging, in response, to remember the Elder. Then we notified the Buddhists of Hong Kong by telephone, and on the 18th (that is, the seventeenth day of the ninth lunar month) we released the news publicly in the Hong Kong newspapers to inform everyone. Who would have expected that this would invite jealousy? Petty people slandered, demons ran rampant, confusing what people saw and heard, and some who styled themselves Good and Wise Advisors were glad to tag along behind and chime in. It is truly lamentable! How true it is that good deeds attract many demons.
+To hear the news so suddenly was for me nothing less than as if the mountains had crumbled and the earth had quaked, as if the human world had been destroyed and the fire at the end of the kalpa were blazing through everything. I could not tell whether I was dreaming or awake, whether it was real or unreal; I was like a dull, senseless wooden puppet, like a clay image without consciousness. Only after a long while did my awareness return, and I was overwhelmed with grief! The next day, on the morning of the 17th, I called together the patrons of this Hall to discuss the memorial arrangements. It was decided then and there to hold a 21-day Buddha Recitation session, followed by a 120-day Great Prajna session, to show our remembrance and to repay the kindness of his milk of the Dharma. We immediately sent telegrams to our Dharma companions and fellow cultivators overseas: to the San Francisco Buddhist Lecture Hall, the Honolulu Buddhist Association, the Singapore Buddhist Association, Upasaka Lee Choon Seng, Upasika Pitt Chin Hui, and others; to Upasaka Zhan Liwu in Canada; to the countries of Southeast Asia, Taiwan, Burma, Thailand, India, Ceylon, and other places; and to Upasaka Yu Zhendong, chairman of the World Fellowship of Buddhists, and others. More than a hundred telegrams were sent in all, and so everywhere people rose up in great numbers, like winds rising and clouds surging, in response, to remember the Elder. Then we notified the Buddhists of Hong Kong by telephone, and on the 18th (that is, the seventeenth day of the ninth lunar month) we released the news publicly in the Hong Kong newspapers to inform everyone. Who would have expected that this would invite jealousy? Petty people slandered, demons ran rampant, confusing what people saw and heard, and some who styled themselves Good and Wise Advisors were glad to tag along behind and chime in. It is truly lamentable! How true it is that good deeds attract many demons.
 
 In short, if anyone understands me, will it not be because of the Venerable Yun? If anyone condemns me, will it not also be solely because of the Venerable Yun? When Confucius wrote the *Spring and Autumn Annals*, rebellious ministers and treacherous sons were afraid; when Sima compiled the *Records of the Grand Historian*, evildoers and lawbreakers perished. I am exerting myself for the Venerable Yun's sake, and even if ten thousand spears pierced my body, I would have no fear. Please use all your tricks to the full; I welcome and accept them most heartily. Great Master Yongjia said: "Contemplate evil words as merit and virtue; then they become my Good and Wise Advisors. If slander did not give rise to enmity or fondness, how could the power of patience and kindness born of non-production be shown?" He also said: "Let them slander, let them condemn; those who hold up a torch to burn the sky only tire themselves out. When I hear it, it is just like drinking sweet dew; it melts away, and I suddenly enter the inconceivable." Yet you should know that cause and effect are inconceivable, and retribution too is inconceivable. Be careful! Be careful! If you fall into the suffering of the tongue-pulling hell, it will be too late for regret!
 
@@ -3190,7 +3190,7 @@ Right after the Elder manifested stillness, the Permanent Memorial Committee for
 
 Elder Hsu Yun was renowned in China and abroad; his followers fill the world, and his disciples are beyond counting. As disciples, if we do not repay our teacher's kindness, how can we be at peace with ourselves? Now that the Elder has entered perfect stillness, if there were no writings to commemorate him and to transmit his immortal merit and virtue to the world for later generations to believe in, how could we repay the Elder's profound kindness?
 
-He transmitted the Buddha's mind seal and continued the wisdom-lamp of the Patriarchs. The Elder's great spirit, in reviving the Buddhadharma and crossing over living beings, was enough to influence and transform both sentient and insentient beings; he was a model for students and an exemplary teacher for humans and gods. Now that he has entered Nirvana, later students should behold his radiance and take him as their pattern. Therefore this book has been compiled and printed, so that later generations will have something to choose from.
+He transmitted the Buddha's mind seal and continued the wisdom-lamp of the Patriarchs. The Elder's great spirit, in reviving the Buddhadharma and helping living beings cross over, was enough to influence and transform both sentient and insentient beings; he was a model for students and an exemplary teacher for humans and gods. Now that he has entered Nirvana, later students should behold his radiance and take him as their pattern. Therefore this book has been compiled and printed, so that later generations will have something to choose from.
 
 The Elder's great age of 120 years bears witness to his lifelong strict and exacting observance of the precepts and the Vinaya and to his extraordinary achievements; his name will be handed down for ten thousand generations. Therefore we have now specially created and printed this special issue as a memorial, so that ten thousand generations hence people will have a model to revere, to emulate, and to learn from.
 
@@ -3249,7 +3249,7 @@ On the Nirvana of My Kind Teacher, the Venerable Elder Yun
 > Revering your virtue from the northern city,  
 > I came ten thousand li to draw near;  
 > Honoring my teacher's compassionate command,  
-> I will educate dragons and elephants  
+> I will train dragons and elephants among monastics [Tr.: outstanding monastics]  
 > To diligently cultivate precepts, samadhi, and wisdom.
 >
 > <small>北城仰德  萬裡來親  尊師慈命   教育龍象  勤修戒定慧</small>
@@ -3348,21 +3348,21 @@ Liang Minhui set up the "Buddhist Association of America" in 1961 and took some 
 
 However, one whose contribution must not be overlooked is Yu Guo Xing. He not only contributed money and effort but also often urged the disciples who had taken refuge with the Master not to run off to other places, but to guard and protect their own Master's place. During the time when Guo Zheng had gone back to Hong Kong on business, it was Yu Guo Xing who helped me keep the Lecture Hall going all along. There was also an Upasaka Yang, who helped us get news items published in the newspapers. Huang Guo Ren, Li Guo Qian, and others all came to the Lecture Hall at that time, and they brought their classmates along too.
 
-**[Addendum 1]** *Gold Mountain Times*, August 7, 1961:
+**[Addendum 1]** *Chinese Times*, August 7, 1961:
 
 Notice of Thanks on Moving to New Premises
 
 Yesterday, August 6 (the twenty-fifth day of the sixth lunar month), our association moved to its new site and held a Universal Buddha Ceremony in celebration. We were honored that the Venerable Dharma Master Zu Yin graciously came to preside at the altar, and that patrons, faithful devotees, and Buddhist friends came to join in and rejoice and kindly bestowed generous gifts and fresh flowers. For their noble friendship and deep kindness we are sincerely grateful, and we respectfully set down these few words to express our thanks.
 
-Furthermore, the pure funds that the faithful devotees offered that day with the merit-and-virtue dedication forms they signed have all been donated on their behalf to the Chinese Hospital (Tung Wah Hospital), as a field of blessings to increase the good fortune of all the faithful devotees; for this, too, we express our thanks.
+Furthermore, the pure funds that the faithful devotees offered that day with the merit-and-virtue dedication forms they signed have all been donated on their behalf to the Chinese Hospital in San Francisco, as a field of blessings to increase the good fortune of all the faithful devotees; for this, too, we express our thanks.
 
 With respectful thanks from all the members of the San Francisco Buddhist Lecture Hall
 
-**[Addendum 2]** *Gold Mountain Times*, September 8, 1961:
+**[Addendum 2]** *Chinese Times*, September 8, 1961:
 
 Buddhist Lecture Hall to Celebrate the Birthday of Earth Store Bodhisattva
 
-The Buddhist Lecture Hall at 824 Clay Street will celebrate the holy birthday of Earth Store Bodhisattva at 8:00 p.m. on Saturday, the 9th of this month (the thirtieth day of the seventh lunar month). People from all walks of life are welcome to attend.
+The Buddhist Lecture Hall at 824 Clay Street will celebrate the holy birthday of Earth Store Bodhisattva at 8:00 p.m. on Saturday, the 9th of this month (the thirtieth day of the seventh lunar month) [Tr.: the Chinese text reads "eighth lunar month"; September 9, 1961, was the thirtieth day of the seventh, Earth Store Bodhisattva's birthday]. People from all walks of life are welcome to attend.
 
 Upasika Tan Guo Shi recounted:
 
@@ -3382,7 +3382,7 @@ On May 11, the Venerable Master was invited to speak at the Sydney Buddhist Soci
 
 In the Venerable Master's own words:
 
-People said of me, "He can't even read; how could he lecture on the sutras? Don't go listen to his lectures; he just talks nonsense. It's all right for him to lecture to Americans and Australians, because they don't understand the Buddhadharma, so they can accept something shallow." Even though others say I can't lecture on the sutras, I'm still going to lecture. I call this "tossing out a brick to draw forth jade." When those who can lecture on the sutras see this, they'll feel embarrassed—too embarrassed to stay lazy and idle anymore: "We also have a share in teaching and transforming living beings; we shouldn't fail to fulfill our responsibility!" To make them all bring forth the Bodhi resolve to cross over living beings—that is my intention.
+People said of me, "He can't even read; how could he lecture on the sutras? Don't go listen to his lectures; he just talks nonsense. It's all right for him to lecture to Americans and Australians, because they don't understand the Buddhadharma, so they can accept something shallow." Even though others say I can't lecture on the sutras, I'm still going to lecture. I call this "tossing out a brick to draw forth jade." When those who can lecture on the sutras see this, they'll feel embarrassed—too embarrassed to stay lazy and idle anymore: "We also have a share in teaching and transforming living beings; we shouldn't fail to fulfill our responsibility!" To make them all bring forth the Bodhi resolve to help living beings cross over—that is my intention.
 
 "The Thirty-seven Wings of Enlightenment" are a Dharma cultivated in the Small Vehicle, but they also extend to the Mahayana; Mahayana practitioners can cultivate them too, because this Dharma is common to both the Great and the Small Vehicles. The Mahayana is born from the Small Vehicle, and the Small Vehicle is contained within the Mahayana; without the Small Vehicle, one cannot reach the fruition of the Mahayana directly. And without the Mahayana, the position of the Small Vehicle could not be revealed either. So when I spoke the Dharma for them in Australia, I explained this principle in great detail; therefore, those who study the Mahayana should also know the Thirty-seven Wings of Enlightenment.
 
@@ -3567,7 +3567,7 @@ In the Venerable Master's own words:
 
 There was once a Professor Cheng Xi, who wrote a book called *New Chan Sayings*. He said that in arithmetic, if you write a large number and draw a circle after this large number, the number becomes a bit larger. For example, take this "1" and keep drawing zeros after it until you've filled heaven and earth with circles—how much would that be, after all? However much you draw, there's never any end to it. This number, this large number: every circle you draw adds another place, every circle you draw makes it bigger. You draw on the wall, you fill up the ground below, you fill up the sky above too—how big a number is it, after all? So this number is endless and inexhaustible.
 
-**[Addendum 1]** Professor Cheng Xi (courtesy name Zhongyan), from Iowa State University
+**[Addendum 1]** Professor Cheng Xi (courtesy name Zhongyan), from Iowa State University [Tr.: the next paragraph and Addendum 4 give the University of Iowa]
 
 He was engaged in education at the University of Iowa for more than 20 years and wrote many works, of which *Cheng's New Chan Sayings* is the most widely known. In 1993 Professor Cheng visited the Venerable Master at Long Beach Monastery. Professor Cheng said, "The elder Dharma Master never talked to me about spiritual powers; he was very ordinary. But he put what he knew into practice right away, and that's not easy!"
 
@@ -3583,7 +3583,7 @@ A few years ago I went to California to see the elder Dharma Master, and it happ
 
 The last time I saw the elder Dharma Master was in the summer of 1994. When I flew into Los Angeles, some of the elder Dharma Master's followers came to meet me at the airport and then took me to Long Beach Monastery. I talked with the elder Dharma Master for several hours. The elder Dharma Master had long known my true character, so I didn't need any conversational art and held nothing back in what I said. So once we started talking, we spoke freely and to our hearts' content, frankly and without reservation, and the time stretched out accordingly. Just before I left, some visitors came to call, among them a doctor of Chinese medicine skilled in treating muscles and bones. Busy as he was, the elder Dharma Master had this guest examine the sprain in my left arm. After some tuina massage, it felt as if a knot in the sinews of my arm had been untied; for several months I had never felt so relaxed. From then on, my left arm regained its flexibility, up and down.
 
-**[Addendum 4]** In an article commemorating the Venerable Master, Professor Yang Fusen wrote:
+**[Addendum 4]** In an article commemorating the Venerable Master, Professor Richard Fu-sen Yang wrote:
 
 Back when the Master was propagating the Dharma in Hong Kong, he became friends in the Way with Cheng Xi, and they often visited each other. Cheng Xi and I were both graduates of Yenching University. When I was teaching at the University of Pittsburgh, I once invited Professor Cheng to teach summer school at Pitt (Professor Cheng taught at the University of Iowa for many years, until he retired), so we were also quite well acquainted.
 
@@ -3727,13 +3727,13 @@ Why did I come to America to propagate the Buddhadharma? Because this country do
 
 ## 100. Seeing Hong Kong Again
 
-At the end of 1974, the Venerable Master returned to Hong Kong from America for the first time. Later, in 1978, 1981, and 1988, at the invitation of the Buddhist Association of Taiwan, Buddhist circles in Southeast Asia, and the Third World Buddhist Sangha Council, the Venerable Master returned to his old haunts...
+At the end of 1974, the Venerable Master returned to Hong Kong from America for the first time. Later, in 1978, 1981, and 1988, at the invitation of the Buddhist Association of Taiwan, Buddhist circles in Southeast Asia, and the Third General Conference of the World Buddhist Sangha Council, the Venerable Master returned to his old haunts...
 
 From late November 1974 to January 1975, the Venerable Master, who had been away from Hong Kong for a full 12 years, led two American disciples who had earlier made the "three steps, one bow" pilgrimage, Dharma Masters Heng Ju and Heng Yo, on a tour to propagate the Dharma and make visits in Taiwan, Hong Kong, Thailand, India, Ceylon, Singapore, Vietnam, and Japan. During the tour, besides speaking the Dharma at monasteries, Way-places, and universities in each place, he also led a seven-day Buddha Recitation session in Hong Kong. This was the Venerable Master's first return to Hong Kong from America.
 
 From July to September 1978, at the invitation of Buddhist circles throughout Southeast Asia, the Venerable Master led a delegation to propagate the Dharma in Malaysia, Singapore, Bangkok in Thailand, Hong Kong, and other places. He arrived in Hong Kong at 8 p.m. on September 16; this was the Venerable Master's second return to Hong Kong. From September 22 to September 26, from 7 to 9 p.m., the Venerable Master gave instructional talks at the Buddhist Studies Lecture Hall of Tung Lin Kok Yuen.
 
-At the end of November 1981, having been invited to attend the Third World Buddhist Sangha Council hosted by the Buddhist Association of Taiwan, the Venerable Master once again led a delegation to propagate the Dharma in Taiwan, Hong Kong, Singapore, and Malaysia. This was the Venerable Master's third return to Hong Kong.
+At the end of November 1981, having been invited to attend the Third General Conference of the World Buddhist Sangha Council, hosted by the Buddhist Association of Taiwan, the Venerable Master once again led a delegation to propagate the Dharma in Taiwan, Hong Kong, Singapore, and Malaysia. This was the Venerable Master's third return to Hong Kong.
 
 In December 1988, at the invitation of Buddhist circles in Taiwan, Hong Kong, Singapore, and Malaysia, the Venerable Master once again led a delegation to propagate the Dharma in these places. This was the Venerable Master's fourth return to Hong Kong, and also his last.
 
@@ -3767,13 +3767,13 @@ I have let down my compatriots and fellow cultivators in Hong Kong! I'm not sayi
 
 **[Addendum 5]** At the end of November 1981, the Venerable Master was invited to Asia to propagate the Dharma. From December 11 to 14, at City Hall in North Point, Hong Kong, he gave a series of Dharma lectures on four consecutive evenings, from 7 to 9 p.m. The audience listened to the Venerable Master's incisive instructional talks with great interest.
 
-On the evening of the first day (December 11), the Venerable Master began right away by saying, "People who study Buddhism must first themselves have proper knowledge and views; only with proper knowledge and views can they know how to cultivate. In cultivation, one must first understand the Dharma door of the Seven Shares of Bodhi." He also spoke of "dhyana," saying, "When you gain a little benefit in samadhi, you give rise to arrogance and pride, or you think you've become enlightened. Remember this! You must not claim to have attained what you have not attained, babbling that you're enlightened—what kind of enlightenment have you got! This is telling a great lie, and in the future you'll fall into the Hell of Tongue Pulling. Therefore, all who study Buddhism must not create karma that is a mixture of good and evil, must not put tall hats on themselves, 'sell' their cultivation, or advertise their own virtue. That's the behavior of a con man!"
+On the evening of the first day (December 11), the Venerable Master began right away by saying, "People who study Buddhism must first themselves have proper knowledge and views; only with proper knowledge and views can they know how to cultivate. In cultivation, one must first understand the Dharma door of the Seven Shares of Bodhi." He also spoke of "dhyana," saying, "When you gain a little benefit in samadhi, you give rise to arrogance and pride, or you think you've become enlightened. Remember this! You must not claim to have attained what you have not attained, babbling that you're enlightened—what kind of enlightenment have you got! This is telling a great lie, and in the future you'll fall into the Hell of Tongue Pulling. Therefore, all who study Buddhism must not create karma that is a mixture of good and evil, must not praise themselves, show off their cultivation, or boast of their own virtue. That's the behavior of a con man!"
 
 On the evening of the second day (December 12), the Venerable Master said, "I lived in Hong Kong for more than ten years, and many young people followed me in studying the Buddhadharma, because I'm also very fond of young people. Later, when the conditions ripened, I went to America." He also said, "American Buddhism is a brand-new Buddhism, but American Buddhism originally doesn't belong to America; rather, it belongs to the whole world. Buddhism should not have distinctions of nationality, race, or self and others. Buddhism is the religion of the whole world and all humanity. True Buddhism is not limited by distinctions of nationality, region, or self and others.
 
-"In Asia, people generally acknowledge that this is the Dharma-Ending Age. But the Dharma itself does not have a Proper Dharma and a Dharma-Ending; rather, it is because people don't cultivate that there is a Dharma-Ending Age. As the saying goes, 'People can propagate the Dharma; it is not the Dharma that propagates people.' If people cultivate earnestly and without interruption, then the Proper Dharma will long abide in the world. When people don't cultivate, that is the Dharma-Ending Age."
+"In Asia, people generally acknowledge that this is the Dharma-Ending Age. But the Dharma itself does not have a Proper Dharma and a Dharma-Ending; rather, it is because people don't cultivate that there is a Dharma-Ending Age. As the saying goes, 'People can make the Dharma great; it is not the Dharma that makes people great.' If people cultivate earnestly and without interruption, then the Proper Dharma will long abide in the world. When people don't cultivate, that is the Dharma-Ending Age."
 
-On the evening of the third day—since for several days running the Hong Kong newspapers had all been carrying news of the Venerable Master's return to Hong Kong to propagate the Dharma, and one of the "hot" topics was the question "Why do monastics wear the kashaya?"—the Venerable Master, in response to these circumstances, patiently explained that evening the importance of Bhikshus wearing the kashaya. Then the Venerable Master recounted an incident from San Francisco. While he told it, the audience listened with rapt attention; not one person left in the middle. What incident was it? In 1978 the Golden Dragon Massacre took place in San Francisco, shocking the community and throwing the overseas Chinese of Chinatown into panic. Afterwards, the Wah Ching gang wanted to launch a second or even a third Golden Dragon massacre, all because the Wah Ching and the Joe Boys were fighting over turf. But later they all took refuge with the Triple Jewel, took refuge at the City of Ten Thousand Buddhas, and threw their weapons into the sea. After they reformed, those who went to school went to school and those who worked went to work, and they never again did evil. The Venerable Master said, "I would rather teach people through the power of moral transformation than oppress people with force."
+On the evening of the third day—since for several days running the Hong Kong newspapers had all been carrying news of the Venerable Master's return to Hong Kong to propagate the Dharma, and one of the "hot" topics was the question "Why do monastics wear the kashaya?"—the Venerable Master, in response to these circumstances, patiently explained that evening the importance of Bhikshus wearing the kashaya. Then the Venerable Master recounted an incident from San Francisco. While he told it, the audience listened with rapt attention; not one person left in the middle. What incident was it? In 1978 the Golden Dragon Massacre took place in San Francisco [Tr.: the shooting took place on September 4, 1977], shocking the community and throwing the overseas Chinese of Chinatown into panic. Afterwards, the Wah Ching gang wanted to launch a second or even a third Golden Dragon massacre, all because the Wah Ching and the Joe Boys were fighting over turf. But later they all took refuge with the Triple Jewel, took refuge at the City of Ten Thousand Buddhas, and threw their weapons into the sea. After they reformed, those who went to school went to school and those who worked went to work, and they never again did evil. The Venerable Master said, "I would rather teach people through the power of moral transformation than oppress people with force."
 
 On the evening of the fourth day (December 14), the Venerable Master first explained "the Venerable Ananda's four questions to the Buddha," and then expounded the "Four Applications of Mindfulness" among the "Thirty-seven Wings of Enlightenment," namely, "Contemplate the body as impure, contemplate feelings as suffering, contemplate the mind as impermanent, and contemplate dharmas as without self." The Venerable Master said, "The sea of suffering is boundless; turn your head around, and there is the shore. Don't keep bobbing up and down in the sea of suffering anymore; otherwise you will never have a day of liberation." Because the audience was delighted to hear the essentials of the Dharma and did not want it to end, the Venerable Master continued: "In the past I lived in Hong Kong for 14 years, and in 1962 I left Hong Kong for America. Although I lived in Hong Kong for so long, I made no contribution at all to Hong Kong. Coming back from America this time, I wish to establish Dharma affinities with all you elders, brothers, and compatriots of Hong Kong, and truly deliver the Buddhadharma into your hearts. If I can do this, I will feel comforted."
 
@@ -3890,7 +3890,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 余果滿 | Yu Guo Man |
 | 余果興 | Yu Guo Xing (her son) |
 | 薛果鳳 | Xue Guo Feng (Yu Guo Man's daughter-in-law) |
-| 劉果娟 | Liu Guo Juan |
+| 劉果娟 | Liu Guo Juan (also rendered Lau Kuo Kuen) |
 | 羅果明 (黃太太) | Luo Guo Ming (Mrs. Huang) |
 | 黃果松 | Huang Guo Song (daughter of Luo Guo Ming) |
 | 黃果君 | Huang Guo Jun (son of Luo Guo Ming) |
@@ -3984,7 +3984,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 舊金山 / 三藩市 | San Francisco |
 | 檀香山中華佛教會 | Chinese Buddhist Association of Hawaii |
 | 台灣佛教會 | the Buddhist Association of Taiwan |
-| 世界佛教僧伽大會 | World Buddhist Sangha Council (conference) |
+| 世界佛教僧伽大會 / 第三屆世界佛教僧伽大會 | World Buddhist Sangha Council / the Third General Conference of the World Buddhist Sangha Council |
 
 ## Texts and Publications
 
@@ -4021,7 +4021,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 《虛雲老和尚年譜》 | Chronicle of Elder Master Hsu Yun |
 | 《度輪禪師事跡》 / 《度輪法師事跡》 | Records of Chan Master To Lun / Records of Dharma Master To Lun |
 | 《工商日報》 / 《華僑日報》 / 《華僑晚報》 / 《星島日報》 / 《成報》 | Kung Sheung Daily News / Wah Kiu Yat Po / Wah Kiu Man Po / Sing Tao Daily / Sing Pao |
-| 《金山時報》 | Gold Mountain Times |
+| 《金山時報》 | Chinese Times (San Francisco) |
 | 《道德經》 / 《老子》 / 《孟子》 / 《古文觀止》 | Tao Te Ching / Laozi / Mencius / Guwen Guanzhi |
 | 《聖經》 | the Bible |
 | 《維基百科》 | Wikipedia |
@@ -4035,7 +4035,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 講經 / 講經說法 | lecture on the sutras / lecture on the sutras and speak the Dharma |
 | 法會 | Dharma assembly |
 | 開示 | instructional talk; to instruct |
-| 度眾生 / 度人 | cross over living beings / save people |
+| 度眾生 / 度人 | help living beings cross over / save people |
 | 眾生 | living beings |
 | 因緣 / 緣 | causes and conditions / affinity, conditions |
 | 業 / 業障 | karma / karmic obstacles |
@@ -4060,6 +4060,10 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 正法 | the Proper Dharma |
 | 正知正見 | proper knowledge and views |
 | 慈悲喜捨 | kindness, compassion, joy, and giving (the Four Unlimited Minds; "giving" = equanimity) |
+| 假名 | provisional designation |
+| 入室弟子 | close disciples |
+| 龍象 | dragons and elephants (outstanding monastics) |
+| 堅固子 | relics (sharira) |
 | 戒定慧 | precepts, samadhi, and wisdom |
 | 三無漏學 | the Three Non-Outflow Studies |
 | 七菩提分 | the Seven Shares of Bodhi |
@@ -4249,7 +4253,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 神識 | spirit (consciousness) |
 | 南無大悲觀世音菩薩 | Namo Greatly Compassionate Guanshiyin Bodhisattva |
 | 觀音十大願 / 願我速知一切法 | Guanyin's ten great vows / "I vow to quickly know all dharmas" |
-| 街喉 | "street hydrant" |
+| 街喉 | street standpipe |
 | 霸王地 | "overlord land" |
 | 經懺 (趕經懺) | sutra recitations and repentance rites (rush from one to the next) |
 | 三如來 | the Three Tathagatas |
@@ -4363,7 +4367,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 繞梁三日，不絕於耳 | "lingered around the rafters for three days, ringing on and on in the ears" |
 | 解放 | the Liberation (1949) |
 | 丹田 | dantian |
-| 大法器 | the large Dharma instruments |
+| 大法器 | play the Dharma instruments |
 | 海潮音 (唱法) | the "Sea Tide Sound" style of chanting |
 | 蒙山施食 | the Mengshan Food Bestowal |
 | 通疏 | reading out the memorials (shu) |
@@ -4399,7 +4403,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 上士 / 高人 | superior person / lofty one |
 | 人天模范師 / 人天的導師 | model teacher for humans and gods / guiding teacher of humans and gods |
 | 應供 | receive a meal offering |
-| 劉果娟 / 程果成 | Liu Guo Juan / Cheng Guo Cheng |
+| 劉果娟 / 程果成 | Liu Guo Juan (also rendered Lau Kuo Kuen) / Cheng Guo Cheng |
 | 心誠則靈 | "where the mind is sincere, there is a response" |
 | 隨喜 | rejoice along with |
 | 龍弟子 | dragon disciples |
@@ -4423,7 +4427,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 含識 / 蠢動含靈 | beings with consciousness / all creatures that wriggle and all that have spiritual awareness |
 | 五濁惡世 | the evil world of the five turbidities |
 | 擇法眼 | the eye that discerns dharmas |
-| 戴高帽子 | flatter |
+| 戴高帽子 | praise oneself |
 | 前途 / 後途 | the road ahead / the road behind |
 | 天下本無事，庸人自擾之 | "Originally nothing is wrong under heaven; ordinary people stir up trouble for themselves." |
 | 有德者降祥，無德者降殃 | "Upon those with virtue, blessings descend; upon those without virtue, calamities descend." |
@@ -4469,7 +4473,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 北僧南移 | the monks from the north migrating south |
 | 雨後春筍 | like bamboo shoots after a spring rain |
 | 果蜜傳奇 | "The Remarkable Story of Guo Mi" |
-| 九代單傳 | the sole male heir for nine generations |
+| 九代單傳 | the ninth in a line of only sons |
 | 法像 | Dharma image |
 | 南無本師釋迦牟尼佛 | "Namo Fundamental Teacher Shakyamuni Buddha" |
 | 果地 | Guo Di |
@@ -4641,7 +4645,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 不退地 | the ground of non-retreat |
 | 世尊 | the World Honored One |
 | 屍羅 | shila |
-| 人能弘法，非法弘人 | People can propagate the Dharma; it is not the Dharma that propagates people. |
+| 人能弘法，非法弘人 | People can make the Dharma great; it is not the Dharma that makes people great. |
 | 法無正末 | The Dharma has no Proper or Ending Age |
 | 六朝 | the Six Dynasties |
 | 娑婆 | the Saha world |
@@ -4746,7 +4750,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 走火入魔 / 著魔 | go off the rails and be possessed by demons / demonic possession |
 | 三業相應 | with the three karmas in accord |
 | 表信偈 | Verse of Certification |
-| 西天 / 西土 / 東土 | the Western Heaven / the Western Land (India) / the Eastern Land (China) |
+| 西天 / 西土 / 東土 | India (lit. the Western Heaven / Western Land) / China (lit. the Eastern Land) |
 | 金頂毗盧派 | "Golden Summit Vairocana" branch (of the Chan School) |
 | 德清 | Deqing (Hsu Yun's Dharma name) |
 | 正法眼藏·佛祖源流 | The Treasury of the True Dharma Eye: The Origins and Lineage of the Buddhas and Patriarchs (transmission scroll) |
@@ -4793,7 +4797,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 縵衣 (缦衣) | lay precept sash |
 | 自然日報 | Nature Daily (Ziran Ribao) |
 | 南華佛學院 | Nanhua Buddhist Academy |
-| 成和道 | Shing Woo Road (Happy Valley) |
+| 成和道 | Sing Woo Road (Happy Valley) |
 | 世界和平塔 | World Peace Pagoda (Rangoon) |
 | 余鎮東 | Judge Yu Zhendong |
 | 陳振富 | Chen Zhenfu (Burmese consul in Hong Kong) |
@@ -4825,8 +4829,8 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 喬達基寶塔 | Chaukhtatgyi Pagoda |
 | 首席法官 | Chief Justice (of Rangoon) |
 | 新加坡佛教協會 | Singapore Buddhist Association |
-| 畢俊輝 | Ms. Bi Junhui |
-| 菩提小學 | Bodhi Primary School (Singapore) |
+| 畢俊輝 | Ms. Pitt Chin Hui |
+| 菩提小學 | Maha Bodhi School (Singapore) |
 | 佛眼 | the Buddha Eye |
 | 神秀 | Shenxiu |
 | 大澳船 | the Tai O ferry |
@@ -4837,7 +4841,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 衲 | the patched-robed (monk) |
 | 老修行 / 老魔王 | seasoned cultivator / old demon king |
 | 拆字 | character-splitting puzzle |
-| 楊福森 | Professor Yang Fusen |
+| 楊福森 | Professor Richard Fu-sen Yang |
 | 愉園大廈 | Yu Yuen Mansion (Happy Valley) |
 | 聖一老和尚略傳 | A Brief Biography of Elder Master Sheng Yi |
 | 宣玄 | Xuan Xuan (Sheng Yi's lineage name) |
@@ -4933,7 +4937,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 文化大革命 | the Cultural Revolution |
 | 一領大衣 / 大衣 | this one great robe (sanghati) |
 | 佛印橋 / 碧溪 | the Foyin Bridge / the Bixi stream |
-| 入室弟子 | disciples who have entered my room |
 | 把茅蓋頭 | a bundle of thatch to cover one's head |
 | 《矽谷梵音》 | Silicon Valley Brahma Sound (Gold Sage Monastery periodical) |
 | 吉祥臥 | the auspicious reclining posture |
@@ -4945,7 +4948,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 頂門有眼 | with the eye on the crown of his head |
 | 昙始 / 知玄 / 玄暢 / 靜藹 | Tanshi / Zhixuan / Xuanchang / Great Master Jing'ai |
 | 魏武帝 / 周武帝 / 唐武帝 | Emperor Wu of Wei / Emperor Wu of Zhou / Emperor Wu of Tang |
-| 堅固子 | firm seeds (sharira) |
 | 砗磲 | tridacna |
 | 嗣法門人 | his disciple and Dharma heir |
 | 捨身品 | "Chapter on Giving Up the Body" (Golden Light Sutra) |
@@ -4994,7 +4996,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 活死僧 | "living dead monk" |
 | 五濁 / 三醉 | the five turbidities / drunk with the three poisons |
 | 志哀贊頌 | tributes of mourning and praise |
-| 龍象 | dragons and elephants |
 | 單傳直指 | the single transmission that points directly |
 | 說客 | go-between |
 | 日幣 | yen |
@@ -5046,7 +5047,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 喬遷謝啟 | Notice of Thanks on Moving to New Premises |
 | 上祖下印 | the Venerable ... Zu Yin |
 | 功德文疏 | merit-and-virtue dedication forms |
-| 東華醫院 | the Chinese Hospital (Tung Wah Hospital) |
+| 東華醫院 | the Chinese Hospital (San Francisco) |
 | 地藏王 | Earth Store Bodhisattva |
 | 美國就美，澳洲就懊悔 | "America is mei, 'beautiful'; Australia is ao, 'regretful'!" |
 | 四邑 | the Siyi region (of Guangdong) |
@@ -5107,7 +5108,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 子程子曰 | "Zi Chengzi yue" ("Our Master, Master Cheng, said") |
 | 朱子（朱熹）/ 程子（程頤） | Zhuzi (Zhu Xi) / Chengzi (Cheng Yi) |
 | 新禪語 / 程氏新禪語 | New Chan Sayings / Cheng's New Chan Sayings |
-| 程曦（字仲炎） | Cheng Xi (courtesy name Zhongyan) |
+| 程曦（字仲炎） | Cheng Xi (Hsi Cheng; courtesy name Zhongyan) |
 | 愛荷華州立大學 / 愛荷華（愛俄華）大學 | Iowa State University / University of Iowa |
 | 設問語錄 | Sayings in the Form of Questions |
 | 四書 / 四書五經 | the Four Books / the Four Books and Five Classics |

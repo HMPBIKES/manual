@@ -70,10 +70,10 @@ Rules:
   - 第一篇 赴港與待緣 → Part One: Coming to Hong Kong and Awaiting Conditions
   - 第二篇 建廟與弘法 → Part Two: Building Monasteries and Propagating the Dharma
   - 第三篇 慈興與安僧 → Part Three: Cixing Monastery and Providing for the Sangha
-  - 第四篇 講堂與度眾 → Part Four: The Lecture Hall and Crossing Over Living Beings
+  - 第四篇 講堂與度眾 → Part Four: The Lecture Hall and Helping Living Beings Cross Over
 - PARTINFO: 三十二歲至三十四歲 → Ages 32 to 34; 公元一九四九至一九五一年 → 1949 to 1951 CE.
 - Book front matter (fixed):
-  - P0001 → A Ship of Compassion on the Sea of Awakening: Ferrying Beings Across in Hong Kong — Records of the Life of the Venerable Master Hsuan Hua
+  - P0001 → Crossing Hong Kong on the Ship of Compassion in the Sea of Awakening — Records of the Life of the Venerable Master Hsuan Hua (title of the English serial in *Vajra Bodhi Sea*)
   - P0002 → The Hong Kong Years
   - P0003 → Compiled by the Editorial Committee for the Records of the Life of the Venerable Master Hsuan Hua
 
@@ -103,7 +103,7 @@ Add a short `[Tr.: …]` note **only** at the paragraph ID listed below for that
 | 掛單 | stay (as a visiting monk) at …; lodge | P0013 (note: monastic custom of lodging temporarily at a monastery while traveling) |
 | 十方叢林 | public monastery of the ten directions | P0015 (open to all monastics, as opposed to a private hereditary temple) |
 | 皈依 | take refuge (with the Master); refuge disciple (皈依弟子) | P0018 (formally becoming a Buddhist disciple by taking refuge in the Buddha, Dharma, and Sangha) |
-| 夜不倒單 | never lying down to sleep (sitting up all night) | P0034 |
+| 夜不倒單 | never lying down to sleep | P0034 (note: never lying down, remaining seated even when asleep) |
 | 日中一食 | eating one meal a day, at midday | P0034 |
 | 托缽 | go on alms rounds | P0036 |
 | 打七 | hold a seven-day session | P0041 (an intensive seven-day period of meditation or recitation) |
@@ -236,7 +236,7 @@ Other monastic names not listed: Pinyin, each syllable capitalized and separated
 | 余果滿 | Yu Guo Man | F |
 | 余果興 | Yu Guo Xing (her son) | M |
 | 薛果鳳 | Xue Guo Feng (Yu Guo Man's daughter-in-law) | F |
-| 劉果娟 | Liu Guo Juan | F |
+| 劉果娟 | Liu Guo Juan (also rendered Lau Kuo Kuen) | F |
 | 羅果明 (黃太太) | Luo Guo Ming (Mrs. Huang) | F |
 | 黃果松 | Huang Guo Song (daughter of Luo Guo Ming) | F |
 | 黃果君 | Huang Guo Jun (son of Luo Guo Ming) | M |
@@ -340,7 +340,7 @@ Non-Dharma personal names (birth names): Pinyin with the given name joined, e.g.
 | 舊金山 / 三藩市 | San Francisco |
 | 檀香山中華佛教會 | Chinese Buddhist Association of Hawaii |
 | 台灣佛教會 | the Buddhist Association of Taiwan |
-| 世界佛教僧伽大會 | World Buddhist Sangha Council (conference) |
+| 世界佛教僧伽大會 / 第三屆世界佛教僧伽大會 | World Buddhist Sangha Council / the Third General Conference of the World Buddhist Sangha Council |
 
 ### 5.5 Texts and publications
 | Chinese | English |
@@ -376,7 +376,7 @@ Non-Dharma personal names (birth names): Pinyin with the given name joined, e.g.
 | 《虛雲老和尚年譜》 | *Chronicle of Elder Master Hsu Yun* |
 | 《度輪禪師事跡》 / 《度輪法師事跡》 | *Records of Chan Master To Lun* / *Records of Dharma Master To Lun* |
 | 《工商日報》 / 《華僑日報》 / 《華僑晚報》 / 《星島日報》 / 《成報》 | *Kung Sheung Daily News* / *Wah Kiu Yat Po* / *Wah Kiu Man Po* / *Sing Tao Daily* / *Sing Pao* |
-| 《金山時報》 | *Gold Mountain Times* |
+| 《金山時報》 | *Chinese Times* (San Francisco) |
 | 《道德經》 / 《老子》 / 《孟子》 / 《古文觀止》 | *Tao Te Ching* / *Laozi* / *Mencius* / *Guwen Guanzhi* |
 | 《聖經》 | the Bible |
 | 《維基百科》 | Wikipedia |
@@ -391,7 +391,7 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 | 講經 / 講經說法 | lecture on the sutras / lecture on the sutras and speak the Dharma |
 | 法會 | Dharma assembly |
 | 開示 | instructional talk; to instruct |
-| 度眾生 / 度人 | cross over living beings / save people |
+| 度眾生 / 度人 | help living beings cross over / save people |
 | 眾生 | living beings |
 | 因緣 / 緣 | causes and conditions / affinity, conditions |
 | 業 / 業障 | karma / karmic obstacles |
@@ -416,6 +416,10 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 | 正法 | the Proper Dharma |
 | 正知正見 | proper knowledge and views |
 | 慈悲喜捨 | kindness, compassion, joy, and giving (the Four Unlimited Minds; "giving" = equanimity) |
+| 假名 | provisional designation |
+| 入室弟子 | close disciple |
+| 龍象 | dragons and elephants (outstanding monastics) |
+| 堅固子 | relics (sharira) |
 | 戒定慧 | precepts, samadhi, and wisdom |
 | 三無漏學 | the Three Non-Outflow Studies |
 | 七菩提分 | the Seven Shares of Bodhi |

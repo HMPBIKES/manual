@@ -1,12 +1,12 @@
 # 译者报告：《覺海慈航度香江——宣化上人事跡·香港篇》英译
 
-**英文书名**：*A Ship of Compassion on the Sea of Awakening: Ferrying Beings Across in Hong Kong — Records of the Life of the Venerable Master Hsuan Hua (The Hong Kong Years)*
+**英文书名**：*Crossing Hong Kong on the Ship of Compassion in the Sea of Awakening — Records of the Life of the Venerable Master Hsuan Hua (The Hong Kong Years)*。第三轮审校后改用《金刚菩提海》第 667 期英文连载的已刊书名；首版译名 *A Ship of Compassion on the Sea of Awakening: Ferrying Beings Across in Hong Kong* 可作为异名。
 
 ## 一、交付文件
 
 | 文件 | 说明 |
 |---|---|
-| `Hsuan_Hua_Hong_Kong_Years_EN.docx` | 英文 Word 版，A4 版式，约 280 页。有目录（已含页码，是真正的 Word 目录域，修改后可右键“更新域”刷新）、页码，书末附中英术语表（1,308 条）。偈颂按分行诗体排版，下方附中文原文（共 94 段）。 |
+| `Hsuan_Hua_Hong_Kong_Years_EN.docx` | 英文 Word 版，A4 版式，约 280 页。有目录（已含页码，是真正的 Word 目录域，修改后可右键“更新域”刷新）、页码，书末附中英术语表（1,309 条）。偈颂按分行诗体排版，下方附中文原文（共 94 段）。 |
 | `Hsuan_Hua_Hong_Kong_Years_EN.md` | 同一内容的 Markdown 版，约 13.8 万英文词，方便检索和后续编辑。 |
 | `Translator_Report.md` | 本报告，附录含全部勘误、疑问、QA 修改记录和主编修改记录。 |
 | `GLOSSARY_AND_STYLE.md` | 所有译者和 QA 共同遵守的风格指南和术语表，供日后修订或续译使用。 |
@@ -24,7 +24,7 @@
 4. **独立 QA**：每批由另一个 agent 对照原文逐段、逐句审校，检查漏译、增译、误译、术语、人名地名、数字日期、性别称谓、注释位置和英文语法，直接改稿并逐条记录。
 5. **主编统稿（本人）**：
    - 全书扫描术语异体，合并 8 份新术语表并消除批次之间的不一致。
-   - 裁定 QA 提出的问题，共 33 处主编修改，见附录 D。
+   - 裁定 QA 提出的问题，首轮共 33 处主编修改；第二、三轮审校的修改也一并列在附录 D。
    - 再次全书校验：1,716 段全部到位。
 
 ## 三、质量统计
@@ -50,7 +50,7 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 3. **原稿重复的段落**只译一次，均已记入勘误：P0786、P1146、P1195、P1404、P1481。
 4. **原稿打码的文字保持原样**：P0315 的“**黨”和 P1651 的“***”。
 5. **原稿内部的事实矛盾一律照译，不在正文改动**，例如年份、人数、日期前后不一，以及“北角大会堂”、金龙大屠杀写成 1978 年等。均已列入附录 B，方便日后出版时加编者注。
-6. **有充分依据的日期笔误已更正并记录**：P1245 阿弥陀佛圣诞，十日改为十七日；P1511 八月三十改为七月三十（地藏圣诞，已核对 1961 年历）。
+6. **日期笔误**：P1511 的“八月三十”按历表改为“七月三十”（地藏圣诞，1961 年 9 月 9 日），并加注说明原文写的是八月。P1245 报纸引文首轮曾悄悄把“十日”改成“十七日”，第三轮已恢复为原文“十日”，并加注说明本章叙述和传统说法都是十七日。
 7. **果平的性别改为女性（Upasika）**：原稿用“他”和“她”各两次，而这份稿子是语音输入，“他/她”同音，无法据此判断。P0952 中她与刘果娟（女）两人一起留宿看守西乐园，按语境判断为女性。
 8. **批次之间统一的译名**：
    - 閉關 → closed retreat
@@ -67,11 +67,11 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 
 以下几处我已做出合理选择，但最好对照纸本原书或请熟悉史实的人确认：
 
-- **P0024**：原稿“龍華寺”，按同章 P0036–P0037 改为“龍蓮寺”（Wat Mangkon Kamalawat）。
+- **P0024**：原稿“龍華寺”，按同章 P0036–P0037 改为“龍蓮寺”（Wat Mangkon Kamalawat），已加校记。第三轮审校查到《金刚菩提海》新编连载也作“龍蓮寺”，此条已有依据。
 - **P0537**：香港几处道场没有查到官方英文名：南天竺、弘法精舍、青山海潮院、般若精舍、法成寺、黃大仙大佛寺。目前粤拼与拼音混用。
 - **P0165**：寶覺寺暂译 Po Kok Monastery，未查到官方名称。
 - **P0297**：“甘果慧”可能就是谭家母亲“甘果彥”，照原文保留。
-- **P0750**：农历 1954 年三月十六日，原稿写 4 月 14 日，按历法应为 4 月 18 日。照原文保留。
+- **P0750**：1954 年农历三月十六日，原稿注为 4 月 14 日，按历法应为 4 月 18 日。正文照原文保留，已加注；实际日期须查寺志或当年报纸。
 - **P0742**：恒兴法师口述的日期写作 2009 年，疑为 2000 年。
 - **P1029**：“資福如實”已按史实改为“資福如寶”，请确认。
 - **P0789**：“恆伯”暂译 Heng Bo，如法总有既定拼法，请替换。
@@ -103,6 +103,81 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 | 第 100 节后记一至三：报纸日期的星期 | P1703–P1705 | 照原文保留，待查《工商日报》报头后再定（审校意见也是如此） |
 | 第 64 节：刊名 | P0738 | 首次出现改为 *Hsin Fa* (*Mind Dharma*)，以后仍用 *Mind Dharma*。西乐园寺、慈兴禅寺的译名保留。 |
 | 目录与附录 | — | 目录已改为带页码的 Word 目录域。标题中包围书名的星号已改为真正的斜体。术语表附录中的内部编校备注（如 flag in errata、replace if DRBA has...、per P0564，以及性别标记）已全部清除。 |
+
+## 七、第三轮：《香港篇翻译复核报告》（64 条）及英文批注稿的处理
+
+复核报告共 64 条，英文批注稿中有对应的 64 条 Word 批注。其中 19 条承接上一轮意见，上一轮已改好；本轮逐条核对原文，处理新增的 45 条。
+
+**改译和措辞（已改）**
+
+| # | 段落 | 原译 → 现译 |
+|---|---|---|
+| 06 | P0034 | 夜不倒单译注：sitting up in meditation all night → never lying down, remaining seated even when asleep |
+| 08 | P0054 | bow to a teacher → become the Master's disciple（同段两处） |
+| 09 | P0168 | 泛指的现在时 → before I began lecturing on this sutra, I had never read it all the way through |
+| 10 | P0191 | bought rice to give out as porridge → gave out rice porridge（原文“賣米”与文意“买米”不能裁定，改为中性译法并记入勘误） |
+| 11 | P0210 | street hydrant → street standpipe（街喉） |
+| 13 | P0270 | 去掉多加的一层否定：I can't become a Buddha without this image, but I'll give it to you.（有《金刚菩提海》第 602 期为证） |
+| 14 | P0311 | get rid of love → cast off attachment |
+| 17 | P0344 | last night might be his last → he might not survive the night |
+| 18 | P0389 | illegal squatter structure → shabby, run-down unauthorized building |
+| 19 | P0418 | large Dharma instruments → Dharma instruments（“大”是“打”的误字） |
+| 20 | P0436–P0437、P1069、P1328、P1380、P1404、P1440、P1521 | 度众生：cross over living beings → help living beings cross over。第四篇篇名同步改，术语表也已更新。 |
+| 22 | P0510 | 假名：false names → provisional designations |
+| 23 | P0546 | sole male heir for nine generations → the ninth in a line of only sons |
+| 24 | P0596 | drove him down the mountain → ordered him to leave the mountain |
+| 30 | P0832 | 改为“用香在身上烧出念珠和卍字形状的疤痕” |
+| 33 | P0966 | 恢复“劲烛”：the sturdy grass → a candle whose flame holds steady in the gale |
+| 39 | P1047 | Western Heaven / Eastern Land → India and China |
+| 45 | P1254 | take them by the ear → counsel them earnestly, time and again |
+| 46 | P1376 | disciples who have entered my room → my close disciples |
+| 47 | P1379 | 虚老遗偈：Out of pity for the ants, the shrimp would not leap back into the water（主语恢复为虾，删去“遗骸”） |
+| 50 | P1393 | 坚固子：Firm seeds → Relics |
+| 51 | P1458 | 教育龙象：train dragons and elephants among monastics，并加简注 |
+| 61 | P1709 | put tall hats on themselves, 'sell' their cultivation → praise themselves, show off their cultivation, or boast of their own virtue |
+| 62 | P0801、P1711 | 人能弘法，非法弘人：People can make the Dharma great; it is not the Dharma that makes people great. |
+
+**专名（已改）**
+
+| # | 段落 | 处理 |
+|---|---|---|
+| 01 | P0001 | 书名改用已刊英文题名 *Crossing Hong Kong on the Ship of Compassion in the Sea of Awakening* |
+| 32 | 附录 | 刘果娟：Liu Guo Juan (also rendered Lau Kuo Kuen) |
+| 34 | P0974 | 章题改为 Founding *Hsin Fa* (*Mind Dharma*) |
+| 40 | P1100、附录 | Shing Woo Road → Sing Woo Road（地政总署街道名册） |
+| 42 | P1125、P1426、附录 | 毕俊辉 → Ms. Pitt Chin Hui；菩提小学 → Maha Bodhi School |
+| 53 | P1504、P1509、附录 | 《金山时报》：Gold Mountain Times → *Chinese Times* |
+| 54 | P1507、附录 | the Chinese Hospital (Tung Wah Hospital) → the Chinese Hospital in San Francisco |
+| 57 | P1160、P1617、附录 | 杨福森 → Professor Richard Fu-sen Yang |
+| 58 | P1689、P1692 | → the Third General Conference of the World Buddhist Sangha Council |
+
+**校记（正文照原文保留，加注说明异文或史实）**
+
+| # | 段落 | 处理 |
+|---|---|---|
+| 04 | P0013 一带 | 沈阳：现译 Shenyang 有刊本支持，不改 |
+| 05 | P0024 | 校记扩充为：开篇作 Longhua，后记三、四及《金刚菩提海》连载作 Longlian |
+| 15 | P0323 / P0333 | 两说并存，不改 |
+| 21 | P0487 | 台风温黛的伤亡数字照原文，不加不减 |
+| 25 | P0676 一带 | vowed to found a Way-place 保留 |
+| 26 | P0750 | 加注：1954 年农历三月十六为 4 月 18 日，4 月 14 日为三月十二 |
+| 35 | — | 章节编号照原稿，不改 |
+| 37 | P1018 | 加注：第 100 节称 1988 年为最后一次返港 |
+| 43 | P1154 | 编按改为“原中文偈已失，此处中文由英文意译回来”，并加译注说明下面的英文是从这段中文回译的 |
+| 44 | P1245 | 报纸引文恢复为“十日”，加注说明本章叙述作十七日 |
+| 48 | P1381 | 加注：另一刊本作“如蚕缚茧”（like a silkworm bound in its own cocoon） |
+| 49 | P1391 | 迎请舍利的弟子改作 Xue Guo Feng，并加注说明此处原文作“薛果夙”；第 83 节和上人自述均作薛果凤。全书其他“果夙”不改。 |
+| 55 | P1511 | 加注：原文写八月，1961 年 9 月 9 日为农历七月三十 |
+| 56 | P1609 | 加注：下一段和后记四作 University of Iowa |
+| 60 | P1703–P1705 | 报纸日期的星期照原文，待查《工商日报》报头 |
+| 63 | P1712 | 加注：金龙血案实际发生于 1977 年 9 月 4 日 |
+
+**版式**：#64 已在第二轮完成（目录带页码，标题中的书名改为斜体，附录内部备注已清除）。
+
+**本轮刻意保留的两处**
+
+- **#28 慈悲喜舍**：沿用法总译法 giving，首次出现处已加注说明“舍”指 equanimity。这是审校意见里给出的备选方案。
+- **#27 第 49 节**：上一轮的改法与本轮建议意思相同，不再改动。
 
 ---
 
@@ -1349,7 +1424,7 @@ New terms review: newterms_08.md is complete. The notes it marks "y" (P1544 gu p
 
 Validator: structure OK before and after the edits. No paragraphs were flagged LOW-ratio; the lowest ratio in the batch is 4.17 (P1647), and I checked every paragraph for omissions by hand regardless.
 
-# 附录 D：主编修改记录（含第二轮审校）
+# 附录 D：主编修改记录（含第二、三轮审校）
 
 - P0180 | editor | *Beginning with How I Came to Buddhism* -> "Starting from How I Came to Study Buddhism" | unify essay title across batches
 - P1266 | editor | "twelve links of conditioned causation" -> "Twelve Causes and Conditions" | BTTS term, unify
@@ -1403,3 +1478,58 @@ Validator: structure OK before and after the edits. No paragraphs were flagged L
 - P1493 | editor | was leaving to study in San Francisco, the Venerable Master said, -> for San Francisco to study, the Venerable Master told her, | review §87: rejoin sentence (paragraph joined to previous)
 - P0024 | editor | Wat Mangkon Kamalawat (Longlian Monastery) in Thailand -> Wat Mangkon Kamalawat (Longlian Monastery) [Tr.: The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4.] in Thailand | review §02: record the source variant
 - P0738 | editor | *Mind Dharma* (*Xinfa*) magazine -> *Hsin Fa* (*Mind Dharma*) magazine | review §64: give the historical title at first occurrence
+- P0001 | editor | A Ship of Compassion on the Sea of Awakening: Ferrying Beings Across in Hong Kong —  -> Crossing Hong Kong on the Ship of Compassion in the Sea of Awakening —  | review2 #01: use the title of the published English serial (Vajra Bodhi Sea 667)
+- P0024 | editor | [Tr.: The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4.] -> [Tr.: The Chinese text reads Longhua Monastery here; Addenda 3 and 4, and the version serialized in Vajra Bodhi Sea, read Longlian Monastery.] | review2 #05
+- P0034 | editor | [Tr.: sitting up in meditation all night instead of lying down] -> [Tr.: never lying down, remaining seated even when asleep] | review2 #06: 夜不倒單 = sleeping sitting up, not sitting in meditation all night
+- P0054 | editor | "Would you like to take refuge and bow to a teacher?" At that time she didn't even know what "bowing to a teacher" (taking refuge) was. -> "Would you like to take refuge and become the Master's disciple?" At that time she didn't even know what "becoming a Master's disciple" (taking refuge) was. | review2 #08: 拜師父 = become a disciple
+- P0168 | editor | Because before I lecture on a sutra, I haven't even read it through once. -> Because before I began lecturing on this sutra, I had never read it all the way through. | review2 #09: refers to this sutra (Avatamsaka), not a general habit
+- P0191 | editor | he sold off family property and bought rice to give out as porridge, saving the lives of the whole village. -> he sold off family property and gave out rice porridge, saving the lives of the whole village. | review2 #10: source 賣米 vs sense 買米 undecidable; neutral rendering, logged
+- P0210 | editor | the public "street hydrant" beside the road -> the public "street standpipe" beside the road | review2 #11: 街喉 = standpipe, not fire hydrant
+- P0270 | editor | It's not as if I can't become a Buddha without this image; I'll give it to you. -> I can't become a Buddha without this image, but I'll give it to you. | review2 #13: restore the source's negation (confirmed by Vajra Bodhi Sea 602)
+- P0311 | editor | Cultivators must cut off desire and get rid of love! -> Cultivators must cut off desire and cast off attachment! | review2 #14: 愛 here = emotional attachment
+- P0344 | editor | if my brother kept on coughing up blood, last night might be his last. -> if my brother kept on coughing up blood, he might not survive the night. | review2 #17
+- P0389 | editor | Our family lived in an illegal squatter structure, shabby and run-down. -> Our family lived in a shabby, run-down unauthorized building. | review2 #18: 違章建築 = unauthorized building; squatting not stated
+- P0418 | editor | to chant praises and to play the large Dharma instruments, -> to chant praises and to play the Dharma instruments, | review2 #19: 大法器 is 打法器 (Tan Guo Shi's signed account)
+- P0436 | editor | You want to cross over living beings! -> You want to help living beings cross over! | review2 #20
+- P0437 | editor | "Cross over what living beings? They're so obstinate, there's no way I can cross them over." -> "Help what living beings cross over? They're so obstinate, there's no way I can take them across." | review2 #20
+- P0510 | editor | they are also false names, -> they are also provisional designations, | review2 #22: 假名 = provisional designation
+- P0546 | editor | He was the only boy in the family, and the sole male heir for nine generations. -> He was the only boy in the family, the ninth in a line of only sons. | review2 #23: 九代單傳 = one son per generation for nine generations
+- P0596 | editor | I deliberately drove him down the mountain. -> I deliberately ordered him to leave the mountain. | review2 #24: he was ordered to leave but did not actually go
+- P0750 | editor | (April 14 in the Gregorian calendar) -> (April 14 in the Gregorian calendar) [Tr.: By the calendar, the sixteenth day of the third lunar month of 1954 fell on April 18, and April 14 was the twelfth; both dates are kept as written.] | review2 #26
+- P0801 | editor | People can propagate the Dharma; it is not the Dharma that propagates people. -> People can make the Dharma great; it is not the Dharma that makes people great. | review2 #62: 人能弘法，非法弘人
+- P0832 | editor | He burned a string of recitation beads and a swastika onto his body with incense. -> With incense he had burned marks in the shape of a string of recitation beads and a Buddhist swastika onto his body. | review2 #30
+- P0966 | editor | Be the sturdy grass in the gale, -> Be a candle whose flame holds steady in the gale, | review2 #33: 勁燭 = candle, not grass
+- P0974 | editor | 64. Founding *Mind Dharma* -> 64. Founding *Hsin Fa* (*Mind Dharma*) | review2 #34
+- P1018 | editor | paid the Master a visit. -> paid the Master a visit. [Tr.: Chapter 100 gives 1988 as the Master's last return to Hong Kong; both years are kept as written.] | review2 #37
+- P1047 | editor | the Dharma images of the successive patriarchs of the Western Heaven and the Eastern Land, -> the images of the successive patriarchs of India and China, | review2 #39: 西天/東土 = India/China
+- P1069 | editor | Part Four: The Lecture Hall and Crossing Over Living Beings -> Part Four: The Lecture Hall and Helping Living Beings Cross Over | review2 #20: 度眾 = help beings cross over
+- P1100 | editor | 1A Shing Woo Road -> 1A Sing Woo Road | review2 #40: gazetted street name
+- P1125 | editor | Ms. Bi Junhui -> Ms. Pitt Chin Hui | review2 #42: school's own bilingual history
+- P1125 | editor | the Bodhi Primary School -> the Maha Bodhi School | review2 #42
+- P1154 | editor | (Editor's note: The original text has been lost; it is translated here freely from the English rendering.) -> (Editor's note: The original Chinese verse has been lost; the Chinese given here is a free translation from an English rendering.) [Tr.: The English verse below is translated from that Chinese reconstruction.] | review2 #43: separate the two translation steps
+- P1160 | editor | Professor Yang Fusen -> Professor Richard Fu-sen Yang | review2 #57: his own English name (Univ. of Pittsburgh)
+- P1245 | editor | The seventeenth day of the eleventh lunar month is the anniversary of Amitabha Buddha's birthday. -> The tenth day of the eleventh lunar month is the anniversary of Amitabha Buddha's birthday [Tr.: so the newspaper; the narrative of this chapter and tradition give the seventeenth]. | review2 #44: translate the quoted newspaper literally and note the discrepancy (reverses round-1 silent correction)
+- P1254 | editor | I take them by the ear and earnestly exhort them, yet find no way to transform them. -> I counsel them earnestly, time and again, yet find no way to transform them. | review2 #45: 耳提 = earnest, repeated exhortation
+- P1328 | editor | the Elder crossed over himself and crossed over others, -> the Elder crossed over himself and helped others cross over, | review2 #20
+- P1376 | editor | You are all disciples who have entered my room; -> You are all my close disciples; | review2 #46: 入室弟子
+- P1379 | editor | Of old, pitying the lives of ants, one did not cast [remains] into the water; -> Out of pity for the ants, the shrimp would not leap back into the water; | review2 #47: subject is the shrimp (Vajra Bodhi Sea 477)
+- P1380 | editor | realize Bodhi and cross over living beings. -> realize Bodhi and help living beings cross over. | review2 #20
+- P1381 | editor | Like insects bound in a net. -> Like insects bound in a net. [Tr.: Another published text reads "like a silkworm bound in its own cocoon."] | review2 #48: record the variant
+- P1391 | editor | two disciples, Xue Guo Su and Ma Guo Xian, -> two disciples, Xue Guo Feng [Tr.: the Chinese text here reads Xue Guo Su; Chapter 83 and the Master's own published account name Xue Guo Feng] and Ma Guo Xian, | review2 #49: same event named Xue Guo Feng in ch.83 and Vajra Bodhi Sea 477
+- P1393 | editor | Firm seeds of dazzling five colors, -> Relics gleam in dazzling five colors, | review2 #50: 堅固子 = sharira
+- P1404 | editor | to propagate the Dharma and cross over living beings, -> to propagate the Dharma and help living beings cross over, | review2 #20
+- P1426 | editor | Upasika Bi Junhui -> Upasika Pitt Chin Hui | review2 #42
+- P1440 | editor | reviving the Buddhadharma and crossing over living beings, -> reviving the Buddhadharma and helping living beings cross over, | review2 #20
+- P1458 | editor | I will educate dragons and elephants -> I will train dragons and elephants among monastics [Tr.: outstanding monastics] | review2 #51: 龍象
+- P1504 | editor | *Gold Mountain Times* -> *Chinese Times* | review2 #53: San Francisco paper 金山時報 is catalogued as Chinese Times
+- P1507 | editor | the Chinese Hospital (Tung Wah Hospital) -> the Chinese Hospital in San Francisco | review2 #54
+- P1509 | editor | *Gold Mountain Times* -> *Chinese Times* | review2 #53
+- P1511 | editor | (the thirtieth day of the seventh lunar month) -> (the thirtieth day of the seventh lunar month) [Tr.: the Chinese text reads "eighth lunar month"; September 9, 1961, was the thirtieth day of the seventh, Earth Store Bodhisattva's birthday] | review2 #55: mark the round-1 calendar correction
+- P1521 | editor | the Bodhi resolve to cross over living beings -> the Bodhi resolve to help living beings cross over | review2 #20
+- P1609 | editor | from Iowa State University -> from Iowa State University [Tr.: the next paragraph and Addendum 4 give the University of Iowa] | review2 #56: record the variant
+- P1617 | editor | Professor Yang Fusen -> Professor Richard Fu-sen Yang | review2 #57
+- P1689 | editor | the Third World Buddhist Sangha Council, -> the Third General Conference of the World Buddhist Sangha Council, | review2 #58
+- P1692 | editor | to attend the Third World Buddhist Sangha Council hosted by -> to attend the Third General Conference of the World Buddhist Sangha Council, hosted by | review2 #58
+- P1709 | editor | must not put tall hats on themselves, 'sell' their cultivation, or advertise their own virtue. -> must not praise themselves, show off their cultivation, or boast of their own virtue. | review2 #61: 戴高帽子/賣修行 idioms
+- P1711 | editor | 'People can propagate the Dharma; it is not the Dharma that propagates people.' -> 'People can make the Dharma great; it is not the Dharma that makes people great.' | review2 #62
+- P1712 | editor | In 1978 the Golden Dragon Massacre took place in San Francisco, -> In 1978 the Golden Dragon Massacre took place in San Francisco [Tr.: the shooting took place on September 4, 1977], | review2 #63
