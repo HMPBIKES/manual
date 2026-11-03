@@ -9,6 +9,7 @@
 | `Hsuan_Hua_Hong_Kong_Years_EN.docx` | 英文 Word 版，A4 版式，约 280 页。有目录（已含页码，是真正的 Word 目录域，修改后可右键“更新域”刷新）、页码，书末附中英术语表（1,309 条）。偈颂按分行诗体排版，下方附中文原文（共 94 段）。 |
 | `Hsuan_Hua_Hong_Kong_Years_EN.md` | 同一内容的 Markdown 版，约 13.8 万英文词，方便检索和后续编辑。 |
 | `Translator_Report.md` | 本报告，附录含全部勘误、疑问、QA 修改记录和主编修改记录。 |
+| `Hsuan_Hua_HK_People_Roster.xlsx` / `People_Roster.md` | 人物表：书中全部出家众、在家众（含无名人物），附异名、英译、性别、关系、出现章节和易混人物对照。 |
 | `GLOSSARY_AND_STYLE.md` | 所有译者和 QA 共同遵守的风格指南和术语表，供日后修订或续译使用。 |
 
 ## 二、工作流程
@@ -178,6 +179,43 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 
 - **#28 慈悲喜舍**：按您的决定，全书改为 kindness, compassion, joy, and equanimity，共 5 处：P0495（两处，含“大喜捨心”）、P0774、P1229、P1334（“喜捨”）。原来解释 giving 的译注已删去，只保留“四无量心”的简注。P0824 的“喜捨院”是建筑名，意思是乐于布施，仍译 Joyous Giving House。
 - **#27 第 49 节**：上一轮的改法与本轮建议意思相同，不再改动。
+
+## 八、人物核对（人物表）
+
+8 个代理分批逐段对照原文和英译，整理了全书所有出家人和在家居士，共 549 条记录。合并跨批次的同一人物后，得到：出家众 88 人、在家众 126 人、历代祖师古德 44 位、无名及群体人物 134 条。另整理了 27 组“易混人物对照”。
+
+**发现并已修正的英文问题（36 处，详见人物表的“本次修正”页）**
+
+- **张冠李戴**：
+  - P0669：原稿把薛果凤写成“薛果夙”，英文跟着译成了另一个人，现改为 Xue Guo Feng 并加注。
+  - P0969：引号位置错误，让谭果璞自己的话读起来像是《事迹》作者果觉的话，已改正。
+- **同一人前后名字对不上**：
+  - P0747：署名“黄可泰”的就是黄果君，已加注 (Huang Guo Jun)。
+  - P0738：裴证慧即裴果鉴，已加注。
+  - P1272：“慕贞”即谭果正，已加注。
+  - P1031：“报恩韶祖”即报慈德韶，已加注。
+  - P1102、P1426：於振东 / 余镇东即缅甸法官 U Chan Htoon（世界佛教友谊会会长），已改用本名并加注。
+- **一人可能被拆成两人**：P0878 的“果趁”可能就是袁果珍。证据不足以合并，所以保留原名 Guo Chen，加注说明。
+- **称谓与身份不符**：
+  - 唐果善已改为 Upasika（她有丈夫罗康锐）。
+  - 刘季宁原文只称“先生”，已去掉 Upasaka。
+  - P0787 已改为 Dharma Master Fa Zang。
+  - P1488 已改为 Liao Cheng。
+- **原文没交代性别，英文却作了推定**：方居士、郭宽普、陈果升、赵忍庵、梁桂仙、负责化身窑的法师、介绍张某的说客等，共二十处左右，已改成不带性别的说法。
+- **其他**：
+  - P0230 的“小女儿”指谭果式（她不是最小的女儿），改为 little daughter。
+  - P0356 读经礼拜的是患病的女儿，已改正主语。
+
+**风格指南同步更新**：
+- 果平列为女性。
+- 唐果善列为女性。
+- 蔡果夙与薛果凤分为两人，并注明“薛果夙”是原稿的误写。
+
+**仍待查证的事项（人物表中已注明）**：
+- “果逸法师”是否即果一（恒定法师）。
+- 三处“罗太太”是否同一人，是否即唐果善。
+- “甘果慧”是否即甘果彦。
+- “果趁”是否即袁果珍。
 
 ---
 
@@ -1424,7 +1462,7 @@ New terms review: newterms_08.md is complete. The notes it marks "y" (P1544 gu p
 
 Validator: structure OK before and after the edits. No paragraphs were flagged LOW-ratio; the lowest ratio in the batch is 4.17 (P1647), and I checked every paragraph for omissions by hand regardless.
 
-# 附录 D：主编修改记录（含第二、三轮审校）
+# 附录 D：主编修改记录（含第二、三轮审校及人物核对）
 
 - P0180 | editor | *Beginning with How I Came to Buddhism* -> "Starting from How I Came to Study Buddhism" | unify essay title across batches
 - P1266 | editor | "twelve links of conditioned causation" -> "Twelve Causes and Conditions" | BTTS term, unify
@@ -1538,3 +1576,39 @@ Validator: structure OK before and after the edits. No paragraphs were flagged L
 - P0774 | editor | Kindness, compassion, joy, and giving have sagely conditions. -> Kindness, compassion, joy, and equanimity have sagely conditions. | client decision: equanimity
 - P1229 | editor | a heart of kindness, compassion, joy, and giving. -> a heart of kindness, compassion, joy, and equanimity. | client decision: equanimity
 - P1334 | editor | joy and relinquishment, -> joy and equanimity, | client decision: 喜捨 = joy and equanimity (布施 remains 'giving')
+- P0045 | editor | At the start he had said, -> At the start Guo Kuan Pu had said, | people audit: unsupported-guess
+- P0049 | editor | There was a man who lived on a mountain for three months, and when he came down he went around advertising, selling his cultivation -> There was someone who lived on a mountain for three months and, after coming down, went around advertising, selling that cultivation | people audit: unsupported-guess
+- P0071 | editor | I had him cut the verse off -> I had Guo Qian cut the verse off | people audit: unsupported-guess
+- P0091 | editor | Lay Buddhist Tang Guo Shan's oral account: -> Upasika Tang Guo Shan's oral account: | people audit: wrong-title
+- P0118 | editor | Later this man died of cancer. -> Later this Dharma Master died of cancer. | people audit: unsupported-guess
+- P0146 | editor | You see, this ghost was that conceited. She also said she knew a certain elder Dharma Master. -> You see, this ghost was that conceited. It also said it knew a certain elder Dharma Master. | people audit: unsupported-guess
+- P0230 | editor | This is my youngest daughter. -> This is my little daughter. | people audit: unsupported-guess
+- P0288 | editor | Today Upasika Tan told me -> Today the lay disciple Tan told me | people audit: unsupported-guess
+- P0291 | editor | Today I said to Upasika Tan -> Today I said to the lay disciple Tan | people audit: unsupported-guess
+- P0356 | editor | In the letter she mentioned that her daughter had polio. Because she had read about the responses described in *Records of Chan Master To Lun*, she bowed morning and evening to the Master's photograph in the *Records*. After only a few days, her daughter felt strength in her legs -> In the letter she mentioned that her daughter had polio and that, having read about the responses described in *Records of Chan Master To Lun*, the girl bowed morning and evening to the Master's photograph in the *Records*. After only a few days, she felt strength in her legs | people audit: unsupported-guess
+- P0669 | editor | Xue Guo Su restated the main points of the Master's talk. -> Xue Guo Feng [Tr.: the Chinese text here reads Xue Guo Su] restated the main points of the Master's talk. | people audit: wrong-person
+- P0747 | editor | Upasaka Huang Ketai recounted: -> Upasaka Huang Ketai (Huang Guo Jun) recounted: | people audit: name-inconsistent
+- P0738 | editor | Upasaka Pei Zhenghui recounted -> Upasaka Pei Zhenghui (Pei Guo Jian) recounted | people audit: name-inconsistent
+- P0787 | editor | he entrusted Master Fa Zang with serving as acting abbot -> he entrusted Dharma Master Fa Zang with serving as acting abbot | people audit: name-inconsistent
+- P0734 | editor | He then had Upasaka Chen Guo Sheng make use of the natural terrain -> He then had the lay Buddhist Chen Guo Sheng make use of the natural terrain | people audit: unsupported-guess
+- P0737 | editor | The man who made the dragon on Lantau Island in Hong Kong was the one who made all the sculptures in the Aw Boon Haw Garden. I hope this man can come to America; I don't know whether he'll be able to come. He said that if he could come, he'd be willing -> The person who made the dragon on Lantau Island in Hong Kong was the one who made all the sculptures in the Aw Boon Haw Garden. I hope this person can come to America; I don't know whether they'll be able to come. They said that if they could come, they'd be willing | people audit: unsupported-guess
+- P0611 | editor | written by Layman Meicun, Zhang Shouyue -> written by Zhang Shouyue, the lay Buddhist known as Meicun | people audit: unsupported-guess
+- P0722 | editor | One disciple was a construction worker, and he said no workers were willing to go there -> One disciple, a construction worker, said no workers were willing to go there | people audit: unsupported-guess
+- P0969 | editor | respectfully written by his disciple Guo Jue: "It gives an outline -> respectfully written by his disciple Guo Jue. It gives an outline | people audit: wrong-person
+- P0938 | editor | Upasaka Zhao Ren'an -> the lay Buddhist Zhao Ren'an | people audit: unsupported-guess
+- P0864 | editor | There is an old disciple in his nineties who is still alive today. In this life he is wealthy. In his cultivation he was always preoccupied with building a big house to live in himself, and when he got sick he insisted on eating bird's nest. Because he was always ill, the Master wanted him to make a vow, but he refused to make one. Once, during a Chan session at Cixing Monastery, in the third incense period, everyone, men and women alike, heard the clanking of iron chains and also heard the ghost of impermanence calling his name (Liang Guixian), and then they heard him let out a great cry. In a former life, because someone would not pay back money they owed him, he killed that person. Only after the Master had him repent and vow to protect and support the Way-place was he all right. -> There is an old disciple, now in their nineties, who is still alive today and is wealthy in this life. In cultivating, this disciple was always preoccupied with building a big house to live in, and when ill insisted on eating bird's nest. Because the disciple was always ill, the Master wanted a vow to be made, but the disciple refused to make one. Once, during a Chan session at Cixing Monastery, in the third incense period, everyone, men and women alike, heard the clanking of iron chains and also heard the ghost of impermanence calling the disciple's name (Liang Guixian), and then they heard Liang Guixian let out a great cry. In a former life, because someone would not pay back a debt, Liang Guixian had killed that person. Only after the Master had Liang Guixian repent and vow to protect and support the Way-place did things come right. | people audit: unsupported-guess
+- P1211 | editor | The Dharma Master in charge of the cremation furnace said that in all the time she had been doing this work, she had never seen anyone whose fire burned so brightly and so densely. She also said -> The Dharma Master in charge of the cremation furnace said that in all the years of doing this work, never before had there been anyone whose fire burned so brightly and so densely, and also said | people audit: unsupported-guess
+- P1272 | editor | Now, through Muzhen's letter, -> Now, through Muzhen's letter, [Tr.: Muzhen (Tan Muzhen) is Tan Guo Zheng, who was writing to her sister.] | people audit: name-inconsistent
+- P1468 | editor | the layman who had introduced Zhang to that other Way-place got cancer of the tongue, because he had gone as a go-between and introduced Zhang there; he died too -> the lay Buddhist who had introduced Zhang to that other Way-place got cancer of the tongue, because that person had gone as a go-between and introduced Zhang there, and died too | people audit: unsupported-guess
+- P1476 | editor | two or three laymen -> two or three laypeople | people audit: unsupported-guess
+- P1488 | editor | Master Liaocheng -> Master Liao Cheng | people audit: name-inconsistent
+- P1519 | editor | with Upasaka Liu Jining, a scholar at the University of Sydney, interpreting for him -> with Liu Jining, a scholar at the University of Sydney, interpreting for him | people audit: wrong-title
+- P1599 | editor | After he took refuge with the Master, the illness never recurred. His elder sister had suffered from depression -> After the child took refuge with the Master, the illness never recurred. The child's elder sister had suffered from depression | people audit: unsupported-guess
+- P1595 | editor | Once, his son fell gravely ill and would not wake up. He prayed to the Venerable Master -> Once, Wang Fengjiu's son fell gravely ill and would not wake up. Wang prayed to the Venerable Master | people audit: unsupported-guess
+- P0056 | editor | he met an Upasaka Fang, a disciple of Elder Hsu, who therefore knew the Master. Upasaka Fang asked -> he met a lay Buddhist named Fang, a disciple of Elder Hsu, who therefore knew the Master. Fang asked | people audit: Fang's gender not stated (only 他)
+- P0056 | editor | Upasaka Fang said, "I'll introduce some friends to you." In 1950, Upasaka Fang introduced him -> Fang said, "I'll introduce some friends to you." In 1950, Fang introduced him | people audit: Fang's gender not stated
+- P0969 | editor | the hearts of the people." Now, fortunately -> the hearts of the people. Now, fortunately | people audit: closing quote of the misplaced quotation (words are Tan Guo Pu's, not Guo Jue's)
+- P0878 | editor | lived on the same floor as Guo Chen. -> lived on the same floor as Guo Chen [Tr.: possibly the same person as Yuan Guo Zhen, whose name the Chinese text elsewhere also writes as Guo Chen]. | people audit: flag probable identity without merging
+- P1102 | editor | Judge Yu Zhendong -> Judge U Chan Htoon [Tr.: written in the Chinese text as Yu Zhendong; U Chan Htoon, a justice of Burma's Supreme Court, organized the Sixth Buddhist Council and became president of the World Fellowship of Buddhists in 1958] | people audit: Burmese name transliterated in Chinese
+- P1031 | editor | succeeded Patriarch Shao of Baoen -> succeeded Patriarch Shao of Baoen [Tr.: i.e., Chan Master Baoci Deshao, the fifth patriarch named above] | people audit: same patriarch under two names
+- P1426 | editor | Upasaka Yu Zhendong, chairman of the World Fellowship of Buddhists -> Upasaka U Chan Htoon, president of the World Fellowship of Buddhists | people audit: same person as P1102

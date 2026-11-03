@@ -251,7 +251,8 @@ Other monastic names not listed: Pinyin, each syllable capitalized and separated
 | 黎果合 | Li Guo He | M |
 | 果殊 | Guo Shu | F |
 | 果平 | Guo Ping | F |
-| 蔡果夙 / 薛果夙 | Cai Guo Su / Xue Guo Su | F |
+| 蔡果夙 (蔡淑卿) | Cai Guo Su | F |
+| 薛果夙 (P0669, P1391) | slip for 薛果鳳: render Xue Guo Feng with a [Tr.] note | F |
 | 果宏 | Guo Hong | F |
 | 果全 / 果根 | Guo Quan / Guo Gen | F |
 | 胡果為 | Hu Guo Wei | F |
@@ -262,9 +263,10 @@ Other monastic names not listed: Pinyin, each syllable capitalized and separated
 | 伍英才 (果棟) | Wu Yingcai (Guo Dong) | M |
 | 阮果霓 | Ruan Guo Ni | F |
 | 詹勵吾 | Zhan Liwu | M |
-| 唐果善 / 麥果蓮 / 陳果發 / 葉果慶 / 董果耆 / 湯果雲 / 姚果白 / 何果章 / 洪果宏 / 陳果升 / 馬果仙 | Tang Guo Shan / Mai Guo Lian / Chen Guo Fa / Ye Guo Qing / Dong Guo Qi / Tang Guo Yun / Yao Guo Bai / He Guo Zhang / Hong Guo Hong / Chen Guo Sheng / Ma Guo Xian | gender from context |
+| 唐果善 (Mrs. Luo Kangrui) | Upasika Tang Guo Shan | F |
+| 麥果蓮 / 陳果發 / 葉果慶 / 董果耆 / 湯果雲 / 姚果白 / 何果章 / 洪果宏 / 陳果升 / 馬果仙 | Mai Guo Lian / Chen Guo Fa / Ye Guo Qing / Dong Guo Qi / Tang Guo Yun / Yao Guo Bai / He Guo Zhang / Hong Guo Hong / Chen Guo Sheng / Ma Guo Xian | gender from context |
 
-Non-Dharma personal names (birth names): Pinyin with the given name joined, e.g. 譚慕潔 → Tan Mujie, 李大華 → Li Dahua. Public figures: established English forms, e.g. 於右任 Yu Youren, 閻錫山 Yan Xishan, 俞大維 Yu Ta-wei, 李漢魂 Li Hanhun. 貝納祺 → Brook Bernacchi (British barrister and Urban Council member in Hong Kong).
+Non-Dharma personal names (birth names): Pinyin with the given name joined, e.g. 譚慕潔 → Tan Mujie, 李大華 → Li Dahua. Public figures: established English forms, e.g. 於振東 / 余鎮東 = U Chan Htoon (Burmese judge, WFB president), 於右任 Yu Youren, 閻錫山 Yan Xishan, 俞大維 Yu Ta-wei, 李漢魂 Li Hanhun. 貝納祺 → Brook Bernacchi (British barrister and Urban Council member in Hong Kong).
 
 ### 5.4 Places and institutions
 **Hong Kong (official English names):**
@@ -505,8 +507,8 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 ---
 
 ## 6. Gender table (for pronouns and Upasaka/Upasika)
-Female: Tan Guo Zheng, Tan Guo Shi, Gan Guo Yan, Yu Guo Man, Xue Guo Feng, Liu Guo Juan, Luo Guo Ming, Huang Guo Song, Wang Guo Hai, Chen Kuan Man, Yuan Guo Xiang, Yuan Guo Zhen, Yuan Guo Lin, Guo Shu, Cai/Xue Guo Su, Guo Hong, Guo Quan, Guo Gen, Hu Guo Wei, Mei Miaoling, Xu Xiangjun, Zhong Meiwei, Ruan Guo Ni, Jin Ci (Guo Sen), Heng Yi (Guo Li), Heng Qi (Guo Ren), Heng Wei, Heng He, Heng Chih.
-Male: the Venerable Master, Tan Guo Pu, Wen Guo Mi, Yu Guo Xing, Huang Guo Jun, Chen Ruichang, Li Guo Yuan, Li Guo He, Guo Ping, Pei Guo Jian, Wu Yingcai, Zhan Liwu, Heng Ding, Heng Yue, Heng Zhi, Heng Sure, Heng Ju, Heng Yo.
+Female: Tang Guo Shan, Tan Guo Zheng, Tan Guo Shi, Gan Guo Yan, Yu Guo Man, Xue Guo Feng, Liu Guo Juan, Luo Guo Ming, Huang Guo Song, Wang Guo Hai, Chen Kuan Man, Yuan Guo Xiang, Yuan Guo Zhen, Yuan Guo Lin, Guo Shu, Cai/Xue Guo Su, Guo Hong, Guo Quan, Guo Gen, Hu Guo Wei, Mei Miaoling, Xu Xiangjun, Zhong Meiwei, Ruan Guo Ni, Jin Ci (Guo Sen), Heng Yi (Guo Li), Heng Qi (Guo Ren), Heng Wei, Heng He, Heng Chih, Guo Ping (editor's ruling: source has both 他 and 她; context points to a woman).
+Male: the Venerable Master, Tan Guo Pu, Wen Guo Mi, Yu Guo Xing, Huang Guo Jun, Chen Ruichang, Li Guo Yuan, Li Guo He, Pei Guo Jian, Wu Yingcai, Zhan Liwu, Heng Ding, Heng Yue, Heng Zhi, Heng Sure, Heng Ju, Heng Yo.
 Anyone else: decide from context. If the context does not tell you, avoid gendered words and log the person in your queries file.
 
 ---
