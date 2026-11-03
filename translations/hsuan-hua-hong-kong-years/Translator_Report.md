@@ -6,7 +6,7 @@
 
 | 文件 | 说明 |
 |---|---|
-| `Hsuan_Hua_Hong_Kong_Years_EN.docx` | 英文 Word 版，A4 版式，约 280 页。有目录（打开后右键目录选“更新域”即可生成页码）、页码，书末附中英术语表（1,311 条）。偈颂按分行诗体排版，下方附中文原文（共 94 段）。 |
+| `Hsuan_Hua_Hong_Kong_Years_EN.docx` | 英文 Word 版，A4 版式，约 280 页。有目录（已含页码，是真正的 Word 目录域，修改后可右键“更新域”刷新）、页码，书末附中英术语表（1,308 条）。偈颂按分行诗体排版，下方附中文原文（共 94 段）。 |
 | `Hsuan_Hua_Hong_Kong_Years_EN.md` | 同一内容的 Markdown 版，约 13.8 万英文词，方便检索和后续编辑。 |
 | `Translator_Report.md` | 本报告，附录含全部勘误、疑问、QA 修改记录和主编修改记录。 |
 | `GLOSSARY_AND_STYLE.md` | 所有译者和 QA 共同遵守的风格指南和术语表，供日后修订或续译使用。 |
@@ -77,6 +77,32 @@ QA 找出的误译大多是语气或细节上的偏差，例如 P0254 把“木�
 - **P0789**：“恆伯”暂译 Heng Bo，如法总有既定拼法，请替换。
 - **P1379–P1389**：虚老遗偈、遗嘱和乐观法师的祭文，文言难度最高，有几处读法是推断，详见附录 B。
 - 以下几人性别不明，正文未用 Upasaka/Upasika，也未用他/她：董果耆、葉果慶、劉勉齋、謝寬輝、唐果善、陳果發、麥果蓮、盧果彥、譚果揚、姚果白。如知道性别，可以补上。
+
+## 六、第二轮：外部中英对照审校意见的处理
+
+收到《宣化上人香港篇英译审校》（4 页，17 条意见）后，逐条对照原文核实，处理如下：
+
+| 审校意见 | 段落 | 处理 |
+|---|---|---|
+| 第 59、68 节：漏雨的是屋顶 | P0921、P1076 | 已改：the roof leaked in six places just above my bed / over the space of just one bed |
+| 第 03 节后记三：“少奶奶”不宜译 mistress | P0054 | 已改：had married into a wealthy family |
+| 第 24 节：与天主教并列的“基督教”指新教 | P0324 | 已改：Catholics or Protestants；Protestant and Catholic churches |
+| 第 70 节后记二：“鎮殿之寶” | P1117 | 已改：the hall's most prized treasure |
+| 第 49 节：“慈悲喜捨” | P0495、P0774、P1229 | 保留法总/BTTS 译法 kindness, compassion, joy, and giving，按审校的备选方案，在首次出现处加注：此处 giving 指“舍心”（equanimity），不是财物布施。术语表也补上了这一条。 |
+| 第二个 64 节：“護七” | P1001 | 已改：look after him during the retreat, boiling water... bringing him his meals |
+| 第 100 节：佛七时长 | P1690 | 已改：led a seven-day Buddha Recitation session。全书其他“佛七”处，上下文已写明七天，或本来就是 21 天等较长的期间，不另加 seven-day。 |
+| 第 01 节后记一：“海單接眾” | P0016 | 已改：giving lodging to every monastic who came |
+| 第 01 节后记一：“上千” | P0016 | 已改：more than a thousand monastics came seeking lodging |
+| 第 17 节：开光译注 | P0256 | 保留传统译名 Opening-the-Light ceremony，译注简化为 a ceremony consecrating Buddha images |
+| 第 49 节开头：翻山越岭到的是寺 | P0771 | 已改：The monastery's site on Lantau Island ... reaching it means crossing mountains and ridges |
+| 第 51 节：“翻風覆雨” | P0823 | 已改：It stirred up violent storms on a great river |
+| 第 66 节：虚老“印證” | P1020 | 已改：affirmed the Venerable Master's understanding，与后文的传法区分 |
+| 第 87、91 节：底本断段 | P1492–P1493、P1565–P1566 | 英文已把被截断的句子接回同一段，段落编号仍一一对应 |
+| 章节编号与“略” | — | 与本报告第四节的做法一致，无需修改 |
+| 第 02 节：龍華寺 / 龍蓮寺 | P0024 | 保留现译，按审校建议加校记：The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4. |
+| 第 100 节后记一至三：报纸日期的星期 | P1703–P1705 | 照原文保留，待查《工商日报》报头后再定（审校意见也是如此） |
+| 第 64 节：刊名 | P0738 | 首次出现改为 *Hsin Fa* (*Mind Dharma*)，以后仍用 *Mind Dharma*。西乐园寺、慈兴禅寺的译名保留。 |
+| 目录与附录 | — | 目录已改为带页码的 Word 目录域。标题中包围书名的星号已改为真正的斜体。术语表附录中的内部编校备注（如 flag in errata、replace if DRBA has...、per P0564，以及性别标记）已全部清除。 |
 
 ---
 
@@ -1323,7 +1349,7 @@ New terms review: newterms_08.md is complete. The notes it marks "y" (P1544 gu p
 
 Validator: structure OK before and after the edits. No paragraphs were flagged LOW-ratio; the lowest ratio in the batch is 4.17 (P1647), and I checked every paragraph for omissions by hand regardless.
 
-# 附录 D：主编修改记录
+# 附录 D：主编修改记录（含第二轮审校）
 
 - P0180 | editor | *Beginning with How I Came to Buddhism* -> "Starting from How I Came to Study Buddhism" | unify essay title across batches
 - P1266 | editor | "twelve links of conditioned causation" -> "Twelve Causes and Conditions" | BTTS term, unify
@@ -1358,3 +1384,22 @@ Validator: structure OK before and after the edits. No paragraphs were flagged L
 - P1039 | editor | the yihai year, 1935, -> the yihai year [1935], | mark translator-added Gregorian year with brackets
 - P1040 | editor | the yiwei year, 1955, -> the yiwei year [1955], | mark translator-added Gregorian year with brackets
 - P1626 | editor | 'Within the white-water spring, one great heaven' [Tr.: a character puzzle: 'white' and 'water' combine to form 'spring,' and 'one' and 'great' combine to form 'heaven.'] -> 'White and water make a spring; within, one and great make heaven' | unify couplet rendering with P1154 (batch 6), whose wording already shows the character puzzle
+- P0921 | editor | a single bed had six places where the rain leaked through. -> the roof leaked in six places just above my bed. | review §59: it is the roof over the bed that leaked
+- P1076 | editor | In the space of just one bed there were six leaks. -> Over the space of just one bed, the roof leaked in six places. | review §68: it is the roof over the bed that leaked
+- P0054 | editor | Guo Sen, then just past 40, was the young mistress of a wealthy family and had worshipped Guanyin since she was small. -> Guo Sen, then in her early forties, had married into a wealthy family, and she had revered Guanyin since she was small. | review §03: 少奶奶 = married-in daughter-in-law of a rich family; 'mistress' misleads
+- P0324 | editor | many people in Hong Kong believed in Catholicism or Christianity, because -> many people in Hong Kong were Catholics or Protestants, because | review §24: 基督教 beside 天主教 = Protestant
+- P0324 | editor | she often went to Christian and Catholic places. -> she often went to Protestant and Catholic churches. | review §24
+- P1117 | editor | it is the treasure that guards the hall and is extremely precious. -> it is the hall's most prized treasure and is extremely precious. | review §70: 鎮殿之寶 = the hall's most prized treasure
+- P0495 | editor | the Bodhisattvas' spirit of kindness, compassion, joy, and giving. -> the Bodhisattvas' spirit of kindness, compassion, joy, and giving [Tr.: the Four Unlimited Minds; here "giving" means equanimity, the impartial letting go of all attachment, not giving material things]. | review §49: keep BTTS term, explain giving = equanimity at first occurrence
+- P1001 | editor | I also found someone to protect his session, boiling water for him, bringing him his meals, and looking after him there. -> I also found someone to look after him during the retreat, boiling water for him, bringing him his meals, and supporting him there. | review §64(2): 護七 = attend to the practitioner, not guard
+- P1690 | editor | he also presided over a Buddha Recitation session in Hong Kong. -> he also led a seven-day Buddha Recitation session in Hong Kong. | review §100: make the seven-day length explicit
+- P0016 | editor | "opening the monastery gates wide and receiving all comers with lodging as vast as the sea," -> "opening the monastery gates wide and giving lodging to every monastic who came," | review §01: 海單接眾 = lodging for all, not a vast lodging
+- P0016 | editor | In a single day, as many as a thousand monastics came to lodge there. -> In a single day, more than a thousand monastics came seeking lodging. | review §01: 上千 = upward of a thousand
+- P0256 | editor | [Tr.: a consecration ceremony that formally installs Buddha images and invites the Buddhas' presence into them] -> [Tr.: a ceremony consecrating Buddha images] | review §17: simpler note
+- P0771 | editor | Lantau Island is quiet, secluded, and vast; one has to cross mountains and ridges to reach it. -> The monastery's site on Lantau Island is quiet, secluded, and expansive; reaching it means crossing mountains and ridges. | review §49: the destination is the monastery, not the island
+- P0823 | editor | In a great river it whipped up winds and overturned the rains, killing countless fishermen and ferrymen. -> It stirred up violent storms on a great river, killing countless fishermen and ferrymen. | review §51: 翻風覆雨 = raise storms
+- P1020 | editor | gave the Venerable Master certification as soon as he saw him, saying, -> affirmed the Venerable Master's understanding as soon as he saw him, saying, | review §66: 印證 here = in-person affirmation, distinct from later Dharma transmission
+- P1492 | editor | In January 1958, when the younger sister, Tan Guo Shi... -> In January 1958, as the younger sister, Tan Guo Shi, was about to leave | review §87: rejoin sentence split across paragraphs
+- P1493 | editor | was leaving to study in San Francisco, the Venerable Master said, -> for San Francisco to study, the Venerable Master told her, | review §87: rejoin sentence (paragraph joined to previous)
+- P0024 | editor | Wat Mangkon Kamalawat (Longlian Monastery) in Thailand -> Wat Mangkon Kamalawat (Longlian Monastery) [Tr.: The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4.] in Thailand | review §02: record the source variant
+- P0738 | editor | *Mind Dharma* (*Xinfa*) magazine -> *Hsin Fa* (*Mind Dharma*) magazine | review §64: give the historical title at first occurrence

@@ -126,7 +126,7 @@ Add a short `[Tr.: …]` note **only** at the paragraph ID listed below for that
 | 般舟 / 般舟七 | Pratyutpanna Samadhi practice / Pratyutpanna session | P0993 (practice of constant walking and standing, without sitting or lying down, for a set period) |
 | 嗣法 / 溈仰宗 | receive Dharma transmission / Weiyang lineage | P1019 (one of the five houses of Chan) |
 | 持午 / 過午不食 | keep the rule of not eating after noon | P1699 |
-| 開光 | Opening-the-Light ceremony (consecration) | P0255 |
+| 開光 | Opening-the-Light ceremony (consecration) | P0256 (note: a ceremony consecrating Buddha images) |
 | 舍利 / 捨利 | sharira (relics) | P0769 |
 
 ---
@@ -251,7 +251,7 @@ Other monastic names not listed: Pinyin, each syllable capitalized and separated
 | 黎果合 | Li Guo He | M |
 | 果殊 | Guo Shu | F |
 | 果平 | Guo Ping | F |
-| 蔡果夙 / 薛果夙 | Cai Guo Su / Xue Guo Su (keep as written; flag in errata if inconsistent) | F |
+| 蔡果夙 / 薛果夙 | Cai Guo Su / Xue Guo Su | F |
 | 果宏 | Guo Hong | F |
 | 果全 / 果根 | Guo Quan / Guo Gen | F |
 | 胡果為 | Hu Guo Wei | F |
@@ -365,7 +365,7 @@ Non-Dharma personal names (birth names): Pinyin with the given name joined, e.g.
 | 《高僧傳》 | *Biographies of Eminent Monks* |
 | 大悲咒 / 楞嚴咒 / 往生咒 | Great Compassion Mantra / Shurangama Mantra / Rebirth Mantra |
 | 大悲懺 / 藥師懺 / 消災延壽藥師寶懺 / 水懺 | Great Compassion Repentance / Medicine Master Repentance / Jeweled Repentance of the Medicine Master for Eradicating Disasters and Lengthening Life / Water Repentance |
-| 《心法》 (magazine) | *Mind Dharma* (*Xinfa*) magazine |
+| 《心法》 (magazine) | *Mind Dharma* magazine (*Hsin Fa*; give "*Hsin Fa* (*Mind Dharma*)" at first occurrence) |
 | 《金剛菩提海》 | *Vajra Bodhi Sea* |
 | 《宣化上人開示錄》 | *Venerable Master Hua's Talks on Dharma* |
 | 《虛雲老和尚畫傳集》 | *Pictorial Biography of Elder Master Hsu Yun* |
@@ -415,6 +415,7 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 | 末法 | the Dharma-Ending Age |
 | 正法 | the Proper Dharma |
 | 正知正見 | proper knowledge and views |
+| 慈悲喜捨 | kindness, compassion, joy, and giving (the Four Unlimited Minds; "giving" = equanimity) |
 | 戒定慧 | precepts, samadhi, and wisdom |
 | 三無漏學 | the Three Non-Outflow Studies |
 | 七菩提分 | the Seven Shares of Bodhi |
@@ -435,7 +436,7 @@ Other titles: give an English translation in italics. Add Pinyin in parentheses 
 | 經行 | walking meditation |
 | 念佛 | recite the Buddha's name |
 | 念佛堂 | Buddha Recitation Hall |
-| 禪七 / 佛七 | Chan session / Buddha Recitation session |
+| 禪七 / 佛七 | Chan session / Buddha Recitation session (seven days; say "seven-day" where the length is not otherwise clear) |
 | 早晚課 | morning and evening recitation |
 | 拜懺 | bow in repentance |
 | 回向 | dedicate (merit) / transfer of merit |

@@ -30,7 +30,7 @@ I was born the kind of person who fears neither heaven nor earth, neither gods n
 
 **[Addendum 1]** Tung Po Tor Monastery was originally a Way-place for only a few dozen monastics, but in the late 1940s it took on the responsibilities of a public monastery of the ten directions [Tr.: open to all monastics, as opposed to a private hereditary temple]. The reason was the war on the Chinese mainland, after which many monastics fled from the mainland to Hong Kong as refugees: "By day they wandered the streets; by night they had nowhere to rest."
 
-At that time Dharma Master Mao Feng, the abbot of Tung Po Tor, brought forth great compassion and vowed to take in the refugee monks. He insisted on "opening the monastery gates wide and receiving all comers with lodging as vast as the sea," and took the attitude of accepting monastics from the mainland unconditionally. He said, "Every blade of grass has its drop of dew; every Arhat has his share of the meal." In a single day, as many as a thousand monastics came to lodge there. Tung Po Tor turned no one away, and when faithful devotees everywhere heard of it, they donated rice and grain one after another, so that the monastery never suffered from running out of food.
+At that time Dharma Master Mao Feng, the abbot of Tung Po Tor, brought forth great compassion and vowed to take in the refugee monks. He insisted on "opening the monastery gates wide and giving lodging to every monastic who came," and took the attitude of accepting monastics from the mainland unconditionally. He said, "Every blade of grass has its drop of dew; every Arhat has his share of the meal." In a single day, more than a thousand monastics came seeking lodging. Tung Po Tor turned no one away, and when faithful devotees everywhere heard of it, they donated rice and grain one after another, so that the monastery never suffered from running out of food.
 
 Dharma Master Mao Feng also led the monks in "carrying the timber on their own shoulders and cutting the bamboo poles themselves" to build a "Cloud and Water Hall" to receive the male monastics, and they also built a "palm-leaf shed" to house the female monastics.
 
@@ -46,7 +46,7 @@ I met the Master in Shenyang when I was still a student, but it was not until I 
 
 ## 02. Journey to Thailand
 
-In early 1950, the Venerable Master joined a delegation of study-abroad monks organized by the Chinese Buddhist Vinaya Academy and went to Thailand to observe Theravada Buddhism. He stayed at Wat Mangkon Kamalawat (Longlian Monastery) in Thailand for about four months, studying firsthand the differences between Mahayana and Small Vehicle Buddhism and taking the strengths of each, and he resolved to reform the bad customs of Chinese Buddhism...
+In early 1950, the Venerable Master joined a delegation of study-abroad monks organized by the Chinese Buddhist Vinaya Academy and went to Thailand to observe Theravada Buddhism. He stayed at Wat Mangkon Kamalawat (Longlian Monastery) [Tr.: The Chinese text reads Longhua Monastery here and Longlian Monastery in Addenda 3 and 4.] in Thailand for about four months, studying firsthand the differences between Mahayana and Small Vehicle Buddhism and taking the strengths of each, and he resolved to reform the bad customs of Chinese Buddhism...
 
 In the Venerable Master's own words:
 
@@ -106,7 +106,7 @@ Guanyin Cave was not a natural cave but a man-made one, so it was very damp. The
 
 **[Addendum 3]** Bhikshuni Dharma Master Jin Ci, a native of Taishan, Guangdong, was one of the Venerable Master's early refuge disciples from his time at Guanyin Cave in Hong Kong; the Dharma name she received when she took refuge was Guo Sen.
 
-In 1950, Guo Sen, then just past 40, was the young mistress of a wealthy family and had worshipped Guanyin since she was small. One day her friend Mrs. Huang (Luo Guo Ming) asked her, "Would you like to take refuge and bow to a teacher?" At that time she didn't even know what "bowing to a teacher" (taking refuge) was. Mrs. Huang told her about the benefits of taking refuge and about this Dharma Master's compassion and so on, so she met the Master at Wang Guo Hai's home and formally took refuge. When she first met the Master, he was only about 30 and very thin. Later Guo Sen's family business ran into trouble, and the family's fortunes declined. When the Venerable Master learned of her situation, he told her to bear adversity with patience. Guo Sen took tonsure in 1998 and received full ordination in 2000, with the Dharma name Qin Ren and the style name Jin Ci. She passed away peacefully in the eighth lunar month of 2008, at the age of 100.
+In 1950, Guo Sen, then in her early forties, had married into a wealthy family, and she had revered Guanyin since she was small. One day her friend Mrs. Huang (Luo Guo Ming) asked her, "Would you like to take refuge and bow to a teacher?" At that time she didn't even know what "bowing to a teacher" (taking refuge) was. Mrs. Huang told her about the benefits of taking refuge and about this Dharma Master's compassion and so on, so she met the Master at Wang Guo Hai's home and formally took refuge. When she first met the Master, he was only about 30 and very thin. Later Guo Sen's family business ran into trouble, and the family's fortunes declined. When the Venerable Master learned of her situation, he told her to bear adversity with patience. Guo Sen took tonsure in 1998 and received full ordination in 2000, with the Dharma name Qin Ren and the style name Jin Ci. She passed away peacefully in the eighth lunar month of 2008, at the age of 100.
 
 **[Addendum 4]** Upasaka Huang Guo Jun took refuge with the Venerable Master at the age of 11, more than 50 years ago now. Upasaka Huang Guo Jun recounted:
 
@@ -518,7 +518,7 @@ Having heard so many stories about Western Bliss Gardens, we all wanted to see t
 
 ## 17. The Opening-the-Light Ceremony
 
-On May 1, 1952 (the eighth day of the fourth lunar month), Western Bliss Gardens Monastery, the first Way-place the Venerable Master built in Hong Kong with his own toil-worn hands and feet, held its Opening-the-Light ceremony [Tr.: a consecration ceremony that formally installs Buddha images and invites the Buddhas' presence into them]...
+On May 1, 1952 (the eighth day of the fourth lunar month), Western Bliss Gardens Monastery, the first Way-place the Venerable Master built in Hong Kong with his own toil-worn hands and feet, held its Opening-the-Light ceremony [Tr.: a ceremony consecrating Buddha images]...
 
 Material goods at the new monastery were extremely scarce; food, bowls, plates, and other utensils were all lacking, so at the Opening-the-Light ceremony the assembly was served tea and peanuts.
 
@@ -654,7 +654,7 @@ On the vast ocean, people do not know where they are going or which way to head;
 
 In 1950, not long after the Venerable Master came to Hong Kong, Upasika Luo Guo Ming brought her daughter Huang Guo Song and her son Huang Guo Jun, and all three of them took refuge with the Venerable Master together. Luo Guo Ming had come to know the Venerable Master through an introduction from her neighbor, Wang Meigu. This Wang Meigu was the Master's first lay disciple in Hong Kong; her Dharma name was "Guo Hai." Her husband worked on ships and came home only once in a long while, and the family was not very well off.
 
-In the 1950s, many people in Hong Kong believed in Catholicism or Christianity, because it made schooling easier for their children, and the churches all handed out relief goods, such as flour; there were things to eat and also things to use. Because of her family situation, she often went to Christian and Catholic places.
+In the 1950s, many people in Hong Kong were Catholics or Protestants, because it made schooling easier for their children, and the churches all handed out relief goods, such as flour; there were things to eat and also things to use. Because of her family situation, she often went to Protestant and Catholic churches.
 
 One day she came to Western Bliss Gardens wanting to tell the Master that she had already become a Catholic and would not come to the Way-place anymore, but she just couldn't bring herself to say it. That day, as she was taking leave of the Master to go home, the Master said to her, "Guo Hai, I'll see you down the mountain. You'll take the wrong road!" Guo Hai said, "I won't! I've come to Western Bliss Gardens so many times; how could I take the wrong road?" The Master said, "I'd still better see you down. You'll take the wrong road!" The devotees present all thought it very strange, because the Master never saw anyone down the mountain. After that, Guo Hai never came again.
 
@@ -1024,7 +1024,7 @@ One year I went back to Hong Kong and spoke the Dharma for five days at a monast
 
 "Why must right and wrong be argued?": If you say something is right, he can say it's wrong; if you say it's wrong, he'll say it's right. There's no way to get right and wrong sorted out. The evil world of the five turbidities is just this chaotic; good and evil are muddled together and can't be told apart. Only with the eye that discerns dharmas can you recognize them, so there's no need to go arguing over right and wrong. "Given time, what is true and what is false become clear of themselves": whether something is true or false, after a long time everyone will naturally know whether it was true or false. "The wise see what is true and real": people with wisdom see only what is true and real. "The foolish practice falsehood and pretense": foolish, ignorant people only go around deceiving others and promoting themselves everywhere.
 
-"The good learn from the Bodhisattvas": although good people are not Bodhisattvas, they are willing to learn the Bodhisattvas' spirit of kindness, compassion, joy, and giving. "The evil dare even to scold the Buddha": never mind a poor monk, evil people would dare to scold even the Buddha to his face. Therefore, "With impartial, great kindness and compassion, gather in all beings with consciousness everywhere": we use a mind of impartiality, a mind of great kindness and compassion, and a mind of great joy and giving to gather in all creatures that wriggle and all that have spiritual awareness, all living beings.
+"The good learn from the Bodhisattvas": although good people are not Bodhisattvas, they are willing to learn the Bodhisattvas' spirit of kindness, compassion, joy, and giving [Tr.: the Four Unlimited Minds; here "giving" means equanimity, the impartial letting go of all attachment, not giving material things]. "The evil dare even to scold the Buddha": never mind a poor monk, evil people would dare to scold even the Buddha to his face. Therefore, "With impartial, great kindness and compassion, gather in all beings with consciousness everywhere": we use a mind of impartiality, a mind of great kindness and compassion, and a mind of great joy and giving to gather in all creatures that wriggle and all that have spiritual awareness, all living beings.
 
 After I gave these lines of verse, the war of words was quietly defused. It wasn't that I was afraid; it's just that there's no need to stir up so much right and wrong within Buddhism. So after that I seldom went back to Hong Kong, so as not to arouse people's jealousy and have them take the false for true and the true for false.
 
@@ -1534,7 +1534,7 @@ In the Venerable Master's own words:
 
 The man who made the dragon on Lantau Island in Hong Kong was the one who made all the sculptures in the Aw Boon Haw Garden. I hope this man can come to America; I don't know whether he'll be able to come. He said that if he could come, he'd be willing to make a Guanyin Bodhisattva image 36 Chinese feet (3 zhang 6 chi) tall on the vacant land at the monastery.
 
-**[Addendum 1]** Upasaka Pei Zhenghui recounted (reproduced from *Mind Dharma* (*Xinfa*) magazine):
+**[Addendum 1]** Upasaka Pei Zhenghui recounted (reproduced from *Hsin Fa* (*Mind Dharma*) magazine):
 
 Cixing Chan Monastery as it is now (1956): besides the Buddha Hall, the Left Courtyard, and the guest hall, a dining hall, a retreat room, and a thatched hut have also been added, one building each. On the left is the Dragon-Subduing Rock, and on the right is the Tiger-Taming Stream. The layout is superb, spread out like stars and chessmen. Its white walls and red pillars stand out within the embrace of countless mountains. Truly it can be said to capture the spiritual energy of heaven and earth and to surpass the hidden workings of creation. Its secluded beauty is in no way inferior to that of the Four Great Famous Mountains and the Eight Great Lesser Mountains of China; even compared with Nanhua Monastery, the Way-place of the Sixth Patriarch, it is not the least bit inferior!
 
@@ -1600,7 +1600,7 @@ In the year after the Master entered perfect stillness (1996), we respectfully e
 
 ## 49. Sagely Conditions in the Yiwei Year
 
-The Right Courtyard of Cixing Chan Monastery on Lantau Island, built by the Venerable Master, was largely completed by the end of the yiwei year (1955), though the interior decoration still had to be done and Buddha images and Buddhist implements added. Lantau Island is quiet, secluded, and vast; one has to cross mountains and ridges to reach it. Its scenery is extraordinary, and it is truly a superb place for cultivation...
+The Right Courtyard of Cixing Chan Monastery on Lantau Island, built by the Venerable Master, was largely completed by the end of the yiwei year (1955), though the interior decoration still had to be done and Buddha images and Buddhist implements added. The monastery's site on Lantau Island is quiet, secluded, and expansive; reaching it means crossing mountains and ridges. Its scenery is extraordinary, and it is truly a superb place for cultivation...
 
 Although Guoqing Chan Monastery had been cruelly ravaged during the Japanese occupation, the revival of the monastery now was truly a sagely condition. For this reason, at the Spring Festival of the yiwei year, the Venerable Master composed a verse:
 
@@ -1762,7 +1762,7 @@ In the world there are two forces: one is yin and one is yang; you could also sa
 
 This venomous snake, driven by its hatred, strove hard at its cultivation and then became a spirit creature. Its magic arts grew stronger day by day, until in time it could penetrate heaven and earth, and it always took pleasure in tormenting and harming the common people. These days, who knows how many cases there are like this snake's? I hope they will quickly give rise to repentance and no longer act as evil monsters bringing calamity upon the people.
 
-Later, by the time of the Song dynasty, this snake had become a venomous dragon. In a great river it whipped up winds and overturned the rains, killing countless fishermen and ferrymen. At that time the people of the area lived in fear and dread, in extreme anxiety. Fortunately, a certain sagely monk of great Dharma power came especially to rescue them. Holding his monk's staff, he stood on the riverbank and loudly rebuked the venomous dragon. Hearing his voice, the venomous dragon flew into a rage and brought out its powers, manifesting the body of a giant python several thousand zhang long. But this Dharma Master was sustained by the power of the Vajra Samadhi and had no fear at all. Using the methods of summoning and subduing, after a life-and-death struggle lasting three days and three nights, he finally brought the venomous dragon to submission. Evil cannot overcome the proper: the venomous dragon's evil arts were broken, and having no other choice, it had to surrender. The Dharma Master spoke the Dharma for it: everything is suffering, empty, impermanent, and without self, and only karma follows one. He also admonished it that it should bring forth a compassionate heart and use its magic arts to benefit living beings, and must not harm living creatures. On hearing the Dharma, the snake suddenly awakened and obtained the pure eye. The Dharma Master then transmitted to it the Three Refuges and the Five Precepts and ordered it to go to a certain mountain cave to cultivate and to stop disturbing the people. The venomous dragon gladly obeyed. From the Song dynasty until now, several hundred years have passed. By now this dragon has become one of the gods, dragons, and the rest of the eightfold division, with spiritual powers and transformations at its command.
+Later, by the time of the Song dynasty, this snake had become a venomous dragon. It stirred up violent storms on a great river, killing countless fishermen and ferrymen. At that time the people of the area lived in fear and dread, in extreme anxiety. Fortunately, a certain sagely monk of great Dharma power came especially to rescue them. Holding his monk's staff, he stood on the riverbank and loudly rebuked the venomous dragon. Hearing his voice, the venomous dragon flew into a rage and brought out its powers, manifesting the body of a giant python several thousand zhang long. But this Dharma Master was sustained by the power of the Vajra Samadhi and had no fear at all. Using the methods of summoning and subduing, after a life-and-death struggle lasting three days and three nights, he finally brought the venomous dragon to submission. Evil cannot overcome the proper: the venomous dragon's evil arts were broken, and having no other choice, it had to surrender. The Dharma Master spoke the Dharma for it: everything is suffering, empty, impermanent, and without self, and only karma follows one. He also admonished it that it should bring forth a compassionate heart and use its magic arts to benefit living beings, and must not harm living creatures. On hearing the Dharma, the snake suddenly awakened and obtained the pure eye. The Dharma Master then transmitted to it the Three Refuges and the Five Precepts and ordered it to go to a certain mountain cave to cultivate and to stop disturbing the people. The venomous dragon gladly obeyed. From the Song dynasty until now, several hundred years have passed. By now this dragon has become one of the gods, dragons, and the rest of the eightfold division, with spiritual powers and transformations at its command.
 
 (Editor's note: At this point a Bhikshuni in the women's section said, "Several weeks ago we saw this snake near the women's Buddha hall at Joyous Giving House. Because we were afraid it might be a rattlesnake, we put it in a can, covered it with a hard wooden board, and got ready to take it to a fairly distant grove to release it, so that it wouldn't disturb the residents. But as soon as we turned around and opened the iron can, the snake was no longer there. Logically, there was no way it could have escaped. No wonder! It turns out it has spiritual powers.")
 
@@ -1968,7 +1968,7 @@ The Venerable Master lamented the listless and dispirited state of Hong Kong's B
 
 In the Venerable Master's own words:
 
-Let me tell you, at Western Bliss Gardens Monastery in Hong Kong, a single bed had six places where the rain leaked through. Now tell me, wasn't that hard? But hard as it was, I didn't repair it. I didn't care whether my own house leaked or not; if I had money, I wanted to use it to help others. Tell me, is that foolish or not?
+Let me tell you, at Western Bliss Gardens Monastery in Hong Kong, the roof leaked in six places just above my bed. Now tell me, wasn't that hard? But hard as it was, I didn't repair it. I didn't care whether my own house leaked or not; if I had money, I wanted to use it to help others. Tell me, is that foolish or not?
 
 There was a monastery that was making Buddha images, and I donated more than HK$1,500. It would have taken only 200 dollars to repair the house, but I couldn't bear to spend that money. Spending more than 1,500 dollars to help others make Buddha images was no problem. When I was in Hong Kong, all told, I had more than 100 Buddha images made and gave them away. For example, the Three Sages of the West at the Chinese Buddhist Association of Hawaii were a gift from me.
 
@@ -2128,7 +2128,7 @@ What is the Pratyutpanna Samadhi? "Pratyutpanna" is Sanskrit; here it is transla
 
 Here we are now holding a Buddha Recitation session, walking for a while, sitting for a while, reciting aloud, reciting silently, getting up at three-thirty in the morning and resting at ten o'clock at night. That still doesn't count as too hard!
 
-At that time (February 1956) I had a small house built for him, a room of about 20 feet by 30 feet, to help him cultivate the Pratyutpanna Samadhi. I also found someone to protect his session, boiling water for him, bringing him his meals, and looking after him there. Heng Yue recited the Buddha's name until he saw Amitabha Buddha! Then he ran for all he was worth, reciting for all he was worth, "Namo Amitabha Buddha, Namo Amitabha Buddha, Namo Amitabha Buddha...," louder and louder, louder and louder. I was up on the slope, and he lived down below, about 200 paces from where I was. When I heard him reciting so loudly down there, I knew he had entered a demonic state, so I went to see him. I saw him running very fast in that room, reciting the Buddha's name as he ran, running extremely fast, running around like a madman.
+At that time (February 1956) I had a small house built for him, a room of about 20 feet by 30 feet, to help him cultivate the Pratyutpanna Samadhi. I also found someone to look after him during the retreat, boiling water for him, bringing him his meals, and supporting him there. Heng Yue recited the Buddha's name until he saw Amitabha Buddha! Then he ran for all he was worth, reciting for all he was worth, "Namo Amitabha Buddha, Namo Amitabha Buddha, Namo Amitabha Buddha...," louder and louder, louder and louder. I was up on the slope, and he lived down below, about 200 paces from where I was. When I heard him reciting so loudly down there, I knew he had entered a demonic state, so I went to see him. I saw him running very fast in that room, reciting the Buddha's name as he ran, running extremely fast, running around like a madman.
 
 What do you say was going on? In his former life this Bhikshu was an ox. Because he had worked for a monastery plowing the fields, in this life he was reborn as a human and became a monk, but his ox nature hadn't changed, and he always had a big temper. Why did he run like that? Because he saw Amitabha Buddha coming, and he was chasing after this Amitabha Buddha. But what was really happening? He had fallen into a demonic state. It was actually a water buffalo from the sea: a sea monster had come! This water buffalo was running in front, and he thought Amitabha Buddha had come, so he chased after it. It was luring him on like this, wanting to drag him off to be one of its retinue. How could this water-buffalo spirit manifest the form of Amitabha Buddha? Not only can it manifest the form of Amitabha Buddha; all heavenly demons and externalists have this kind of spiritual power. If you don't recognize it, at a time like this you won't be able to keep your samadhi!
 
@@ -2166,7 +2166,7 @@ At the monastery, the Master didn't allow us to talk much, and this was even mor
 
 ## 66. Receiving Dharma Transmission in the Weiyang Lineage
 
-In 1946 the Venerable Master set out from Manchuria and trekked more than 3,000 li, enduring hardship all along the way, and in 1948 he arrived at Nanhua Monastery at Caoxi in Guangdong to pay his respects to Elder Master Hsu Yun. Elder Hsu, who was 109 years old at the time, gave the Venerable Master certification as soon as he saw him, saying, "So it is! So it is!"...
+In 1946 the Venerable Master set out from Manchuria and trekked more than 3,000 li, enduring hardship all along the way, and in 1948 he arrived at Nanhua Monastery at Caoxi in Guangdong to pay his respects to Elder Master Hsu Yun. Elder Hsu, who was 109 years old at the time, affirmed the Venerable Master's understanding as soon as he saw him, saying, "So it is! So it is!"...
 
 On May 18, 1956 (the ninth day of the fourth lunar month), in the Dharma Hall at Yunju, Elder Hsu transmitted the Dharma to the Venerable Master, making him the ninth-generation Dharma heir of the Weiyang lineage [Tr.: one of the five houses of the Chan School], and gave him the name "Hsuan Hua." From Mount Yunju he specially sent the Venerable Master the record of the origins and lineage of the Weiyang patriarchs, and he also wrote a "Verse of Certification" [Tr.: The four lines begin with the characters of the names Hsuan Hua and To Lun.]:
 
@@ -2326,7 +2326,7 @@ With Western Bliss Gardens Monastery and Cixing Chan Monastery, the Venerable Ma
 
 In the Venerable Master's own words:
 
-It was because the building at Western Bliss Gardens leaked. In the space of just one bed there were six leaks. Yu Guo Man said, "Shifu, how can we let you suffer like this? I'll buy you a floor in Happy Valley, and you can move to Happy Valley!" I said, "If you want to buy it, then buy it!" She went home and told her son, and then they bought a floor to be a Way-place. That floor originally cost HK$45,000. She put up HK$40,000, and I and some others made up the rest; we also bought another floor next door. When I was at Western Bliss Gardens I was very thin, but after I moved to Happy Valley I put on weight. Now that I'm here in America I've gotten thin again; I've lost more than 20 pounds.
+It was because the building at Western Bliss Gardens leaked. Over the space of just one bed, the roof leaked in six places. Yu Guo Man said, "Shifu, how can we let you suffer like this? I'll buy you a floor in Happy Valley, and you can move to Happy Valley!" I said, "If you want to buy it, then buy it!" She went home and told her son, and then they bought a floor to be a Way-place. That floor originally cost HK$45,000. She put up HK$40,000, and I and some others made up the rest; we also bought another floor next door. When I was at Western Bliss Gardens I was very thin, but after I moved to Happy Valley I put on weight. Now that I'm here in America I've gotten thin again; I've lost more than 20 pounds.
 
 When I was about to come to America, I had no money, so I thought of selling one of the floors so that I could come to America and establish a Way-place. Yu Guo Man said, "Shifu, don't sell this floor to anyone else! Once it's sold, you'll never be able to buy it back!" I said, "I won't be buying it back anyway! I have no money, and I have to take a little money with me to America." "Oh, then I'll buy it!" So she had her son once again put up about 60,000 dollars, and she bought the floor back. She said, "Never mind! Whenever you come back, Shifu, I'll give it back to you. Right now you need the money!" She also said, "If I told my sons to give you money, they wouldn't be happy about it. But if I say it's to buy your floor, they're fine with it. When you come back in a few years, it will still be yours." I said, "Then do as you like!" That's how I went from Hong Kong to America.
 
@@ -2414,7 +2414,7 @@ Elder Hsu asked me, "Have you come to request lodging and stay on here, or are y
 
 **[Addendum 2]** The World Peace Pagoda is located in the northern suburbs of Rangoon, Burma, and is a famous Buddhist structure in the city. In 1954, in order to convene the "Sixth Council," the Burmese government held a two-year World Buddhist Scripture Council at this site (Auspicious Hill). At the foot of Auspicious Hill is a cave called the Great Sacred Cave, which can hold an assembly of more than 10,000 Bhikshus. The cave has six entrances and six stone pillars; on the walls are six relief carvings, and on the platform are mounted six candle-shaped electric lamps, symbolizing the Sixth Council. The World Peace Pagoda stands to the right of Auspicious Hill.
 
-The architecture of the Peace Pagoda also embodies the symbols of the Sixth World Buddhist Scripture Council: the pagoda is 35 meters high, its base is 35 meters in circumference, and its body is hollow. The whole pagoda is supported by six great pillars and has six doors, and at each entrance a huge statue of the Buddha is enshrined; all of these symbolize the Sixth Council of the scriptures. At the very center of the pagoda is a small treasury, where a Buddha image cast of pure silver and weighing nearly a ton is enshrined in the sharira shrine; it is the treasure that guards the hall and is extremely precious. The sharira of the Buddha's two great disciples, the Venerable Shariputra and the Venerable Maudgalyayana, are also enshrined here. In the niches on the round pillars inside the pagoda there are 28 small statues of the Buddha. Inside the pagoda there is also a museum of Buddhist art, which has gathered a wide range of Buddha images and Buddhist scriptures from many places. Its collection includes two sharira originally enshrined in the Potala Palace in Tibet, presented by a Chinese Buddhist delegation in 1955; a photographic facsimile of an 800-year-old Chinese Tripitaka; and Chinese and Tibetan monastic robes, bowls, monks' staffs, and other items, all displayed in the pagoda's display cases. Although the World Peace Pagoda is the youngest pagoda in Rangoon, it holds an extremely important place in Buddhist history and culture, and it is also the center of Burmese Buddhist culture.
+The architecture of the Peace Pagoda also embodies the symbols of the Sixth World Buddhist Scripture Council: the pagoda is 35 meters high, its base is 35 meters in circumference, and its body is hollow. The whole pagoda is supported by six great pillars and has six doors, and at each entrance a huge statue of the Buddha is enshrined; all of these symbolize the Sixth Council of the scriptures. At the very center of the pagoda is a small treasury, where a Buddha image cast of pure silver and weighing nearly a ton is enshrined in the sharira shrine; it is the hall's most prized treasure and is extremely precious. The sharira of the Buddha's two great disciples, the Venerable Shariputra and the Venerable Maudgalyayana, are also enshrined here. In the niches on the round pillars inside the pagoda there are 28 small statues of the Buddha. Inside the pagoda there is also a museum of Buddhist art, which has gathered a wide range of Buddha images and Buddhist scriptures from many places. Its collection includes two sharira originally enshrined in the Potala Palace in Tibet, presented by a Chinese Buddhist delegation in 1955; a photographic facsimile of an 800-year-old Chinese Tripitaka; and Chinese and Tibetan monastic robes, bowls, monks' staffs, and other items, all displayed in the pagoda's display cases. Although the World Peace Pagoda is the youngest pagoda in Rangoon, it holds an extremely important place in Buddhist history and culture, and it is also the center of Burmese Buddhist culture.
 
 (Editor's note: [The Sixth Council] On Vesak Day (World Buddha Day), May 17, 1954, Burmese Buddhism, with state sponsorship, convened the "Sixth Council of the Buddhist Scriptures" on a hill at Yegu in the northern suburbs of Rangoon. This council took as its basis the 729 marble slabs inscribed at the Fifth Council, and it consulted the Pali editions of Ceylon, Thailand, and Cambodia and of the Pali Text Society of London, as well as the various Pali editions of Burma, carrying out a detailed critical collation. The council also invited Bhikshus from all the countries of Southern Buddhism to take part, and Bhikshus from the countries of Northern Buddhism were also invited to observe. In all, more than 2,000 people from the Buddhist world took part. It took more than two years and was completed in 1956 (Buddhist Era 2500), and the materials of the council were printed and distributed. The significance of this council lay in uniting Buddhists and furthering the flourishing of Theravada Buddhism. This is called the Sixth Council.)
 
@@ -3326,9 +3326,7 @@ Prefaced by To Lun, a Bhikshu in the mountains, at the right of his seat in his 
 
 ## 87. The San Francisco Buddhist Lecture Hall
 
-The Tan sisters, who had taken refuge with the Venerable Master when they were young, went to study in the United States one after the other. The elder sister, Tan Guo Zheng, went first to study in San Francisco. She found there was no Buddhist hall there, so she wrote to tell the Venerable Master. In January 1958, when the younger sister, Tan Guo Shi...
-
-was leaving to study in San Francisco, the Venerable Master said, "Together with your sister, bring the Buddhadharma to America!" Following the Venerable Master's instructions, the two sisters found a basement in Ross Alley, near San Francisco's Chinatown, to serve as the premises of a Buddhist hall. After asking the Venerable Master for his approval, they founded the San Francisco Buddhist Lecture Hall in February 1958. A few months after the Lecture Hall was founded, the number of people gathering every Saturday evening had grown from a dozen or so to several dozen. Later it moved to Pacific Street in San Francisco, and on March 11, 1959, it was officially registered under the name "Buddhist Lecture Hall," in English and in Chinese.
+The Tan sisters, who had taken refuge with the Venerable Master when they were young, went to study in the United States one after the other. The elder sister, Tan Guo Zheng, went first to study in San Francisco. She found there was no Buddhist hall there, so she wrote to tell the Venerable Master. In January 1958, as the younger sister, Tan Guo Shi, was about to leave for San Francisco to study, the Venerable Master told her, "Together with your sister, bring the Buddhadharma to America!" Following the Venerable Master's instructions, the two sisters found a basement in Ross Alley, near San Francisco's Chinatown, to serve as the premises of a Buddhist hall. After asking the Venerable Master for his approval, they founded the San Francisco Buddhist Lecture Hall in February 1958. A few months after the Lecture Hall was founded, the number of people gathering every Saturday evening had grown from a dozen or so to several dozen. Later it moved to Pacific Street in San Francisco, and on March 11, 1959, it was officially registered under the name "Buddhist Lecture Hall," in English and in Chinese.
 
 In early August 1961, because its lease had expired, the Buddhist Lecture Hall was forced to move, and it moved temporarily to Clay Street, to a basement owned by the Tan family. On August 6, after the move to the new site, a Universal Buddha Ceremony was held in celebration, with Dharma Master Zu Yin as the presiding Dharma Master, and many faithful devotees came to join in and rejoice.
 
@@ -3472,9 +3470,7 @@ It is reported that Chan Master To Lun plans to go to the Philippines on July 15
 
 In the course of a lifetime, people experience all kinds of things every day, over and over in endless cycles, the six faculties and six sense objects turning along in the flow of karma. Busily rushing east and west, without realizing it they create one new string of karma after another, spreading all sorts of karmic nets for the next round of rebirth...
 
-Dharma Master Guo Ren (Bhikshuni Heng Qi) had formerly managed a catering business in Borneo, Indonesia, and came to Hong Kong and took refuge with the Venerable Master. The Venerable Master urged her not to kill anymore, but she thought that since she assigned others to do it, she herself was not killing, so she did not stop her restaurant work. Not long afterwards, she dreamed that the Venerable Master, wearing a yellow robe, came down a flight of steps, frowning, and said to her sternly, "I told you not to kill, and you kill again! I told you not to kill, and you kill again! Why don't you listen to me?" The Venerable Master paced back and forth in front of her
-
-and kept on rebuking her. The dream was so vivid that she could never forget it. Afterwards she quit her job at the restaurant and went to help in the kitchen of the Buddhist Lecture Hall, where she worked for a full 18 years. Because she read the *Sutra of the Past Vows of Earth Store Bodhisattva* and understood the grave retribution for killing, she decided to leave the home-life. At that time the Venerable Master had already left Hong Kong for America, so every day she bowed in repentance before the Buddhas and Bodhisattvas. One day, while she was bowing, she saw Elder Master Hsu Yun standing before her, instructing her to offer a lamp. Not long after she had done this, she received a phone call from the Venerable Master: he was going to return to Hong Kong to propagate the Dharma. Her prayer had met with the best possible response. After leaving the home-life, Dharma Master Guo Ren served as chief cook at the Buddhist Lecture Hall all along. In her old age, when she went to the hospital for a checkup, she passed away peacefully in the hospital.
+Dharma Master Guo Ren (Bhikshuni Heng Qi) had formerly managed a catering business in Borneo, Indonesia, and came to Hong Kong and took refuge with the Venerable Master. The Venerable Master urged her not to kill anymore, but she thought that since she assigned others to do it, she herself was not killing, so she did not stop her restaurant work. Not long afterwards, she dreamed that the Venerable Master, wearing a yellow robe, came down a flight of steps, frowning, and said to her sternly, "I told you not to kill, and you kill again! I told you not to kill, and you kill again! Why don't you listen to me?" The Venerable Master paced back and forth in front of her and kept on rebuking her. The dream was so vivid that she could never forget it. Afterwards she quit her job at the restaurant and went to help in the kitchen of the Buddhist Lecture Hall, where she worked for a full 18 years. Because she read the *Sutra of the Past Vows of Earth Store Bodhisattva* and understood the grave retribution for killing, she decided to leave the home-life. At that time the Venerable Master had already left Hong Kong for America, so every day she bowed in repentance before the Buddhas and Bodhisattvas. One day, while she was bowing, she saw Elder Master Hsu Yun standing before her, instructing her to offer a lamp. Not long after she had done this, she received a phone call from the Venerable Master: he was going to return to Hong Kong to propagate the Dharma. Her prayer had met with the best possible response. After leaving the home-life, Dharma Master Guo Ren served as chief cook at the Buddhist Lecture Hall all along. In her old age, when she went to the hospital for a checkup, she passed away peacefully in the hospital.
 
 Zhang Guo Hong, at 42, took refuge with the Venerable Master in 1957. Together with Dharma Master Heng Yi, she supported the Way-place by cooking for the assembly. Three times she asked the Venerable Master to let her leave the home-life, but the Venerable Master said that her karmic obstacles were very heavy and that she should do more work at the Way-place to eradicate her karmic obstacles and accumulate blessings. She followed the Venerable Master's guidance: "If you cultivate well, Earth Store Bodhisattva will come to receive you in the future!" She lived at the Way-place for more than 30 years, doing all kinds of ascetic practices. In 1988, when the Venerable Master returned to Hong Kong to propagate the Dharma, she finally left the home-life at Cixing Monastery, with the Dharma name Guo Hong; she was 73 that year. In September 1995 she received full ordination at the City of Ten Thousand Buddhas in America, with the Dharma name Heng Wei. In 2000, Dharma Master Heng Wei, then 85, moved into the Chi Lin Home for the Aged. She passed away in 2009 at the age of 94.
 
@@ -3733,7 +3729,7 @@ Why did I come to America to propagate the Buddhadharma? Because this country do
 
 At the end of 1974, the Venerable Master returned to Hong Kong from America for the first time. Later, in 1978, 1981, and 1988, at the invitation of the Buddhist Association of Taiwan, Buddhist circles in Southeast Asia, and the Third World Buddhist Sangha Council, the Venerable Master returned to his old haunts...
 
-From late November 1974 to January 1975, the Venerable Master, who had been away from Hong Kong for a full 12 years, led two American disciples who had earlier made the "three steps, one bow" pilgrimage, Dharma Masters Heng Ju and Heng Yo, on a tour to propagate the Dharma and make visits in Taiwan, Hong Kong, Thailand, India, Ceylon, Singapore, Vietnam, and Japan. During the tour, besides speaking the Dharma at monasteries, Way-places, and universities in each place, he also presided over a Buddha Recitation session in Hong Kong. This was the Venerable Master's first return to Hong Kong from America.
+From late November 1974 to January 1975, the Venerable Master, who had been away from Hong Kong for a full 12 years, led two American disciples who had earlier made the "three steps, one bow" pilgrimage, Dharma Masters Heng Ju and Heng Yo, on a tour to propagate the Dharma and make visits in Taiwan, Hong Kong, Thailand, India, Ceylon, Singapore, Vietnam, and Japan. During the tour, besides speaking the Dharma at monasteries, Way-places, and universities in each place, he also led a seven-day Buddha Recitation session in Hong Kong. This was the Venerable Master's first return to Hong Kong from America.
 
 From July to September 1978, at the invitation of Buddhist circles throughout Southeast Asia, the Venerable Master led a delegation to propagate the Dharma in Malaysia, Singapore, Bangkok in Thailand, Hong Kong, and other places. He arrived in Hong Kong at 8 p.m. on September 16; this was the Venerable Master's second return to Hong Kong. From September 22 to September 26, from 7 to 9 p.m., the Venerable Master gave instructional talks at the Buddhist Studies Lecture Hall of Tung Lin Kok Yuen.
 
@@ -3819,7 +3815,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 比丘 / 比丘尼 | Bhikshu / Bhikshuni |
 | 沙彌 / 沙彌尼 | shramanera (novice monk) / shramanerika (novice nun) |
 | 居士 | Upasaka (man) / Upasika (woman), placed before the name: "Upasika Tan Guo Zheng" |
-| 居士 | layperson / lay Buddhist |
 | 老居士 | elderly Upasaka/Upasika |
 | 出家人 | monastic / left-home person |
 | 在家人 | layperson |
@@ -3910,7 +3905,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 黎果合 | Li Guo He |
 | 果殊 | Guo Shu |
 | 果平 | Guo Ping |
-| 蔡果夙 / 薛果夙 | Cai Guo Su / Xue Guo Su (keep as written; flag in errata if inconsistent) |
+| 蔡果夙 / 薛果夙 | Cai Guo Su / Xue Guo Su |
 | 果宏 | Guo Hong |
 | 果全 / 果根 | Guo Quan / Guo Gen |
 | 胡果為 | Hu Guo Wei |
@@ -4015,7 +4010,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 《高僧傳》 | Biographies of Eminent Monks |
 | 大悲咒 / 楞嚴咒 / 往生咒 | Great Compassion Mantra / Shurangama Mantra / Rebirth Mantra |
 | 大悲懺 / 藥師懺 / 消災延壽藥師寶懺 / 水懺 | Great Compassion Repentance / Medicine Master Repentance / Jeweled Repentance of the Medicine Master for Eradicating Disasters and Lengthening Life / Water Repentance |
-| 《心法》 | Mind Dharma (Xinfa) magazine |
+| 《心法》 | Mind Dharma magazine (Hsin Fa) |
 | 《金剛菩提海》 | Vajra Bodhi Sea |
 | 《宣化上人開示錄》 | Venerable Master Hua's Talks on Dharma |
 | 《虛雲老和尚畫傳集》 | Pictorial Biography of Elder Master Hsu Yun |
@@ -4064,6 +4059,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 末法 | the Dharma-Ending Age |
 | 正法 | the Proper Dharma |
 | 正知正見 | proper knowledge and views |
+| 慈悲喜捨 | kindness, compassion, joy, and giving (the Four Unlimited Minds; "giving" = equanimity) |
 | 戒定慧 | precepts, samadhi, and wisdom |
 | 三無漏學 | the Three Non-Outflow Studies |
 | 七菩提分 | the Seven Shares of Bodhi |
@@ -4084,7 +4080,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 經行 | walking meditation |
 | 念佛 | recite the Buddha's name |
 | 念佛堂 | Buddha Recitation Hall |
-| 禪七 / 佛七 | Chan session / Buddha Recitation session |
+| 禪七 / 佛七 | Chan session / Buddha Recitation session (seven-day sessions) |
 | 早晚課 | morning and evening recitation |
 | 拜懺 | bow in repentance |
 | 回向 | dedicate (merit) / transfer of merit |
@@ -4182,7 +4178,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 甘露 | sweet dew |
 | 蠟(瀝)青紙 | tar paper |
 | 香油錢 | money for incense and oil |
-| 劉寬盛 | Liu Kuan Sheng (female, elderly Upasika) |
+| 劉寬盛 | Liu Kuan Sheng |
 | 本地法師 | "Local Dharma Master" |
 | 斤 | catty / catties |
 | 中國大陸留港僧人聯誼會 | Fellowship Association of Mainland Chinese Monastics in Hong Kong |
@@ -4293,7 +4289,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 成住壞空 | formation, dwelling, decay, and emptiness |
 | 重重無盡 | layer upon layer without end |
 | 拜凳 | bowing bench |
-| 甘果慧 | Gan Guo Hui (F) |
+| 甘果慧 | Gan Guo Hui |
 | 大回向 | the great dedication of merit |
 | 觀音七 | Guanyin session |
 | 香板 | incense board |
@@ -4337,12 +4333,12 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 苦海茫茫，回頭是岸 | The sea of suffering is vast and boundless; turn back, and there is the shore |
 | 摩頂加持 | rub the crown of the head to bless |
 | 果儀 (菓儀) | offering envelope |
-| 盧譚珍 | Lu Tanzhen (F) |
+| 盧譚珍 | Lu Tanzhen |
 | 禪話 | Chan sayings |
 | 五佛帽 | Five Buddha Crown |
-| 羅康銳 | Luo Kangrui (M, husband of Tang Guo Shan) |
+| 羅康銳 | Luo Kangrui |
 | 癞瘡 | scabby sores |
-| 黃雪梅 | Huang Xuemei (F) |
+| 黃雪梅 | Huang Xuemei |
 | 中日抗戰 | the War of Resistance against Japan |
 | 共修 | group cultivation |
 | 違章建築 | illegal squatter structure |
@@ -4397,7 +4393,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 因梅開般若，果松證菩提 | "With the plum as the cause, prajna blossoms; with the pine as the fruit, Bodhi is certified." |
 | 墨寶 | treasured calligraphy |
 | 式之！式之！ | "Be a model! Be a model!" |
-| 黃潔梅 | Huang Jiemei (birth name of Huang Guo Song, per P0564) |
+| 黃潔梅 | Huang Jiemei (birth name of Huang Guo Song) |
 | 對聯 embedding 慕潔 / 果式 | couplet scrolls built on her names (acrostic) |
 | 秀才 | xiucai, a scholar who had passed the imperial examinations |
 | 上士 / 高人 | superior person / lofty one |
@@ -4427,7 +4423,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 含識 / 蠢動含靈 | beings with consciousness / all creatures that wriggle and all that have spiritual awareness |
 | 五濁惡世 | the evil world of the five turbidities |
 | 擇法眼 | the eye that discerns dharmas |
-| 慈悲喜捨 | kindness, compassion, joy, and giving |
 | 戴高帽子 | flatter |
 | 前途 / 後途 | the road ahead / the road behind |
 | 天下本無事，庸人自擾之 | "Originally nothing is wrong under heaven; ordinary people stir up trouble for themselves." |
@@ -4490,15 +4485,15 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 話劇社 / 夜校 | drama club / night school |
 | 高中畢業會考 | the public examination for graduation from secondary school |
 | 竹籬門 | bamboo-fence gate |
-| 伍相才 | Wu Xiangcai, M (eldest son of Guo Sen) |
-| 文偉斌（果殊） | Wen Weibin (Guo Shu), F |
-| 文頌頤（果蜜） | Wen Songyi (Guo Mi; = Wen Guo Mi), M |
+| 伍相才 | Wu Xiangcai (eldest son of Guo Sen) |
+| 文偉斌（果殊） | Wen Weibin (Guo Shu) |
+| 文頌頤（果蜜） | Wen Songyi (Guo Mi; = Wen Guo Mi) |
 | 果迦 | Guo Jia (= Zhong Meiwei) |
-| 蔡淑卿（果夙） | Cai Shuqing (Cai Guo Su), F |
+| 蔡淑卿（果夙） | Cai Shuqing (Cai Guo Su) |
 | 許麗君 | Xu Lijun |
-| 譚慕貞（果正） | Tan Muzhen (Tan Guo Zheng), F |
-| 黃可泰（果君） | Huang Ketai (Huang Guo Jun), M |
-| 黃潔梅（果松） | Huang Jiemei (Huang Guo Song), F |
+| 譚慕貞（果正） | Tan Muzhen (Tan Guo Zheng) |
+| 黃可泰（果君） | Huang Ketai (Huang Guo Jun) |
+| 黃潔梅（果松） | Huang Jiemei (Huang Guo Song) |
 | 慈幼英文學校 | Salesian English School (Shau Kei Wan) |
 | 妙觀察智 | the Wonderful Contemplating Wisdom |
 | 是道則進，非道則退 | "If it is the Way, advance; if it is not the Way, retreat." |
@@ -4612,7 +4607,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 《三大師焰口》 | Three Great Masters' Flaming Mouth ceremony |
 | 《大悲寶懺》 | Great Compassion Jeweled Repentance |
 | 普佛 | Universal Buddha Ceremony |
-| 梁果筱 | Liang Guo Xiao, F |
+| 梁果筱 | Liang Guo Xiao |
 | 法不孤起，仗境方生 | "The Dharma does not arise on its own; it arises in dependence on circumstances." |
 | 打板 | strike the board (wake-up signal) |
 | 早課 | morning recitation |
@@ -4639,7 +4634,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 法藏師 | Master Fa Zang (= Dharma Master Fa Zang) |
 | 淨樂居 | "Abode of Pure Joy" (plaque) |
 | 琉璃蓋頂 | glazed-tile roof |
-| 恆伯 | Heng Bo (Pinyin; replace if DRBA has an established spelling) |
+| 恆伯 | Heng Bo |
 | 禪人 | Chan cultivator |
 | 龍華大會 | the Dragon Flower Assembly |
 | 金錢戒 | the precept against money |
@@ -4695,11 +4690,11 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 繞念 | circumambulate and recite |
 | 唵嘛呢叭咪吽 | Om mani padme hum |
 | 老修行 | old cultivator |
-| 譚秀珍 (譚果屺) | Tan Xiuzhen (Tan Guo Qi), F |
+| 譚秀珍 (譚果屺) | Tan Xiuzhen (Tan Guo Qi) |
 | 人間生佛 | "A Living Buddha in the Human World" |
-| 果趁 | Guo Chen, F |
+| 果趁 | Guo Chen |
 | 上人的《事跡》 | the Venerable Master's Records |
-| 果麗 | Guo Li, F |
+| 果麗 | Guo Li |
 | 太子道 | Prince Edward Road |
 | 長生牌位 | longevity plaque |
 | 繼室 | second wife |
@@ -4709,7 +4704,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 甲午 | the jiawu year |
 | (結)界 | the boundary of the ritual area |
 | 請聖 | invitation of the sages |
-| 文果殊 | Wen Guo Shu, F (sister of Wen Guo Mi; = 果殊) |
+| 文果殊 | Wen Guo Shu (sister of Wen Guo Mi) |
 | 同宗兄弟 | clansman |
 | 大熱症 / 熱病 | high fever / fever |
 | 表弟 | cousin |
@@ -4794,7 +4789,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 粗言及細語，皆歸第一義 | "Coarse words and subtle speech all return to the primary meaning." |
 | 說食數寶 | "talking about food and counting others' treasure" |
 | 三根普被 | reaching those of all three kinds of faculties |
-| 悼念度輪長老 | "In Memory of Elder To Lun" (article by Elder Zhi Ding) |
 | 開單接眾 | accept monastics to stay |
 | 縵衣 (缦衣) | lay precept sash |
 | 自然日報 | Nature Daily (Ziran Ribao) |
@@ -4802,7 +4796,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 成和道 | Shing Woo Road (Happy Valley) |
 | 世界和平塔 | World Peace Pagoda (Rangoon) |
 | 余鎮東 | Judge Yu Zhendong |
-| 陳振富 | Chen Zhenfu (Burmese consul in Hong Kong), M |
+| 陳振富 | Chen Zhenfu (Burmese consul in Hong Kong) |
 | 仰光大金塔 / 瑞光大金塔 | the Great Golden Pagoda of Rangoon / the Shwedagon Pagoda |
 | 庇古 | Pegu |
 | 睡佛寺 | the Reclining Buddha Temple |
@@ -4831,7 +4825,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 喬達基寶塔 | Chaukhtatgyi Pagoda |
 | 首席法官 | Chief Justice (of Rangoon) |
 | 新加坡佛教協會 | Singapore Buddhist Association |
-| 畢俊輝 | Ms. Bi Junhui, F |
+| 畢俊輝 | Ms. Bi Junhui |
 | 菩提小學 | Bodhi Primary School (Singapore) |
 | 佛眼 | the Buddha Eye |
 | 神秀 | Shenxiu |
@@ -4855,7 +4849,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 金剛心總持論 | Treatise on the Vajra Mind Dharani |
 | 三壇大戒 | Triple Platform Ordination |
 | 紅頭軍 | "Red-Headed Army" (an insect) |
-| 近潤法師 | Bhikshuni Dharma Master Jin Run, F |
+| 近潤法師 | Bhikshuni Dharma Master Jin Run |
 | 良法師 | Dharma Master Liang |
 | 密行 | hidden practices |
 | 大師兄 / 釋兄 | eldest Dharma sister / elder Dharma sister |
@@ -4875,7 +4869,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 賢賢易色 / 道道可回天 | "Esteeming the worthy can replace love of beauty" / "Following the Way can turn back heaven's course" |
 | 大千 | the billion worlds |
 | 同修 | husband |
-| 林果森 | Lin Guo Sen (= Dharma Master Jin Ci), F |
+| 林果森 | Lin Guo Sen (= Dharma Master Jin Ci) |
 | 法界聖城 | the City of the Dharma Realm |
 | 聞思修居士林 | Hearing, Contemplating, and Cultivating Lay Buddhist Society (San Jose) |
 | 胡大文 / 王鴻義 | Hu Dawen / Wang Hongyi |
@@ -4997,7 +4991,6 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 觀自在 | Guanzizai |
 | 卷首語 | Foreword |
 | 杭立武 / 屈映光 | Upasaka Hang Li-wu (established name) / Upasaka Qu Yingguang |
-| 編後話 | Editor's Afterword |
 | 活死僧 | "living dead monk" |
 | 五濁 / 三醉 | the five turbidities / drunk with the three poisons |
 | 志哀贊頌 | tributes of mourning and praise |
@@ -5043,12 +5036,12 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 日本佛教總堂 | Buddhist Churches of America |
 | 日本埠 | Japantown |
 | 游雲山 / 曉雲法師 | You Yunshan / Dharma Master Xiao Yun (known as Hiu Wan) |
-| 譚文讓 (果權) | Tan Wenrang (Guo Quan), M |
+| 譚文讓 (果權) | Tan Wenrang (Guo Quan) |
 | 不牟利團體 | nonprofit organization |
-| 梁民惠 (果民) | Liang Minhui (Guo Min), M |
+| 梁民惠 (果民) | Liang Minhui (Guo Min) |
 | 法會領班 | leaders of the Dharma assemblies |
 | 美洲佛教會 | Buddhist Association of America |
-| 楊居士 | Upasaka Yang, M |
+| 楊居士 | Upasaka Yang |
 | 黃果仁 / 李果乾 | Huang Guo Ren / Li Guo Qian |
 | 喬遷謝啟 | Notice of Thanks on Moving to New Premises |
 | 上祖下印 | the Venerable ... Zu Yin |
@@ -5062,7 +5055,7 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 美國移民局 | the U.S. immigration authorities |
 | 墨爾本 / 雪梨 / 坎貝拉 | Melbourne / Sydney / Canberra |
 | 金岸法界聖寺 / 金岸法界 | Gold Coast Dharma Realm Sagely Monastery / Gold Coast Dharma Realm |
-| 劉季寧 | Liu Jining (male; "Mr. Liu Jining" at P1525) |
+| 劉季寧 | Liu Jining |
 | 四諦 | the Four Noble Truths |
 | 雪梨佛教會 | Sydney Buddhist Society |
 | 雪梨大學 | University of Sydney |
@@ -5106,10 +5099,10 @@ Reproduced from the Taiwan Xuefo website (http://www.xuefo.tw)
 | 大悲千手千眼（法） | the Great Compassion Thousand Hands and Thousand Eyes Dharma |
 | 求簽 / 觀音筒 / 簽筒 / 解簽書 | drawing fortune sticks / Guanyin fortune-stick canister / stick canister / book for interpreting the sticks |
 | 陸果雁 | Lu Guo Yan |
-| 淨寬（寬淨） | Jing Kuan (female) |
-| 王鳳九 | Wang Fengjiu (male) |
+| 淨寬（寬淨） | Jing Kuan |
+| 王鳳九 | Wang Fengjiu |
 | 真言 | true words / mantra (pun) |
-| 果銀 | Guo Yin (female; younger sister of He Guo Zhang) |
+| 果銀 | Guo Yin |
 | 譚果揚 | Tan Guo Yang |
 | 子程子曰 | "Zi Chengzi yue" ("Our Master, Master Cheng, said") |
 | 朱子（朱熹）/ 程子（程頤） | Zhuzi (Zhu Xi) / Chengzi (Cheng Yi) |
